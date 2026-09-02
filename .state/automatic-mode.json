@@ -1,267 +1,6 @@
 {
   "events": [
     {
-      "action": "scheduler",
-      "at": "2026-09-01T23:37:16.896536Z",
-      "result": {
-        "checked_at": "2026-09-01T23:37:16.896191Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-01T23:37:16.906118Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-01T23:37:16.907996Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-01T23:37:28.939529Z",
-      "result": {
-        "activities": [],
-        "experiments_running": [],
-        "node_errors": {
-          "A1552": "ssh: connect to host 100.112.138.117 port 2222: Operation timed out",
-          "A1557": "ssh: connect to host 100.87.128.33 port 2222: Operation timed out"
-        },
-        "scanned_at": "2026-09-01T23:37:28.931521Z",
-        "transitions": []
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-01T23:37:28.996329Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
       "action": "reconcile",
       "at": "2026-09-01T23:38:29.310407Z",
       "returncode": 0,
@@ -23961,12 +23700,265 @@
           }
         ]
       }
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-02T01:34:43.513699Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-02T01:34:43.527479Z",
+      "result": {
+        "checked_at": "2026-09-02T01:34:43.527456Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-02T01:34:43.531572Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-02T01:34:43.533330Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "kaggle-auto-publish",
+      "at": "2026-09-02T01:35:00.907067Z",
+      "result": {
+        "blocked": [
+          {
+            "experiment_id": "EXP-039",
+            "job_id": "EXP-039-20260830T102102Z-68098c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-040",
+            "job_id": "EXP-040-20260830T112032Z-0b481c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-043",
+            "job_id": "EXP-043-20260830T130402Z-826a45",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-046",
+            "job_id": "EXP-046-20260830T172640Z-96146f",
+            "reason": "deterministic Kaggle push failure"
+          }
+        ],
+        "dry_run": false,
+        "eligible": [
+          {
+            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
+            "experiment_id": "EXP-050",
+            "run_id": "EXP-050_20260830T172441Z_40702514"
+          },
+          {
+            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
+            "experiment_id": "EXP-051",
+            "run_id": "EXP-051_20260831T150521Z_477a84b9"
+          },
+          {
+            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
+            "experiment_id": "EXP-052",
+            "run_id": "EXP-052_20260901T050028Z_33370396"
+          },
+          {
+            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
+            "experiment_id": "EXP-030B",
+            "run_id": "EXP-030B_20260829T051035Z_55573139"
+          },
+          {
+            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
+            "experiment_id": "EXP-032",
+            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
+          },
+          {
+            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
+            "experiment_id": "EXP-033",
+            "run_id": "EXP-033_20260830T054243Z_acd48d34"
+          },
+          {
+            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
+            "experiment_id": "EXP-034",
+            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
+          },
+          {
+            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
+            "experiment_id": "EXP-036",
+            "run_id": "EXP-036_20260830T070804Z_8d380735"
+          },
+          {
+            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
+            "experiment_id": "EXP-037",
+            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
+          },
+          {
+            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
+            "experiment_id": "EXP-039",
+            "run_id": "EXP-039_20260830T090516Z_1b069872"
+          },
+          {
+            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
+            "experiment_id": "EXP-040",
+            "run_id": "EXP-040_20260830T094829Z_7c27497a"
+          },
+          {
+            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
+            "experiment_id": "EXP-041",
+            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
+          },
+          {
+            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
+            "experiment_id": "EXP-043",
+            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
+          },
+          {
+            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
+            "experiment_id": "EXP-042",
+            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
+          },
+          {
+            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
+            "experiment_id": "EXP-046",
+            "run_id": "EXP-046_20260830T163523Z_25825c59"
+          },
+          {
+            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
+            "experiment_id": "EXP-044",
+            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
+          },
+          {
+            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
+            "experiment_id": "EXP-038",
+            "run_id": "EXP-038_20260830T091939Z_88e852c3"
+          },
+          {
+            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
+            "experiment_id": "EXP-045",
+            "run_id": "EXP-045_20260830T155156Z_471d630b"
+          }
+        ],
+        "pushed": [],
+        "waiting": [
+          {
+            "experiment_id": "EXP-050",
+            "job_id": "EXP-050-20260830T230527Z-d92535",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-051",
+            "job_id": "EXP-051-20260901T124238Z-3b97f6",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-052",
+            "job_id": "EXP-052-20260901T124242Z-d46727",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-030B",
+            "job_id": "EXP-030B-20260829T165225Z-f4036d",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-032",
+            "job_id": "EXP-032-20260830T062707Z-e214e1",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-033",
+            "job_id": "EXP-033-20260830T064308Z-2fe11f",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-034",
+            "job_id": "EXP-034-20260830T065004Z-b37144",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-036",
+            "job_id": "EXP-036-20260830T225235Z-dcaa75",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-037",
+            "job_id": "EXP-037-20260830T225237Z-590067",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-041",
+            "job_id": "EXP-041-20260830T124134Z-4f3b10",
+            "reason": "deployment already registered",
+            "state": "NEEDS_REPAIR"
+          },
+          {
+            "experiment_id": "EXP-042",
+            "job_id": "EXP-042-20260830T231158Z-1126f5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-044",
+            "job_id": "EXP-044-20260830T173113Z-301f54",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-038",
+            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-045",
+            "job_id": "EXP-045-20260830T232842Z-fdd840",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          }
+        ]
+      }
     }
   ],
-  "last_cycle_at": "2026-09-02T01:33:43.319734Z",
+  "last_cycle_at": "2026-09-02T01:35:00.907139Z",
   "pid": 85479,
   "schema_version": 1,
   "started_at": "2026-08-30T05:42:28.655109Z",
   "status": "RUNNING",
-  "updated_at": "2026-09-02T01:33:43.319731Z"
+  "updated_at": "2026-09-02T01:35:00.907129Z"
 }

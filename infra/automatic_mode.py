@@ -357,6 +357,40 @@ def _push_new_successes(root: Path, state: dict[str, Any], *, dry_run: bool = Fa
     return summary
 
 
+def _sync_hf_and_git(root: Path, state: dict[str, Any], *, dry_run: bool = False) -> None:
+    """Automatically back up heavy weights to Hugging Face and push code/ledgers to GitHub."""
+    if dry_run:
+        return
+
+    # 1. Check if any new checkpoints need Hugging Face upload
+    try:
+        from hf_sync import upload_experiment_checkpoints
+        for d in (root / "experiments").iterdir():
+            if d.is_dir() and d.name.startswith("EXP-"):
+                pths = list(d.rglob("*.pth"))
+                if pths:
+                    res = upload_experiment_checkpoints(d.name, root=root, purge=True)
+                    if res.get("status") == "success":
+                        _record(state, "hf-checkpoint-upload", experiment_id=d.name, bytes=res.get("total_bytes"))
+    except Exception as e:
+        _record(state, "hf-sync-error", error=repr(e))
+
+    # 2. Check if git repository has modifications to commit and push
+    try:
+        status = subprocess.run(["git", "status", "--porcelain"], cwd=root, capture_output=True, text=True, check=False)
+        if status.returncode == 0 and status.stdout.strip():
+            subprocess.run(["git", "add", "."], cwd=root, capture_output=True, check=False)
+            commit_msg = f"chore(auto-mode): update experiment ledgers, manifests, and states [{utc_now()}]"
+            subprocess.run(["git", "commit", "-m", commit_msg], cwd=root, capture_output=True, check=False)
+            push_res = subprocess.run(["git", "push", "origin", "main"], cwd=root, capture_output=True, text=True, check=False)
+            if push_res.returncode == 0:
+                _record(state, "git-auto-push", commit=commit_msg)
+            else:
+                _record(state, "git-push-error", error=push_res.stderr.strip()[:300])
+    except Exception as e:
+        _record(state, "git-sync-error", error=repr(e))
+
+
 def cycle(root: Path, state: dict[str, Any], *, dry_run: bool = False) -> dict[str, Any]:
     _run_reconcile(root, state)
     scheduled = scheduler_run_once(dry_run=dry_run, root=root)
@@ -373,6 +407,7 @@ def cycle(root: Path, state: dict[str, Any], *, dry_run: bool = False) -> dict[s
         _watch_kaggle(root, state)
     kaggle_automation = _push_new_successes(root, state, dry_run=dry_run)
     _record(state, "kaggle-auto-publish", result=kaggle_automation)
+    _sync_hf_and_git(root, state, dry_run=dry_run)
     state["last_cycle_at"] = utc_now()
     atomic_write_json(_state_path(root), state)
     return state

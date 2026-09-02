@@ -21,8 +21,8 @@
 - Una corrida reconciliada como `SUCCEEDED`, `DOC_PENDING` o `CLOSED` se publica automáticamente durante `Modo automatico` cuando el manifiesto autoriza `kaggle.auto_publish_after_train=true` y `auto_push=true`. Esto aplica a experimentos base, bootstrap y variantes; no requiere una orden posterior del usuario.
 - `deployment_ready=false` nunca se salta: el ciclo mantiene el experimento como pendiente de empaquetado, y solo después de exportar pesos, versionar su dataset y aprobar el preflight puede hacer push. Un experimento futuro con Kaggle habilitado debe incluir desde su creación el scaffold test-only y `auto_publish_after_train=true`.
 - `experiments/kaggle_scores.jsonl` es el ledger append-only exclusivo de scores oficiales. `experiments/KAGGLE_LEADERBOARD.md` se genera desde ese ledger y ordena por el mejor Public Score de Kaggle de cada experimento.
-- El ranking Kaggle y el Promotion Board local nunca se mezclan: un experimento puede liderar uno y quedar detrás en el otro. Ninguno sobrescribe al otro.
 - Los checkpoints pesados (`.pt`, `.pth`, `.ckpt`, `.safetensors`) se respaldan obligatoriamente en el repositorio privado de Hugging Face (`Matycaba2016/biohub-checkpoints`) mediante `infra/hf_sync.py`. Los binarios pesados locales se purgan tras la subida exitosa, conservando el marcador `.hf_remote` y los metadatos/logs en el repositorio. Está terminantemente prohibido commitear checkpoints pesados a Git.
+- En `Modo automatico`, el daemon ejecuta en cada ciclo la sincronización y subida automática de checkpoints nuevos a Hugging Face Hub, y realiza `git add`, `git commit` y `git push origin main` a GitHub (`MatiAntezana/Biohub`) de todos los cambios estructurados (código, manifiestos, ledgers `registry.jsonl`, `kaggle_scores.jsonl` y reportes), garantizando respaldo integral y persistente entre sesiones.
 
 ## Seguridad operativa
 

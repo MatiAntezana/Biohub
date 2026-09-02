@@ -12,7 +12,8 @@ Antes de modificar, ejecutar o desplegar un experimento:
 8. El autolanzamiento remoto solo está autorizado cuando el manifiesto declara `execution_policy.auto_launch=true`.
 9. Kaggle es exclusivamente test/inferencia. Usar `infra/kaggle_pipeline.py`: cualquier señal de train bloquea retries y submission; un notebook sin test debe fallar por su guardia interna.
 10. En `Modo automatico`, toda corrida reconciliada como `SUCCEEDED`, `DOC_PENDING` o `CLOSED` cuyo manifiesto declare `kaggle.auto_publish_after_train=true`, `auto_push=true` y `deployment_ready=true` debe entrar automáticamente al preflight, push, monitor, submission y consulta de Public Score. No esperar la orden manual `Subir mejores versiones a kaggle`.
-11. Almacenamiento desacoplado: Todo checkpoint pesado (`.pt`, `.pth`, `.ckpt`, `.safetensors`) se respalda obligatoriamente en Hugging Face Hub (`infra/hf_sync.py`) y se purga del disco local al completar la reconciliación. Queda estrictamente prohibido commitear binarios pesados a Git.
+11. Almacenamiento desacoplado: Todo checkpoint pesado (`.pt`, `.pth`, `.ckpt`, `.safetensors`) se respalda obligatoriamente en Hugging Face Hub (`infra/hf_sync.py`, repo `Matycaba2016/biohub-checkpoints`) y se purga del disco local al completar la reconciliación. Queda estrictamente prohibido commitear binarios pesados a Git.
+12. Sincronización Automática Integral (Hugging Face y GitHub) en Modo Automático: En cada ciclo del `Modo automatico`, el daemon sube autónomamente a Hugging Face Hub los checkpoints generados por experimentos finalizados o variantes, y ejecuta `git add`, `git commit` y `git push origin main` a GitHub (`MatiAntezana/Biohub`) de todos los manifiestos, scripts, esquemas, ledgers (`registry.jsonl`, `kaggle_scores.jsonl`) y vistas de estado actualizadas, asegurando respaldo y persistencia total entre sesiones.
 
 ## Órdenes exactas del usuario
 
