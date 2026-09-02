@@ -44,10 +44,10 @@
 
 - El daemon desacoplado garantiza continuidad del trabajo, pero no sustituye la presencia del agente. La orden `Modo automatico` debe usar `automatic_mode.py supervise`, permanecer en foreground y mantener vivo el turno del agente.
 - Mientras el modo esté activo, está prohibido responder con un mensaje final que dé por terminada la tarea. El agente debe seguir esperando la salida del supervisor y publicar actualizaciones por `commentary`.
-- `.agents/monitoring.json` define la cadencia y los eventos notificables. Se reportan inicios, progreso de epochs, estados terminales, errores, transiciones Kaggle, submissions, scores y variantes. Un heartbeat sin cambios se emite cada 60 segundos.
+- `.agents/monitoring.json` define la cadencia y los eventos notificables. Se reportan inicios, progreso de epochs, estados terminales, errores, transiciones Kaggle, submissions, scores y variantes. Un heartbeat sin cambios se emite cada 300 segundos (5 minutos) para preservar tokens y contexto del agente.
 - La salida al agente debe ser compacta. Los logs completos permanecen en disco; solo se exponen el experimento, nodo, estado, último epoch/métricas, transición Kaggle, score o error relevante.
 - Si llega un nuevo mensaje del usuario durante la supervisión, atenderlo sin perder el daemon. `Cortar automatico` detiene el daemon y permite cerrar el turno con un resumen; `Cortar train remoto` es una orden separada.
-- Existe un heartbeat de Codex cada cinco minutos con id `biohub-automatic-live-monitor` para recuperar visibilidad si el turno foreground se interrumpe. Al procesar `Cortar automatico`, el agente debe desactivarlo mediante la herramienta de automatizaciones después de detener el daemon.
+- Existe un heartbeat de Codex cada diez minutos con id `biohub-automatic-live-monitor` para recuperar visibilidad si el turno foreground se interrumpe. Al procesar `Cortar automatico`, el agente debe desactivarlo mediante la herramienta de automatizaciones después de detener el daemon.
 - El modo automático escanea todos los nodos habilitados (`ONLINE` y `training_ready=true`) mediante `infra/remote_gpu_monitor.py`. Debe notificar procesos CUDA iniciados/detenidos e identificar el experimento desde su comando cuando contenga `EXP-XXX`.
 - La actividad detectada se guarda en `.state/remote-gpu-activity.json`. Una asociación `registered` permite unirla con su run y métricas; una asociación `command` o `unknown` es solo observacional y nunca amplía autoridad operativa.
 

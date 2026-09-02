@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "automatic_mode_requires_attached_agent": true,
-  "poll_seconds": 10,
-  "heartbeat_seconds": 60,
+  "poll_seconds": 30,
+  "heartbeat_seconds": 300,
   "report_on": [
     "run_started",
     "epoch_changed",
@@ -29,7 +29,7 @@
   "full_logs_in_chat": false,
   "codex_heartbeat": {
     "automation_id": "biohub-automatic-live-monitor",
-    "interval_minutes": 5,
+    "interval_minutes": 10,
     "disable_on_cortar_automatico": true
   }
 }

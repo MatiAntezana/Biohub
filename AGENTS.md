@@ -25,7 +25,7 @@ Antes de modificar, ejecutar o desplegar un experimento:
 ### Persistencia obligatoria de la sesión en modo automático
 
 - Después de invocar `Modo automatico`, mantener abierta la llamada de supervisión y leer su salida incremental. Si la herramienta devuelve un identificador de sesión/proceso, seguirla con polls de hasta 60 segundos; no abandonarla después del mensaje inicial.
-- Comunicar en `commentary` cada transición real y los cambios de epoch/métricas. Si no cambia nada, enviar un heartbeat breve como máximo cada 60 segundos indicando qué sigue corriendo, nodo y último progreso conocido.
+- Comunicar en `commentary` cada transición real y los cambios de epoch/métricas. Si no cambia nada, enviar un heartbeat breve como máximo cada 300 segundos (5 minutos) indicando qué sigue corriendo, nodo y último progreso conocido para optimizar el consumo de tokens y contexto.
 - Nunca volcar logs completos al chat. Traducir los eventos JSON compactos `AUTOMATIC_UPDATE` y `AUTOMATIC_HEARTBEAT` a resúmenes claros.
 - Solo terminar el turno de supervisión cuando el usuario escriba `Cortar automatico`, cuando una política quede pausada requiriendo una decisión humana o cuando exista un bloqueo irrecuperable que deba informarse.
 - Si el daemon muere accidentalmente pero su estado seguía `RUNNING`, el supervisor debe reiniciarlo y avisar. Un estado explícito `STOPPED` no se reinicia.
