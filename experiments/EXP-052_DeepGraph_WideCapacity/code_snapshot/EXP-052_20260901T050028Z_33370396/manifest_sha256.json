@@ -1,0 +1,8 @@
+{
+  "experiments/EXP-052_DeepGraph_WideCapacity/experiment.json": "3a1b656847d45289ec67596682cb7b57fd7b81888b603c3f364038407a63c935",
+  "experiments/EXP-052_DeepGraph_WideCapacity/train.py": "0f6fcc0bbb0f69ce7bf2a47dfee4a73edfb2c55e70b32a9ebb37d3280d659597",
+  "infra/experiment_worker.py": "a41e679a7e3516846bc9c4000753370f106fdf9dc5267f90861ad8b3f7580777",
+  "infra/experimentlib.py": "f571371ebff26150bd954d3865412caf6e1116633a68845f2b49746f009c5fd2",
+  "official_starter_kit/scripts/train_unet_transformer.py": "b0bb3c16dc9b0fe34696877e3c49b503e1e247c903e639352e1f0824da3f298f",
+  "src/strategies/experiment_runtime.py": "2ce5b411efc3ffda62865d9d463ed6383589ad5957cf9ddca14c0c93c42a3539"
+}

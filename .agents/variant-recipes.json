@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "families": {
+    "EXP-017": "anisotropic_unet3d",
+    "EXP-019": "resunet3d",
+    "EXP-022": "stardist3d"
+  },
+  "recipes": [
+    {
+      "recipe_id": "exploit_longer_lower_lr",
+      "lane": "exploitation",
+      "compatible_parent_families": ["anisotropic_unet3d", "resunet3d"],
+      "architecture": "$parent",
+      "training": {"epochs": 30, "learning_rate": 0.0007, "weight_decay": 0.0001, "base_channels": 64}
+    },
+    {
+      "recipe_id": "exploit_cosine_finetune",
+      "lane": "exploitation",
+      "compatible_parent_families": ["anisotropic_unet3d", "resunet3d"],
+      "architecture": "$parent",
+      "training": {"epochs": 36, "learning_rate": 0.0005, "weight_decay": 0.0001, "base_channels": 64}
+    },
+    {
+      "recipe_id": "exploit_regularized",
+      "lane": "exploitation",
+      "compatible_parent_families": ["anisotropic_unet3d", "resunet3d"],
+      "architecture": "$parent",
+      "training": {"epochs": 32, "learning_rate": 0.0007, "weight_decay": 0.0003, "base_channels": 64}
+    },
+    {
+      "recipe_id": "adjacent_groupnorm",
+      "lane": "adjacent_exploration",
+      "compatible_parent_families": ["anisotropic_unet3d", "resunet3d"],
+      "architecture": "groupnorm_unet3d",
+      "training": {"epochs": 30, "learning_rate": 0.0007, "weight_decay": 0.0001, "base_channels": 64}
+    },
+    {
+      "recipe_id": "adjacent_attention",
+      "lane": "adjacent_exploration",
+      "compatible_parent_families": ["anisotropic_unet3d", "resunet3d"],
+      "architecture": "attention_unet3d",
+      "training": {"epochs": 30, "learning_rate": 0.0007, "weight_decay": 0.0001, "base_channels": 64}
+    },
+    {
+      "recipe_id": "novel_convnext",
+      "lane": "novel_exploration",
+      "compatible_parent_families": ["anisotropic_unet3d", "resunet3d"],
+      "architecture": "convnext_unet3d",
+      "training": {"epochs": 28, "learning_rate": 0.0005, "weight_decay": 0.0002, "base_channels": 32}
+    }
+  ],
+  "training_defaults": {
+    "batch_size": 2,
+    "num_workers": 4,
+    "max_batches_per_epoch": 750,
+    "focal_alpha": 10.0,
+    "crop_size": [32, 128, 128],
+    "eta_min": 0.00001
+  }
+}

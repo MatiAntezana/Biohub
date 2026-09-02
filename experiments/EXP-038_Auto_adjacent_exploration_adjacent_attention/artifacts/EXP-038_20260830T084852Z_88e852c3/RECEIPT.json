@@ -1,0 +1,51 @@
+{
+  "artifacts": {
+    "checkpoints": [
+      {
+        "bytes": 267811934,
+        "path": "experiments/EXP-038_Auto_adjacent_exploration_adjacent_attention/checkpoints/EXP-038_20260830T084852Z_88e852c3/training_checkpoint.pth",
+        "sha256": "a1ea38c8804c7c148e03bdd31e425413881d34921bca1c7a1358044b46d17222"
+      }
+    ],
+    "terminal_receipt": {
+      "path": "experiments/EXP-038_Auto_adjacent_exploration_adjacent_attention/artifacts/EXP-038_20260830T084852Z_88e852c3/TRAINING_COMPLETE.json",
+      "sha256": "1f8bdf730565522770ff01478886baf9ef363b430b20d81892562ee2889cb486"
+    }
+  },
+  "child_pid": 1731484,
+  "command": [
+    "/home/alumno1/miniconda3/envs/train-56/bin/python",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-038_Auto_adjacent_exploration_adjacent_attention/train.py",
+    "--project-root",
+    "/home/alumno1/Documents/Biohub",
+    "--run-dir",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-038_Auto_adjacent_exploration_adjacent_attention/artifacts/EXP-038_20260830T084852Z_88e852c3",
+    "--compact"
+  ],
+  "completed_at": "2026-08-30T09:37:30.319063Z",
+  "config_sha256": "88e852c3712578698e2a1825a5e4f40924eeaa1d4e86cd42df9f0ac7989f8de9",
+  "environment": {
+    "conda_env": "train-56",
+    "executable": "/home/alumno1/miniconda3/envs/train-56/bin/python",
+    "gpu": [
+      "NVIDIA GeForce RTX 4090, 24564 MiB"
+    ],
+    "hostname": "A1556-UBU",
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15"
+  },
+  "exit_code": 0,
+  "experiment_id": "EXP-038",
+  "metrics": {
+    "best_train_loss_diagnostic": 0.00041090444404593047,
+    "kaggle_public_score": null,
+    "train_loss_diagnostic": 0.0004162853244730892,
+    "validation_score": null
+  },
+  "run_id": "EXP-038_20260830T084852Z_88e852c3",
+  "schema_version": 1,
+  "started_at": "2026-08-30T08:48:59.918549Z",
+  "status": "SUCCEEDED",
+  "validation": "N/A — full-fit sin validación",
+  "worker_pid": 1731480
+}

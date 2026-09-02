@@ -1,0 +1,30 @@
+{
+  "architecture": "groupnorm_unet3d",
+  "base_channels": 64,
+  "batch_size": 2,
+  "checkpoint": "/home/alumno1/Documents/Biohub/experiments/EXP-035_Auto_adjacent_exploration_adjacent_groupnorm/checkpoints/EXP-035_20260830T063115Z_c21675ce/training_checkpoint.pth",
+  "crop_size": [
+    32,
+    128,
+    128
+  ],
+  "data_policy": "full-fit: 100% train / 0% validation",
+  "dataset_count": 199,
+  "dataset_samples": 18933,
+  "epochs": 30,
+  "experiment_id": "EXP-035",
+  "focal_alpha": 10.0,
+  "lane": "adjacent_exploration",
+  "learning_rate": 0.0007,
+  "max_batches_per_epoch": 750,
+  "num_workers": 4,
+  "parent_experiment_id": "EXP-019",
+  "proposal_id": "VAR-bb0519e36772429c",
+  "recipe_id": "adjacent_groupnorm",
+  "run_id": "EXP-035_20260830T063115Z_c21675ce",
+  "seed": 61661516,
+  "started_at": "2026-08-30T06:31:26.779356Z",
+  "status": "RUNNING",
+  "validation": "N/A \u2014 full-fit sin validaci\u00f3n",
+  "weight_decay": 0.0001
+}

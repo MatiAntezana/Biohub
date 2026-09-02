@@ -1,0 +1,146 @@
+{
+  "bootstrap_iterations": 10000,
+  "candidates": [
+    {
+      "coverage": 1.0,
+      "decision": "SUBMIT_CANDIDATE",
+      "eligible": true,
+      "experiment_id": "EXP-017",
+      "failed_gates": [],
+      "group_summaries": {
+        "44b6": {
+          "adj_edge_jaccard": 0.42307781979103437,
+          "division_fn": 0,
+          "division_fp": 0,
+          "division_jaccard": null,
+          "division_tp": 0,
+          "edge_fn": 126,
+          "edge_fp": 81,
+          "edge_jaccard": 0.4152542372881356,
+          "edge_tp": 147,
+          "n": 2,
+          "node_recall": 0.4930340557275542,
+          "score": 0.42307781979103437
+        },
+        "6bba": {
+          "adj_edge_jaccard": 0.8230332549720214,
+          "division_fn": 16,
+          "division_fp": 0,
+          "division_jaccard": 0.0,
+          "division_tp": 0,
+          "edge_fn": 1270,
+          "edge_fp": 727,
+          "edge_jaccard": 0.8069038870624637,
+          "edge_tp": 8345,
+          "n": 10,
+          "node_recall": 0.9425251466610188,
+          "score": 0.8230332549720214
+        }
+      },
+      "iterations": 10000,
+      "promotion_score": 0.7430546372397653,
+      "protocol_id": "biohub-legacy-seed42-holdout-common12-v1",
+      "rank": 1,
+      "recomputed_summary": {
+        "adj_edge_jaccard": 0.8097961360440045,
+        "division_fn": 16,
+        "division_fp": 0,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "edge_fn": 1396,
+        "edge_fp": 808,
+        "edge_jaccard": 0.793941660433807,
+        "edge_tp": 8492,
+        "n": 12,
+        "node_recall": 0.8676099648387748,
+        "score": 0.8097961360440045
+      },
+      "runtime_seconds": 420.98777780501405,
+      "score_ci_high": 0.8726671323593064,
+      "score_ci_low": 0.7430546372397653,
+      "worst_dataset": "44b6_0b24845f",
+      "worst_dataset_score": 0.041321026891998076
+    },
+    {
+      "coverage": 1.0,
+      "decision": "HOLD",
+      "eligible": true,
+      "experiment_id": "EXP-019",
+      "failed_gates": [],
+      "group_summaries": {
+        "44b6": {
+          "adj_edge_jaccard": 0.3757025504110474,
+          "division_fn": 0,
+          "division_fp": 0,
+          "division_jaccard": null,
+          "division_tp": 0,
+          "edge_fn": 154,
+          "edge_fp": 60,
+          "edge_jaccard": 0.35735735735735735,
+          "edge_tp": 119,
+          "n": 2,
+          "node_recall": 0.554437564499484,
+          "score": 0.3757025504110474
+        },
+        "6bba": {
+          "adj_edge_jaccard": 0.7911369067119208,
+          "division_fn": 16,
+          "division_fp": 0,
+          "division_jaccard": 0.0,
+          "division_tp": 0,
+          "edge_fn": 1584,
+          "edge_fp": 796,
+          "edge_jaccard": 0.7713956392277399,
+          "edge_tp": 8031,
+          "n": 10,
+          "node_recall": 0.9203009051598828,
+          "score": 0.7911369067119208
+        }
+      },
+      "iterations": 10000,
+      "promotion_score": 0.7004738075906922,
+      "protocol_id": "biohub-legacy-seed42-holdout-common12-v1",
+      "rank": 2,
+      "recomputed_summary": {
+        "adj_edge_jaccard": 0.7782609163314115,
+        "division_fn": 16,
+        "division_fp": 0,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "edge_fn": 1738,
+        "edge_fp": 856,
+        "edge_jaccard": 0.7585629188384214,
+        "edge_tp": 8150,
+        "n": 12,
+        "node_recall": 0.859323681716483,
+        "score": 0.7782609163314115
+      },
+      "runtime_seconds": 524.7557652889809,
+      "score_ci_high": 0.8494400415325092,
+      "score_ci_low": 0.7004738075906922,
+      "worst_dataset": "44b6_0b24845f",
+      "worst_dataset_score": 0.17898005089894098
+    }
+  ],
+  "dataset_count": 12,
+  "diagnostics_policy": "hard_gates_only",
+  "generated_at": "2026-08-27T20:20:27.164645+00:00",
+  "limitations": [
+    "Confidence intervals quantify dataset-sampling variability, not split leakage or threshold-selection bias.",
+    "A promotion board is globally comparable only when every experiment uses the same frozen, unseen protocol."
+  ],
+  "paired_comparisons": [
+    {
+      "delta_ci_high": 0.05919210223841026,
+      "delta_ci_low": 0.004583857594349516,
+      "left": "EXP-017",
+      "n_paired": 12,
+      "probability_left_better": 0.9894,
+      "right": "EXP-019",
+      "score_delta": 0.03153521971259299
+    }
+  ],
+  "protocol_id": "biohub-legacy-seed42-holdout-common12-v1",
+  "ranking_rule": "official_score_bootstrap_95pct_lower_bound",
+  "schema_version": 1
+}

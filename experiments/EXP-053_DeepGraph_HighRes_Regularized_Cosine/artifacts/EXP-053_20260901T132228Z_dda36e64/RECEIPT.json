@@ -1,0 +1,25 @@
+{
+  "artifacts": {},
+  "config_sha256": "dda36e64e936b2ec3e6a3e992daee6c8123bc8795d678f2dbfd5651a1c20e0ec",
+  "environment": {
+    "conda_env": "train-52",
+    "executable": "/home/alumno1/miniconda3/envs/train-52/bin/python",
+    "gpu": [
+      "NVIDIA GeForce RTX 4090, 24564 MiB"
+    ],
+    "hostname": "A1552-UBU",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15"
+  },
+  "error": "ExperimentError('launcher terminó con código 1; ver /home/alumno1/Documents/Biohub/experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/logs/EXP-053_20260901T132228Z_dda36e64.log')",
+  "exit_code": 1,
+  "experiment_id": "EXP-053",
+  "failed_at": "2026-09-01T13:31:04.544369Z",
+  "metrics": {},
+  "run_id": "EXP-053_20260901T132228Z_dda36e64",
+  "schema_version": 1,
+  "started_at": "2026-09-01T13:22:34.482780Z",
+  "status": "FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/alumno1/Documents/Biohub/infra/experiment_worker.py\", line 151, in run\n    raise ExperimentError(f\"launcher terminó con código {exit_code}; ver {log_path}\")\nexperimentlib.ExperimentError: launcher terminó con código 1; ver /home/alumno1/Documents/Biohub/experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/logs/EXP-053_20260901T132228Z_dda36e64.log\n",
+  "validation": "N/A — full-fit sin validación"
+}

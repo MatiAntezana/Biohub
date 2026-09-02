@@ -1,0 +1,311 @@
+{
+  "bootstrap_iterations": 10000,
+  "candidates": [
+    {
+      "coverage": 1.0,
+      "decision": "SUBMIT_CANDIDATE",
+      "eligible": true,
+      "experiment_id": "EXP-015",
+      "failed_gates": [],
+      "group_summaries": {
+        "44b6": {
+          "adj_edge_jaccard": 0.46110216412517446,
+          "division_fn": 0,
+          "division_fp": 0,
+          "division_jaccard": null,
+          "division_tp": 0,
+          "edge_fn": 116,
+          "edge_fp": 72,
+          "edge_jaccard": 0.45507246376811594,
+          "edge_tp": 157,
+          "n": 2,
+          "node_recall": 0.5921052631578947,
+          "score": 0.46110216412517446
+        },
+        "6bba": {
+          "adj_edge_jaccard": 0.8261142968553261,
+          "division_fn": 16,
+          "division_fp": 0,
+          "division_jaccard": 0.0,
+          "division_tp": 0,
+          "edge_fn": 1196,
+          "edge_fp": 755,
+          "edge_jaccard": 0.811861137897782,
+          "edge_tp": 8419,
+          "n": 10,
+          "node_recall": 0.9511423113428739,
+          "score": 0.8261142968553261
+        }
+      },
+      "iterations": 10000,
+      "promotion_score": 0.7550981171528198,
+      "protocol_id": "biohub-legacy-seed42-holdout-common12-v1",
+      "rank": 1,
+      "recomputed_summary": {
+        "adj_edge_jaccard": 0.8143616896885597,
+        "division_fn": 16,
+        "division_fp": 0,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "edge_fn": 1312,
+        "edge_fp": 827,
+        "edge_jaccard": 0.8003733084461035,
+        "edge_tp": 8576,
+        "n": 12,
+        "node_recall": 0.891302803312044,
+        "score": 0.8143616896885597
+      },
+      "runtime_seconds": 263.3079275709997,
+      "score_ci_high": 0.870251967714602,
+      "score_ci_low": 0.7550981171528198,
+      "worst_dataset": "44b6_0b24845f",
+      "worst_dataset_score": 0.1065134463965931
+    },
+    {
+      "coverage": 1.0,
+      "decision": "HOLD",
+      "eligible": true,
+      "experiment_id": "EXP-017",
+      "failed_gates": [],
+      "group_summaries": {
+        "44b6": {
+          "adj_edge_jaccard": 0.42188534250101706,
+          "division_fn": 0,
+          "division_fp": 0,
+          "division_jaccard": null,
+          "division_tp": 0,
+          "edge_fn": 126,
+          "edge_fp": 82,
+          "edge_jaccard": 0.4140845070422535,
+          "edge_tp": 147,
+          "n": 2,
+          "node_recall": 0.4930340557275542,
+          "score": 0.42188534250101706
+        },
+        "6bba": {
+          "adj_edge_jaccard": 0.823191958819981,
+          "division_fn": 16,
+          "division_fp": 0,
+          "division_jaccard": 0.0,
+          "division_tp": 0,
+          "edge_fn": 1270,
+          "edge_fp": 725,
+          "edge_jaccard": 0.8070599613152805,
+          "edge_tp": 8345,
+          "n": 10,
+          "node_recall": 0.9425251466610188,
+          "score": 0.823191958819981
+        }
+      },
+      "iterations": 10000,
+      "promotion_score": 0.7448216409780816,
+      "protocol_id": "biohub-legacy-seed42-holdout-common12-v1",
+      "rank": 2,
+      "recomputed_summary": {
+        "adj_edge_jaccard": 0.8098713558472617,
+        "division_fn": 16,
+        "division_fp": 0,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "edge_fn": 1396,
+        "edge_fp": 807,
+        "edge_jaccard": 0.7940158952781674,
+        "edge_tp": 8492,
+        "n": 12,
+        "node_recall": 0.8676099648387748,
+        "score": 0.8098713558472617
+      },
+      "runtime_seconds": 415.33954147199984,
+      "score_ci_high": 0.8709003201656785,
+      "score_ci_low": 0.7448216409780816,
+      "worst_dataset": "44b6_0b24845f",
+      "worst_dataset_score": 0.041321026891998076
+    },
+    {
+      "coverage": 1.0,
+      "decision": "HOLD",
+      "eligible": true,
+      "experiment_id": "EXP-022",
+      "failed_gates": [],
+      "group_summaries": {
+        "44b6": {
+          "adj_edge_jaccard": 0.46050798761416367,
+          "division_fn": 0,
+          "division_fp": 0,
+          "division_jaccard": null,
+          "division_tp": 0,
+          "edge_fn": 109,
+          "edge_fp": 82,
+          "edge_jaccard": 0.4619718309859155,
+          "edge_tp": 164,
+          "n": 2,
+          "node_recall": 0.6630546955624355,
+          "score": 0.46050798761416367
+        },
+        "6bba": {
+          "adj_edge_jaccard": 0.7938938747363202,
+          "division_fn": 16,
+          "division_fp": 0,
+          "division_jaccard": 0.0,
+          "division_tp": 0,
+          "edge_fn": 1281,
+          "edge_fp": 984,
+          "edge_jaccard": 0.7863005943956977,
+          "edge_tp": 8334,
+          "n": 10,
+          "node_recall": 0.9582462481202668,
+          "score": 0.7938938747363202
+        }
+      },
+      "iterations": 10000,
+      "promotion_score": 0.722198224108383,
+      "protocol_id": "biohub-legacy-seed42-holdout-common12-v1",
+      "rank": 3,
+      "recomputed_summary": {
+        "adj_edge_jaccard": 0.7830894206621586,
+        "division_fn": 16,
+        "division_fp": 0,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "edge_fn": 1390,
+        "edge_fp": 1066,
+        "edge_jaccard": 0.7757896658754793,
+        "edge_tp": 8498,
+        "n": 12,
+        "node_recall": 0.909047656027295,
+        "score": 0.7830894206621586
+      },
+      "runtime_seconds": 199.93013515200073,
+      "score_ci_high": 0.8396361462287578,
+      "score_ci_low": 0.722198224108383,
+      "worst_dataset": "44b6_0b24845f",
+      "worst_dataset_score": 0.2256009046094425
+    },
+    {
+      "coverage": 1.0,
+      "decision": "HOLD",
+      "eligible": true,
+      "experiment_id": "EXP-019",
+      "failed_gates": [],
+      "group_summaries": {
+        "44b6": {
+          "adj_edge_jaccard": 0.3757006605616524,
+          "division_fn": 0,
+          "division_fp": 0,
+          "division_jaccard": null,
+          "division_tp": 0,
+          "edge_fn": 154,
+          "edge_fp": 60,
+          "edge_jaccard": 0.35735735735735735,
+          "edge_tp": 119,
+          "n": 2,
+          "node_recall": 0.554437564499484,
+          "score": 0.3757006605616524
+        },
+        "6bba": {
+          "adj_edge_jaccard": 0.7915483749675961,
+          "division_fn": 16,
+          "division_fp": 0,
+          "division_jaccard": 0.0,
+          "division_tp": 0,
+          "edge_fn": 1583,
+          "edge_fp": 792,
+          "edge_jaccard": 0.771788219467666,
+          "edge_tp": 8032,
+          "n": 10,
+          "node_recall": 0.9203009051598828,
+          "score": 0.7915483749675961
+        }
+      },
+      "iterations": 10000,
+      "promotion_score": 0.703655592405608,
+      "protocol_id": "biohub-legacy-seed42-holdout-common12-v1",
+      "rank": 4,
+      "recomputed_summary": {
+        "adj_edge_jaccard": 0.778654772649423,
+        "division_fn": 16,
+        "division_fp": 0,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "edge_fn": 1737,
+        "edge_fp": 852,
+        "edge_jaccard": 0.7589385474860335,
+        "edge_tp": 8151,
+        "n": 12,
+        "node_recall": 0.859323681716483,
+        "score": 0.778654772649423
+      },
+      "runtime_seconds": 523.2501613839995,
+      "score_ci_high": 0.8509861650988977,
+      "score_ci_low": 0.703655592405608,
+      "worst_dataset": "44b6_0b24845f",
+      "worst_dataset_score": 0.1789790188466816
+    }
+  ],
+  "dataset_count": 12,
+  "diagnostics_policy": "hard_gates_only",
+  "generated_at": "2026-08-28T20:16:57.866604+00:00",
+  "limitations": [
+    "Confidence intervals quantify dataset-sampling variability, not split leakage or threshold-selection bias.",
+    "A promotion board is globally comparable only when every experiment uses the same frozen, unseen protocol."
+  ],
+  "paired_comparisons": [
+    {
+      "delta_ci_high": 0.01380927975125948,
+      "delta_ci_low": -0.005903764346367901,
+      "left": "EXP-015",
+      "n_paired": 12,
+      "probability_left_better": 0.808,
+      "right": "EXP-017",
+      "score_delta": 0.004490333841298044
+    },
+    {
+      "delta_ci_high": 0.06336086381700358,
+      "delta_ci_low": 0.008728113495191137,
+      "left": "EXP-015",
+      "n_paired": 12,
+      "probability_left_better": 0.996,
+      "right": "EXP-019",
+      "score_delta": 0.035706917039136754
+    },
+    {
+      "delta_ci_high": 0.04486919182784501,
+      "delta_ci_low": 0.020639188324953935,
+      "left": "EXP-015",
+      "n_paired": 12,
+      "probability_left_better": 1.0,
+      "right": "EXP-022",
+      "score_delta": 0.03127226902640112
+    },
+    {
+      "delta_ci_high": 0.05794613149374784,
+      "delta_ci_low": 0.00520755998512027,
+      "left": "EXP-017",
+      "n_paired": 12,
+      "probability_left_better": 0.9912,
+      "right": "EXP-019",
+      "score_delta": 0.03121658319783871
+    },
+    {
+      "delta_ci_high": 0.04487754432571924,
+      "delta_ci_low": 0.010731558024193667,
+      "left": "EXP-017",
+      "n_paired": 12,
+      "probability_left_better": 0.9998,
+      "right": "EXP-022",
+      "score_delta": 0.02678193518510308
+    },
+    {
+      "delta_ci_high": 0.015540885336841741,
+      "delta_ci_low": -0.02531130661290367,
+      "left": "EXP-019",
+      "n_paired": 12,
+      "probability_left_better": 0.3416,
+      "right": "EXP-022",
+      "score_delta": -0.004434648012735631
+    }
+  ],
+  "protocol_id": "biohub-legacy-seed42-holdout-common12-v1",
+  "ranking_rule": "official_score_bootstrap_95pct_lower_bound",
+  "schema_version": 1
+}

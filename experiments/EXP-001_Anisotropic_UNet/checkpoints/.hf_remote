@@ -1,0 +1,15 @@
+{
+  "experiment_id": "EXP-001_Anisotropic_UNet",
+  "hf_repo": "Matycaba2016/biohub-checkpoints",
+  "hf_uri": "hf://Matycaba2016/biohub-checkpoints/experiments/EXP-001_Anisotropic_UNet/",
+  "synced_at": "2026-09-01T03:54:39.843885+00:00",
+  "total_bytes": 22264743,
+  "files": [
+    {
+      "filename": "exp001a_unet3d_best.pt",
+      "relative_path": "checkpoint/exp001a_unet3d_best.pt",
+      "path_in_repo": "experiments/EXP-001_Anisotropic_UNet/checkpoint/exp001a_unet3d_best.pt",
+      "size_bytes": 22264743
+    }
+  ]
+}

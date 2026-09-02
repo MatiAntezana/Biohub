@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "enabled_in_automatic_mode": true,
+  "trigger_statuses": ["SUCCEEDED", "DOC_PENDING", "CLOSED"],
+  "require_manifest_auto_publish_after_train": true,
+  "require_deployment_ready": true,
+  "require_test_only_preflight": true,
+  "max_concurrent_kaggle_jobs": 2,
+  "max_push_attempts_per_deployment": 3,
+  "push_retry_backoff_seconds": 600,
+  "automatic_submission": true,
+  "automatic_score_polling": true,
+  "deterministic_failure_state": "NEEDS_REPAIR"
+}

@@ -1,0 +1,48 @@
+{
+  "arguments": [
+    "--epochs",
+    "50",
+    "--batch-size",
+    "2",
+    "--num-workers",
+    "4",
+    "--max-iters",
+    "750"
+  ],
+  "artifact_contract": {
+    "checkpoints": [
+      "checkpoints/{run_id}/*/training_checkpoint.pth"
+    ],
+    "maximum_checkpoints": 2,
+    "minimum_checkpoints": 2,
+    "terminal_receipt": "artifacts/{run_id}/TRAINING_COMPLETE.json"
+  },
+  "conda_env": "train-52",
+  "config_sha256": "dda36e64e936b2ec3e6a3e992daee6c8123bc8795d678f2dbfd5651a1c20e0ec",
+  "data_policy": {
+    "full_fit": true,
+    "mode": "full-fit",
+    "train_fraction": 1.0,
+    "validation": "N/A — full-fit sin validación"
+  },
+  "entrypoint": "train.py",
+  "experiment_directory": "experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine",
+  "experiment_id": "EXP-053",
+  "gpu_free_mib_at_selection": 23980,
+  "gpu_index": 0,
+  "heartbeat_seconds": 30,
+  "node": "A1552",
+  "prepared_at": "2026-09-01T13:22:33.099282Z",
+  "remote_root": "~/Documents/Biohub",
+  "run_directory": "experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/artifacts/EXP-053_20260901T132228Z_dda36e64",
+  "run_id": "EXP-053_20260901T132228Z_dda36e64",
+  "schema_version": 1,
+  "snapshot_sha256": {
+    "experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/experiment.json": "d716051c0089fc95f17c810c77873c4cb863b75e0df151178f2ecf6cdc356c62",
+    "experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/train.py": "bccf89453e399eeeb6f0bc16049db6bc3443462bcabaf65a06882fd9e20642b2",
+    "infra/experiment_worker.py": "a41e679a7e3516846bc9c4000753370f106fdf9dc5267f90861ad8b3f7580777",
+    "infra/experimentlib.py": "f571371ebff26150bd954d3865412caf6e1116633a68845f2b49746f009c5fd2",
+    "official_starter_kit/scripts/train_unet_transformer.py": "b0bb3c16dc9b0fe34696877e3c49b503e1e247c903e639352e1f0824da3f298f",
+    "src/strategies/experiment_runtime.py": "2ce5b411efc3ffda62865d9d463ed6383589ad5957cf9ddca14c0c93c42a3539"
+  }
+}

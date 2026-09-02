@@ -1,0 +1,13 @@
+{
+  "experiment_id": "EXP-031",
+  "revision": "fullfit-2026-08-27",
+  "supersedes_for_future_runs": "embryo-disjoint snapshot (historical only)",
+  "source_of_truth": "project root canonical files",
+  "files": {
+    "train_exp031_detector_first_ilp_preserved.py": "0453337d5438da5440ab0d85af1f6c10874686031374cdaf2b8ae8ff229296e7",
+    "official_starter_kit/scripts/train_unet_transformer.py": "7d0df5a4214f56ebdf097e045bfbbc697bf4cff54b5ba2a123dc42afe391e858",
+    "src/strategies/experiment_runtime.py": "9b0185d945a534b00b610ea99be5b1a82325b10f74dc752cf2dfafc52d486b33",
+    "src/strategies/detector_precision.py": "02d104b308775ae68df06f59984330b258ba1a83f87266a57a554d0ca26a8b34",
+    "src/strategies/ilp_preserving_repair.py": "fae874a227961c997facc73505f7466b53930b33f697cc0ca66a4fbe1c734b95"
+  }
+}

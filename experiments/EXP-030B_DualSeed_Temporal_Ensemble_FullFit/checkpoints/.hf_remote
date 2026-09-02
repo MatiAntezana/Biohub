@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP-030B_DualSeed_Temporal_Ensemble_FullFit",
+  "hf_repo": "Matycaba2016/biohub-checkpoints",
+  "hf_uri": "hf://Matycaba2016/biohub-checkpoints/experiments/EXP-030B_DualSeed_Temporal_Ensemble_FullFit/",
+  "synced_at": "2026-09-01T03:55:02.155183+00:00",
+  "total_bytes": 50157166,
+  "files": [
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-030B_20260829T051035Z_55573139/primary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-030B_DualSeed_Temporal_Ensemble_FullFit/checkpoints/EXP-030B_20260829T051035Z_55573139/primary/training_checkpoint.pth",
+      "size_bytes": 25078551
+    },
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-030B_20260829T051035Z_55573139/secondary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-030B_DualSeed_Temporal_Ensemble_FullFit/checkpoints/EXP-030B_20260829T051035Z_55573139/secondary/training_checkpoint.pth",
+      "size_bytes": 25078615
+    }
+  ]
+}

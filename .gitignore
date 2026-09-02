@@ -1,0 +1,49 @@
+# Python & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+
+# Virtualenvs & conda
+.venv/
+env/
+venv/
+ENV/
+
+# States & Locks
+.state/*.lock
+.state/kaggle-monitor.json
+experiments/registry.lock
+experiments/EXP-*/logs/*.log
+*.log
+
+# Data cruda y datasets de competencia (82 GB)
+data/
+data/**
+*.zarr/
+*.zarr/**
+*.tif
+*.tiff
+
+# Checkpoints y pesos pesados (almacenados en Hugging Face Hub)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+*.tar.gz
+*.zip
+*.bin
+
+# Carpetas de checkpoints pesados de experimentos
+experiments/**/checkpoints/*.pt
+experiments/**/checkpoints/*.pth
+experiments/**/checkpoints/*.ckpt
+champion_weights/*.pt
+champion_weights/*.pth
+champion_weights/wheels/*.whl
+
+# Hugging Face cache
+.cache/
+tmp/

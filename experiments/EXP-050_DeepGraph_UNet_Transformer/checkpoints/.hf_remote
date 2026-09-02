@@ -1,0 +1,33 @@
+{
+  "experiment_id": "EXP-050_DeepGraph_UNet_Transformer",
+  "hf_repo": "Matycaba2016/biohub-checkpoints",
+  "hf_uri": "hf://Matycaba2016/biohub-checkpoints/experiments/EXP-050_DeepGraph_UNet_Transformer/",
+  "synced_at": "2026-09-01T03:57:12.677769+00:00",
+  "total_bytes": 100314332,
+  "files": [
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-050_20260830T172239Z_40702514/primary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-050_DeepGraph_UNet_Transformer/checkpoints/EXP-050_20260830T172239Z_40702514/primary/training_checkpoint.pth",
+      "size_bytes": 25078551
+    },
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-050_20260830T172239Z_40702514/secondary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-050_DeepGraph_UNet_Transformer/checkpoints/EXP-050_20260830T172239Z_40702514/secondary/training_checkpoint.pth",
+      "size_bytes": 25078615
+    },
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-050_20260830T172441Z_40702514/primary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-050_DeepGraph_UNet_Transformer/checkpoints/EXP-050_20260830T172441Z_40702514/primary/training_checkpoint.pth",
+      "size_bytes": 25078551
+    },
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-050_20260830T172441Z_40702514/secondary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-050_DeepGraph_UNet_Transformer/checkpoints/EXP-050_20260830T172441Z_40702514/secondary/training_checkpoint.pth",
+      "size_bytes": 25078615
+    }
+  ]
+}

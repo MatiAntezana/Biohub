@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "experiment_id": "EXP-030",
+  "name": "DualSeed Temporal Ensemble",
+  "entrypoint": "train.py",
+  "arguments": ["--epochs", "40", "--batch-size", "2", "--num-workers", "4", "--max-iters", "600"],
+  "allowed_nodes": ["A1552", "A1556", "A1557", "A1560"],
+  "default_node": "A1556",
+  "execution_policy": {
+    "node_selection": "max_free_vram",
+    "min_free_vram_mib": 18000,
+    "auto_launch": false,
+    "max_parallel_runs": 1
+  },
+  "priority": 30,
+  "dependencies": [],
+  "data_policy": {
+    "mode": "embryo-disjoint",
+    "validation": "leave-one-embryo-prefix-out",
+    "full_fit": false
+  },
+  "artifact_contract": {
+    "terminal_receipt": "artifacts/{run_id}/TRAINING_COMPLETE.json",
+    "checkpoints": ["checkpoints/{run_id}/*/training_checkpoint.pth"],
+    "minimum_checkpoints": 2,
+    "maximum_checkpoints": 2
+  },
+  "documentation": {
+    "narrative": "Librería-Registros/Experimentos/EXP-030_DualSeed_Temporal_Ensemble.md",
+    "strategy": "Librería-Registros/Estrategias/Estrategia_Experimental_DualSeed_TTA_ILP.md"
+  },
+  "kaggle": {
+    "enabled": true,
+    "deployment_ready": true,
+    "training_allowed": false,
+    "test_only": true,
+    "accelerator": "NvidiaTeslaT4",
+    "competition": "biohub-cell-tracking-during-development",
+    "kernel_slug": "matiasantezana/biohub-exp-030-dualseed-ensemble",
+    "output_file": "submission.csv",
+    "auto_publish_after_train": true,
+    "auto_push": true,
+    "auto_submit": true,
+    "max_retries": 2,
+    "poll_seconds": 60,
+    "submission_columns": ["id", "dataset", "row_type", "node_id", "t", "z", "y", "x", "source_id", "target_id"]
+  }
+}

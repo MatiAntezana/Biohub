@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "local_execution": {
+    "conda_env": "AIEnv",
+    "auto_reexec": true
+  },
+  "nodes": {
+    "A1552": {
+      "host": "a1552",
+      "port": 2222,
+      "user": "alumno1",
+      "conda_env": "train-52",
+      "remote_root": "Documents/Biohub",
+      "status": "ONLINE",
+      "training_ready": true,
+      "last_verified": "2026-09-01"
+    },
+    "A1555": {
+      "host": "a1555",
+      "port": 2222,
+      "user": "alumno1",
+      "conda_env": "train-55",
+      "remote_root": "Documents/Biohub",
+      "status": "ONLINE",
+      "training_ready": true,
+      "last_verified": "2026-09-01"
+    },
+    "A1557": {
+      "host": "a1557",
+      "port": 2222,
+      "user": "alumno1",
+      "conda_env": "train-57",
+      "remote_root": "Documents/Biohub",
+      "status": "ONLINE",
+      "training_ready": true,
+      "last_verified": "2026-09-01"
+    },
+    "A1556": {
+      "host": "a1556",
+      "port": 2222,
+      "user": "alumno1",
+      "conda_env": "train-56",
+      "remote_root": "Documents/Biohub",
+      "status": "RESERVED",
+      "training_ready": false,
+      "last_verified": "2026-09-01"
+    },
+    "A1560": {
+      "host": "a1560",
+      "port": 2222,
+      "user": "alumno1",
+      "conda_env": "train-60",
+      "remote_root": "Documents/Biohub",
+      "status": "ONLINE",
+      "training_ready": true,
+      "last_verified": "2026-09-01"
+    },
+    "A1558": {
+      "host": "a1558",
+      "port": 2222,
+      "user": "alumno1",
+      "conda_env": "train-58",
+      "remote_root": "Documents/Biohub",
+      "status": "ONLINE",
+      "training_ready": true,
+      "last_verified": "2026-09-01"
+    },
+    "A1559": {
+      "host": "a1559",
+      "port": 2222,
+      "user": "alumno1",
+      "conda_env": "train-59",
+      "remote_root": "Documents/Biohub",
+      "status": "ONLINE",
+      "training_ready": true,
+      "last_verified": "2026-09-01"
+    },
+    "A1563": {
+      "host": "a1563",
+      "port": 2222,
+      "user": "alumno1",
+      "conda_env": "train-63",
+      "remote_root": "Documents/Biohub",
+      "status": "ONLINE",
+      "training_ready": true,
+      "last_verified": "2026-09-01"
+    },
+    "A1688": {
+      "host": "a1688",
+      "port": 2222,
+      "user": "alumno1",
+      "conda_env": "train-88",
+      "remote_root": "Documents/Biohub",
+      "status": "ONLINE",
+      "training_ready": true,
+      "last_verified": "2026-09-01"
+    }
+  }
+}

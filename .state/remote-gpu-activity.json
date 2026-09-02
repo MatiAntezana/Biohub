@@ -1,0 +1,136 @@
+{
+  "activities": [],
+  "nodes": {
+    "A1552": {
+      "activities": [],
+      "error": null,
+      "gpus": [
+        {
+          "free_mib": 23943,
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total_mib": 24564,
+          "used_mib": 132,
+          "utilization_pct": 0,
+          "uuid": "GPU-2a065aa7-d117-299d-5e5b-b687a7877930"
+        }
+      ],
+      "node": "A1552"
+    },
+    "A1555": {
+      "activities": [],
+      "error": null,
+      "gpus": [
+        {
+          "free_mib": 23965,
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total_mib": 24564,
+          "used_mib": 109,
+          "utilization_pct": 0,
+          "uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0"
+        }
+      ],
+      "node": "A1555"
+    },
+    "A1557": {
+      "activities": [],
+      "error": null,
+      "gpus": [
+        {
+          "free_mib": 23963,
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total_mib": 24564,
+          "used_mib": 110,
+          "utilization_pct": 0,
+          "uuid": "GPU-3f11eb77-4f07-f9c6-3c2c-2aba7ca0a5be"
+        }
+      ],
+      "node": "A1557"
+    },
+    "A1558": {
+      "activities": [],
+      "error": null,
+      "gpus": [
+        {
+          "free_mib": 23965,
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total_mib": 24564,
+          "used_mib": 109,
+          "utilization_pct": 0,
+          "uuid": "GPU-eebea0bd-8be0-dcdb-b6b9-c6b38c09c4c3"
+        }
+      ],
+      "node": "A1558"
+    },
+    "A1559": {
+      "activities": [],
+      "error": null,
+      "gpus": [
+        {
+          "free_mib": 23945,
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total_mib": 24564,
+          "used_mib": 129,
+          "utilization_pct": 0,
+          "uuid": "GPU-0d5d61a5-bf65-f485-bb62-e32528dcc2bf"
+        }
+      ],
+      "node": "A1559"
+    },
+    "A1560": {
+      "activities": [],
+      "error": null,
+      "gpus": [
+        {
+          "free_mib": 23980,
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total_mib": 24564,
+          "used_mib": 95,
+          "utilization_pct": 0,
+          "uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28"
+        }
+      ],
+      "node": "A1560"
+    },
+    "A1563": {
+      "activities": [],
+      "error": null,
+      "gpus": [
+        {
+          "free_mib": 23933,
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total_mib": 24564,
+          "used_mib": 140,
+          "utilization_pct": 0,
+          "uuid": "GPU-9986e53d-58fa-ca01-a8be-bcd81bcc9e1b"
+        }
+      ],
+      "node": "A1563"
+    },
+    "A1688": {
+      "activities": [],
+      "error": null,
+      "gpus": [
+        {
+          "free_mib": 23945,
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4090",
+          "total_mib": 24564,
+          "used_mib": 129,
+          "utilization_pct": 0,
+          "uuid": "GPU-e3bb4a3d-3bec-e447-945d-509ecd248f7c"
+        }
+      ],
+      "node": "A1688"
+    }
+  },
+  "scanned_at": "2026-09-02T01:33:43.264717Z",
+  "schema_version": 1,
+  "transitions": []
+}

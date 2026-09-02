@@ -1,0 +1,29 @@
+{
+  "protocol_id": "biohub-legacy-seed42-holdout-common12-v1",
+  "description": "Twelve labeled datasets from the frozen seed-42 90/10 holdout that are available on A1558. None belonged to the 179-volume training partition of EXP-017 or EXP-019.",
+  "parent_split": {
+    "seed": 42,
+    "total_datasets": 199,
+    "train_count": 179,
+    "holdout_count": 20
+  },
+  "samples": [
+    "44b6_0b24845f",
+    "6bba_971fa5e0",
+    "6bba_9e23430b",
+    "6bba_3fda6b25",
+    "6bba_3a1849c2",
+    "6bba_5c824876",
+    "6bba_20852818",
+    "6bba_6321a359",
+    "6bba_fe670320",
+    "44b6_551a5dba",
+    "6bba_ef7b4f7e",
+    "6bba_48816121"
+  ],
+  "limitations": [
+    "Pilot subset: 12 of the original 20 holdout datasets.",
+    "The historical split is volume-random rather than embryo-group-disjoint.",
+    "Historical thresholds were selected using the same holdout family."
+  ]
+}

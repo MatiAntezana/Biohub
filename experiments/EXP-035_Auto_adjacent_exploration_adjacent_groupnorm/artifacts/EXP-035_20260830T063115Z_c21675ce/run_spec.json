@@ -1,0 +1,42 @@
+{
+  "arguments": [],
+  "artifact_contract": {
+    "checkpoints": [
+      "checkpoints/{run_id}/training_checkpoint.pth"
+    ],
+    "maximum_checkpoints": 1,
+    "minimum_checkpoints": 1,
+    "terminal_receipt": "artifacts/{run_id}/TRAINING_COMPLETE.json"
+  },
+  "conda_env": "train-52",
+  "config_sha256": "c21675ceb339195c8932a1bd934336ae6bdee3ed61ff64bf7f09d23481578ea4",
+  "data_policy": {
+    "full_fit": true,
+    "mode": "full-fit",
+    "train_fraction": 1.0,
+    "validation": "N/A — full-fit sin validación"
+  },
+  "entrypoint": "train.py",
+  "experiment_directory": "experiments/EXP-035_Auto_adjacent_exploration_adjacent_groupnorm",
+  "experiment_id": "EXP-035",
+  "gpu_free_mib_at_selection": 23980,
+  "gpu_index": 0,
+  "heartbeat_seconds": 30,
+  "node": "A1552",
+  "prepared_at": "2026-08-30T06:31:19.393379Z",
+  "remote_root": "~/Documents/Biohub",
+  "run_directory": "experiments/EXP-035_Auto_adjacent_exploration_adjacent_groupnorm/artifacts/EXP-035_20260830T063115Z_c21675ce",
+  "run_id": "EXP-035_20260830T063115Z_c21675ce",
+  "schema_version": 1,
+  "snapshot_sha256": {
+    "experiments/EXP-035_Auto_adjacent_exploration_adjacent_groupnorm/experiment.json": "8df5867c36038594e27b6d29193f9a102a4cad38217086f8ec4d483458beec16",
+    "experiments/EXP-035_Auto_adjacent_exploration_adjacent_groupnorm/train.py": "a0d3cbf486455bf94f663ca14dae2aa9fbdd3e8ee98550762b68e45b5308b65a",
+    "infra/experiment_worker.py": "a41e679a7e3516846bc9c4000753370f106fdf9dc5267f90861ad8b3f7580777",
+    "infra/experimentlib.py": "f571371ebff26150bd954d3865412caf6e1116633a68845f2b49746f009c5fd2",
+    "official_starter_kit/scripts/train_unet_transformer.py": "b0bb3c16dc9b0fe34696877e3c49b503e1e247c903e639352e1f0824da3f298f",
+    "src/dataset.py": "ed2261ea917b909bc416091fbe28e558dbf2de4a50cd11d993ea331fab114925",
+    "src/models/unet3d_groupnorm.py": "ea74c878704c019dbdcc190d7c157ef83070f2b272bc731d3ddc11290aa09741",
+    "src/strategies/autonomous_detection_training.py": "c54d5cddfa2f9c782597f24f3fc7d3b5e9e65ee0b7807d9952dda0a5b2a4a346",
+    "src/strategies/experiment_runtime.py": "2ce5b411efc3ffda62865d9d463ed6383589ad5957cf9ddca14c0c93c42a3539"
+  }
+}

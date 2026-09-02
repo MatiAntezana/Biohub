@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "enabled_in_automatic_mode": true,
+  "bootstrap_sequence": ["EXP-031", "EXP-030B"],
+  "bootstrap_gate": "remote_training_completed",
+  "primary_objective": "kaggle_public_score",
+  "parent_selection": {
+    "top_k": 3,
+    "excluded_experiments": ["EXP-000"],
+    "require_public_score": true,
+    "rank_temperature": 1.0
+  },
+  "allocation": {
+    "exploitation": 0.60,
+    "adjacent_exploration": 0.25,
+    "novel_exploration": 0.15,
+    "planning_batch_size": 5,
+    "minimum_exploration_per_batch": 2,
+    "minimum_novel_per_batch": 1
+  },
+  "budgets": {
+    "target_active_variants": 5,
+    "max_concurrent_remote_runs": 2,
+    "max_unscored_variants": 5,
+    "max_failed_recipe_attempts": 2
+  },
+  "diversity": {
+    "max_consecutive_same_parent": 2,
+    "max_consecutive_same_family": 2,
+    "forbid_duplicate_config_hash": true,
+    "prefer_distinct_recipes_within_batch": true
+  },
+  "promotion": {
+    "local_evaluator_is_secondary": true,
+    "kaggle_public_score_is_authoritative": true,
+    "minimum_public_improvement": 0.002,
+    "retain_exploration_archive": true
+  },
+  "stopping": {
+    "plateau_scored_variants": 6,
+    "plateau_minimum_improvement": 0.005,
+    "pause_on_contract_failure": true,
+    "pause_on_repeated_oom": 2
+  },
+  "materialization": {
+    "auto_materialize": true,
+    "auto_queue": true,
+    "auto_launch": true,
+    "data_policy": "full-fit",
+    "validation": "N/A — full-fit sin validación",
+    "allowed_nodes": ["A1552", "A1556", "A1557", "A1560"],
+    "default_node": "A1556",
+    "min_free_vram_mib": 18000
+  }
+}

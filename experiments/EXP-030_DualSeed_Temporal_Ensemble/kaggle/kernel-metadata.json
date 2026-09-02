@@ -1,0 +1,19 @@
+{
+  "id": "matiasantezana/biohub-exp-030-dualseed-ensemble",
+  "title": "Biohub EXP-030 DualSeed Ensemble",
+  "code_file": "submission_notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "false",
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "matiasantezana/biohub-champion-weights"
+  ],
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "kernel_sources": []
+}

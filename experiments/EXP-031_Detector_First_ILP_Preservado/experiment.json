@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "experiment_id": "EXP-031",
+  "name": "Detector First ILP Preservado FullFit",
+  "entrypoint": "train.py",
+  "arguments": ["--epochs", "65", "--batch-size", "2", "--num-workers", "4", "--max-iters", "850", "--hard-negative-ratio", "48"],
+  "allowed_nodes": ["A1552", "A1556", "A1557", "A1560"],
+  "default_node": "A1556",
+  "execution_policy": {
+    "node_selection": "max_free_vram",
+    "min_free_vram_mib": 18000,
+    "auto_launch": true,
+    "max_parallel_runs": 1
+  },
+  "priority": 10,
+  "dependencies": [],
+  "data_policy": {
+    "mode": "full-fit",
+    "validation": "N/A — full-fit sin validación",
+    "full_fit": true,
+    "train_fraction": 1.0
+  },
+  "artifact_contract": {
+    "terminal_receipt": "artifacts/{run_id}/TRAINING_COMPLETE.json",
+    "checkpoints": ["checkpoints/{run_id}/model/training_checkpoint.pth"],
+    "minimum_checkpoints": 1,
+    "maximum_checkpoints": 1
+  },
+  "documentation": {
+    "narrative": "Librería-Registros/Experimentos/EXP-031_Detector_First_ILP_Preservado.md",
+    "strategy": "Librería-Registros/Estrategias/Estrategia_Experimental_Detector_First_ILP_Preservado.md"
+  },
+  "kaggle": {
+    "enabled": true,
+    "deployment_ready": false,
+    "training_allowed": false,
+    "test_only": true,
+    "accelerator": "NvidiaTeslaT4",
+    "competition": "biohub-cell-tracking-during-development",
+    "output_file": "submission.csv",
+    "auto_publish_after_train": true,
+    "auto_push": true,
+    "auto_submit": true,
+    "max_retries": 2,
+    "poll_seconds": 60,
+    "submission_columns": ["id", "dataset", "row_type", "node_id", "t", "z", "y", "x", "source_id", "target_id"]
+  }
+}

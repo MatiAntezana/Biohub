@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "biohub://schemas/queue.schema.json",
+  "type": "object",
+  "required": ["schema_version", "items"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["experiment_id", "status", "dependencies", "priority", "requested_node", "auto_launch"],
+        "properties": {
+          "experiment_id": {"type": "string"},
+          "status": {"enum": ["PLANNED", "QUEUED", "READY", "RUNNING", "DOC_PENDING", "CLOSED", "FAILED", "ORPHANED"]},
+          "dependencies": {"type": "array", "items": {"type": "string"}},
+          "priority": {"type": "integer"},
+          "requested_node": {"type": "string"},
+          "auto_launch": {"type": "boolean"}
+        }
+      }
+    }
+  }
+}

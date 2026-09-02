@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP-052_DeepGraph_WideCapacity",
+  "hf_repo": "Matycaba2016/biohub-checkpoints",
+  "hf_uri": "hf://Matycaba2016/biohub-checkpoints/experiments/EXP-052_DeepGraph_WideCapacity/",
+  "synced_at": "2026-09-01T12:43:09.060851+00:00",
+  "total_bytes": 95041518,
+  "files": [
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-052_20260901T050028Z_33370396/primary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-052_DeepGraph_WideCapacity/checkpoints/EXP-052_20260901T050028Z_33370396/primary/training_checkpoint.pth",
+      "size_bytes": 47520727
+    },
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-052_20260901T050028Z_33370396/secondary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-052_DeepGraph_WideCapacity/checkpoints/EXP-052_20260901T050028Z_33370396/secondary/training_checkpoint.pth",
+      "size_bytes": 47520791
+    }
+  ]
+}

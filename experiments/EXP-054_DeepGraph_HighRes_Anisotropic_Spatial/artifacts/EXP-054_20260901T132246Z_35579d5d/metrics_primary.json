@@ -1,0 +1,79 @@
+[
+  {
+    "epoch": 0,
+    "edge_loss": 0.009420101887236038,
+    "detection_loss": 0.047126281014333166,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 775.2812154359999
+  },
+  {
+    "epoch": 1,
+    "edge_loss": 0.0057212855288138,
+    "detection_loss": 0.03362333035593232,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 777.3064487909869
+  },
+  {
+    "epoch": 2,
+    "edge_loss": 0.0022967290870534876,
+    "detection_loss": 0.0268723827265203,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 776.7123628720001
+  },
+  {
+    "epoch": 3,
+    "edge_loss": 0.0009716956668174438,
+    "detection_loss": 0.02726915388678511,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 774.1374399249908
+  },
+  {
+    "epoch": 4,
+    "edge_loss": 0.0007267390253934233,
+    "detection_loss": 0.02952738592152794,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 776.6172765299998
+  },
+  {
+    "epoch": 5,
+    "edge_loss": 0.000664437220878123,
+    "detection_loss": 0.027940058739235003,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 774.130731199999
+  },
+  {
+    "epoch": 6,
+    "edge_loss": 0.00053364932912397,
+    "detection_loss": 0.025495448622231683,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 780.048928336997
+  }
+]

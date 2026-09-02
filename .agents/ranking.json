@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "higher_is_better": true,
+  "metric_precedence": [
+    "public_score",
+    "global_score",
+    "global_quality_score",
+    "quality_score",
+    "validation_score"
+  ],
+  "forbidden_metrics": ["train_loss", "loss", "training_loss"],
+  "promotion_limit": 3
+}
