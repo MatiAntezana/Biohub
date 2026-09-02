@@ -1,0 +1,42 @@
+{
+  "artifacts": {},
+  "child_pid": 77094,
+  "command": [
+    "/home/alumno1/miniconda3/envs/train-55/bin/python",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/train.py",
+    "--epochs",
+    "50",
+    "--batch-size",
+    "2",
+    "--num-workers",
+    "2",
+    "--max-iters",
+    "750",
+    "--resume-primary",
+    "checkpoints/EXP-053_20260902T022548Z_c583eea2/primary/training_checkpoint.pth",
+    "--project-root",
+    "/home/alumno1/Documents/Biohub",
+    "--run-dir",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/artifacts/EXP-053_20260902T045731Z_685bd5b5",
+    "--compact"
+  ],
+  "config_sha256": "685bd5b5c1a0bab6a657c39b61dfffa316769484af3a06e2bd500a9d4689ce06",
+  "environment": {
+    "conda_env": "train-55",
+    "executable": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+    "gpu": [
+      "NVIDIA GeForce RTX 4090, 24564 MiB"
+    ],
+    "hostname": "A1555-UBU",
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15"
+  },
+  "experiment_id": "EXP-053",
+  "metrics": {},
+  "run_id": "EXP-053_20260902T045731Z_685bd5b5",
+  "schema_version": 1,
+  "started_at": "2026-09-02T04:57:43.426877Z",
+  "status": "RUNNING",
+  "validation": "N/A — full-fit sin validación",
+  "worker_pid": 77090
+}

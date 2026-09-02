@@ -1,0 +1,86 @@
+[
+  {
+    "epoch": 0,
+    "edge_loss": 0.007584119902768483,
+    "detection_loss": 0.04326794153203567,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 1401.0858670130037,
+    "learning_rate": 0.0009990232305719944
+  },
+  {
+    "epoch": 1,
+    "edge_loss": 0.0024393104297244766,
+    "detection_loss": 0.03552398561437925,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 1401.0757889699962,
+    "learning_rate": 0.0009960967771506664
+  },
+  {
+    "epoch": 2,
+    "edge_loss": 0.000851776108397947,
+    "detection_loss": 0.03319925796985626,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 1441.8723097980037,
+    "learning_rate": 0.0009912321891107007
+  },
+  {
+    "epoch": 3,
+    "edge_loss": 0.0006955793436839788,
+    "detection_loss": 0.034055137800673645,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 1457.6052638469992,
+    "learning_rate": 0.0009844486647586721
+  },
+  {
+    "epoch": 4,
+    "edge_loss": 0.0005636110269260826,
+    "detection_loss": 0.03310855698212981,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 1538.1406672009907,
+    "learning_rate": 0.0009757729755661009
+  },
+  {
+    "epoch": 5,
+    "edge_loss": 0.0004918381252233909,
+    "detection_loss": 0.032718824319541456,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 1454.7770094139996,
+    "learning_rate": 0.0009652393605146842
+  },
+  {
+    "epoch": 6,
+    "edge_loss": 0.0004822261290585933,
+    "detection_loss": 0.03163583871349692,
+    "validation_loss": null,
+    "validation_accuracy": null,
+    "validation_recall": null,
+    "selection_score": null,
+    "checkpoint_selection": "last_epoch",
+    "train_seconds": 1575.0519157100061,
+    "learning_rate": 0.0009528893909706795
+  }
+]

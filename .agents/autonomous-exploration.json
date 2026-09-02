@@ -48,8 +48,8 @@
     "auto_launch": true,
     "data_policy": "full-fit",
     "validation": "N/A — full-fit sin validación",
-    "allowed_nodes": ["A1552", "A1556", "A1557", "A1560"],
-    "default_node": "A1556",
+    "allowed_nodes": ["A1552", "A1553", "A1555", "A1556", "A1557", "A1560"],
+    "default_node": "A1560",
     "min_free_vram_mib": 18000
   }
 }

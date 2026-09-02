@@ -1,0 +1,42 @@
+{
+  "artifacts": {},
+  "child_pid": 44517,
+  "command": [
+    "/home/alumno1/miniconda3/envs/train-57/bin/python",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/train.py",
+    "--epochs",
+    "50",
+    "--batch-size",
+    "2",
+    "--num-workers",
+    "2",
+    "--max-iters",
+    "750",
+    "--resume-primary",
+    "checkpoints/EXP-054_20260901T132246Z_35579d5d/primary/training_checkpoint.pth",
+    "--project-root",
+    "/home/alumno1/Documents/Biohub",
+    "--run-dir",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/artifacts/EXP-054_20260902T022725Z_ae92ce36",
+    "--compact"
+  ],
+  "config_sha256": "ae92ce363b24cd19518a708c3914dbaaf0f09a258baf95206b6c9d20e42519c7",
+  "environment": {
+    "conda_env": "train-57",
+    "executable": "/home/alumno1/miniconda3/envs/train-57/bin/python",
+    "gpu": [
+      "NVIDIA GeForce RTX 4090, 24564 MiB"
+    ],
+    "hostname": "A1557-UBU",
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15"
+  },
+  "experiment_id": "EXP-054",
+  "metrics": {},
+  "run_id": "EXP-054_20260902T022725Z_ae92ce36",
+  "schema_version": 1,
+  "started_at": "2026-09-02T02:27:52.787554Z",
+  "status": "RUNNING",
+  "validation": "N/A — full-fit sin validación",
+  "worker_pid": 44513
+}

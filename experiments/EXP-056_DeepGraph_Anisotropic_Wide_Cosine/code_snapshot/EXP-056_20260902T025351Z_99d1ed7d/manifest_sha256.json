@@ -1,0 +1,8 @@
+{
+  "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/experiment.json": "68f9c4dbbea272850aa6a0a9c7a1d90eb7f7705d834f833633e90cb3c47a80c5",
+  "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/train.py": "86788e82f24904aa6f15c2a02e7ae4dd526d584b8e294b494a366fd8df5de959",
+  "infra/experiment_worker.py": "a41e679a7e3516846bc9c4000753370f106fdf9dc5267f90861ad8b3f7580777",
+  "infra/experimentlib.py": "f571371ebff26150bd954d3865412caf6e1116633a68845f2b49746f009c5fd2",
+  "official_starter_kit/scripts/train_unet_transformer.py": "14f713fc12e5746ec4dc7e64dcc9dec75fc974ced7960ec6a9d8c64c2930dcdc",
+  "src/strategies/experiment_runtime.py": "2ce5b411efc3ffda62865d9d463ed6383589ad5957cf9ddca14c0c93c42a3539"
+}

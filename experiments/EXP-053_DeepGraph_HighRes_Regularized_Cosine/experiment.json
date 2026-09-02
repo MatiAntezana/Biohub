@@ -9,24 +9,25 @@
     "--batch-size",
     "2",
     "--num-workers",
-    "4",
+    "2",
     "--max-iters",
-    "750"
+    "750",
+    "--resume-primary",
+    "checkpoints/EXP-053_20260902T022548Z_c583eea2/primary/training_checkpoint.pth"
   ],
   "allowed_nodes": [
     "A1552",
-    "A1556",
-    "A1557",
-    "A1560"
+    "A1555",
+    "A1557"
   ],
-  "default_node": "A1552",
+  "default_node": "A1555",
   "execution_policy": {
     "node_selection": "max_free_vram",
     "min_free_vram_mib": 18000,
     "auto_launch": true,
     "max_parallel_runs": 1
   },
-  "priority": 10,
+  "priority": 5,
   "dependencies": [],
   "data_policy": {
     "mode": "full-fit",

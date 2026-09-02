@@ -330,7 +330,12 @@ def command_run(args: argparse.Namespace) -> None:
     manifest_path, manifest = load_manifest(args.experiment_id, root)
     nodes = load_nodes(root)
     execution_policy = manifest.get("execution_policy", {})
-    requested_node = args.node or execution_policy.get("node_selection") or "auto"
+    raw_node = (args.node or execution_policy.get("node_selection") or "auto").strip()
+    node_lookup = {k.lower(): k for k in nodes}
+    if raw_node.lower() in node_lookup:
+        requested_node = node_lookup[raw_node.lower()]
+    else:
+        requested_node = raw_node
     probes: dict[str, Any] = {}
     if requested_node == "auto" or requested_node == "max_free_vram":
         selected, probes = select_gpu(

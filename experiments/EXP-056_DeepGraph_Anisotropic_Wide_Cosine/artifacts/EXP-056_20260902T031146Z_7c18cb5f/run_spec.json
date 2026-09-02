@@ -1,0 +1,48 @@
+{
+  "arguments": [
+    "--epochs",
+    "50",
+    "--batch-size",
+    "1",
+    "--num-workers",
+    "2",
+    "--max-iters",
+    "750"
+  ],
+  "artifact_contract": {
+    "checkpoints": [
+      "checkpoints/{run_id}/*/training_checkpoint.pth"
+    ],
+    "maximum_checkpoints": 2,
+    "minimum_checkpoints": 2,
+    "terminal_receipt": "artifacts/{run_id}/TRAINING_COMPLETE.json"
+  },
+  "conda_env": "train-56",
+  "config_sha256": "7c18cb5f4baf43613a144fc15aaacba38410e3cbc70066c53668f502f2eb2dd9",
+  "data_policy": {
+    "full_fit": true,
+    "mode": "full-fit",
+    "train_fraction": 1.0,
+    "validation": "N/A — full-fit sin validación"
+  },
+  "entrypoint": "train.py",
+  "experiment_directory": "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine",
+  "experiment_id": "EXP-056",
+  "gpu_free_mib_at_selection": 23957,
+  "gpu_index": 0,
+  "heartbeat_seconds": 30,
+  "node": "A1556",
+  "prepared_at": "2026-09-02T03:11:48.970235Z",
+  "remote_root": "~/Documents/Biohub",
+  "run_directory": "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/artifacts/EXP-056_20260902T031146Z_7c18cb5f",
+  "run_id": "EXP-056_20260902T031146Z_7c18cb5f",
+  "schema_version": 1,
+  "snapshot_sha256": {
+    "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/experiment.json": "fadb72bc1c663e97eec926261866aa0d92d166745cd02455a6c90b60ce6d2026",
+    "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/train.py": "7c66f443a6da1d302f2b4728bc4d9cb1ab1775400b361ce02baf4e6116146843",
+    "infra/experiment_worker.py": "a41e679a7e3516846bc9c4000753370f106fdf9dc5267f90861ad8b3f7580777",
+    "infra/experimentlib.py": "f571371ebff26150bd954d3865412caf6e1116633a68845f2b49746f009c5fd2",
+    "official_starter_kit/scripts/train_unet_transformer.py": "5392a4e49e0d118c79e384f1193e749f5c2dd2d70dbe09f3399b3425b6ab6556",
+    "src/strategies/experiment_runtime.py": "2ce5b411efc3ffda62865d9d463ed6383589ad5957cf9ddca14c0c93c42a3539"
+  }
+}

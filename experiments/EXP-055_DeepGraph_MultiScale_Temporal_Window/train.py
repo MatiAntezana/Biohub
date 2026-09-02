@@ -1,267 +1,226 @@
+#!/usr/bin/env python3
+"""EXP-055: MultiScale Temporal Window (T=5, d_model=192, nhead=6, downsample=(1,2,2)).
+
+Both TemporalUNet3D + Transformer seeds train on every paired Biohub training
+dataset. There is deliberately no validation holdout and therefore no local
+validation score for this run. Execute only on a remote CUDA machine.
+"""
+
+from __future__ import annotations
+
 import argparse
-import copy
 import json
-import logging
-import os
-import shutil
 import sys
-import time
+import traceback
+from datetime import datetime, timezone
 from pathlib import Path
 
-import numpy as np
-import torch
-import torch.nn as nn
-from torch.cuda.amp import GradScaler, autocast
-
-# Setup paths
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-OFFICIAL_KIT = PROJECT_ROOT / "official_starter_kit"
-if str(OFFICIAL_KIT) not in sys.path:
-    sys.path.insert(0, str(OFFICIAL_KIT))
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+if sys.platform == "darwin":
+    sys.path.insert(0, str(PROJECT_ROOT / "infra"))
+    from aienv import ensure_aienv
+    ensure_aienv()
 
-from scripts.dataspec import load_dataspec, get_dataset_names
-from scripts.train_unet_transformer import (
-    train,
-    create_model,
-    _make_train_dataset,
-    _make_train_dataloader,
-    _train_epoch,
-    compute_edge_loss,
-    compute_detection_loss,
-    _build_split_record,
-    _resolve_split_path,
-    _write_metrics_history
+from src.strategies.experiment_runtime import (
+    require_remote_cuda,
+    seed_everything,
+    sha256_file,
+    write_full_fit_split,
+    write_manifest,
 )
-from biohub_tracking.models import TemporalUNet3D, SimpleNodeTransformer
+
 
 EXPERIMENT_ID = "EXP-055"
 PARENT_EXPERIMENT_ID = "EXP-051"
-SEEDS = [3407, 9479]  # Dual-seed ensemble
+SEEDS = (3407, 9479)
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[logging.StreamHandler(sys.stdout)]
-)
-logger = logging.getLogger(EXPERIMENT_ID)
 
-def train_fullfit_seed_with_resume(seed, role, args, run_dir, ckpt_dir):
-    logger.info(f"=== Starting {EXPERIMENT_ID} ({role}, seed={seed}) with Resilient Checkpointing ===")
-    torch.manual_seed(seed)
-    np.random.seed(seed)
-    if torch.cuda.is_available():
-        torch.cuda.manual_seed_all(seed)
+def utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat()
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    method = f"exp055_fullfit_{role}_seed{seed}"
-    seed_ckpt_dir = ckpt_dir / role
-    seed_ckpt_dir.mkdir(parents=True, exist_ok=True)
-    
-    resume_ckpt_path = seed_ckpt_dir / "latest_checkpoint.pth"
-    final_ckpt_path = seed_ckpt_dir / "training_checkpoint.pth"
-    
-    if final_ckpt_path.exists():
-        logger.info(f"Final checkpoint already exists at {final_ckpt_path}! Skipping seed training.")
-        return
 
-    # Create Multi-Scale Temporal Graph Model
-    logger.info("Initializing Multi-Scale TemporalUNet3D (downsample=(1,2,2), window_size=5, d_model=192, nhead=6)")
-    unet = TemporalUNet3D(
-        in_channels=1,
-        out_channels=32,
-        layers=(32, 64, 128),
-        downsample=(1, 2, 2),
-        upsample=(1, 2, 2)
-    )
-    model = SimpleNodeTransformer(
-        unet=unet,
-        d_model=192,
-        nhead=6,
-        num_layers=3,
-        dim_feedforward=384,
-        dropout=0.1,
-        pool_kernel_um=5.0,
-        det_loss_weight=1.5
-    )
-    model = model.to(device)
-
-    dataspec_path = PROJECT_ROOT / "official_starter_kit" / "data" / "dataspec_all.yaml"
-    dataspec = load_dataspec(str(dataspec_path))
-    
-    split_record = _build_split_record(dataspec_path, method, train_fraction=1.0)
-    split_record_path = run_dir / "full_fit_split.json"
-    with open(split_record_path, "w") as f:
-        json.dump(split_record, f, indent=2)
-
-    train_dataset = _make_train_dataset(
-        dataspec=dataspec,
-        split_record=split_record,
-        window_size=5,
-        target_shape=(64, 256, 256),
-        patch_size=None,
-        aug_cfg={"flip_prob": 0.5, "rot_prob": 0.5, "gamma_prob": 0.3}
-    )
-    train_loader = _make_train_dataloader(
-        dataset=train_dataset,
-        batch_size=args.batch_size,
-        num_workers=args.num_workers
-    )
-
-    optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3, weight_decay=0.0001)
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=args.epochs, eta_min=1e-5)
-    scaler = GradScaler(enabled=torch.cuda.is_available())
-
-    start_epoch = 0
-    history = []
-    best_loss = float("inf")
-
-    if resume_ckpt_path.exists():
-        logger.info(f"Detected checkpoint {resume_ckpt_path}! Resuming training state...")
-        checkpoint = torch.load(resume_ckpt_path, map_location=device, weights_only=False)
-        model.load_state_dict(checkpoint["model_state_dict"])
-        if "optimizer_state_dict" in checkpoint:
-            optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
-        if "scaler_state_dict" in checkpoint and checkpoint["scaler_state_dict"]:
-            scaler.load_state_dict(checkpoint["scaler_state_dict"])
-        if "scheduler_state_dict" in checkpoint and checkpoint["scheduler_state_dict"]:
-            scheduler.load_state_dict(checkpoint["scheduler_state_dict"])
-        start_epoch = checkpoint.get("epoch", 0) + 1
-        history = checkpoint.get("history", [])
-        best_loss = checkpoint.get("best_loss", float("inf"))
-        logger.info(f"Successfully resumed at Epoch {start_epoch} (Best Loss: {best_loss:.6f})")
-
-    t0_train = time.time()
-    for epoch in range(start_epoch, args.epochs):
-        t0_epoch = time.time()
-        model.train()
-        epoch_edge_loss = 0.0
-        epoch_det_loss = 0.0
-        n_batches = 0
-
-        for batch_idx, batch in enumerate(train_loader):
-            if args.max_iters and batch_idx >= args.max_iters:
-                break
-            
-            imgs = batch["imgs"].to(device)  # (B, T, 1, Z, Y, X)
-            node_graphs = batch.get("node_graphs")
-
-            optimizer.zero_grad()
-            with autocast(enabled=torch.cuda.is_available()):
-                feats, det_logits = model(imgs)
-                det_loss = compute_detection_loss(det_logits, batch.get("heatmaps").to(device)) if "heatmaps" in batch else torch.tensor(0.0, device=device)
-                edge_loss = compute_edge_loss(model, feats, node_graphs, device=device)
-                loss = edge_loss + 1.5 * det_loss
-
-            scaler.scale(loss).backward()
-            scaler.unscale_(optimizer)
-            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-            scaler.step(optimizer)
-            scaler.update()
-
-            epoch_edge_loss += edge_loss.item()
-            epoch_det_loss += det_loss.item() if isinstance(det_loss, torch.Tensor) else det_loss
-            n_batches += 1
-
-        scheduler.step()
-        epoch_time = time.time() - t0_epoch
-        avg_edge_loss = epoch_edge_loss / max(1, n_batches)
-        avg_det_loss = epoch_det_loss / max(1, n_batches)
-        total_epoch_loss = avg_edge_loss + 1.5 * avg_det_loss
-
-        epoch_metric = {
-            "epoch": epoch,
-            "edge_loss": avg_edge_loss,
-            "detection_loss": avg_det_loss,
-            "total_loss": total_epoch_loss,
-            "lr": optimizer.param_groups[0]["lr"],
-            "train_seconds": epoch_time
-        }
-        history.append(epoch_metric)
-        logger.info(f"[{role} Seed {seed}] Epoch {epoch:2d}/{args.epochs} | Edge Loss: {avg_edge_loss:.6f} | Det Loss: {avg_det_loss:.6f} | Time: {epoch_time:.1f}s")
-
-        # Atomic Resilient Checkpoint Save
-        ckpt_payload = {
-            "epoch": epoch,
-            "model_state_dict": model.state_dict(),
-            "optimizer_state_dict": optimizer.state_dict(),
-            "scaler_state_dict": scaler.state_dict(),
-            "scheduler_state_dict": scheduler.state_dict(),
-            "history": history,
-            "best_loss": min(best_loss, total_epoch_loss),
-            "config": {
-                "experiment_id": EXPERIMENT_ID,
-                "seed": seed,
-                "role": role,
-                "downsample": [1, 2, 2],
-                "window_size": 5,
-                "d_model": 192,
-                "nhead": 6
-            }
-        }
-        tmp_ckpt = seed_ckpt_dir / "latest_checkpoint.pth.tmp"
-        torch.save(ckpt_payload, tmp_ckpt)
-        os.replace(tmp_ckpt, resume_ckpt_path)
-
-        # Write metrics history
-        _write_metrics_history(history, run_dir / f"metrics_{role}.json")
-
-        # Write live heartbeat
-        heartbeat = {
-            "experiment_id": EXPERIMENT_ID,
-            "role": role,
-            "seed": seed,
-            "epoch": epoch,
-            "total_epochs": args.epochs,
-            "latest_loss": total_epoch_loss,
-            "timestamp": time.time()
-        }
-        with open(run_dir / "HEARTBEAT.json", "w") as f:
-            json.dump(heartbeat, f, indent=2)
-
-    # Save final checkpoint
-    torch.save(ckpt_payload, final_ckpt_path)
-    logger.info(f"Saved final checkpoint to {final_ckpt_path}")
-    
-    # Save config
-    with open(seed_ckpt_dir / "config.json", "w") as f:
-        json.dump(ckpt_payload["config"], f, indent=2)
-
-def main():
-    parser = argparse.ArgumentParser(description=f"{EXPERIMENT_ID} Training Entrypoint")
+def parse_args() -> argparse.Namespace:
+    project_root = PROJECT_ROOT
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--project-root", type=Path, default=project_root)
+    parser.add_argument("--data-dir", type=Path, default=None)
+    parser.add_argument("--starter-kit", type=Path, default=None)
     parser.add_argument("--epochs", type=int, default=50)
     parser.add_argument("--batch-size", type=int, default=2)
-    parser.add_argument("--num-workers", type=int, default=4)
+    parser.add_argument("--num-workers", type=int, default=2)
     parser.add_argument("--max-iters", type=int, default=750)
-    parser.add_argument("--project-root", type=str, default=str(PROJECT_ROOT))
-    parser.add_argument("--run-dir", type=str, default=None)
+    parser.add_argument("--run-dir", type=Path, default=None)
+    parser.add_argument("--resume-primary", type=Path, default=None)
+    parser.add_argument("--resume-secondary", type=Path, default=None)
     parser.add_argument("--compact", action="store_true")
-    parser.add_argument("--resume", action="store_true")
-    args = parser.parse_args()
+    parser.add_argument("--dry-run", action="store_true")
+    return parser.parse_args()
 
-    run_dir = Path(args.run_dir) if args.run_dir else PROJECT_ROOT / "experiments" / "EXP-055_DeepGraph_MultiScale_Temporal_Window" / "artifacts" / f"EXP-055_local_{int(time.time())}"
-    run_dir.mkdir(parents=True, exist_ok=True)
-    ckpt_dir = run_dir.parent.parent / "checkpoints" / run_dir.name
-    ckpt_dir.mkdir(parents=True, exist_ok=True)
 
-    # Seed 1: Primary (3407)
-    train_fullfit_seed_with_resume(SEEDS[0], "primary", args, run_dir, ckpt_dir)
-
-    # Seed 2: Secondary (9479)
-    train_fullfit_seed_with_resume(SEEDS[1], "secondary", args, run_dir, ckpt_dir)
-
-    # Final Receipt
-    receipt = {
+def resolved_plan(args: argparse.Namespace) -> dict:
+    project_root = args.project_root.expanduser().resolve()
+    data_dir = (args.data_dir or project_root / "data" / "train").expanduser().resolve()
+    starter_kit = (args.starter_kit or project_root / "official_starter_kit").expanduser().resolve()
+    experiment_dir = Path(__file__).resolve().parent
+    artifact_dir = (args.run_dir or experiment_dir / "artifacts" / "dry-run").expanduser().resolve()
+    return {
         "experiment_id": EXPERIMENT_ID,
         "parent_experiment_id": PARENT_EXPERIMENT_ID,
-        "completed_at": time.time(),
-        "status": "SUCCEEDED",
-        "primary_checkpoint": str(ckpt_dir / "primary" / "training_checkpoint.pth"),
-        "secondary_checkpoint": str(ckpt_dir / "secondary" / "training_checkpoint.pth")
+        "project_root": str(project_root),
+        "data_dir": str(data_dir),
+        "starter_kit": str(starter_kit),
+        "artifact_dir": str(artifact_dir),
+        "experiment_dir": str(experiment_dir),
+        "run_id": artifact_dir.name,
+        "epochs_per_seed": args.epochs,
+        "batch_size": args.batch_size,
+        "num_workers": args.num_workers,
+        "max_iters_per_epoch": args.max_iters,
+        "seeds": list(SEEDS),
+        "split_policy": "full-fit: 100% train / 0% validation",
+        "validation": "none",
+        "checkpoint_selection": "last_epoch",
+        "window_size": 5,
+        "hidden_dim": 192,
+        "n_heads": 6,
+        "dropout": 0.1,
+        "downsample_zyx": [1, 2, 2],
+        "unet_layers": [32, 64, 128],
+        "unet_out_channels": 32,
+        "det_loss_weight": 1.5,
+        "det_negative_weight": 0.02,
+        "pool_kernel_um": 5.0,
+        "ensemble": {
+            "detection_secondary_weight": 0.475,
+            "edge_secondary_weight": 0.15,
+            "retention_minimum": 0.90,
+            "primary_margin_limit": 0.35,
+            "reverse_weight": 0.30,
+            "std_ratio_minimum": 0.5,
+            "std_ratio_maximum": 2.0,
+        },
     }
-    with open(run_dir / "TRAINING_COMPLETE.json", "w") as f:
-        json.dump(receipt, f, indent=2)
 
-    logger.info(f"=== {EXPERIMENT_ID} FULL TRAINING COMPLETE ===")
+
+def main() -> None:
+    args = parse_args()
+    plan = resolved_plan(args)
+    print(json.dumps(plan, sort_keys=True) if args.compact else json.dumps(plan, indent=2), flush=True)
+    if args.dry_run:
+        print(json.dumps({"experiment_id": EXPERIMENT_ID, "status": "DRY_RUN_OK"}), flush=True)
+        return
+    if args.run_dir is None:
+        raise ValueError("--run-dir es obligatorio fuera de --dry-run; usar experimentctl run")
+
+    require_remote_cuda()
+    data_dir = Path(plan["data_dir"])
+    starter_kit = Path(plan["starter_kit"])
+    artifact_dir = Path(plan["artifact_dir"])
+    experiment_dir = Path(plan["experiment_dir"])
+    try:
+        artifact_dir.relative_to(experiment_dir / "artifacts")
+    except ValueError as error:
+        raise ValueError("run-dir debe vivir dentro de artifacts/ del experimento") from error
+    scripts_dir = starter_kit / "scripts"
+    source_dir = starter_kit / "src"
+    if not scripts_dir.is_dir() or not source_dir.is_dir():
+        raise FileNotFoundError(f"Incomplete starter kit under {starter_kit}")
+
+    splits_path = artifact_dir / "full_fit_split.json"
+    full_fit_split = write_full_fit_split(data_dir, splits_path)[0]
+    plan["train_dataset_count"] = len(full_fit_split["train"])
+
+    sys.path.insert(0, str(source_dir))
+    sys.path.insert(0, str(scripts_dir))
+    from train_unet_transformer import train  # noqa: PLC0415
+
+    running_path = artifact_dir / "RUNNING.json"
+    complete_path = artifact_dir / "TRAINING_COMPLETE.json"
+    failed_path = artifact_dir / "FAILED.json"
+    receipt = {**plan, "started_at": utc_now(), "status": "RUNNING", "checkpoints": []}
+    write_manifest(running_path, receipt)
+
+    try:
+        for role, seed in zip(("primary", "secondary"), SEEDS, strict=True):
+            method = f"exp055_fullfit_{role}_seed{seed}"
+            checkpoint_dir = experiment_dir / "checkpoints" / plan["run_id"] / role
+            metrics_path = artifact_dir / f"metrics_{role}.json"
+            resume_from = args.resume_primary if role == "primary" else args.resume_secondary
+            if resume_from is not None and not resume_from.is_absolute():
+                candidate = (experiment_dir / resume_from).resolve()
+                if not candidate.is_file():
+                    candidate = (project_root / resume_from).resolve()
+                resume_from = candidate
+            seed_everything(seed)
+            print(f"\n=== {EXPERIMENT_ID} {role.upper()} | seed={seed} ===", flush=True)
+            train(
+                data_dir=data_dir,
+                fold=0,
+                splits_file=splits_path,
+                method=method,
+                n_epochs=args.epochs,
+                lr=1e-4,
+                batch_size=args.batch_size,
+                num_workers=args.num_workers,
+                unet_out_channels=32,
+                unet_layers=[32, 64, 128],
+                downsample=(1, 2, 2),
+                det_loss_weight=1.5,
+                det_neg_weight=0.02,
+                max_iters=args.max_iters,
+                seed=seed,
+                window_size=5,
+                hidden_dim=192,
+                n_heads=6,
+                dropout=0.1,
+                pool_kernel_um=5.0,
+                data_parallel=False,
+                full_fit=True,
+                output_dir=checkpoint_dir,
+                progress=not args.compact,
+                metrics_path=metrics_path,
+                checkpoint_bundle=True,
+                resume_from=resume_from,
+            )
+            checkpoint = checkpoint_dir / "training_checkpoint.pth"
+            config_path = checkpoint.parent / "config.json"
+            if not checkpoint.is_file() or not config_path.is_file():
+                raise FileNotFoundError(f"training finished without expected checkpoint: {checkpoint}")
+            receipt["checkpoints"].append(
+                {
+                    "role": role,
+                    "seed": seed,
+                    "method": method,
+                    "path": str(checkpoint),
+                    "sha256": sha256_file(checkpoint),
+                    "config": str(config_path),
+                }
+            )
+            write_manifest(running_path, receipt)
+
+        metric_summary = {}
+        for role in ("primary", "secondary"):
+            history = json.loads((artifact_dir / f"metrics_{role}.json").read_text(encoding="utf-8"))
+            metric_summary[role] = history[-1] if history else {}
+        receipt.update({"status": "COMPLETE", "completed_at": utc_now(), "metrics": metric_summary})
+        write_manifest(complete_path, receipt)
+        print(f"\n{EXPERIMENT_ID} TRAINING COMPLETE: {complete_path}", flush=True)
+        print("No local validation score exists for this full-fit run; evaluate via the downstream test/Kaggle gate.", flush=True)
+    except Exception as error:
+        write_manifest(
+            failed_path,
+            {
+                **receipt,
+                "status": "FAILED",
+                "failed_at": utc_now(),
+                "error": repr(error),
+                "traceback": traceback.format_exc(),
+            },
+        )
+        raise
+
 
 if __name__ == "__main__":
     main()

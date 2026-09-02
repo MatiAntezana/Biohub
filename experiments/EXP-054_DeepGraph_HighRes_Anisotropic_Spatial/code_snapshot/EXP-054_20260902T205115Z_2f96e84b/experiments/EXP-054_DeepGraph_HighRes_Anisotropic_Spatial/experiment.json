@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "experiment_id": "EXP-054",
+  "name": "DeepGraph HighRes Anisotropic Spatial (Z-aware spatial pooling)",
+  "entrypoint": "train.py",
+  "arguments": [
+    "--epochs",
+    "50",
+    "--batch-size",
+    "2",
+    "--num-workers",
+    "2",
+    "--max-iters",
+    "750",
+    "--resume-primary",
+    "checkpoints/EXP-054_20260902T022725Z_ae92ce36/primary/training_checkpoint.pth",
+    "--resume-secondary",
+    "checkpoints/EXP-054_20260902T022725Z_ae92ce36/secondary/training_checkpoint.pth"
+  ],
+  "allowed_nodes": [
+    "A1552",
+    "A1555",
+    "A1556",
+    "A1557"
+  ],
+  "default_node": "A1556",
+  "execution_policy": {
+    "node_selection": "max_free_vram",
+    "min_free_vram_mib": 18000,
+    "auto_launch": true,
+    "max_parallel_runs": 1
+  },
+  "priority": 6,
+  "dependencies": [],
+  "data_policy": {
+    "mode": "full-fit",
+    "validation": "N/A \u2014 full-fit sin validaci\u00f3n",
+    "full_fit": true,
+    "train_fraction": 1.0
+  },
+  "artifact_contract": {
+    "terminal_receipt": "artifacts/{run_id}/TRAINING_COMPLETE.json",
+    "checkpoints": [
+      "checkpoints/{run_id}/*/training_checkpoint.pth"
+    ],
+    "minimum_checkpoints": 2,
+    "maximum_checkpoints": 2
+  },
+  "documentation": {
+    "narrative": "Librer\u00eda-Registros/Experimentos/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial.md",
+    "strategy": "Librer\u00eda-Registros/Estrategias/Estrategia_DeepGraph_Temporal_Transformer.md"
+  },
+  "kaggle": {
+    "enabled": true,
+    "deployment_ready": true,
+    "kernel_slug": "matiasantezana/biohub-exp-054-deepgraph",
+    "training_allowed": false,
+    "test_only": true,
+    "accelerator": "NvidiaTeslaT4",
+    "competition": "biohub-cell-tracking-during-development",
+    "output_file": "submission.csv",
+    "auto_publish_after_train": true,
+    "auto_push": true,
+    "auto_submit": true,
+    "max_retries": 2,
+    "poll_seconds": 60,
+    "submission_columns": [
+      "id",
+      "dataset",
+      "row_type",
+      "node_id",
+      "t",
+      "z",
+      "y",
+      "x",
+      "source_id",
+      "target_id"
+    ]
+  }
+}

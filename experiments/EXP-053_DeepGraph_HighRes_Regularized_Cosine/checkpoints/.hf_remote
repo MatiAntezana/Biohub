@@ -1,0 +1,15 @@
+{
+  "experiment_id": "EXP-053_DeepGraph_HighRes_Regularized_Cosine",
+  "hf_repo": "Matycaba2016/biohub-checkpoints",
+  "hf_uri": "hf://Matycaba2016/biohub-checkpoints/experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/",
+  "synced_at": "2026-09-02T21:16:07.729985+00:00",
+  "total_bytes": 25079666,
+  "files": [
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-053_20260902T045731Z_685bd5b5/primary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/checkpoints/EXP-053_20260902T045731Z_685bd5b5/primary/training_checkpoint.pth",
+      "size_bytes": 25079666
+    }
+  ]
+}

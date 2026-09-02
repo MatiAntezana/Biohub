@@ -1,0 +1,8 @@
+{
+  "experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/experiment.json": "45c2d6bb15ab4f92070e80e80447f46b45188ac01653658188e294ba417f84e4",
+  "experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/train.py": "94ab734e6b8acc4e2512885d33db93483bfe2d8575d746cbda3515fe243bebe8",
+  "infra/experiment_worker.py": "a41e679a7e3516846bc9c4000753370f106fdf9dc5267f90861ad8b3f7580777",
+  "infra/experimentlib.py": "f571371ebff26150bd954d3865412caf6e1116633a68845f2b49746f009c5fd2",
+  "official_starter_kit/scripts/train_unet_transformer.py": "ffb026df696b957105693c5e39e99ea53280dea7c86fa8571cc70c114839f432",
+  "src/strategies/experiment_runtime.py": "2ce5b411efc3ffda62865d9d463ed6383589ad5957cf9ddca14c0c93c42a3539"
+}

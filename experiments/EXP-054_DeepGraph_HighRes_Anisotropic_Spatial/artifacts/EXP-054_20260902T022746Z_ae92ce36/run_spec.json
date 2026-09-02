@@ -1,0 +1,50 @@
+{
+  "arguments": [
+    "--epochs",
+    "50",
+    "--batch-size",
+    "2",
+    "--num-workers",
+    "2",
+    "--max-iters",
+    "750",
+    "--resume-primary",
+    "checkpoints/EXP-054_20260901T132246Z_35579d5d/primary/training_checkpoint.pth"
+  ],
+  "artifact_contract": {
+    "checkpoints": [
+      "checkpoints/{run_id}/*/training_checkpoint.pth"
+    ],
+    "maximum_checkpoints": 2,
+    "minimum_checkpoints": 2,
+    "terminal_receipt": "artifacts/{run_id}/TRAINING_COMPLETE.json"
+  },
+  "conda_env": "train-57",
+  "config_sha256": "ae92ce363b24cd19518a708c3914dbaaf0f09a258baf95206b6c9d20e42519c7",
+  "data_policy": {
+    "full_fit": true,
+    "mode": "full-fit",
+    "train_fraction": 1.0,
+    "validation": "N/A — full-fit sin validación"
+  },
+  "entrypoint": "train.py",
+  "experiment_directory": "experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial",
+  "experiment_id": "EXP-054",
+  "gpu_free_mib_at_selection": 23963,
+  "gpu_index": 0,
+  "heartbeat_seconds": 30,
+  "node": "A1557",
+  "prepared_at": "2026-09-02T02:27:49.943607Z",
+  "remote_root": "~/Documents/Biohub",
+  "run_directory": "experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/artifacts/EXP-054_20260902T022746Z_ae92ce36",
+  "run_id": "EXP-054_20260902T022746Z_ae92ce36",
+  "schema_version": 1,
+  "snapshot_sha256": {
+    "experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/experiment.json": "caf89ec303a68d6c691e11b7b89576e69c2dd1f27dbec0a3a09c7200b93905f4",
+    "experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/train.py": "d65d72e198bdef9278d4e21398449d83797cd7dcb2ebe6d6fba8d51217654f66",
+    "infra/experiment_worker.py": "a41e679a7e3516846bc9c4000753370f106fdf9dc5267f90861ad8b3f7580777",
+    "infra/experimentlib.py": "f571371ebff26150bd954d3865412caf6e1116633a68845f2b49746f009c5fd2",
+    "official_starter_kit/scripts/train_unet_transformer.py": "14f713fc12e5746ec4dc7e64dcc9dec75fc974ced7960ec6a9d8c64c2930dcdc",
+    "src/strategies/experiment_runtime.py": "2ce5b411efc3ffda62865d9d463ed6383589ad5957cf9ddca14c0c93c42a3539"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "experiment_id": "EXP-056_DeepGraph_Anisotropic_Wide_Cosine",
+  "hf_repo": "Matycaba2016/biohub-checkpoints",
+  "hf_uri": "hf://Matycaba2016/biohub-checkpoints/experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/",
+  "synced_at": "2026-09-02T21:17:01.128650+00:00",
+  "total_bytes": 149604018,
+  "files": [
+    {
+      "filename": "exp056_secondary_weights.pt",
+      "relative_path": "artifacts/deployment/weights_dataset/exp056_secondary_weights.pt",
+      "path_in_repo": "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/artifacts/deployment/weights_dataset/exp056_secondary_weights.pt",
+      "size_bytes": 18699246
+    },
+    {
+      "filename": "exp056_primary_weights.pt",
+      "relative_path": "artifacts/deployment/weights_dataset/exp056_primary_weights.pt",
+      "path_in_repo": "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/artifacts/deployment/weights_dataset/exp056_primary_weights.pt",
+      "size_bytes": 18698966
+    },
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-056_20260902T031146Z_7c18cb5f/primary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/checkpoints/EXP-056_20260902T031146Z_7c18cb5f/primary/training_checkpoint.pth",
+      "size_bytes": 56102871
+    },
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-056_20260902T031146Z_7c18cb5f/secondary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/checkpoints/EXP-056_20260902T031146Z_7c18cb5f/secondary/training_checkpoint.pth",
+      "size_bytes": 56102935
+    }
+  ]
+}

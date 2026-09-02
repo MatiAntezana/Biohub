@@ -1,0 +1,84 @@
+{
+  "artifacts": {
+    "checkpoints": [
+      {
+        "bytes": 56102871,
+        "path": "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/checkpoints/EXP-056_20260902T031146Z_7c18cb5f/primary/training_checkpoint.pth",
+        "sha256": "53cff00c599f4588417986403534b222f5ffb01f435982e0b7d5d6e9e6687200"
+      },
+      {
+        "bytes": 56102935,
+        "path": "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/checkpoints/EXP-056_20260902T031146Z_7c18cb5f/secondary/training_checkpoint.pth",
+        "sha256": "93e5027057bb197a8ff5ef1eb1e90b2a364a8e206318fb6e6e6cdb9d4ff4faf3"
+      }
+    ],
+    "terminal_receipt": {
+      "path": "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/artifacts/EXP-056_20260902T031146Z_7c18cb5f/TRAINING_COMPLETE.json",
+      "sha256": "3d89ce52c9a59ce855ae577f6f5f500562b1229a7efe737cb5d796ba4c2421cd"
+    }
+  },
+  "child_pid": 69265,
+  "command": [
+    "/home/alumno1/miniconda3/envs/train-56/bin/python",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/train.py",
+    "--epochs",
+    "50",
+    "--batch-size",
+    "1",
+    "--num-workers",
+    "2",
+    "--max-iters",
+    "750",
+    "--project-root",
+    "/home/alumno1/Documents/Biohub",
+    "--run-dir",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/artifacts/EXP-056_20260902T031146Z_7c18cb5f",
+    "--compact"
+  ],
+  "completed_at": "2026-09-02T20:21:57.847118Z",
+  "config_sha256": "7c18cb5f4baf43613a144fc15aaacba38410e3cbc70066c53668f502f2eb2dd9",
+  "environment": {
+    "conda_env": "train-56",
+    "executable": "/home/alumno1/miniconda3/envs/train-56/bin/python",
+    "gpu": [
+      "NVIDIA GeForce RTX 4090, 24564 MiB"
+    ],
+    "hostname": "A1556-UBU",
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15"
+  },
+  "exit_code": 0,
+  "experiment_id": "EXP-056",
+  "metrics": {
+    "primary": {
+      "checkpoint_selection": "last_epoch",
+      "detection_loss": 0.017403992865234613,
+      "edge_loss": 0.0005546313315553562,
+      "epoch": 49,
+      "learning_rate": 1e-05,
+      "selection_score": null,
+      "train_seconds": 610.1924295559947,
+      "validation_accuracy": null,
+      "validation_loss": null,
+      "validation_recall": null
+    },
+    "secondary": {
+      "checkpoint_selection": "last_epoch",
+      "detection_loss": 0.019357213440351188,
+      "edge_loss": 0.0005545276251067056,
+      "epoch": 49,
+      "learning_rate": 1e-05,
+      "selection_score": null,
+      "train_seconds": 612.9104187539924,
+      "validation_accuracy": null,
+      "validation_loss": null,
+      "validation_recall": null
+    }
+  },
+  "run_id": "EXP-056_20260902T031146Z_7c18cb5f",
+  "schema_version": 1,
+  "started_at": "2026-09-02T03:11:53.202155Z",
+  "status": "SUCCEEDED",
+  "validation": "N/A — full-fit sin validación",
+  "worker_pid": 69261
+}

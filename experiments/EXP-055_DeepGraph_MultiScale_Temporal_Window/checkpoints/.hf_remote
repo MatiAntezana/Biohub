@@ -1,0 +1,15 @@
+{
+  "experiment_id": "EXP-055_DeepGraph_MultiScale_Temporal_Window",
+  "hf_repo": "Matycaba2016/biohub-checkpoints",
+  "hf_uri": "hf://Matycaba2016/biohub-checkpoints/experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/",
+  "synced_at": "2026-09-02T21:16:28.539147+00:00",
+  "total_bytes": 33648151,
+  "files": [
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-055_20260902T023054Z_2b255a60/primary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/checkpoints/EXP-055_20260902T023054Z_2b255a60/primary/training_checkpoint.pth",
+      "size_bytes": 33648151
+    }
+  ]
+}

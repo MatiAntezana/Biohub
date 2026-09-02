@@ -2,20 +2,32 @@
   "experiment_id": "EXP-052_DeepGraph_WideCapacity",
   "hf_repo": "Matycaba2016/biohub-checkpoints",
   "hf_uri": "hf://Matycaba2016/biohub-checkpoints/experiments/EXP-052_DeepGraph_WideCapacity/",
-  "synced_at": "2026-09-01T12:43:09.060851+00:00",
-  "total_bytes": 95041518,
+  "synced_at": "2026-09-02T21:16:01.226093+00:00",
+  "total_bytes": 65111688,
   "files": [
     {
-      "filename": "training_checkpoint.pth",
-      "relative_path": "checkpoints/EXP-052_20260901T050028Z_33370396/primary/training_checkpoint.pth",
-      "path_in_repo": "experiments/EXP-052_DeepGraph_WideCapacity/checkpoints/EXP-052_20260901T050028Z_33370396/primary/training_checkpoint.pth",
-      "size_bytes": 47520727
+      "filename": "exp052_primary_weights.pt",
+      "relative_path": "artifacts/deployment/weights_dataset/exp052_primary_weights.pt",
+      "path_in_repo": "experiments/EXP-052_DeepGraph_WideCapacity/artifacts/deployment/weights_dataset/exp052_primary_weights.pt",
+      "size_bytes": 15838849
     },
     {
-      "filename": "training_checkpoint.pth",
-      "relative_path": "checkpoints/EXP-052_20260901T050028Z_33370396/secondary/training_checkpoint.pth",
-      "path_in_repo": "experiments/EXP-052_DeepGraph_WideCapacity/checkpoints/EXP-052_20260901T050028Z_33370396/secondary/training_checkpoint.pth",
-      "size_bytes": 47520791
+      "filename": "exp052_secondary_weights.pt",
+      "relative_path": "artifacts/deployment/weights_dataset/exp052_secondary_weights.pt",
+      "path_in_repo": "experiments/EXP-052_DeepGraph_WideCapacity/artifacts/deployment/weights_dataset/exp052_secondary_weights.pt",
+      "size_bytes": 15839133
+    },
+    {
+      "filename": "edge_predictor_best.pth",
+      "relative_path": "kaggle_output_canonical/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth",
+      "path_in_repo": "experiments/EXP-052_DeepGraph_WideCapacity/kaggle_output_canonical/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth",
+      "size_bytes": 8363159
+    },
+    {
+      "filename": "checkpoint_last.pth",
+      "relative_path": "kaggle_output_canonical/secondary_seed_weights/unet_transformer/split_0/checkpoint_last.pth",
+      "path_in_repo": "experiments/EXP-052_DeepGraph_WideCapacity/kaggle_output_canonical/secondary_seed_weights/unet_transformer/split_0/checkpoint_last.pth",
+      "size_bytes": 25070547
     }
   ]
 }

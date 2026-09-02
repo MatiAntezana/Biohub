@@ -4,13 +4,15 @@
 
 | Prioridad | Experimento | Estado | Dependencias | Nodo |
 |---:|---|---|---|---|
+| 5 | EXP-053 | **RUNNING** | — | max_free_vram |
+| 6 | EXP-054 | **READY** | — | max_free_vram |
+| 7 | EXP-055 | **FAILED** | — | max_free_vram |
+| 8 | EXP-056 | **FAILED** | — | max_free_vram |
 | 10 | EXP-031 | **FAILED** | — | max_free_vram |
 | 10 | EXP-050 | **DOC_PENDING** | — | max_free_vram |
 | 10 | EXP-051 | **DOC_PENDING** | — | max_free_vram |
 | 10 | EXP-052 | **DOC_PENDING** | — | max_free_vram |
-| 10 | EXP-053 | **FAILED** | — | max_free_vram |
-| 10 | EXP-054 | **ORPHANED** | — | max_free_vram |
-| 10 | EXP-055 | **FAILED** | — | max_free_vram |
+| 10 | EXP-057 | **RUNNING** | — | max_free_vram |
 | 20 | EXP-030B | **CLOSED** | — | max_free_vram |
 | 30 | EXP-032 | **CLOSED** | — | max_free_vram |
 | 100 | EXP-033 | **DOC_PENDING** | — | max_free_vram |

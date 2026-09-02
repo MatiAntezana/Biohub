@@ -47,9 +47,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--project-root", type=Path, default=project_root)
     parser.add_argument("--data-dir", type=Path, default=None)
     parser.add_argument("--starter-kit", type=Path, default=None)
-    parser.add_argument("--epochs", type=int, default=55)
+    parser.add_argument("--epochs", type=int, default=50)
     parser.add_argument("--batch-size", type=int, default=2)
-    parser.add_argument("--num-workers", type=int, default=4)
+    parser.add_argument("--num-workers", type=int, default=2)
     parser.add_argument("--max-iters", type=int, default=750)
     parser.add_argument("--run-dir", type=Path, default=None)
     parser.add_argument("--resume-primary", type=Path, default=None)
@@ -145,6 +145,11 @@ def main() -> None:
             checkpoint_dir = experiment_dir / "checkpoints" / plan["run_id"] / role
             metrics_path = artifact_dir / f"metrics_{role}.json"
             resume_from = args.resume_primary if role == "primary" else args.resume_secondary
+            if resume_from is not None and not resume_from.is_absolute():
+                candidate = (experiment_dir / resume_from).resolve()
+                if not candidate.is_file():
+                    candidate = (project_root / resume_from).resolve()
+                resume_from = candidate
             seed_everything(seed)
             print(f"\n=== {EXPERIMENT_ID} {role.upper()} | seed={seed} ===", flush=True)
             train(

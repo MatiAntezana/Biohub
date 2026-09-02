@@ -1,0 +1,8 @@
+{
+  "experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/experiment.json": "ef3a110ed7c4cd9f3ff36c3c0097068ace284823de25b6c4c05e791b0fe3a60d",
+  "experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py": "e7c3fcae439eb0e8b03940d98d2448368327c348d086874f6343526282e97838",
+  "infra/experiment_worker.py": "a41e679a7e3516846bc9c4000753370f106fdf9dc5267f90861ad8b3f7580777",
+  "infra/experimentlib.py": "f571371ebff26150bd954d3865412caf6e1116633a68845f2b49746f009c5fd2",
+  "official_starter_kit/scripts/train_unet_transformer.py": "5392a4e49e0d118c79e384f1193e749f5c2dd2d70dbe09f3399b3425b6ab6556",
+  "src/strategies/experiment_runtime.py": "2ce5b411efc3ffda62865d9d463ed6383589ad5957cf9ddca14c0c93c42a3539"
+}
