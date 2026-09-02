@@ -1,16 +1,19 @@
 {
   "activities": [
     {
-      "activity_id": "A1552:GPU-2a065aa7-d117-299d-5e5b-b687a7877930:10500",
+      "activity_id": "A1556:GPU-52cb7b87-9a26-540b-bbc0-93f24d197506:293876",
       "association": "command",
-      "command": "/home/alumno1/miniconda3/envs/train-52/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/artifacts/EXP-055_20260902T023054Z_2b255a60 --compact",
-      "experiment_id": "EXP-055",
+      "command": "/home/alumno1/miniconda3/envs/train-56/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-054_20260902T022725Z_ae92ce36/primary/training_checkpoint.pth --resume-secondary checkpoints/EXP-054_20260902T022725Z_ae92ce36/secondary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/artifacts/EXP-054_20260902T205115Z_2f96e84b --compact",
+      "experiment_id": "EXP-054",
       "gpu_index": 0,
-      "gpu_uuid": "GPU-2a065aa7-d117-299d-5e5b-b687a7877930",
-      "node": "A1552",
-      "pid": 10500,
-      "process_name": "/home/alumno1/miniconda3/envs/train-52/bin/python",
-      "used_gpu_memory_mib": 22570
+      "gpu_uuid": "GPU-52cb7b87-9a26-540b-bbc0-93f24d197506",
+      "last_seen_at": "2026-09-02T23:48:43.417115Z",
+      "node": "A1556",
+      "pid": 293876,
+      "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+      "process_name": "/home/alumno1/miniconda3/envs/train-56/bin/python",
+      "stale": true,
+      "used_gpu_memory_mib": 21380
     },
     {
       "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:77094",
@@ -19,36 +22,14 @@
       "experiment_id": "EXP-053",
       "gpu_index": 0,
       "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+      "last_seen_at": "2026-09-02T23:48:43.417115Z",
       "node": "A1555",
       "pid": 77094,
+      "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
       "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
       "run_id": "EXP-053_20260902T045800Z_685bd5b5",
+      "stale": true,
       "used_gpu_memory_mib": 21432
-    },
-    {
-      "activity_id": "A1556:GPU-52cb7b87-9a26-540b-bbc0-93f24d197506:293876",
-      "association": "command",
-      "command": "/home/alumno1/miniconda3/envs/train-56/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-054_20260902T022725Z_ae92ce36/primary/training_checkpoint.pth --resume-secondary checkpoints/EXP-054_20260902T022725Z_ae92ce36/secondary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/artifacts/EXP-054_20260902T205115Z_2f96e84b --compact",
-      "experiment_id": "EXP-054",
-      "gpu_index": 0,
-      "gpu_uuid": "GPU-52cb7b87-9a26-540b-bbc0-93f24d197506",
-      "node": "A1556",
-      "pid": 293876,
-      "process_name": "/home/alumno1/miniconda3/envs/train-56/bin/python",
-      "used_gpu_memory_mib": 21378
-    },
-    {
-      "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:19805",
-      "association": "registered",
-      "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260902T132212Z_30ba9271 --compact",
-      "experiment_id": "EXP-057",
-      "gpu_index": 0,
-      "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-      "node": "A1560",
-      "pid": 19805,
-      "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-      "run_id": "EXP-057_20260902T132244Z_30ba9271",
-      "used_gpu_memory_mib": 18786
     },
     {
       "activity_id": "A1557:GPU-3f11eb77-4f07-f9c6-3c2c-2aba7ca0a5be:44517",
@@ -57,7 +38,7 @@
       "experiment_id": "EXP-054",
       "gpu_index": 0,
       "gpu_uuid": "GPU-3f11eb77-4f07-f9c6-3c2c-2aba7ca0a5be",
-      "last_seen_at": "2026-09-02T21:23:38.152313Z",
+      "last_seen_at": "2026-09-02T23:48:43.417115Z",
       "node": "A1557",
       "pid": 44517,
       "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
@@ -68,29 +49,16 @@
   ],
   "nodes": {
     "A1552": {
-      "activities": [
-        {
-          "activity_id": "A1552:GPU-2a065aa7-d117-299d-5e5b-b687a7877930:10500",
-          "association": "command",
-          "command": "/home/alumno1/miniconda3/envs/train-52/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/artifacts/EXP-055_20260902T023054Z_2b255a60 --compact",
-          "experiment_id": "EXP-055",
-          "gpu_index": 0,
-          "gpu_uuid": "GPU-2a065aa7-d117-299d-5e5b-b687a7877930",
-          "node": "A1552",
-          "pid": 10500,
-          "process_name": "/home/alumno1/miniconda3/envs/train-52/bin/python",
-          "used_gpu_memory_mib": 22570
-        }
-      ],
+      "activities": [],
       "error": null,
       "gpus": [
         {
-          "free_mib": 1382,
+          "free_mib": 1486,
           "index": 0,
           "name": "NVIDIA GeForce RTX 4090",
           "total_mib": 24564,
-          "used_mib": 22693,
-          "utilization_pct": 98,
+          "used_mib": 22589,
+          "utilization_pct": null,
           "uuid": "GPU-2a065aa7-d117-299d-5e5b-b687a7877930"
         }
       ],
@@ -101,11 +69,11 @@
       "error": null,
       "gpus": [
         {
-          "free_mib": 23970,
+          "free_mib": 23973,
           "index": 0,
           "name": "NVIDIA GeForce RTX 4090",
           "total_mib": 24564,
-          "used_mib": 105,
+          "used_mib": 102,
           "utilization_pct": 0,
           "uuid": "GPU-76972eff-a509-63d7-3033-92904fec08b1"
         }
@@ -113,62 +81,15 @@
       "node": "A1553"
     },
     "A1555": {
-      "activities": [
-        {
-          "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:77094",
-          "association": "registered",
-          "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-053_20260902T022548Z_c583eea2/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/artifacts/EXP-053_20260902T045731Z_685bd5b5 --compact",
-          "experiment_id": "EXP-053",
-          "gpu_index": 0,
-          "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-          "node": "A1555",
-          "pid": 77094,
-          "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-          "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-          "used_gpu_memory_mib": 21432
-        }
-      ],
-      "error": null,
-      "gpus": [
-        {
-          "free_mib": 2525,
-          "index": 0,
-          "name": "NVIDIA GeForce RTX 4090",
-          "total_mib": 24564,
-          "used_mib": 21549,
-          "utilization_pct": 100,
-          "uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0"
-        }
-      ],
+      "activities": [],
+      "error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+      "gpus": [],
       "node": "A1555"
     },
     "A1556": {
-      "activities": [
-        {
-          "activity_id": "A1556:GPU-52cb7b87-9a26-540b-bbc0-93f24d197506:293876",
-          "association": "command",
-          "command": "/home/alumno1/miniconda3/envs/train-56/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-054_20260902T022725Z_ae92ce36/primary/training_checkpoint.pth --resume-secondary checkpoints/EXP-054_20260902T022725Z_ae92ce36/secondary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/artifacts/EXP-054_20260902T205115Z_2f96e84b --compact",
-          "experiment_id": "EXP-054",
-          "gpu_index": 0,
-          "gpu_uuid": "GPU-52cb7b87-9a26-540b-bbc0-93f24d197506",
-          "node": "A1556",
-          "pid": 293876,
-          "process_name": "/home/alumno1/miniconda3/envs/train-56/bin/python",
-          "used_gpu_memory_mib": 21378
-        }
-      ],
-      "error": null,
-      "gpus": [
-        {
-          "free_mib": 2358,
-          "index": 0,
-          "name": "NVIDIA GeForce RTX 4090",
-          "total_mib": 24564,
-          "used_mib": 21717,
-          "utilization_pct": 100,
-          "uuid": "GPU-52cb7b87-9a26-540b-bbc0-93f24d197506"
-        }
-      ],
+      "activities": [],
+      "error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+      "gpus": [],
       "node": "A1556"
     },
     "A1557": {
@@ -178,67 +99,23 @@
       "node": "A1557"
     },
     "A1560": {
-      "activities": [
-        {
-          "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:19805",
-          "association": "registered",
-          "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260902T132212Z_30ba9271 --compact",
-          "experiment_id": "EXP-057",
-          "gpu_index": 0,
-          "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-          "node": "A1560",
-          "pid": 19805,
-          "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-          "run_id": "EXP-057_20260902T132244Z_30ba9271",
-          "used_gpu_memory_mib": 18786
-        }
-      ],
+      "activities": [],
       "error": null,
       "gpus": [
         {
-          "free_mib": 4426,
+          "free_mib": 23980,
           "index": 0,
           "name": "NVIDIA GeForce RTX 4090",
           "total_mib": 24564,
-          "used_mib": 19649,
-          "utilization_pct": 100,
+          "used_mib": 95,
+          "utilization_pct": 0,
           "uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28"
         }
       ],
       "node": "A1560"
     }
   },
-  "scanned_at": "2026-09-02T21:24:45.773331Z",
+  "scanned_at": "2026-09-02T23:49:53.351754Z",
   "schema_version": 1,
-  "transitions": [
-    {
-      "after": {
-        "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:19805",
-        "association": "registered",
-        "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260902T132212Z_30ba9271 --compact",
-        "experiment_id": "EXP-057",
-        "gpu_index": 0,
-        "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-        "node": "A1560",
-        "pid": 19805,
-        "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-        "run_id": "EXP-057_20260902T132244Z_30ba9271",
-        "used_gpu_memory_mib": 18786
-      },
-      "before": {
-        "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:19805",
-        "association": "registered",
-        "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260902T132212Z_30ba9271 --compact",
-        "experiment_id": "EXP-057",
-        "gpu_index": 0,
-        "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-        "node": "A1560",
-        "pid": 19805,
-        "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-        "run_id": "EXP-057_20260902T132244Z_30ba9271",
-        "used_gpu_memory_mib": 22352
-      },
-      "type": "GPU_PROCESS_CHANGED"
-    }
-  ]
+  "transitions": []
 }

@@ -3,7 +3,7 @@
 > Vista factual generada desde `experiments/kaggle_scores.jsonl`.
 > Este ranking es independiente del Promotion Board local y se ordena exclusivamente por el mejor Public Score oficial de Kaggle de cada experimento.
 
-Actualizado: `2026-09-02T02:51:45.420032Z`
+Actualizado: `2026-09-02T23:50:26.530939Z`
 
 | Puesto | Experimento | Mejor Public Score | Kernel | Versión | Submission Ref | Fecha UTC |
 |---:|---|---:|---|---:|---|---|

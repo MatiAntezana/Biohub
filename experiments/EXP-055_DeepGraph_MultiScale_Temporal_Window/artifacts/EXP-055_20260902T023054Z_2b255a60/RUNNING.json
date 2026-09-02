@@ -2,7 +2,16 @@
   "artifact_dir": "/home/alumno1/Documents/Biohub/experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/artifacts/EXP-055_20260902T023054Z_2b255a60",
   "batch_size": 2,
   "checkpoint_selection": "last_epoch",
-  "checkpoints": [],
+  "checkpoints": [
+    {
+      "config": "/home/alumno1/Documents/Biohub/experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/checkpoints/EXP-055_20260902T023054Z_2b255a60/primary/config.json",
+      "method": "exp055_fullfit_primary_seed3407",
+      "path": "/home/alumno1/Documents/Biohub/experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/checkpoints/EXP-055_20260902T023054Z_2b255a60/primary/training_checkpoint.pth",
+      "role": "primary",
+      "seed": 3407,
+      "sha256": "6c39352b410f8079ab1bafb07e2519357c4fd30d5fd243b1ada3ff7e15405990"
+    }
+  ],
   "data_dir": "/home/alumno1/Documents/Biohub/data/train",
   "det_loss_weight": 1.5,
   "det_negative_weight": 0.02,

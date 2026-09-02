@@ -394,9 +394,9 @@
       "queued_at": "2026-09-02T04:57:29.357916Z",
       "ready_at": "2026-09-01T13:22:15.736797Z",
       "requested_node": "max_free_vram",
-      "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-      "status": "RUNNING",
-      "updated_at": "2026-09-02T04:58:06.546523Z"
+      "run_id": "EXP-053_20260902T045731Z_685bd5b5",
+      "status": "FAILED",
+      "updated_at": "2026-09-02T23:31:42.639747Z"
     },
     {
       "allowed_nodes": [
@@ -413,9 +413,9 @@
       "queued_at": "2026-09-02T20:51:03.122658Z",
       "ready_at": "2026-09-01T13:22:15.797303Z",
       "requested_node": "max_free_vram",
-      "run_id": "EXP-054_20260902T022725Z_ae92ce36",
-      "status": "READY",
-      "updated_at": "2026-09-02T03:53:51.141997Z"
+      "run_id": "EXP-054_20260902T205115Z_2f96e84b",
+      "status": "FAILED",
+      "updated_at": "2026-09-02T23:39:30.966434Z"
     },
     {
       "allowed_nodes": [
@@ -470,11 +470,11 @@
       "queued_at": "2026-09-02T13:22:10.382042Z",
       "ready_at": "2026-09-02T13:19:32.741308Z",
       "requested_node": "max_free_vram",
-      "run_id": "EXP-057_20260902T132244Z_30ba9271",
+      "run_id": "EXP-057_20260902T132212Z_30ba9271",
       "status": "RUNNING",
-      "updated_at": "2026-09-02T13:22:49.334406Z"
+      "updated_at": "2026-09-02T23:48:37.206448Z"
     }
   ],
   "schema_version": 1,
-  "updated_at": "2026-09-02T21:25:16.354698Z"
+  "updated_at": "2026-09-02T23:50:38.832712Z"
 }

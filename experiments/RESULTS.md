@@ -82,6 +82,8 @@
 | EXP-056_20260902T025351Z_99d1ed7d | EXP-056 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
 | EXP-056_20260902T030029Z_99d1ed7d | EXP-056 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
 | EXP-056_20260902T031146Z_7c18cb5f | EXP-056 | **FAILED** | — | `{}` | — |
+| EXP-053_20260902T045731Z_685bd5b5 | EXP-053 | **FAILED** | — | `{}` | — |
 | EXP-057_20260902T131934Z_30ba9271 | EXP-057 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
 | EXP-057_20260902T132027Z_30ba9271 | EXP-057 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
 | EXP-057_20260902T132109Z_30ba9271 | EXP-057 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
+| EXP-054_20260902T205115Z_2f96e84b | EXP-054 | **FAILED** | — | `{}` | — |
