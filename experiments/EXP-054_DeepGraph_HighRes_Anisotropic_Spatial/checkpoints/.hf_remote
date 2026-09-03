@@ -2,20 +2,20 @@
   "experiment_id": "EXP-054_DeepGraph_HighRes_Anisotropic_Spatial",
   "hf_repo": "Matycaba2016/biohub-checkpoints",
   "hf_uri": "hf://Matycaba2016/biohub-checkpoints/experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/",
-  "synced_at": "2026-09-03T17:58:46.069016+00:00",
-  "total_bytes": 50158638,
+  "synced_at": "2026-09-03T21:02:25.007994+00:00",
+  "total_bytes": 50159854,
   "files": [
     {
       "filename": "training_checkpoint.pth",
-      "relative_path": "checkpoints/EXP-054_20260902T022725Z_ae92ce36/primary/training_checkpoint.pth",
-      "path_in_repo": "experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/checkpoints/EXP-054_20260902T022725Z_ae92ce36/primary/training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-054_20260903T162757Z_c04ebef2/primary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/checkpoints/EXP-054_20260903T162757Z_c04ebef2/primary/training_checkpoint.pth",
       "size_bytes": 25079895
     },
     {
       "filename": "training_checkpoint.pth",
-      "relative_path": "checkpoints/EXP-054_20260902T022725Z_ae92ce36/secondary/training_checkpoint.pth",
-      "path_in_repo": "experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/checkpoints/EXP-054_20260902T022725Z_ae92ce36/secondary/training_checkpoint.pth",
-      "size_bytes": 25078743
+      "relative_path": "checkpoints/EXP-054_20260903T162757Z_c04ebef2/secondary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/checkpoints/EXP-054_20260903T162757Z_c04ebef2/secondary/training_checkpoint.pth",
+      "size_bytes": 25079959
     }
   ]
 }
