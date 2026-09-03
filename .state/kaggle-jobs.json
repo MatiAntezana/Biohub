@@ -1552,11 +1552,54 @@
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-03T12:59:29.303744Z",
+      "error": "Kaggle kernel failed; inspect persisted notebook.log",
       "experiment_id": "EXP-057",
       "job_id": "EXP-057-20260903T125929Z-5e6ce6",
       "kernel_slug": "matiasantezana/biohub-exp-057-deepgraph",
+      "kernel_state": "ERROR",
+      "kernel_version": 7,
+      "last_retry_at": "2026-09-03T13:44:44.280466Z",
+      "log_inspection": {
+        "has_error": true,
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+        ],
+        "scopes": [
+          {
+            "count": 4,
+            "paths": [
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+            ],
+            "scope": "test"
+          }
+        ],
+        "transient_error": true,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "90b5f82a1e50db91e4cbe19440bbeaf2842454c2c2b2603d5db5f2b646111875",
+      "pushed_at": "2026-09-03T12:59:32.419566Z",
+      "retries": 2,
+      "schema_version": 1,
+      "state": "NEEDS_REPAIR",
+      "updated_at": "2026-09-03T14:11:52.935860Z"
+    },
+    "EXP-057-20260903T141435Z-3a7ee5": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T14:14:35.407685Z",
+      "experiment_id": "EXP-057",
+      "job_id": "EXP-057-20260903T141435Z-3a7ee5",
+      "kernel_slug": "matiasantezana/biohub-exp-057-deepgraph",
       "kernel_state": "RUNNING",
-      "kernel_version": 5,
+      "kernel_version": 8,
       "log_inspection": {
         "has_error": false,
         "paths": [],
@@ -1566,14 +1609,14 @@
       },
       "max_retries": 2,
       "output_file": "submission.csv",
-      "package_sha256": "90b5f82a1e50db91e4cbe19440bbeaf2842454c2c2b2603d5db5f2b646111875",
-      "pushed_at": "2026-09-03T12:59:32.419566Z",
+      "package_sha256": "ec0abfd06b5e1a1aa57650614e9efe9e25df791324293ba8e7de38cddf98ac33",
+      "pushed_at": "2026-09-03T14:14:38.803297Z",
       "retries": 0,
       "schema_version": 1,
       "state": "RUNNING",
-      "updated_at": "2026-09-03T12:59:50.774733Z"
+      "updated_at": "2026-09-03T14:14:53.439360Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-03T12:59:50.775192Z"
+  "updated_at": "2026-09-03T14:14:53.440128Z"
 }
