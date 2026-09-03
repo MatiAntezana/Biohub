@@ -2,7 +2,7 @@
 
 > Vista generada. Fuente canónica: `experiments/registry.jsonl`.
 
-Actualizado: `2026-09-03T14:55:55.384493Z`
+Actualizado: `2026-09-03T15:09:44.326402Z`
 
 ## Resumen
 

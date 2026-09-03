@@ -10,7 +10,7 @@
       "node": "A1560",
       "pid": 33646,
       "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-      "used_gpu_memory_mib": 19984
+      "used_gpu_memory_mib": 22284
     },
     {
       "activity_id": "A1557:GPU-3f11eb77-4f07-f9c6-3c2c-2aba7ca0a5be:44517",
@@ -19,7 +19,7 @@
       "experiment_id": "EXP-054",
       "gpu_index": 0,
       "gpu_uuid": "GPU-3f11eb77-4f07-f9c6-3c2c-2aba7ca0a5be",
-      "last_seen_at": "2026-09-03T14:54:31.559538Z",
+      "last_seen_at": "2026-09-03T15:08:28.582122Z",
       "node": "A1557",
       "pid": 44517,
       "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
@@ -60,7 +60,7 @@
           "index": 0,
           "name": "NVIDIA GeForce RTX 4090",
           "total_mib": 24564,
-          "used_mib": 109,
+          "used_mib": 110,
           "utilization_pct": 0,
           "uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0"
         }
@@ -101,25 +101,25 @@
           "node": "A1560",
           "pid": 33646,
           "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-          "used_gpu_memory_mib": 19984
+          "used_gpu_memory_mib": 22284
         }
       ],
       "error": null,
       "gpus": [
         {
-          "free_mib": 3108,
+          "free_mib": 1688,
           "index": 0,
           "name": "NVIDIA GeForce RTX 4090",
           "total_mib": 24564,
-          "used_mib": 20967,
-          "utilization_pct": 100,
+          "used_mib": 22387,
+          "utilization_pct": 94,
           "uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28"
         }
       ],
       "node": "A1560"
     }
   },
-  "scanned_at": "2026-09-03T14:55:41.818297Z",
+  "scanned_at": "2026-09-03T15:09:37.765843Z",
   "schema_version": 1,
   "transitions": [
     {
@@ -133,7 +133,7 @@
         "node": "A1560",
         "pid": 33646,
         "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-        "used_gpu_memory_mib": 19984
+        "used_gpu_memory_mib": 22284
       },
       "before": {
         "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
@@ -145,7 +145,7 @@
         "node": "A1560",
         "pid": 33646,
         "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-        "used_gpu_memory_mib": 17520
+        "used_gpu_memory_mib": 22278
       },
       "type": "GPU_PROCESS_CHANGED"
     }

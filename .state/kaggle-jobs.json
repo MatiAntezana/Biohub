@@ -1302,11 +1302,48 @@
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-03T14:54:34.151944Z",
       "deployment_key": "EXP-055:EXP-055_20260903T001305Z_d1f9ffe0:0abf0f1ef64adb85047180c838b585344cb941e7dbeb5e0a5e0854f76d80c4ab",
+      "error": "la corrida terminó sin BIOHUB_DATASET_SCOPE=test; scope sentinel JSON inválido",
       "experiment_id": "EXP-055",
       "job_id": "EXP-055-20260903T145434Z-e58e55",
       "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
-      "kernel_state": "RUNNING",
+      "kernel_state": "COMPLETE",
       "kernel_version": 1,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr\\n\"}"
+        ],
+        "scopes": [],
+        "transient_error": false,
+        "violations": [
+          "la corrida terminó sin BIOHUB_DATASET_SCOPE=test",
+          "scope sentinel JSON inválido"
+        ]
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "2e3be3c5991dc6c9245a2040389cff429c17bbc3870ab6a0d180dcc5b3cc2eb1",
+      "pushed_at": "2026-09-03T14:54:36.613311Z",
+      "retries": 0,
+      "schema_version": 1,
+      "source_run_id": "EXP-055_20260903T001305Z_d1f9ffe0",
+      "state": "POLICY_BLOCKED",
+      "trained_at": "2026-09-03T14:53:26.974367Z",
+      "updated_at": "2026-09-03T15:01:32.845151Z"
+    },
+    "EXP-055-20260903T150134Z-4c6764": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T15:01:34.893291Z",
+      "deployment_key": "EXP-055:EXP-055_20260903T001305Z_d1f9ffe0:343668ad5e3f8aba284412ba8d510fbeb8e546800e776331526c77b461291964",
+      "experiment_id": "EXP-055",
+      "job_id": "EXP-055-20260903T150134Z-4c6764",
+      "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 2,
       "log_inspection": {
         "has_error": false,
         "paths": [],
@@ -1316,14 +1353,71 @@
       },
       "max_retries": 2,
       "output_file": "submission.csv",
-      "package_sha256": "2e3be3c5991dc6c9245a2040389cff429c17bbc3870ab6a0d180dcc5b3cc2eb1",
-      "pushed_at": "2026-09-03T14:54:36.613311Z",
+      "package_sha256": "343668ad5e3f8aba284412ba8d510fbeb8e546800e776331526c77b461291964",
+      "pushed_at": "2026-09-03T15:01:37.300795Z",
       "retries": 0,
       "schema_version": 1,
       "source_run_id": "EXP-055_20260903T001305Z_d1f9ffe0",
       "state": "RUNNING",
-      "trained_at": "2026-09-03T14:53:26.974367Z",
-      "updated_at": "2026-09-03T14:55:43.811867Z"
+      "trained_at": "2026-09-03T14:55:22.610582Z",
+      "updated_at": "2026-09-03T15:09:39.622416Z"
+    },
+    "EXP-055-20260903T150335Z-4bc52c": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T15:03:35.605727Z",
+      "error": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)\nKernel push error: Maximum batch GPU session count of 2 reached.",
+      "experiment_id": "EXP-055",
+      "job_id": "EXP-055-20260903T150335Z-4bc52c",
+      "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "343668ad5e3f8aba284412ba8d510fbeb8e546800e776331526c77b461291964",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "FAILED",
+      "updated_at": "2026-09-03T15:03:37.564690Z"
+    },
+    "EXP-055-20260903T150526Z-70367c": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T15:05:26.419636Z",
+      "error": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)\nKernel push error: Maximum batch GPU session count of 2 reached.",
+      "experiment_id": "EXP-055",
+      "job_id": "EXP-055-20260903T150526Z-70367c",
+      "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "343668ad5e3f8aba284412ba8d510fbeb8e546800e776331526c77b461291964",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "FAILED",
+      "updated_at": "2026-09-03T15:05:28.319727Z"
+    },
+    "EXP-055-20260903T150933Z-f99bf9": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T15:09:33.449552Z",
+      "experiment_id": "EXP-055",
+      "job_id": "EXP-055-20260903T150933Z-f99bf9",
+      "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 3,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [],
+        "scopes": [],
+        "transient_error": false,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "343668ad5e3f8aba284412ba8d510fbeb8e546800e776331526c77b461291964",
+      "pushed_at": "2026-09-03T15:09:35.998372Z",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "RUNNING",
+      "updated_at": "2026-09-03T15:09:46.059353Z"
     },
     "EXP-056-20260902T204536Z-db742d": {
       "auto_submit": true,
@@ -1668,9 +1762,9 @@
       "retries": 0,
       "schema_version": 1,
       "state": "RUNNING",
-      "updated_at": "2026-09-03T14:55:45.902065Z"
+      "updated_at": "2026-09-03T15:09:43.360591Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-03T14:55:45.902834Z"
+  "updated_at": "2026-09-03T15:09:46.059976Z"
 }
