@@ -1315,15 +1315,38 @@
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-03T22:53:36.167948Z",
+      "csv_validation": {
+        "bytes": 18047245,
+        "edges": 160947,
+        "nodes": 190428,
+        "rows": 351375
+      },
+      "error": "400 Client Error: Bad Request for url: https://api.kaggle.com/v1/competitions.CompetitionApiService/CreateCodeSubmission",
       "experiment_id": "EXP-053",
       "job_id": "EXP-053-20260903T225336Z-3cfd6b",
       "kernel_slug": "matiasantezana/biohub-exp-053-deepgraph",
-      "kernel_state": "RUNNING",
+      "kernel_state": "COMPLETE",
       "kernel_version": 1,
       "log_inspection": {
         "has_error": false,
-        "paths": [],
-        "scopes": [],
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+        ],
+        "scopes": [
+          {
+            "count": 4,
+            "paths": [
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+            ],
+            "scope": "test"
+          }
+        ],
         "transient_error": false,
         "violations": []
       },
@@ -1333,8 +1356,33 @@
       "pushed_at": "2026-09-03T22:53:38.752386Z",
       "retries": 0,
       "schema_version": 1,
+      "state": "FAILED",
+      "updated_at": "2026-09-03T23:01:19.352170Z"
+    },
+    "EXP-053-20260903T230305Z-2db541": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T23:03:05.545962Z",
+      "experiment_id": "EXP-053",
+      "job_id": "EXP-053-20260903T230305Z-2db541",
+      "kernel_slug": "matiasantezana/biohub-exp-053-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 2,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [],
+        "scopes": [],
+        "transient_error": false,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "0b3445d7cf8c9275a5167e7300e6965368ff48dc51350ed12f84117e4040cc7f",
+      "pushed_at": "2026-09-03T23:03:08.813441Z",
+      "retries": 0,
+      "schema_version": 1,
       "state": "RUNNING",
-      "updated_at": "2026-09-03T22:53:57.537444Z"
+      "updated_at": "2026-09-03T23:03:18.758062Z"
     },
     "EXP-054-20260903T210240Z-45f4fb": {
       "auto_submit": true,
@@ -1606,7 +1654,7 @@
       },
       "submission_message": "EXP-055 auto EXP-055-20260903T161807Z-56f976",
       "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
-      "updated_at": "2026-09-03T22:54:13.771574Z"
+      "updated_at": "2026-09-03T23:03:24.648022Z"
     },
     "EXP-056-20260902T204536Z-db742d": {
       "auto_submit": true,
@@ -1983,9 +2031,9 @@
       },
       "submission_message": "EXP-057 auto EXP-057-20260903T144810Z-2ef229",
       "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
-      "updated_at": "2026-09-03T22:54:14.171975Z"
+      "updated_at": "2026-09-03T23:03:24.649231Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-03T22:54:14.172701Z"
+  "updated_at": "2026-09-03T23:03:24.652260Z"
 }
