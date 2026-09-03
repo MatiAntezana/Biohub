@@ -10,7 +10,7 @@
       "node": "A1560",
       "pid": 33646,
       "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-      "used_gpu_memory_mib": 23554
+      "used_gpu_memory_mib": 23742
     },
     {
       "activity_id": "A1557:GPU-3f11eb77-4f07-f9c6-3c2c-2aba7ca0a5be:44517",
@@ -19,7 +19,7 @@
       "experiment_id": "EXP-054",
       "gpu_index": 0,
       "gpu_uuid": "GPU-3f11eb77-4f07-f9c6-3c2c-2aba7ca0a5be",
-      "last_seen_at": "2026-09-03T15:22:37.638904Z",
+      "last_seen_at": "2026-09-03T15:30:21.859513Z",
       "node": "A1557",
       "pid": 44517,
       "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
@@ -101,25 +101,25 @@
           "node": "A1560",
           "pid": 33646,
           "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-          "used_gpu_memory_mib": 23554
+          "used_gpu_memory_mib": 23742
         }
       ],
       "error": null,
       "gpus": [
         {
-          "free_mib": 418,
+          "free_mib": 230,
           "index": 0,
           "name": "NVIDIA GeForce RTX 4090",
           "total_mib": 24564,
-          "used_mib": 23657,
-          "utilization_pct": 95,
+          "used_mib": 23845,
+          "utilization_pct": 60,
           "uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28"
         }
       ],
       "node": "A1560"
     }
   },
-  "scanned_at": "2026-09-03T15:23:43.829734Z",
+  "scanned_at": "2026-09-03T15:31:27.994102Z",
   "schema_version": 1,
   "transitions": [
     {
@@ -133,7 +133,7 @@
         "node": "A1560",
         "pid": 33646,
         "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-        "used_gpu_memory_mib": 23554
+        "used_gpu_memory_mib": 23742
       },
       "before": {
         "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
@@ -145,7 +145,7 @@
         "node": "A1560",
         "pid": 33646,
         "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-        "used_gpu_memory_mib": 22308
+        "used_gpu_memory_mib": 22332
       },
       "type": "GPU_PROCESS_CHANGED"
     }

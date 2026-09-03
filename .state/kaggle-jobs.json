@@ -1449,13 +1449,14 @@
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-03T15:23:51.573945Z",
+      "error": "Kaggle kernel failed; inspect persisted notebook.log",
       "experiment_id": "EXP-055",
       "job_id": "EXP-055-20260903T152351Z-fc298b",
       "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
-      "kernel_state": "RUNNING",
+      "kernel_state": "ERROR",
       "kernel_version": 4,
       "log_inspection": {
-        "has_error": false,
+        "has_error": true,
         "paths": [],
         "scopes": [],
         "transient_error": false,
@@ -1467,8 +1468,33 @@
       "pushed_at": "2026-09-03T15:23:54.132105Z",
       "retries": 0,
       "schema_version": 1,
+      "state": "NEEDS_REPAIR",
+      "updated_at": "2026-09-03T15:30:20.143091Z"
+    },
+    "EXP-055-20260903T153132Z-78145e": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T15:31:32.583393Z",
+      "experiment_id": "EXP-055",
+      "job_id": "EXP-055-20260903T153132Z-78145e",
+      "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 5,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [],
+        "scopes": [],
+        "transient_error": false,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "12a782d658018daf75151cb51d8f52a952d41f28d1cd4421904accac60f434d0",
+      "pushed_at": "2026-09-03T15:31:35.608813Z",
+      "retries": 0,
+      "schema_version": 1,
       "state": "RUNNING",
-      "updated_at": "2026-09-03T15:24:07.870642Z"
+      "updated_at": "2026-09-03T15:31:46.271140Z"
     },
     "EXP-056-20260902T204536Z-db742d": {
       "auto_submit": true,
@@ -1794,16 +1820,38 @@
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-03T14:48:10.362344Z",
+      "csv_validation": {
+        "bytes": 13593196,
+        "edges": 127398,
+        "nodes": 132976,
+        "rows": 260374
+      },
       "experiment_id": "EXP-057",
       "job_id": "EXP-057-20260903T144810Z-2ef229",
       "kernel_slug": "matiasantezana/biohub-exp-057-deepgraph",
-      "kernel_state": "RUNNING",
+      "kernel_state": "COMPLETE",
       "kernel_version": 9,
       "log_inspection": {
         "has_error": false,
-        "paths": [],
-        "scopes": [],
-        "transient_error": false,
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+        ],
+        "scopes": [
+          {
+            "count": 4,
+            "paths": [
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+            ],
+            "scope": "test"
+          }
+        ],
+        "transient_error": true,
         "violations": []
       },
       "max_retries": 2,
@@ -1812,10 +1860,20 @@
       "pushed_at": "2026-09-03T14:48:13.576331Z",
       "retries": 0,
       "schema_version": 1,
-      "state": "RUNNING",
-      "updated_at": "2026-09-03T15:23:31.179768Z"
+      "state": "SUBMITTED",
+      "submission": {
+        "date": "2026-09-03 15:28:48.137000",
+        "description": "EXP-057 auto EXP-057-20260903T144810Z-2ef229",
+        "fileName": "submission.csv",
+        "privateScore": "",
+        "publicScore": "",
+        "status": "SubmissionStatus.PENDING"
+      },
+      "submission_message": "EXP-057 auto EXP-057-20260903T144810Z-2ef229",
+      "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
+      "updated_at": "2026-09-03T15:31:53.101335Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-03T15:24:07.871559Z"
+  "updated_at": "2026-09-03T15:31:53.101921Z"
 }
