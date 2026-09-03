@@ -1407,11 +1407,38 @@
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-03T04:01:44.511643Z",
+      "error": "Kaggle kernel failed; inspect persisted notebook.log",
       "experiment_id": "EXP-056",
       "job_id": "EXP-056-20260903T040144Z-4dc27d",
       "kernel_slug": "matiasantezana/biohub-exp-056-deepgraph",
+      "kernel_state": "ERROR",
+      "kernel_version": 5,
+      "last_retry_at": "2026-09-03T04:05:29.218707Z",
+      "log_inspection": {
+        "has_error": true,
+        "paths": [],
+        "scopes": [],
+        "transient_error": true,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "2bcc56abb4fb7e7a70ef3c6d174e5fd8917e6251ab1aae615e6c7687d210f4a1",
+      "pushed_at": "2026-09-03T04:01:47.435781Z",
+      "retries": 2,
+      "schema_version": 1,
+      "state": "NEEDS_REPAIR",
+      "updated_at": "2026-09-03T04:07:10.165149Z"
+    },
+    "EXP-056-20260903T040825Z-286ed2": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T04:08:25.138782Z",
+      "experiment_id": "EXP-056",
+      "job_id": "EXP-056-20260903T040825Z-286ed2",
+      "kernel_slug": "matiasantezana/biohub-exp-056-deepgraph",
       "kernel_state": "RUNNING",
-      "kernel_version": 3,
+      "kernel_version": 6,
       "log_inspection": {
         "has_error": false,
         "paths": [],
@@ -1421,14 +1448,14 @@
       },
       "max_retries": 2,
       "output_file": "submission.csv",
-      "package_sha256": "2bcc56abb4fb7e7a70ef3c6d174e5fd8917e6251ab1aae615e6c7687d210f4a1",
-      "pushed_at": "2026-09-03T04:01:47.435781Z",
+      "package_sha256": "edc7ecaaa247682bfeb68d0a741c4e6334e9d0ba87d815d00439641c5f0eca87",
+      "pushed_at": "2026-09-03T04:08:28.270770Z",
       "retries": 0,
       "schema_version": 1,
       "state": "RUNNING",
-      "updated_at": "2026-09-03T04:01:55.556833Z"
+      "updated_at": "2026-09-03T04:08:35.274312Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-03T04:01:55.557487Z"
+  "updated_at": "2026-09-03T04:08:35.274788Z"
 }
