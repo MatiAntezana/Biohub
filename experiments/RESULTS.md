@@ -86,4 +86,7 @@
 | EXP-057_20260902T131934Z_30ba9271 | EXP-057 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
 | EXP-057_20260902T132027Z_30ba9271 | EXP-057 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
 | EXP-057_20260902T132109Z_30ba9271 | EXP-057 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
+| EXP-057_20260902T132212Z_30ba9271 | EXP-057 | **ORPHANED** | — | `{}` | — |
 | EXP-054_20260902T205115Z_2f96e84b | EXP-054 | **FAILED** | — | `{}` | — |
+| EXP-057_20260903T001106Z_b04ac218 | EXP-057 | **FAILED** | — | `{}` | — |
+| EXP-055_20260903T001305Z_d1f9ffe0 | EXP-055 | **FAILED** | — | `{}` | — |
