@@ -1339,17 +1339,26 @@
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-03T15:01:34.893291Z",
       "deployment_key": "EXP-055:EXP-055_20260903T001305Z_d1f9ffe0:343668ad5e3f8aba284412ba8d510fbeb8e546800e776331526c77b461291964",
+      "error": "la corrida terminó sin BIOHUB_DATASET_SCOPE=test; scope sentinel JSON inválido",
       "experiment_id": "EXP-055",
       "job_id": "EXP-055-20260903T150134Z-4c6764",
       "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
-      "kernel_state": "RUNNING",
+      "kernel_state": "COMPLETE",
       "kernel_version": 2,
       "log_inspection": {
         "has_error": false,
-        "paths": [],
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr\\n\"}"
+        ],
         "scopes": [],
-        "transient_error": false,
-        "violations": []
+        "transient_error": true,
+        "violations": [
+          "la corrida terminó sin BIOHUB_DATASET_SCOPE=test",
+          "scope sentinel JSON inválido"
+        ]
       },
       "max_retries": 2,
       "output_file": "submission.csv",
@@ -1358,9 +1367,9 @@
       "retries": 0,
       "schema_version": 1,
       "source_run_id": "EXP-055_20260903T001305Z_d1f9ffe0",
-      "state": "RUNNING",
+      "state": "POLICY_BLOCKED",
       "trained_at": "2026-09-03T14:55:22.610582Z",
-      "updated_at": "2026-09-03T15:09:39.622416Z"
+      "updated_at": "2026-09-03T15:20:21.609119Z"
     },
     "EXP-055-20260903T150335Z-4bc52c": {
       "auto_submit": true,
@@ -1398,11 +1407,53 @@
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-03T15:09:33.449552Z",
+      "csv_validation": {
+        "bytes": 18047245,
+        "edges": 160947,
+        "nodes": 190428,
+        "rows": 351375
+      },
+      "error": null,
       "experiment_id": "EXP-055",
       "job_id": "EXP-055-20260903T150933Z-f99bf9",
       "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
-      "kernel_state": "RUNNING",
+      "kernel_state": "COMPLETE",
       "kernel_version": 3,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr\\n\"}"
+        ],
+        "scopes": [],
+        "transient_error": true,
+        "violations": [
+          "la corrida terminó sin BIOHUB_DATASET_SCOPE=test",
+          "scope sentinel JSON inválido"
+        ]
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "343668ad5e3f8aba284412ba8d510fbeb8e546800e776331526c77b461291964",
+      "pushed_at": "2026-09-03T15:09:35.998372Z",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "SUBMITTED",
+      "submission_message": "EXP-055 auto EXP-055-20260903T150933Z-f99bf9",
+      "submission_response": "2 submissions remaining today.",
+      "updated_at": "2026-09-03T15:21:25.174685Z"
+    },
+    "EXP-055-20260903T152351Z-fc298b": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T15:23:51.573945Z",
+      "experiment_id": "EXP-055",
+      "job_id": "EXP-055-20260903T152351Z-fc298b",
+      "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 4,
       "log_inspection": {
         "has_error": false,
         "paths": [],
@@ -1412,12 +1463,12 @@
       },
       "max_retries": 2,
       "output_file": "submission.csv",
-      "package_sha256": "343668ad5e3f8aba284412ba8d510fbeb8e546800e776331526c77b461291964",
-      "pushed_at": "2026-09-03T15:09:35.998372Z",
+      "package_sha256": "43389c30bb29d53c92301c553582487261e391869d1fb6e5aa3e9fbfb4474b1c",
+      "pushed_at": "2026-09-03T15:23:54.132105Z",
       "retries": 0,
       "schema_version": 1,
       "state": "RUNNING",
-      "updated_at": "2026-09-03T15:09:46.059353Z"
+      "updated_at": "2026-09-03T15:24:07.870642Z"
     },
     "EXP-056-20260902T204536Z-db742d": {
       "auto_submit": true,
@@ -1762,9 +1813,9 @@
       "retries": 0,
       "schema_version": 1,
       "state": "RUNNING",
-      "updated_at": "2026-09-03T15:09:43.360591Z"
+      "updated_at": "2026-09-03T15:23:31.179768Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-03T15:09:46.059976Z"
+  "updated_at": "2026-09-03T15:24:07.871559Z"
 }
