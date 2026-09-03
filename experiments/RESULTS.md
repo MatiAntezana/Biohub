@@ -89,4 +89,4 @@
 | EXP-057_20260902T132212Z_30ba9271 | EXP-057 | **ORPHANED** | — | `{}` | — |
 | EXP-054_20260902T205115Z_2f96e84b | EXP-054 | **FAILED** | — | `{}` | — |
 | EXP-057_20260903T001106Z_b04ac218 | EXP-057 | **FAILED** | — | `{}` | — |
-| EXP-055_20260903T001305Z_d1f9ffe0 | EXP-055 | **FAILED** | — | `{}` | — |
+| EXP-055_20260903T001305Z_d1f9ffe0 | EXP-055 | **CLOSED** | N/A — full-fit sin validación | `{"primary": {"checkpoint_selection": "last_epoch", "detection_loss": 0.01700184487675627, "edge_loss": 0.0002759767247621312, "epoch": 49, "learning_rate": 0.0001, "selection_score": null, "train_seconds": 1233.391454334007, "validation_accuracy": null, "validation_loss": null, "validation_recall": null}, "secondary": {"checkpoint_selection": "last_epoch", "detection_loss": 0.01669064625756194, "edge_loss": 0.0002769144099368835, "epoch": 49, "learning_rate": 0.0001, "selection_score": null, "train_seconds": 1309.8339375899814, "validation_accuracy": null, "validation_loss": null, "validation_recall": null}}` | experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/validation/EXP-055_20260903T001305Z_d1f9ffe0/REPORT.md |

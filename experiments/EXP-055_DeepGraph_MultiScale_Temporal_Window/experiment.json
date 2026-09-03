@@ -11,14 +11,19 @@
     "--num-workers",
     "2",
     "--max-iters",
-    "750"
+    "750",
+    "--resume-primary",
+    "checkpoints/EXP-055_20260902T023054Z_2b255a60/primary/training_checkpoint.pth",
+    "--resume-secondary",
+    "checkpoints/EXP-055_20260902T023054Z_2b255a60/secondary/training_checkpoint.pth"
   ],
   "allowed_nodes": [
     "A1552",
+    "A1553",
     "A1555",
     "A1557"
   ],
-  "default_node": "A1555",
+  "default_node": "A1553",
   "execution_policy": {
     "node_selection": "max_free_vram",
     "min_free_vram_mib": 18000,

@@ -1,0 +1,88 @@
+{
+  "artifacts": {
+    "checkpoints": [
+      {
+        "bytes": 33648151,
+        "path": "experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/checkpoints/EXP-055_20260903T001305Z_d1f9ffe0/primary/training_checkpoint.pth",
+        "sha256": "6c39352b410f8079ab1bafb07e2519357c4fd30d5fd243b1ada3ff7e15405990"
+      },
+      {
+        "bytes": 33649367,
+        "path": "experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/checkpoints/EXP-055_20260903T001305Z_d1f9ffe0/secondary/training_checkpoint.pth",
+        "sha256": "69211473439b8c4bf7d95984856c4327eaca459141a5afa7b069eca5d3b2a8a0"
+      }
+    ],
+    "terminal_receipt": {
+      "path": "experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/artifacts/EXP-055_20260903T001305Z_d1f9ffe0/TRAINING_COMPLETE.json",
+      "sha256": "7fb9c41fb98f6f839642c375254dfaf2f7b566982f24aec4d84f97888ad791ac"
+    }
+  },
+  "child_pid": 42336,
+  "command": [
+    "/home/alumno1/miniconda3/envs/train-53/bin/python",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/train.py",
+    "--epochs",
+    "50",
+    "--batch-size",
+    "2",
+    "--num-workers",
+    "2",
+    "--max-iters",
+    "750",
+    "--resume-primary",
+    "checkpoints/EXP-055_20260902T023054Z_2b255a60/primary/training_checkpoint.pth",
+    "--resume-secondary",
+    "checkpoints/EXP-055_20260902T023054Z_2b255a60/secondary/training_checkpoint.pth",
+    "--project-root",
+    "/home/alumno1/Documents/Biohub",
+    "--run-dir",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-055_DeepGraph_MultiScale_Temporal_Window/artifacts/EXP-055_20260903T001305Z_d1f9ffe0",
+    "--compact"
+  ],
+  "completed_at": "2026-09-03T14:46:49.569848Z",
+  "config_sha256": "d1f9ffe030cea565b33a771e5f6c1fb9eaa9a366b3d4188fc5e5969f858c9665",
+  "environment": {
+    "conda_env": "train-53",
+    "executable": "/home/alumno1/miniconda3/envs/train-53/bin/python",
+    "gpu": [
+      "NVIDIA GeForce RTX 4090, 24564 MiB"
+    ],
+    "hostname": "A1553-UBU",
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15"
+  },
+  "exit_code": 0,
+  "experiment_id": "EXP-055",
+  "metrics": {
+    "primary": {
+      "checkpoint_selection": "last_epoch",
+      "detection_loss": 0.01700184487675627,
+      "edge_loss": 0.0002759767247621312,
+      "epoch": 49,
+      "learning_rate": 0.0001,
+      "selection_score": null,
+      "train_seconds": 1233.391454334007,
+      "validation_accuracy": null,
+      "validation_loss": null,
+      "validation_recall": null
+    },
+    "secondary": {
+      "checkpoint_selection": "last_epoch",
+      "detection_loss": 0.01669064625756194,
+      "edge_loss": 0.0002769144099368835,
+      "epoch": 49,
+      "learning_rate": 0.0001,
+      "selection_score": null,
+      "train_seconds": 1309.8339375899814,
+      "validation_accuracy": null,
+      "validation_loss": null,
+      "validation_recall": null
+    }
+  },
+  "run_id": "EXP-055_20260903T001305Z_d1f9ffe0",
+  "schema_version": 1,
+  "started_at": "2026-09-03T00:13:15.484302Z",
+  "status": "SUCCEEDED",
+  "validation": "N/A — full-fit sin validación",
+  "worker_pid": 42332
+}

@@ -1297,6 +1297,34 @@
       "trained_at": "2026-09-01T12:42:36.884286Z",
       "updated_at": "2026-09-01T12:58:07.015522Z"
     },
+    "EXP-055-20260903T145434Z-e58e55": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T14:54:34.151944Z",
+      "deployment_key": "EXP-055:EXP-055_20260903T001305Z_d1f9ffe0:0abf0f1ef64adb85047180c838b585344cb941e7dbeb5e0a5e0854f76d80c4ab",
+      "experiment_id": "EXP-055",
+      "job_id": "EXP-055-20260903T145434Z-e58e55",
+      "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 1,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [],
+        "scopes": [],
+        "transient_error": false,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "2e3be3c5991dc6c9245a2040389cff429c17bbc3870ab6a0d180dcc5b3cc2eb1",
+      "pushed_at": "2026-09-03T14:54:36.613311Z",
+      "retries": 0,
+      "schema_version": 1,
+      "source_run_id": "EXP-055_20260903T001305Z_d1f9ffe0",
+      "state": "RUNNING",
+      "trained_at": "2026-09-03T14:53:26.974367Z",
+      "updated_at": "2026-09-03T14:55:43.811867Z"
+    },
     "EXP-056-20260902T204536Z-db742d": {
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
@@ -1640,9 +1668,9 @@
       "retries": 0,
       "schema_version": 1,
       "state": "RUNNING",
-      "updated_at": "2026-09-03T14:48:23.055132Z"
+      "updated_at": "2026-09-03T14:55:45.902065Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-03T14:48:23.056518Z"
+  "updated_at": "2026-09-03T14:55:45.902834Z"
 }

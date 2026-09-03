@@ -433,8 +433,8 @@
       "ready_at": "2026-09-01T18:15:19.429211Z",
       "requested_node": "max_free_vram",
       "run_id": "EXP-055_20260903T001305Z_d1f9ffe0",
-      "status": "FAILED",
-      "updated_at": "2026-09-03T10:32:41.350644Z"
+      "status": "CLOSED",
+      "updated_at": "2026-09-03T14:55:22.611374Z"
     },
     {
       "allowed_nodes": [
@@ -477,5 +477,5 @@
     }
   ],
   "schema_version": 1,
-  "updated_at": "2026-09-03T14:47:54.534954Z"
+  "updated_at": "2026-09-03T14:55:55.380179Z"
 }

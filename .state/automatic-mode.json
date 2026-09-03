@@ -1,2500 +1,6 @@
 {
   "events": [
     {
-      "action": "variant-policy",
-      "at": "2026-09-03T12:37:05.421600Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T12:37:05.438439Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T12:37:11.957620Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 22314
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1553": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1560": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T12:37:11.950450Z",
-        "transitions": []
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T12:37:12.090839Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T12:46:39.453481Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T12:46:39.475328Z",
-      "result": {
-        "checked_at": "2026-09-03T12:46:39.475304Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T12:46:39.493131Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T12:46:39.496245Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T12:46:44.542749Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 20066
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T12:46:44.534896Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 20066
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "last_seen_at": "2026-09-03T12:29:29.709683Z",
-              "node": "A1560",
-              "pid": 33646,
-              "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "stale": true,
-              "used_gpu_memory_mib": 22314
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T12:46:44.600846Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T12:47:44.784886Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T12:47:44.794568Z",
-      "result": {
-        "checked_at": "2026-09-03T12:47:44.794552Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T12:47:44.804735Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T12:47:44.805844Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T12:47:49.847782Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 23280
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T12:47:49.843275Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 23280
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 20066
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T12:47:49.902386Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T12:48:50.091619Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T12:48:50.103969Z",
-      "result": {
-        "checked_at": "2026-09-03T12:48:50.103954Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T12:48:50.111495Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T12:48:50.112497Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T12:48:55.150684Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 17156
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T12:48:55.142973Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 17156
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 23280
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T12:48:57.692077Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T12:49:57.854750Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T12:49:57.865345Z",
-      "result": {
-        "checked_at": "2026-09-03T12:49:57.865334Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T12:49:57.868595Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T12:49:57.870090Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T12:50:02.901096Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22336
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T12:50:02.894663Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22336
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 17156
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T12:50:05.643302Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T12:51:05.782025Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T12:51:05.793887Z",
-      "result": {
-        "checked_at": "2026-09-03T12:51:05.793872Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T12:51:05.797232Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T12:51:05.798393Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T12:51:10.835716Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22344
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T12:51:10.829177Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22344
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22336
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T12:51:13.123462Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T12:52:13.315195Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T12:52:13.325097Z",
-      "result": {
-        "checked_at": "2026-09-03T12:52:13.325085Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T12:52:13.329060Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T12:52:13.330513Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T12:52:18.361358Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22300
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T12:52:18.357810Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22300
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22344
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T12:52:20.618479Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T12:53:20.789153Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T12:53:20.798893Z",
-      "result": {
-        "checked_at": "2026-09-03T12:53:20.798878Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T12:53:20.802044Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
       "action": "variant-kaggle-prepare",
       "at": "2026-09-03T12:53:20.803198Z",
       "result": {
@@ -29546,12 +27052,2291 @@
           }
         ]
       }
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T14:48:49.642704Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T14:48:49.654013Z",
+      "result": {
+        "checked_at": "2026-09-03T14:48:49.654001Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T14:48:49.658244Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T14:48:49.660306Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T14:48:54.708094Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 18280
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T14:48:54.700575Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 18280
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22368
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "kaggle-auto-publish",
+      "at": "2026-09-03T14:48:56.929394Z",
+      "result": {
+        "blocked": [
+          {
+            "experiment_id": "EXP-039",
+            "job_id": "EXP-039-20260830T102102Z-68098c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-040",
+            "job_id": "EXP-040-20260830T112032Z-0b481c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-043",
+            "job_id": "EXP-043-20260830T130402Z-826a45",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-046",
+            "job_id": "EXP-046-20260830T172640Z-96146f",
+            "reason": "deterministic Kaggle push failure"
+          }
+        ],
+        "dry_run": false,
+        "eligible": [
+          {
+            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
+            "experiment_id": "EXP-050",
+            "run_id": "EXP-050_20260830T172441Z_40702514"
+          },
+          {
+            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
+            "experiment_id": "EXP-051",
+            "run_id": "EXP-051_20260831T150521Z_477a84b9"
+          },
+          {
+            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
+            "experiment_id": "EXP-052",
+            "run_id": "EXP-052_20260901T050028Z_33370396"
+          },
+          {
+            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
+            "experiment_id": "EXP-030B",
+            "run_id": "EXP-030B_20260829T051035Z_55573139"
+          },
+          {
+            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
+            "experiment_id": "EXP-032",
+            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
+          },
+          {
+            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
+            "experiment_id": "EXP-033",
+            "run_id": "EXP-033_20260830T054243Z_acd48d34"
+          },
+          {
+            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
+            "experiment_id": "EXP-034",
+            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
+          },
+          {
+            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
+            "experiment_id": "EXP-036",
+            "run_id": "EXP-036_20260830T070804Z_8d380735"
+          },
+          {
+            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
+            "experiment_id": "EXP-037",
+            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
+          },
+          {
+            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
+            "experiment_id": "EXP-039",
+            "run_id": "EXP-039_20260830T090516Z_1b069872"
+          },
+          {
+            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
+            "experiment_id": "EXP-040",
+            "run_id": "EXP-040_20260830T094829Z_7c27497a"
+          },
+          {
+            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
+            "experiment_id": "EXP-041",
+            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
+          },
+          {
+            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
+            "experiment_id": "EXP-043",
+            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
+          },
+          {
+            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
+            "experiment_id": "EXP-042",
+            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
+          },
+          {
+            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
+            "experiment_id": "EXP-046",
+            "run_id": "EXP-046_20260830T163523Z_25825c59"
+          },
+          {
+            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
+            "experiment_id": "EXP-044",
+            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
+          },
+          {
+            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
+            "experiment_id": "EXP-038",
+            "run_id": "EXP-038_20260830T091939Z_88e852c3"
+          },
+          {
+            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
+            "experiment_id": "EXP-045",
+            "run_id": "EXP-045_20260830T155156Z_471d630b"
+          }
+        ],
+        "pushed": [],
+        "waiting": [
+          {
+            "experiment_id": "EXP-050",
+            "job_id": "EXP-050-20260830T230527Z-d92535",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-051",
+            "job_id": "EXP-051-20260901T124238Z-3b97f6",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-052",
+            "job_id": "EXP-052-20260901T124242Z-d46727",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-030B",
+            "job_id": "EXP-030B-20260829T165225Z-f4036d",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-032",
+            "job_id": "EXP-032-20260830T062707Z-e214e1",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-033",
+            "job_id": "EXP-033-20260830T064308Z-2fe11f",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-034",
+            "job_id": "EXP-034-20260830T065004Z-b37144",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-036",
+            "job_id": "EXP-036-20260830T225235Z-dcaa75",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-037",
+            "job_id": "EXP-037-20260830T225237Z-590067",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-041",
+            "job_id": "EXP-041-20260830T124134Z-4f3b10",
+            "reason": "deployment already registered",
+            "state": "NEEDS_REPAIR"
+          },
+          {
+            "experiment_id": "EXP-042",
+            "job_id": "EXP-042-20260830T231158Z-1126f5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-044",
+            "job_id": "EXP-044-20260830T173113Z-301f54",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-038",
+            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-045",
+            "job_id": "EXP-045-20260830T232842Z-fdd840",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T14:49:57.090756Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T14:49:57.102316Z",
+      "result": {
+        "checked_at": "2026-09-03T14:49:57.102301Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T14:49:57.109696Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T14:49:57.111111Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T14:50:02.143689Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 23574
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T14:50:02.137562Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 23574
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 18280
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "kaggle-auto-publish",
+      "at": "2026-09-03T14:50:04.432121Z",
+      "result": {
+        "blocked": [
+          {
+            "experiment_id": "EXP-039",
+            "job_id": "EXP-039-20260830T102102Z-68098c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-040",
+            "job_id": "EXP-040-20260830T112032Z-0b481c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-043",
+            "job_id": "EXP-043-20260830T130402Z-826a45",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-046",
+            "job_id": "EXP-046-20260830T172640Z-96146f",
+            "reason": "deterministic Kaggle push failure"
+          }
+        ],
+        "dry_run": false,
+        "eligible": [
+          {
+            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
+            "experiment_id": "EXP-050",
+            "run_id": "EXP-050_20260830T172441Z_40702514"
+          },
+          {
+            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
+            "experiment_id": "EXP-051",
+            "run_id": "EXP-051_20260831T150521Z_477a84b9"
+          },
+          {
+            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
+            "experiment_id": "EXP-052",
+            "run_id": "EXP-052_20260901T050028Z_33370396"
+          },
+          {
+            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
+            "experiment_id": "EXP-030B",
+            "run_id": "EXP-030B_20260829T051035Z_55573139"
+          },
+          {
+            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
+            "experiment_id": "EXP-032",
+            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
+          },
+          {
+            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
+            "experiment_id": "EXP-033",
+            "run_id": "EXP-033_20260830T054243Z_acd48d34"
+          },
+          {
+            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
+            "experiment_id": "EXP-034",
+            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
+          },
+          {
+            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
+            "experiment_id": "EXP-036",
+            "run_id": "EXP-036_20260830T070804Z_8d380735"
+          },
+          {
+            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
+            "experiment_id": "EXP-037",
+            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
+          },
+          {
+            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
+            "experiment_id": "EXP-039",
+            "run_id": "EXP-039_20260830T090516Z_1b069872"
+          },
+          {
+            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
+            "experiment_id": "EXP-040",
+            "run_id": "EXP-040_20260830T094829Z_7c27497a"
+          },
+          {
+            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
+            "experiment_id": "EXP-041",
+            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
+          },
+          {
+            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
+            "experiment_id": "EXP-043",
+            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
+          },
+          {
+            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
+            "experiment_id": "EXP-042",
+            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
+          },
+          {
+            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
+            "experiment_id": "EXP-046",
+            "run_id": "EXP-046_20260830T163523Z_25825c59"
+          },
+          {
+            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
+            "experiment_id": "EXP-044",
+            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
+          },
+          {
+            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
+            "experiment_id": "EXP-038",
+            "run_id": "EXP-038_20260830T091939Z_88e852c3"
+          },
+          {
+            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
+            "experiment_id": "EXP-045",
+            "run_id": "EXP-045_20260830T155156Z_471d630b"
+          }
+        ],
+        "pushed": [],
+        "waiting": [
+          {
+            "experiment_id": "EXP-050",
+            "job_id": "EXP-050-20260830T230527Z-d92535",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-051",
+            "job_id": "EXP-051-20260901T124238Z-3b97f6",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-052",
+            "job_id": "EXP-052-20260901T124242Z-d46727",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-030B",
+            "job_id": "EXP-030B-20260829T165225Z-f4036d",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-032",
+            "job_id": "EXP-032-20260830T062707Z-e214e1",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-033",
+            "job_id": "EXP-033-20260830T064308Z-2fe11f",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-034",
+            "job_id": "EXP-034-20260830T065004Z-b37144",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-036",
+            "job_id": "EXP-036-20260830T225235Z-dcaa75",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-037",
+            "job_id": "EXP-037-20260830T225237Z-590067",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-041",
+            "job_id": "EXP-041-20260830T124134Z-4f3b10",
+            "reason": "deployment already registered",
+            "state": "NEEDS_REPAIR"
+          },
+          {
+            "experiment_id": "EXP-042",
+            "job_id": "EXP-042-20260830T231158Z-1126f5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-044",
+            "job_id": "EXP-044-20260830T173113Z-301f54",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-038",
+            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-045",
+            "job_id": "EXP-045-20260830T232842Z-fdd840",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T14:51:04.608263Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T14:51:04.622463Z",
+      "result": {
+        "checked_at": "2026-09-03T14:51:04.622451Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T14:51:04.625631Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T14:51:04.627155Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T14:51:09.664702Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17148
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T14:51:09.653515Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 17148
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 23574
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "kaggle-auto-publish",
+      "at": "2026-09-03T14:51:11.693167Z",
+      "result": {
+        "blocked": [
+          {
+            "experiment_id": "EXP-039",
+            "job_id": "EXP-039-20260830T102102Z-68098c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-040",
+            "job_id": "EXP-040-20260830T112032Z-0b481c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-043",
+            "job_id": "EXP-043-20260830T130402Z-826a45",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-046",
+            "job_id": "EXP-046-20260830T172640Z-96146f",
+            "reason": "deterministic Kaggle push failure"
+          }
+        ],
+        "dry_run": false,
+        "eligible": [
+          {
+            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
+            "experiment_id": "EXP-050",
+            "run_id": "EXP-050_20260830T172441Z_40702514"
+          },
+          {
+            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
+            "experiment_id": "EXP-051",
+            "run_id": "EXP-051_20260831T150521Z_477a84b9"
+          },
+          {
+            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
+            "experiment_id": "EXP-052",
+            "run_id": "EXP-052_20260901T050028Z_33370396"
+          },
+          {
+            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
+            "experiment_id": "EXP-030B",
+            "run_id": "EXP-030B_20260829T051035Z_55573139"
+          },
+          {
+            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
+            "experiment_id": "EXP-032",
+            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
+          },
+          {
+            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
+            "experiment_id": "EXP-033",
+            "run_id": "EXP-033_20260830T054243Z_acd48d34"
+          },
+          {
+            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
+            "experiment_id": "EXP-034",
+            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
+          },
+          {
+            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
+            "experiment_id": "EXP-036",
+            "run_id": "EXP-036_20260830T070804Z_8d380735"
+          },
+          {
+            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
+            "experiment_id": "EXP-037",
+            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
+          },
+          {
+            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
+            "experiment_id": "EXP-039",
+            "run_id": "EXP-039_20260830T090516Z_1b069872"
+          },
+          {
+            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
+            "experiment_id": "EXP-040",
+            "run_id": "EXP-040_20260830T094829Z_7c27497a"
+          },
+          {
+            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
+            "experiment_id": "EXP-041",
+            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
+          },
+          {
+            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
+            "experiment_id": "EXP-043",
+            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
+          },
+          {
+            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
+            "experiment_id": "EXP-042",
+            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
+          },
+          {
+            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
+            "experiment_id": "EXP-046",
+            "run_id": "EXP-046_20260830T163523Z_25825c59"
+          },
+          {
+            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
+            "experiment_id": "EXP-044",
+            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
+          },
+          {
+            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
+            "experiment_id": "EXP-038",
+            "run_id": "EXP-038_20260830T091939Z_88e852c3"
+          },
+          {
+            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
+            "experiment_id": "EXP-045",
+            "run_id": "EXP-045_20260830T155156Z_471d630b"
+          }
+        ],
+        "pushed": [],
+        "waiting": [
+          {
+            "experiment_id": "EXP-050",
+            "job_id": "EXP-050-20260830T230527Z-d92535",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-051",
+            "job_id": "EXP-051-20260901T124238Z-3b97f6",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-052",
+            "job_id": "EXP-052-20260901T124242Z-d46727",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-030B",
+            "job_id": "EXP-030B-20260829T165225Z-f4036d",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-032",
+            "job_id": "EXP-032-20260830T062707Z-e214e1",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-033",
+            "job_id": "EXP-033-20260830T064308Z-2fe11f",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-034",
+            "job_id": "EXP-034-20260830T065004Z-b37144",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-036",
+            "job_id": "EXP-036-20260830T225235Z-dcaa75",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-037",
+            "job_id": "EXP-037-20260830T225237Z-590067",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-041",
+            "job_id": "EXP-041-20260830T124134Z-4f3b10",
+            "reason": "deployment already registered",
+            "state": "NEEDS_REPAIR"
+          },
+          {
+            "experiment_id": "EXP-042",
+            "job_id": "EXP-042-20260830T231158Z-1126f5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-044",
+            "job_id": "EXP-044-20260830T173113Z-301f54",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-038",
+            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-045",
+            "job_id": "EXP-045-20260830T232842Z-fdd840",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T14:52:11.920693Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T14:52:11.930880Z",
+      "result": {
+        "checked_at": "2026-09-03T14:52:11.930864Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T14:52:11.936446Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T14:52:11.937639Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T14:52:16.967360Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17102
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T14:52:16.962456Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 17102
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 17148
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "kaggle-auto-publish",
+      "at": "2026-09-03T14:52:19.088347Z",
+      "result": {
+        "blocked": [
+          {
+            "experiment_id": "EXP-039",
+            "job_id": "EXP-039-20260830T102102Z-68098c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-040",
+            "job_id": "EXP-040-20260830T112032Z-0b481c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-043",
+            "job_id": "EXP-043-20260830T130402Z-826a45",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-046",
+            "job_id": "EXP-046-20260830T172640Z-96146f",
+            "reason": "deterministic Kaggle push failure"
+          }
+        ],
+        "dry_run": false,
+        "eligible": [
+          {
+            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
+            "experiment_id": "EXP-050",
+            "run_id": "EXP-050_20260830T172441Z_40702514"
+          },
+          {
+            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
+            "experiment_id": "EXP-051",
+            "run_id": "EXP-051_20260831T150521Z_477a84b9"
+          },
+          {
+            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
+            "experiment_id": "EXP-052",
+            "run_id": "EXP-052_20260901T050028Z_33370396"
+          },
+          {
+            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
+            "experiment_id": "EXP-030B",
+            "run_id": "EXP-030B_20260829T051035Z_55573139"
+          },
+          {
+            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
+            "experiment_id": "EXP-032",
+            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
+          },
+          {
+            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
+            "experiment_id": "EXP-033",
+            "run_id": "EXP-033_20260830T054243Z_acd48d34"
+          },
+          {
+            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
+            "experiment_id": "EXP-034",
+            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
+          },
+          {
+            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
+            "experiment_id": "EXP-036",
+            "run_id": "EXP-036_20260830T070804Z_8d380735"
+          },
+          {
+            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
+            "experiment_id": "EXP-037",
+            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
+          },
+          {
+            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
+            "experiment_id": "EXP-039",
+            "run_id": "EXP-039_20260830T090516Z_1b069872"
+          },
+          {
+            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
+            "experiment_id": "EXP-040",
+            "run_id": "EXP-040_20260830T094829Z_7c27497a"
+          },
+          {
+            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
+            "experiment_id": "EXP-041",
+            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
+          },
+          {
+            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
+            "experiment_id": "EXP-043",
+            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
+          },
+          {
+            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
+            "experiment_id": "EXP-042",
+            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
+          },
+          {
+            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
+            "experiment_id": "EXP-046",
+            "run_id": "EXP-046_20260830T163523Z_25825c59"
+          },
+          {
+            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
+            "experiment_id": "EXP-044",
+            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
+          },
+          {
+            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
+            "experiment_id": "EXP-038",
+            "run_id": "EXP-038_20260830T091939Z_88e852c3"
+          },
+          {
+            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
+            "experiment_id": "EXP-045",
+            "run_id": "EXP-045_20260830T155156Z_471d630b"
+          }
+        ],
+        "pushed": [],
+        "waiting": [
+          {
+            "experiment_id": "EXP-050",
+            "job_id": "EXP-050-20260830T230527Z-d92535",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-051",
+            "job_id": "EXP-051-20260901T124238Z-3b97f6",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-052",
+            "job_id": "EXP-052-20260901T124242Z-d46727",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-030B",
+            "job_id": "EXP-030B-20260829T165225Z-f4036d",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-032",
+            "job_id": "EXP-032-20260830T062707Z-e214e1",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-033",
+            "job_id": "EXP-033-20260830T064308Z-2fe11f",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-034",
+            "job_id": "EXP-034-20260830T065004Z-b37144",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-036",
+            "job_id": "EXP-036-20260830T225235Z-dcaa75",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-037",
+            "job_id": "EXP-037-20260830T225237Z-590067",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-041",
+            "job_id": "EXP-041-20260830T124134Z-4f3b10",
+            "reason": "deployment already registered",
+            "state": "NEEDS_REPAIR"
+          },
+          {
+            "experiment_id": "EXP-042",
+            "job_id": "EXP-042-20260830T231158Z-1126f5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-044",
+            "job_id": "EXP-044-20260830T173113Z-301f54",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-038",
+            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-045",
+            "job_id": "EXP-045-20260830T232842Z-fdd840",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T14:53:19.210973Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T14:53:19.224419Z",
+      "result": {
+        "checked_at": "2026-09-03T14:53:19.224407Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T14:53:19.227613Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T14:53:19.228705Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T14:53:24.264292Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 22350
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T14:53:24.258769Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22350
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 17102
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "kaggle-auto-publish",
+      "at": "2026-09-03T14:53:26.339231Z",
+      "result": {
+        "blocked": [
+          {
+            "experiment_id": "EXP-039",
+            "job_id": "EXP-039-20260830T102102Z-68098c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-040",
+            "job_id": "EXP-040-20260830T112032Z-0b481c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-043",
+            "job_id": "EXP-043-20260830T130402Z-826a45",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-046",
+            "job_id": "EXP-046-20260830T172640Z-96146f",
+            "reason": "deterministic Kaggle push failure"
+          }
+        ],
+        "dry_run": false,
+        "eligible": [
+          {
+            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
+            "experiment_id": "EXP-050",
+            "run_id": "EXP-050_20260830T172441Z_40702514"
+          },
+          {
+            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
+            "experiment_id": "EXP-051",
+            "run_id": "EXP-051_20260831T150521Z_477a84b9"
+          },
+          {
+            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
+            "experiment_id": "EXP-052",
+            "run_id": "EXP-052_20260901T050028Z_33370396"
+          },
+          {
+            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
+            "experiment_id": "EXP-030B",
+            "run_id": "EXP-030B_20260829T051035Z_55573139"
+          },
+          {
+            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
+            "experiment_id": "EXP-032",
+            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
+          },
+          {
+            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
+            "experiment_id": "EXP-033",
+            "run_id": "EXP-033_20260830T054243Z_acd48d34"
+          },
+          {
+            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
+            "experiment_id": "EXP-034",
+            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
+          },
+          {
+            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
+            "experiment_id": "EXP-036",
+            "run_id": "EXP-036_20260830T070804Z_8d380735"
+          },
+          {
+            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
+            "experiment_id": "EXP-037",
+            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
+          },
+          {
+            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
+            "experiment_id": "EXP-039",
+            "run_id": "EXP-039_20260830T090516Z_1b069872"
+          },
+          {
+            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
+            "experiment_id": "EXP-040",
+            "run_id": "EXP-040_20260830T094829Z_7c27497a"
+          },
+          {
+            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
+            "experiment_id": "EXP-041",
+            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
+          },
+          {
+            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
+            "experiment_id": "EXP-043",
+            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
+          },
+          {
+            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
+            "experiment_id": "EXP-042",
+            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
+          },
+          {
+            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
+            "experiment_id": "EXP-046",
+            "run_id": "EXP-046_20260830T163523Z_25825c59"
+          },
+          {
+            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
+            "experiment_id": "EXP-044",
+            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
+          },
+          {
+            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
+            "experiment_id": "EXP-038",
+            "run_id": "EXP-038_20260830T091939Z_88e852c3"
+          },
+          {
+            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
+            "experiment_id": "EXP-045",
+            "run_id": "EXP-045_20260830T155156Z_471d630b"
+          }
+        ],
+        "pushed": [],
+        "waiting": [
+          {
+            "experiment_id": "EXP-050",
+            "job_id": "EXP-050-20260830T230527Z-d92535",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-051",
+            "job_id": "EXP-051-20260901T124238Z-3b97f6",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-052",
+            "job_id": "EXP-052-20260901T124242Z-d46727",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-030B",
+            "job_id": "EXP-030B-20260829T165225Z-f4036d",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-032",
+            "job_id": "EXP-032-20260830T062707Z-e214e1",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-033",
+            "job_id": "EXP-033-20260830T064308Z-2fe11f",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-034",
+            "job_id": "EXP-034-20260830T065004Z-b37144",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-036",
+            "job_id": "EXP-036-20260830T225235Z-dcaa75",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-037",
+            "job_id": "EXP-037-20260830T225237Z-590067",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-041",
+            "job_id": "EXP-041-20260830T124134Z-4f3b10",
+            "reason": "deployment already registered",
+            "state": "NEEDS_REPAIR"
+          },
+          {
+            "experiment_id": "EXP-042",
+            "job_id": "EXP-042-20260830T231158Z-1126f5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-044",
+            "job_id": "EXP-044-20260830T173113Z-301f54",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-038",
+            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-045",
+            "job_id": "EXP-045-20260830T232842Z-fdd840",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T14:54:26.511002Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T14:54:26.521503Z",
+      "result": {
+        "checked_at": "2026-09-03T14:54:26.521488Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T14:54:26.527654Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T14:54:26.528913Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T14:54:31.563481Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17520
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T14:54:31.559538Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 17520
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22350
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "kaggle-push-error",
+      "at": "2026-09-03T14:54:36.622977Z",
+      "error": "TypeError(\"_record() got multiple values for argument 'state'\")",
+      "experiment_id": "EXP-055"
+    },
+    {
+      "action": "kaggle-auto-publish",
+      "at": "2026-09-03T14:54:36.624389Z",
+      "result": {
+        "blocked": [
+          {
+            "experiment_id": "EXP-055",
+            "reason": "TypeError(\"_record() got multiple values for argument 'state'\")"
+          },
+          {
+            "experiment_id": "EXP-039",
+            "job_id": "EXP-039-20260830T102102Z-68098c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-040",
+            "job_id": "EXP-040-20260830T112032Z-0b481c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-043",
+            "job_id": "EXP-043-20260830T130402Z-826a45",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-046",
+            "job_id": "EXP-046-20260830T172640Z-96146f",
+            "reason": "deterministic Kaggle push failure"
+          }
+        ],
+        "dry_run": false,
+        "eligible": [
+          {
+            "deployment_key": "EXP-055:EXP-055_20260903T001305Z_d1f9ffe0:0abf0f1ef64adb85047180c838b585344cb941e7dbeb5e0a5e0854f76d80c4ab",
+            "experiment_id": "EXP-055",
+            "run_id": "EXP-055_20260903T001305Z_d1f9ffe0"
+          },
+          {
+            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
+            "experiment_id": "EXP-050",
+            "run_id": "EXP-050_20260830T172441Z_40702514"
+          },
+          {
+            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
+            "experiment_id": "EXP-051",
+            "run_id": "EXP-051_20260831T150521Z_477a84b9"
+          },
+          {
+            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
+            "experiment_id": "EXP-052",
+            "run_id": "EXP-052_20260901T050028Z_33370396"
+          },
+          {
+            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
+            "experiment_id": "EXP-030B",
+            "run_id": "EXP-030B_20260829T051035Z_55573139"
+          },
+          {
+            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
+            "experiment_id": "EXP-032",
+            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
+          },
+          {
+            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
+            "experiment_id": "EXP-033",
+            "run_id": "EXP-033_20260830T054243Z_acd48d34"
+          },
+          {
+            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
+            "experiment_id": "EXP-034",
+            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
+          },
+          {
+            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
+            "experiment_id": "EXP-036",
+            "run_id": "EXP-036_20260830T070804Z_8d380735"
+          },
+          {
+            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
+            "experiment_id": "EXP-037",
+            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
+          },
+          {
+            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
+            "experiment_id": "EXP-039",
+            "run_id": "EXP-039_20260830T090516Z_1b069872"
+          },
+          {
+            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
+            "experiment_id": "EXP-040",
+            "run_id": "EXP-040_20260830T094829Z_7c27497a"
+          },
+          {
+            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
+            "experiment_id": "EXP-041",
+            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
+          },
+          {
+            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
+            "experiment_id": "EXP-043",
+            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
+          },
+          {
+            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
+            "experiment_id": "EXP-042",
+            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
+          },
+          {
+            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
+            "experiment_id": "EXP-046",
+            "run_id": "EXP-046_20260830T163523Z_25825c59"
+          },
+          {
+            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
+            "experiment_id": "EXP-044",
+            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
+          },
+          {
+            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
+            "experiment_id": "EXP-038",
+            "run_id": "EXP-038_20260830T091939Z_88e852c3"
+          },
+          {
+            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
+            "experiment_id": "EXP-045",
+            "run_id": "EXP-045_20260830T155156Z_471d630b"
+          }
+        ],
+        "pushed": [
+          {
+            "experiment_id": "EXP-055",
+            "job_id": "EXP-055-20260903T145434Z-e58e55",
+            "run_id": "EXP-055_20260903T001305Z_d1f9ffe0",
+            "state": "RUNNING"
+          }
+        ],
+        "waiting": [
+          {
+            "experiment_id": "EXP-050",
+            "job_id": "EXP-050-20260830T230527Z-d92535",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-051",
+            "job_id": "EXP-051-20260901T124238Z-3b97f6",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-052",
+            "job_id": "EXP-052-20260901T124242Z-d46727",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-030B",
+            "job_id": "EXP-030B-20260829T165225Z-f4036d",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-032",
+            "job_id": "EXP-032-20260830T062707Z-e214e1",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-033",
+            "job_id": "EXP-033-20260830T064308Z-2fe11f",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-034",
+            "job_id": "EXP-034-20260830T065004Z-b37144",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-036",
+            "job_id": "EXP-036-20260830T225235Z-dcaa75",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-037",
+            "job_id": "EXP-037-20260830T225237Z-590067",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-041",
+            "job_id": "EXP-041-20260830T124134Z-4f3b10",
+            "reason": "deployment already registered",
+            "state": "NEEDS_REPAIR"
+          },
+          {
+            "experiment_id": "EXP-042",
+            "job_id": "EXP-042-20260830T231158Z-1126f5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-044",
+            "job_id": "EXP-044-20260830T173113Z-301f54",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-038",
+            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-045",
+            "job_id": "EXP-045-20260830T232842Z-fdd840",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T14:55:36.771895Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T14:55:36.782948Z",
+      "result": {
+        "checked_at": "2026-09-03T14:55:36.782931Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T14:55:36.787784Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T14:55:36.789031Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T14:55:41.822423Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 19984
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T14:55:41.818297Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 19984
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 17520
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "kaggle-auto-publish",
+      "at": "2026-09-03T14:55:45.935764Z",
+      "result": {
+        "blocked": [
+          {
+            "experiment_id": "EXP-039",
+            "job_id": "EXP-039-20260830T102102Z-68098c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-040",
+            "job_id": "EXP-040-20260830T112032Z-0b481c",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-043",
+            "job_id": "EXP-043-20260830T130402Z-826a45",
+            "reason": "deterministic Kaggle push failure"
+          },
+          {
+            "experiment_id": "EXP-046",
+            "job_id": "EXP-046-20260830T172640Z-96146f",
+            "reason": "deterministic Kaggle push failure"
+          }
+        ],
+        "dry_run": false,
+        "eligible": [
+          {
+            "deployment_key": "EXP-055:EXP-055_20260903T001305Z_d1f9ffe0:2e3be3c5991dc6c9245a2040389cff429c17bbc3870ab6a0d180dcc5b3cc2eb1",
+            "experiment_id": "EXP-055",
+            "run_id": "EXP-055_20260903T001305Z_d1f9ffe0"
+          },
+          {
+            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
+            "experiment_id": "EXP-050",
+            "run_id": "EXP-050_20260830T172441Z_40702514"
+          },
+          {
+            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
+            "experiment_id": "EXP-051",
+            "run_id": "EXP-051_20260831T150521Z_477a84b9"
+          },
+          {
+            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
+            "experiment_id": "EXP-052",
+            "run_id": "EXP-052_20260901T050028Z_33370396"
+          },
+          {
+            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
+            "experiment_id": "EXP-030B",
+            "run_id": "EXP-030B_20260829T051035Z_55573139"
+          },
+          {
+            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
+            "experiment_id": "EXP-032",
+            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
+          },
+          {
+            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
+            "experiment_id": "EXP-033",
+            "run_id": "EXP-033_20260830T054243Z_acd48d34"
+          },
+          {
+            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
+            "experiment_id": "EXP-034",
+            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
+          },
+          {
+            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
+            "experiment_id": "EXP-036",
+            "run_id": "EXP-036_20260830T070804Z_8d380735"
+          },
+          {
+            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
+            "experiment_id": "EXP-037",
+            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
+          },
+          {
+            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
+            "experiment_id": "EXP-039",
+            "run_id": "EXP-039_20260830T090516Z_1b069872"
+          },
+          {
+            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
+            "experiment_id": "EXP-040",
+            "run_id": "EXP-040_20260830T094829Z_7c27497a"
+          },
+          {
+            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
+            "experiment_id": "EXP-041",
+            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
+          },
+          {
+            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
+            "experiment_id": "EXP-043",
+            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
+          },
+          {
+            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
+            "experiment_id": "EXP-042",
+            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
+          },
+          {
+            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
+            "experiment_id": "EXP-046",
+            "run_id": "EXP-046_20260830T163523Z_25825c59"
+          },
+          {
+            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
+            "experiment_id": "EXP-044",
+            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
+          },
+          {
+            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
+            "experiment_id": "EXP-038",
+            "run_id": "EXP-038_20260830T091939Z_88e852c3"
+          },
+          {
+            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
+            "experiment_id": "EXP-045",
+            "run_id": "EXP-045_20260830T155156Z_471d630b"
+          }
+        ],
+        "pushed": [],
+        "waiting": [
+          {
+            "experiment_id": "EXP-055",
+            "job_id": "EXP-055-20260903T145434Z-e58e55",
+            "reason": "kernel version already active"
+          },
+          {
+            "experiment_id": "EXP-050",
+            "job_id": "EXP-050-20260830T230527Z-d92535",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-051",
+            "job_id": "EXP-051-20260901T124238Z-3b97f6",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-052",
+            "job_id": "EXP-052-20260901T124242Z-d46727",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-030B",
+            "job_id": "EXP-030B-20260829T165225Z-f4036d",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-032",
+            "job_id": "EXP-032-20260830T062707Z-e214e1",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-033",
+            "job_id": "EXP-033-20260830T064308Z-2fe11f",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-034",
+            "job_id": "EXP-034-20260830T065004Z-b37144",
+            "reason": "deployment already registered",
+            "state": "SCORED"
+          },
+          {
+            "experiment_id": "EXP-036",
+            "job_id": "EXP-036-20260830T225235Z-dcaa75",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-037",
+            "job_id": "EXP-037-20260830T225237Z-590067",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-041",
+            "job_id": "EXP-041-20260830T124134Z-4f3b10",
+            "reason": "deployment already registered",
+            "state": "NEEDS_REPAIR"
+          },
+          {
+            "experiment_id": "EXP-042",
+            "job_id": "EXP-042-20260830T231158Z-1126f5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-044",
+            "job_id": "EXP-044-20260830T173113Z-301f54",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-038",
+            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          },
+          {
+            "experiment_id": "EXP-045",
+            "job_id": "EXP-045-20260830T232842Z-fdd840",
+            "reason": "deployment already registered",
+            "state": "POLICY_BLOCKED"
+          }
+        ]
+      }
     }
   ],
-  "last_cycle_at": "2026-09-03T14:47:49.477974Z",
+  "last_cycle_at": "2026-09-03T14:55:45.935797Z",
   "pid": 85479,
   "schema_version": 1,
   "started_at": "2026-08-30T05:42:28.655109Z",
   "status": "RUNNING",
-  "updated_at": "2026-09-03T14:47:49.477971Z"
+  "updated_at": "2026-09-03T14:55:45.935794Z"
 }

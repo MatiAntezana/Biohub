@@ -11,7 +11,9 @@
     "--num-workers",
     "2",
     "--max-iters",
-    "750"
+    "750",
+    "--resume-primary",
+    "checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth"
   ],
   "allowed_nodes": [
     "A1552",

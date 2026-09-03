@@ -650,7 +650,7 @@ def reconcile_one(run_id: str, node_name: str) -> str:
     last = latest_events_by_run(root).get(run_id)
     if last is None:
         raise ExperimentError(f"run_id desconocido: {run_id}")
-    if last["status"] in {"DOC_PENDING", "CLOSED", "FAILED", "ORPHANED"}:
+    if last["status"] in {"DOC_PENDING", "CLOSED"}:
         return last["status"]
     run_dir = _sync_run_from_remote(run_id, node_name)
     receipt_path = run_dir / "RECEIPT.json"
