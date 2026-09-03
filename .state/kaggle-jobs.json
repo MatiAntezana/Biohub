@@ -1595,13 +1595,14 @@
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-03T14:14:35.407685Z",
+      "error": "Kaggle kernel failed; inspect persisted notebook.log",
       "experiment_id": "EXP-057",
       "job_id": "EXP-057-20260903T141435Z-3a7ee5",
       "kernel_slug": "matiasantezana/biohub-exp-057-deepgraph",
-      "kernel_state": "RUNNING",
+      "kernel_state": "ERROR",
       "kernel_version": 8,
       "log_inspection": {
-        "has_error": false,
+        "has_error": true,
         "paths": [],
         "scopes": [],
         "transient_error": false,
@@ -1613,10 +1614,35 @@
       "pushed_at": "2026-09-03T14:14:38.803297Z",
       "retries": 0,
       "schema_version": 1,
+      "state": "NEEDS_REPAIR",
+      "updated_at": "2026-09-03T14:44:39.512703Z"
+    },
+    "EXP-057-20260903T144810Z-2ef229": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T14:48:10.362344Z",
+      "experiment_id": "EXP-057",
+      "job_id": "EXP-057-20260903T144810Z-2ef229",
+      "kernel_slug": "matiasantezana/biohub-exp-057-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 9,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [],
+        "scopes": [],
+        "transient_error": false,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "905c4124ef8aa47d2eef8b39620c0fb64552333a30adff03c265f8f45e9d46e2",
+      "pushed_at": "2026-09-03T14:48:13.576331Z",
+      "retries": 0,
+      "schema_version": 1,
       "state": "RUNNING",
-      "updated_at": "2026-09-03T14:14:53.439360Z"
+      "updated_at": "2026-09-03T14:48:23.055132Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-03T14:14:53.440128Z"
+  "updated_at": "2026-09-03T14:48:23.056518Z"
 }
