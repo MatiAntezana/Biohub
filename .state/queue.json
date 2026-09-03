@@ -394,9 +394,9 @@
       "queued_at": "2026-09-03T16:26:08.470851Z",
       "ready_at": "2026-09-01T13:22:15.736797Z",
       "requested_node": "max_free_vram",
-      "run_id": "EXP-053_20260903T162714Z_af0cefb2",
-      "status": "RUNNING",
-      "updated_at": "2026-09-03T16:27:22.544327Z"
+      "run_id": "EXP-053_20260903T162626Z_af0cefb2",
+      "status": "CLOSED",
+      "updated_at": "2026-09-03T22:32:26.713478Z"
     },
     {
       "allowed_nodes": [
@@ -477,5 +477,5 @@
     }
   ],
   "schema_version": 1,
-  "updated_at": "2026-09-03T21:01:16.108761Z"
+  "updated_at": "2026-09-03T22:34:23.498646Z"
 }

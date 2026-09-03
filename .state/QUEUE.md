@@ -4,7 +4,7 @@
 
 | Prioridad | Experimento | Estado | Dependencias | Nodo |
 |---:|---|---|---|---|
-| 5 | EXP-053 | **RUNNING** | — | max_free_vram |
+| 5 | EXP-053 | **CLOSED** | — | max_free_vram |
 | 6 | EXP-054 | **CLOSED** | — | max_free_vram |
 | 7 | EXP-055 | **CLOSED** | — | max_free_vram |
 | 8 | EXP-056 | **FAILED** | — | max_free_vram |
