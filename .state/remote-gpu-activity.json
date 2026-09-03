@@ -13,6 +13,18 @@
       "used_gpu_memory_mib": 21452
     },
     {
+      "activity_id": "A1556:GPU-52cb7b87-9a26-540b-bbc0-93f24d197506:43443",
+      "association": "unknown",
+      "command": "/home/alumno1/miniconda3/envs/healthbench-judge/bin/python /home/alumno1/benchmark_medgemma/evaluate_medgemma_v21.py /home/alumno1/models/medgemma-1.5-4b-it /home/alumno1/benchmark_medgemma/inputs-v21/epoch-01-inputs-v21.jsonl 50",
+      "experiment_id": null,
+      "gpu_index": 0,
+      "gpu_uuid": "GPU-52cb7b87-9a26-540b-bbc0-93f24d197506",
+      "node": "A1556",
+      "pid": 43443,
+      "process_name": "/home/alumno1/miniconda3/envs/healthbench-judge/bin/python",
+      "used_gpu_memory_mib": 5544
+    },
+    {
       "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
       "association": "command",
       "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
@@ -22,7 +34,7 @@
       "node": "A1560",
       "pid": 33646,
       "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-      "used_gpu_memory_mib": 22262
+      "used_gpu_memory_mib": 22332
     },
     {
       "activity_id": "A1557:GPU-3f11eb77-4f07-f9c6-3c2c-2aba7ca0a5be:44517",
@@ -31,7 +43,7 @@
       "experiment_id": "EXP-054",
       "gpu_index": 0,
       "gpu_uuid": "GPU-3f11eb77-4f07-f9c6-3c2c-2aba7ca0a5be",
-      "last_seen_at": "2026-09-03T22:32:22.767802Z",
+      "last_seen_at": "2026-09-03T22:49:00.168006Z",
       "node": "A1557",
       "pid": 44517,
       "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
@@ -81,11 +93,11 @@
       "error": null,
       "gpus": [
         {
-          "free_mib": 23965,
+          "free_mib": 23963,
           "index": 0,
           "name": "NVIDIA GeForce RTX 4090",
           "total_mib": 24564,
-          "used_mib": 109,
+          "used_mib": 112,
           "utilization_pct": 0,
           "uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0"
         }
@@ -93,16 +105,29 @@
       "node": "A1555"
     },
     "A1556": {
-      "activities": [],
+      "activities": [
+        {
+          "activity_id": "A1556:GPU-52cb7b87-9a26-540b-bbc0-93f24d197506:43443",
+          "association": "unknown",
+          "command": "/home/alumno1/miniconda3/envs/healthbench-judge/bin/python /home/alumno1/benchmark_medgemma/evaluate_medgemma_v21.py /home/alumno1/models/medgemma-1.5-4b-it /home/alumno1/benchmark_medgemma/inputs-v21/epoch-01-inputs-v21.jsonl 50",
+          "experiment_id": null,
+          "gpu_index": 0,
+          "gpu_uuid": "GPU-52cb7b87-9a26-540b-bbc0-93f24d197506",
+          "node": "A1556",
+          "pid": 43443,
+          "process_name": "/home/alumno1/miniconda3/envs/healthbench-judge/bin/python",
+          "used_gpu_memory_mib": 5544
+        }
+      ],
       "error": null,
       "gpus": [
         {
-          "free_mib": 23965,
+          "free_mib": 18413,
           "index": 0,
           "name": "NVIDIA GeForce RTX 4090",
           "total_mib": 24564,
-          "used_mib": 109,
-          "utilization_pct": 0,
+          "used_mib": 5662,
+          "utilization_pct": 38,
           "uuid": "GPU-52cb7b87-9a26-540b-bbc0-93f24d197506"
         }
       ],
@@ -126,17 +151,17 @@
           "node": "A1560",
           "pid": 33646,
           "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-          "used_gpu_memory_mib": 22262
+          "used_gpu_memory_mib": 22332
         }
       ],
       "error": null,
       "gpus": [
         {
-          "free_mib": 1710,
+          "free_mib": 1640,
           "index": 0,
           "name": "NVIDIA GeForce RTX 4090",
           "total_mib": 24564,
-          "used_mib": 22365,
+          "used_mib": 22435,
           "utilization_pct": 100,
           "uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28"
         }
@@ -144,7 +169,7 @@
       "node": "A1560"
     }
   },
-  "scanned_at": "2026-09-03T22:33:29.511105Z",
+  "scanned_at": "2026-09-03T22:50:26.645592Z",
   "schema_version": 1,
   "transitions": [
     {
@@ -158,7 +183,7 @@
         "node": "A1560",
         "pid": 33646,
         "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-        "used_gpu_memory_mib": 22262
+        "used_gpu_memory_mib": 22332
       },
       "before": {
         "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
@@ -170,7 +195,7 @@
         "node": "A1560",
         "pid": 33646,
         "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-        "used_gpu_memory_mib": 17106
+        "used_gpu_memory_mib": 17988
       },
       "type": "GPU_PROCESS_CHANGED"
     }
