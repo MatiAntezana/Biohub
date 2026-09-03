@@ -1519,11 +1519,44 @@
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-03T12:48:02.963415Z",
+      "error": "scope sentinel JSON inválido",
       "experiment_id": "EXP-057",
       "job_id": "EXP-057-20260903T124802Z-a6a819",
       "kernel_slug": "matiasantezana/biohub-exp-057-deepgraph",
-      "kernel_state": "RUNNING",
+      "kernel_state": "ERROR",
       "kernel_version": 3,
+      "log_inspection": {
+        "has_error": true,
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr\\n\"}"
+        ],
+        "scopes": [],
+        "transient_error": true,
+        "violations": [
+          "scope sentinel JSON inválido"
+        ]
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "8fe7a26cdd7acf9300b991232fe3f71b11e8fedfad689db6c6a321321f5ec796",
+      "pushed_at": "2026-09-03T12:48:06.314351Z",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "POLICY_BLOCKED",
+      "updated_at": "2026-09-03T12:55:34.931437Z"
+    },
+    "EXP-057-20260903T125929Z-5e6ce6": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T12:59:29.303744Z",
+      "experiment_id": "EXP-057",
+      "job_id": "EXP-057-20260903T125929Z-5e6ce6",
+      "kernel_slug": "matiasantezana/biohub-exp-057-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 5,
       "log_inspection": {
         "has_error": false,
         "paths": [],
@@ -1533,14 +1566,14 @@
       },
       "max_retries": 2,
       "output_file": "submission.csv",
-      "package_sha256": "8fe7a26cdd7acf9300b991232fe3f71b11e8fedfad689db6c6a321321f5ec796",
-      "pushed_at": "2026-09-03T12:48:06.314351Z",
+      "package_sha256": "90b5f82a1e50db91e4cbe19440bbeaf2842454c2c2b2603d5db5f2b646111875",
+      "pushed_at": "2026-09-03T12:59:32.419566Z",
       "retries": 0,
       "schema_version": 1,
       "state": "RUNNING",
-      "updated_at": "2026-09-03T12:48:18.797369Z"
+      "updated_at": "2026-09-03T12:59:50.774733Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-03T12:48:18.797948Z"
+  "updated_at": "2026-09-03T12:59:50.775192Z"
 }
