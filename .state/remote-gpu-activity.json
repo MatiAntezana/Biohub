@@ -22,7 +22,7 @@
       "node": "A1560",
       "pid": 33646,
       "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-      "used_gpu_memory_mib": 22284
+      "used_gpu_memory_mib": 23280
     },
     {
       "activity_id": "A1556:GPU-52cb7b87-9a26-540b-bbc0-93f24d197506:293876",
@@ -31,7 +31,7 @@
       "experiment_id": "EXP-054",
       "gpu_index": 0,
       "gpu_uuid": "GPU-52cb7b87-9a26-540b-bbc0-93f24d197506",
-      "last_seen_at": "2026-09-03T12:26:01.999607Z",
+      "last_seen_at": "2026-09-03T12:46:44.534896Z",
       "node": "A1556",
       "pid": 293876,
       "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
@@ -46,7 +46,7 @@
       "experiment_id": "EXP-053",
       "gpu_index": 0,
       "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-      "last_seen_at": "2026-09-03T12:26:01.999607Z",
+      "last_seen_at": "2026-09-03T12:46:44.534896Z",
       "node": "A1555",
       "pid": 77094,
       "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
@@ -62,7 +62,7 @@
       "experiment_id": "EXP-054",
       "gpu_index": 0,
       "gpu_uuid": "GPU-3f11eb77-4f07-f9c6-3c2c-2aba7ca0a5be",
-      "last_seen_at": "2026-09-03T12:26:01.999607Z",
+      "last_seen_at": "2026-09-03T12:46:44.534896Z",
       "node": "A1557",
       "pid": 44517,
       "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
@@ -111,7 +111,7 @@
           "name": "NVIDIA GeForce RTX 4090",
           "total_mib": 24564,
           "used_mib": 22748,
-          "utilization_pct": 84,
+          "utilization_pct": 100,
           "uuid": "GPU-76972eff-a509-63d7-3033-92904fec08b1"
         }
       ],
@@ -147,25 +147,25 @@
           "node": "A1560",
           "pid": 33646,
           "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-          "used_gpu_memory_mib": 22284
+          "used_gpu_memory_mib": 23280
         }
       ],
       "error": null,
       "gpus": [
         {
-          "free_mib": 1688,
+          "free_mib": 692,
           "index": 0,
           "name": "NVIDIA GeForce RTX 4090",
           "total_mib": 24564,
-          "used_mib": 22387,
-          "utilization_pct": 100,
+          "used_mib": 23383,
+          "utilization_pct": 98,
           "uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28"
         }
       ],
       "node": "A1560"
     }
   },
-  "scanned_at": "2026-09-03T12:27:07.276790Z",
+  "scanned_at": "2026-09-03T12:47:49.843275Z",
   "schema_version": 1,
   "transitions": [
     {
@@ -179,7 +179,7 @@
         "node": "A1560",
         "pid": 33646,
         "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-        "used_gpu_memory_mib": 22284
+        "used_gpu_memory_mib": 23280
       },
       "before": {
         "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
@@ -191,7 +191,7 @@
         "node": "A1560",
         "pid": 33646,
         "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-        "used_gpu_memory_mib": 22376
+        "used_gpu_memory_mib": 20066
       },
       "type": "GPU_PROCESS_CHANGED"
     }
