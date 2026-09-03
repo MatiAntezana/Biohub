@@ -1487,8 +1487,33 @@
       "submission_message": "EXP-056 auto EXP-056-20260903T040825Z-286ed2",
       "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
       "updated_at": "2026-09-03T12:04:31.380197Z"
+    },
+    "EXP-057-20260903T122736Z-e6a248": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T12:27:36.887927Z",
+      "experiment_id": "EXP-057",
+      "job_id": "EXP-057-20260903T122736Z-e6a248",
+      "kernel_slug": "matiasantezana/biohub-exp-057-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 1,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [],
+        "scopes": [],
+        "transient_error": false,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "26857c8b298b09ff8a7b93a57c659443260b9b6cde6fd4f971f6c09e34b1b95b",
+      "pushed_at": "2026-09-03T12:27:40.113694Z",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "RUNNING",
+      "updated_at": "2026-09-03T12:27:48.084466Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-03T12:04:31.392066Z"
+  "updated_at": "2026-09-03T12:27:48.084985Z"
 }
