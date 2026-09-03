@@ -2,9 +2,15 @@
   "experiment_id": "EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine",
   "hf_repo": "Matycaba2016/biohub-checkpoints",
   "hf_uri": "hf://Matycaba2016/biohub-checkpoints/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/",
-  "synced_at": "2026-09-03T08:46:32.490947+00:00",
-  "total_bytes": 67297966,
+  "synced_at": "2026-09-03T17:59:05.489889+00:00",
+  "total_bytes": 78509920,
   "files": [
+    {
+      "filename": "edge_predictor_best.pth",
+      "relative_path": "artifacts/deployment/weights_dataset/edge_predictor_best.pth",
+      "path_in_repo": "experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/deployment/weights_dataset/edge_predictor_best.pth",
+      "size_bytes": 11211954
+    },
     {
       "filename": "training_checkpoint.pth",
       "relative_path": "checkpoints/EXP-057_20260903T001106Z_b04ac218/primary/training_checkpoint.pth",

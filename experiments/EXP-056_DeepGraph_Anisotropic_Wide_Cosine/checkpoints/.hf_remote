@@ -2,15 +2,9 @@
   "experiment_id": "EXP-056_DeepGraph_Anisotropic_Wide_Cosine",
   "hf_repo": "Matycaba2016/biohub-checkpoints",
   "hf_uri": "hf://Matycaba2016/biohub-checkpoints/experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/",
-  "synced_at": "2026-09-02T21:17:01.128650+00:00",
-  "total_bytes": 149604018,
+  "synced_at": "2026-09-03T17:58:59.030431+00:00",
+  "total_bytes": 130904772,
   "files": [
-    {
-      "filename": "exp056_secondary_weights.pt",
-      "relative_path": "artifacts/deployment/weights_dataset/exp056_secondary_weights.pt",
-      "path_in_repo": "experiments/EXP-056_DeepGraph_Anisotropic_Wide_Cosine/artifacts/deployment/weights_dataset/exp056_secondary_weights.pt",
-      "size_bytes": 18699246
-    },
     {
       "filename": "exp056_primary_weights.pt",
       "relative_path": "artifacts/deployment/weights_dataset/exp056_primary_weights.pt",
