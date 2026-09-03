@@ -3,7 +3,7 @@
 > Vista factual generada desde `experiments/kaggle_scores.jsonl`.
 > Este ranking es independiente del Promotion Board local y se ordena exclusivamente por el mejor Public Score oficial de Kaggle de cada experimento.
 
-Actualizado: `2026-09-02T23:50:26.530939Z`
+Actualizado: `2026-09-03T03:19:38.740447Z`
 
 | Puesto | Experimento | Mejor Public Score | Kernel | Versión | Submission Ref | Fecha UTC |
 |---:|---|---:|---|---:|---|---|
@@ -19,7 +19,8 @@ Actualizado: `2026-09-02T23:50:26.530939Z`
 | 10 | **EXP-038** | **0.6320** | matiasantezana/biohub-exp-038-auto | 1 | — | 2026-08-30 10:09:49.563000 |
 | 11 | **EXP-045** | **0.6320** | matiasantezana/biohub-exp-045-auto | 3 | — | 2026-08-31T14:38:15.250568Z |
 | 12 | **EXP-000** | **0.1430** | — | 1 | 55783941 | 2026-08-25T18:30:00Z |
-| 13 | **EXP-050** | **0.0020** | matiasantezana/biohub-exp-050-deepgraph | 1 | — | 2026-08-31T14:38:15.250749Z |
+| 13 | **EXP-056** | **0.0670** | matiasantezana/biohub-exp-056-deepgraph | 1 | — | 2026-09-02 21:10:58.940000 |
+| 14 | **EXP-050** | **0.0020** | matiasantezana/biohub-exp-050-deepgraph | 1 | — | 2026-08-31T14:38:15.250749Z |
 
 ## Submissions pendientes de score
 

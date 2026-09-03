@@ -1338,23 +1338,24 @@
       "max_retries": 2,
       "output_file": "submission.csv",
       "package_sha256": "4c343ed74efd314b7c9b27a49653622755cc320acef72790a35bd31f7dbeef07",
+      "public_score": 0.067,
       "pushed_at": "2026-09-02T20:45:39.946874Z",
       "retries": 0,
       "schema_version": 1,
-      "state": "SUBMITTED",
+      "state": "SCORED",
       "submission": {
         "date": "2026-09-02 21:10:58.940000",
         "description": "EXP-056 auto EXP-056-20260902T204536Z-db742d",
         "fileName": "submission.csv",
         "privateScore": "",
-        "publicScore": "",
-        "status": "SubmissionStatus.PENDING"
+        "publicScore": "0.067",
+        "status": "SubmissionStatus.COMPLETE"
       },
       "submission_message": "EXP-056 auto EXP-056-20260902T204536Z-db742d",
       "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
-      "updated_at": "2026-09-02T23:49:56.480438Z"
+      "updated_at": "2026-09-03T03:19:38.741946Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-02T23:49:56.481664Z"
+  "updated_at": "2026-09-03T03:19:38.742283Z"
 }
