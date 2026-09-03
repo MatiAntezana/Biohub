@@ -2,3219 +2,6 @@
   "events": [
     {
       "action": "kaggle-auto-publish",
-      "at": "2026-09-03T14:04:03.448079Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T14:05:03.653315Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T14:05:03.669494Z",
-      "result": {
-        "checked_at": "2026-09-03T14:05:03.669478Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T14:05:03.674494Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T14:05:03.676008Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T14:05:08.714858Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22418
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T14:05:08.712064Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22418
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22252
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T14:05:11.270189Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T14:06:11.653392Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T14:06:11.699977Z",
-      "result": {
-        "checked_at": "2026-09-03T14:06:11.699922Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T14:06:11.711688Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T14:06:11.716051Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T14:06:16.795715Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22318
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T14:06:16.789468Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22318
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22418
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T14:06:20.065242Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T14:07:20.366200Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T14:07:20.382310Z",
-      "result": {
-        "checked_at": "2026-09-03T14:07:20.382286Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T14:07:20.389676Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T14:07:20.391247Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T14:07:25.425815Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22258
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T14:07:25.422002Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22258
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22318
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T14:07:29.099864Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T14:08:29.410812Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T14:08:29.431221Z",
-      "result": {
-        "checked_at": "2026-09-03T14:08:29.431203Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T14:08:29.441862Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T14:08:29.445465Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T14:08:34.490773Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22328
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T14:08:34.487116Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22328
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22258
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T14:08:36.904126Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T14:09:37.122709Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T14:09:37.138821Z",
-      "result": {
-        "checked_at": "2026-09-03T14:09:37.138804Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T14:09:37.143788Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T14:09:37.145685Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T14:09:42.195818Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 23660
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T14:09:42.189697Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 23660
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22328
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T14:09:44.490793Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T14:10:44.858333Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T14:10:44.885167Z",
-      "result": {
-        "checked_at": "2026-09-03T14:10:44.885143Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T14:10:44.900968Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T14:10:44.909629Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T14:10:49.984682Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22360
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T14:10:49.978035Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22360
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 23660
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T14:10:52.424568Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T14:11:52.676324Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T14:11:52.692679Z",
-      "result": {
-        "checked_at": "2026-09-03T14:11:52.692660Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T14:11:52.701188Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T14:11:52.703701Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T14:11:57.763482Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22380
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T14:11:57.752935Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22380
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22360
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T14:11:58.055480Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T14:12:58.286176Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T14:12:58.302964Z",
-      "result": {
-        "checked_at": "2026-09-03T14:12:58.302931Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T14:12:58.308063Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T14:12:58.309836Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T14:13:03.354309Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 21050
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T14:13:03.348464Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 21050
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22380
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
-      "at": "2026-09-03T14:13:03.404609Z",
-      "result": {
-        "blocked": [
-          {
-            "experiment_id": "EXP-039",
-            "job_id": "EXP-039-20260830T102102Z-68098c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-040",
-            "job_id": "EXP-040-20260830T112032Z-0b481c",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-043",
-            "job_id": "EXP-043-20260830T130402Z-826a45",
-            "reason": "deterministic Kaggle push failure"
-          },
-          {
-            "experiment_id": "EXP-046",
-            "job_id": "EXP-046-20260830T172640Z-96146f",
-            "reason": "deterministic Kaggle push failure"
-          }
-        ],
-        "dry_run": false,
-        "eligible": [
-          {
-            "deployment_key": "EXP-050:EXP-050_20260830T172441Z_40702514:3691b2dbe32eca3992493474894f74fc592dcca4357d39cfb60321cd600f0a46",
-            "experiment_id": "EXP-050",
-            "run_id": "EXP-050_20260830T172441Z_40702514"
-          },
-          {
-            "deployment_key": "EXP-051:EXP-051_20260831T150521Z_477a84b9:86bdf41db2fda4bf72b86e77a848232d0297956a6d50a9c6846184c14ce51401",
-            "experiment_id": "EXP-051",
-            "run_id": "EXP-051_20260831T150521Z_477a84b9"
-          },
-          {
-            "deployment_key": "EXP-052:EXP-052_20260901T050028Z_33370396:355d01ae0c2f126a22dda7a79b07cd4fd31bcd680d59aade6243d0fe7f274601",
-            "experiment_id": "EXP-052",
-            "run_id": "EXP-052_20260901T050028Z_33370396"
-          },
-          {
-            "deployment_key": "EXP-030B:EXP-030B_20260829T051035Z_55573139:22978783b0082e0d0967f48afa3a41550607ca04c3eb339985009f847bc6cd73",
-            "experiment_id": "EXP-030B",
-            "run_id": "EXP-030B_20260829T051035Z_55573139"
-          },
-          {
-            "deployment_key": "EXP-032:EXP-032_20260829T062432Z_3ee7f30d:6fb88302da857fd512404555f837f33b4dfa37a1ed7378af641c8d6f8d044ac8",
-            "experiment_id": "EXP-032",
-            "run_id": "EXP-032_20260829T062432Z_3ee7f30d"
-          },
-          {
-            "deployment_key": "EXP-033:EXP-033_20260830T054243Z_acd48d34:02570e9f4346eec3d9d5e418361a7456cec8e4a9d2096fc82aad61680b2d0f1d",
-            "experiment_id": "EXP-033",
-            "run_id": "EXP-033_20260830T054243Z_acd48d34"
-          },
-          {
-            "deployment_key": "EXP-034:EXP-034_20260830T054622Z_c6cf355e:d5ee3861122118cf8d2a1da8e9414d33e3e30cc87e71582cbdcfc9f2d351620a",
-            "experiment_id": "EXP-034",
-            "run_id": "EXP-034_20260830T054622Z_c6cf355e"
-          },
-          {
-            "deployment_key": "EXP-036:EXP-036_20260830T070804Z_8d380735:63deccff5a43450c196c904b93a7537faca8bbf21ef33eca7c5c365e9b60fa03",
-            "experiment_id": "EXP-036",
-            "run_id": "EXP-036_20260830T070804Z_8d380735"
-          },
-          {
-            "deployment_key": "EXP-037:EXP-037_20260830T081927Z_9ab7f966:de80619c04ac943474c78906655f1f7df978b53fd1e57990875ff46de169f43f",
-            "experiment_id": "EXP-037",
-            "run_id": "EXP-037_20260830T081927Z_9ab7f966"
-          },
-          {
-            "deployment_key": "EXP-039:EXP-039_20260830T090516Z_1b069872:4b02f0ed60ffe58a8f8cbcb9e2317968b5a08ae52b6f2c4796d36aa432e6584a",
-            "experiment_id": "EXP-039",
-            "run_id": "EXP-039_20260830T090516Z_1b069872"
-          },
-          {
-            "deployment_key": "EXP-040:EXP-040_20260830T094829Z_7c27497a:54fa0fd776d12e5156d77f3c04329d048b07751f52c2a476351f2700c9ebb257",
-            "experiment_id": "EXP-040",
-            "run_id": "EXP-040_20260830T094829Z_7c27497a"
-          },
-          {
-            "deployment_key": "EXP-041:EXP-041_20260830T101103Z_79fc7d70:f92ed15ab4f61248bf04333a59783c054a68ce15433d4e1d98d74e575d89dcc9",
-            "experiment_id": "EXP-041",
-            "run_id": "EXP-041_20260830T101103Z_79fc7d70"
-          },
-          {
-            "deployment_key": "EXP-043:EXP-043_20260830T112019Z_5d6c6337:46fcdb596bb6ce66b7d23188fdec0c151e38ddff7e3814ab655599d16f38cc66",
-            "experiment_id": "EXP-043",
-            "run_id": "EXP-043_20260830T112019Z_5d6c6337"
-          },
-          {
-            "deployment_key": "EXP-042:EXP-042_20260830T104756Z_2d5e70b5:7dc457688bb9d68c7afe66a4aa2fe20b7be254ad7ce2d26683311492f8cb0b98",
-            "experiment_id": "EXP-042",
-            "run_id": "EXP-042_20260830T104756Z_2d5e70b5"
-          },
-          {
-            "deployment_key": "EXP-046:EXP-046_20260830T163523Z_25825c59:9cc25fe9753bac8303927b92dfddbd232498f3bb07322137eacba1c753f5a763",
-            "experiment_id": "EXP-046",
-            "run_id": "EXP-046_20260830T163523Z_25825c59"
-          },
-          {
-            "deployment_key": "EXP-044:EXP-044_20260830T154923Z_9149b8fd:71c694a0067fe81e3f17d8851abc028d67ed36afb5f09ccfe58645fbe3432969",
-            "experiment_id": "EXP-044",
-            "run_id": "EXP-044_20260830T154923Z_9149b8fd"
-          },
-          {
-            "deployment_key": "EXP-038:EXP-038_20260830T091939Z_88e852c3:258022ee51f7ec3753a8536304341db80ee1040ce8fd4aba94f4a8c10cd09628",
-            "experiment_id": "EXP-038",
-            "run_id": "EXP-038_20260830T091939Z_88e852c3"
-          },
-          {
-            "deployment_key": "EXP-045:EXP-045_20260830T155156Z_471d630b:11983b418ef5cccf38d303d57d124198c89c445248321c24d072d2c08b7e4412",
-            "experiment_id": "EXP-045",
-            "run_id": "EXP-045_20260830T155156Z_471d630b"
-          }
-        ],
-        "pushed": [],
-        "waiting": [
-          {
-            "experiment_id": "EXP-050",
-            "job_id": "EXP-050-20260830T230527Z-d92535",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-051",
-            "job_id": "EXP-051-20260901T124238Z-3b97f6",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-052",
-            "job_id": "EXP-052-20260901T124242Z-d46727",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-030B",
-            "job_id": "EXP-030B-20260829T165225Z-f4036d",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-032",
-            "job_id": "EXP-032-20260830T062707Z-e214e1",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-033",
-            "job_id": "EXP-033-20260830T064308Z-2fe11f",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-034",
-            "job_id": "EXP-034-20260830T065004Z-b37144",
-            "reason": "deployment already registered",
-            "state": "SCORED"
-          },
-          {
-            "experiment_id": "EXP-036",
-            "job_id": "EXP-036-20260830T225235Z-dcaa75",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-037",
-            "job_id": "EXP-037-20260830T225237Z-590067",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-041",
-            "job_id": "EXP-041-20260830T124134Z-4f3b10",
-            "reason": "deployment already registered",
-            "state": "NEEDS_REPAIR"
-          },
-          {
-            "experiment_id": "EXP-042",
-            "job_id": "EXP-042-20260830T231158Z-1126f5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-044",
-            "job_id": "EXP-044-20260830T173113Z-301f54",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-038",
-            "job_id": "EXP-038-20260830T231201Z-1b7bf5",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          },
-          {
-            "experiment_id": "EXP-045",
-            "job_id": "EXP-045-20260830T232842Z-fdd840",
-            "reason": "deployment already registered",
-            "state": "POLICY_BLOCKED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-03T14:14:03.685893Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-03T14:14:03.702613Z",
-      "result": {
-        "checked_at": "2026-09-03T14:14:03.702592Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-03T14:14:03.707765Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-03T14:14:03.709615Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-03T14:14:08.749311Z",
-      "result": {
-        "activities": [
-          {
-            "association": "command",
-            "experiment_id": "EXP-055",
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 42336,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22638
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-057",
-            "gpu_index": 0,
-            "node": "A1560",
-            "pid": 33646,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22370
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1556",
-            "pid": 293876,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21380
-          },
-          {
-            "association": "registered",
-            "experiment_id": "EXP-053",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 77094,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": "EXP-053_20260902T045800Z_685bd5b5",
-            "stale": true,
-            "used_gpu_memory_mib": 21432
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-053",
-          "EXP-054",
-          "EXP-055",
-          "EXP-057"
-        ],
-        "node_errors": {
-          "A1555": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1556": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-03T14:14:08.743188Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 22370
-            },
-            "before": {
-              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
-              "experiment_id": "EXP-057",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
-              "node": "A1560",
-              "pid": 33646,
-              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
-              "used_gpu_memory_mib": 21050
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "kaggle-auto-publish",
       "at": "2026-09-03T14:14:08.804159Z",
       "result": {
         "blocked": [
@@ -19743,6 +16530,1175 @@
       "action": "cycle-error",
       "at": "2026-09-03T16:18:14.906385Z",
       "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T16:19:15.115206Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T16:19:15.132793Z",
+      "result": {
+        "checked_at": "2026-09-03T16:19:15.132771Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T16:19:15.138564Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T16:19:15.140679Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T16:19:20.183306Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 23564
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T16:19:20.180426Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 23564
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22332
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-03T16:19:21.348872Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T16:20:21.531196Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T16:20:21.549045Z",
+      "result": {
+        "checked_at": "2026-09-03T16:20:21.549023Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T16:20:21.557057Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T16:20:21.558480Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T16:20:26.598742Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 22390
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T16:20:26.591084Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22390
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 23564
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-03T16:20:27.720780Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T16:21:27.929828Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T16:21:27.946870Z",
+      "result": {
+        "checked_at": "2026-09-03T16:21:27.946850Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T16:21:27.953498Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T16:21:27.955097Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T16:21:32.997110Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 22288
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T16:21:32.989653Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22288
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22390
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-03T16:21:34.083537Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T16:22:34.398417Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T16:22:34.415027Z",
+      "result": {
+        "checked_at": "2026-09-03T16:22:34.414984Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T16:22:34.420893Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T16:22:34.423646Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T16:22:39.500874Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 22274
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T16:22:39.496026Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22274
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22288
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-03T16:22:40.572616Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T16:23:40.760129Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T16:23:40.776287Z",
+      "result": {
+        "checked_at": "2026-09-03T16:23:40.775821Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T16:23:40.781658Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T16:23:40.783232Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T16:23:45.832137Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17826
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T16:23:45.824549Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 17826
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22274
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-03T16:23:47.249304Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T16:24:47.778598Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T16:24:47.798220Z",
+      "result": {
+        "checked_at": "2026-09-03T16:24:47.798200Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T16:24:47.804910Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T16:24:47.806885Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T16:24:52.862151Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 22288
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T16:24:52.857038Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22288
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 17826
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-03T16:24:54.167291Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T16:25:54.715342Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T16:25:54.838779Z",
+      "result": {
+        "checked_at": "2026-09-03T16:25:54.838716Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T16:25:54.884499Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T16:25:54.896100Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T16:26:00.071843Z",
+      "result": {
+        "activities": [
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 22244
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T16:26:00.061124Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22244
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22288
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-03T16:26:02.842474Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T16:27:03.285987Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T16:27:22.624973Z",
+      "result": {
+        "checked_at": "2026-09-03T16:27:03.307419Z",
+        "controller": [
+          "{\"action\": \"run\", \"experiment_id\": \"EXP-053\", \"gpu_index\": 0, \"node\": \"A1555\", \"ok\": true, \"run_id\": \"EXP-053_20260903T162714Z_af0cefb2\", \"status\": \"RUNNING\"}"
+        ],
+        "dry_run": false,
+        "eligible": [
+          "EXP-053",
+          "EXP-054"
+        ],
+        "launched": "EXP-053",
+        "max_concurrent_remote_runs": 2,
+        "returncode": 0,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T16:27:22.709315Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T16:27:22.714402Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T16:27:28.038810Z",
+      "result": {
+        "activities": [
+          {
+            "association": "registered",
+            "experiment_id": "EXP-053",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 9751,
+            "probe_error": null,
+            "run_id": "EXP-053_20260903T162714Z_af0cefb2",
+            "stale": false,
+            "used_gpu_memory_mib": 428
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17172
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-053",
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T16:27:28.029105Z",
+        "transitions": [
+          {
+            "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:9751",
+            "association": "registered",
+            "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-053_20260902T045731Z_685bd5b5/primary/training_checkpoint.pth --resume-secondary checkpoints/EXP-053_20260902T045731Z_685bd5b5/secondary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/artifacts/EXP-053_20260903T162626Z_af0cefb2 --compact",
+            "experiment_id": "EXP-053",
+            "gpu_index": 0,
+            "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+            "node": "A1555",
+            "pid": 9751,
+            "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+            "run_id": "EXP-053_20260903T162714Z_af0cefb2",
+            "type": "GPU_PROCESS_STARTED",
+            "used_gpu_memory_mib": 428
+          },
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 17172
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22244
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-03T16:27:30.852471Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-03T16:28:32.836448Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {\"EXP-053_20260903T162714Z_af0cefb2\": \"RUNNING\"}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-03T16:28:49.760476Z",
+      "result": {
+        "checked_at": "2026-09-03T16:28:32.856486Z",
+        "controller": [
+          "{\"action\": \"run\", \"experiment_id\": \"EXP-054\", \"gpu_index\": 0, \"node\": \"A1556\", \"ok\": true, \"run_id\": \"EXP-054_20260903T162845Z_c04ebef2\", \"status\": \"RUNNING\"}"
+        ],
+        "dry_run": false,
+        "eligible": [
+          "EXP-054"
+        ],
+        "launched": "EXP-054",
+        "max_concurrent_remote_runs": 2,
+        "returncode": 0,
+        "running": [
+          "EXP-053"
+        ],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-03T16:28:49.775006Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-03T16:28:49.779259Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-03T16:28:54.966087Z",
+      "result": {
+        "activities": [
+          {
+            "association": "registered",
+            "experiment_id": "EXP-053",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 9751,
+            "probe_error": null,
+            "run_id": "EXP-053_20260903T162714Z_af0cefb2",
+            "stale": false,
+            "used_gpu_memory_mib": 21388
+          },
+          {
+            "association": "registered",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 11013,
+            "probe_error": null,
+            "run_id": "EXP-054_20260903T162845Z_c04ebef2",
+            "stale": false,
+            "used_gpu_memory_mib": 428
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-057",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 33646,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 22328
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-053",
+          "EXP-054",
+          "EXP-057"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-03T16:28:54.944816Z",
+        "transitions": [
+          {
+            "activity_id": "A1556:GPU-52cb7b87-9a26-540b-bbc0-93f24d197506:11013",
+            "association": "registered",
+            "command": "/home/alumno1/miniconda3/envs/train-56/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-054_20260902T205115Z_2f96e84b/primary/training_checkpoint.pth --resume-secondary checkpoints/EXP-054_20260902T205115Z_2f96e84b/secondary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/artifacts/EXP-054_20260903T162757Z_c04ebef2 --compact",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "gpu_uuid": "GPU-52cb7b87-9a26-540b-bbc0-93f24d197506",
+            "node": "A1556",
+            "pid": 11013,
+            "process_name": "/home/alumno1/miniconda3/envs/train-56/bin/python",
+            "run_id": "EXP-054_20260903T162845Z_c04ebef2",
+            "type": "GPU_PROCESS_STARTED",
+            "used_gpu_memory_mib": 428
+          },
+          {
+            "after": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:9751",
+              "association": "registered",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-053_20260902T045731Z_685bd5b5/primary/training_checkpoint.pth --resume-secondary checkpoints/EXP-053_20260902T045731Z_685bd5b5/secondary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/artifacts/EXP-053_20260903T162626Z_af0cefb2 --compact",
+              "experiment_id": "EXP-053",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 9751,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "run_id": "EXP-053_20260903T162714Z_af0cefb2",
+              "used_gpu_memory_mib": 21388
+            },
+            "before": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:9751",
+              "association": "registered",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-053_20260902T045731Z_685bd5b5/primary/training_checkpoint.pth --resume-secondary checkpoints/EXP-053_20260902T045731Z_685bd5b5/secondary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/artifacts/EXP-053_20260903T162626Z_af0cefb2 --compact",
+              "experiment_id": "EXP-053",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 9751,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "run_id": "EXP-053_20260903T162714Z_af0cefb2",
+              "used_gpu_memory_mib": 428
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          },
+          {
+            "after": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 22328
+            },
+            "before": {
+              "activity_id": "A1560:GPU-d5911326-43d5-9e7c-5783-49b8f3012d28:33646",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-60/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218 --compact",
+              "experiment_id": "EXP-057",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-d5911326-43d5-9e7c-5783-49b8f3012d28",
+              "node": "A1560",
+              "pid": 33646,
+              "process_name": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+              "used_gpu_memory_mib": 17172
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-03T16:28:56.067811Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
     }
   ],
   "last_cycle_at": "2026-09-03T16:04:54.486490Z",
@@ -19750,5 +17706,5 @@
   "schema_version": 1,
   "started_at": "2026-08-30T05:42:28.655109Z",
   "status": "RUNNING",
-  "updated_at": "2026-09-03T16:18:14.906518Z"
+  "updated_at": "2026-09-03T16:28:56.068052Z"
 }

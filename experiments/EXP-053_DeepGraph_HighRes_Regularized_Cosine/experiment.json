@@ -13,7 +13,9 @@
     "--max-iters",
     "750",
     "--resume-primary",
-    "checkpoints/EXP-053_20260902T022548Z_c583eea2/primary/training_checkpoint.pth"
+    "checkpoints/EXP-053_20260902T045731Z_685bd5b5/primary/training_checkpoint.pth",
+    "--resume-secondary",
+    "checkpoints/EXP-053_20260902T045731Z_685bd5b5/secondary/training_checkpoint.pth"
   ],
   "allowed_nodes": [
     "A1552",
