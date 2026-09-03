@@ -1373,11 +1373,45 @@
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-03T03:43:28.936661Z",
+      "error": "la corrida terminó sin BIOHUB_DATASET_SCOPE=test; scope sentinel JSON inválido",
       "experiment_id": "EXP-056",
       "job_id": "EXP-056-20260903T034328Z-44fe6d",
       "kernel_slug": "matiasantezana/biohub-exp-056-deepgraph",
-      "kernel_state": "RUNNING",
+      "kernel_state": "COMPLETE",
       "kernel_version": 2,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr\\n\"}",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr\\n\"}"
+        ],
+        "scopes": [],
+        "transient_error": true,
+        "violations": [
+          "la corrida terminó sin BIOHUB_DATASET_SCOPE=test",
+          "scope sentinel JSON inválido"
+        ]
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "b612311b131e4c7b87ff7d0c79ee3c703e3783cebd16569c70b41b3cbaf0ae80",
+      "pushed_at": "2026-09-03T03:43:31.452038Z",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "POLICY_BLOCKED",
+      "updated_at": "2026-09-03T03:58:18.165292Z"
+    },
+    "EXP-056-20260903T040144Z-4dc27d": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T04:01:44.511643Z",
+      "experiment_id": "EXP-056",
+      "job_id": "EXP-056-20260903T040144Z-4dc27d",
+      "kernel_slug": "matiasantezana/biohub-exp-056-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 3,
       "log_inspection": {
         "has_error": false,
         "paths": [],
@@ -1387,14 +1421,14 @@
       },
       "max_retries": 2,
       "output_file": "submission.csv",
-      "package_sha256": "b612311b131e4c7b87ff7d0c79ee3c703e3783cebd16569c70b41b3cbaf0ae80",
-      "pushed_at": "2026-09-03T03:43:31.452038Z",
+      "package_sha256": "2bcc56abb4fb7e7a70ef3c6d174e5fd8917e6251ab1aae615e6c7687d210f4a1",
+      "pushed_at": "2026-09-03T04:01:47.435781Z",
       "retries": 0,
       "schema_version": 1,
       "state": "RUNNING",
-      "updated_at": "2026-09-03T03:43:41.489755Z"
+      "updated_at": "2026-09-03T04:01:55.556833Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-03T03:43:41.490354Z"
+  "updated_at": "2026-09-03T04:01:55.557487Z"
 }

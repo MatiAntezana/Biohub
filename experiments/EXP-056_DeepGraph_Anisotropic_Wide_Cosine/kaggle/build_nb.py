@@ -9,6 +9,16 @@ ensure_aienv()
 
 KAGGLE_DIR = Path(__file__).resolve().parent
 
+nb_path = KAGGLE_DIR / "submission_notebook.ipynb"
+if nb_path.exists():
+    try:
+        existing = json.loads(nb_path.read_text())
+        if len(existing.get("cells", [])) > 1:
+            print("submission_notebook.ipynb already contains multi-cell production notebook. Preserving it!")
+            sys.exit(0)
+    except Exception:
+        pass
+
 with (KAGGLE_DIR / "inference.py").open() as f:
     py_code = f.read()
 
