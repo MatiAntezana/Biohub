@@ -10,6 +10,7 @@
   "enable_internet": "false",
   "machine_shape": "NvidiaTeslaT4",
   "dataset_sources": [
+    "matiasantezana/biohub-exp-053-deepgraph-weights",
     "pilkwang/biohub-tracking-support-pack-50ep-v1",
     "pilkwang/biohub-temporal-unet3d-seed314159-v1",
     "pilkwang/biohub-deepcenter-unet3d-center-prior-v1"

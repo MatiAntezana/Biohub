@@ -1297,6 +1297,45 @@
       "trained_at": "2026-09-01T12:42:36.884286Z",
       "updated_at": "2026-09-01T12:58:07.015522Z"
     },
+    "EXP-053-20260903T225328Z-101903": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T22:53:28.980241Z",
+      "experiment_id": "EXP-053",
+      "job_id": "EXP-053-20260903T225328Z-101903",
+      "kernel_slug": "matiasantezana/biohub-exp-053-deepgraph",
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "3f5bb9fc030e3f7bacd45c0d3db45aa3d2389bce6291260eba5befdea7de503a",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "DRY_RUN"
+    },
+    "EXP-053-20260903T225336Z-3cfd6b": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-03T22:53:36.167948Z",
+      "experiment_id": "EXP-053",
+      "job_id": "EXP-053-20260903T225336Z-3cfd6b",
+      "kernel_slug": "matiasantezana/biohub-exp-053-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 1,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [],
+        "scopes": [],
+        "transient_error": false,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "3f5bb9fc030e3f7bacd45c0d3db45aa3d2389bce6291260eba5befdea7de503a",
+      "pushed_at": "2026-09-03T22:53:38.752386Z",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "RUNNING",
+      "updated_at": "2026-09-03T22:53:57.537444Z"
+    },
     "EXP-054-20260903T210240Z-45f4fb": {
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
@@ -1567,7 +1606,7 @@
       },
       "submission_message": "EXP-055 auto EXP-055-20260903T161807Z-56f976",
       "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
-      "updated_at": "2026-09-03T22:50:08.638358Z"
+      "updated_at": "2026-09-03T22:54:13.771574Z"
     },
     "EXP-056-20260902T204536Z-db742d": {
       "auto_submit": true,
@@ -1944,9 +1983,9 @@
       },
       "submission_message": "EXP-057 auto EXP-057-20260903T144810Z-2ef229",
       "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
-      "updated_at": "2026-09-03T22:50:08.639828Z"
+      "updated_at": "2026-09-03T22:54:14.171975Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-03T22:50:08.642827Z"
+  "updated_at": "2026-09-03T22:54:14.172701Z"
 }
