@@ -1502,16 +1502,38 @@
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-03T16:18:07.392474Z",
+      "csv_validation": {
+        "bytes": 16586174,
+        "edges": 155833,
+        "nodes": 161455,
+        "rows": 317288
+      },
       "experiment_id": "EXP-055",
       "job_id": "EXP-055-20260903T161807Z-56f976",
       "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
-      "kernel_state": "RUNNING",
+      "kernel_state": "COMPLETE",
       "kernel_version": 8,
       "log_inspection": {
         "has_error": false,
-        "paths": [],
-        "scopes": [],
-        "transient_error": false,
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+        ],
+        "scopes": [
+          {
+            "count": 4,
+            "paths": [
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+            ],
+            "scope": "test"
+          }
+        ],
+        "transient_error": true,
         "violations": []
       },
       "max_retries": 2,
@@ -1520,8 +1542,10 @@
       "pushed_at": "2026-09-03T16:18:11.395140Z",
       "retries": 0,
       "schema_version": 1,
-      "state": "RUNNING",
-      "updated_at": "2026-09-03T16:28:55.289244Z"
+      "state": "SUBMITTED",
+      "submission_message": "EXP-055 auto EXP-055-20260903T161807Z-56f976",
+      "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
+      "updated_at": "2026-09-03T17:20:33.888376Z"
     },
     "EXP-056-20260902T204536Z-db742d": {
       "auto_submit": true,
@@ -1898,9 +1922,9 @@
       },
       "submission_message": "EXP-057 auto EXP-057-20260903T144810Z-2ef229",
       "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
-      "updated_at": "2026-09-03T16:28:24.691971Z"
+      "updated_at": "2026-09-03T17:20:35.651623Z"
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-03T16:28:55.290040Z"
+  "updated_at": "2026-09-03T17:20:35.652227Z"
 }
