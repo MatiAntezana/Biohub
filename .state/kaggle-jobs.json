@@ -1453,16 +1453,38 @@
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-04T11:25:35.267284Z",
+      "csv_validation": {
+        "bytes": 15658806,
+        "edges": 146842,
+        "nodes": 152867,
+        "rows": 299709
+      },
       "experiment_id": "EXP-053",
       "job_id": "EXP-053-20260904T112535Z-93dd2b",
       "kernel_slug": "matiasantezana/biohub-exp-053-deepgraph",
-      "kernel_state": "RUNNING",
+      "kernel_state": "COMPLETE",
       "kernel_version": 5,
       "log_inspection": {
         "has_error": false,
-        "paths": [],
-        "scopes": [],
-        "transient_error": false,
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+        ],
+        "scopes": [
+          {
+            "count": 4,
+            "paths": [
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+            ],
+            "scope": "test"
+          }
+        ],
+        "transient_error": true,
         "violations": []
       },
       "max_retries": 2,
@@ -1471,8 +1493,18 @@
       "pushed_at": "2026-09-04T11:25:38.718197Z",
       "retries": 0,
       "schema_version": 1,
-      "state": "RUNNING",
-      "updated_at": "2026-09-04T11:25:56.959743Z"
+      "state": "SUBMITTED",
+      "submission": {
+        "date": "2026-09-04 12:00:39.793000",
+        "description": "EXP-053 auto EXP-053-20260904T112535Z-93dd2b",
+        "fileName": "submission.csv",
+        "privateScore": "",
+        "publicScore": "",
+        "status": "SubmissionStatus.PENDING"
+      },
+      "submission_message": "EXP-053 auto EXP-053-20260904T112535Z-93dd2b",
+      "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
+      "updated_at": "2026-09-04T13:16:11.873091Z"
     },
     "EXP-054-20260903T210240Z-45f4fb": {
       "auto_submit": true,
@@ -1764,16 +1796,38 @@
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
       "created_at": "2026-09-04T11:26:02.050303Z",
+      "csv_validation": {
+        "bytes": 16553349,
+        "edges": 155391,
+        "nodes": 161280,
+        "rows": 316671
+      },
       "experiment_id": "EXP-055",
       "job_id": "EXP-055-20260904T112602Z-e5b53c",
       "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
-      "kernel_state": "RUNNING",
+      "kernel_state": "COMPLETE",
       "kernel_version": 9,
       "log_inspection": {
         "has_error": false,
-        "paths": [],
-        "scopes": [],
-        "transient_error": false,
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+        ],
+        "scopes": [
+          {
+            "count": 4,
+            "paths": [
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+            ],
+            "scope": "test"
+          }
+        ],
+        "transient_error": true,
         "violations": []
       },
       "max_retries": 2,
@@ -1782,8 +1836,18 @@
       "pushed_at": "2026-09-04T11:26:05.183402Z",
       "retries": 0,
       "schema_version": 1,
-      "state": "RUNNING",
-      "updated_at": "2026-09-04T11:26:16.103547Z"
+      "state": "SUBMITTED",
+      "submission": {
+        "date": "2026-09-04 12:04:16.877000",
+        "description": "EXP-055 auto EXP-055-20260904T112602Z-e5b53c",
+        "fileName": "submission.csv",
+        "privateScore": "",
+        "publicScore": "",
+        "status": "SubmissionStatus.PENDING"
+      },
+      "submission_message": "EXP-055 auto EXP-055-20260904T112602Z-e5b53c",
+      "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
+      "updated_at": "2026-09-04T13:16:11.837709Z"
     },
     "EXP-056-20260902T204536Z-db742d": {
       "auto_submit": true,
@@ -2165,5 +2229,5 @@
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-04T11:26:16.104081Z"
+  "updated_at": "2026-09-04T13:16:11.874141Z"
 }
