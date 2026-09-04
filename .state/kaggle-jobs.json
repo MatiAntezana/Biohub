@@ -1435,6 +1435,45 @@
       "submission_message": "EXP-053 auto EXP-053-20260903T230720Z-3fc5ad",
       "updated_at": "2026-09-04T04:26:58.744901Z"
     },
+    "EXP-053-20260904T112443Z-cc6c78": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-04T11:24:43.688318Z",
+      "experiment_id": "EXP-053",
+      "job_id": "EXP-053-20260904T112443Z-cc6c78",
+      "kernel_slug": "matiasantezana/biohub-exp-053-deepgraph",
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "243eece59edb0b9251c25855f72d8ab064b1c60035a950a1a0d9016f97fee188",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "DRY_RUN"
+    },
+    "EXP-053-20260904T112535Z-93dd2b": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-04T11:25:35.267284Z",
+      "experiment_id": "EXP-053",
+      "job_id": "EXP-053-20260904T112535Z-93dd2b",
+      "kernel_slug": "matiasantezana/biohub-exp-053-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 5,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [],
+        "scopes": [],
+        "transient_error": false,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "243eece59edb0b9251c25855f72d8ab064b1c60035a950a1a0d9016f97fee188",
+      "pushed_at": "2026-09-04T11:25:38.718197Z",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "RUNNING",
+      "updated_at": "2026-09-04T11:25:56.959743Z"
+    },
     "EXP-054-20260903T210240Z-45f4fb": {
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
@@ -1706,6 +1745,45 @@
       "submission_message": "EXP-055 auto EXP-055-20260903T161807Z-56f976",
       "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
       "updated_at": "2026-09-04T04:26:58.745090Z"
+    },
+    "EXP-055-20260904T112449Z-5c370f": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-04T11:24:49.801070Z",
+      "experiment_id": "EXP-055",
+      "job_id": "EXP-055-20260904T112449Z-5c370f",
+      "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "6b4b8b78fd489005ae68d6a3715fe30bcf51b684f41a8e61a460dec38862fdb8",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "DRY_RUN"
+    },
+    "EXP-055-20260904T112602Z-e5b53c": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-04T11:26:02.050303Z",
+      "experiment_id": "EXP-055",
+      "job_id": "EXP-055-20260904T112602Z-e5b53c",
+      "kernel_slug": "matiasantezana/biohub-exp-055-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 9,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [],
+        "scopes": [],
+        "transient_error": false,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "6b4b8b78fd489005ae68d6a3715fe30bcf51b684f41a8e61a460dec38862fdb8",
+      "pushed_at": "2026-09-04T11:26:05.183402Z",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "RUNNING",
+      "updated_at": "2026-09-04T11:26:16.103547Z"
     },
     "EXP-056-20260902T204536Z-db742d": {
       "auto_submit": true,
@@ -2087,5 +2165,5 @@
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-04T04:26:58.757601Z"
+  "updated_at": "2026-09-04T11:26:16.104081Z"
 }
