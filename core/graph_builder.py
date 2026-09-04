@@ -30,15 +30,15 @@ NODE_BUDGET_FACTOR = 0.98           # Fraction of estimated_nodes to retain (<= 
 
 # 2. Spatial Metric & Anisotropy
 SCALE_ZYX = np.array([1.625, 0.40625, 0.40625], dtype=np.float64)  # Physical scale in um
-MAX_LINK_DISTANCE_UM = 12.0         # Max migratory movement between t and t+1
-MAX_GAP2_DISTANCE_UM = 16.0         # Max distance for 1-frame gap closing (t -> t+2)
+MAX_LINK_DISTANCE_UM = 5.5          # Calibrated to 99.8th percentile empirical cell migration
+MAX_GAP2_DISTANCE_UM = 0.0          # Disabled for pure dt=1 datasets unless node interpolated
 
 # 3. Mitotic Division Branching (1 -> 2 daughters)
 ENABLE_SAFE_DIVISIONS = True        # Enable 1-to-2 mitotic fork recovery
-MITOSIS_CONF_THRESHOLD = 0.48       # Peak probability threshold to consider a parent as dividing
-SAFE_DIV_MAX_UM = 9.0               # Max distance from mother to daughter
-SAFE_DIV_SISTER_MAX_UM = 13.0       # Max distance between sister cells
-SAFE_DIV_FRAME_FRAC_CAP = 0.04      # Max allowed fraction of dividing cells per frame (prevents false forks)
+MITOSIS_CONF_THRESHOLD = 0.95       # High confidence threshold when fallback to peak conf
+SAFE_DIV_MAX_UM = 5.5               # Max distance from mother to daughter
+SAFE_DIV_SISTER_MAX_UM = 10.5       # Max distance between sister cells
+SAFE_DIV_FRAME_FRAC_CAP = 0.005     # Strict cap (max ~1 division per frame)
 
 # 4. Trajectory Cleaning & Short Track Filtering
 OUTPUT_MIN_TRACK_LEN = 3            # Drop trajectories strictly shorter than this length
@@ -53,7 +53,7 @@ SHORT_TRACK_RESCUE_MAX_DIST_UM = 3.5
 
 def physical_distance(pos1: np.ndarray, pos2: np.ndarray, scale: np.ndarray = SCALE_ZYX) -> float:
     """Computes Euclidean distance in micrometers accounting for Z optical anisotropy."""
-    diff = (pos1 - pos2) * scale
+    diff = (np.asarray(pos1) - np.asarray(pos2)) * scale
     return float(np.sqrt(np.sum(diff ** 2)))
 
 
@@ -95,7 +95,8 @@ def link_frame_to_frame(
     max_dist_um: float = MAX_LINK_DISTANCE_UM,
 ) -> Tuple[List[Tuple[int, int]], Dict[int, int], Dict[int, int]]:
     """
-    Performs optimal Linear Assignment (LAP / Hungarian) between consecutive frames.
+    Performs optimal Linear Assignment (LAP / Hungarian) between consecutive frames
+    using vectorized anisotropic Euclidean distance matrices for high throughput.
     Returns: (edges, fwd_links, bwd_links)
     """
     edges: List[Tuple[int, int]] = []
@@ -113,17 +114,12 @@ def link_frame_to_frame(
         if not parents or not children:
             continue
 
-        n_p, n_c = len(parents), len(children)
-        cost_matrix = np.full((n_p, n_c), 1e6)
+        p_pos = np.array([p["pos"] for p in parents], dtype=np.float64) * SCALE_ZYX
+        c_pos = np.array([c["pos"] for c in children], dtype=np.float64) * SCALE_ZYX
 
-        p_pos = np.array([p["pos"] for p in parents], dtype=np.float64)
-        c_pos = np.array([c["pos"] for c in children], dtype=np.float64)
-
-        for r in range(n_p):
-            for c in range(n_c):
-                d = physical_distance(p_pos[r], c_pos[c])
-                if d <= max_dist_um:
-                    cost_matrix[r, c] = d
+        # Vectorized pairwise physical distance matrix in micrometers
+        dists = np.linalg.norm(p_pos[:, None, :] - c_pos[None, :, :], axis=-1)
+        cost_matrix = np.where(dists <= max_dist_um, dists, 1e6)
 
         row_ind, col_ind = linear_sum_assignment(cost_matrix)
 
@@ -148,6 +144,9 @@ def close_temporal_gaps(
     """
     Recovers tracks fragmented by a single missed detection (gap-2: t -> t+2).
     """
+    if max_gap_dist_um <= 0.0:
+        return edges, fwd_links, bwd_links
+
     frames = sorted(filtered_detections.keys())
     new_edges = list(edges)
 
@@ -162,14 +161,11 @@ def close_temporal_gaps(
         if not dead_ends or not new_starts:
             continue
 
-        n_de, n_ns = len(dead_ends), len(new_starts)
-        cost_matrix = np.full((n_de, n_ns), 1e6)
+        p_pos = np.array([de["pos"] for de in dead_ends], dtype=np.float64) * SCALE_ZYX
+        c_pos = np.array([ns["pos"] for ns in new_starts], dtype=np.float64) * SCALE_ZYX
 
-        for r, de in enumerate(dead_ends):
-            for c, ns in enumerate(new_starts):
-                d = physical_distance(de["pos"], ns["pos"])
-                if d <= max_gap_dist_um:
-                    cost_matrix[r, c] = d
+        dists = np.linalg.norm(p_pos[:, None, :] - c_pos[None, :, :], axis=-1)
+        cost_matrix = np.where(dists <= max_gap_dist_um, dists, 1e6)
 
         row_ind, col_ind = linear_sum_assignment(cost_matrix)
 
@@ -226,6 +222,8 @@ def add_safe_mitotic_divisions(
                 continue
 
             mitosis_score = p.get("is_mitosis", 0.0)
+            if mitosis_score < 0.01:
+                mitosis_score = p.get("conf", 0.0)
             if mitosis_score < mitosis_conf_thresh:
                 continue
 
@@ -233,6 +231,8 @@ def add_safe_mitotic_divisions(
             first_child = next((c for c in children if c["id"] == first_child_id), None)
             if not first_child:
                 continue
+
+            p_c1_dist = physical_distance(p["pos"], first_child["pos"])
 
             # Evaluate each available second child
             for cand in unmatched_children:
@@ -244,8 +244,13 @@ def add_safe_mitotic_divisions(
                 if sister_dist > sister_max_um:
                     continue
 
-                # Ranking score: closer is better, weighted by mitotic confidence
-                cost = (p_dist + 0.3 * sister_dist) / max(0.1, mitosis_score)
+                # Biological symmetry constraint: daughter cells are nearly equidistant to mother
+                if abs(p_dist - p_c1_dist) > 2.0:
+                    continue
+
+                # Ranking score: closer is better, penalizing asymmetry
+                symmetry_penalty = abs(p_dist - p_c1_dist)
+                cost = (p_dist + 0.3 * sister_dist + symmetry_penalty) / max(0.1, mitosis_score)
                 proposals.append((cost, pid, first_child_id, cand["id"]))
 
         if not proposals:
