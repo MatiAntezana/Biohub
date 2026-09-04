@@ -70,8 +70,8 @@ MITOSIS_MIN_PROB = 0.20             # Neural probability support for cleavage ed
 OUTPUT_MIN_TRACK_LEN = 6            # Calibrated sweet spot: eliminates noise and achieves 1.0000 node penalty
 KEEP_DIVISION_COMPONENTS = True     # Never delete a track if it participates in a mitotic division
 ADAPTIVE_SHORT_TRACK_RESCUE = True  # Rescues genuine biological micro-tracks with tight movement
-SHORT_TRACK_RESCUE_MIN_LEN = 4      # Minimum length eligible for adaptive rescue
-SHORT_TRACK_RESCUE_MAX_DIST_UM = 1.38  # Calibrated boundary: mean cell displacement <= 1.38 um
+SHORT_TRACK_RESCUE_MIN_LEN = 3      # Calibrated peak: rescues high-confidence 3-frame micro-tracks
+SHORT_TRACK_RESCUE_MAX_DIST_UM = 0.90  # Strict spatial envelope: mean cell displacement <= 0.90 um
 
 
 # ==============================================================================
