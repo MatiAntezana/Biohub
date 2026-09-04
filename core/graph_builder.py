@@ -35,10 +35,10 @@ MAX_GAP2_DISTANCE_UM = 16.0         # Max distance for 1-frame gap closing (t ->
 
 # 3. Mitotic Division Branching (1 -> 2 daughters)
 ENABLE_SAFE_DIVISIONS = True        # Enable 1-to-2 mitotic fork recovery
-MITOSIS_CONF_THRESHOLD = 0.50       # Peak probability threshold to consider a parent as dividing
-SAFE_DIV_MAX_UM = 8.0               # Max distance from mother to daughter
-SAFE_DIV_SISTER_MAX_UM = 12.0       # Max distance between sister cells
-SAFE_DIV_FRAME_FRAC_CAP = 0.02      # Max allowed fraction of dividing cells per frame (prevents false forks)
+MITOSIS_CONF_THRESHOLD = 0.48       # Peak probability threshold to consider a parent as dividing
+SAFE_DIV_MAX_UM = 9.0               # Max distance from mother to daughter
+SAFE_DIV_SISTER_MAX_UM = 13.0       # Max distance between sister cells
+SAFE_DIV_FRAME_FRAC_CAP = 0.04      # Max allowed fraction of dividing cells per frame (prevents false forks)
 
 # 4. Trajectory Cleaning & Short Track Filtering
 OUTPUT_MIN_TRACK_LEN = 3            # Drop trajectories strictly shorter than this length
