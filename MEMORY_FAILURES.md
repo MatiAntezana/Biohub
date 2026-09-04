@@ -117,3 +117,17 @@
   Hypothesis 'Raise CONF_THRESHOLD from 0.42 to 0.70 to eliminate low-confidence background noise' resulted in score 0.7383 (delta: 0.0000). Reverting.
 
 ---
+
+### ❌ Run REAL-005 (2026-09-04 19:40:17 UTC)
+- **Hipótesis**: Increase NODE_BUDGET_FACTOR to 1.10 to recover 99.2% of GT cells
+- **Sub-métrica objetivo**: `total_score`
+- **Resultado**: Score `0.7635` vs Mejor `0.7646` (Delta: `-0.0011`)
+- **Telemetría**:
+  - `Adjusted Edge Jaccard`: 0.7635 (Unadjusted: 0.7656)
+  - `Node Penalty Multiplier`: 0.9974 (T_pred: 60253 / T_true: 58700)
+  - `Division Jaccard`: 0.0 (TP: 0 | FP: 0 | FN: 1)
+  - `Fragmented Edges`: 77 | `Wrong Associations`: 0
+- **Post-Mortem / Aprendizaje**:
+  Hypothesis 'Increase NODE_BUDGET_FACTOR to 1.10 to recover 99.2% of GT cells' resulted in score 0.7635 (delta: -0.0011). Reverting.
+
+---
