@@ -26,7 +26,7 @@ from scipy.optimize import linear_sum_assignment
 
 # 1. Detection & Cardinality Budgeting
 CONF_THRESHOLD = 0.42               # Initial peak confidence cutoff [0.20 - 0.70]
-NODE_BUDGET_FACTOR = 0.98           # Fraction of estimated_nodes to retain (<= 1.0 eliminates node penalty)
+NODE_BUDGET_FACTOR = 1.08           # Over-budget pre-linking to capture 99% GT recall; pruned post-linking
 
 # 2. Spatial Metric & Anisotropy
 SCALE_ZYX = np.array([1.625, 0.40625, 0.40625], dtype=np.float64)  # Physical scale in um
@@ -43,7 +43,7 @@ SAFE_DIV_FRAME_FRAC_CAP = 0.005     # Strict cap (max ~1 division per frame)
 # 4. Trajectory Cleaning & Short Track Filtering
 OUTPUT_MIN_TRACK_LEN = 3            # Drop trajectories strictly shorter than this length
 KEEP_DIVISION_COMPONENTS = True     # Never delete a track if it participates in a mitotic division
-ADAPTIVE_SHORT_TRACK_RESCUE = True  # Rescue high-confidence short tracks if mean edge dist is very low
+ADAPTIVE_SHORT_TRACK_RESCUE = False # Strict filtering of length-1 and length-2 orphan tracks
 SHORT_TRACK_RESCUE_MAX_DIST_UM = 3.5
 
 
