@@ -38,6 +38,12 @@ NEURAL_EDGE_WEIGHT = 0.12           # Weight of neural candidate edge affinities
 NEURAL_MAX_PROB_DIST_UM = 5.5       # Tightened envelope eliminating false positive long-range associations
 NEURAL_PROB_THRESHOLD = 0.20        # Minimum probability required to utilize extended distance envelope
 
+# 2c. Two-Pass LAP Multi-Stage Assignment
+ENABLE_TWO_PASS_LAP = True          # Decouples tight unequivocal geometric links from residual neural links
+TWO_PASS_P1_DIST_UM = 4.0           # Pass 1: Strict distance cutoff for unequivocal high-density links
+TWO_PASS_P2_DIST_UM = 5.8           # Pass 2: Extended envelope requiring neural confirmation
+TWO_PASS_P2_PROB_THRESH = 0.18      # Minimum neural confidence required in Pass 2
+
 # 3. Mitotic Division Branching (Cytokinesis Divergence Gating)
 ENABLE_SAFE_DIVISIONS = True        # Enabled with strict forward temporal divergence
 MITOSIS_MIN_DIST_UM = 3.5           # Min distance from mother to daughter
@@ -108,10 +114,17 @@ def link_frame_to_frame(
     neural_weight: float = NEURAL_EDGE_WEIGHT,
     max_prob_dist_um: float = NEURAL_MAX_PROB_DIST_UM,
     prob_threshold: float = NEURAL_PROB_THRESHOLD,
+    two_pass: bool = ENABLE_TWO_PASS_LAP,
+    pass1_dist: float = TWO_PASS_P1_DIST_UM,
+    pass2_dist: float = TWO_PASS_P2_DIST_UM,
+    pass2_prob_thresh: float = TWO_PASS_P2_PROB_THRESH,
 ) -> Tuple[List[Tuple[int, int]], Dict[int, int], Dict[int, int]]:
     """
-    Performs optimal Linear Assignment (LAP / Hungarian) between consecutive frames
-    using vectorized anisotropic Euclidean distance matrices blended with neural edge representation logits.
+    Performs optimal Linear Assignment (LAP / Hungarian) between consecutive frames.
+    When two_pass=True, uses a 2-stage LAP strategy:
+      Pass 1 (Tight Geometric): Links unequivocal cells within pass1_dist (<= 4.0 um).
+      Pass 2 (Residual Neural): Links remaining unmatched cells within pass2_dist (<= 5.8 um)
+                                 requiring neural probability confirmation (>= prob_thresh).
     Returns: (edges, fwd_links, bwd_links)
     """
     edges: List[Tuple[int, int]] = []
@@ -153,23 +166,64 @@ def link_frame_to_frame(
                     if sid in p_id_to_idx and tid in c_id_to_idx:
                         probs[p_id_to_idx[sid], c_id_to_idx[tid]] = c["prob"]
 
-        if neural_weight > 0.0:
-            cost_matrix = dists - neural_weight * (probs * 10.0)
-            allowed = (dists <= max_dist_um) | ((dists <= max_prob_dist_um) & (probs >= prob_threshold))
+        if two_pass:
+            # --- PASS 1: Tight Geometric Linking ---
+            cost_p1 = dists - neural_weight * (probs * 10.0) if neural_weight > 0.0 else dists
+            allowed_p1 = dists <= pass1_dist
+            cost_p1 = np.where(allowed_p1, cost_p1, 1e6)
+            r1, c1 = linear_sum_assignment(cost_p1)
+
+            matched_p = set()
+            matched_c = set()
+            for r, c in zip(r1, c1):
+                if cost_p1[r, c] < 1e5:
+                    pid = parents[r]["id"]
+                    cid = children[c]["id"]
+                    edges.append((pid, cid))
+                    fwd_links[pid] = cid
+                    bwd_links[cid] = pid
+                    matched_p.add(r)
+                    matched_c.add(c)
+
+            # --- PASS 2: Residual Neural Linking ---
+            unmatched_p = [r for r in range(len(parents)) if r not in matched_p]
+            unmatched_c = [c for c in range(len(children)) if c not in matched_c]
+
+            if unmatched_p and unmatched_c:
+                sub_dists = dists[np.ix_(unmatched_p, unmatched_c)]
+                sub_probs = probs[np.ix_(unmatched_p, unmatched_c)]
+                sub_cost = sub_dists - neural_weight * (sub_probs * 10.0) if neural_weight > 0.0 else sub_dists
+
+                allowed_p2 = (sub_dists <= pass2_dist) & (sub_probs >= pass2_prob_thresh)
+                sub_cost = np.where(allowed_p2, sub_cost, 1e6)
+                r2, c2 = linear_sum_assignment(sub_cost)
+
+                for r, c in zip(r2, c2):
+                    if sub_cost[r, c] < 1e5:
+                        pid = parents[unmatched_p[r]]["id"]
+                        cid = children[unmatched_c[c]]["id"]
+                        edges.append((pid, cid))
+                        fwd_links[pid] = cid
+                        bwd_links[cid] = pid
         else:
-            cost_matrix = dists
-            allowed = dists <= max_dist_um
+            # Single-pass fallback
+            if neural_weight > 0.0:
+                cost_matrix = dists - neural_weight * (probs * 10.0)
+                allowed = (dists <= max_dist_um) | ((dists <= max_prob_dist_um) & (probs >= prob_threshold))
+            else:
+                cost_matrix = dists
+                allowed = dists <= max_dist_um
 
-        cost_matrix = np.where(allowed, cost_matrix, 1e6)
-        row_ind, col_ind = linear_sum_assignment(cost_matrix)
+            cost_matrix = np.where(allowed, cost_matrix, 1e6)
+            row_ind, col_ind = linear_sum_assignment(cost_matrix)
 
-        for r, c in zip(row_ind, col_ind):
-            if cost_matrix[r, c] < 1e5:
-                pid = parents[r]["id"]
-                cid = children[c]["id"]
-                edges.append((pid, cid))
-                fwd_links[pid] = cid
-                bwd_links[cid] = pid
+            for r, c in zip(row_ind, col_ind):
+                if cost_matrix[r, c] < 1e5:
+                    pid = parents[r]["id"]
+                    cid = children[c]["id"]
+                    edges.append((pid, cid))
+                    fwd_links[pid] = cid
+                    bwd_links[cid] = pid
 
     return edges, fwd_links, bwd_links
 
