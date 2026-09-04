@@ -4,3 +4,6 @@ FAST-002	2026-09-04T18:57:35.798526+00:00	0.8380	+0.0000	0.7978	0.4028	1.0000	0.
 FAST-003	2026-09-04T18:57:57.155532+00:00	0.8380	+0.0000	0.7978	0.4028	1.0000	0.9460	106	REVERT	total_score	Initial verified baseline
 FAST-004	2026-09-04T18:58:09.465588+00:00	0.8598	+0.0218	0.8015	0.5833	1.0000	0.9460	94	KEEP	division_jaccard	Relax mitotic frame cap to 0.04 and search envelope to 9.0um to recover FN divisions
 FAST-005	2026-09-04T19:06:43.075243+00:00	0.8598	+0.0000	0.8015	0.5833	1.0000	0.9460	94	REVERT	total_score	Verify default remote cluster execution
+FAST-006	2026-09-04T19:07:10.351982+00:00	0.8598	+0.0000	0.8015	0.5833	1.0000	0.9460	94	REVERT	total_score	Integration test hypothesis
+FAST-007	2026-09-04T19:11:19.166373+00:00	0.0000	-0.8598	0.0000	0.0000	1.0000	0.0000	0	REVERT	total_score	Verify exclusive remote execution on A1557
+FAST-008	2026-09-04T19:11:34.253145+00:00	0.8598	+0.0000	0.8015	0.5833	1.0000	0.9460	94	REVERT	total_score	Verify exclusive remote execution on A1557

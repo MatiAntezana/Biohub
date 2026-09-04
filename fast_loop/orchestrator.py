@@ -186,7 +186,7 @@ def run_experiment_cycle(
         if remote:
             from core.remote_executor import run_remote_python, find_best_online_node, DEFAULT_NODES
             target_node = DEFAULT_NODES.get(node_name) if node_name else find_best_online_node()
-            print(f"   Target Node:    {target_node.name} ({target_node.ip})")
+            print(f"   Target Node:    {target_node.name} (SSH Alias: {target_node.ssh_alias})")
 
             code, stdout, stderr = run_remote_python(
                 "fast_loop/evaluate_fast.py",

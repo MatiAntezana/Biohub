@@ -1,7 +1,7 @@
 """
 Remote Execution Engine for Autoresearch V2.
-Enforces that ALL evaluation and model experimentation runs strictly on authorized
-remote GPU cluster nodes (A1552, A1556, A1557, A1560), while the Mac acts
+Enforces that ALL evaluation and model experimentation runs strictly on the authorized
+remote GPU cluster node (exclusively A1557 per user mandate), while the Mac acts
 purely as the Controller / Supervisor.
 """
 
@@ -21,33 +21,38 @@ CONFIG_PATH = PROJECT_ROOT / "cluster_config.json"
 @dataclass
 class RemoteNode:
     name: str
-    ip: str
-    port: int = 2222
-    user: str = "alumno1"
-    conda_env: str = "train-56"
-    python_path: str = "/home/alumno1/miniconda3/envs/train-56/bin/python"
+    ssh_alias: str
+    conda_env: str = "train-57"
+    python_path: str = "/home/alumno1/miniconda3/envs/train-57/bin/python"
     remote_workdir: str = "/home/alumno1/Documents/Biohub-mejorado"
 
 
-DEFAULT_NODES = {
-    "A1556-UBU": RemoteNode("A1556-UBU", "100.107.113.22", conda_env="train-56", python_path="/home/alumno1/miniconda3/envs/train-56/bin/python"),
-    "A1552-UBU": RemoteNode("A1552-UBU", "100.112.138.117", conda_env="train-52", python_path="/home/alumno1/miniconda3/envs/train-52/bin/python"),
-    "A1560-UBU": RemoteNode("A1560-UBU", "100.84.253.117", conda_env="train-60", python_path="/home/alumno1/miniconda3/envs/train-60/bin/python"),
-    "A1557-UBU": RemoteNode("A1557-UBU", "100.87.128.33", conda_env="train-57", python_path="/home/alumno1/miniconda3/envs/train-57/bin/python"),
+# User Mandate: Exclusively authorized to use ONLY A1557
+DEFAULT_NODE = RemoteNode(
+    name="A1557",
+    ssh_alias="a1557",
+    conda_env="train-57",
+    python_path="/home/alumno1/miniconda3/envs/train-57/bin/python",
+    remote_workdir="/home/alumno1/Documents/Biohub-mejorado",
+)
+
+DEFAULT_NODES: Dict[str, RemoteNode] = {
+    "A1557": DEFAULT_NODE,
 }
 
 
 def load_cluster_config() -> Dict[str, Any]:
-    """Loads or creates default cluster configuration."""
+    """Loads cluster configuration."""
     if not CONFIG_PATH.exists():
         default_config = {
             "enforce_remote_execution": True,
-            "default_node": "A1556-UBU",
-            "sync_code_before_run": True,
-            "ssh_port": 2222,
-            "ssh_user": "alumno1",
+            "authorized_exclusive_node": "A1557",
+            "default_node": "A1557",
+            "ssh_host": "a1557",
+            "conda_env": "train-57",
+            "python_path": "/home/alumno1/miniconda3/envs/train-57/bin/python",
             "remote_workdir": "/home/alumno1/Documents/Biohub-mejorado",
-            "allowed_nodes": list(DEFAULT_NODES.keys()),
+            "allowed_nodes": ["A1557"],
         }
         with open(CONFIG_PATH, "w", encoding="utf-8") as f:
             json.dump(default_config, f, indent=2)
@@ -58,39 +63,26 @@ def load_cluster_config() -> Dict[str, Any]:
 
 
 def find_best_online_node(preferred: Optional[str] = None) -> RemoteNode:
-    """Finds an online cluster node, prioritizing `preferred` or max free VRAM."""
-    config = load_cluster_config()
-    target_name = preferred or config.get("default_node", "A1556-UBU")
-
-    # First check preferred
-    if target_name in DEFAULT_NODES:
-        node = DEFAULT_NODES[target_name]
-        if check_node_online(node):
-            return node
-
-    # Fallback to scanning others
-    for name, node in DEFAULT_NODES.items():
-        if name != target_name and check_node_online(node):
-            print(f"[REMOTE] Target {target_name} is offline. Falling back to online node: {name}")
-            return node
-
-    raise ConnectionError(
-        "No remote cluster nodes are reachable via SSH over Tailscale. "
-        "Verify that Tailscale is connected and at least one node is online."
-    )
+    """Returns the authorized node A1557, verifying it is reachable."""
+    if not check_node_online(DEFAULT_NODE):
+        raise ConnectionError(
+            f"Authorized remote node {DEFAULT_NODE.name} ({DEFAULT_NODE.ssh_alias}) is currently unreachable. "
+            "Verify Tailscale and SSH proxy connection."
+        )
+    return DEFAULT_NODE
 
 
-def check_node_online(node: RemoteNode, timeout: int = 4) -> bool:
-    """Quickly tests if a remote node is reachable."""
+def check_node_online(node: RemoteNode, timeout: int = 5) -> bool:
+    """Tests connection to remote node via ssh alias."""
     cmd = [
-        "ssh", "-p", str(node.port),
+        "ssh",
         "-o", "BatchMode=yes",
         "-o", f"ConnectTimeout={timeout}",
-        f"{node.user}@{node.ip}",
+        node.ssh_alias,
         "hostname",
     ]
     try:
-        res = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout + 2)
+        res = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout + 3)
         return res.returncode == 0
     except Exception:
         return False
@@ -99,13 +91,13 @@ def check_node_online(node: RemoteNode, timeout: int = 4) -> bool:
 def sync_code_to_remote(node: RemoteNode, quiet: bool = False) -> bool:
     """Syncs the Biohub-mejorado codebase from Mac controller to remote machine via rsync."""
     if not quiet:
-        print(f"[REMOTE] Syncing code to {node.name} ({node.ip}:{node.remote_workdir})...")
+        print(f"[REMOTE] Syncing code to {node.name} via ssh alias '{node.ssh_alias}' ({node.remote_workdir})...")
 
     # Ensure remote directory exists
     mkdir_cmd = [
-        "ssh", "-p", str(node.port),
+        "ssh",
         "-o", "BatchMode=yes",
-        f"{node.user}@{node.ip}",
+        node.ssh_alias,
         f"mkdir -p {node.remote_workdir}",
     ]
     subprocess.run(mkdir_cmd, capture_output=True, check=True)
@@ -117,9 +109,9 @@ def sync_code_to_remote(node: RemoteNode, quiet: bool = False) -> bool:
         "--exclude", "__pycache__",
         "--exclude", "*.pyc",
         "--exclude", ".DS_Store",
-        "-e", f"ssh -p {node.port} -o BatchMode=yes",
+        "-e", "ssh -o BatchMode=yes",
         f"{PROJECT_ROOT}/",
-        f"{node.user}@{node.ip}:{node.remote_workdir}/",
+        f"{node.ssh_alias}:{node.remote_workdir}/",
     ]
     res = subprocess.run(rsync_cmd, capture_output=True, text=True)
     if res.returncode != 0:
@@ -138,7 +130,7 @@ def run_remote_python(
     quiet: bool = False,
 ) -> Tuple[int, str, str]:
     """
-    Executes a python script remotely on the cluster node.
+    Executes a python script remotely on the authorized cluster node.
     Returns: (returncode, stdout, stderr)
     """
     target_node = node or find_best_online_node()
@@ -146,16 +138,21 @@ def run_remote_python(
     if sync_first:
         sync_code_to_remote(target_node, quiet=quiet)
 
+    # When running on the remote node, it executes locally on itself
+    remote_args = list(args)
+    if "--local" not in remote_args:
+        remote_args.append("--local")
+
     remote_script = f"{target_node.remote_workdir}/{script_relative_path}"
-    cmd_str = f"cd {target_node.remote_workdir} && {target_node.python_path} {remote_script} {' '.join(args)}"
+    cmd_str = f"cd {target_node.remote_workdir} && {target_node.python_path} {remote_script} {' '.join(remote_args)}"
 
     if not quiet:
         print(f"[REMOTE] Executing on {target_node.name} via {target_node.python_path}...")
 
     ssh_cmd = [
-        "ssh", "-p", str(target_node.port),
+        "ssh",
         "-o", "BatchMode=yes",
-        f"{target_node.user}@{target_node.ip}",
+        target_node.ssh_alias,
         cmd_str,
     ]
 
@@ -164,13 +161,13 @@ def run_remote_python(
 
 
 if __name__ == "__main__":
-    print("Verifying Remote Execution Engine...")
+    print(f"Verifying Remote Execution Engine (Mandated Node: {DEFAULT_NODE.name})...")
     node = find_best_online_node()
-    print(f"Selected node: {node.name} ({node.ip})")
+    print(f"Connected to node: {node.name}")
     sync_code_to_remote(node)
     code, out, err = run_remote_python("fast_loop/evaluate_fast.py", ["--quiet"], node=node)
     print("Remote execution result code:", code)
     if code == 0:
-        print("Remote test succeeded!")
+        print("Remote test succeeded on authorized node!")
     else:
         print("Remote test error:", err)

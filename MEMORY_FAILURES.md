@@ -61,3 +61,45 @@
   Hypothesis 'Verify default remote cluster execution' resulted in score 0.8598 (delta: 0.0000). Reverting.
 
 ---
+
+### ❌ Run FAST-006 (2026-09-04 19:07:10 UTC)
+- **Hipótesis**: Integration test hypothesis
+- **Sub-métrica objetivo**: `total_score`
+- **Resultado**: Score `0.8598` vs Mejor `0.8598` (Delta: `+0.0000`)
+- **Telemetría**:
+  - `Adjusted Edge Jaccard`: 0.8015 (Unadjusted: 0.8015)
+  - `Node Penalty Multiplier`: 1.0 (T_pred: 2728 / T_true: 2871)
+  - `Division Jaccard`: 0.5833 (TP: 42 | FP: 0 | FN: 30)
+  - `Fragmented Edges`: 94 | `Wrong Associations`: 198
+- **Post-Mortem / Aprendizaje**:
+  Hypothesis 'Integration test hypothesis' resulted in score 0.8598 (delta: 0.0000). Reverting.
+
+---
+
+### ❌ Run FAST-007 (2026-09-04 19:11:19 UTC)
+- **Hipótesis**: Verify exclusive remote execution on A1557
+- **Sub-métrica objetivo**: `total_score`
+- **Resultado**: Score `0.0000` vs Mejor `0.8598` (Delta: `-0.8598`)
+- **Telemetría**:
+  - `Adjusted Edge Jaccard`: None (Unadjusted: None)
+  - `Node Penalty Multiplier`: None (T_pred: None / T_true: None)
+  - `Division Jaccard`: None (TP: None | FP: None | FN: None)
+  - `Fragmented Edges`: None | `Wrong Associations`: None
+- **Post-Mortem / Aprendizaje**:
+  Hypothesis 'Verify exclusive remote execution on A1557' resulted in score 0.0000 (delta: -0.8598). Reverting.
+
+---
+
+### ❌ Run FAST-008 (2026-09-04 19:11:34 UTC)
+- **Hipótesis**: Verify exclusive remote execution on A1557
+- **Sub-métrica objetivo**: `total_score`
+- **Resultado**: Score `0.8598` vs Mejor `0.8598` (Delta: `+0.0000`)
+- **Telemetría**:
+  - `Adjusted Edge Jaccard`: 0.8015 (Unadjusted: 0.8015)
+  - `Node Penalty Multiplier`: 1.0 (T_pred: 2728 / T_true: 2871)
+  - `Division Jaccard`: 0.5833 (TP: 42 | FP: 0 | FN: 30)
+  - `Fragmented Edges`: 94 | `Wrong Associations`: 198
+- **Post-Mortem / Aprendizaje**:
+  Hypothesis 'Verify exclusive remote execution on A1557' resulted in score 0.8598 (delta: 0.0000). Reverting.
+
+---
