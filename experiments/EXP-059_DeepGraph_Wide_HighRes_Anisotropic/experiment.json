@@ -7,7 +7,7 @@
     "--epochs",
     "50",
     "--batch-size",
-    "2",
+    "1",
     "--num-workers",
     "2",
     "--max-iters",

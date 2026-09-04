@@ -1,0 +1,55 @@
+{
+  "artifact_dir": "/home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005259Z_e4295bfd",
+  "batch_size": 2,
+  "checkpoint_selection": "last_epoch",
+  "checkpoints": [],
+  "data_dir": "/home/alumno1/Documents/Biohub/data/train",
+  "det_loss_weight": 1.75,
+  "det_negative_weight": 0.018,
+  "downsample_zyx": [
+    1,
+    2,
+    2
+  ],
+  "dropout": 0.1,
+  "ensemble": {
+    "detection_secondary_weight": 0.475,
+    "edge_secondary_weight": 0.15,
+    "primary_margin_limit": 0.35,
+    "retention_minimum": 0.9,
+    "reverse_weight": 0.3,
+    "std_ratio_maximum": 2.0,
+    "std_ratio_minimum": 0.5
+  },
+  "epochs_per_seed": 50,
+  "error": "[Errno 2] No such file or directory: '/home/alumno1/Documents/Biohub/checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth'",
+  "experiment_dir": "/home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5",
+  "experiment_id": "EXP-058",
+  "failed_at": "2026-09-04T00:53:53.023273+00:00",
+  "hidden_dim": 192,
+  "max_iters_per_epoch": 750,
+  "n_heads": 6,
+  "num_workers": 2,
+  "parent_experiment_id": "EXP-055",
+  "pool_kernel_um": 3.75,
+  "project_root": "/home/alumno1/Documents/Biohub",
+  "run_id": "EXP-058_20260904T005259Z_e4295bfd",
+  "seeds": [
+    3407,
+    9479
+  ],
+  "split_policy": "full-fit: 100% train / 0% validation",
+  "started_at": "2026-09-04T00:53:07.945203+00:00",
+  "starter_kit": "/home/alumno1/Documents/Biohub/official_starter_kit",
+  "status": "FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py\", line 160, in main\n    train(\n  File \"/home/alumno1/Documents/Biohub/official_starter_kit/scripts/train_unet_transformer.py\", line 1238, in train\n    resume_payload = torch.load(resume_from, map_location=device, weights_only=False)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/alumno1/miniconda3/envs/train-56/lib/python3.11/site-packages/torch/serialization.py\", line 1530, in load\n    with _open_file_like(f, \"rb\") as opened_file:\n         ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/alumno1/miniconda3/envs/train-56/lib/python3.11/site-packages/torch/serialization.py\", line 795, in _open_file_like\n    return _open_file(name_or_buffer, mode)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/alumno1/miniconda3/envs/train-56/lib/python3.11/site-packages/torch/serialization.py\", line 776, in __init__\n    super().__init__(open(name, mode))  # noqa: SIM115\n                     ^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/alumno1/Documents/Biohub/checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth'\n",
+  "train_dataset_count": 1,
+  "unet_layers": [
+    32,
+    64,
+    128
+  ],
+  "unet_out_channels": 32,
+  "validation": "none",
+  "window_size": 5
+}

@@ -508,14 +508,14 @@
       "experiment_id": "EXP-059",
       "node": "A1560",
       "priority": 12,
-      "queued_at": "2026-09-04T02:00:29.692212Z",
+      "queued_at": "2026-09-04T02:22:54.353198Z",
       "ready_at": "2026-09-04T02:00:29.708305Z",
       "requested_node": "max_free_vram",
-      "run_id": "EXP-059_20260904T020046Z_9c5c0bd4",
-      "status": "RUNNING",
-      "updated_at": "2026-09-04T02:00:52.063112Z"
+      "run_id": "EXP-059_20260904T020038Z_9c5c0bd4",
+      "status": "READY",
+      "updated_at": "2026-09-04T02:12:18.061059Z"
     }
   ],
   "schema_version": 1,
-  "updated_at": "2026-09-04T02:01:36.233008Z"
+  "updated_at": "2026-09-04T02:23:50.749700Z"
 }
