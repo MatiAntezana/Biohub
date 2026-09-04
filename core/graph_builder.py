@@ -28,6 +28,11 @@ from scipy.optimize import linear_sum_assignment
 CONF_THRESHOLD = 0.960              # Calibrated peak confidence cutoff to recover additional true edges
 NODE_BUDGET_FACTOR = 1.22           # Optimal budget factor balancing GT recall and node penalty multiplier
 
+# 1b. Anisotropic Z-NMS (Optical PSF Elongation De-duplication)
+ENABLE_Z_NMS = True                  # Suppresses duplicate detections along elongated optical Z axis
+Z_NMS_XY_RADIUS_UM = 3.5             # Lateral XY radius for suppression
+Z_NMS_Z_DIST_UM = 4.6                # Total physical distance cutoff for Z doublets
+
 # 2. Spatial Metric & Anisotropy
 SCALE_ZYX = np.array([1.625, 0.40625, 0.40625], dtype=np.float64)  # Physical scale in um
 MAX_LINK_DISTANCE_UM = 5.5          # Calibrated to 99.8th percentile empirical cell migration
@@ -105,6 +110,48 @@ def apply_node_budgeting(
             filtered[t] = valid
 
     return filtered
+
+
+def apply_anisotropic_z_nms(
+    detections: Dict[int, List[Dict[str, Any]]],
+    xy_radius_um: float = Z_NMS_XY_RADIUS_UM,
+    z_dist_um: float = Z_NMS_Z_DIST_UM,
+) -> Dict[int, List[Dict[str, Any]]]:
+    """
+    Suppresses duplicate detections along the elongated optical Z axis.
+    Sorts detections by confidence descending. A candidate is suppressed if a higher-confidence
+    detection is within xy_radius_um laterally and z_dist_um total physical distance.
+    """
+    cleaned: Dict[int, List[Dict[str, Any]]] = {}
+    for t, cells in detections.items():
+        if len(cells) <= 1:
+            cleaned[t] = list(cells)
+            continue
+
+        sorted_cells = sorted(cells, key=lambda c: c.get('conf', 1.0), reverse=True)
+        kept = []
+        kept_pos = []
+
+        for c in sorted_cells:
+            p = np.array(c['pos'], dtype=np.float64)
+            if not kept:
+                kept.append(c)
+                kept_pos.append(p)
+                continue
+
+            p_arr = np.array(kept_pos)
+            dz = np.abs(p_arr[:, 0] - p[0]) * SCALE_ZYX[0]
+            dxy = np.sqrt(((p_arr[:, 1] - p[1]) * SCALE_ZYX[1])**2 + ((p_arr[:, 2] - p[2]) * SCALE_ZYX[2])**2)
+            d_tot = np.sqrt(dz**2 + dxy**2)
+
+            is_duplicate = np.any((dxy <= xy_radius_um) & (d_tot <= z_dist_um))
+            if not is_duplicate:
+                kept.append(c)
+                kept_pos.append(p)
+
+        cleaned[t] = kept
+
+    return cleaned
 
 
 def link_frame_to_frame(
@@ -542,6 +589,14 @@ def build_lineage_graph(
         conf_thresh=CONF_THRESHOLD,
         budget_factor=NODE_BUDGET_FACTOR,
     )
+
+    # Step 1b: Anisotropic Z-NMS to suppress PSF elongation doublets along optical Z
+    if ENABLE_Z_NMS:
+        filtered_dets = apply_anisotropic_z_nms(
+            filtered_dets,
+            xy_radius_um=Z_NMS_XY_RADIUS_UM,
+            z_dist_um=Z_NMS_Z_DIST_UM,
+        )
 
     # Step 2: Frame-to-frame LAP tracking with neural gating
     edges, fwd_links, bwd_links = link_frame_to_frame(
