@@ -49,6 +49,12 @@ TWO_PASS_P1_DIST_UM = 4.1           # Pass 1: Strict distance cutoff for unequiv
 TWO_PASS_P2_DIST_UM = 5.6           # Pass 2: Extended envelope requiring neural confirmation
 TWO_PASS_P2_PROB_THRESH = 0.05      # Minimum neural confidence required in Pass 2
 
+# 2d. Intra-Frame Handover Stitching (Reconcile Split Track Fragments)
+ENABLE_HANDOVER_STITCHING = True     # Reconnects dead-ends to new-starts of same physical cell
+HANDOVER_MAX_INTRA_DIST_UM = 5.5     # Maximum distance between dead-end and new-start in same frame
+HANDOVER_MAX_TARGET_DIST_UM = 4.2    # Maximum physical distance from dead-end to child in t+1
+HANDOVER_MIN_HISTORY_LEN = 2         # Dead-end must have at least 2 frames of track history
+
 # 3. Mitotic Division Branching (Cytokinesis Divergence Gating)
 ENABLE_SAFE_DIVISIONS = True        # Enabled with strict forward temporal divergence
 MITOSIS_MIN_DIST_UM = 3.5           # Min distance from mother to daughter
@@ -273,6 +279,90 @@ def link_frame_to_frame(
                     bwd_links[cid] = pid
 
     return edges, fwd_links, bwd_links
+
+
+def reconcile_intra_frame_handovers(
+    filtered_detections: Dict[int, List[Dict[str, Any]]],
+    edges: List[Tuple[int, int]],
+    fwd_links: Dict[int, int],
+    bwd_links: Dict[int, int],
+    max_intra_dist_um: float = HANDOVER_MAX_INTRA_DIST_UM,
+    max_target_dist_um: float = HANDOVER_MAX_TARGET_DIST_UM,
+    min_history_len: int = HANDOVER_MIN_HISTORY_LEN,
+) -> Tuple[List[Tuple[int, int]], Dict[int, int], Dict[int, int]]:
+    """
+    Reconciles intra-frame split tracks where a dead-end node and a new-start node
+    represent the same physical cell.
+    """
+    if not ENABLE_HANDOVER_STITCHING:
+        return edges, fwd_links, bwd_links
+
+    all_nodes = {n["id"]: n for cell_list in filtered_detections.values() for n in cell_list}
+    new_edges = list(edges)
+    edge_set = set(new_edges)
+    new_fwd = dict(fwd_links)
+    new_bwd = dict(bwd_links)
+
+    def get_track_history(node_id: int) -> int:
+        curr = node_id
+        hist = 1
+        while curr in new_bwd:
+            curr = new_bwd[curr]
+            hist += 1
+        return hist
+
+    frames = sorted(filtered_detections.keys(), key=lambda x: int(x) if isinstance(x, (int, str)) and str(x).isdigit() else x)
+
+    for t in frames:
+        cells = filtered_detections[t]
+        dead_ends = [c["id"] for c in cells if c["id"] in new_bwd and c["id"] not in new_fwd]
+        new_starts = [c["id"] for c in cells if c["id"] in new_fwd and c["id"] not in new_bwd]
+
+        if not dead_ends or not new_starts:
+            continue
+
+        dead_ends.sort(key=get_track_history, reverse=True)
+
+        for de in dead_ends:
+            if de in new_fwd:
+                continue
+            if get_track_history(de) < min_history_len:
+                continue
+
+            de_pos = all_nodes[de]["pos"]
+            best_ns = None
+            best_target = None
+            min_target_dist = 1e6
+
+            for ns in new_starts:
+                if ns not in new_fwd or ns in new_bwd:
+                    continue
+                ns_pos = all_nodes[ns]["pos"]
+                intra_d = physical_distance(de_pos, ns_pos)
+                if intra_d > max_intra_dist_um:
+                    continue
+
+                target = new_fwd[ns]
+                target_pos = all_nodes[target]["pos"]
+                target_d = physical_distance(de_pos, target_pos)
+
+                if target_d <= max_target_dist_um and target_d < min_target_dist:
+                    min_target_dist = target_d
+                    best_ns = ns
+                    best_target = target
+
+            if best_ns is not None and best_target is not None:
+                if (best_ns, best_target) in edge_set:
+                    new_edges.remove((best_ns, best_target))
+                    edge_set.remove((best_ns, best_target))
+                del new_fwd[best_ns]
+
+                new_edges.append((de, best_target))
+                edge_set.add((de, best_target))
+                new_fwd[de] = best_target
+                new_bwd[best_target] = de
+
+    return new_edges, new_fwd, new_bwd
 
 
 def close_temporal_gaps(
@@ -607,6 +697,18 @@ def build_lineage_graph(
         max_prob_dist_um=NEURAL_MAX_PROB_DIST_UM,
         prob_threshold=NEURAL_PROB_THRESHOLD,
     )
+
+    # Step 2b: Reconcile intra-frame handovers (reconnect dead-ends to new starts)
+    if ENABLE_HANDOVER_STITCHING:
+        edges, fwd_links, bwd_links = reconcile_intra_frame_handovers(
+            filtered_dets,
+            edges,
+            fwd_links,
+            bwd_links,
+            max_intra_dist_um=HANDOVER_MAX_INTRA_DIST_UM,
+            max_target_dist_um=HANDOVER_MAX_TARGET_DIST_UM,
+            min_history_len=HANDOVER_MIN_HISTORY_LEN,
+        )
 
     # Step 3: Gap-2 closing for intermittent blinkers
     edges, fwd_links, bwd_links = close_temporal_gaps(
