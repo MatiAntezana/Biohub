@@ -7,6 +7,7 @@
   "python_path": "/home/alumno1/miniconda3/envs/train-57/bin/python",
   "remote_workdir": "/home/alumno1/Documents/Biohub-mejorado",
   "allowed_nodes": [
-    "A1557"
+    "A1557",
+    "A1558"
   ]
 }

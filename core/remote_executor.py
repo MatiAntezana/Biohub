@@ -27,8 +27,8 @@ class RemoteNode:
     remote_workdir: str = "/home/alumno1/Documents/Biohub-mejorado"
 
 
-# User Mandate: Exclusively authorized to use ONLY A1557
-DEFAULT_NODE = RemoteNode(
+# Authorized Remote Nodes: A1557 and A1558 per user mandate
+NODE_A1557 = RemoteNode(
     name="A1557",
     ssh_alias="a1557",
     conda_env="train-57",
@@ -36,8 +36,19 @@ DEFAULT_NODE = RemoteNode(
     remote_workdir="/home/alumno1/Documents/Biohub-mejorado",
 )
 
+NODE_A1558 = RemoteNode(
+    name="A1558",
+    ssh_alias="a1558",
+    conda_env="train-58",
+    python_path="/home/alumno1/miniconda3/envs/train-58/bin/python",
+    remote_workdir="/home/alumno1/Documents/Biohub-mejorado",
+)
+
+DEFAULT_NODE = NODE_A1557
+
 DEFAULT_NODES: Dict[str, RemoteNode] = {
-    "A1557": DEFAULT_NODE,
+    "A1557": NODE_A1557,
+    "A1558": NODE_A1558,
 }
 
 
@@ -52,7 +63,7 @@ def load_cluster_config() -> Dict[str, Any]:
             "conda_env": "train-57",
             "python_path": "/home/alumno1/miniconda3/envs/train-57/bin/python",
             "remote_workdir": "/home/alumno1/Documents/Biohub-mejorado",
-            "allowed_nodes": ["A1557"],
+            "allowed_nodes": ["A1557", "A1558"],
         }
         with open(CONFIG_PATH, "w", encoding="utf-8") as f:
             json.dump(default_config, f, indent=2)
@@ -63,13 +74,23 @@ def load_cluster_config() -> Dict[str, Any]:
 
 
 def find_best_online_node(preferred: Optional[str] = None) -> RemoteNode:
-    """Returns the authorized node A1557, verifying it is reachable."""
-    if not check_node_online(DEFAULT_NODE):
-        raise ConnectionError(
-            f"Authorized remote node {DEFAULT_NODE.name} ({DEFAULT_NODE.ssh_alias}) is currently unreachable. "
-            "Verify Tailscale and SSH proxy connection."
-        )
-    return DEFAULT_NODE
+    """Returns an authorized online remote node (A1557 or A1558)."""
+    if preferred and preferred in DEFAULT_NODES:
+        target = DEFAULT_NODES[preferred]
+        if check_node_online(target):
+            return target
+        print(f"[REMOTE] Preferred node {preferred} is offline, falling back...")
+
+    # Check authorized nodes in priority order: A1557, A1558
+    for name in ["A1557", "A1558"]:
+        node = DEFAULT_NODES[name]
+        if check_node_online(node):
+            return node
+
+    raise ConnectionError(
+        "None of the authorized remote nodes (A1557, A1558) are currently reachable. "
+        "Verify Tailscale and SSH proxy connection."
+    )
 
 
 def check_node_online(node: RemoteNode, timeout: int = 5) -> bool:
