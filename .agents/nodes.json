@@ -71,8 +71,8 @@
       "user": "alumno1",
       "conda_env": "train-58",
       "remote_root": "Documents/Biohub",
-      "status": "ONLINE",
-      "training_ready": true,
+      "status": "RESERVED",
+      "training_ready": false,
       "last_verified": "2026-09-04"
     },
     "A1559": {
