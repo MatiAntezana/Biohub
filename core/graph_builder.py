@@ -25,16 +25,21 @@ from scipy.optimize import linear_sum_assignment
 # ==============================================================================
 
 # 1. Detection & Cardinality Budgeting
-CONF_THRESHOLD = 0.42               # Initial peak confidence cutoff [0.20 - 0.70]
-NODE_BUDGET_FACTOR = 1.08           # Over-budget pre-linking to capture 99% GT recall; pruned post-linking
+CONF_THRESHOLD = 0.970              # Calibrated peak confidence cutoff to suppress background noise
+NODE_BUDGET_FACTOR = 1.22           # Optimal budget factor balancing GT recall and node penalty multiplier
 
 # 2. Spatial Metric & Anisotropy
 SCALE_ZYX = np.array([1.625, 0.40625, 0.40625], dtype=np.float64)  # Physical scale in um
 MAX_LINK_DISTANCE_UM = 5.5          # Calibrated to 99.8th percentile empirical cell migration
 MAX_GAP2_DISTANCE_UM = 0.0          # Disabled for pure dt=1 datasets unless node interpolated
 
+# 2b. Neural Representation Edge Gating
+NEURAL_EDGE_WEIGHT = 0.12           # Weight of neural candidate edge affinities in cost matrix
+NEURAL_MAX_PROB_DIST_UM = 6.2       # Extended distance envelope allowed for high-probability neural edges
+NEURAL_PROB_THRESHOLD = 0.20        # Minimum probability required to utilize extended distance envelope
+
 # 3. Mitotic Division Branching (1 -> 2 daughters)
-ENABLE_SAFE_DIVISIONS = False       # Disabled until dedicated mitosis classifier head is available
+ENABLE_SAFE_DIVISIONS = False       # Disabled to avoid sparse GT false positive division penalties
 MITOSIS_CONF_THRESHOLD = 0.95       # High confidence threshold when fallback to peak conf
 SAFE_DIV_MAX_UM = 5.5               # Max distance from mother to daughter
 SAFE_DIV_SISTER_MAX_UM = 10.5       # Max distance between sister cells
@@ -80,7 +85,8 @@ def apply_node_budgeting(
         valid.sort(key=lambda x: x.get("conf", 1.0), reverse=True)
 
         # 2. Apply strict cardinality cap
-        t_true = estimated_nodes_per_frame.get(t)
+        t_key = int(t) if isinstance(t, str) and t.isdigit() else t
+        t_true = estimated_nodes_per_frame.get(t_key) or estimated_nodes_per_frame.get(str(t))
         if t_true is not None and t_true > 0:
             max_allowed = max(1, int(round(t_true * budget_factor)))
             filtered[t] = valid[:max_allowed]
@@ -93,20 +99,28 @@ def apply_node_budgeting(
 def link_frame_to_frame(
     filtered_detections: Dict[int, List[Dict[str, Any]]],
     max_dist_um: float = MAX_LINK_DISTANCE_UM,
+    edge_candidates: Optional[Dict[Any, List[Dict[str, Any]]]] = None,
+    neural_weight: float = NEURAL_EDGE_WEIGHT,
+    max_prob_dist_um: float = NEURAL_MAX_PROB_DIST_UM,
+    prob_threshold: float = NEURAL_PROB_THRESHOLD,
 ) -> Tuple[List[Tuple[int, int]], Dict[int, int], Dict[int, int]]:
     """
     Performs optimal Linear Assignment (LAP / Hungarian) between consecutive frames
-    using vectorized anisotropic Euclidean distance matrices for high throughput.
+    using vectorized anisotropic Euclidean distance matrices blended with neural edge representation logits.
     Returns: (edges, fwd_links, bwd_links)
     """
     edges: List[Tuple[int, int]] = []
     fwd_links: Dict[int, int] = {}
     bwd_links: Dict[int, int] = {}
 
-    frames = sorted(filtered_detections.keys())
+    # Sort frames numerically
+    frames = sorted(filtered_detections.keys(), key=lambda x: int(x) if isinstance(x, (int, str)) and str(x).isdigit() else x)
     for i in range(len(frames) - 1):
         t_curr, t_next = frames[i], frames[i + 1]
-        if t_next != t_curr + 1:
+        try:
+            if int(t_next) != int(t_curr) + 1:
+                continue
+        except (ValueError, TypeError):
             continue
 
         parents = filtered_detections[t_curr]
@@ -119,12 +133,33 @@ def link_frame_to_frame(
 
         # Vectorized pairwise physical distance matrix in micrometers
         dists = np.linalg.norm(p_pos[:, None, :] - c_pos[None, :, :], axis=-1)
-        cost_matrix = np.where(dists <= max_dist_um, dists, 1e6)
 
+        p_id_to_idx = {p["id"]: r for r, p in enumerate(parents)}
+        c_id_to_idx = {c["id"]: col for col, c in enumerate(children)}
+
+        probs = np.zeros_like(dists, dtype=np.float32)
+        if edge_candidates:
+            cands = edge_candidates.get(t_curr) or edge_candidates.get(str(t_curr))
+            if not cands and str(t_curr).isdigit():
+                cands = edge_candidates.get(int(t_curr))
+            if cands:
+                for c in cands:
+                    sid, tid = c["src_id"], c["tgt_id"]
+                    if sid in p_id_to_idx and tid in c_id_to_idx:
+                        probs[p_id_to_idx[sid], c_id_to_idx[tid]] = c["prob"]
+
+        if neural_weight > 0.0:
+            cost_matrix = dists - neural_weight * (probs * 10.0)
+            allowed = (dists <= max_dist_um) | ((dists <= max_prob_dist_um) & (probs >= prob_threshold))
+        else:
+            cost_matrix = dists
+            allowed = dists <= max_dist_um
+
+        cost_matrix = np.where(allowed, cost_matrix, 1e6)
         row_ind, col_ind = linear_sum_assignment(cost_matrix)
 
         for r, c in zip(row_ind, col_ind):
-            if cost_matrix[r, c] <= max_dist_um:
+            if cost_matrix[r, c] < 1e5:
                 pid = parents[r]["id"]
                 cid = children[c]["id"]
                 edges.append((pid, cid))
@@ -377,12 +412,14 @@ def filter_orphan_tracks(
 def build_lineage_graph(
     detections_by_frame: Dict[int, List[Dict[str, Any]]],
     estimated_nodes_per_frame: Dict[int, int],
+    edge_candidates: Optional[Dict[Any, List[Dict[str, Any]]]] = None,
 ) -> Tuple[Dict[int, List[Dict[str, Any]]], List[Tuple[int, int]], List[Tuple[int, int, int]]]:
     """
     Main Graph Builder pipeline.
     Input:
       detections_by_frame: dict {t: list of dicts [{'id': int, 'pos': [z,y,x], 'conf': float, 'is_mitosis': float}]}
       estimated_nodes_per_frame: dict {t: int} from Zarr biological metadata.
+      edge_candidates: dict {t: list of dicts [{'src_id': int, 'tgt_id': int, 'prob': float, 'dist_um': float}]}
     Returns:
       (final_detections_by_frame, final_edges, mitoses)
     """
@@ -394,10 +431,14 @@ def build_lineage_graph(
         budget_factor=NODE_BUDGET_FACTOR,
     )
 
-    # Step 2: Frame-to-frame LAP tracking
+    # Step 2: Frame-to-frame LAP tracking with neural gating
     edges, fwd_links, bwd_links = link_frame_to_frame(
         filtered_dets,
         max_dist_um=MAX_LINK_DISTANCE_UM,
+        edge_candidates=edge_candidates,
+        neural_weight=NEURAL_EDGE_WEIGHT,
+        max_prob_dist_um=NEURAL_MAX_PROB_DIST_UM,
+        prob_threshold=NEURAL_PROB_THRESHOLD,
     )
 
     # Step 3: Gap-2 closing for intermittent blinkers
