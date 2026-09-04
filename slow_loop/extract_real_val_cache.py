@@ -29,7 +29,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from core.models import UNetNodeTransformer
+from core.models import UNetNodeTransformer, extract_pos_features
 
 
 def pool_kernel_from_um(um: float, voxel_size: Tuple[float, ...]) -> Tuple[int, ...]:
@@ -252,13 +252,104 @@ def extract_validation_cache(
     t_inf = time.time() - t_inf_start
     total_candidates = sum(len(d) for d in raw_detections_by_t.values())
     avg_per_frame = total_candidates / max(1, len(raw_detections_by_t))
-    print(f"  Inference done in {t_inf:.2f}s ({t_inf/T:.3f}s/frame)")
+    print(f"  Detection inference done in {t_inf:.2f}s ({t_inf/T:.3f}s/frame)")
     print(f"  Extracted {total_candidates} total peak candidates (avg {avg_per_frame:.1f}/frame)")
+
+    # 4b. Extract Transformer Edge Affinities (Pass 2)
+    print("  Extracting neural edge logits with UNetNodeTransformer...")
+    t_edges_start = time.time()
+    edge_candidates_by_t: Dict[int, List[Dict[str, Any]]] = {}
+    processed_edge_pairs: set[Tuple[int, int]] = set()
+    scale_zyx = np.array([1.625, 0.40625, 0.40625], dtype=np.float64)
+    ds_t = torch.tensor([dz, dy, dx], dtype=torch.float32, device=device)
+
+    with torch.no_grad():
+        for ws in tqdm(window_starts, desc="Edge Inference"):
+            frame_indices = [t for t in range(ws, ws + W) if t < T]
+            if len(frame_indices) < W:
+                frame_indices = list(range(max(0, T - W), T))
+
+            frames_np = [zarr_arr[t_idx, ::dz, ::dy, ::dx].astype(np.float32) for t_idx in frame_indices]
+            imgs = torch.from_numpy(np.stack(frames_np))
+            imgs = ((imgs - q_low) / (q_high - q_low + 1e-6)).clamp(0.0)
+            imgs = imgs.unsqueeze(0).to(device)
+
+            unet_out = model.unet(imgs.unsqueeze(2))
+            window_spatial_shape = (W,) + tuple(frames_np[0].shape)
+
+            for f_idx in range(W - 1):
+                t_src, t_tgt = frame_indices[f_idx], frame_indices[f_idx + 1]
+                if t_tgt != t_src + 1 or (t_src, t_tgt) in processed_edge_pairs:
+                    continue
+                if t_src not in raw_detections_by_t or t_tgt not in raw_detections_by_t:
+                    continue
+
+                p_src = raw_detections_by_t[t_src]
+                p_tgt = raw_detections_by_t[t_tgt]
+                if not p_src or not p_tgt:
+                    edge_candidates_by_t[t_src] = []
+                    processed_edge_pairs.add((t_src, t_tgt))
+                    continue
+
+                n_src, n_tgt = len(p_src), len(p_tgt)
+                c_src_ds = torch.tensor([[p["pos"][0]/dz, p["pos"][1]/dy, p["pos"][2]/dx] for p in p_src], dtype=torch.float32, device=device).unsqueeze(0)
+                c_tgt_ds = torch.tensor([[p["pos"][0]/dz, p["pos"][1]/dy, p["pos"][2]/dx] for p in p_tgt], dtype=torch.float32, device=device).unsqueeze(0)
+
+                mask_src = torch.ones(1, n_src, dtype=torch.bool, device=device)
+                mask_tgt = torch.ones(1, n_tgt, dtype=torch.bool, device=device)
+
+                c_src_rel = np.array([[f_idx, p["pos"][0]/dz, p["pos"][1]/dy, p["pos"][2]/dx] for p in p_src], dtype=np.float32)
+                c_tgt_rel = np.array([[f_idx + 1, p["pos"][0]/dz, p["pos"][1]/dy, p["pos"][2]/dx] for p in p_tgt], dtype=np.float32)
+
+                pos_src = torch.from_numpy(extract_pos_features(c_src_rel, window_spatial_shape)).unsqueeze(0).to(device)
+                pos_tgt = torch.from_numpy(extract_pos_features(c_tgt_rel, window_spatial_shape)).unsqueeze(0).to(device)
+
+                feat_src = model._index_features(unet_out[:, f_idx], c_src_ds, mask_src)
+                feat_tgt = model._index_features(unet_out[:, f_idx + 1], c_tgt_ds, mask_tgt)
+
+                logits_fwd = model.predict_edges(
+                    feat_src, feat_tgt,
+                    c_src_ds * ds_t, c_tgt_ds * ds_t,
+                    pos_src, pos_tgt,
+                    mask_src, mask_tgt,
+                )[0]
+
+                probs_fwd = torch.softmax(logits_fwd, dim=0).cpu().numpy()
+
+                p_pos = np.array([p["pos"] for p in p_src], dtype=np.float64) * scale_zyx
+                c_pos = np.array([c["pos"] for c in p_tgt], dtype=np.float64) * scale_zyx
+                dists = np.linalg.norm(p_pos[:, None, :] - c_pos[None, :, :], axis=-1)
+
+                pair_candidates = []
+                for r in range(n_src):
+                    valid_cols = np.where((probs_fwd[r] >= 0.05) & (dists[r] <= 8.5))[0]
+                    if len(valid_cols) == 0:
+                        nearest = int(np.argmin(dists[r]))
+                        if dists[r, nearest] <= 5.5:
+                            valid_cols = np.array([nearest])
+
+                    if len(valid_cols) > 0:
+                        valid_cols = valid_cols[np.argsort(-probs_fwd[r, valid_cols])][:8]
+                        for c in valid_cols:
+                            pair_candidates.append({
+                                "src_id": int(p_src[r]["id"]),
+                                "tgt_id": int(p_tgt[c]["id"]),
+                                "prob": round(float(probs_fwd[r, c]), 4),
+                                "dist_um": round(float(dists[r, c]), 3),
+                            })
+
+                edge_candidates_by_t[t_src] = pair_candidates
+                processed_edge_pairs.add((t_src, t_tgt))
+
+    t_edges = time.time() - t_edges_start
+    total_edges = sum(len(e) for e in edge_candidates_by_t.values())
+    print(f"  Edge extraction done in {t_edges:.2f}s ({total_edges} candidate edges cached)")
 
     # 5. Compile and Save Cache
     output_path.parent.mkdir(parents=True, exist_ok=True)
     cache_payload = {
         "raw_detections": raw_detections_by_t,
+        "edge_candidates": edge_candidates_by_t,
         "gt_nodes": gt_nodes_by_t,
         "gt_edges": gt_edges,
         "estimated_nodes_per_frame": estimated_nodes_by_t,
@@ -297,6 +388,7 @@ if __name__ == "__main__":
     parser.add_argument("--max-frames", type=int, default=100)
     parser.add_argument("--det-threshold", type=float, default=0.20)
     parser.add_argument("--no-tta", action="store_true", help="Disable TTA for faster extraction")
+    parser.add_argument("--local", action="store_true", help="Local execution flag for remote node")
     parser.add_argument("--device", type=str, default="cuda")
 
     args = parser.parse_args()

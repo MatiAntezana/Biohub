@@ -275,8 +275,24 @@ def load_dataset_from_cache(cache_path: Path | str) -> Dict[str, Any]:
     gt_edges = [(int(u), int(v)) for u, v in data["gt_edges"]]
     estimated_nodes = {int(k): int(v) for k, v in data["estimated_nodes_per_frame"].items()}
     
+    edge_candidates = {}
+    if "edge_candidates" in data:
+        edge_candidates = {
+            int(t): [
+                {
+                    "src_id": int(c["src_id"]),
+                    "tgt_id": int(c["tgt_id"]),
+                    "prob": float(c["prob"]),
+                    "dist_um": float(c["dist_um"]),
+                }
+                for c in cand_list
+            ]
+            for t, cand_list in data["edge_candidates"].items()
+        }
+
     return {
         "raw_detections": raw_detections,
+        "edge_candidates": edge_candidates,
         "gt_nodes": gt_nodes,
         "gt_edges": gt_edges,
         "estimated_nodes_per_frame": estimated_nodes,

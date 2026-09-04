@@ -252,3 +252,63 @@ class UNetNodeTransformer(nn.Module):
         W = unet_out.shape[1]
         det_logits = [self.detect_head(unet_out[:, i]) for i in range(W)]
         return unet_out, det_logits
+
+    def _index_features(
+        self,
+        feat_maps: torch.Tensor,
+        coords: torch.Tensor,
+        mask: torch.Tensor,
+    ) -> torch.Tensor:
+        """Integer-index feat_maps at node positions."""
+        B, C = feat_maps.shape[:2]
+        spatial = feat_maps.shape[2:]
+        max_nodes = coords.shape[1]
+        out = torch.zeros(B, max_nodes, C, device=feat_maps.device, dtype=feat_maps.dtype)
+        for b in range(B):
+            nt = int(mask[b].sum().item())
+            if nt == 0:
+                continue
+            z = coords[b, :nt, 0].long().clamp(0, spatial[0] - 1)
+            y = coords[b, :nt, 1].long().clamp(0, spatial[1] - 1)
+            x = coords[b, :nt, 2].long().clamp(0, spatial[2] - 1)
+            out[b, :nt] = feat_maps[b, :, z, y, x].T
+        return out
+
+    def predict_edges(
+        self,
+        unet_feat_src: torch.Tensor,
+        unet_feat_tgt: torch.Tensor,
+        coords_src: torch.Tensor,
+        coords_tgt: torch.Tensor,
+        pos_feat_src: torch.Tensor,
+        pos_feat_tgt: torch.Tensor,
+        mask_src: torch.Tensor,
+        mask_tgt: torch.Tensor,
+    ) -> torch.Tensor:
+        """Run transformer edge predictor on pre-indexed UNet features."""
+        feat_src = torch.cat([unet_feat_src, pos_feat_src], dim=-1)
+        feat_tgt = torch.cat([unet_feat_tgt, pos_feat_tgt], dim=-1)
+        return self.transformer(feat_src, feat_tgt, coords_src, coords_tgt, mask_src, mask_tgt)
+
+
+_POS_EMBED_DIM = 8
+
+
+def extract_pos_features(
+    coords: np.ndarray,
+    image_shape: Tuple[int, ...],
+    pos_embed_dim: int = _POS_EMBED_DIM,
+) -> np.ndarray:
+    """Sinusoidal positional embeddings for node coordinates."""
+    if coords.shape[0] == 0:
+        return np.empty((0, 4 * pos_embed_dim), dtype=np.float32)
+    t, z, y, x = coords[:, 0], coords[:, 1], coords[:, 2], coords[:, 3]
+    norms = [c / max(s, 1) for c, s in zip([t, z, y, x], image_shape)]
+
+    def _embed(vals: np.ndarray) -> np.ndarray:
+        freqs = 2 ** np.arange(pos_embed_dim // 2)
+        angles = vals[:, None] * freqs * np.pi
+        return np.concatenate([np.sin(angles), np.cos(angles)], axis=1)
+
+    return np.concatenate([_embed(n) for n in norms], axis=1).astype(np.float32)
+
