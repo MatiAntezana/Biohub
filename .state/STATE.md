@@ -2,15 +2,15 @@
 
 > Vista generada. Fuente canónica: `experiments/registry.jsonl`.
 
-Actualizado: `2026-09-04T15:21:29.026635Z`
+Actualizado: `2026-09-04T19:49:29.409033Z`
 
 ## Resumen
 
-- Eventos registrados: **339**
+- Eventos registrados: **341**
 - Corridas registradas: **139**
 - Trabajos listos: **0**
 - Trabajos READY con autolanzamiento opt-in: **0**
-- Documentación pendiente: **22**
+- Documentación pendiente: **23**
 
 ## Últimas corridas
 
@@ -20,7 +20,7 @@ Actualizado: `2026-09-04T15:21:29.026635Z`
 | EXP-060_20260904T134122Z_a4dce311 | EXP-060 | **FAILED** | 2026-09-04T13:41:58.479532Z | A1688 |
 | queue-EXP-060 | EXP-060 | **READY** | 2026-09-04T13:43:47.814765Z | — |
 | EXP-059_20260904T022348Z_f287620f | EXP-059 | **FAILED** | 2026-09-04T02:24:55.259771Z | A1556 |
-| EXP-059_20260904T022256Z_f287620f | EXP-059 | **RUNNING** | 2026-09-04T13:15:09.747906Z | A1560 |
+| EXP-059_20260904T022256Z_f287620f | EXP-059 | **DOC_PENDING** | 2026-09-04T19:47:18.425581Z | A1560 |
 | EXP-059_20260904T020046Z_9c5c0bd4 | EXP-059 | **RUNNING** | 2026-09-04T02:00:52.102929Z | A1560 |
 | EXP-059_20260904T020038Z_9c5c0bd4 | EXP-059 | **FAILED** | 2026-09-04T02:12:18.060185Z | A1560 |
 | queue-EXP-059 | EXP-059 | **READY** | 2026-09-04T02:22:54.371053Z | — |

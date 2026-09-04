@@ -1,5 +1,22 @@
 {
-  "artifacts": {},
+  "artifacts": {
+    "checkpoints": [
+      {
+        "bytes": 56102871,
+        "path": "experiments/EXP-059_DeepGraph_Wide_HighRes_Anisotropic/checkpoints/EXP-059_20260904T022256Z_f287620f/primary/training_checkpoint.pth",
+        "sha256": "21874bbc4bb6d723584033a38e402ae470a1f271ac49f47d45bcbe8be8031032"
+      },
+      {
+        "bytes": 56102935,
+        "path": "experiments/EXP-059_DeepGraph_Wide_HighRes_Anisotropic/checkpoints/EXP-059_20260904T022256Z_f287620f/secondary/training_checkpoint.pth",
+        "sha256": "df4b3dd369d6f943d5cbb162eb03f4eb070db0ea306ae2ba03dc999e81bf6edb"
+      }
+    ],
+    "terminal_receipt": {
+      "path": "experiments/EXP-059_DeepGraph_Wide_HighRes_Anisotropic/artifacts/EXP-059_20260904T022256Z_f287620f/TRAINING_COMPLETE.json",
+      "sha256": "bfeef675e3d270e7bab66f09eb82a21027cda87ecaf7246dd5c3f6600e173a9a"
+    }
+  },
   "child_pid": 58234,
   "command": [
     "/home/alumno1/miniconda3/envs/train-60/bin/python",
@@ -18,6 +35,7 @@
     "/home/alumno1/Documents/Biohub/experiments/EXP-059_DeepGraph_Wide_HighRes_Anisotropic/artifacts/EXP-059_20260904T022256Z_f287620f",
     "--compact"
   ],
+  "completed_at": "2026-09-04T19:44:40.945183Z",
   "config_sha256": "f287620f602a5857a87875c90ef1ca7352d033ba4d7829572a92ddb9cae3a4c7",
   "environment": {
     "conda_env": "train-60",
@@ -29,12 +47,38 @@
     "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
     "python": "3.11.15"
   },
+  "exit_code": 0,
   "experiment_id": "EXP-059",
-  "metrics": {},
+  "metrics": {
+    "primary": {
+      "checkpoint_selection": "last_epoch",
+      "detection_loss": 0.01743882784806192,
+      "edge_loss": 0.0005541448954037757,
+      "epoch": 49,
+      "learning_rate": 1e-05,
+      "selection_score": null,
+      "train_seconds": 620.8108137669915,
+      "validation_accuracy": null,
+      "validation_loss": null,
+      "validation_recall": null
+    },
+    "secondary": {
+      "checkpoint_selection": "last_epoch",
+      "detection_loss": 0.019317125339371462,
+      "edge_loss": 0.0005373696318724797,
+      "epoch": 49,
+      "learning_rate": 1e-05,
+      "selection_score": null,
+      "train_seconds": 621.0090804699867,
+      "validation_accuracy": null,
+      "validation_loss": null,
+      "validation_recall": null
+    }
+  },
   "run_id": "EXP-059_20260904T022256Z_f287620f",
   "schema_version": 1,
   "started_at": "2026-09-04T02:23:06.235577Z",
-  "status": "RUNNING",
+  "status": "SUCCEEDED",
   "validation": "N/A — full-fit sin validación",
   "worker_pid": 58230
 }

@@ -96,5 +96,6 @@
 | EXP-058_20260903T224951Z_9b52c0be | EXP-058 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
 | EXP-058_20260904T005259Z_e4295bfd | EXP-058 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
 | EXP-059_20260904T020038Z_9c5c0bd4 | EXP-059 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
+| EXP-059_20260904T022256Z_f287620f | EXP-059 | **DOC_PENDING** | N/A — full-fit sin validación | `{"primary": {"checkpoint_selection": "last_epoch", "detection_loss": 0.01743882784806192, "edge_loss": 0.0005541448954037757, "epoch": 49, "learning_rate": 1e-05, "selection_score": null, "train_seconds": 620.8108137669915, "validation_accuracy": null, "validation_loss": null, "validation_recall": null}, "secondary": {"checkpoint_selection": "last_epoch", "detection_loss": 0.019317125339371462, "edge_loss": 0.0005373696318724797, "epoch": 49, "learning_rate": 1e-05, "selection_score": null, "train_seconds": 621.0090804699867, "validation_accuracy": null, "validation_loss": null, "validation_recall": null}}` | experiments/EXP-059_DeepGraph_Wide_HighRes_Anisotropic/validation/EXP-059_20260904T022256Z_f287620f/REPORT.md |
 | EXP-059_20260904T022348Z_f287620f | EXP-059 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
 | EXP-060_20260904T134122Z_a4dce311 | EXP-060 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
