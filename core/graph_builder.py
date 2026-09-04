@@ -34,15 +34,15 @@ MAX_LINK_DISTANCE_UM = 5.5          # Calibrated to 99.8th percentile empirical 
 MAX_GAP2_DISTANCE_UM = 0.0          # Disabled for pure dt=1 datasets unless node interpolated
 
 # 2b. Neural Representation Edge Gating
-NEURAL_EDGE_WEIGHT = 0.12           # Weight of neural candidate edge affinities in cost matrix
-NEURAL_MAX_PROB_DIST_UM = 5.5       # Tightened envelope eliminating false positive long-range associations
-NEURAL_PROB_THRESHOLD = 0.20        # Minimum probability required to utilize extended distance envelope
+NEURAL_EDGE_WEIGHT = 0.10           # Calibrated peak: optimal balance of spatial LAP and neural guidance
+NEURAL_MAX_PROB_DIST_UM = 5.6       # Tightened envelope eliminating false positive long-range associations
+NEURAL_PROB_THRESHOLD = 0.05        # Calibrated peak threshold
 
 # 2c. Two-Pass LAP Multi-Stage Assignment
 ENABLE_TWO_PASS_LAP = True          # Decouples tight unequivocal geometric links from residual neural links
-TWO_PASS_P1_DIST_UM = 4.0           # Pass 1: Strict distance cutoff for unequivocal high-density links
-TWO_PASS_P2_DIST_UM = 5.8           # Pass 2: Extended envelope requiring neural confirmation
-TWO_PASS_P2_PROB_THRESH = 0.18      # Minimum neural confidence required in Pass 2
+TWO_PASS_P1_DIST_UM = 4.1           # Pass 1: Strict distance cutoff for unequivocal high-density links
+TWO_PASS_P2_DIST_UM = 5.6           # Pass 2: Extended envelope requiring neural confirmation
+TWO_PASS_P2_PROB_THRESH = 0.05      # Minimum neural confidence required in Pass 2
 
 # 3. Mitotic Division Branching (Cytokinesis Divergence Gating)
 ENABLE_SAFE_DIVISIONS = True        # Enabled with strict forward temporal divergence
