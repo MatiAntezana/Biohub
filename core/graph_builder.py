@@ -52,8 +52,9 @@ MITOSIS_MIN_PROB = 0.20             # Neural probability support for cleavage ed
 # 4. Trajectory Cleaning & Short Track Filtering
 OUTPUT_MIN_TRACK_LEN = 6            # Calibrated sweet spot: eliminates noise and achieves 1.0000 node penalty
 KEEP_DIVISION_COMPONENTS = True     # Never delete a track if it participates in a mitotic division
-ADAPTIVE_SHORT_TRACK_RESCUE = False # Strict filtering of length-1 and length-2 orphan tracks
-SHORT_TRACK_RESCUE_MAX_DIST_UM = 3.5
+ADAPTIVE_SHORT_TRACK_RESCUE = True  # Rescues genuine biological micro-tracks with tight movement
+SHORT_TRACK_RESCUE_MIN_LEN = 4      # Minimum length eligible for adaptive rescue
+SHORT_TRACK_RESCUE_MAX_DIST_UM = 1.38  # Calibrated boundary: mean cell displacement <= 1.38 um
 
 
 # ==============================================================================
@@ -376,6 +377,8 @@ def filter_orphan_tracks(
     min_track_len: int = OUTPUT_MIN_TRACK_LEN,
     keep_division_components: bool = KEEP_DIVISION_COMPONENTS,
     adaptive_rescue: bool = ADAPTIVE_SHORT_TRACK_RESCUE,
+    rescue_min_len: int = SHORT_TRACK_RESCUE_MIN_LEN,
+    rescue_max_dist_um: float = SHORT_TRACK_RESCUE_MAX_DIST_UM,
 ) -> Tuple[Dict[int, List[Dict[str, Any]]], List[Tuple[int, int]]]:
     """
     Prunes short disconnected noise tracks that dilute detection precision.
@@ -436,14 +439,14 @@ def filter_orphan_tracks(
             continue
 
         # 3. Adaptive short track rescue: rescue if edges within component are tight
-        if adaptive_rescue and comp_len >= 2:
+        if adaptive_rescue and comp_len >= rescue_min_len:
             comp_edges = [(u, v) for u in members for v in child_map.get(u, []) if v in members]
             if comp_edges:
                 mean_dist = np.mean([
                     physical_distance(all_nodes_by_id[u]["pos"], all_nodes_by_id[v]["pos"])
                     for u, v in comp_edges
                 ])
-                if mean_dist <= SHORT_TRACK_RESCUE_MAX_DIST_UM:
+                if mean_dist <= rescue_max_dist_um:
                     keep_node_ids.update(members)
                     continue
 
