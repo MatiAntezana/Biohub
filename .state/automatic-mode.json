@@ -2,1554 +2,6 @@
   "events": [
     {
       "action": "remote-gpu-activity",
-      "at": "2026-09-04T01:31:48.511830Z",
-      "result": {
-        "activities": [
-          {
-            "association": "unknown",
-            "experiment_id": null,
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 78520,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 21452
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-058",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 83922,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 23620
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-054",
-          "EXP-058"
-        ],
-        "node_errors": {
-          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-04T01:31:48.504883Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 23620
-            },
-            "before": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22282
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "cycle-error",
-      "at": "2026-09-04T01:31:49.620996Z",
-      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-04T01:32:49.836151Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-04T01:32:49.848045Z",
-      "result": {
-        "checked_at": "2026-09-04T01:32:49.848033Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-04T01:32:49.852862Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-04T01:32:49.854090Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-04T01:32:54.904098Z",
-      "result": {
-        "activities": [
-          {
-            "association": "unknown",
-            "experiment_id": null,
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 78520,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 21452
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-058",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 83922,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 17090
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-054",
-          "EXP-058"
-        ],
-        "node_errors": {
-          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-04T01:32:54.894354Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 17090
-            },
-            "before": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 23620
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "cycle-error",
-      "at": "2026-09-04T01:32:56.389631Z",
-      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-04T01:33:56.501871Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-04T01:33:56.513188Z",
-      "result": {
-        "checked_at": "2026-09-04T01:33:56.513176Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-04T01:33:56.518647Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-04T01:33:56.519794Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-04T01:34:01.547921Z",
-      "result": {
-        "activities": [
-          {
-            "association": "unknown",
-            "experiment_id": null,
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 78520,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 21452
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-058",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 83922,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22324
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-054",
-          "EXP-058"
-        ],
-        "node_errors": {
-          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-04T01:34:01.544616Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22324
-            },
-            "before": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 17090
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "cycle-error",
-      "at": "2026-09-04T01:34:02.686403Z",
-      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-04T01:35:02.862935Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-04T01:35:02.873999Z",
-      "result": {
-        "checked_at": "2026-09-04T01:35:02.873981Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-04T01:35:02.877763Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-04T01:35:02.879153Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-04T01:35:07.911345Z",
-      "result": {
-        "activities": [
-          {
-            "association": "unknown",
-            "experiment_id": null,
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 78520,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 21452
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-058",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 83922,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22316
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-054",
-          "EXP-058"
-        ],
-        "node_errors": {
-          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-04T01:35:07.907541Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22316
-            },
-            "before": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22324
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "cycle-error",
-      "at": "2026-09-04T01:35:09.040991Z",
-      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-04T01:36:09.205025Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-04T01:36:09.217089Z",
-      "result": {
-        "checked_at": "2026-09-04T01:36:09.217076Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-04T01:36:09.221157Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-04T01:36:09.222344Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-04T01:36:14.259980Z",
-      "result": {
-        "activities": [
-          {
-            "association": "unknown",
-            "experiment_id": null,
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 78520,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 21452
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-058",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 83922,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 23596
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-054",
-          "EXP-058"
-        ],
-        "node_errors": {
-          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-04T01:36:14.253176Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 23596
-            },
-            "before": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22316
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "cycle-error",
-      "at": "2026-09-04T01:36:15.520179Z",
-      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-04T01:37:15.723820Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-04T01:37:15.734042Z",
-      "result": {
-        "checked_at": "2026-09-04T01:37:15.734031Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-04T01:37:15.737844Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-04T01:37:15.738995Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-04T01:37:20.775832Z",
-      "result": {
-        "activities": [
-          {
-            "association": "unknown",
-            "experiment_id": null,
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 78520,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 21452
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-058",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 83922,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22374
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-054",
-          "EXP-058"
-        ],
-        "node_errors": {
-          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-04T01:37:20.770504Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22374
-            },
-            "before": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 23596
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "cycle-error",
-      "at": "2026-09-04T01:37:22.026614Z",
-      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-04T01:38:22.216387Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-04T01:38:22.228228Z",
-      "result": {
-        "checked_at": "2026-09-04T01:38:22.228217Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-04T01:38:22.234413Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-04T01:38:22.235684Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-04T01:38:27.268809Z",
-      "result": {
-        "activities": [
-          {
-            "association": "unknown",
-            "experiment_id": null,
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 78520,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 21452
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-058",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 83922,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 23618
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-054",
-          "EXP-058"
-        ],
-        "node_errors": {
-          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-04T01:38:27.262415Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 23618
-            },
-            "before": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22374
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "cycle-error",
-      "at": "2026-09-04T01:38:28.563890Z",
-      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-04T01:39:28.725012Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-04T01:39:28.739728Z",
-      "result": {
-        "checked_at": "2026-09-04T01:39:28.739716Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-04T01:39:28.744099Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-04T01:39:28.745293Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-04T01:39:33.789261Z",
-      "result": {
-        "activities": [
-          {
-            "association": "unknown",
-            "experiment_id": null,
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 78520,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 21452
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-058",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 83922,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 13390
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-054",
-          "EXP-058"
-        ],
-        "node_errors": {
-          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-04T01:39:33.780564Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 13390
-            },
-            "before": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 23618
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "cycle-error",
-      "at": "2026-09-04T01:39:34.842223Z",
-      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-04T01:40:35.378538Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-04T01:40:35.394940Z",
-      "result": {
-        "checked_at": "2026-09-04T01:40:35.394918Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-04T01:40:35.436994Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-04T01:40:35.445152Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-04T01:40:40.559492Z",
-      "result": {
-        "activities": [
-          {
-            "association": "unknown",
-            "experiment_id": null,
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 78520,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 21452
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-058",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 83922,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22314
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-054",
-          "EXP-058"
-        ],
-        "node_errors": {
-          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-04T01:40:40.551763Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22314
-            },
-            "before": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 13390
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "cycle-error",
-      "at": "2026-09-04T01:40:42.669121Z",
-      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-04T01:41:42.811349Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-04T01:41:42.823509Z",
-      "result": {
-        "checked_at": "2026-09-04T01:41:42.823496Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-04T01:41:42.829216Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-04T01:41:42.831226Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-04T01:41:47.873191Z",
-      "result": {
-        "activities": [
-          {
-            "association": "unknown",
-            "experiment_id": null,
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 78520,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 21452
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-058",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 83922,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22334
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-054",
-          "EXP-058"
-        ],
-        "node_errors": {
-          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-04T01:41:47.864581Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22334
-            },
-            "before": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22314
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "cycle-error",
-      "at": "2026-09-04T01:41:49.142819Z",
-      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-04T01:42:49.288981Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-04T01:42:49.303452Z",
-      "result": {
-        "checked_at": "2026-09-04T01:42:49.303433Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-04T01:42:49.312541Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-04T01:42:49.313975Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-04T01:42:54.359836Z",
-      "result": {
-        "activities": [
-          {
-            "association": "unknown",
-            "experiment_id": null,
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 78520,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 21452
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-058",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 83922,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22324
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-054",
-          "EXP-058"
-        ],
-        "node_errors": {
-          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-04T01:42:54.351128Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22324
-            },
-            "before": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22334
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "cycle-error",
-      "at": "2026-09-04T01:42:55.556657Z",
-      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-04T01:43:55.732670Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-04T01:43:55.752612Z",
-      "result": {
-        "checked_at": "2026-09-04T01:43:55.752595Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-04T01:43:55.766319Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-04T01:43:55.768233Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
-      "at": "2026-09-04T01:44:00.805651Z",
-      "result": {
-        "activities": [
-          {
-            "association": "unknown",
-            "experiment_id": null,
-            "gpu_index": 0,
-            "node": "A1553",
-            "pid": 78520,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 21452
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-058",
-            "gpu_index": 0,
-            "node": "A1555",
-            "pid": 83922,
-            "probe_error": null,
-            "run_id": null,
-            "stale": false,
-            "used_gpu_memory_mib": 22312
-          },
-          {
-            "association": "command",
-            "experiment_id": "EXP-054",
-            "gpu_index": 0,
-            "node": "A1557",
-            "pid": 44517,
-            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-            "run_id": null,
-            "stale": true,
-            "used_gpu_memory_mib": 21366
-          }
-        ],
-        "experiments_running": [
-          "EXP-054",
-          "EXP-058"
-        ],
-        "node_errors": {
-          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
-          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
-        },
-        "scanned_at": "2026-09-04T01:44:00.799307Z",
-        "transitions": [
-          {
-            "after": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22312
-            },
-            "before": {
-              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
-              "association": "command",
-              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
-              "experiment_id": "EXP-058",
-              "gpu_index": 0,
-              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
-              "node": "A1555",
-              "pid": 83922,
-              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
-              "used_gpu_memory_mib": 22324
-            },
-            "type": "GPU_PROCESS_CHANGED"
-          }
-        ]
-      }
-    },
-    {
-      "action": "cycle-error",
-      "at": "2026-09-04T01:44:02.435627Z",
-      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
-    },
-    {
-      "action": "reconcile",
-      "at": "2026-09-04T01:45:02.618269Z",
-      "returncode": 0,
-      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
-    },
-    {
-      "action": "scheduler",
-      "at": "2026-09-04T01:45:02.628690Z",
-      "result": {
-        "checked_at": "2026-09-04T01:45:02.628308Z",
-        "dry_run": false,
-        "eligible": [],
-        "launched": null,
-        "max_concurrent_remote_runs": 2,
-        "running": [],
-        "schema_version": 1
-      }
-    },
-    {
-      "action": "variant-policy",
-      "at": "2026-09-04T01:45:02.635648Z",
-      "result": {
-        "blocked_by_bootstrap": [
-          "EXP-031"
-        ],
-        "bootstrap_sequence": [
-          "EXP-031",
-          "EXP-030B"
-        ],
-        "dry_run": false,
-        "enabled": true,
-        "materialized": [],
-        "planned": []
-      }
-    },
-    {
-      "action": "variant-kaggle-prepare",
-      "at": "2026-09-04T01:45:02.636687Z",
-      "result": {
-        "dry_run": false,
-        "errors": [],
-        "prepared": []
-      }
-    },
-    {
-      "action": "remote-gpu-activity",
       "at": "2026-09-04T01:45:07.673572Z",
       "result": {
         "activities": [
@@ -13375,6 +11827,2016 @@
       "action": "cycle-error",
       "at": "2026-09-04T03:05:58.025319Z",
       "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-04T03:06:58.234612Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-04T03:06:58.246402Z",
+      "result": {
+        "checked_at": "2026-09-04T03:06:58.246390Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-04T03:06:58.250572Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-04T03:06:58.251694Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-04T03:07:03.284693Z",
+      "result": {
+        "activities": [
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1553",
+            "pid": 78520,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 21452
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-058",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 83922,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 22382
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71002,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 5680
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71251,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 16802
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-059",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 58234,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17092
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-058",
+          "EXP-059"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-04T03:07:03.279174Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 22382
+            },
+            "before": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 22262
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-04T03:07:04.509864Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-04T03:08:04.658266Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-04T03:08:04.668457Z",
+      "result": {
+        "checked_at": "2026-09-04T03:08:04.668444Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-04T03:08:04.673731Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-04T03:08:04.674809Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-04T03:08:09.717344Z",
+      "result": {
+        "activities": [
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1553",
+            "pid": 78520,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 21452
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-058",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 83922,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 22316
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71002,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 5680
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71251,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 16802
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-059",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 58234,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17092
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-058",
+          "EXP-059"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-04T03:08:09.707253Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 22316
+            },
+            "before": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 22382
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-04T03:08:11.040617Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-04T03:09:11.175512Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-04T03:09:11.188715Z",
+      "result": {
+        "checked_at": "2026-09-04T03:09:11.188705Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-04T03:09:11.192622Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-04T03:09:11.193751Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-04T03:09:16.222674Z",
+      "result": {
+        "activities": [
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1553",
+            "pid": 78520,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 21452
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-058",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 83922,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 23584
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71002,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 5680
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71251,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 16804
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-059",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 58234,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17092
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-058",
+          "EXP-059"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-04T03:09:16.219494Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 23584
+            },
+            "before": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 22316
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          },
+          {
+            "after": {
+              "activity_id": "A1556:GPU-52cb7b87-9a26-540b-bbc0-93f24d197506:71251",
+              "association": "unknown",
+              "command": "/home/alumno1/Documents/ADRL/Train-GRPO-Qwen2.5-7B-V21-MedGemmaJudge-SingleGPU/grpo-training/.venv/bin/python /home/alumno1/Documents/ADRL/Train-GRPO-Qwen2.5-7B-V21-MedGemmaJudge-SingleGPU/grpo-training/src/grpo_train_v20.py --config /home/alumno1/Documents/ADRL/Train-GRPO-Qwen2.5-7B-V21-MedGemmaJudge-SingleGPU/grpo-training/config/train.v21.json",
+              "experiment_id": null,
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-52cb7b87-9a26-540b-bbc0-93f24d197506",
+              "node": "A1556",
+              "pid": 71251,
+              "process_name": "/home/alumno1/Documents/ADRL/Train-GRPO-Qwen2.5-7B-V21-MedGemmaJudge-SingleGPU/grpo-training/.venv/bin/python",
+              "used_gpu_memory_mib": 16804
+            },
+            "before": {
+              "activity_id": "A1556:GPU-52cb7b87-9a26-540b-bbc0-93f24d197506:71251",
+              "association": "unknown",
+              "command": "/home/alumno1/Documents/ADRL/Train-GRPO-Qwen2.5-7B-V21-MedGemmaJudge-SingleGPU/grpo-training/.venv/bin/python /home/alumno1/Documents/ADRL/Train-GRPO-Qwen2.5-7B-V21-MedGemmaJudge-SingleGPU/grpo-training/src/grpo_train_v20.py --config /home/alumno1/Documents/ADRL/Train-GRPO-Qwen2.5-7B-V21-MedGemmaJudge-SingleGPU/grpo-training/config/train.v21.json",
+              "experiment_id": null,
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-52cb7b87-9a26-540b-bbc0-93f24d197506",
+              "node": "A1556",
+              "pid": 71251,
+              "process_name": "/home/alumno1/Documents/ADRL/Train-GRPO-Qwen2.5-7B-V21-MedGemmaJudge-SingleGPU/grpo-training/.venv/bin/python",
+              "used_gpu_memory_mib": 16802
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-04T03:09:17.435592Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-04T03:10:17.558760Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-04T03:10:17.569596Z",
+      "result": {
+        "checked_at": "2026-09-04T03:10:17.569586Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-04T03:10:17.574012Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-04T03:10:17.575099Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-04T03:10:22.607984Z",
+      "result": {
+        "activities": [
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1553",
+            "pid": 78520,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 21452
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-058",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 83922,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 22326
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71002,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 5680
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71251,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 16804
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-059",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 58234,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17092
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-058",
+          "EXP-059"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-04T03:10:22.600215Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 22326
+            },
+            "before": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 23584
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-04T03:10:23.807505Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-04T03:11:23.926282Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-04T03:11:23.936758Z",
+      "result": {
+        "checked_at": "2026-09-04T03:11:23.936745Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-04T03:11:23.942795Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-04T03:11:23.943823Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-04T03:11:28.977783Z",
+      "result": {
+        "activities": [
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1553",
+            "pid": 78520,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 21452
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-058",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 83922,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 19554
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71002,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 5680
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71251,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 16804
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-059",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 58234,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17092
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-058",
+          "EXP-059"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-04T03:11:28.972454Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 19554
+            },
+            "before": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 22326
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-04T03:11:30.023479Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-04T03:12:30.160200Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-04T03:12:30.170494Z",
+      "result": {
+        "checked_at": "2026-09-04T03:12:30.170482Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-04T03:12:30.174948Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-04T03:12:30.176024Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-04T03:12:35.209287Z",
+      "result": {
+        "activities": [
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1553",
+            "pid": 78520,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 21452
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-058",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 83922,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17160
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71002,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 5680
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71251,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 16804
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-059",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 58234,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17092
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-058",
+          "EXP-059"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-04T03:12:35.201809Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 17160
+            },
+            "before": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 19554
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-04T03:12:36.306581Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-04T03:13:36.470290Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-04T03:13:36.481494Z",
+      "result": {
+        "checked_at": "2026-09-04T03:13:36.481482Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-04T03:13:36.486051Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-04T03:13:36.487269Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-04T03:13:41.518652Z",
+      "result": {
+        "activities": [
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1553",
+            "pid": 78520,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 21452
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-058",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 83922,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 22332
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71002,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 5680
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71251,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 16804
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-059",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 58234,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17092
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-058",
+          "EXP-059"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-04T03:13:41.512571Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 22332
+            },
+            "before": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 17160
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-04T03:13:42.719456Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-04T03:14:42.876062Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-04T03:14:42.891235Z",
+      "result": {
+        "checked_at": "2026-09-04T03:14:42.891222Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-04T03:14:42.895627Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-04T03:14:42.896759Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-04T03:14:47.935303Z",
+      "result": {
+        "activities": [
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1553",
+            "pid": 78520,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 21452
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-058",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 83922,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 19754
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71002,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 5680
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71251,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 16804
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-059",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 58234,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17092
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-058",
+          "EXP-059"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-04T03:14:47.929270Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 19754
+            },
+            "before": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 22332
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-04T03:14:49.069348Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-04T03:15:49.256174Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-04T03:15:49.267157Z",
+      "result": {
+        "checked_at": "2026-09-04T03:15:49.267146Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-04T03:15:49.271345Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-04T03:15:49.272804Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-04T03:15:54.311535Z",
+      "result": {
+        "activities": [
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1553",
+            "pid": 78520,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 21452
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-058",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 83922,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 23610
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71002,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 5682
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71251,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 16804
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-059",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 58234,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17092
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-058",
+          "EXP-059"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-04T03:15:54.307384Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 23610
+            },
+            "before": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 19754
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          },
+          {
+            "after": {
+              "activity_id": "A1556:GPU-52cb7b87-9a26-540b-bbc0-93f24d197506:71002",
+              "association": "unknown",
+              "command": "/home/alumno1/miniconda3/envs/healthbench-judge/bin/python /home/alumno1/Documents/ADRL/Train-GRPO-Qwen2.5-7B-V21-MedGemmaJudge-SingleGPU/grpo-training/src/medgemma_judge_server.py --model /home/alumno1/models/medgemma-1.5-4b-it --port 8000",
+              "experiment_id": null,
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-52cb7b87-9a26-540b-bbc0-93f24d197506",
+              "node": "A1556",
+              "pid": 71002,
+              "process_name": "/home/alumno1/miniconda3/envs/healthbench-judge/bin/python",
+              "used_gpu_memory_mib": 5682
+            },
+            "before": {
+              "activity_id": "A1556:GPU-52cb7b87-9a26-540b-bbc0-93f24d197506:71002",
+              "association": "unknown",
+              "command": "/home/alumno1/miniconda3/envs/healthbench-judge/bin/python /home/alumno1/Documents/ADRL/Train-GRPO-Qwen2.5-7B-V21-MedGemmaJudge-SingleGPU/grpo-training/src/medgemma_judge_server.py --model /home/alumno1/models/medgemma-1.5-4b-it --port 8000",
+              "experiment_id": null,
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-52cb7b87-9a26-540b-bbc0-93f24d197506",
+              "node": "A1556",
+              "pid": 71002,
+              "process_name": "/home/alumno1/miniconda3/envs/healthbench-judge/bin/python",
+              "used_gpu_memory_mib": 5680
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-04T03:15:55.523840Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-04T03:16:55.690878Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-04T03:16:55.701023Z",
+      "result": {
+        "checked_at": "2026-09-04T03:16:55.701013Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-04T03:16:55.705871Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-04T03:16:55.707061Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-04T03:17:00.735292Z",
+      "result": {
+        "activities": [
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1553",
+            "pid": 78520,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 21452
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-058",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 83922,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 22344
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71002,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 5682
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71251,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 16804
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-059",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 58234,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17092
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-058",
+          "EXP-059"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-04T03:17:00.728966Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 22344
+            },
+            "before": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 23610
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-04T03:17:01.868850Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-04T03:18:02.038575Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-04T03:18:02.050272Z",
+      "result": {
+        "checked_at": "2026-09-04T03:18:02.050255Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-04T03:18:02.057201Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-04T03:18:02.059106Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-04T03:18:07.089714Z",
+      "result": {
+        "activities": [
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1553",
+            "pid": 78520,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 21452
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-058",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 83922,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 22260
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71002,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 5682
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71251,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 16804
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-059",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 58234,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17092
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-058",
+          "EXP-059"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-04T03:18:07.085727Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 22260
+            },
+            "before": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 22344
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-04T03:18:08.366245Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
+    },
+    {
+      "action": "reconcile",
+      "at": "2026-09-04T03:19:08.647281Z",
+      "returncode": 0,
+      "summary": "{\"action\": \"reconcile\", \"ok\": true, \"runs\": {}}"
+    },
+    {
+      "action": "scheduler",
+      "at": "2026-09-04T03:19:08.661243Z",
+      "result": {
+        "checked_at": "2026-09-04T03:19:08.661230Z",
+        "dry_run": false,
+        "eligible": [],
+        "launched": null,
+        "max_concurrent_remote_runs": 2,
+        "running": [],
+        "schema_version": 1
+      }
+    },
+    {
+      "action": "variant-policy",
+      "at": "2026-09-04T03:19:08.666669Z",
+      "result": {
+        "blocked_by_bootstrap": [
+          "EXP-031"
+        ],
+        "bootstrap_sequence": [
+          "EXP-031",
+          "EXP-030B"
+        ],
+        "dry_run": false,
+        "enabled": true,
+        "materialized": [],
+        "planned": []
+      }
+    },
+    {
+      "action": "variant-kaggle-prepare",
+      "at": "2026-09-04T03:19:08.668071Z",
+      "result": {
+        "dry_run": false,
+        "errors": [],
+        "prepared": []
+      }
+    },
+    {
+      "action": "remote-gpu-activity",
+      "at": "2026-09-04T03:19:13.698902Z",
+      "result": {
+        "activities": [
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1553",
+            "pid": 78520,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 21452
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-058",
+            "gpu_index": 0,
+            "node": "A1555",
+            "pid": 83922,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 19668
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71002,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 5682
+          },
+          {
+            "association": "unknown",
+            "experiment_id": null,
+            "gpu_index": 0,
+            "node": "A1556",
+            "pid": 71251,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 16804
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-059",
+            "gpu_index": 0,
+            "node": "A1560",
+            "pid": 58234,
+            "probe_error": null,
+            "run_id": null,
+            "stale": false,
+            "used_gpu_memory_mib": 17092
+          },
+          {
+            "association": "command",
+            "experiment_id": "EXP-054",
+            "gpu_index": 0,
+            "node": "A1557",
+            "pid": 44517,
+            "probe_error": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+            "run_id": null,
+            "stale": true,
+            "used_gpu_memory_mib": 21366
+          }
+        ],
+        "experiments_running": [
+          "EXP-054",
+          "EXP-058",
+          "EXP-059"
+        ],
+        "node_errors": {
+          "A1552": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535",
+          "A1557": "nc: connection failed, SOCKS error 1\nConnection closed by UNKNOWN port 65535"
+        },
+        "scanned_at": "2026-09-04T03:19:13.694598Z",
+        "transitions": [
+          {
+            "after": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 19668
+            },
+            "before": {
+              "activity_id": "A1555:GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0:83922",
+              "association": "command",
+              "command": "/home/alumno1/miniconda3/envs/train-55/bin/python /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py --epochs 50 --batch-size 2 --num-workers 2 --max-iters 750 --resume-primary checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth --project-root /home/alumno1/Documents/Biohub --run-dir /home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd --compact",
+              "experiment_id": "EXP-058",
+              "gpu_index": 0,
+              "gpu_uuid": "GPU-fc2ab24f-06b8-9b7d-9f27-65c9109dbcb0",
+              "node": "A1555",
+              "pid": 83922,
+              "process_name": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+              "used_gpu_memory_mib": 22260
+            },
+            "type": "GPU_PROCESS_CHANGED"
+          }
+        ]
+      }
+    },
+    {
+      "action": "cycle-error",
+      "at": "2026-09-04T03:19:14.916196Z",
+      "error": "TypeError(\"'<' not supported between instances of 'NoneType' and 'str'\")"
     }
   ],
   "last_cycle_at": "2026-09-03T16:04:54.486490Z",
@@ -13382,5 +13844,5 @@
   "schema_version": 1,
   "started_at": "2026-08-30T05:42:28.655109Z",
   "status": "RUNNING",
-  "updated_at": "2026-09-04T03:05:58.025400Z"
+  "updated_at": "2026-09-04T03:19:14.916371Z"
 }
