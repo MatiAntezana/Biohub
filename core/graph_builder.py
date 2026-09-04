@@ -34,7 +34,7 @@ MAX_LINK_DISTANCE_UM = 5.5          # Calibrated to 99.8th percentile empirical 
 MAX_GAP2_DISTANCE_UM = 0.0          # Disabled for pure dt=1 datasets unless node interpolated
 
 # 3. Mitotic Division Branching (1 -> 2 daughters)
-ENABLE_SAFE_DIVISIONS = True        # Enable 1-to-2 mitotic fork recovery
+ENABLE_SAFE_DIVISIONS = False       # Disabled until dedicated mitosis classifier head is available
 MITOSIS_CONF_THRESHOLD = 0.95       # High confidence threshold when fallback to peak conf
 SAFE_DIV_MAX_UM = 5.5               # Max distance from mother to daughter
 SAFE_DIV_SISTER_MAX_UM = 10.5       # Max distance between sister cells
