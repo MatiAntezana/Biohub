@@ -38,12 +38,16 @@ NEURAL_EDGE_WEIGHT = 0.12           # Weight of neural candidate edge affinities
 NEURAL_MAX_PROB_DIST_UM = 6.2       # Extended distance envelope allowed for high-probability neural edges
 NEURAL_PROB_THRESHOLD = 0.20        # Minimum probability required to utilize extended distance envelope
 
-# 3. Mitotic Division Branching (1 -> 2 daughters)
-ENABLE_SAFE_DIVISIONS = False       # Disabled to avoid sparse GT false positive division penalties
-MITOSIS_CONF_THRESHOLD = 0.95       # High confidence threshold when fallback to peak conf
-SAFE_DIV_MAX_UM = 5.5               # Max distance from mother to daughter
-SAFE_DIV_SISTER_MAX_UM = 10.5       # Max distance between sister cells
-SAFE_DIV_FRAME_FRAC_CAP = 0.005     # Strict cap (max ~1 division per frame)
+# 3. Mitotic Division Branching (Cytokinesis Divergence Gating)
+ENABLE_SAFE_DIVISIONS = True        # Enabled with strict forward temporal divergence
+MITOSIS_MIN_DIST_UM = 3.5           # Min distance from mother to daughter
+MITOSIS_MAX_DIST_UM = 6.0           # Max distance from mother to daughter
+MITOSIS_SISTER_MIN_UM = 9.5         # Min distance between sister cells
+MITOSIS_SISTER_MAX_UM = 11.5        # Max distance between sister cells
+MITOSIS_SYM_DIFF_UM = 0.28          # Max asymmetry |d1 - d2| between daughters
+MITOSIS_COS_THRESH = -0.95          # Collinear cleavage spindle (angle >= 162 deg)
+MITOSIS_MIN_MOTHER_LEN = 5          # Interphase maturity: mother must track >= 5 frames
+MITOSIS_MIN_PROB = 0.20             # Neural probability support for cleavage edge
 
 # 4. Trajectory Cleaning & Short Track Filtering
 OUTPUT_MIN_TRACK_LEN = 3            # Drop trajectories strictly shorter than this length
@@ -220,96 +224,147 @@ def add_safe_mitotic_divisions(
     edges: List[Tuple[int, int]],
     fwd_links: Dict[int, int],
     bwd_links: Dict[int, int],
-    mitosis_conf_thresh: float = MITOSIS_CONF_THRESHOLD,
-    safe_div_max_um: float = SAFE_DIV_MAX_UM,
-    sister_max_um: float = SAFE_DIV_SISTER_MAX_UM,
-    frame_cap: float = SAFE_DIV_FRAME_FRAC_CAP,
+    edge_candidates: Optional[Dict[Any, List[Dict[str, Any]]]] = None,
+    min_dist_um: float = MITOSIS_MIN_DIST_UM,
+    max_dist_um: float = MITOSIS_MAX_DIST_UM,
+    sister_min_um: float = MITOSIS_SISTER_MIN_UM,
+    sister_max_um: float = MITOSIS_SISTER_MAX_UM,
+    sym_diff_um: float = MITOSIS_SYM_DIFF_UM,
+    cos_thresh: float = MITOSIS_COS_THRESH,
+    min_mother_len: int = MITOSIS_MIN_MOTHER_LEN,
+    min_prob: float = MITOSIS_MIN_PROB,
 ) -> Tuple[List[Tuple[int, int]], List[Tuple[int, int, int]]]:
     """
-    Mitotic Branching Recovery (1 -> 2 daughters).
-    Pairs dividing mother cells (t) with an unlinked sister candidate in (t+1),
-    respecting mother-daughter and sister-sister geometric constraints.
-    Directly recovers Division Jaccard (+0.040+ score boost).
+    Biological Cytokinesis Mitosis Recovery with Forward Temporal Divergence.
+    Recovers true 1 -> 2 daughter mitotic events while strictly rejecting false
+    positives by enforcing:
+      1. Mother interphase maturity: track history >= min_mother_len frames.
+      2. Spindle symmetry: |d1 - d2| <= sym_diff_um.
+      3. Cleavage collinearity: cos(theta) <= cos_thresh (>= 162 deg apart).
+      4. Cleavage separation span: sister distance in [sister_min_um, sister_max_um].
+      5. Neural edge support: max(prob(p, c1), prob(p, c2)) >= min_prob.
+      6. Forward temporal divergence at t+2: daughters track into t+2 without contracting.
     """
     mitoses: List[Tuple[int, int, int]] = []
     final_edges = list(edges)
+    edge_set = set(final_edges)
 
-    frames = sorted(filtered_detections.keys())
-    for i in range(len(frames) - 1):
-        t_curr, t_next = frames[i], frames[i + 1]
-        if t_next != t_curr + 1:
+    def get_mother_track_len(node_id: int) -> int:
+        curr = node_id
+        length = 1
+        while curr in bwd_links:
+            curr = bwd_links[curr]
+            length += 1
+        return length
+
+    frames = sorted(filtered_detections.keys(), key=lambda x: int(x) if isinstance(x, (int, str)) and str(x).isdigit() else x)
+    for i in range(len(frames) - 2):
+        t_curr, t_next, t_grand = frames[i], frames[i + 1], frames[i + 2]
+        try:
+            if int(t_next) != int(t_curr) + 1 or int(t_grand) != int(t_curr) + 2:
+                continue
+        except (ValueError, TypeError):
             continue
 
         parents = filtered_detections[t_curr]
         children = filtered_detections[t_next]
-        if not parents or not children:
+        grand = filtered_detections[t_grand]
+        if not parents or not children or not grand:
             continue
 
-        unmatched_children = [c for c in children if c["id"] not in bwd_links]
-        if not unmatched_children:
-            continue
+        c_by_id = {c["id"]: c for c in children}
+        g_by_id = {g["id"]: g for g in grand}
 
-        # Find candidates for division: matched parents with high mitotic score
+        cand_probs = {}
+        if edge_candidates:
+            cands_t = (
+                edge_candidates.get(t_curr)
+                or edge_candidates.get(str(t_curr))
+                or (edge_candidates.get(int(t_curr)) if str(t_curr).isdigit() else None)
+                or []
+            )
+            cand_probs = {(c["src_id"], c["tgt_id"]): c["prob"] for c in cands_t}
+
         proposals = []
         for p in parents:
             pid = p["id"]
             if pid not in fwd_links:
                 continue
 
-            mitosis_score = p.get("is_mitosis", 0.0)
-            if mitosis_score < 0.01:
-                mitosis_score = p.get("conf", 0.0)
-            if mitosis_score < mitosis_conf_thresh:
+            # 1. Mother cell interphase maturity constraint
+            if get_mother_track_len(pid) < min_mother_len:
                 continue
 
-            first_child_id = fwd_links[pid]
-            first_child = next((c for c in children if c["id"] == first_child_id), None)
-            if not first_child:
+            c1_id = fwd_links[pid]
+            c1 = c_by_id.get(c1_id)
+            if not c1:
                 continue
 
-            p_c1_dist = physical_distance(p["pos"], first_child["pos"])
-
-            # Evaluate each available second child
-            for cand in unmatched_children:
-                p_dist = physical_distance(p["pos"], cand["pos"])
-                if p_dist > safe_div_max_um:
-                    continue
-
-                sister_dist = physical_distance(first_child["pos"], cand["pos"])
-                if sister_dist > sister_max_um:
-                    continue
-
-                # Biological symmetry constraint: daughter cells are nearly equidistant to mother
-                if abs(p_dist - p_c1_dist) > 2.0:
-                    continue
-
-                # Ranking score: closer is better, penalizing asymmetry
-                symmetry_penalty = abs(p_dist - p_c1_dist)
-                cost = (p_dist + 0.3 * sister_dist + symmetry_penalty) / max(0.1, mitosis_score)
-                proposals.append((cost, pid, first_child_id, cand["id"]))
-
-        if not proposals:
-            continue
-
-        proposals.sort(key=lambda x: x[0])
-        max_divisions_this_frame = max(1, int(round(len(parents) * frame_cap)))
-
-        used_parents: Set[int] = set()
-        used_children: Set[int] = set()
-        divisions_added = 0
-
-        for cost, pid, d1_id, d2_id in proposals:
-            if divisions_added >= max_divisions_this_frame:
-                break
-            if pid in used_parents or d2_id in used_children:
+            p_pos = np.array(p["pos"])
+            c1_pos = np.array(c1["pos"])
+            v1 = (c1_pos - p_pos) * SCALE_ZYX
+            d1 = float(np.linalg.norm(v1))
+            if d1 < min_dist_um or d1 > max_dist_um:
                 continue
 
+            for c2 in children:
+                c2_id = c2["id"]
+                if c2_id == c1_id:
+                    continue
+
+                c2_pos = np.array(c2["pos"])
+                v2 = (c2_pos - p_pos) * SCALE_ZYX
+                d2 = float(np.linalg.norm(v2))
+                if d2 < min_dist_um or d2 > max_dist_um:
+                    continue
+
+                sym_diff = abs(d1 - d2)
+                if sym_diff > sym_diff_um:
+                    continue
+
+                cos_theta = float(np.dot(v1, v2) / (d1 * d2))
+                if cos_theta > cos_thresh:
+                    continue
+
+                sister_d = float(np.linalg.norm((c1_pos - c2_pos) * SCALE_ZYX))
+                if sister_d < sister_min_um or sister_d > sister_max_um:
+                    continue
+
+                # Neural edge support
+                if cand_probs:
+                    p1_prob = cand_probs.get((pid, c1_id), 0.0)
+                    p2_prob = cand_probs.get((pid, c2_id), 0.0)
+                    if max(p1_prob, p2_prob) < min_prob:
+                        continue
+
+                # Forward temporal divergence check at t+2
+                g1_id = fwd_links.get(c1_id)
+                g2_id = fwd_links.get(c2_id)
+                if not g1_id or not g2_id or g1_id not in g_by_id or g2_id not in g_by_id:
+                    continue
+
+                g1_pos = np.array(g_by_id[g1_id]["pos"]) * SCALE_ZYX
+                g2_pos = np.array(g_by_id[g2_id]["pos"]) * SCALE_ZYX
+                g_dist = float(np.linalg.norm(g1_pos - g2_pos))
+                if g_dist < sister_d - 0.5:
+                    continue
+
+                cost = sym_diff + 0.1 * abs(cos_theta - (-1.0))
+                proposals.append((cost, pid, c1_id, c2_id))
+
+        if proposals:
+            proposals.sort(key=lambda x: x[0])
+            cost, pid, d1_id, d2_id = proposals[0]
+            # Disconnect intruder if any
+            if d2_id in bwd_links:
+                intruder = bwd_links[d2_id]
+                if (intruder, d2_id) in edge_set:
+                    final_edges.remove((intruder, d2_id))
+                    edge_set.remove((intruder, d2_id))
             final_edges.append((pid, d2_id))
-            mitoses.append((pid, d1_id, d2_id))
-            used_parents.add(pid)
-            used_children.add(d2_id)
+            edge_set.add((pid, d2_id))
             bwd_links[d2_id] = pid
-            divisions_added += 1
+            mitoses.append((pid, d1_id, d2_id))
 
     return final_edges, mitoses
 
@@ -458,10 +513,7 @@ def build_lineage_graph(
             edges,
             fwd_links,
             bwd_links,
-            mitosis_conf_thresh=MITOSIS_CONF_THRESHOLD,
-            safe_div_max_um=SAFE_DIV_MAX_UM,
-            sister_max_um=SAFE_DIV_SISTER_MAX_UM,
-            frame_cap=SAFE_DIV_FRAME_FRAC_CAP,
+            edge_candidates=edge_candidates,
         )
 
     # Step 5: Prune isolated short-track noise
