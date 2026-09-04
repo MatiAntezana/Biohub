@@ -104,11 +104,13 @@ def sync_code_to_remote(node: RemoteNode, quiet: bool = False) -> bool:
 
     rsync_cmd = [
         "rsync", "-avz",
-        "--delete",
         "--exclude", ".git",
         "--exclude", "__pycache__",
         "--exclude", "*.pyc",
         "--exclude", ".DS_Store",
+        "--filter", "- champion_weights/***",
+        "--filter", "- *.pt",
+        "--filter", "- *.pth",
         "-e", "ssh -o BatchMode=yes",
         f"{PROJECT_ROOT}/",
         f"{node.ssh_alias}:{node.remote_workdir}/",
