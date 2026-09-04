@@ -103,3 +103,17 @@
   Hypothesis 'Verify exclusive remote execution on A1557' resulted in score 0.8598 (delta: 0.0000). Reverting.
 
 ---
+
+### ❌ Run REAL-003 (2026-09-04 19:37:13 UTC)
+- **Hipótesis**: Raise CONF_THRESHOLD from 0.42 to 0.70 to eliminate low-confidence background noise
+- **Sub-métrica objetivo**: `adj_edge_jaccard`
+- **Resultado**: Score `0.7383` vs Mejor `0.7383` (Delta: `+0.0000`)
+- **Telemetría**:
+  - `Adjusted Edge Jaccard`: 0.7383 (Unadjusted: 0.7383)
+  - `Node Penalty Multiplier`: 1.0 (T_pred: 55711 / T_true: 58700)
+  - `Division Jaccard`: 0.0 (TP: 0 | FP: 0 | FN: 1)
+  - `Fragmented Edges`: 69 | `Wrong Associations`: 0
+- **Post-Mortem / Aprendizaje**:
+  Hypothesis 'Raise CONF_THRESHOLD from 0.42 to 0.70 to eliminate low-confidence background noise' resulted in score 0.7383 (delta: 0.0000). Reverting.
+
+---

@@ -32,8 +32,8 @@ FAILURES_FILE = PROJECT_ROOT / "MEMORY_FAILURES.md"
 GRAPH_BUILDER_FILE = PROJECT_ROOT / "core" / "graph_builder.py"
 
 
-def get_current_best_score() -> Tuple[float, Optional[str]]:
-    """Reads results.tsv and returns (best_score, best_run_id)."""
+def get_current_best_score(prefix: Optional[str] = None) -> Tuple[float, Optional[str]]:
+    """Reads results.tsv and returns (best_score, best_run_id) matching prefix."""
     if not RESULTS_FILE.exists():
         return 0.0, None
 
@@ -42,11 +42,14 @@ def get_current_best_score() -> Tuple[float, Optional[str]]:
     with open(RESULTS_FILE, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter="\t")
         for row in reader:
+            rid = row.get("run_id", "")
+            if prefix and not rid.startswith(prefix):
+                continue
             try:
                 sc = float(row.get("score", 0.0))
                 if sc > best_score:
                     best_score = sc
-                    best_id = row.get("run_id")
+                    best_id = rid
             except (ValueError, TypeError):
                 continue
 
@@ -77,7 +80,8 @@ def append_to_results(
         "hypothesis",
     ]
 
-    best_score, _ = get_current_best_score()
+    prefix = "REAL-" if run_id.startswith("REAL-") else "FAST-"
+    best_score, _ = get_current_best_score(prefix=prefix)
     score = float(res.get("total_score", 0.0))
     delta = score - best_score if best_score > 0 else 0.0
 
@@ -166,12 +170,27 @@ def run_experiment_cycle(
     Executes a single fast-loop research iteration.
     Defaults to running remotely on the GPU cluster!
     """
-    best_score, best_run_id = get_current_best_score()
+    val_cache_file = PROJECT_ROOT / "fast_loop" / "val_cache.json"
+    is_real_data = False
+    if val_cache_file.exists():
+        try:
+            with open(val_cache_file, "r", encoding="utf-8") as f:
+                header = json.load(f)
+                dname = header.get("metadata", {}).get("dataset_name", "")
+                if dname and dname != "synthetic":
+                    is_real_data = True
+        except Exception:
+            pass
+
+    prefix = "REAL-" if is_real_data else "FAST-"
+    best_score, best_run_id = get_current_best_score(prefix=prefix)
     run_idx = 1
     if RESULTS_FILE.exists():
         with open(RESULTS_FILE, "r", encoding="utf-8") as f:
-            run_idx = max(1, sum(1 for _ in f))
-    run_id = f"FAST-{run_idx:03d}"
+            reader = csv.DictReader(f, delimiter="\t")
+            matching_runs = [r for r in reader if r.get("run_id", "").startswith(prefix)]
+            run_idx = len(matching_runs)
+    run_id = f"{prefix}{run_idx:03d}"
 
     print(f"\n🚀 [ORCHESTRATOR] Launching {run_id}")
     print(f"   Hypothesis:     {hypothesis}")

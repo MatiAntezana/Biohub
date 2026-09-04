@@ -8,3 +8,7 @@ FAST-006	2026-09-04T19:07:10.351982+00:00	0.8598	+0.0000	0.8015	0.5833	1.0000	0.
 FAST-007	2026-09-04T19:11:19.166373+00:00	0.0000	-0.8598	0.0000	0.0000	1.0000	0.0000	0	REVERT	total_score	Verify exclusive remote execution on A1557
 FAST-008	2026-09-04T19:11:34.253145+00:00	0.8598	+0.0000	0.8015	0.5833	1.0000	0.9460	94	REVERT	total_score	Verify exclusive remote execution on A1557
 REAL-000	2026-09-04T19:27:47Z	0.3667	+0.0000	0.3667	0.0000	1.0000	0.9530	249	KEEP	baseline	Real EXP-056 Champion Model Predictions on Full 100-Frame Embryo (44b6_12dfb391) with Node Budgeting and LAP Tracking
+REAL-001	2026-09-04T19:36:20.365398+00:00	0.7356	+0.3689	0.7356	0.0000	1.0000	0.9480	67	KEEP	adj_edge_jaccard	Vectorized LAP with empirical migration distance gating (5.5um) and daughter symmetry recovery
+REAL-002	2026-09-04T19:36:47.598300+00:00	0.7383	+0.0027	0.7383	0.0000	1.0000	0.9480	69	KEEP	total_score	Disable unguided mitotic fork additions to eliminate 294 division false positives
+REAL-003	2026-09-04T19:37:13.294603+00:00	0.7383	+0.0000	0.7383	0.0000	1.0000	0.9480	69	REVERT	adj_edge_jaccard	Raise CONF_THRESHOLD from 0.42 to 0.70 to eliminate low-confidence background noise
+REAL-004	2026-09-04T19:38:22.765830+00:00	0.7646	+0.0263	0.7646	0.0000	0.9987	0.9797	77	KEEP	total_score	Increase NODE_BUDGET_FACTOR to 1.08 to capture 99% GT recall combined with strict short track pruning

@@ -98,7 +98,9 @@ def print_diagnostic_banner(res: dict) -> None:
     print(f" └─ Division Jaccard:         {div_jaccard:.4f}  (TP: {res['div_tp']} | FP: {res['div_fp']} | FN: {res['div_fn']})")
     print("-" * 80)
     print(" 📊 DETAILED METRIC DECOMPOSITION:")
-    print(f"   • Node Recall (<=7.0um):   {recall * 100:.1f}% ({res['matched_gt_nodes']}/{res['total_gt_nodes']} GT recovered)")
+    matched_gt = t_pred - res['spurious_nodes']
+    total_gt = matched_gt + res['missed_gt_nodes']
+    print(f"   • Node Recall (<=7.0um):   {recall * 100:.1f}% ({matched_gt}/{total_gt} GT recovered)")
     print(f"   • Spurious (FP) Nodes:     {res['spurious_nodes']}")
     print(f"   • Edge Confusion:          TP={res['edge_tp']} | FP={res['edge_fp']} | FN={res['edge_fn']}")
     print("   • Root Cause Errors:")

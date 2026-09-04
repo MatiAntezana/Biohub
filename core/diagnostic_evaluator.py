@@ -18,7 +18,7 @@ DEFAULT_SCALE = np.array([1.625, 0.40625, 0.40625], dtype=np.float64)  # (Z, Y, 
 
 def point_distance_um(p1: np.ndarray, p2: np.ndarray, scale: np.ndarray = DEFAULT_SCALE) -> float:
     """Calculate anisotropic physical distance in micrometers between two 3D coordinates."""
-    diff = (p1 - p2) * scale
+    diff = (np.asarray(p1) - np.asarray(p2)) * scale
     return float(np.sqrt(np.sum(diff ** 2)))
 
 
@@ -305,10 +305,10 @@ def evaluate_tracking(
     z_diffs = []
     xy_diffs = []
     for pid, gid in global_pred_to_gt.items():
-        p_pos = pred_nodes_by_id[pid]["pos"]
-        g_pos = gt_nodes_by_id[gid]["pos"]
+        p_pos = np.asarray(pred_nodes_by_id[pid]["pos"], dtype=float)
+        g_pos = np.asarray(gt_nodes_by_id[gid]["pos"], dtype=float)
         z_diffs.append(abs(p_pos[0] - g_pos[0]) * scale[0])
-        xy_dist = np.sqrt(((p_pos[1:] - g_pos[1:]) * scale[1:]) ** 2).sum()
+        xy_dist = float(np.sqrt(np.sum(((p_pos[1:] - g_pos[1:]) * scale[1:]) ** 2)))
         xy_diffs.append(xy_dist)
 
     z_err = float(np.mean(z_diffs)) if z_diffs else 0.0
