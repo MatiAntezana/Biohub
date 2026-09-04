@@ -139,6 +139,19 @@ def static_preflight(experiment_id: str, root: Path | None = None) -> list[str]:
         if TRAIN_PATH_PATTERN.search(literal.replace("-training", "")):
             errors.append(f"inference.py referencia ruta train prohibida: {literal}")
             break
+    nb_file = kaggle_dir / "submission_notebook.ipynb"
+    if nb_file.is_file():
+        try:
+            nb_data = json.loads(nb_file.read_text(encoding="utf-8"))
+            cells = nb_data.get("cells", [])
+            if len(cells) >= 8:
+                c0 = "".join(cells[0].get("source", []))
+                if 'BIOHUB_VALIDATOR_ENABLE"] = "1"' in c0:
+                    errors.append("submission_notebook.ipynb tiene BIOHUB_VALIDATOR_ENABLE=1 (peligro crítico de timeout)")
+                if 'BIOHUB_SAFE_DIV_GLOBAL_FRAC_CAP"] = "0.0075"' in c0:
+                    errors.append("submission_notebook.ipynb tiene division cap excesivo 0.0075 (peligro de explosión ILP)")
+        except Exception:
+            pass
     return sorted(set(errors))
 
 
@@ -279,6 +292,13 @@ class KagglePipeline:
             result = self._command(temp_job, [sys.executable, str(builder)], "build")
             if result.returncode:
                 raise ExperimentError("build_nb.py falló; ver .state/kaggle/preflight-*/build.log")
+        nb_path = kaggle_dir / "submission_notebook.ipynb"
+        if nb_path.is_file():
+            try:
+                from patch_kaggle_notebooks import patch_notebook
+                patch_notebook(nb_path)
+            except Exception:
+                pass
         errors = static_preflight(experiment_id, self.root)
         if errors:
             raise ExperimentError("; ".join(errors))
