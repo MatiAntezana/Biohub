@@ -35,7 +35,7 @@ MAX_GAP2_DISTANCE_UM = 0.0          # Disabled for pure dt=1 datasets unless nod
 
 # 2b. Neural Representation Edge Gating
 NEURAL_EDGE_WEIGHT = 0.12           # Weight of neural candidate edge affinities in cost matrix
-NEURAL_MAX_PROB_DIST_UM = 6.2       # Extended distance envelope allowed for high-probability neural edges
+NEURAL_MAX_PROB_DIST_UM = 5.5       # Tightened envelope eliminating false positive long-range associations
 NEURAL_PROB_THRESHOLD = 0.20        # Minimum probability required to utilize extended distance envelope
 
 # 3. Mitotic Division Branching (Cytokinesis Divergence Gating)
