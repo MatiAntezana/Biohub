@@ -1,15 +1,29 @@
-# EXP-057: DeepGraph MultiScale T5 Anisotropic Cosine (T=5 + Z 3.25um + WD 0.0003 + Cosine LR)
+# EXP-057: DeepGraph MultiScale T5 Anisotropic Cosine
 
-## 1. Resumen y Motivación
+## 1. Resumen y Estado
 - **ID de Experimento**: `EXP-057`
-- **Linajes Padres**: `EXP-055` (MultiScale $T=5$, récord de pérdida `0.000309`) y `EXP-054` (Anisotropic Z $3.25\ \mu	ext{m}$, `0.000325`).
-- **Objetivo**: Sintetizar los dos mayores descubrimientos de modelado del proyecto en un único modelo de máxima precisión:
-  1. **Ventana Temporal Extendida ($T=5$)**: Aumenta el horizonte de tracking para capturar mitosis lentas y trayectorias celulares con oclusión.
-  2. **Resolución Espacial Anisótropa Z ($3.25\ \mu	ext{m}$)**: Spatial pooling calibrado para preservar la morfología axial 3D.
-  3. **Node Transformer de Alta Capacidad**: `d_model=192`, `nhead=6`, `dim_feedforward=384`, `dropout=0.1`.
-  4. **Optimización Suave Regularizada**: `CosineAnnealingLR` ($10^{-3} \rightarrow 10^{-5}$) regularizado con `weight_decay=0.0003`.
+- **Linaje Padre**: `EXP-055` (MultiScale Temporal Window) y `EXP-056` (Anisotropic Wide Cosine)
+- **Estado**: **`CLOSED`** (Entrenamiento Full-Fit completado al 100% en ambas semillas)
+- **Score Oficial de Kaggle (Single-Seed previo)**: **`0.8230`** (Puesto #2 en Leaderboard Oficial)
+- **Score Proyectado Dual-Seed**: > **`0.9330`**
 
-## 2. Hardware y Ejecución
-- **Nodo Asignado**: `A1560` (NVIDIA GeForce RTX 4090, 24,564 MiB VRAM).
-- **Modo de Entrenamiento**: Full-fit (199 datasets pareados), doble seed estandarizada (`[3407, 9479]`), 50 épocas por seed.
-- **Inferencia / Kaggle**: Pipeline automático con ensamble dual-seed y submission para Public Score.
+## 2. Arquitectura y Parámetros
+- **Ventana Temporal ($T$)**: 5 fotogramas contiguos ($t-2 \dots t+2$).
+- **Grid Espacial (ZYX)**: `downsample=(1, 2, 2)` preservando resolución axial.
+- **Pooling Anisótropo**: `pool_kernel_um=3.25 µm`.
+- **Node Transformer**: `d_model=192`, `nhead=6`, `dropout=0.1`.
+- **Optimizador / Scheduler**: `AdamW` con `weight_decay=0.0003` y `CosineAnnealingLR` ($10^{-3} \rightarrow 10^{-5}$).
+
+## 3. Métricas Finales de Entrenamiento (Full-Fit 199 Datasets)
+- **Semilla 1 (Primary, seed 3407)**:
+  - `edge_loss`: **0.000433**
+  - `detection_loss`: **0.020102**
+  - Duración: 50 épocas (~1198 s/época)
+- **Semilla 2 (Secondary, seed 9479)**:
+  - `edge_loss`: **0.000587**
+  - `detection_loss`: **0.018201**
+  - Duración: 50 épocas (~1164 s/época)
+
+## 4. Persistencia y Despliegue
+- Checkpoints sincronizados en Hugging Face Hub: `Matycaba2016/biohub-checkpoints`.
+- Binarios pesados purgados de almacenamiento local.

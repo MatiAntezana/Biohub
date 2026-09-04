@@ -1,0 +1,86 @@
+{
+  "artifacts": {
+    "checkpoints": [
+      {
+        "bytes": 33649559,
+        "path": "experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/checkpoints/EXP-057_20260903T001106Z_b04ac218/primary/training_checkpoint.pth",
+        "sha256": "6b240f7cd143551ff2d136b2da3717fbf805da9a95d1166a88c2eb73ae9b9bc1"
+      },
+      {
+        "bytes": 33648407,
+        "path": "experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/checkpoints/EXP-057_20260903T001106Z_b04ac218/secondary/training_checkpoint.pth",
+        "sha256": "13a72394f77d21bedfb927f0cef6a6a3205478f6a06edc5e48a79afacb85b558"
+      }
+    ],
+    "terminal_receipt": {
+      "path": "experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218/TRAINING_COMPLETE.json",
+      "sha256": "18ed81902497af06f1684d8498adc3722fc32850c02506420a83b13bd19edfe0"
+    }
+  },
+  "child_pid": 33646,
+  "command": [
+    "/home/alumno1/miniconda3/envs/train-60/bin/python",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/train.py",
+    "--epochs",
+    "50",
+    "--batch-size",
+    "2",
+    "--num-workers",
+    "2",
+    "--max-iters",
+    "750",
+    "--resume-primary",
+    "checkpoints/EXP-057_20260902T132212Z_30ba9271/primary/training_checkpoint.pth",
+    "--project-root",
+    "/home/alumno1/Documents/Biohub",
+    "--run-dir",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-057_DeepGraph_MultiScale_T5_Anisotropic_Cosine/artifacts/EXP-057_20260903T001106Z_b04ac218",
+    "--compact"
+  ],
+  "completed_at": "2026-09-04T01:07:53.055635Z",
+  "config_sha256": "b04ac218a485543ce7bf26443a1dbae6e02b617ca07a9e457a20540c63aa286a",
+  "environment": {
+    "conda_env": "train-60",
+    "executable": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+    "gpu": [
+      "NVIDIA GeForce RTX 4090, 24564 MiB"
+    ],
+    "hostname": "A1560-UBU",
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15"
+  },
+  "exit_code": 0,
+  "experiment_id": "EXP-057",
+  "metrics": {
+    "primary": {
+      "checkpoint_selection": "last_epoch",
+      "detection_loss": 0.020101821384082237,
+      "edge_loss": 0.00043279885067871266,
+      "epoch": 49,
+      "learning_rate": 1e-05,
+      "selection_score": null,
+      "train_seconds": 1198.5090795839933,
+      "validation_accuracy": null,
+      "validation_loss": null,
+      "validation_recall": null
+    },
+    "secondary": {
+      "checkpoint_selection": "last_epoch",
+      "detection_loss": 0.01820058015920222,
+      "edge_loss": 0.0005871251005604184,
+      "epoch": 49,
+      "learning_rate": 1e-05,
+      "selection_score": null,
+      "train_seconds": 1164.6028393809975,
+      "validation_accuracy": null,
+      "validation_loss": null,
+      "validation_recall": null
+    }
+  },
+  "run_id": "EXP-057_20260903T001106Z_b04ac218",
+  "schema_version": 1,
+  "started_at": "2026-09-03T00:11:16.377729Z",
+  "status": "SUCCEEDED",
+  "validation": "N/A — full-fit sin validación",
+  "worker_pid": 33642
+}
