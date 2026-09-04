@@ -96,3 +96,4 @@
 | EXP-058_20260903T224951Z_9b52c0be | EXP-058 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
 | EXP-058_20260904T005259Z_e4295bfd | EXP-058 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
 | EXP-059_20260904T020038Z_9c5c0bd4 | EXP-059 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
+| EXP-059_20260904T022348Z_f287620f | EXP-059 | **FAILED** | N/A — full-fit sin validación | `{}` | — |
