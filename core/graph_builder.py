@@ -25,7 +25,7 @@ from scipy.optimize import linear_sum_assignment
 # ==============================================================================
 
 # 1. Detection & Cardinality Budgeting
-CONF_THRESHOLD = 0.970              # Calibrated peak confidence cutoff to suppress background noise
+CONF_THRESHOLD = 0.960              # Calibrated peak confidence cutoff to recover additional true edges
 NODE_BUDGET_FACTOR = 1.22           # Optimal budget factor balancing GT recall and node penalty multiplier
 
 # 2. Spatial Metric & Anisotropy
