@@ -1,3 +1,6 @@
 run_id	timestamp	score	delta_vs_best	adj_edge_jaccard	division_jaccard	node_penalty	node_recall	fragmented_edges	status	target_submetric	hypothesis
 FAST-000	2026-09-04T18:55:10Z	0.8380	+0.0000	0.7978	0.4028	1.0000	0.9460	106	KEEP	baseline	Initial Autoresearch V2 Baseline with Node Budgeting, LAP Anisotropic Tracking and Safe Mitotic Branching
 FAST-002	2026-09-04T18:57:35.798526+00:00	0.8380	+0.0000	0.7978	0.4028	1.0000	0.9460	106	REVERT	total_score	Integration test hypothesis
+FAST-003	2026-09-04T18:57:57.155532+00:00	0.8380	+0.0000	0.7978	0.4028	1.0000	0.9460	106	REVERT	total_score	Initial verified baseline
+FAST-004	2026-09-04T18:58:09.465588+00:00	0.8598	+0.0218	0.8015	0.5833	1.0000	0.9460	94	KEEP	division_jaccard	Relax mitotic frame cap to 0.04 and search envelope to 9.0um to recover FN divisions
+FAST-005	2026-09-04T19:06:43.075243+00:00	0.8598	+0.0000	0.8015	0.5833	1.0000	0.9460	94	REVERT	total_score	Verify default remote cluster execution

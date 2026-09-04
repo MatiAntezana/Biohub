@@ -126,10 +126,45 @@ def main():
     parser.add_argument("--cache", type=str, default=None, help="Path to validation cache JSON")
     parser.add_argument("--output-json", type=str, default=None, help="Export diagnostic metrics to JSON")
     parser.add_argument("--quiet", action="store_true", help="Suppress terminal banner")
+    parser.add_argument("--json-line", action="store_true", help="Print compact AUTORESEARCH_METRICS_JSON line to stdout")
+    parser.add_argument("--local", action="store_true", help="Force local execution on Mac (bypasses remote cluster)")
+    parser.add_argument("--node", type=str, default=None, help="Target remote cluster node (e.g. A1556-UBU)")
     args = parser.parse_args()
+
+    # Remote Execution Enforcement:
+    # If not explicitly --local, dispatch execution to remote GPU cluster node!
+    if not args.local:
+        from core.remote_executor import run_remote_python, find_best_online_node, DEFAULT_NODES
+        target_node = DEFAULT_NODES.get(args.node) if args.node else find_best_online_node()
+        remote_args = ["--local"]
+        if args.cache:
+            remote_args.extend(["--cache", args.cache])
+        if args.output_json:
+            remote_args.extend(["--output-json", args.output_json])
+        if args.quiet:
+            remote_args.append("--quiet")
+        if args.json_line:
+            remote_args.append("--json-line")
+
+        code, stdout, stderr = run_remote_python(
+            "fast_loop/evaluate_fast.py",
+            remote_args,
+            node=target_node,
+            quiet=args.quiet,
+        )
+        if stdout:
+            print(stdout)
+        if code != 0:
+            if stderr:
+                print(f"[FAST-EVAL-REMOTE ERROR]: {stderr}", file=sys.stderr)
+            sys.exit(code)
+        sys.exit(0)
 
     cache_path = Path(args.cache) if args.cache else None
     res = run_fast_evaluation(cache_path=cache_path, quiet=args.quiet)
+
+    if args.json_line:
+        print("AUTORESEARCH_METRICS_JSON=" + json.dumps(res, sort_keys=True))
 
     if args.output_json:
         out_p = Path(args.output_json)

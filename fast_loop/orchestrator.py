@@ -159,9 +159,12 @@ def run_experiment_cycle(
     target_metric: str = "total_score",
     post_mortem: str = "",
     auto_git: bool = True,
+    remote: bool = True,
+    node_name: Optional[str] = None,
 ) -> Dict[str, Any]:
     """
     Executes a single fast-loop research iteration.
+    Defaults to running remotely on the GPU cluster!
     """
     best_score, best_run_id = get_current_best_score()
     run_idx = 1
@@ -173,11 +176,41 @@ def run_experiment_cycle(
     print(f"\n🚀 [ORCHESTRATOR] Launching {run_id}")
     print(f"   Hypothesis:     {hypothesis}")
     print(f"   Target Metric:  {target_metric}")
+    print(f"   Execution Mode: {'REMOTE GPU CLUSTER' if remote else 'LOCAL CONTROLLER'}")
     print(f"   Current Best:   {best_score:.4f} ({best_run_id or 'None'})")
 
+    telemetry: Dict[str, Any] = {}
+    score = 0.0
+
     try:
-        telemetry = run_fast_evaluation(quiet=False)
-        score = telemetry["total_score"]
+        if remote:
+            from core.remote_executor import run_remote_python, find_best_online_node, DEFAULT_NODES
+            target_node = DEFAULT_NODES.get(node_name) if node_name else find_best_online_node()
+            print(f"   Target Node:    {target_node.name} ({target_node.ip})")
+
+            code, stdout, stderr = run_remote_python(
+                "fast_loop/evaluate_fast.py",
+                ["--local", "--json-line"],
+                node=target_node,
+            )
+            # Print remote banner
+            clean_lines = []
+            for line in stdout.splitlines():
+                if line.startswith("AUTORESEARCH_METRICS_JSON="):
+                    raw_json = line[len("AUTORESEARCH_METRICS_JSON="):]
+                    telemetry = json.loads(raw_json)
+                else:
+                    clean_lines.append(line)
+            print("\n".join(clean_lines))
+
+            if code != 0 or not telemetry:
+                raise RuntimeError(f"Remote evaluation returned error ({code}): {stderr}")
+
+            score = telemetry["total_score"]
+        else:
+            telemetry = run_fast_evaluation(quiet=False)
+            score = telemetry["total_score"]
+
     except Exception as e:
         print(f"❌ [ORCHESTRATOR] Experiment crashed: {e}")
         telemetry = {"total_score": 0.0, "error": str(e)}
@@ -215,6 +248,8 @@ def main():
     parser.add_argument("--target-metric", type=str, default="total_score", help="Sub-metric targeted by hypothesis")
     parser.add_argument("--post-mortem", type=str, default="", help="Explanation of why the hypothesis failed if degraded")
     parser.add_argument("--no-git", action="store_true", help="Disable git commit/checkout on outcome")
+    parser.add_argument("--local", action="store_true", help="Force execution on Mac local (bypasses remote cluster)")
+    parser.add_argument("--node", type=str, default=None, help="Target remote cluster node (e.g. A1556-UBU)")
     args = parser.parse_args()
 
     res = run_experiment_cycle(
@@ -222,6 +257,8 @@ def main():
         target_metric=args.target_metric,
         post_mortem=args.post_mortem,
         auto_git=not args.no_git,
+        remote=not args.local,
+        node_name=args.node,
     )
     sys.exit(0 if res["improved"] else 1)
 

@@ -25,10 +25,15 @@ The research system is divided into two decoupled loops:
 ```
 
 ### 🔒 Invariant Rules of the Game
-1. **Mutable File in Fast-Loop**: You are ONLY allowed to edit [`core/graph_builder.py`](file:///Users/matias/Proyects/Biohub-mejorado/core/graph_builder.py).
-2. **Immutable Sandboxes**: You MUST NOT modify [`core/diagnostic_evaluator.py`](file:///Users/matias/Proyects/Biohub-mejorado/core/diagnostic_evaluator.py) or [`fast_loop/mock_cache.py`](file:///Users/matias/Proyects/Biohub-mejorado/fast_loop/mock_cache.py). These define the objective ground truth and scoring functions.
-3. **No Blind Tweaking**: Every experiment MUST be preceded by a falsifiable biological or geometric hypothesis with a predicted sub-metric delta.
-4. **Learn from Failures**: If an experiment fails or regresses the score, you MUST explain the mechanistic failure cause before reverting changes. Document it in [`MEMORY_FAILURES.md`](file:///Users/matias/Proyects/Biohub-mejorado/MEMORY_FAILURES.md).
+1. **Mandatory Remote Execution (COMPUTADORAS REMOTAS)**:
+   - **TODO el cómputo, evaluación, benchmark y experimentación corre exclusivamente en las máquinas remotas del clúster** (`A1556-UBU`, `A1552-UBU`, `A1560-UBU`, `A1557-UBU`).
+   - Queda estrictamente prohibido correr entrenamiento o evaluación GPU en la Mac local.
+   - La Mac local actúa exclusivamente como **Controladora / Supervisora** (edición de código, git y logging).
+   - Por defecto, `evaluate_fast.py` y `orchestrator.py` sincronizan (`rsync`) y ejecutan en la máquina remota automáticamente.
+2. **Mutable File in Fast-Loop**: You are ONLY allowed to edit [`core/graph_builder.py`](file:///Users/matias/Proyects/Biohub-mejorado/core/graph_builder.py).
+3. **Immutable Sandboxes**: You MUST NOT modify [`core/diagnostic_evaluator.py`](file:///Users/matias/Proyects/Biohub-mejorado/core/diagnostic_evaluator.py) or [`fast_loop/mock_cache.py`](file:///Users/matias/Proyects/Biohub-mejorado/fast_loop/mock_cache.py). These define the objective ground truth and scoring functions.
+4. **No Blind Tweaking**: Every experiment MUST be preceded by a falsifiable biological or geometric hypothesis with a predicted sub-metric delta.
+5. **Learn from Failures**: If an experiment fails or regresses the score, you MUST explain the mechanistic failure cause before reverting changes. Document it in [`MEMORY_FAILURES.md`](file:///Users/matias/Proyects/Biohub-mejorado/MEMORY_FAILURES.md).
 
 ---
 

@@ -33,3 +33,31 @@
   Hypothesis 'Integration test hypothesis' resulted in score 0.8380 (delta: 0.0000). Reverting.
 
 ---
+
+### ❌ Run FAST-003 (2026-09-04 18:57:57 UTC)
+- **Hipótesis**: Initial verified baseline
+- **Sub-métrica objetivo**: `total_score`
+- **Resultado**: Score `0.8380` vs Mejor `0.8380` (Delta: `+0.0000`)
+- **Telemetría**:
+  - `Adjusted Edge Jaccard`: 0.7978 (Unadjusted: 0.7978)
+  - `Node Penalty Multiplier`: 1.0 (T_pred: 2728 / T_true: 2871)
+  - `Division Jaccard`: 0.4028 (TP: 29 | FP: 0 | FN: 43)
+  - `Fragmented Edges`: 106 | `Wrong Associations`: 197
+- **Post-Mortem / Aprendizaje**:
+  Hypothesis 'Initial verified baseline' resulted in score 0.8380 (delta: 0.0000). Reverting.
+
+---
+
+### ❌ Run FAST-005 (2026-09-04 19:06:43 UTC)
+- **Hipótesis**: Verify default remote cluster execution
+- **Sub-métrica objetivo**: `total_score`
+- **Resultado**: Score `0.8598` vs Mejor `0.8598` (Delta: `+0.0000`)
+- **Telemetría**:
+  - `Adjusted Edge Jaccard`: 0.8015 (Unadjusted: 0.8015)
+  - `Node Penalty Multiplier`: 1.0 (T_pred: 2728 / T_true: 2871)
+  - `Division Jaccard`: 0.5833 (TP: 42 | FP: 0 | FN: 30)
+  - `Fragmented Edges`: 94 | `Wrong Associations`: 198
+- **Post-Mortem / Aprendizaje**:
+  Hypothesis 'Verify default remote cluster execution' resulted in score 0.8598 (delta: 0.0000). Reverting.
+
+---

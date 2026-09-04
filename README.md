@@ -65,6 +65,14 @@ A diferencia de sistemas que solo reportan un número escalar (`score: 0.933`), 
 - `edges_recovered` vs `edges_fragmented` vs `edges_lost_to_detection` vs `wrong_association`.
 - `z_axis_displacement_error`: Desviación focal por anisotropía óptica.
 
+## 🖥️ Arquitectura Remote-First (Ejecución Estricta en Clúster Remoto)
+
+Siguiendo las directivas operativas del proyecto:
+- **La Mac local actúa estrictamente como Controladora / Supervisora**: aloja el código, versionado Git, redacción de hipótesis y registro de bitácora.
+- **TODO el cómputo, benchmark, evaluación y entrenamiento se ejecuta en las máquinas remotas autorizadas** (`A1556-UBU`, `A1552-UBU`, `A1560-UBU`, `A1557-UBU`) conectadas vía **Tailscale (puerto SSH 2222, usuario `alumno1`)**.
+- [`core/remote_executor.py`](file:///Users/matias/Proyects/Biohub-mejorado/core/remote_executor.py) sincroniza automáticamente el código vía `rsync` hacia `~/Documents/Biohub-mejorado` en la máquina remota y ejecuta sobre el entorno Conda correspondiente (`train-56` / `train-52` / `train-60`), devolviendo la telemetría a la Mac.
+- Por defecto, `fast_loop/evaluate_fast.py` y `fast_loop/orchestrator.py` corren **en modo remoto**.
+
 ---
 
 ## 📁 Estructura del Repositorio

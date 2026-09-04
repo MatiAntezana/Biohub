@@ -1,0 +1,14 @@
+{
+  "enforce_remote_execution": true,
+  "default_node": "A1556-UBU",
+  "sync_code_before_run": true,
+  "ssh_port": 2222,
+  "ssh_user": "alumno1",
+  "remote_workdir": "/home/alumno1/Documents/Biohub-mejorado",
+  "allowed_nodes": [
+    "A1556-UBU",
+    "A1552-UBU",
+    "A1560-UBU",
+    "A1557-UBU"
+  ]
+}
