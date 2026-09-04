@@ -1,0 +1,40 @@
+{
+  "artifacts": {},
+  "child_pid": 58234,
+  "command": [
+    "/home/alumno1/miniconda3/envs/train-60/bin/python",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-059_DeepGraph_Wide_HighRes_Anisotropic/train.py",
+    "--epochs",
+    "50",
+    "--batch-size",
+    "1",
+    "--num-workers",
+    "2",
+    "--max-iters",
+    "750",
+    "--project-root",
+    "/home/alumno1/Documents/Biohub",
+    "--run-dir",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-059_DeepGraph_Wide_HighRes_Anisotropic/artifacts/EXP-059_20260904T022256Z_f287620f",
+    "--compact"
+  ],
+  "config_sha256": "f287620f602a5857a87875c90ef1ca7352d033ba4d7829572a92ddb9cae3a4c7",
+  "environment": {
+    "conda_env": "train-60",
+    "executable": "/home/alumno1/miniconda3/envs/train-60/bin/python",
+    "gpu": [
+      "NVIDIA GeForce RTX 4090, 24564 MiB"
+    ],
+    "hostname": "A1560-UBU",
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15"
+  },
+  "experiment_id": "EXP-059",
+  "metrics": {},
+  "run_id": "EXP-059_20260904T022256Z_f287620f",
+  "schema_version": 1,
+  "started_at": "2026-09-04T02:23:06.235577Z",
+  "status": "RUNNING",
+  "validation": "N/A — full-fit sin validación",
+  "worker_pid": 58230
+}

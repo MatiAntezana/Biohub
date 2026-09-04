@@ -123,6 +123,7 @@ def main():
     experiments = [
         "EXP-051", "EXP-052", "EXP-053", "EXP-055",
         "EXP-056", "EXP-057", "EXP-058", "EXP-059",
+        "EXP-060",
     ]
     count = 0
     for exp in experiments:

@@ -101,9 +101,9 @@
       "user": "alumno1",
       "conda_env": "train-88",
       "remote_root": "Documents/Biohub",
-      "status": "RESERVED",
-      "training_ready": false,
-      "last_verified": "2026-09-01"
+      "status": "ONLINE",
+      "training_ready": true,
+      "last_verified": "2026-09-04"
     }
   }
 }

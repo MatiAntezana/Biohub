@@ -2,20 +2,23 @@
 
 > Vista generada. Fuente canónica: `experiments/registry.jsonl`.
 
-Actualizado: `2026-09-04T13:16:47.959574Z`
+Actualizado: `2026-09-04T13:45:28.808673Z`
 
 ## Resumen
 
-- Eventos registrados: **331**
-- Corridas registradas: **136**
-- Trabajos listos: **0**
-- Trabajos READY con autolanzamiento opt-in: **0**
+- Eventos registrados: **337**
+- Corridas registradas: **139**
+- Trabajos listos: **1**
+- Trabajos READY con autolanzamiento opt-in: **1**
 - Documentación pendiente: **22**
 
 ## Últimas corridas
 
 | Corrida | Experimento | Estado | Fecha | Nodo |
 |---|---|---|---|---|
+| EXP-060_20260904T134411Z_a4dce311 | EXP-060 | **READY** | 2026-09-04T13:44:13.045973Z | A1688 |
+| EXP-060_20260904T134122Z_a4dce311 | EXP-060 | **FAILED** | 2026-09-04T13:41:58.479532Z | A1688 |
+| queue-EXP-060 | EXP-060 | **READY** | 2026-09-04T13:43:47.814765Z | — |
 | EXP-059_20260904T022348Z_f287620f | EXP-059 | **FAILED** | 2026-09-04T02:24:55.259771Z | A1556 |
 | EXP-059_20260904T022256Z_f287620f | EXP-059 | **RUNNING** | 2026-09-04T13:15:09.747906Z | A1560 |
 | EXP-059_20260904T020046Z_9c5c0bd4 | EXP-059 | **RUNNING** | 2026-09-04T02:00:52.102929Z | A1560 |
@@ -28,6 +31,3 @@ Actualizado: `2026-09-04T13:16:47.959574Z`
 | EXP-058_20260903T224758Z_9b52c0be | EXP-058 | **FAILED** | 2026-09-03T22:48:36.636566Z | A1555 |
 | queue-EXP-058 | EXP-058 | **READY** | 2026-09-04T00:52:06.735517Z | — |
 | EXP-054_20260903T162845Z_c04ebef2 | EXP-054 | **RUNNING** | 2026-09-03T16:28:49.728519Z | A1556 |
-| EXP-054_20260903T162757Z_c04ebef2 | EXP-054 | **CLOSED** | 2026-09-03T20:59:41.440770Z | A1556 |
-| EXP-053_20260903T162714Z_af0cefb2 | EXP-053 | **RUNNING** | 2026-09-03T16:27:22.592351Z | A1555 |
-| EXP-053_20260903T162626Z_af0cefb2 | EXP-053 | **CLOSED** | 2026-09-03T22:32:26.712761Z | A1555 |

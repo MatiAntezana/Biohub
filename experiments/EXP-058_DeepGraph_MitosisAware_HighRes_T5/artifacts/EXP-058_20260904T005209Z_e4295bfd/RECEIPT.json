@@ -1,0 +1,42 @@
+{
+  "artifacts": {},
+  "child_pid": 83922,
+  "command": [
+    "/home/alumno1/miniconda3/envs/train-55/bin/python",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/train.py",
+    "--epochs",
+    "50",
+    "--batch-size",
+    "2",
+    "--num-workers",
+    "2",
+    "--max-iters",
+    "750",
+    "--resume-primary",
+    "checkpoints/EXP-058_20260903T224951Z_9b52c0be/primary/training_checkpoint.pth",
+    "--project-root",
+    "/home/alumno1/Documents/Biohub",
+    "--run-dir",
+    "/home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd",
+    "--compact"
+  ],
+  "config_sha256": "e4295bfda3bedaf6fa71af15bedc653ddc17e534f1a9c977442ba5733ccb65c4",
+  "environment": {
+    "conda_env": "train-55",
+    "executable": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+    "gpu": [
+      "NVIDIA GeForce RTX 4090, 24564 MiB"
+    ],
+    "hostname": "A1555-UBU",
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+    "python": "3.11.15"
+  },
+  "experiment_id": "EXP-058",
+  "metrics": {},
+  "run_id": "EXP-058_20260904T005209Z_e4295bfd",
+  "schema_version": 1,
+  "started_at": "2026-09-04T00:52:21.538612Z",
+  "status": "RUNNING",
+  "validation": "N/A — full-fit sin validación",
+  "worker_pid": 83918
+}
