@@ -752,6 +752,22 @@ def reconcile_one(run_id: str, node_name: str) -> str:
                 set_queue_status(experiment_id, "ORPHANED", run_id=run_id)
                 render_views(root)
                 return "ORPHANED"
+        else:
+            set_queue_status(experiment_id, "RUNNING", run_id=run_id, node=node_name)
+            if last.get("status") != "RUNNING":
+                append_event(
+                    experiment_id=experiment_id,
+                    run_id=run_id,
+                    event_type="STARTED",
+                    status="RUNNING",
+                    idempotency_key=f"started:{run_id}",
+                    node=node_name,
+                    conda_env=receipt.get("environment", {}).get("conda_env"),
+                    config_sha256=receipt.get("config_sha256"),
+                    remote_pid=str(receipt.get("child_pid")),
+                    validation=receipt.get("validation", "unknown"),
+                )
+                render_views(root)
     return "RUNNING"
 
 

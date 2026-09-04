@@ -493,7 +493,7 @@
       "requested_node": "max_free_vram",
       "run_id": "EXP-058_20260904T005209Z_e4295bfd",
       "status": "RUNNING",
-      "updated_at": "2026-09-04T13:15:09.652614Z"
+      "updated_at": "2026-09-04T15:21:28.973969Z"
     },
     {
       "allowed_nodes": [
@@ -513,7 +513,7 @@
       "requested_node": "max_free_vram",
       "run_id": "EXP-059_20260904T022256Z_f287620f",
       "status": "RUNNING",
-      "updated_at": "2026-09-04T13:15:09.698609Z"
+      "updated_at": "2026-09-04T15:21:16.653156Z"
     },
     {
       "allowed_nodes": [
@@ -532,11 +532,11 @@
       "queued_at": "2026-09-04T13:43:47.789361Z",
       "ready_at": "2026-09-04T13:41:04.801204Z",
       "requested_node": "max_free_vram",
-      "run_id": "EXP-060_20260904T134122Z_a4dce311",
-      "status": "READY",
-      "updated_at": "2026-09-04T13:41:58.481071Z"
+      "run_id": "EXP-060_20260904T134411Z_a4dce311",
+      "status": "RUNNING",
+      "updated_at": "2026-09-04T15:21:19.143183Z"
     }
   ],
   "schema_version": 1,
-  "updated_at": "2026-09-04T13:45:28.801334Z"
+  "updated_at": "2026-09-04T15:21:29.018358Z"
 }
