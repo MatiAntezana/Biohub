@@ -167,16 +167,18 @@ def inspect_runtime_log(text: str, *, require_scope: bool = False) -> dict[str, 
                 scopes.append(json.loads(raw))
             except json.JSONDecodeError:
                 start_b = raw.find("{")
-                end_b = raw.rfind("}")
+                end_b = raw.find("}")
                 if start_b != -1 and end_b != -1 and end_b > start_b:
                     try:
-                        scopes.append(json.loads(raw[start_b : end_b + 1]))
+                        candidate = raw[start_b : end_b + 1].replace(r'\\\"', '"').replace(r'\"', '"')
+                        scopes.append(json.loads(candidate))
                     except json.JSONDecodeError:
                         violations.append("scope sentinel JSON inválido")
                 else:
                     violations.append("scope sentinel JSON inválido")
         if PATH_MARKER in line:
             path = line.split(PATH_MARKER, 1)[1].strip()
+            path = path.split(r"\n")[0].rstrip('"}').strip()
             paths.append(path)
             if TRAIN_PATH_PATTERN.search(path):
                 violations.append(f"se intentó procesar train: {path}")

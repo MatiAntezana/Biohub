@@ -491,11 +491,11 @@
       "queued_at": "2026-09-03T22:49:48.523574Z",
       "ready_at": "2026-09-03T22:47:50.479723Z",
       "requested_node": "max_free_vram",
-      "run_id": "EXP-058_20260903T225015Z_9b52c0be",
-      "status": "RUNNING",
-      "updated_at": "2026-09-03T22:50:21.538197Z"
+      "run_id": "EXP-058_20260903T224951Z_9b52c0be",
+      "status": "FAILED",
+      "updated_at": "2026-09-04T00:15:00.587119Z"
     }
   ],
   "schema_version": 1,
-  "updated_at": "2026-09-04T00:05:21.406272Z"
+  "updated_at": "2026-09-04T00:21:23.508287Z"
 }

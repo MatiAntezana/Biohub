@@ -13,7 +13,7 @@
 | 10 | EXP-051 | **DOC_PENDING** | — | max_free_vram |
 | 10 | EXP-052 | **DOC_PENDING** | — | max_free_vram |
 | 10 | EXP-057 | **FAILED** | — | max_free_vram |
-| 11 | EXP-058 | **RUNNING** | — | max_free_vram |
+| 11 | EXP-058 | **FAILED** | — | max_free_vram |
 | 20 | EXP-030B | **CLOSED** | — | max_free_vram |
 | 30 | EXP-032 | **CLOSED** | — | max_free_vram |
 | 100 | EXP-033 | **DOC_PENDING** | — | max_free_vram |

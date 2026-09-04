@@ -2,11 +2,11 @@
 
 > Vista generada. Fuente canónica: `experiments/registry.jsonl`.
 
-Actualizado: `2026-09-04T00:05:21.410676Z`
+Actualizado: `2026-09-04T00:21:23.512773Z`
 
 ## Resumen
 
-- Eventos registrados: **306**
+- Eventos registrados: **308**
 - Corridas registradas: **129**
 - Trabajos listos: **0**
 - Trabajos READY con autolanzamiento opt-in: **0**
@@ -17,7 +17,7 @@ Actualizado: `2026-09-04T00:05:21.410676Z`
 | Corrida | Experimento | Estado | Fecha | Nodo |
 |---|---|---|---|---|
 | EXP-058_20260903T225015Z_9b52c0be | EXP-058 | **RUNNING** | 2026-09-03T22:50:21.575810Z | A1555 |
-| EXP-058_20260903T224951Z_9b52c0be | EXP-058 | **READY** | 2026-09-03T22:49:53.920447Z | A1555 |
+| EXP-058_20260903T224951Z_9b52c0be | EXP-058 | **FAILED** | 2026-09-04T00:15:00.586321Z | A1555 |
 | EXP-058_20260903T224758Z_9b52c0be | EXP-058 | **FAILED** | 2026-09-03T22:48:36.636566Z | A1555 |
 | queue-EXP-058 | EXP-058 | **READY** | 2026-09-03T22:49:48.542391Z | — |
 | EXP-054_20260903T162845Z_c04ebef2 | EXP-054 | **RUNNING** | 2026-09-03T16:28:49.728519Z | A1556 |
