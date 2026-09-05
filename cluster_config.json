@@ -1,13 +1,13 @@
 {
   "enforce_remote_execution": true,
-  "authorized_exclusive_node": "A1557",
-  "default_node": "A1557",
-  "ssh_host": "a1557",
-  "conda_env": "train-57",
-  "python_path": "/home/alumno1/miniconda3/envs/train-57/bin/python",
+  "authorized_exclusive_node": "A1558",
+  "default_node": "A1558",
+  "ssh_host": "a1558",
+  "conda_env": "train-58",
+  "python_path": "/home/alumno1/miniconda3/envs/train-58/bin/python",
   "remote_workdir": "/home/alumno1/Documents/Biohub-mejorado",
   "allowed_nodes": [
-    "A1557",
-    "A1558"
+    "A1558",
+    "A1557"
   ]
 }

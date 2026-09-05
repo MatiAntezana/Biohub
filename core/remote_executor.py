@@ -75,17 +75,22 @@ def load_cluster_config() -> Dict[str, Any]:
 
 def find_best_online_node(preferred: Optional[str] = None) -> RemoteNode:
     """Returns an authorized online remote node (A1557 or A1558)."""
+    cfg = load_cluster_config()
+    candidate_names = []
     if preferred and preferred in DEFAULT_NODES:
-        target = DEFAULT_NODES[preferred]
-        if check_node_online(target):
-            return target
-        print(f"[REMOTE] Preferred node {preferred} is offline, falling back...")
+        candidate_names.append(preferred)
+    def_node = cfg.get("default_node")
+    if def_node and def_node in DEFAULT_NODES and def_node not in candidate_names:
+        candidate_names.append(def_node)
+    for name in ["A1558", "A1557"]:
+        if name not in candidate_names:
+            candidate_names.append(name)
 
-    # Check authorized nodes in priority order: A1557, A1558
-    for name in ["A1557", "A1558"]:
+    for name in candidate_names:
         node = DEFAULT_NODES[name]
         if check_node_online(node):
             return node
+        print(f"[REMOTE] Node {name} is offline/unreachable, checking next candidate...")
 
     raise ConnectionError(
         "None of the authorized remote nodes (A1557, A1558) are currently reachable. "
@@ -93,7 +98,7 @@ def find_best_online_node(preferred: Optional[str] = None) -> RemoteNode:
     )
 
 
-def check_node_online(node: RemoteNode, timeout: int = 5) -> bool:
+def check_node_online(node: RemoteNode, timeout: int = 3) -> bool:
     """Tests connection to remote node via ssh alias."""
     cmd = [
         "ssh",
@@ -103,7 +108,7 @@ def check_node_online(node: RemoteNode, timeout: int = 5) -> bool:
         "hostname",
     ]
     try:
-        res = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout + 3)
+        res = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout + 2)
         return res.returncode == 0
     except Exception:
         return False
@@ -181,6 +186,34 @@ def run_remote_python(
 
     proc = subprocess.run(ssh_cmd, capture_output=True, text=True)
     return proc.returncode, proc.stdout, proc.stderr
+
+
+def execute_remotely(file_path: str | Path, node: Optional[RemoteNode] = None) -> bool:
+    """
+    Transparent execution redirector for autonomous scripts.
+    If called locally on the Mac (without --local in sys.argv), it syncs code
+    and dispatches execution to the authorized remote cluster node (A1557).
+    Returns True if execution was handled remotely, False if running locally on node.
+    """
+    if "--local" in sys.argv:
+        return False
+
+    p = Path(file_path).resolve()
+    try:
+        rel_path = str(p.relative_to(PROJECT_ROOT))
+    except ValueError:
+        rel_path = p.name
+
+    target_node = node or find_best_online_node()
+    remote_args = [arg for arg in sys.argv[1:] if arg != "--local"]
+    code, stdout, stderr = run_remote_python(rel_path, remote_args, node=target_node, sync_first=True)
+    if stdout:
+        print(stdout, end="")
+    if stderr:
+        print(stderr, end="", file=sys.stderr)
+    if code != 0:
+        sys.exit(code)
+    return True
 
 
 if __name__ == "__main__":

@@ -82,6 +82,13 @@ ADAPTIVE_SHORT_TRACK_RESCUE = True  # Rescues genuine biological micro-tracks wi
 SHORT_TRACK_RESCUE_MIN_LEN = 3      # Calibrated peak: rescues high-confidence 3-frame micro-tracks
 SHORT_TRACK_RESCUE_MAX_DIST_UM = 0.90  # Strict spatial envelope: mean cell displacement <= 0.90 um
 
+# 5. Anisotropic Trajectory Smoothing (Point Spread Function De-noising)
+ENABLE_TRAJECTORY_SMOOTHING = True   # Post-tracking polynomial trajectory regularization
+SMOOTHING_WINDOW = 4                 # Temporal window (+/- 4 frames forward/backward)
+SMOOTHING_WEIGHT_Z = 0.85            # Axial regularizer (PSF elongation mitigation along optical Z)
+SMOOTHING_WEIGHT_XY = 0.80           # Lateral regularizer (in-plane XY cell motion)
+SMOOTHING_POLY_DEG = 1               # Linear trend fitting
+
 
 # ==============================================================================
 # 📐 GEOMETRIC & DISTANCE UTILITIES
@@ -729,6 +736,84 @@ def filter_orphan_tracks(
     return final_detections, final_edges
 
 
+def smooth_lineage_trajectories(
+    detections: Dict[int, List[Dict[str, Any]]],
+    edges: List[Tuple[int, int]],
+    window: int = SMOOTHING_WINDOW,
+    weight_z: float = SMOOTHING_WEIGHT_Z,
+    weight_xy: float = SMOOTHING_WEIGHT_XY,
+    poly_deg: int = SMOOTHING_POLY_DEG,
+) -> Dict[int, List[Dict[str, Any]]]:
+    """
+    Anisotropic Trajectory Smoothing for 3D Confocal Cell Tracks.
+    Eliminates high-frequency optical centroid wobble and PSF boundary noise
+    by fitting local 1st-degree polynomials across temporal neighborhood [t - window, t + window].
+    Weights axial Z more heavily than lateral XY to compensate for anisotropic PSF elongation.
+    """
+    if window <= 0 or (weight_z <= 0 and weight_xy <= 0):
+        return detections
+
+    predecessor: Dict[int, List[int]] = {}
+    successor: Dict[int, List[int]] = {}
+    for u, v in edges:
+        successor.setdefault(u, []).append(v)
+        predecessor.setdefault(v, []).append(u)
+
+    nodes_dict = {c["id"]: c for cell_list in detections.values() for c in cell_list}
+    orig_pos = {nid: np.array(c["pos"], dtype=np.float64) for nid, c in nodes_dict.items()}
+    updated_pos: Dict[int, np.ndarray] = {}
+
+    weights = np.array([weight_z, weight_xy, weight_xy], dtype=np.float64)
+    weights = np.clip(weights, 0.0, 1.0)
+
+    for nid in sorted(nodes_dict):
+        nbrs = [(0, nid)]
+        curr = nid
+        for step in range(1, window + 1):
+            prevs = predecessor.get(curr, [])
+            if len(prevs) != 1:
+                break
+            curr = prevs[0]
+            if curr not in orig_pos:
+                break
+            nbrs.append((-step, curr))
+
+        curr = nid
+        for step in range(1, window + 1):
+            nexts = successor.get(curr, [])
+            if len(nexts) != 1:
+                break
+            curr = nexts[0]
+            if curr not in orig_pos:
+                break
+            nbrs.append((step, curr))
+
+        min_points = poly_deg + 2
+        if len(nbrs) < min_points:
+            continue
+
+        dts = np.array([delta for delta, _ in nbrs], dtype=np.float64)
+        coords = np.stack([orig_pos[i] for _, i in nbrs])
+        try:
+            poly_fit = [np.polyfit(dts, coords[:, ax], poly_deg) for ax in range(3)]
+            fitted = np.array([np.polyval(poly_fit[ax], 0.0) for ax in range(3)], dtype=np.float64)
+            if np.isfinite(fitted).all():
+                updated_pos[nid] = (1.0 - weights) * orig_pos[nid] + weights * fitted
+        except Exception:
+            continue
+
+    smoothed_dets: Dict[int, List[Dict[str, Any]]] = {}
+    for t, cell_list in detections.items():
+        smoothed_dets[t] = []
+        for c in cell_list:
+            new_c = dict(c)
+            if c["id"] in updated_pos:
+                new_c["pos"] = list(updated_pos[c["id"]])
+            smoothed_dets[t].append(new_c)
+
+    return smoothed_dets
+
+
 # ==============================================================================
 # 🚀 MAIN PIPELINE ENTRYPOINT
 # ==============================================================================
@@ -814,5 +899,16 @@ def build_lineage_graph(
         keep_division_components=KEEP_DIVISION_COMPONENTS,
         adaptive_rescue=ADAPTIVE_SHORT_TRACK_RESCUE,
     )
+
+    # Step 6: Anisotropic trajectory smoothing along lineage tracks
+    if ENABLE_TRAJECTORY_SMOOTHING:
+        final_dets = smooth_lineage_trajectories(
+            final_dets,
+            final_edges,
+            window=SMOOTHING_WINDOW,
+            weight_z=SMOOTHING_WEIGHT_Z,
+            weight_xy=SMOOTHING_WEIGHT_XY,
+            poly_deg=SMOOTHING_POLY_DEG,
+        )
 
     return final_dets, final_edges, mitoses
