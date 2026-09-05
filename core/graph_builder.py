@@ -703,17 +703,24 @@ def add_safe_mitotic_divisions(
 
         if proposals:
             proposals.sort(key=lambda x: x[0])
-            cost, pid, d1_id, d2_id = proposals[0]
-            # Disconnect intruder if any
-            if d2_id in bwd_links:
-                intruder = bwd_links[d2_id]
-                if (intruder, d2_id) in edge_set:
-                    final_edges.remove((intruder, d2_id))
-                    edge_set.remove((intruder, d2_id))
-            final_edges.append((pid, d2_id))
-            edge_set.add((pid, d2_id))
-            bwd_links[d2_id] = pid
-            mitoses.append((pid, d1_id, d2_id))
+            used_mothers: set[int] = set()
+            used_daughters: set[int] = set()
+            for cost, pid, d1_id, d2_id in proposals:
+                if pid in used_mothers or d1_id in used_daughters or d2_id in used_daughters:
+                    continue
+                # Disconnect intruder if any
+                if d2_id in bwd_links:
+                    intruder = bwd_links[d2_id]
+                    if (intruder, d2_id) in edge_set:
+                        final_edges.remove((intruder, d2_id))
+                        edge_set.remove((intruder, d2_id))
+                final_edges.append((pid, d2_id))
+                edge_set.add((pid, d2_id))
+                bwd_links[d2_id] = pid
+                mitoses.append((pid, d1_id, d2_id))
+                used_mothers.add(pid)
+                used_daughters.add(d1_id)
+                used_daughters.add(d2_id)
 
     return final_edges, mitoses
 
