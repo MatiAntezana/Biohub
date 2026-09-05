@@ -39,9 +39,9 @@ SCALE_ZYX = np.array([1.625, 0.40625, 0.40625], dtype=np.float64)  # Physical sc
 MAX_LINK_DISTANCE_UM = 5.5          # Calibrated to 99.8th percentile empirical cell migration
 MAX_GAP2_DISTANCE_UM = 0.0          # Legacy direct gap-2 parameter (kept for backwards compatibility)
 ENABLE_GAP2_INTERPOLATION = True     # Reconnects tracks broken by 1-frame detection dropout with synthetic node
-GAP2_INTERP_MAX_DIST_UM = 2.2       # Maximum physical distance for gap-2 interpolation (calibrated sweet spot)
+GAP2_INTERP_MAX_DIST_UM = 2.8       # Calibrated peak: 2.8um captures terminal and pre-mitotic gap repairs
 GAP2_INTERP_MIN_HISTORY = 2         # Dead-end must have tracked backward for >= 2 frames
-GAP2_INTERP_MIN_FUTURE = 2          # New-start must track forward for >= 2 frames
+GAP2_INTERP_MIN_FUTURE = 1          # New-start requires >= 1 frame forward support
 
 # 2b. Neural Representation Edge Gating
 NEURAL_EDGE_WEIGHT = 0.10           # Calibrated peak: optimal balance of spatial LAP and neural guidance
