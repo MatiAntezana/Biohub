@@ -49,6 +49,10 @@ TWO_PASS_P1_DIST_UM = 4.1           # Pass 1: Strict distance cutoff for unequiv
 TWO_PASS_P2_DIST_UM = 5.6           # Pass 2: Extended envelope requiring neural confirmation
 TWO_PASS_P2_PROB_THRESH = 0.05      # Minimum neural confidence required in Pass 2
 
+# 2c. Three-Pass MNN Linking Fallback (Mutual Nearest Neighbor)
+ENABLE_PASS3_MNN = True              # Mutual Nearest Neighbor fallback for unlinked cells
+PASS3_MNN_DIST_UM = 5.2              # Maximum physical distance for mutual nearest neighbors
+
 # 2d. Intra-Frame Handover Stitching (Reconcile Split Track Fragments)
 ENABLE_HANDOVER_STITCHING = True     # Reconnects dead-ends to new-starts of same physical cell
 HANDOVER_MAX_INTRA_DIST_UM = 5.5     # Maximum distance between dead-end and new-start in same frame
@@ -61,9 +65,10 @@ MITOSIS_MIN_DIST_UM = 3.5           # Min distance from mother to daughter
 MITOSIS_MAX_DIST_UM = 6.0           # Max distance from mother to daughter
 MITOSIS_SISTER_MIN_UM = 9.5         # Min distance between sister cells
 MITOSIS_SISTER_MAX_UM = 11.5        # Max distance between sister cells
+MITOSIS_SISTER_XY_MIN_UM = 4.0      # Physical cytokinesis: sister separation in XY focal plane >= 4.0 um
 MITOSIS_SYM_DIFF_UM = 0.28          # Max asymmetry |d1 - d2| between daughters
 MITOSIS_COS_THRESH = -0.95          # Collinear cleavage spindle (angle >= 162 deg)
-MITOSIS_MIN_MOTHER_LEN = 5          # Interphase maturity: mother must track >= 5 frames
+MITOSIS_MIN_MOTHER_LEN = 6          # Interphase maturity: mother must track >= 6 frames
 MITOSIS_MIN_PROB = 0.20             # Neural probability support for cleavage edge
 
 # 4. Trajectory Cleaning & Short Track Filtering
@@ -171,13 +176,17 @@ def link_frame_to_frame(
     pass1_dist: float = TWO_PASS_P1_DIST_UM,
     pass2_dist: float = TWO_PASS_P2_DIST_UM,
     pass2_prob_thresh: float = TWO_PASS_P2_PROB_THRESH,
+    enable_pass3_mnn: bool = ENABLE_PASS3_MNN,
+    pass3_mnn_dist: float = PASS3_MNN_DIST_UM,
 ) -> Tuple[List[Tuple[int, int]], Dict[int, int], Dict[int, int]]:
     """
     Performs optimal Linear Assignment (LAP / Hungarian) between consecutive frames.
-    When two_pass=True, uses a 2-stage LAP strategy:
-      Pass 1 (Tight Geometric): Links unequivocal cells within pass1_dist (<= 4.0 um).
-      Pass 2 (Residual Neural): Links remaining unmatched cells within pass2_dist (<= 5.8 um)
+    When two_pass=True, uses a 3-stage strategy:
+      Pass 1 (Tight Geometric): Links unequivocal cells within pass1_dist (<= 4.1 um).
+      Pass 2 (Residual Neural): Links remaining unmatched cells within pass2_dist (<= 5.6 um)
                                  requiring neural probability confirmation (>= prob_thresh).
+      Pass 3 (Mutual Nearest Neighbor): Links remaining unlinked cells that mutually agree
+                                         as each other's closest neighbor within pass3_mnn_dist.
     Returns: (edges, fwd_links, bwd_links)
     """
     edges: List[Tuple[int, int]] = []
@@ -258,6 +267,31 @@ def link_frame_to_frame(
                         edges.append((pid, cid))
                         fwd_links[pid] = cid
                         bwd_links[cid] = pid
+                        matched_p.add(unmatched_p[r])
+                        matched_c.add(unmatched_c[c])
+
+            # --- PASS 3: Mutual Nearest Neighbor Fallback ---
+            if enable_pass3_mnn and pass3_mnn_dist > 0.0:
+                rem_p = [r for r in range(len(parents)) if r not in matched_p]
+                rem_c = [c for c in range(len(children)) if c not in matched_c]
+
+                if rem_p and rem_c:
+                    rem_dists = dists[np.ix_(rem_p, rem_c)]
+
+                    best_c_for_p = np.argmin(rem_dists, axis=1)
+                    best_p_for_c = np.argmin(rem_dists, axis=0)
+
+                    for r_idx, c_idx in enumerate(best_c_for_p):
+                        if best_p_for_c[c_idx] == r_idx:
+                            d = rem_dists[r_idx, c_idx]
+                            if d <= pass3_mnn_dist:
+                                pid = parents[rem_p[r_idx]]["id"]
+                                cid = children[rem_c[c_idx]]["id"]
+                                edges.append((pid, cid))
+                                fwd_links[pid] = cid
+                                bwd_links[cid] = pid
+                                matched_p.add(rem_p[r_idx])
+                                matched_c.add(rem_c[c_idx])
         else:
             # Single-pass fallback
             if neural_weight > 0.0:
@@ -421,6 +455,7 @@ def add_safe_mitotic_divisions(
     max_dist_um: float = MITOSIS_MAX_DIST_UM,
     sister_min_um: float = MITOSIS_SISTER_MIN_UM,
     sister_max_um: float = MITOSIS_SISTER_MAX_UM,
+    sister_xy_min_um: float = MITOSIS_SISTER_XY_MIN_UM,
     sym_diff_um: float = MITOSIS_SYM_DIFF_UM,
     cos_thresh: float = MITOSIS_COS_THRESH,
     min_mother_len: int = MITOSIS_MIN_MOTHER_LEN,
@@ -434,8 +469,9 @@ def add_safe_mitotic_divisions(
       2. Spindle symmetry: |d1 - d2| <= sym_diff_um.
       3. Cleavage collinearity: cos(theta) <= cos_thresh (>= 162 deg apart).
       4. Cleavage separation span: sister distance in [sister_min_um, sister_max_um].
-      5. Neural edge support: max(prob(p, c1), prob(p, c2)) >= min_prob.
-      6. Forward temporal divergence at t+2: daughters track into t+2 without contracting.
+      5. Focal plane cleavage: sister separation in XY plane >= sister_xy_min_um.
+      6. Neural edge support: max(prob(p, c1), prob(p, c2)) >= min_prob.
+      7. Forward temporal divergence at t+2: daughters track into t+2 without contracting.
     """
     mitoses: List[Tuple[int, int, int]] = []
     final_edges = list(edges)
@@ -520,6 +556,14 @@ def add_safe_mitotic_divisions(
 
                 sister_d = float(np.linalg.norm((c1_pos - c2_pos) * SCALE_ZYX))
                 if sister_d < sister_min_um or sister_d > sister_max_um:
+                    continue
+
+                # Biological cytokinesis: sister cells must separate laterally in XY focal plane
+                sister_xy_d = float(np.sqrt(
+                    ((c1_pos[1] - c2_pos[1]) * SCALE_ZYX[1]) ** 2 +
+                    ((c1_pos[2] - c2_pos[2]) * SCALE_ZYX[2]) ** 2
+                ))
+                if sister_xy_d < sister_xy_min_um:
                     continue
 
                 # Neural edge support

@@ -13,3 +13,17 @@ REAL-002	2026-09-04T19:36:47.598300+00:00	0.7383	+0.0027	0.7383	0.0000	1.0000	0.
 REAL-003	2026-09-04T19:37:13.294603+00:00	0.7383	+0.0000	0.7383	0.0000	1.0000	0.9480	69	REVERT	adj_edge_jaccard	Raise CONF_THRESHOLD from 0.42 to 0.70 to eliminate low-confidence background noise
 REAL-004	2026-09-04T19:38:22.765830+00:00	0.7646	+0.0263	0.7646	0.0000	0.9987	0.9797	77	KEEP	total_score	Increase NODE_BUDGET_FACTOR to 1.08 to capture 99% GT recall combined with strict short track pruning
 REAL-005	2026-09-04T19:40:17.642536+00:00	0.7635	-0.0011	0.7635	0.0000	0.9974	0.9797	77	REVERT	total_score	Increase NODE_BUDGET_FACTOR to 1.10 to recover 99.2% of GT cells
+REAL-006	2026-09-04T20:33:52.130334+00:00	0.7907	+0.0261	0.7907	0.0000	0.9952	0.9898	66	KEEP	total_score	Bidirectional harmonic neural LAP linking (nw=0.12, max_p_dist=6.2um) with high-confidence peak filtering (conf=0.970, budget=1.22)
+REAL-007	2026-09-04T20:38:38.798389+00:00	0.7907	+0.0000	0.7907	0.0000	0.9952	0.9898	66	REVERT	total_score	Verify remote orchestrator pipeline
+REAL-008	2026-09-04T20:48:34.795615+00:00	0.8928	+0.1021	0.7928	1.0000	0.9952	0.9898	65	KEEP	division_jaccard	Biological cytokinesis divergence division recovery with mother interphase maturity constraint
+REAL-009	2026-09-04T20:59:27.538674+00:00	0.8946	+0.0018	0.7946	1.0000	0.9953	0.9886	64	KEEP	adj_edge_jaccard	Tighten neural edge probability distance envelope to 5.5um to eliminate false positive cross-links
+REAL-010	2026-09-04T21:03:11.524468+00:00	0.8972	+0.0026	0.7972	1.0000	0.9948	0.9886	63	KEEP	adj_edge_jaccard	Tune CONF_THRESHOLD to 0.960 to recover additional true edges and reduce FN from 80 to 79
+REAL-011	2026-09-04T21:05:11.648801+00:00	0.9047	+0.0075	0.8047	1.0000	1.0000	0.9746	51	KEEP	total_score	Set OUTPUT_MIN_TRACK_LEN to 6 to eliminate orphan noise and achieve 1.0000 node penalty multiplier
+REAL-012	2026-09-04T21:07:12.340991+00:00	0.9134	+0.0087	0.8134	1.0000	0.9998	0.9835	54	KEEP	total_score	Adaptive short track rescue (min_len=4, max_dist=1.38um) recovering genuine biological trajectories
+REAL-013	2026-09-04T22:03:41.298714+00:00	0.9152	+0.0018	0.8152	1.0000	1.0000	0.9873	58	KEEP	adjusted_edge_jaccard	Two-Pass LAP: tight unequivocal geometric pass <= 4.0 um + residual neural pass <= 5.8 um with prob >= 0.18
+REAL-014	2026-09-04T22:23:33.338621+00:00	0.9173	+0.0021	0.8173	1.0000	1.0000	0.9873	57	KEEP	adjusted_edge_jaccard	Calibrated Two-Pass LAP: pass1=4.1um, pass2=5.6um, prob_thresh=0.05, neural_weight=0.10
+REAL-015	2026-09-04T22:32:06.436875+00:00	0.9365	+0.0192	0.8365	1.0000	1.0000	0.9886	50	KEEP	adjusted_edge_jaccard	Anisotropic Z-NMS (xy_r=3.5um, z_d=4.6um) eliminating optical PSF elongation doublets and recovering lost edges
+REAL-016	2026-09-04T22:37:24.299742+00:00	0.9440	+0.0075	0.8440	1.0000	1.0000	0.9873	45	KEEP	adjusted_edge_jaccard	Intra-frame handover stitching (intra_d=5.5um, tgt_d=4.2um) reconciling split track fragments and reducing FPs from 71 to 67
+REAL-017	2026-09-04T22:46:07.684462+00:00	0.9493	+0.0053	0.8493	1.0000	1.0000	0.9860	44	KEEP	adjusted_edge_jaccard	Calibrated micro-track rescue (len=3, max_dist=0.90um) recovering short biological lineages and dropping FPs to 63
+REAL-018	2026-09-05T00:15:00.000000+00:00	0.9565	+0.0072	0.8565	1.0000	1.0000	0.9873	40	KEEP	adjusted_edge_jaccard	Three-Pass MNN Linking (pass3_mnn_dist=5.2um) with XY focal plane cytokinesis gating (sister_xy>=4.0um, mother_len>=6)
+
