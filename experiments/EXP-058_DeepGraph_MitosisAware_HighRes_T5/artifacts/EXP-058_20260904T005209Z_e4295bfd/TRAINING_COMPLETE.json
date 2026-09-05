@@ -1,0 +1,96 @@
+{
+  "artifact_dir": "/home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/artifacts/EXP-058_20260904T005209Z_e4295bfd",
+  "batch_size": 2,
+  "checkpoint_selection": "last_epoch",
+  "checkpoints": [
+    {
+      "config": "/home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/checkpoints/EXP-058_20260904T005209Z_e4295bfd/primary/config.json",
+      "method": "exp058_fullfit_primary_seed3407",
+      "path": "/home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/checkpoints/EXP-058_20260904T005209Z_e4295bfd/primary/training_checkpoint.pth",
+      "role": "primary",
+      "seed": 3407,
+      "sha256": "3a135da9b7559769e60e491a773d6e1727a76fbae4655b41ec5fd543af60fb08"
+    },
+    {
+      "config": "/home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/checkpoints/EXP-058_20260904T005209Z_e4295bfd/secondary/config.json",
+      "method": "exp058_fullfit_secondary_seed9479",
+      "path": "/home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/checkpoints/EXP-058_20260904T005209Z_e4295bfd/secondary/training_checkpoint.pth",
+      "role": "secondary",
+      "seed": 9479,
+      "sha256": "de24a9872ce63450fa105b676ef4101636463b046ebc628dea992930e5a86d6f"
+    }
+  ],
+  "completed_at": "2026-09-05T13:57:15.181928+00:00",
+  "data_dir": "/home/alumno1/Documents/Biohub/data/train",
+  "det_loss_weight": 1.75,
+  "det_negative_weight": 0.018,
+  "downsample_zyx": [
+    1,
+    2,
+    2
+  ],
+  "dropout": 0.1,
+  "ensemble": {
+    "detection_secondary_weight": 0.475,
+    "edge_secondary_weight": 0.15,
+    "primary_margin_limit": 0.35,
+    "retention_minimum": 0.9,
+    "reverse_weight": 0.3,
+    "std_ratio_maximum": 2.0,
+    "std_ratio_minimum": 0.5
+  },
+  "epochs_per_seed": 50,
+  "experiment_dir": "/home/alumno1/Documents/Biohub/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5",
+  "experiment_id": "EXP-058",
+  "hidden_dim": 192,
+  "max_iters_per_epoch": 750,
+  "metrics": {
+    "primary": {
+      "checkpoint_selection": "last_epoch",
+      "detection_loss": 0.018557576538374025,
+      "edge_loss": 0.00041131317128262405,
+      "epoch": 49,
+      "learning_rate": 5e-05,
+      "selection_score": null,
+      "train_seconds": 1291.808026268991,
+      "validation_accuracy": null,
+      "validation_loss": null,
+      "validation_recall": null
+    },
+    "secondary": {
+      "checkpoint_selection": "last_epoch",
+      "detection_loss": 0.0182170271469901,
+      "edge_loss": 0.0004256713788684768,
+      "epoch": 49,
+      "learning_rate": 5e-05,
+      "selection_score": null,
+      "train_seconds": 1277.085161408002,
+      "validation_accuracy": null,
+      "validation_loss": null,
+      "validation_recall": null
+    }
+  },
+  "n_heads": 6,
+  "num_workers": 2,
+  "parent_experiment_id": "EXP-055",
+  "pool_kernel_um": 3.75,
+  "project_root": "/home/alumno1/Documents/Biohub",
+  "run_id": "EXP-058_20260904T005209Z_e4295bfd",
+  "seeds": [
+    3407,
+    9479
+  ],
+  "split_policy": "full-fit: 100% train / 0% validation",
+  "started_at": "2026-09-04T00:52:23.339334+00:00",
+  "starter_kit": "/home/alumno1/Documents/Biohub/official_starter_kit",
+  "status": "COMPLETE",
+  "train_dataset_count": 1,
+  "unet_layers": [
+    32,
+    64,
+    128
+  ],
+  "unet_out_channels": 32,
+  "validation": "none",
+  "window_size": 5
+}

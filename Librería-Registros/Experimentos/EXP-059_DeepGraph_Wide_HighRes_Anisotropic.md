@@ -13,5 +13,21 @@
 
 ## 2. Hardware y Ejecución
 - **Nodo**: `A1560` (NVIDIA GeForce RTX 4090, 24 GB VRAM).
-- **Consumo de Memoria Proyectado**: ~22 GB VRAM.
+- **Consumo de Memoria**: ~21.2 GB VRAM.
 - **Semillas**: Doble semilla estandarizada `[3407, 9479]`, 50 épocas por semilla en modo Full-Fit (199 datasets).
+
+## 3. Métricas Finales de Entrenamiento (Full-Fit 199 Datasets)
+- **Semilla 1 (Primary, seed 3407)**:
+  - `detection_loss`: **0.017439** (récord de detección en alta resolución)
+  - `edge_loss`: **0.000554**
+  - Duración: 50 épocas (~621 s/época)
+- **Semilla 2 (Secondary, seed 9479)**:
+  - `detection_loss`: **0.019317**
+  - `edge_loss`: **0.000537**
+  - Duración: 50 épocas (~621 s/época)
+
+## 4. Conclusiones y Decisión
+- **Estado**: **`SUCCEEDED`** y reconciliado con éxito.
+- **Validación**: Excelente estabilidad y velocidad de convergencia (10.3 horas totales por corrida dual). Mínimo de detección sobresaliente de 0.0174.
+- **Almacenamiento Desacoplado**: Checkpoints respaldados automáticamente en Hugging Face Hub (`hf://Matycaba2016/biohub-checkpoints/experiments/EXP-059_DeepGraph_Wide_HighRes_Anisotropic/`) y purgados del almacenamiento local.
+- **Decisión**: **`PROCEED`**. Corrida cerrada formalmente y disponible para ensamble y benchmark.

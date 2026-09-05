@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP-058_DeepGraph_MitosisAware_HighRes_T5",
+  "hf_repo": "Matycaba2016/biohub-checkpoints",
+  "hf_uri": "hf://Matycaba2016/biohub-checkpoints/experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/",
+  "synced_at": "2026-09-05T13:59:14.438427+00:00",
+  "total_bytes": 67297124,
+  "files": [
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-058_20260904T005209Z_e4295bfd/primary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/checkpoints/EXP-058_20260904T005209Z_e4295bfd/primary/training_checkpoint.pth",
+      "size_bytes": 33649138
+    },
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-058_20260904T005209Z_e4295bfd/secondary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-058_DeepGraph_MitosisAware_HighRes_T5/checkpoints/EXP-058_20260904T005209Z_e4295bfd/secondary/training_checkpoint.pth",
+      "size_bytes": 33647986
+    }
+  ]
+}

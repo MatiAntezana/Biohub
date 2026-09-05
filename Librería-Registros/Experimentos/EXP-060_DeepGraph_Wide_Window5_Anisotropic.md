@@ -15,3 +15,19 @@
 - **Nodo Asignado**: `A1688` (NVIDIA GeForce RTX 4090, 24,564 MiB VRAM libre, entorno Conda `train-88`).
 - **Modo de Entrenamiento**: Full-fit (199 datasets pareados), doble semilla (`[3407, 9479]`), 50 épocas por semilla.
 - **Inferencia / Kaggle**: Pipeline automático con ensamble dual-seed y submission para Public Score.
+
+## 3. Métricas Finales de Entrenamiento (Full-Fit 199 Datasets)
+- **Semilla 1 (Primary, seed 3407)**:
+  - `detection_loss`: **0.019997**
+  - `edge_loss`: **0.000430**
+  - Duración: 50 épocas (~779 s/época)
+- **Semilla 2 (Secondary, seed 9479)**:
+  - `detection_loss`: **0.018137** (mínimo histórico de convergencia en T=5)
+  - `edge_loss`: **0.000506**
+  - Duración: 50 épocas (~777 s/época)
+
+## 4. Conclusiones y Decisión
+- **Estado**: **`SUCCEEDED`** y reconciliado con éxito.
+- **Validación**: Simetría casi perfecta entre semillas primarias y secundarias con pérdida combinada récord. La fusión de Wide UNet 3D con horizonte temporal T=5 demostró estabilidad total de gradiente y convergencia monótona con batch_size=1 en 21.1 GB de VRAM.
+- **Almacenamiento Desacoplado**: Checkpoints respaldados automáticamente en Hugging Face Hub (`hf://Matycaba2016/biohub-checkpoints/experiments/EXP-060_DeepGraph_Wide_Window5_Anisotropic/`) y purgados del almacenamiento local.
+- **Decisión**: **`PROCEED`**. Candidato principal para evaluación de inferencia y superación del score champion 0.933.

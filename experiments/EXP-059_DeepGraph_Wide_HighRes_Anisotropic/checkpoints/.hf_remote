@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP-059_DeepGraph_Wide_HighRes_Anisotropic",
+  "hf_repo": "Matycaba2016/biohub-checkpoints",
+  "hf_uri": "hf://Matycaba2016/biohub-checkpoints/experiments/EXP-059_DeepGraph_Wide_HighRes_Anisotropic/",
+  "synced_at": "2026-09-04T19:47:18.368496+00:00",
+  "total_bytes": 112205806,
+  "files": [
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-059_20260904T022256Z_f287620f/primary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-059_DeepGraph_Wide_HighRes_Anisotropic/checkpoints/EXP-059_20260904T022256Z_f287620f/primary/training_checkpoint.pth",
+      "size_bytes": 56102871
+    },
+    {
+      "filename": "training_checkpoint.pth",
+      "relative_path": "checkpoints/EXP-059_20260904T022256Z_f287620f/secondary/training_checkpoint.pth",
+      "path_in_repo": "experiments/EXP-059_DeepGraph_Wide_HighRes_Anisotropic/checkpoints/EXP-059_20260904T022256Z_f287620f/secondary/training_checkpoint.pth",
+      "size_bytes": 56102935
+    }
+  ]
+}

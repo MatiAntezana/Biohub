@@ -1500,11 +1500,11 @@
         "fileName": "submission.csv",
         "privateScore": "",
         "publicScore": "",
-        "status": "SubmissionStatus.PENDING"
+        "status": "SubmissionStatus.COMPLETE"
       },
       "submission_message": "EXP-053 auto EXP-053-20260904T112535Z-93dd2b",
       "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
-      "updated_at": "2026-09-04T19:49:25.442534Z"
+      "updated_at": "2026-09-05T14:01:50.240951Z"
     },
     "EXP-054-20260903T210240Z-45f4fb": {
       "auto_submit": true,
@@ -1843,11 +1843,11 @@
         "fileName": "submission.csv",
         "privateScore": "",
         "publicScore": "",
-        "status": "SubmissionStatus.PENDING"
+        "status": "SubmissionStatus.COMPLETE"
       },
       "submission_message": "EXP-055 auto EXP-055-20260904T112602Z-e5b53c",
       "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
-      "updated_at": "2026-09-04T19:49:25.476135Z"
+      "updated_at": "2026-09-05T14:01:50.239313Z"
     },
     "EXP-056-20260902T204536Z-db742d": {
       "auto_submit": true,
@@ -2040,6 +2040,297 @@
       "submission_response": "Warning: Looks like you're using an outdated `kaggle` version (installed: 2.1.0), please consider upgrading to the latest version (2.2.2)",
       "updated_at": "2026-09-03T12:04:31.380197Z"
     },
+    "EXP-056-20260904T211408Z-f7a305": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-04T21:14:08.834124Z",
+      "csv_validation": {
+        "bytes": 12197697,
+        "edges": 115001,
+        "nodes": 119363,
+        "rows": 234364
+      },
+      "experiment_id": "EXP-056",
+      "job_id": "EXP-056-20260904T211408Z-f7a305",
+      "kernel_slug": "matiasantezana/biohub-exp-056-deepgraph",
+      "kernel_state": "COMPLETE",
+      "kernel_version": 7,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+        ],
+        "scopes": [
+          {
+            "count": 4,
+            "paths": [
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+            ],
+            "scope": "test"
+          }
+        ],
+        "transient_error": true,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "6a59595798526d4ec1ec122ab3b3b7ef0f6f3602eeb0e298d846a4e45034e0ec",
+      "public_score": 0.908,
+      "pushed_at": "2026-09-04T21:14:11.749338Z",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "SCORED",
+      "submission": {
+        "date": "2026-09-04 21:40:28.520000",
+        "description": "EXP-056 auto EXP-056-20260904T211408Z-f7a305",
+        "fileName": "submission.csv",
+        "privateScore": "",
+        "publicScore": "0.908",
+        "ref": "56019904",
+        "status": "SubmissionStatus.COMPLETE"
+      },
+      "submission_message": "EXP-056 auto EXP-056-20260904T211408Z-f7a305",
+      "submission_response": "0 submissions remaining today.",
+      "updated_at": "2026-09-05T04:07:50.603024Z"
+    },
+    "EXP-056-20260905T010001Z-924ad7": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-05T01:00:01.468064Z",
+      "experiment_id": "EXP-056",
+      "job_id": "EXP-056-20260905T010001Z-924ad7",
+      "kernel_slug": "matiasantezana/biohub-exp-056-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 9,
+      "last_retry_at": "2026-09-05T01:01:58.838266Z",
+      "log_inspection": {
+        "has_error": false,
+        "paths": [],
+        "scopes": [],
+        "transient_error": false,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "a69c3312ca529ea6bc510853954218597e68234e1a43e023010c0db06f20d071",
+      "pushed_at": "2026-09-05T01:00:05.726469Z",
+      "retries": 1,
+      "schema_version": 1,
+      "state": "RUNNING",
+      "updated_at": "2026-09-05T01:02:45.882428Z"
+    },
+    "EXP-056-20260905T010426Z-6c6585": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-05T01:04:26.012755Z",
+      "csv_validation": {
+        "bytes": 11181910,
+        "edges": 104338,
+        "nodes": 110684,
+        "rows": 215022
+      },
+      "description": "EXP-056 [REAL-019 Champion] Z-NMS + Adaptive LAP + MNN + Cytokinesis XY + Linefit (Val 0.9912)",
+      "experiment_id": "EXP-056",
+      "job_id": "EXP-056-20260905T010426Z-6c6585",
+      "kernel_slug": "matiasantezana/biohub-exp-056-deepgraph",
+      "kernel_state": "COMPLETE",
+      "kernel_version": 10,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+        ],
+        "scopes": [
+          {
+            "count": 4,
+            "paths": [
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+            ],
+            "scope": "test"
+          }
+        ],
+        "transient_error": true,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "cc6ded8a3d08c825a7f82d00f96f5b72fffeb8ddffbf22f8c9b33370b943279f",
+      "public_score": 0.895,
+      "pushed_at": "2026-09-05T01:04:28.622573Z",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "SCORED",
+      "submission": {
+        "date": "2026-09-05 01:29:29.587000",
+        "description": "EXP-056 [REAL-019 Champion] Z-NMS + Adaptive LAP + MNN + Cytokinesis XY + Linefit (Val 0.9912)",
+        "fileName": "submission.csv",
+        "privateScore": "",
+        "publicScore": "0.895",
+        "ref": "56022580",
+        "status": "SubmissionStatus.COMPLETE"
+      },
+      "submission_message": "EXP-056 [REAL-019 Champion] Z-NMS + Adaptive LAP + MNN + Cytokinesis XY + Linefit (Val 0.9912)",
+      "submission_response": "3 submissions remaining today.",
+      "updated_at": "2026-09-05T07:50:59.416456Z"
+    },
+    "EXP-056-20260905T020748Z-ec6e94": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-05T02:07:48.500899Z",
+      "csv_validation": {
+        "bytes": 10663050,
+        "edges": 99314,
+        "nodes": 105860,
+        "rows": 205174
+      },
+      "description": "EXP-056 [REAL-021 Champion] 3D Physical NMS 5.4um + Anisotropic Smoothing W=4,Wz=0.8,Wxy=0.8 (Val 1.0009)",
+      "experiment_id": "EXP-056",
+      "job_id": "EXP-056-20260905T020748Z-ec6e94",
+      "kernel_slug": "matiasantezana/biohub-exp-056-deepgraph",
+      "kernel_state": "COMPLETE",
+      "kernel_version": 11,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+        ],
+        "scopes": [
+          {
+            "count": 4,
+            "paths": [
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+            ],
+            "scope": "test"
+          }
+        ],
+        "transient_error": true,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "2fff8393c0b0f56f664ad549baf2cb7a18c96afe5b3fc559804531dfda7da29c",
+      "public_score": 0.891,
+      "pushed_at": "2026-09-05T02:07:51.207572Z",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "SCORED",
+      "submission": {
+        "date": "2026-09-05 02:29:02.803000",
+        "description": "EXP-056 [REAL-021 Champion] 3D Physical NMS 5.4um + Anisotropic Smoothing W=4,Wz=0.8,Wxy=0.8 (Val 1.0009)",
+        "fileName": "submission.csv",
+        "privateScore": "",
+        "publicScore": "0.891",
+        "ref": "56023231",
+        "status": "SubmissionStatus.COMPLETE"
+      },
+      "submission_message": "EXP-056 [REAL-021 Champion] 3D Physical NMS 5.4um + Anisotropic Smoothing W=4,Wz=0.8,Wxy=0.8 (Val 1.0009)",
+      "submission_response": "2 submissions remaining today.",
+      "updated_at": "2026-09-05T08:13:22.002196Z"
+    },
+    "EXP-056-20260905T083627Z-bdb624": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-05T08:36:27.279807Z",
+      "description": "EXP-056 [V12 REAL-023 Champion] Density-Adaptive NMS (5.4um sparse/3.2um dense) + Restored Mitosis + Gap-2 Interp 2.8um (Val 1.0083)",
+      "experiment_id": "EXP-056",
+      "job_id": "EXP-056-20260905T083627Z-bdb624",
+      "kernel_slug": "matiasantezana/biohub-exp-056-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 14,
+      "last_retry_at": "2026-09-05T09:17:21.374332Z",
+      "log_inspection": {
+        "has_error": false,
+        "paths": [],
+        "scopes": [],
+        "transient_error": false,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "b800ae13501555da3fc30aa20c74f5976acc1226202656e10e2e34a84c16b7b9",
+      "pushed_at": "2026-09-05T08:36:30.442659Z",
+      "retries": 2,
+      "schema_version": 1,
+      "state": "RUNNING",
+      "updated_at": "2026-09-05T09:27:42.263501Z"
+    },
+    "EXP-056-20260905T092816Z-439f14": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-05T09:28:16.362708Z",
+      "csv_validation": {
+        "bytes": 11321697,
+        "edges": 105941,
+        "nodes": 111646,
+        "rows": 217587
+      },
+      "description": "EXP-056 [V15 REAL-024 Champion] Density-Adaptive NMS + Restored Mitosis + Ratio-Gated MNN + Gap-2 Interp (Val 1.0084)",
+      "experiment_id": "EXP-056",
+      "job_id": "EXP-056-20260905T092816Z-439f14",
+      "kernel_slug": "matiasantezana/biohub-exp-056-deepgraph",
+      "kernel_state": "COMPLETE",
+      "kernel_version": 15,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+          "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+        ],
+        "scopes": [
+          {
+            "count": 4,
+            "paths": [
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0113de3b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/44b6_0b24845f.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05b6850b.zarr",
+              "/kaggle/input/competitions/biohub-cell-tracking-during-development/test/6bba_05db0fb1.zarr"
+            ],
+            "scope": "test"
+          }
+        ],
+        "transient_error": true,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "d4776e6551aa79fee80031318b9f653dea563092628953bc19b4368234f706f7",
+      "pushed_at": "2026-09-05T09:28:19.284746Z",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "SUBMITTED",
+      "submission": {
+        "date": "2026-09-05 09:53:50.117000",
+        "description": "EXP-056 [V15 REAL-024 Champion] Density-Adaptive NMS + Restored Mitosis + Ratio-Gated MNN + Gap-2 Interp (Val 1.0084)",
+        "fileName": "submission.csv",
+        "privateScore": "",
+        "publicScore": "",
+        "ref": "56030021",
+        "status": "SubmissionStatus.PENDING"
+      },
+      "submission_message": "EXP-056 [V15 REAL-024 Champion] Density-Adaptive NMS + Restored Mitosis + Ratio-Gated MNN + Gap-2 Interp (Val 1.0084)",
+      "submission_response": "1 submissions remaining today.",
+      "updated_at": "2026-09-05T14:01:36.973513Z"
+    },
     "EXP-057-20260903T122736Z-e6a248": {
       "auto_submit": true,
       "competition": "biohub-cell-tracking-during-development",
@@ -2229,5 +2520,5 @@
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-04T19:49:25.476843Z"
+  "updated_at": "2026-09-05T14:01:50.243921Z"
 }
