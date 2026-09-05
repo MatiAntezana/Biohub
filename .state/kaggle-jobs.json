@@ -2314,22 +2314,64 @@
       "max_retries": 2,
       "output_file": "submission.csv",
       "package_sha256": "d4776e6551aa79fee80031318b9f653dea563092628953bc19b4368234f706f7",
+      "public_score": 0.9,
       "pushed_at": "2026-09-05T09:28:19.284746Z",
       "retries": 0,
       "schema_version": 1,
-      "state": "SUBMITTED",
+      "state": "SCORED",
       "submission": {
         "date": "2026-09-05 09:53:50.117000",
         "description": "EXP-056 [V15 REAL-024 Champion] Density-Adaptive NMS + Restored Mitosis + Ratio-Gated MNN + Gap-2 Interp (Val 1.0084)",
         "fileName": "submission.csv",
         "privateScore": "",
-        "publicScore": "",
+        "publicScore": "0.900",
         "ref": "56030021",
-        "status": "SubmissionStatus.PENDING"
+        "status": "SubmissionStatus.COMPLETE"
       },
       "submission_message": "EXP-056 [V15 REAL-024 Champion] Density-Adaptive NMS + Restored Mitosis + Ratio-Gated MNN + Gap-2 Interp (Val 1.0084)",
       "submission_response": "1 submissions remaining today.",
-      "updated_at": "2026-09-05T14:01:36.973513Z"
+      "updated_at": "2026-09-05T17:51:44.035061Z"
+    },
+    "EXP-056-20260905T174731Z-370cfe": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-05T17:47:31.101611Z",
+      "description": null,
+      "experiment_id": "EXP-056",
+      "job_id": "EXP-056-20260905T174731Z-370cfe",
+      "kernel_slug": "matiasantezana/biohub-exp-056-deepgraph",
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "68179db8ff1e5bc54afeba3ccab20845fed6767a9f30d416311a632e18901725",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "DRY_RUN"
+    },
+    "EXP-056-20260905T174741Z-c64a20": {
+      "auto_submit": true,
+      "competition": "biohub-cell-tracking-during-development",
+      "created_at": "2026-09-05T17:47:41.868759Z",
+      "description": "EXP-056 [V16 Target 0.970+] Restored 119k Detection Recall (No NMS) + Natural Multi-Mitosis + Gap-2 Interp (Val 1.0084)",
+      "experiment_id": "EXP-056",
+      "job_id": "EXP-056-20260905T174741Z-c64a20",
+      "kernel_slug": "matiasantezana/biohub-exp-056-deepgraph",
+      "kernel_state": "RUNNING",
+      "kernel_version": 16,
+      "log_inspection": {
+        "has_error": false,
+        "paths": [],
+        "scopes": [],
+        "transient_error": false,
+        "violations": []
+      },
+      "max_retries": 2,
+      "output_file": "submission.csv",
+      "package_sha256": "68179db8ff1e5bc54afeba3ccab20845fed6767a9f30d416311a632e18901725",
+      "pushed_at": "2026-09-05T17:47:45.219518Z",
+      "retries": 0,
+      "schema_version": 1,
+      "state": "RUNNING",
+      "updated_at": "2026-09-05T17:52:01.752112Z"
     },
     "EXP-057-20260903T122736Z-e6a248": {
       "auto_submit": true,
@@ -2520,5 +2562,5 @@
     }
   },
   "schema_version": 1,
-  "updated_at": "2026-09-05T14:01:50.243921Z"
+  "updated_at": "2026-09-05T17:52:01.752735Z"
 }
