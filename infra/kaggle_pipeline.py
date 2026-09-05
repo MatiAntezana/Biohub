@@ -309,7 +309,7 @@ class KagglePipeline:
             "package_sha256": package_hash(kaggle_dir),
         }
 
-    def push(self, experiment_id: str, *, dry_run: bool = False) -> dict[str, Any]:
+    def push(self, experiment_id: str, *, dry_run: bool = False, message: str | None = None) -> dict[str, Any]:
         check = self.preflight(experiment_id)
         kaggle_dir, config = kaggle_config(experiment_id, self.root)
         job_id = f"{experiment_id}-{time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())}-{uuid.uuid4().hex[:6]}"
@@ -323,6 +323,7 @@ class KagglePipeline:
             "auto_submit": config.get("auto_submit") is True,
             "max_retries": int(config.get("max_retries", 1)),
             "retries": 0,
+            "description": message,
             "state": "DRY_RUN" if dry_run else "PUSHING",
             "created_at": utc_now(),
             "package_sha256": check["package_sha256"],
@@ -399,7 +400,7 @@ class KagglePipeline:
         if not job.get("auto_submit"):
             job["state"] = "COMPLETE_VALIDATED"
             return job
-        message = f"{job['experiment_id']} auto {job['job_id']}"
+        message = job.get("description") or f"{job['experiment_id']} auto {job['job_id']}"
         submit = self._command(
             job,
             [
@@ -484,6 +485,7 @@ def main() -> None:
     push = sub.add_parser("push")
     push.add_argument("experiment_id")
     push.add_argument("--dry-run", action="store_true")
+    push.add_argument("--message", "-m", type=str, default=None, help="Custom submission description")
     watch = sub.add_parser("watch")
     watch.add_argument("job_id")
     watch.add_argument("--once", action="store_true")
@@ -498,7 +500,7 @@ def main() -> None:
             _compact(True, "kaggle-preflight", **result)
             return
         if args.command == "push":
-            job = pipeline.push(args.experiment_id, dry_run=args.dry_run)
+            job = pipeline.push(args.experiment_id, dry_run=args.dry_run, message=args.message)
             _compact(job["state"] not in {"FAILED", "POLICY_BLOCKED"}, "kaggle-push", **job)
             return
         if args.command == "status":
