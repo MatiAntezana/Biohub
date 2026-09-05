@@ -33,3 +33,4 @@ REAL-022	2026-09-05T02:12:30.000000+00:00	1.0058	+0.0049	0.9058	1.0000	1.0000	0.
 
 
 REAL-023	2026-09-05T05:08:50Z	1.0083	+0.0025	0.9083	1.0000	1.0000	0.9890	29	KEEP	total_score	Calibrated Gap-2 Node Interpolation (max_gap=2.8um, hist>=2, fut>=1) raising TP to 733 and FN to 40
+REAL-024	REAL-024	2026-09-05T09:08:56Z	1.0084	+0.0001	0.9084	1.0000	1.0000	0.9911	28	KEEP	total_score	Ratio-Gated Extended MNN Linking (ratio>=1.38, max_d<=6.0um) recovering isolated lineage fragmentation and raising TP to 734

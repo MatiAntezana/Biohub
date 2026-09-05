@@ -328,7 +328,17 @@ def link_frame_to_frame(
                     for r_idx, c_idx in enumerate(best_c_for_p):
                         if best_p_for_c[c_idx] == r_idx:
                             d = rem_dists[r_idx, c_idx]
+                            accept = False
                             if d <= pass3_mnn_dist:
+                                accept = True
+                            elif d <= 6.0:
+                                row_d = rem_dists[r_idx]
+                                col_d = rem_dists[:, c_idx]
+                                s_p = np.partition(row_d, 1)[1] if len(row_d) > 1 else 999.0
+                                s_c = np.partition(col_d, 1)[1] if len(col_d) > 1 else 999.0
+                                if s_p >= 1.38 * d and s_c >= 1.38 * d:
+                                    accept = True
+                            if accept:
                                 pid = parents[rem_p[r_idx]]["id"]
                                 cid = children[rem_c[c_idx]]["id"]
                                 edges.append((pid, cid))
@@ -939,6 +949,7 @@ def build_lineage_graph(
         neural_weight=NEURAL_EDGE_WEIGHT,
         max_prob_dist_um=NEURAL_MAX_PROB_DIST_UM,
         prob_threshold=NEURAL_PROB_THRESHOLD,
+        pass3_mnn_dist=PASS3_MNN_DIST_UM,
     )
 
     # Step 2b: Reconcile intra-frame handovers (reconnect dead-ends to new starts)
