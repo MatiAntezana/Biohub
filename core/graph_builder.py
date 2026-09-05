@@ -28,10 +28,11 @@ from scipy.optimize import linear_sum_assignment
 CONF_THRESHOLD = 0.960              # Calibrated peak confidence cutoff to recover additional true edges
 NODE_BUDGET_FACTOR = 1.22           # Optimal budget factor balancing GT recall and node penalty multiplier
 
-# 1b. Anisotropic Z-NMS (Optical PSF Elongation De-duplication)
-ENABLE_Z_NMS = True                  # Suppresses duplicate detections along elongated optical Z axis
+# 1b. 3D Physical NMS (Optical PSF Elongation & Lateral Split De-duplication)
+ENABLE_Z_NMS = True                  # Suppresses duplicate detections along optical Z and lateral splits
 Z_NMS_XY_RADIUS_UM = 3.5             # Lateral XY radius for suppression
 Z_NMS_Z_DIST_UM = 4.6                # Total physical distance cutoff for Z doublets
+NMS_3D_DIST_UM = 5.4                 # Total 3D physical distance cutoff for duplicate/split suppression
 
 # 2. Spatial Metric & Anisotropy
 SCALE_ZYX = np.array([1.625, 0.40625, 0.40625], dtype=np.float64)  # Physical scale in um
@@ -85,7 +86,7 @@ SHORT_TRACK_RESCUE_MAX_DIST_UM = 0.90  # Strict spatial envelope: mean cell disp
 # 5. Anisotropic Trajectory Smoothing (Point Spread Function De-noising)
 ENABLE_TRAJECTORY_SMOOTHING = True   # Post-tracking polynomial trajectory regularization
 SMOOTHING_WINDOW = 4                 # Temporal window (+/- 4 frames forward/backward)
-SMOOTHING_WEIGHT_Z = 0.85            # Axial regularizer (PSF elongation mitigation along optical Z)
+SMOOTHING_WEIGHT_Z = 0.80            # Axial regularizer (PSF elongation mitigation along optical Z)
 SMOOTHING_WEIGHT_XY = 0.80           # Lateral regularizer (in-plane XY cell motion)
 SMOOTHING_POLY_DEG = 1               # Linear trend fitting
 
@@ -138,11 +139,12 @@ def apply_anisotropic_z_nms(
     detections: Dict[int, List[Dict[str, Any]]],
     xy_radius_um: float = Z_NMS_XY_RADIUS_UM,
     z_dist_um: float = Z_NMS_Z_DIST_UM,
+    nms_3d_dist_um: float = NMS_3D_DIST_UM,
 ) -> Dict[int, List[Dict[str, Any]]]:
     """
-    Suppresses duplicate detections along the elongated optical Z axis.
+    Suppresses duplicate detections along the elongated optical Z axis and lateral splits.
     Sorts detections by confidence descending. A candidate is suppressed if a higher-confidence
-    detection is within xy_radius_um laterally and z_dist_um total physical distance.
+    detection is within xy_radius_um laterally and z_dist_um total, or within nms_3d_dist_um in 3D.
     """
     cleaned: Dict[int, List[Dict[str, Any]]] = {}
     for t, cells in detections.items():
@@ -166,7 +168,7 @@ def apply_anisotropic_z_nms(
             dxy = np.sqrt(((p_arr[:, 1] - p[1]) * SCALE_ZYX[1])**2 + ((p_arr[:, 2] - p[2]) * SCALE_ZYX[2])**2)
             d_tot = np.sqrt(dz**2 + dxy**2)
 
-            is_duplicate = np.any((dxy <= xy_radius_um) & (d_tot <= z_dist_um))
+            is_duplicate = np.any(((dxy <= xy_radius_um) & (d_tot <= z_dist_um)) | (d_tot <= nms_3d_dist_um))
             if not is_duplicate:
                 kept.append(c)
                 kept_pos.append(p)
@@ -840,12 +842,13 @@ def build_lineage_graph(
         budget_factor=NODE_BUDGET_FACTOR,
     )
 
-    # Step 1b: Anisotropic Z-NMS to suppress PSF elongation doublets along optical Z
+    # Step 1b: 3D Physical NMS (Optical PSF elongation & lateral split de-duplication)
     if ENABLE_Z_NMS:
         filtered_dets = apply_anisotropic_z_nms(
             filtered_dets,
             xy_radius_um=Z_NMS_XY_RADIUS_UM,
             z_dist_um=Z_NMS_Z_DIST_UM,
+            nms_3d_dist_um=NMS_3D_DIST_UM,
         )
 
     # Step 2: Frame-to-frame LAP tracking with neural gating

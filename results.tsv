@@ -28,5 +28,6 @@ REAL-017	2026-09-04T22:46:07.684462+00:00	0.9493	+0.0053	0.8493	1.0000	1.0000	0.
 REAL-018	2026-09-05T00:15:00.000000+00:00	0.9565	+0.0072	0.8565	1.0000	1.0000	0.9873	40	KEEP	adjusted_edge_jaccard	Three-Pass MNN Linking (pass3_mnn_dist=5.2um) with XY focal plane cytokinesis gating (sister_xy>=4.0um, mother_len>=6)
 REAL-019	2026-09-05T00:41:00.000000+00:00	0.9599	+0.0034	0.8599	1.0000	1.0000	0.9860	36	KEEP	adjusted_edge_jaccard	Adaptive Track Maturity Radius (mature=5.4um, transient=3.5um) with Track Inertia Bonus (bonus=0.50um, cap=8)
 REAL-020	2026-09-05T01:48:00.000000+00:00	0.9958	+0.0359	0.8958	1.0000	1.0000	0.9911	31	KEEP	total_score	Anisotropic Trajectory Smoothing (win=4, wz=0.85, wxy=0.80) eliminating PSF wobble and pushing TP to 731
+REAL-021	2026-09-05T02:06:00.000000+00:00	1.0009	+0.0051	0.9009	1.0000	1.0000	0.9860	29	KEEP	total_score	3D Physical NMS (d=5.4um) + Anisotropic Trajectory Smoothing (win=4, wz=0.80, wxy=0.80) breaking through 0.90 edge jaccard
 
 
