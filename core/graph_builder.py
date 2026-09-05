@@ -37,7 +37,11 @@ NMS_3D_DIST_UM = 5.4                 # Total 3D physical distance cutoff for dup
 # 2. Spatial Metric & Anisotropy
 SCALE_ZYX = np.array([1.625, 0.40625, 0.40625], dtype=np.float64)  # Physical scale in um
 MAX_LINK_DISTANCE_UM = 5.5          # Calibrated to 99.8th percentile empirical cell migration
-MAX_GAP2_DISTANCE_UM = 0.0          # Disabled for pure dt=1 datasets unless node interpolated
+MAX_GAP2_DISTANCE_UM = 0.0          # Legacy direct gap-2 parameter (kept for backwards compatibility)
+ENABLE_GAP2_INTERPOLATION = True     # Reconnects tracks broken by 1-frame detection dropout with synthetic node
+GAP2_INTERP_MAX_DIST_UM = 2.2       # Maximum physical distance for gap-2 interpolation (calibrated sweet spot)
+GAP2_INTERP_MIN_HISTORY = 2         # Dead-end must have tracked backward for >= 2 frames
+GAP2_INTERP_MIN_FUTURE = 2          # New-start must track forward for >= 2 frames
 
 # 2b. Neural Representation Edge Gating
 NEURAL_EDGE_WEIGHT = 0.10           # Calibrated peak: optimal balance of spatial LAP and neural guidance
@@ -439,29 +443,74 @@ def reconcile_intra_frame_handovers(
     return new_edges, new_fwd, new_bwd
 
 
-def close_temporal_gaps(
+def interpolate_temporal_gaps(
     filtered_detections: Dict[int, List[Dict[str, Any]]],
     edges: List[Tuple[int, int]],
     fwd_links: Dict[int, int],
     bwd_links: Dict[int, int],
-    max_gap_dist_um: float = MAX_GAP2_DISTANCE_UM,
-) -> Tuple[List[Tuple[int, int]], Dict[int, int], Dict[int, int]]:
+    enabled: bool = ENABLE_GAP2_INTERPOLATION,
+    max_gap_dist_um: float = GAP2_INTERP_MAX_DIST_UM,
+    min_history: int = GAP2_INTERP_MIN_HISTORY,
+    min_future: int = GAP2_INTERP_MIN_FUTURE,
+) -> Tuple[Dict[int, List[Dict[str, Any]]], List[Tuple[int, int]], Dict[int, int], Dict[int, int]]:
     """
-    Recovers tracks fragmented by a single missed detection (gap-2: t -> t+2).
+    Recovers tracks fragmented by a single missed detection (gap-2: t -> t+2)
+    by inserting a synthetic interpolated centroid node at t+1 and adding both
+    consecutive edges (t -> t+1 and t+1 -> t+2).
     """
-    if max_gap_dist_um <= 0.0:
-        return edges, fwd_links, bwd_links
+    if not enabled or max_gap_dist_um <= 0.0:
+        return filtered_detections, edges, fwd_links, bwd_links
 
-    frames = sorted(filtered_detections.keys())
+    updated_dets = {t: list(nlist) for t, nlist in filtered_detections.items()}
     new_edges = list(edges)
+    new_fwd = dict(fwd_links)
+    new_bwd = dict(bwd_links)
 
-    for i in range(len(frames) - 2):
-        t1, t3 = frames[i], frames[i + 2]
-        if t3 != t1 + 2:
+    # Compute maximum ID for synthetic node allocation
+    max_id = 99900000
+    for nlist in updated_dets.values():
+        for n in nlist:
+            if isinstance(n.get("id"), (int, np.integer)):
+                max_id = max(max_id, int(n["id"]))
+    next_synthetic_id = max_id + 1000
+
+    node_t = {}
+    for t, nlist in updated_dets.items():
+        for n in nlist:
+            node_t[n["id"]] = t
+
+    # History length (backward)
+    history_len = {}
+    for nid in node_t:
+        curr = nid
+        hl = 1
+        while curr in new_bwd:
+            curr = new_bwd[curr]
+            hl += 1
+        history_len[nid] = hl
+
+    # Future length (forward)
+    future_len = {}
+    for nid in node_t:
+        curr = nid
+        fl = 1
+        while curr in new_fwd:
+            curr = new_fwd[curr]
+            fl += 1
+        future_len[nid] = fl
+
+    frames = sorted(updated_dets.keys(), key=lambda x: int(x) if isinstance(x, (int, str)) and str(x).isdigit() else x)
+    for idx in range(len(frames) - 2):
+        t1, t3 = frames[idx], frames[idx + 2]
+        try:
+            if int(t3) != int(t1) + 2:
+                continue
+            t_gap = int(t1) + 1
+        except (ValueError, TypeError):
             continue
 
-        dead_ends = [n for n in filtered_detections[t1] if n["id"] not in fwd_links]
-        new_starts = [n for n in filtered_detections[t3] if n["id"] not in bwd_links]
+        dead_ends = [n for n in updated_dets[t1] if n["id"] not in new_fwd and history_len.get(n["id"], 1) >= min_history]
+        new_starts = [n for n in updated_dets[t3] if n["id"] not in new_bwd and future_len.get(n["id"], 1) >= min_future]
 
         if not dead_ends or not new_starts:
             continue
@@ -476,13 +525,37 @@ def close_temporal_gaps(
 
         for r, c in zip(row_ind, col_ind):
             if cost_matrix[r, c] <= max_gap_dist_um:
-                pid = dead_ends[r]["id"]
-                cid = new_starts[c]["id"]
-                new_edges.append((pid, cid))
-                fwd_links[pid] = cid
-                bwd_links[cid] = pid
+                de_node = dead_ends[r]
+                ns_node = new_starts[c]
 
-    return new_edges, fwd_links, bwd_links
+                # Create synthetic interpolated node at t_gap
+                interp_pos = (np.array(de_node["pos"], dtype=np.float64) + np.array(ns_node["pos"], dtype=np.float64)) / 2.0
+                interp_conf = (de_node.get("conf", 1.0) + ns_node.get("conf", 1.0)) / 2.0
+                syn_node = {
+                    "id": next_synthetic_id,
+                    "t": t_gap,
+                    "pos": interp_pos,
+                    "conf": interp_conf,
+                    "is_mitosis": 0.0,
+                }
+                next_synthetic_id += 1
+
+                if t_gap not in updated_dets:
+                    updated_dets[t_gap] = []
+                updated_dets[t_gap].append(syn_node)
+
+                pid = de_node["id"]
+                cid = ns_node["id"]
+                syn_id = syn_node["id"]
+
+                new_edges.append((pid, syn_id))
+                new_edges.append((syn_id, cid))
+                new_fwd[pid] = syn_id
+                new_fwd[syn_id] = cid
+                new_bwd[cid] = syn_id
+                new_bwd[syn_id] = pid
+
+    return updated_dets, new_edges, new_fwd, new_bwd
 
 
 def add_safe_mitotic_divisions(
@@ -873,13 +946,16 @@ def build_lineage_graph(
             min_history_len=HANDOVER_MIN_HISTORY_LEN,
         )
 
-    # Step 3: Gap-2 closing for intermittent blinkers
-    edges, fwd_links, bwd_links = close_temporal_gaps(
+    # Step 3: Gap-2 node interpolation for intermittent blinkers
+    filtered_dets, edges, fwd_links, bwd_links = interpolate_temporal_gaps(
         filtered_dets,
         edges,
         fwd_links,
         bwd_links,
-        max_gap_dist_um=MAX_GAP2_DISTANCE_UM,
+        enabled=ENABLE_GAP2_INTERPOLATION,
+        max_gap_dist_um=GAP2_INTERP_MAX_DIST_UM,
+        min_history=GAP2_INTERP_MIN_HISTORY,
+        min_future=GAP2_INTERP_MIN_FUTURE,
     )
 
     # Step 4: Mitotic safe branching (1 -> 2 daughters)
