@@ -43,9 +43,13 @@ NEURAL_EDGE_WEIGHT = 0.10           # Calibrated peak: optimal balance of spatia
 NEURAL_MAX_PROB_DIST_UM = 5.6       # Tightened envelope eliminating false positive long-range associations
 NEURAL_PROB_THRESHOLD = 0.05        # Calibrated peak threshold
 
-# 2c. Two-Pass LAP Multi-Stage Assignment
-ENABLE_TWO_PASS_LAP = True          # Decouples tight unequivocal geometric links from residual neural links
-TWO_PASS_P1_DIST_UM = 4.1           # Pass 1: Strict distance cutoff for unequivocal high-density links
+# 2c. Multi-Pass LAP with Adaptive Track Maturity
+ENABLE_TWO_PASS_LAP = True          # Decouples geometric linking from residual neural linking
+PASS1_MATURE_DIST_UM = 5.4          # Pass 1: Extended reach for mature biological lineages (history >= 2)
+PASS1_TRANSIENT_DIST_UM = 3.5       # Pass 1: Strict protective radius for new/transient nodes (history < 2)
+MIN_MATURE_HISTORY = 2              # Minimum frames tracked backward to qualify as mature lineage
+TRACK_INERTIA_BONUS_UM = 0.50       # Distance advantage granted per frame of track history
+TRACK_INERTIA_MAX_CAP = 8           # Maximum history frames capped for inertia bonus
 TWO_PASS_P2_DIST_UM = 5.6           # Pass 2: Extended envelope requiring neural confirmation
 TWO_PASS_P2_PROB_THRESH = 0.05      # Minimum neural confidence required in Pass 2
 
@@ -173,7 +177,11 @@ def link_frame_to_frame(
     max_prob_dist_um: float = NEURAL_MAX_PROB_DIST_UM,
     prob_threshold: float = NEURAL_PROB_THRESHOLD,
     two_pass: bool = ENABLE_TWO_PASS_LAP,
-    pass1_dist: float = TWO_PASS_P1_DIST_UM,
+    pass1_mature_dist: float = PASS1_MATURE_DIST_UM,
+    pass1_transient_dist: float = PASS1_TRANSIENT_DIST_UM,
+    min_mature_history: int = MIN_MATURE_HISTORY,
+    track_inertia_bonus: float = TRACK_INERTIA_BONUS_UM,
+    track_inertia_max_cap: int = TRACK_INERTIA_MAX_CAP,
     pass2_dist: float = TWO_PASS_P2_DIST_UM,
     pass2_prob_thresh: float = TWO_PASS_P2_PROB_THRESH,
     enable_pass3_mnn: bool = ENABLE_PASS3_MNN,
@@ -181,17 +189,29 @@ def link_frame_to_frame(
 ) -> Tuple[List[Tuple[int, int]], Dict[int, int], Dict[int, int]]:
     """
     Performs optimal Linear Assignment (LAP / Hungarian) between consecutive frames.
-    When two_pass=True, uses a 3-stage strategy:
-      Pass 1 (Tight Geometric): Links unequivocal cells within pass1_dist (<= 4.1 um).
-      Pass 2 (Residual Neural): Links remaining unmatched cells within pass2_dist (<= 5.6 um)
-                                 requiring neural probability confirmation (>= prob_thresh).
-      Pass 3 (Mutual Nearest Neighbor): Links remaining unlinked cells that mutually agree
-                                         as each other's closest neighbor within pass3_mnn_dist.
+    When two_pass=True, uses a 3-stage strategy with Adaptive Track Maturity:
+      Pass 1 (Adaptive Geometric Linking):
+        - Mature lineages (history >= min_mature_history) receive extended reach (<= pass1_mature_dist)
+          and a biological inertia bonus in the cost matrix.
+        - Transient / new nodes receive a strict protective radius (<= pass1_transient_dist) to
+          prevent them from hijacking genuine biological lineages.
+      Pass 2 (Residual Neural Confirmation):
+        - Links remaining unmatched cells within pass2_dist (<= 5.6 um) requiring neural confirmation.
+      Pass 3 (Mutual Nearest Neighbor Fallback):
+        - Links remaining unlinked cells that mutually agree as each other's closest neighbor.
     Returns: (edges, fwd_links, bwd_links)
     """
     edges: List[Tuple[int, int]] = []
     fwd_links: Dict[int, int] = {}
     bwd_links: Dict[int, int] = {}
+
+    def get_track_history(node_id: int) -> int:
+        curr = node_id
+        hist = 1
+        while curr in bwd_links:
+            curr = bwd_links[curr]
+            hist += 1
+        return hist
 
     # Sort frames numerically
     frames = sorted(filtered_detections.keys(), key=lambda x: int(x) if isinstance(x, (int, str)) and str(x).isdigit() else x)
@@ -217,6 +237,12 @@ def link_frame_to_frame(
         p_id_to_idx = {p["id"]: r for r, p in enumerate(parents)}
         c_id_to_idx = {c["id"]: col for col, c in enumerate(children)}
 
+        # Track history inertia bonus & adaptive allowed distance per parent
+        p_hist = np.array([get_track_history(p["id"]) for p in parents], dtype=np.int32)
+        p_cap = np.minimum(p_hist, track_inertia_max_cap)
+        hist_bonus = track_inertia_bonus * (p_cap[:, None] - 1.0)
+        p_max_d = np.where(p_hist >= min_mature_history, pass1_mature_dist, pass1_transient_dist)
+
         probs = np.zeros_like(dists, dtype=np.float32)
         if edge_candidates:
             cands = edge_candidates.get(t_curr) or edge_candidates.get(str(t_curr))
@@ -229,9 +255,11 @@ def link_frame_to_frame(
                         probs[p_id_to_idx[sid], c_id_to_idx[tid]] = c["prob"]
 
         if two_pass:
-            # --- PASS 1: Tight Geometric Linking ---
-            cost_p1 = dists - neural_weight * (probs * 10.0) if neural_weight > 0.0 else dists
-            allowed_p1 = dists <= pass1_dist
+            # --- PASS 1: Adaptive Maturity Linking with Track Inertia Bonus ---
+            cost_p1 = dists - hist_bonus
+            if neural_weight > 0.0:
+                cost_p1 = cost_p1 - neural_weight * (probs * 10.0)
+            allowed_p1 = dists <= p_max_d[:, None]
             cost_p1 = np.where(allowed_p1, cost_p1, 1e6)
             r1, c1 = linear_sum_assignment(cost_p1)
 
@@ -247,14 +275,17 @@ def link_frame_to_frame(
                     matched_p.add(r)
                     matched_c.add(c)
 
-            # --- PASS 2: Residual Neural Linking ---
+            # --- PASS 2: Residual Neural Linking with Track Inertia ---
             unmatched_p = [r for r in range(len(parents)) if r not in matched_p]
             unmatched_c = [c for c in range(len(children)) if c not in matched_c]
 
             if unmatched_p and unmatched_c:
                 sub_dists = dists[np.ix_(unmatched_p, unmatched_c)]
                 sub_probs = probs[np.ix_(unmatched_p, unmatched_c)]
-                sub_cost = sub_dists - neural_weight * (sub_probs * 10.0) if neural_weight > 0.0 else sub_dists
+                sub_bonus = hist_bonus[unmatched_p]
+                sub_cost = sub_dists - sub_bonus
+                if neural_weight > 0.0:
+                    sub_cost = sub_cost - neural_weight * (sub_probs * 10.0)
 
                 allowed_p2 = (sub_dists <= pass2_dist) & (sub_probs >= pass2_prob_thresh)
                 sub_cost = np.where(allowed_p2, sub_cost, 1e6)
