@@ -1,0 +1,1330 @@
+{
+  "disposition": "proposal_assay_only_no_submission",
+  "source_run": "b0970-prepare-005",
+  "probe_run": "b0970-probe-008",
+  "recipe": {
+    "schema_version": 1,
+    "scope": "proposal_assay_only_no_submission",
+    "source_run": "b0970-prepare-005",
+    "probe_run": "b0970-probe-008",
+    "parent_science_sha256": "1f247f86045ab6473696bd70f1fe15c12bd7e25141f90010408e64780d4078f0",
+    "radius_um": 12.0,
+    "max_children": 6,
+    "max_pairs_per_dataset": 1000000,
+    "batch_size": 4096,
+    "threshold": 0.8,
+    "child_selection": "physical_distance_then_local_id",
+    "parent_occupancy_filter": false,
+    "neural_prior_filter": false,
+    "source_sha256": {
+      "b0970-prepare-005": {
+        "cache-development/cache.json": "41d63d0cf8d1efed79c5d7c71edccc6c55d4f68a01d46e9d6581250dc46cbb4a",
+        "cache-development/reference.csv": "aa3caaddd53391f94b5802953e9a719f554f888712e431e64cc873f6d0ce0aba",
+        "cache-development/raw/44b6_c50204e0.json": "355d8b104d8ee867df9bf544af687eafa1aaec1753fcbc6ca738de9d24229c4b",
+        "cache-development/raw/44b6_c50204e0_candidates.npz": "74cb1a675e226e5ae09ea55a7c6ca6e315913cb202891dbb6f4fe4f56add67bc",
+        "cache-development/raw/44b6_d5e7d891.json": "f864efd77e80d529ed2e475e0c5fcd86cf868a264ab8a3792508f2aa6ab75fe1",
+        "cache-development/raw/44b6_d5e7d891_candidates.npz": "69988c3afd2ab1e26c68667f3dfd7cd4720222acea1d6ebc939215f58ca96e85",
+        "cache-development/raw/44b6_ddf577ad.json": "c706ef92a464dc1e45cd34ad78ec0ec3b14a3131c412b9b8b196168343d7f472",
+        "cache-development/raw/44b6_ddf577ad_candidates.npz": "7f1ce51b3fc1611d3aec8b869c20c4e55f2c13a98e65434bc6919f02a50e96b7",
+        "cache-development/raw/44b6_e57ff5c6.json": "94788db494ffd419f6419d31e783f2932b69a9c4934c8213d17155ad6ba61f32",
+        "cache-development/raw/44b6_e57ff5c6_candidates.npz": "1707cc695cf3eef41231d79332f03c8ed02f7ac157bb16e86394d7a7bed4005b",
+        "cache-development/raw/6bba_07e24132.json": "b175e1d26bdf757b5c5b4e1aeb5cdb62666e5ec173ce6aaf246c24b2cef3f39a",
+        "cache-development/raw/6bba_07e24132_candidates.npz": "d2f7f0c3230a3de059f829731acb890ff5459afdb028eb35b4261e5695021708",
+        "cache-development/raw/6bba_09961292.json": "cae0bbfb9a0798ded7e9150ba20f483fd8e8344b2ad29f9f87976a1a9d0ed37b",
+        "cache-development/raw/6bba_09961292_candidates.npz": "d129ccba9cbbf2ecfae5d4fd6cc1dea5ca81b73f91c2d6ebf344eebb6432c9e4",
+        "cache-development/raw/6bba_48816121.json": "9db66d892ce1bf692c3a512b6966e5f59f351ef4498ab140ee4d2292a299aed7",
+        "cache-development/raw/6bba_48816121_candidates.npz": "dd334f371195087f7bd7ba7e15efa53b7aee1c6f8b1355748db0e2aec6c47d93",
+        "cache-development/raw/6bba_5a4d9360.json": "674191eca4fee66031ac8a67c5bb5d6f44938ce13e1ee117e6c505bd9c1ce624",
+        "cache-development/raw/6bba_5a4d9360_candidates.npz": "41153a2851f7759496af64b432bccae82b8db61932bd1e3475e5c84c4007feab"
+      },
+      "b0970-probe-008": {
+        "receipt.json": "afffd4fed4bd81e2409df07045eb144cd8368de589ff44782ffe8d6b0f724bf8",
+        "probe.json": "ab7466b9358d74c05865ec818a78963c5385c65ad92f4c4394091dc825b6c576",
+        "models.json": "56c625f920a216c41ad50677f3bcc3b09329135b3370cca55359720f06cec1a4",
+        "train-44b6/geometry.json": "184ced8f92fd0c4adc42734295836e5bde8cec4f7ac74bef8d248769daa6e17d",
+        "train-6bba/geometry.json": "b3e6c1144002358e21073e90b340849bf8ab7c26b761517822c5de5227571c82"
+      }
+    }
+  },
+  "prediction_sha256": {
+    "44b6_c50204e0": "f98bc2e2e2638dccc4c452bf7b543208df98d41bbf6fb5171c2d0c2969a446a2",
+    "44b6_d5e7d891": "f069941a1c7392a031a146f80cea2d762a9e7ce288d1b20e2d20a9a2e698b134",
+    "44b6_ddf577ad": "d7709be3bc13caa336a593833f613a47b758559aacd66e351f24371de5a5bfb5",
+    "44b6_e57ff5c6": "282165e4ae401727faffb3aabb06ccaf09f65812c77957978176ddfa8efc401e",
+    "6bba_07e24132": "3de894a9686c0c7047f762eb84f22ed25cfb06a527accfd6f268323cae92a86e",
+    "6bba_09961292": "cbe92a0dfcb9e526c00e37a510a0e427e19446369185bca1ceb040f44e3608e9",
+    "6bba_48816121": "80aa19fb0ba5eeb4d4b121e8bc5d7f233ed0e32de0bd0302f95fb3c480840d65",
+    "6bba_5a4d9360": "a7aeed24c087cad0648ba884ce0a6008602cc44ad30250011131ad27bd5dda52"
+  },
+  "datasets": {
+    "44b6_c50204e0": {
+      "dataset": "44b6_c50204e0",
+      "evaluated_data_group": "44b6",
+      "probe_trained_on_group": "6bba",
+      "probe_sha256": "b3e6c1144002358e21073e90b340849bf8ab7c26b761517822c5de5227571c82",
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "scale_um": [
+        1.625,
+        0.40625,
+        0.40625
+      ],
+      "legacy_candidate_report": {
+        "matched_prior_nodes": 18693,
+        "anchor_nodes": 34696,
+        "candidate_edges": 155203,
+        "edges_without_neural_prior": 140880
+      },
+      "legacy_scored_pairs": 2399,
+      "geometric_pairs": 277611,
+      "topology_all_pairs": {
+        "additive_second_child": 3849,
+        "requires_reassignment": 273632,
+        "already_present": 129,
+        "new_two_child_fork": 1
+      },
+      "annotation": {
+        "total_pairs": 277611,
+        "unknown_pairs": 277586,
+        "unknown_at_frozen_threshold": 27,
+        "confirmed_only_metrics": {
+          "examples": 25,
+          "positive": 1,
+          "negative": 24,
+          "auroc": 1.0,
+          "balanced_bce": 0.49530055787074195,
+          "unweighted_bce": 0.5585840231336592,
+          "frozen_threshold": 0.8,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "tn": 24,
+          "positive_recall": 0.0,
+          "false_positive_rate": 0.0,
+          "precision": null,
+          "positive_scores": {
+            "count": 1,
+            "at_frozen_threshold": 0,
+            "quantiles": {
+              "min": 0.6527806073934747,
+              "p10": 0.6527806073934747,
+              "p50": 0.6527806073934747,
+              "p90": 0.6527806073934747,
+              "p99": 0.6527806073934747,
+              "max": 0.6527806073934747
+            }
+          },
+          "negative_scores": {
+            "count": 24,
+            "at_frozen_threshold": 0,
+            "quantiles": {
+              "min": 0.28000055188782624,
+              "p10": 0.30355344187454625,
+              "p50": 0.4155056470541939,
+              "p90": 0.5598886920042511,
+              "p99": 0.5737826061863514,
+              "max": 0.5738216397173274
+            }
+          },
+          "average_precision": 1.0,
+          "positive_prevalence": 0.04
+        }
+      },
+      "gt_sha256": "6d7565d2a787e36d537acbb7b1ca6391191c335b0bf3bf92080ac6e50ff64201",
+      "exact_gt_forks": [
+        {
+          "gt_ids": [
+            43,
+            45,
+            46
+          ],
+          "anchor_ids": [
+            7912,
+            8265,
+            8267
+          ],
+          "covered": true,
+          "legacy_scored": false,
+          "distances_um": [
+            8.295859754268994,
+            6.2541392543258905
+          ],
+          "edit_footprint": {
+            "kind": "requires_reassignment",
+            "remove_edges": [
+              [
+                7913,
+                8267
+              ],
+              [
+                7927,
+                8265
+              ]
+            ],
+            "add_edges": [
+              [
+                7912,
+                8265
+              ],
+              [
+                7912,
+                8267
+              ]
+            ]
+          },
+          "reason": "scored",
+          "logit": 0.631284260889305,
+          "score": 0.6527806073934748,
+          "rank_best": 1,
+          "rank_worst": 1,
+          "competing_pairs": 3,
+          "at_frozen_threshold": false
+        },
+        {
+          "gt_ids": [
+            186,
+            189,
+            190
+          ],
+          "anchor_ids": [
+            22189,
+            22565,
+            null
+          ],
+          "covered": false,
+          "legacy_scored": false,
+          "reason": "unmatched_endpoint"
+        }
+      ],
+      "coverage_reasons": {
+        "scored": 1,
+        "unmatched_endpoint": 1
+      }
+    },
+    "44b6_d5e7d891": {
+      "dataset": "44b6_d5e7d891",
+      "evaluated_data_group": "44b6",
+      "probe_trained_on_group": "6bba",
+      "probe_sha256": "b3e6c1144002358e21073e90b340849bf8ab7c26b761517822c5de5227571c82",
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "scale_um": [
+        1.625,
+        0.40625,
+        0.40625
+      ],
+      "legacy_candidate_report": {
+        "matched_prior_nodes": 23962,
+        "anchor_nodes": 41681,
+        "candidate_edges": 221341,
+        "edges_without_neural_prior": 201518
+      },
+      "legacy_scored_pairs": 3739,
+      "geometric_pairs": 418803,
+      "topology_all_pairs": {
+        "requires_reassignment": 414240,
+        "additive_second_child": 4409,
+        "already_present": 153,
+        "new_two_child_fork": 1
+      },
+      "annotation": {
+        "total_pairs": 418803,
+        "unknown_pairs": 418702,
+        "unknown_at_frozen_threshold": 45,
+        "confirmed_only_metrics": {
+          "examples": 101,
+          "positive": 2,
+          "negative": 99,
+          "auroc": 0.8282828282828283,
+          "balanced_bce": 0.6335268778657079,
+          "unweighted_bce": 0.44125481380486514,
+          "frozen_threshold": 0.8,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "tn": 99,
+          "positive_recall": 0.0,
+          "false_positive_rate": 0.0,
+          "precision": null,
+          "positive_scores": {
+            "count": 2,
+            "at_frozen_threshold": 0,
+            "quantiles": {
+              "min": 0.40846184934893515,
+              "p10": 0.4138199046282994,
+              "p50": 0.43525212574575617,
+              "p90": 0.45668434686321296,
+              "p99": 0.4615065966146408,
+              "max": 0.4620424021425772
+            }
+          },
+          "negative_scores": {
+            "count": 99,
+            "at_frozen_threshold": 0,
+            "quantiles": {
+              "min": 0.19709828878966798,
+              "p10": 0.24267650813803918,
+              "p50": 0.3452380087698074,
+              "p90": 0.4611912799399109,
+              "p99": 0.5056100823117452,
+              "max": 0.544575727030585
+            }
+          },
+          "average_precision": 0.08391608391608392,
+          "positive_prevalence": 0.019801980198019802
+        }
+      },
+      "gt_sha256": "273d346cf1549161e94604efda9c303ea6b29be7470def7f390d4e8359c650cd",
+      "exact_gt_forks": [
+        {
+          "gt_ids": [
+            86,
+            95,
+            96
+          ],
+          "anchor_ids": [
+            3597,
+            3934,
+            3897
+          ],
+          "covered": true,
+          "legacy_scored": false,
+          "distances_um": [
+            9.81747485354559,
+            5.859020822628983
+          ],
+          "edit_footprint": {
+            "kind": "requires_reassignment",
+            "remove_edges": [
+              [
+                3597,
+                3955
+              ],
+              [
+                41202,
+                3897
+              ]
+            ],
+            "add_edges": [
+              [
+                3597,
+                3897
+              ],
+              [
+                3597,
+                3934
+              ]
+            ]
+          },
+          "reason": "scored",
+          "logit": -0.15212307626471633,
+          "score": 0.46204240214257714,
+          "rank_best": 7,
+          "rank_worst": 7,
+          "competing_pairs": 15,
+          "at_frozen_threshold": false
+        },
+        {
+          "gt_ids": [
+            456,
+            465,
+            466
+          ],
+          "anchor_ids": [
+            17103,
+            17556,
+            17535
+          ],
+          "covered": true,
+          "legacy_scored": false,
+          "distances_um": [
+            2.333728575156074,
+            8.002196963959335
+          ],
+          "edit_footprint": {
+            "kind": "requires_reassignment",
+            "remove_edges": [
+              [
+                17123,
+                17556
+              ]
+            ],
+            "add_edges": [
+              [
+                17103,
+                17556
+              ]
+            ]
+          },
+          "reason": "scored",
+          "logit": -0.3703276615885686,
+          "score": 0.4084618493489352,
+          "rank_best": 6,
+          "rank_worst": 6,
+          "competing_pairs": 10,
+          "at_frozen_threshold": false
+        }
+      ],
+      "coverage_reasons": {
+        "scored": 2
+      }
+    },
+    "44b6_ddf577ad": {
+      "dataset": "44b6_ddf577ad",
+      "evaluated_data_group": "44b6",
+      "probe_trained_on_group": "6bba",
+      "probe_sha256": "b3e6c1144002358e21073e90b340849bf8ab7c26b761517822c5de5227571c82",
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "scale_um": [
+        1.625,
+        0.40625,
+        0.40625
+      ],
+      "legacy_candidate_report": {
+        "matched_prior_nodes": 22848,
+        "anchor_nodes": 35711,
+        "candidate_edges": 168646,
+        "edges_without_neural_prior": 147378
+      },
+      "legacy_scored_pairs": 4293,
+      "geometric_pairs": 298358,
+      "topology_all_pairs": {
+        "requires_reassignment": 295474,
+        "additive_second_child": 2789,
+        "already_present": 95
+      },
+      "annotation": {
+        "total_pairs": 298358,
+        "unknown_pairs": 298191,
+        "unknown_at_frozen_threshold": 21,
+        "confirmed_only_metrics": {
+          "examples": 167,
+          "positive": 0,
+          "negative": 167,
+          "auroc": null,
+          "balanced_bce": null,
+          "unweighted_bce": 0.5393193414022497,
+          "frozen_threshold": 0.8,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 167,
+          "positive_recall": null,
+          "false_positive_rate": 0.0,
+          "precision": null,
+          "positive_scores": {
+            "count": 0,
+            "at_frozen_threshold": 0,
+            "quantiles": null
+          },
+          "negative_scores": {
+            "count": 167,
+            "at_frozen_threshold": 0,
+            "quantiles": {
+              "min": 0.22369771960063525,
+              "p10": 0.27859829030095107,
+              "p50": 0.3924756206686515,
+              "p90": 0.5470182799672227,
+              "p99": 0.7071892956244642,
+              "max": 0.7196704033052754
+            }
+          },
+          "average_precision": null,
+          "positive_prevalence": 0.0
+        }
+      },
+      "gt_sha256": "6800c6e34bb2b7b6f86a0f81810c54c416ae00944e78581d9011099c3bbd3b86",
+      "exact_gt_forks": [],
+      "coverage_reasons": {}
+    },
+    "44b6_e57ff5c6": {
+      "dataset": "44b6_e57ff5c6",
+      "evaluated_data_group": "44b6",
+      "probe_trained_on_group": "6bba",
+      "probe_sha256": "b3e6c1144002358e21073e90b340849bf8ab7c26b761517822c5de5227571c82",
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "scale_um": [
+        1.625,
+        0.40625,
+        0.40625
+      ],
+      "legacy_candidate_report": {
+        "matched_prior_nodes": 5653,
+        "anchor_nodes": 15455,
+        "candidate_edges": 48182,
+        "edges_without_neural_prior": 44786
+      },
+      "legacy_scored_pairs": 416,
+      "geometric_pairs": 66462,
+      "topology_all_pairs": {
+        "additive_second_child": 1440,
+        "requires_reassignment": 64965,
+        "already_present": 57
+      },
+      "annotation": {
+        "total_pairs": 66462,
+        "unknown_pairs": 66462,
+        "unknown_at_frozen_threshold": 5,
+        "confirmed_only_metrics": {
+          "examples": 0,
+          "positive": 0,
+          "negative": 0,
+          "auroc": null,
+          "balanced_bce": null,
+          "unweighted_bce": null,
+          "frozen_threshold": 0.8,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 0,
+          "positive_recall": null,
+          "false_positive_rate": null,
+          "precision": null,
+          "positive_scores": {
+            "count": 0,
+            "at_frozen_threshold": 0,
+            "quantiles": null
+          },
+          "negative_scores": {
+            "count": 0,
+            "at_frozen_threshold": 0,
+            "quantiles": null
+          },
+          "average_precision": null,
+          "positive_prevalence": null
+        }
+      },
+      "gt_sha256": "ba8e6e208fdafdddeb067d8fc11ac545be11ebf36924c95fa2aca0bc4ef67814",
+      "exact_gt_forks": [],
+      "coverage_reasons": {}
+    },
+    "6bba_07e24132": {
+      "dataset": "6bba_07e24132",
+      "evaluated_data_group": "6bba",
+      "probe_trained_on_group": "44b6",
+      "probe_sha256": "184ced8f92fd0c4adc42734295836e5bde8cec4f7ac74bef8d248769daa6e17d",
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "scale_um": [
+        1.625,
+        0.40625,
+        0.40625
+      ],
+      "legacy_candidate_report": {
+        "matched_prior_nodes": 15918,
+        "anchor_nodes": 24201,
+        "candidate_edges": 94509,
+        "edges_without_neural_prior": 78634
+      },
+      "legacy_scored_pairs": 3978,
+      "geometric_pairs": 158438,
+      "topology_all_pairs": {
+        "requires_reassignment": 156619,
+        "additive_second_child": 1773,
+        "already_present": 46
+      },
+      "annotation": {
+        "total_pairs": 158438,
+        "unknown_pairs": 158393,
+        "unknown_at_frozen_threshold": 743,
+        "confirmed_only_metrics": {
+          "examples": 45,
+          "positive": 2,
+          "negative": 43,
+          "auroc": 0.5581395348837209,
+          "balanced_bce": 0.6967245903516961,
+          "unweighted_bce": 0.4388744618682764,
+          "frozen_threshold": 0.8,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "tn": 43,
+          "positive_recall": 0.0,
+          "false_positive_rate": 0.0,
+          "precision": null,
+          "positive_scores": {
+            "count": 2,
+            "at_frozen_threshold": 0,
+            "quantiles": {
+              "min": 0.24541085667409776,
+              "p10": 0.2782976587820739,
+              "p50": 0.4098448672139784,
+              "p90": 0.5413920756458829,
+              "p99": 0.5709901975430614,
+              "max": 0.574278877753859
+            }
+          },
+          "negative_scores": {
+            "count": 43,
+            "at_frozen_threshold": 0,
+            "quantiles": {
+              "min": 0.18719309520858923,
+              "p10": 0.2091040268557972,
+              "p50": 0.3191667402838374,
+              "p90": 0.4672992245704434,
+              "p99": 0.5704711023318978,
+              "max": 0.6205836880186881
+            }
+          },
+          "average_precision": 0.27564102564102566,
+          "positive_prevalence": 0.044444444444444446
+        }
+      },
+      "gt_sha256": "9f724a319fe4e8fe9b21e0979a5a28ffd541c59c7c3088f89d050b76412bb6bd",
+      "exact_gt_forks": [
+        {
+          "gt_ids": [
+            300,
+            301,
+            306
+          ],
+          "anchor_ids": [
+            8599,
+            8851,
+            8831
+          ],
+          "covered": true,
+          "legacy_scored": false,
+          "distances_um": [
+            10.915960934567327,
+            0.5745242597140698
+          ],
+          "edit_footprint": {
+            "kind": "requires_reassignment",
+            "remove_edges": [
+              [
+                8579,
+                8831
+              ]
+            ],
+            "add_edges": [
+              [
+                8599,
+                8831
+              ]
+            ]
+          },
+          "reason": "scored",
+          "logit": -1.123239648079533,
+          "score": 0.2454108566740978,
+          "rank_best": 6,
+          "rank_worst": 6,
+          "competing_pairs": 6,
+          "at_frozen_threshold": false
+        },
+        {
+          "gt_ids": [
+            324,
+            322,
+            323
+          ],
+          "anchor_ids": [
+            15698,
+            15940,
+            15953
+          ],
+          "covered": true,
+          "legacy_scored": false,
+          "distances_um": [
+            6.397631397634597,
+            1.9902104160113323
+          ],
+          "edit_footprint": {
+            "kind": "additive_second_child",
+            "remove_edges": [],
+            "add_edges": [
+              [
+                15698,
+                15940
+              ]
+            ]
+          },
+          "reason": "scored",
+          "logit": 0.299330638795554,
+          "score": 0.574278877753859,
+          "rank_best": 1,
+          "rank_worst": 1,
+          "competing_pairs": 15,
+          "at_frozen_threshold": false
+        }
+      ],
+      "coverage_reasons": {
+        "scored": 2
+      }
+    },
+    "6bba_09961292": {
+      "dataset": "6bba_09961292",
+      "evaluated_data_group": "6bba",
+      "probe_trained_on_group": "44b6",
+      "probe_sha256": "184ced8f92fd0c4adc42734295836e5bde8cec4f7ac74bef8d248769daa6e17d",
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "scale_um": [
+        1.625,
+        0.40625,
+        0.40625
+      ],
+      "legacy_candidate_report": {
+        "matched_prior_nodes": 19662,
+        "anchor_nodes": 29462,
+        "candidate_edges": 165385,
+        "edges_without_neural_prior": 146646
+      },
+      "legacy_scored_pairs": 3868,
+      "geometric_pairs": 322118,
+      "topology_all_pairs": {
+        "requires_reassignment": 320299,
+        "additive_second_child": 1774,
+        "already_present": 45
+      },
+      "annotation": {
+        "total_pairs": 322118,
+        "unknown_pairs": 321746,
+        "unknown_at_frozen_threshold": 1634,
+        "confirmed_only_metrics": {
+          "examples": 372,
+          "positive": 3,
+          "negative": 369,
+          "auroc": 0.9250225835591689,
+          "balanced_bce": 0.49574140840695013,
+          "unweighted_bce": 0.3996141496811986,
+          "frozen_threshold": 0.8,
+          "tp": 0,
+          "fp": 1,
+          "fn": 3,
+          "tn": 368,
+          "positive_recall": 0.0,
+          "false_positive_rate": 0.0027100271002710027,
+          "precision": 0.0,
+          "positive_scores": {
+            "count": 3,
+            "at_frozen_threshold": 0,
+            "quantiles": {
+              "min": 0.408745144742272,
+              "p10": 0.43938161007296406,
+              "p50": 0.5619274713957323,
+              "p90": 0.6995611881599545,
+              "p99": 0.7305287744319046,
+              "max": 0.7339696173510101
+            }
+          },
+          "negative_scores": {
+            "count": 369,
+            "at_frozen_threshold": 1,
+            "quantiles": {
+              "min": 0.1623027261636397,
+              "p10": 0.21129905055244644,
+              "p50": 0.2783043895207917,
+              "p90": 0.4937828547742747,
+              "p99": 0.7583691830409203,
+              "max": 0.8044536338598626
+            }
+          },
+          "average_precision": 0.09946360153256706,
+          "positive_prevalence": 0.008064516129032258
+        }
+      },
+      "gt_sha256": "6832b61837b890dd2ceb253a21fe251aee764b619cc6f82b47f5b5dcf015d97a",
+      "exact_gt_forks": [
+        {
+          "gt_ids": [
+            626,
+            652,
+            1920
+          ],
+          "anchor_ids": [
+            7648,
+            8011,
+            null
+          ],
+          "covered": false,
+          "legacy_scored": false,
+          "reason": "unmatched_endpoint"
+        },
+        {
+          "gt_ids": [
+            1022,
+            1929,
+            1930
+          ],
+          "anchor_ids": [
+            13384,
+            13673,
+            13630
+          ],
+          "covered": true,
+          "legacy_scored": false,
+          "distances_um": [
+            2.333728575156074,
+            2.9295104113144914
+          ],
+          "edit_footprint": {
+            "kind": "already_present",
+            "remove_edges": [],
+            "add_edges": []
+          },
+          "reason": "scored",
+          "logit": 1.0148571117590754,
+          "score": 0.73396961735101,
+          "rank_best": 1,
+          "rank_worst": 1,
+          "competing_pairs": 15,
+          "at_frozen_threshold": false
+        },
+        {
+          "gt_ids": [
+            1143,
+            1931,
+            1932
+          ],
+          "anchor_ids": [
+            15614,
+            15893,
+            15891
+          ],
+          "covered": true,
+          "legacy_scored": false,
+          "distances_um": [
+            5.859020822628983,
+            0.9084026158592896
+          ],
+          "edit_footprint": {
+            "kind": "requires_reassignment",
+            "remove_edges": [
+              [
+                15612,
+                15891
+              ]
+            ],
+            "add_edges": [
+              [
+                15614,
+                15891
+              ]
+            ]
+          },
+          "reason": "scored",
+          "logit": 0.24898830002088757,
+          "score": 0.5619274713957323,
+          "rank_best": 6,
+          "rank_worst": 6,
+          "competing_pairs": 15,
+          "at_frozen_threshold": false
+        },
+        {
+          "gt_ids": [
+            1945,
+            1946,
+            1947
+          ],
+          "anchor_ids": [
+            14537,
+            14835,
+            14793
+          ],
+          "covered": true,
+          "legacy_scored": false,
+          "distances_um": [
+            9.201360717986226,
+            1.8168052317185792
+          ],
+          "edit_footprint": {
+            "kind": "requires_reassignment",
+            "remove_edges": [
+              [
+                14525,
+                14793
+              ]
+            ],
+            "add_edges": [
+              [
+                14537,
+                14793
+              ]
+            ]
+          },
+          "reason": "scored",
+          "logit": -0.3691553077902724,
+          "score": 0.4087451447422721,
+          "rank_best": 9,
+          "rank_worst": 9,
+          "competing_pairs": 15,
+          "at_frozen_threshold": false
+        }
+      ],
+      "coverage_reasons": {
+        "unmatched_endpoint": 1,
+        "scored": 3
+      }
+    },
+    "6bba_48816121": {
+      "dataset": "6bba_48816121",
+      "evaluated_data_group": "6bba",
+      "probe_trained_on_group": "44b6",
+      "probe_sha256": "184ced8f92fd0c4adc42734295836e5bde8cec4f7ac74bef8d248769daa6e17d",
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "scale_um": [
+        1.625,
+        0.40625,
+        0.40625
+      ],
+      "legacy_candidate_report": {
+        "matched_prior_nodes": 13756,
+        "anchor_nodes": 25154,
+        "candidate_edges": 77717,
+        "edges_without_neural_prior": 67416
+      },
+      "legacy_scored_pairs": 1190,
+      "geometric_pairs": 100186,
+      "topology_all_pairs": {
+        "requires_reassignment": 99272,
+        "additive_second_child": 853,
+        "already_present": 61
+      },
+      "annotation": {
+        "total_pairs": 100186,
+        "unknown_pairs": 100133,
+        "unknown_at_frozen_threshold": 417,
+        "confirmed_only_metrics": {
+          "examples": 53,
+          "positive": 3,
+          "negative": 50,
+          "auroc": 0.8866666666666667,
+          "balanced_bce": 0.573581496481664,
+          "unweighted_bce": 0.41532114461240566,
+          "frozen_threshold": 0.8,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "tn": 50,
+          "positive_recall": 0.0,
+          "false_positive_rate": 0.0,
+          "precision": null,
+          "positive_scores": {
+            "count": 3,
+            "at_frozen_threshold": 0,
+            "quantiles": {
+              "min": 0.41270081638657335,
+              "p10": 0.42112808030859805,
+              "p50": 0.45483713599669673,
+              "p90": 0.5374159334540995,
+              "p99": 0.5559961628820151,
+              "max": 0.5580606328184502
+            }
+          },
+          "negative_scores": {
+            "count": 50,
+            "at_frozen_threshold": 0,
+            "quantiles": {
+              "min": 0.18304632888367278,
+              "p10": 0.2143795965914839,
+              "p50": 0.28982244270375934,
+              "p90": 0.45340113285248557,
+              "p99": 0.5893469446885959,
+              "max": 0.595717383000631
+            }
+          },
+          "average_precision": 0.28327228327228327,
+          "positive_prevalence": 0.05660377358490566
+        }
+      },
+      "gt_sha256": "50c4659469790f39c6943cbd43379a8d04242c2e8a70ac317933ac4a99d87ee7",
+      "exact_gt_forks": [
+        {
+          "gt_ids": [
+            21,
+            910,
+            911
+          ],
+          "anchor_ids": [
+            1508,
+            1814,
+            1790
+          ],
+          "covered": true,
+          "legacy_scored": false,
+          "distances_um": [
+            2.03125,
+            6.797862715589364
+          ],
+          "edit_footprint": {
+            "kind": "already_present",
+            "remove_edges": [],
+            "add_edges": []
+          },
+          "reason": "scored",
+          "logit": 0.23329492309749433,
+          "score": 0.5580606328184502,
+          "rank_best": 1,
+          "rank_worst": 1,
+          "competing_pairs": 1,
+          "at_frozen_threshold": false
+        },
+        {
+          "gt_ids": [
+            46,
+            49,
+            50
+          ],
+          "anchor_ids": [
+            3322,
+            3607,
+            3646
+          ],
+          "covered": true,
+          "legacy_scored": false,
+          "distances_um": [
+            1.7235727791422095,
+            9.228226061925445
+          ],
+          "edit_footprint": {
+            "kind": "additive_second_child",
+            "remove_edges": [],
+            "add_edges": [
+              [
+                3322,
+                3646
+              ]
+            ]
+          },
+          "reason": "scored",
+          "logit": -0.3528114575436883,
+          "score": 0.41270081638657335,
+          "rank_best": 11,
+          "rank_worst": 11,
+          "competing_pairs": 15,
+          "at_frozen_threshold": false
+        },
+        {
+          "gt_ids": [
+            76,
+            79,
+            80
+          ],
+          "anchor_ids": [
+            4822,
+            5099,
+            5178
+          ],
+          "covered": false,
+          "legacy_scored": false,
+          "distances_um": [
+            10.476210028559947,
+            15.713002179723645
+          ],
+          "edit_footprint": {
+            "kind": "requires_reassignment",
+            "remove_edges": [
+              [
+                4822,
+                5147
+              ],
+              [
+                4875,
+                5178
+              ]
+            ],
+            "add_edges": [
+              [
+                4822,
+                5099
+              ],
+              [
+                4822,
+                5178
+              ]
+            ]
+          },
+          "reason": "outside_radius"
+        },
+        {
+          "gt_ids": [
+            458,
+            470,
+            918
+          ],
+          "anchor_ids": [
+            15768,
+            16024,
+            16004
+          ],
+          "covered": true,
+          "legacy_scored": false,
+          "distances_um": [
+            3.5648292823780494,
+            10.663578858080433
+          ],
+          "edit_footprint": {
+            "kind": "requires_reassignment",
+            "remove_edges": [
+              [
+                15789,
+                16024
+              ]
+            ],
+            "add_edges": [
+              [
+                15768,
+                16024
+              ]
+            ]
+          },
+          "reason": "scored",
+          "logit": -0.18114517104542088,
+          "score": 0.4548371359966968,
+          "rank_best": 4,
+          "rank_worst": 4,
+          "competing_pairs": 6,
+          "at_frozen_threshold": false
+        },
+        {
+          "gt_ids": [
+            499,
+            924,
+            925
+          ],
+          "anchor_ids": [
+            16662,
+            null,
+            16899
+          ],
+          "covered": false,
+          "legacy_scored": false,
+          "reason": "unmatched_endpoint"
+        }
+      ],
+      "coverage_reasons": {
+        "scored": 3,
+        "outside_radius": 1,
+        "unmatched_endpoint": 1
+      }
+    },
+    "6bba_5a4d9360": {
+      "dataset": "6bba_5a4d9360",
+      "evaluated_data_group": "6bba",
+      "probe_trained_on_group": "44b6",
+      "probe_sha256": "184ced8f92fd0c4adc42734295836e5bde8cec4f7ac74bef8d248769daa6e17d",
+      "shape": [
+        100,
+        64,
+        256,
+        256
+      ],
+      "scale_um": [
+        1.625,
+        0.40625,
+        0.40625
+      ],
+      "legacy_candidate_report": {
+        "matched_prior_nodes": 2771,
+        "anchor_nodes": 5567,
+        "candidate_edges": 8440,
+        "edges_without_neural_prior": 6539
+      },
+      "legacy_scored_pairs": 73,
+      "geometric_pairs": 3282,
+      "topology_all_pairs": {
+        "requires_reassignment": 3134,
+        "additive_second_child": 142,
+        "already_present": 5,
+        "new_two_child_fork": 1
+      },
+      "annotation": {
+        "total_pairs": 3282,
+        "unknown_pairs": 3281,
+        "unknown_at_frozen_threshold": 11,
+        "confirmed_only_metrics": {
+          "examples": 1,
+          "positive": 0,
+          "negative": 1,
+          "auroc": null,
+          "balanced_bce": null,
+          "unweighted_bce": 0.5931895429116815,
+          "frozen_threshold": 0.8,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1,
+          "positive_recall": null,
+          "false_positive_rate": 0.0,
+          "precision": null,
+          "positive_scores": {
+            "count": 0,
+            "at_frozen_threshold": 0,
+            "quantiles": null
+          },
+          "negative_scores": {
+            "count": 1,
+            "at_frozen_threshold": 0,
+            "quantiles": {
+              "min": 0.44743794928593683,
+              "p10": 0.44743794928593683,
+              "p50": 0.44743794928593683,
+              "p90": 0.44743794928593683,
+              "p99": 0.44743794928593683,
+              "max": 0.44743794928593683
+            }
+          },
+          "average_precision": null,
+          "positive_prevalence": 0.0
+        }
+      },
+      "gt_sha256": "edde9720ad1f0dba59de90d3b49fd77cf70fa646015fd0d4f99032569edbf569",
+      "exact_gt_forks": [],
+      "coverage_reasons": {}
+    }
+  },
+  "by_group": {
+    "44b6": {
+      "total_pairs": 1061234,
+      "unknown_pairs": 1060941,
+      "unknown_at_frozen_threshold": 98,
+      "confirmed_only_metrics": {
+        "examples": 293,
+        "positive": 3,
+        "negative": 290,
+        "auroc": 0.7908045977011494,
+        "balanced_bce": 0.6015875074749036,
+        "unweighted_bce": 0.507159272309927,
+        "frozen_threshold": 0.8,
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "tn": 290,
+        "positive_recall": 0.0,
+        "false_positive_rate": 0.0,
+        "precision": null,
+        "positive_scores": {
+          "count": 3,
+          "at_frozen_threshold": 0,
+          "quantiles": {
+            "min": 0.40846184934893515,
+            "p10": 0.41917795990766354,
+            "p50": 0.4620424021425772,
+            "p90": 0.6146329663432952,
+            "p99": 0.6489658432884567,
+            "max": 0.6527806073934747
+          }
+        },
+        "negative_scores": {
+          "count": 290,
+          "at_frozen_threshold": 0,
+          "quantiles": {
+            "min": 0.19709828878966798,
+            "p10": 0.26591539084549703,
+            "p50": 0.3753293229103577,
+            "p90": 0.5265989677494128,
+            "p99": 0.6905394314293565,
+            "max": 0.7196704033052754
+          }
+        },
+        "average_precision": 0.0741314069487444,
+        "positive_prevalence": 0.010238907849829351
+      },
+      "exact_gt_forks": 4,
+      "covered_gt_forks": 3,
+      "legacy_covered_gt_forks": 0,
+      "unique_top1_gt_forks": 1,
+      "covered_nonpresent_gt_forks": 3,
+      "coverage_reasons": {
+        "scored": 3,
+        "unmatched_endpoint": 1
+      }
+    },
+    "6bba": {
+      "total_pairs": 584024,
+      "unknown_pairs": 583553,
+      "unknown_at_frozen_threshold": 2805,
+      "confirmed_only_metrics": {
+        "examples": 471,
+        "positive": 8,
+        "negative": 463,
+        "auroc": 0.833963282937365,
+        "balanced_bce": 0.5745460121307866,
+        "unweighted_bce": 0.40554357680010084,
+        "frozen_threshold": 0.8,
+        "tp": 0,
+        "fp": 1,
+        "fn": 8,
+        "tn": 462,
+        "positive_recall": 0.0,
+        "false_positive_rate": 0.0021598272138228943,
+        "precision": 0.0,
+        "positive_scores": {
+          "count": 8,
+          "at_frozen_threshold": 0,
+          "quantiles": {
+            "min": 0.24541085667409776,
+            "p10": 0.35974485832181974,
+            "p50": 0.5064488844075734,
+            "p90": 0.6221860996330043,
+            "p99": 0.7227912655792095,
+            "max": 0.7339696173510101
+          }
+        },
+        "negative_scores": {
+          "count": 463,
+          "at_frozen_threshold": 1,
+          "quantiles": {
+            "min": 0.1623027261636397,
+            "p10": 0.21124043063656076,
+            "p50": 0.28534486819510085,
+            "p90": 0.4864647811266178,
+            "p99": 0.7414759676945402,
+            "max": 0.8044536338598626
+          }
+        },
+        "average_precision": 0.09384792204181197,
+        "positive_prevalence": 0.016985138004246284
+      },
+      "exact_gt_forks": 11,
+      "covered_gt_forks": 8,
+      "legacy_covered_gt_forks": 0,
+      "unique_top1_gt_forks": 3,
+      "covered_nonpresent_gt_forks": 6,
+      "coverage_reasons": {
+        "scored": 8,
+        "unmatched_endpoint": 2,
+        "outside_radius": 1
+      }
+    }
+  },
+  "source_unchanged": true,
+  "confirmation_evaluated": false,
+  "tracking_evaluated": false,
+  "graph_modified": false,
+  "threshold_selected": false,
+  "kaggle_score": null,
+  "scope": "development_reference_coordinates_exact_forks_not_official_tracking_score"
+}

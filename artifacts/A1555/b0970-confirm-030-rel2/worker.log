@@ -1,0 +1,51 @@
+Starting Campaign 030 (Confirmation Gate) on A1555 across 8 confirmation datasets...
+[09/14/26 07:42:21] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [44b6_2a2eff9f] ref_adj_edge=0.90463, cand_adj_edge=0.90011, delta=-0.00452, z_spikes=475, pruned=22
+[09/14/26 07:42:23] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [44b6_587a1e22] ref_adj_edge=0.87455, cand_adj_edge=0.87455, delta=+0.00000, z_spikes=338, pruned=4
+[09/14/26 07:42:25] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [44b6_c15fded2] ref_adj_edge=0.79587, cand_adj_edge=0.79587, delta=+0.00000, z_spikes=751, pruned=5
+[09/14/26 07:42:26] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [44b6_d2f34f90] ref_adj_edge=0.99712, cand_adj_edge=0.99712, delta=+0.00000, z_spikes=344, pruned=14
+[09/14/26 07:42:28] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [6bba_062c8d37] ref_adj_edge=0.98820, cand_adj_edge=0.98820, delta=+0.00000, z_spikes=165, pruned=2
+                    WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [6bba_afb141ff] ref_adj_edge=0.94062, cand_adj_edge=0.94062, delta=+0.00000, z_spikes=103, pruned=0
+[09/14/26 07:42:29] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [6bba_bb9f20c3] ref_adj_edge=0.91352, cand_adj_edge=0.91352, delta=+0.00000, z_spikes=496, pruned=1
+[09/14/26 07:42:32] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [6bba_df673a83] ref_adj_edge=0.96387, cand_adj_edge=0.96387, delta=+0.00000, z_spikes=814, pruned=2
+Confirmation Result: score=0.952844 (ref=0.952252, delta=+0.000592), gate_passed=False
+Campaign 030 completed in 17.8s. Disposition: rejected_no_kaggle_submission

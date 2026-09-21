@@ -1,8 +1,0 @@
-{
-  "experiments/EXP-031_Detector_First_ILP_Preservado/experiment.json": "737eb324125af3ee629f502fc2b6bd46e8b68489c92c50ee8ae92b4ce09d011d",
-  "experiments/EXP-031_Detector_First_ILP_Preservado/train.py": "d540a9d90910c3c2f345e633687b86ee55ecf7517ba8076cecf2464c5769e101",
-  "infra/experiment_worker.py": "a41e679a7e3516846bc9c4000753370f106fdf9dc5267f90861ad8b3f7580777",
-  "infra/experimentlib.py": "c2b215de45eb0df6e22f4b286ccbc7d7fc9d3654925b01e1801242eb19436684",
-  "official_starter_kit/scripts/train_unet_transformer.py": "e156825f9e6bc391a8571b157fd9c9f766616f34f259d7be3df3d948f8f83025",
-  "src/strategies/experiment_runtime.py": "2ce5b411efc3ffda62865d9d463ed6383589ad5957cf9ddca14c0c93c42a3539"
-}

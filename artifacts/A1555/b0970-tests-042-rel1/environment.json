@@ -1,0 +1,32 @@
+{
+  "python": "/home/alumno1/miniconda3/envs/train-55/bin/python",
+  "code_hash": "1b601815023722f3447eca246288e976474d1721231b3531bf3b6de018bdaf38",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.1",
+    "torch": "2.13.0",
+    "zarr": "3.1.6",
+    "polars": "1.44.1",
+    "tracksdata": "0.1.0rc9",
+    "geff": "1.3.1.1.3",
+    "pyscipopt": "6.2.1",
+    "ilpy": "0.6.0",
+    "dask": "2026.8.0",
+    "tqdm": "4.70.0",
+    "pandas": "3.0.5",
+    "hoct": null
+  },
+  "disk_free_gib": 138.24853897094727,
+  "cpu": {
+    "mem_available_gib": 27.079391479492188,
+    "mem_total_gib": 31.085865020751953,
+    "load_1m": 1.197265625,
+    "host_logical_cpus": 28,
+    "allowed_cpus": [
+      26,
+      27
+    ]
+  },
+  "gpu": "NVIDIA GeForce RTX 4090, 1992 MiB, 73 %",
+  "gpu_processes": "117049, ray::RayWorkerProc.run, 21980 MiB"
+}

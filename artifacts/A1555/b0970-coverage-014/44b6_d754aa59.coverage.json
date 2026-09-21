@@ -1,0 +1,152 @@
+{
+  "dataset": "44b6_d754aa59",
+  "gt_forks": 1,
+  "stages": {
+    "covered_without_confirmed_contrast": 1
+  },
+  "endpoint_categories": {
+    "matched": 3
+  },
+  "events": [
+    {
+      "dataset": "44b6_d754aa59",
+      "gt_mother": 54,
+      "biological_event": "44b6_d754aa59:54",
+      "endpoints": [
+        {
+          "gt_id": 54,
+          "gt_tzyx": [
+            63.0,
+            32.0,
+            229.0,
+            109.0
+          ],
+          "matched_anchor_id": 3231,
+          "matched_distance_um": 2.4375,
+          "anchor": {
+            "nearest_id": 3231,
+            "distance_um": 2.4375,
+            "within_radius": 1,
+            "nearest_ties": [
+              3231
+            ]
+          },
+          "raw": {
+            "nearest_id": 3829,
+            "distance_um": 0.5745242597140698,
+            "within_radius": 1,
+            "nearest_ties": [
+              3829
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 54,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        },
+        {
+          "gt_id": 55,
+          "gt_tzyx": [
+            64.0,
+            29.0,
+            236.0,
+            102.0
+          ],
+          "matched_anchor_id": 3284,
+          "matched_distance_um": 2.9575446425202108,
+          "anchor": {
+            "nearest_id": 3284,
+            "distance_um": 2.9575446425202108,
+            "within_radius": 1,
+            "nearest_ties": [
+              3284
+            ]
+          },
+          "raw": {
+            "nearest_id": 3888,
+            "distance_um": 0.8125,
+            "within_radius": 1,
+            "nearest_ties": [
+              3888
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 55,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        },
+        {
+          "gt_id": 56,
+          "gt_tzyx": [
+            64.0,
+            35.0,
+            223.0,
+            114.0
+          ],
+          "matched_anchor_id": 3290,
+          "matched_distance_um": 2.4375,
+          "anchor": {
+            "nearest_id": 3290,
+            "distance_um": 2.4375,
+            "within_radius": 1,
+            "nearest_ties": [
+              3290
+            ]
+          },
+          "raw": {
+            "nearest_id": 3895,
+            "distance_um": 1.86167137607581,
+            "within_radius": 1,
+            "nearest_ties": [
+              3895
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 56,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        }
+      ],
+      "stage": "covered_without_confirmed_contrast",
+      "comparisons": {
+        "unknown": 3
+      },
+      "unknown_reasons": {
+        "unmapped_parent_detection": 4,
+        "unmapped_child_detection": 4
+      },
+      "target": [
+        3231,
+        3284,
+        3290
+      ],
+      "event": "44b6_d754aa59:3231",
+      "candidate_limits": [
+        {
+          "daughter": 3284,
+          "distance_um": 11.411214672965363,
+          "rank_all_next_frame": 3,
+          "outside_radius": false,
+          "outside_top_k": false
+        },
+        {
+          "daughter": 3290,
+          "distance_um": 1.86167137607581,
+          "rank_all_next_frame": 1,
+          "outside_radius": false,
+          "outside_top_k": false
+        }
+      ],
+      "reference_correct": false
+    }
+  ],
+  "matching_radius_um": 7.0,
+  "raw_scope": "saved_post_detector_candidates_before_global_ILP_and_postprocessing",
+  "exact_removal_stage_identified": false,
+  "matching_modified": false,
+  "graph_modified": false,
+  "gt_sha256": "08910efb12241480f5dc88883844241805a29d82649e916c83ca79691c481a95",
+  "event_stats": {
+    "unknown": 3,
+    "usable_events": 0,
+    "covered_gt_forks": 1
+  },
+  "confirmed_comparisons": []
+}

@@ -1,0 +1,161 @@
+{
+  "proposals": [
+    {
+      "mother": 836,
+      "daughters": [
+        895
+      ],
+      "gain": 0.8597950397340992,
+      "add": [],
+      "remove": [
+        [
+          836,
+          900
+        ]
+      ],
+      "affected_parents": [
+        836
+      ],
+      "touched_children": [
+        900
+      ]
+    },
+    {
+      "mother": 1394,
+      "daughters": [
+        1447
+      ],
+      "gain": 0.399767108432011,
+      "add": [],
+      "remove": [
+        [
+          1394,
+          1448
+        ]
+      ],
+      "affected_parents": [
+        1394
+      ],
+      "touched_children": [
+        1448
+      ]
+    },
+    {
+      "mother": 2272,
+      "daughters": [
+        2325
+      ],
+      "gain": 0.14664133163583706,
+      "add": [],
+      "remove": [
+        [
+          2272,
+          2324
+        ]
+      ],
+      "affected_parents": [
+        2272
+      ],
+      "touched_children": [
+        2324
+      ]
+    },
+    {
+      "mother": 3263,
+      "daughters": [
+        3315
+      ],
+      "gain": 0.5700047856074656,
+      "add": [],
+      "remove": [
+        [
+          3263,
+          3318
+        ]
+      ],
+      "affected_parents": [
+        3263
+      ],
+      "touched_children": [
+        3318
+      ]
+    },
+    {
+      "mother": 3269,
+      "daughters": [
+        3322,
+        3325
+      ],
+      "gain": 0.0197454124213505,
+      "add": [
+        [
+          3269,
+          3322
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        3269
+      ],
+      "touched_children": [
+        3322
+      ]
+    },
+    {
+      "mother": 4319,
+      "daughters": [
+        4371,
+        4375
+      ],
+      "gain": 0.06805034693645659,
+      "add": [
+        [
+          4319,
+          4375
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        4319
+      ],
+      "touched_children": [
+        4375
+      ]
+    },
+    {
+      "mother": 4923,
+      "daughters": [
+        4972,
+        4976
+      ],
+      "gain": 0.9152347729374078,
+      "add": [
+        [
+          4923,
+          4972
+        ],
+        [
+          4923,
+          4976
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        4923
+      ],
+      "touched_children": [
+        4972,
+        4976
+      ]
+    }
+  ],
+  "audit": {
+    "considered_alternatives": 3287,
+    "positive_best_mothers": 7,
+    "tied_mothers": 0,
+    "uses_gt_for_edits": false,
+    "frozen_reference_features": true
+  },
+  "trained_on": "44b6",
+  "model_sha256": "76219e5bfed65d83300ef36a5a59cae3a79da2978e7eceed780c15d08af35818"
+}

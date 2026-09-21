@@ -1,0 +1,74 @@
+{
+  "dataset": "6bba_5a4d9360",
+  "evaluated_data_group": "6bba",
+  "probe_trained_on_group": "44b6",
+  "probe_sha256": "184ced8f92fd0c4adc42734295836e5bde8cec4f7ac74bef8d248769daa6e17d",
+  "shape": [
+    100,
+    64,
+    256,
+    256
+  ],
+  "scale_um": [
+    1.625,
+    0.40625,
+    0.40625
+  ],
+  "legacy_candidate_report": {
+    "matched_prior_nodes": 2771,
+    "anchor_nodes": 5567,
+    "candidate_edges": 8440,
+    "edges_without_neural_prior": 6539
+  },
+  "legacy_scored_pairs": 73,
+  "geometric_pairs": 3282,
+  "topology_all_pairs": {
+    "requires_reassignment": 3134,
+    "additive_second_child": 142,
+    "already_present": 5,
+    "new_two_child_fork": 1
+  },
+  "annotation": {
+    "total_pairs": 3282,
+    "unknown_pairs": 3281,
+    "unknown_at_frozen_threshold": 11,
+    "confirmed_only_metrics": {
+      "examples": 1,
+      "positive": 0,
+      "negative": 1,
+      "auroc": null,
+      "balanced_bce": null,
+      "unweighted_bce": 0.5931895429116815,
+      "frozen_threshold": 0.8,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 1,
+      "positive_recall": null,
+      "false_positive_rate": 0.0,
+      "precision": null,
+      "positive_scores": {
+        "count": 0,
+        "at_frozen_threshold": 0,
+        "quantiles": null
+      },
+      "negative_scores": {
+        "count": 1,
+        "at_frozen_threshold": 0,
+        "quantiles": {
+          "min": 0.44743794928593683,
+          "p10": 0.44743794928593683,
+          "p50": 0.44743794928593683,
+          "p90": 0.44743794928593683,
+          "p99": 0.44743794928593683,
+          "max": 0.44743794928593683
+        }
+      },
+      "average_precision": null,
+      "positive_prevalence": 0.0
+    }
+  },
+  "gt_sha256": "edde9720ad1f0dba59de90d3b49fd77cf70fa646015fd0d4f99032569edbf569",
+  "exact_gt_forks": [],
+  "coverage_reasons": {}
+}

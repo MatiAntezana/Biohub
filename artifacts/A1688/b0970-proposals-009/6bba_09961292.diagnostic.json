@@ -1,0 +1,209 @@
+{
+  "dataset": "6bba_09961292",
+  "evaluated_data_group": "6bba",
+  "probe_trained_on_group": "44b6",
+  "probe_sha256": "184ced8f92fd0c4adc42734295836e5bde8cec4f7ac74bef8d248769daa6e17d",
+  "shape": [
+    100,
+    64,
+    256,
+    256
+  ],
+  "scale_um": [
+    1.625,
+    0.40625,
+    0.40625
+  ],
+  "legacy_candidate_report": {
+    "matched_prior_nodes": 19662,
+    "anchor_nodes": 29462,
+    "candidate_edges": 165385,
+    "edges_without_neural_prior": 146646
+  },
+  "legacy_scored_pairs": 3868,
+  "geometric_pairs": 322118,
+  "topology_all_pairs": {
+    "requires_reassignment": 320299,
+    "additive_second_child": 1774,
+    "already_present": 45
+  },
+  "annotation": {
+    "total_pairs": 322118,
+    "unknown_pairs": 321746,
+    "unknown_at_frozen_threshold": 1634,
+    "confirmed_only_metrics": {
+      "examples": 372,
+      "positive": 3,
+      "negative": 369,
+      "auroc": 0.9250225835591689,
+      "balanced_bce": 0.49574140840695013,
+      "unweighted_bce": 0.3996141496811986,
+      "frozen_threshold": 0.8,
+      "tp": 0,
+      "fp": 1,
+      "fn": 3,
+      "tn": 368,
+      "positive_recall": 0.0,
+      "false_positive_rate": 0.0027100271002710027,
+      "precision": 0.0,
+      "positive_scores": {
+        "count": 3,
+        "at_frozen_threshold": 0,
+        "quantiles": {
+          "min": 0.408745144742272,
+          "p10": 0.43938161007296406,
+          "p50": 0.5619274713957323,
+          "p90": 0.6995611881599545,
+          "p99": 0.7305287744319046,
+          "max": 0.7339696173510101
+        }
+      },
+      "negative_scores": {
+        "count": 369,
+        "at_frozen_threshold": 1,
+        "quantiles": {
+          "min": 0.1623027261636397,
+          "p10": 0.21129905055244644,
+          "p50": 0.2783043895207917,
+          "p90": 0.4937828547742747,
+          "p99": 0.7583691830409203,
+          "max": 0.8044536338598626
+        }
+      },
+      "average_precision": 0.09946360153256706,
+      "positive_prevalence": 0.008064516129032258
+    }
+  },
+  "gt_sha256": "6832b61837b890dd2ceb253a21fe251aee764b619cc6f82b47f5b5dcf015d97a",
+  "exact_gt_forks": [
+    {
+      "gt_ids": [
+        626,
+        652,
+        1920
+      ],
+      "anchor_ids": [
+        7648,
+        8011,
+        null
+      ],
+      "covered": false,
+      "legacy_scored": false,
+      "reason": "unmatched_endpoint"
+    },
+    {
+      "gt_ids": [
+        1022,
+        1929,
+        1930
+      ],
+      "anchor_ids": [
+        13384,
+        13673,
+        13630
+      ],
+      "covered": true,
+      "legacy_scored": false,
+      "distances_um": [
+        2.333728575156074,
+        2.9295104113144914
+      ],
+      "edit_footprint": {
+        "kind": "already_present",
+        "remove_edges": [],
+        "add_edges": []
+      },
+      "reason": "scored",
+      "logit": 1.0148571117590754,
+      "score": 0.73396961735101,
+      "rank_best": 1,
+      "rank_worst": 1,
+      "competing_pairs": 15,
+      "at_frozen_threshold": false
+    },
+    {
+      "gt_ids": [
+        1143,
+        1931,
+        1932
+      ],
+      "anchor_ids": [
+        15614,
+        15893,
+        15891
+      ],
+      "covered": true,
+      "legacy_scored": false,
+      "distances_um": [
+        5.859020822628983,
+        0.9084026158592896
+      ],
+      "edit_footprint": {
+        "kind": "requires_reassignment",
+        "remove_edges": [
+          [
+            15612,
+            15891
+          ]
+        ],
+        "add_edges": [
+          [
+            15614,
+            15891
+          ]
+        ]
+      },
+      "reason": "scored",
+      "logit": 0.24898830002088757,
+      "score": 0.5619274713957323,
+      "rank_best": 6,
+      "rank_worst": 6,
+      "competing_pairs": 15,
+      "at_frozen_threshold": false
+    },
+    {
+      "gt_ids": [
+        1945,
+        1946,
+        1947
+      ],
+      "anchor_ids": [
+        14537,
+        14835,
+        14793
+      ],
+      "covered": true,
+      "legacy_scored": false,
+      "distances_um": [
+        9.201360717986226,
+        1.8168052317185792
+      ],
+      "edit_footprint": {
+        "kind": "requires_reassignment",
+        "remove_edges": [
+          [
+            14525,
+            14793
+          ]
+        ],
+        "add_edges": [
+          [
+            14537,
+            14793
+          ]
+        ]
+      },
+      "reason": "scored",
+      "logit": -0.3691553077902724,
+      "score": 0.4087451447422721,
+      "rank_best": 9,
+      "rank_worst": 9,
+      "competing_pairs": 15,
+      "at_frozen_threshold": false
+    }
+  ],
+  "coverage_reasons": {
+    "unmatched_endpoint": 1,
+    "scored": 3
+  }
+}

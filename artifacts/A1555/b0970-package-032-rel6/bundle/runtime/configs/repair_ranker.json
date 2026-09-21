@@ -1,0 +1,32 @@
+{
+  "schema": "repair_ranker_012",
+  "node": "A1555",
+  "source_run": "b0970-selector-corpus-011",
+  "source_release": "64f6f7de375a1d861d6a72727d06a5e50d20e5529348e788bdd18e0777547ead",
+  "scope": "repair_ranking_development_only_no_submission",
+  "feature_batch_size": 2048,
+  "l2": 1.0,
+  "std_floor": 0.000001,
+  "maxiter": 500,
+  "ftol": 1e-12,
+  "gtol": 1e-7,
+  "max_gradient_inf": 0.00001,
+  "minimum_preferences": 10,
+  "minimum_mothers": 10,
+  "minimum_annotated_forks": 3,
+  "hard_preference_fraction": 0.5,
+  "margin_grid": [1.0],
+  "minimum_calibration_score_delta": 0.001,
+  "max_edit_fraction": 0.002,
+  "source_artifacts": {
+    "b0970-tests-011/receipt.json": "5b3676cee91ed4128f36c1e847a99ae4ad77b27db36cc0eeb65798c781d226e8",
+    "b0970-tests-011/tests.json": "268a81b19ef7cad4f1b1a2bc76903dc37455efb0cd41907ef8f825d23aea8170",
+    "b0970-selector-corpus-011/receipt.json": "f7c9dccea0ce5b23aebfa6a05d892aee7fe57d161229a7d526e14c6ab2254e1f",
+    "b0970-selector-corpus-011/corpus.json": "584d3ffa640906816577c30a41566a020bd79952b0e88e8bed0fa2aa0c422239",
+    "b0970-selector-011/receipt.json": "f5817ca205566d961b234dc0a6015c92c44c0db7af10af2aa2d9ce9fa8c9d6b0",
+    "b0970-selector-011/selector.json": "7842bb8155d0ad1ac4c3bb36314f47d8df5b58b610e20c1ad8187331cabbf759",
+    "b0970-selector-011/models.json": "e6517351f9faaa2b47e7edce4db54e8b6c501dc34afa1dbf92c6572863aa48ae",
+    "b0970-selector-011/calibration-prediction-manifest.json": "42da6cfce861a2d68bf9acc43e657306d699dce032e8e59d29c4d7626e9b2ccd",
+    "b0970-selector-011/development-prediction-manifest.json": "fb719ab5a066b324fb731f9d15f2ef99649e922d81117061be8ac2b444e14581"
+  }
+}

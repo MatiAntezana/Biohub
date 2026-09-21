@@ -1,52 +1,36 @@
-# Python & bytecode
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
 .DS_Store
+.state/
+scratch/
 
-# Virtualenvs & conda
-.venv/
-env/
-venv/
-ENV/
+# Ignore heavy binaries and archives
+*.whl
+*.zip
+*.tar*
+*.npy
+*.npz
+*.geff
+*.csv
 
-# States & Locks
-.state/*.lock
-.state/kaggle-monitor.json
-experiments/registry.lock
-experiments/EXP-*/logs/*.log
-*.log
+# Ignore MLflow and secrets
+mlruns*/
+mlartifacts/
+.env
+kaggle.json
 
-# Data cruda y datasets de competencia (82 GB)
-data/
-data/**
-*.zarr/
-*.zarr/**
-*.geff/
-*.geff/**
-*.tif
-*.tiff
-.state/kaggle/
-
-# Checkpoints y pesos pesados (almacenados en Hugging Face Hub)
+# Model weights: ignore all except the 3 canonical champion models
 *.pt
 *.pth
-*.ckpt
-*.safetensors
-*.onnx
-*.engine
-*.tar.gz
-*.zip
 *.bin
+*.safetensors
+!assets/champion/**
+!assets/champion/**/*.pt
+!assets/champion/**/*.pth
 
-# Carpetas de checkpoints pesados de experimentos
-experiments/**/checkpoints/*.pt
-experiments/**/checkpoints/*.pth
-experiments/**/checkpoints/*.ckpt
-champion_weights/*.pt
-champion_weights/*.pth
-champion_weights/wheels/*.whl
+# Artifacts: allow all experimental json receipts and evidence, ignore binary payloads
+artifacts/**/raw/
+artifacts/**/cache-*/
+artifacts/**/visible/
+artifacts/**/kaggle-output/*.csv
 
-# Hugging Face cache
-.cache/
-tmp/

@@ -1,0 +1,44 @@
+{
+  "source_experiment": "b0970-confirm-040-rel1",
+  "code_hash": "92233aae9ca512b65082dc89eb8197c8042bd3bfab59d5fb9f4dcfe4360547ba",
+  "arm": "mitosis_add",
+  "champion_variant": "variant_1",
+  "recipe": "Tissue-Exclusive Anisotropic Birth-Radius Gating (TE-ABRG): targeted cytokinesis pruning on 44b6 (birth_radius<=6.0um) while strictly preserving 6bba without pruning",
+  "gates": {
+    "development": {
+      "passed": true,
+      "phase": "development",
+      "score_delta": 0.004772,
+      "source_run": "b0970-temporal-046-rel1"
+    },
+    "confirmation": {
+      "passed": true,
+      "reasons": [],
+      "phase": "confirmation",
+      "score_delta": 0.002956,
+      "scope": "public_paired_diagnostic_full_fit_detector_not_kaggle_score"
+    }
+  },
+  "visible_contract": {
+    "csv_rows": 235562,
+    "nodes": 119881,
+    "edges": 115681,
+    "divisions": 196,
+    "datasets": [
+      "44b6_0113de3b",
+      "44b6_0b24845f",
+      "6bba_05b6850b",
+      "6bba_05db0fb1"
+    ],
+    "csv_sha256": "e953a92364f9b606d6a166b7e112f5ad06024294277606955f2cfba6064d5cb2",
+    "valid": true
+  },
+  "remote_runtime_seconds": 1.888953500019852,
+  "visibility": "visible_public_runtime_check_not_hidden_score",
+  "kaggle_score": null,
+  "run_id": "b0970-package-046-rel2",
+  "bundle_sha256": "34f38ac5ca89cd9df8fe75bff8a5418385b7a85367fffd1e4b5abc7ebc1e9df7",
+  "notebook_sha256": "ad147c3016562e755085279a9edd23f31c734e3dae9aa985b2fedca58cb0cf86",
+  "archive_sha256": "8fa53320674d7eadb6fd04e61233978bbd013621e7ea33d1ee7b91bcb86f21ad",
+  "kaggle_gpu_smoke_required": true
+}

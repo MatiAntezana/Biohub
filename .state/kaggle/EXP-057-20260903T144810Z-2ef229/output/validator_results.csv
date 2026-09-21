@@ -1,5 +1,0 @@
-adjusted_edge_jaccard,div_fn,div_fp,div_jaccard,div_tp,edge_fn,edge_fp,edge_jaccard,edge_tp,edges_fragmented,edges_lost_to_detection,edges_recovered,missed_gt_nodes,spurious_pred_nodes,stem,t_pred,t_true,t_true_source,weight,wrong_association_edges
-0.8400042311138904,0,3,0.25,1,72,66,0.8355184743742551,701,34,38,701,28,54762,44b6_12dfb391,55522,58672.0,estimated_number_of_nodes,839,0
-0.5709280093565655,1,2,0.0,0,84,60,0.5727002967359051,193,22,62,193,44,19486,44b6_267148e4,19722,19130.0,estimated_number_of_nodes,337,1
-0.8227550676071944,0,1,0.5,1,131,21,0.8346028291621328,767,11,120,767,117,6073,6bba_062c8d37,6886,6030.0,estimated_number_of_nodes,919,1
-0.8027038503700755,2,0,0.0,0,31,28,0.8418230563002681,314,15,16,314,14,31124,6bba_07e24132,31469,21485.0,estimated_number_of_nodes,373,1

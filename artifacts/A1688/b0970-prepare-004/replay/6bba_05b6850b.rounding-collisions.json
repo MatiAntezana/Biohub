@@ -1,0 +1,15 @@
+{
+  "policy": "observed_over_gap_synthetic_exact_voxel_v1",
+  "dataset": "6bba_05b6850b",
+  "input_nodes": 6100,
+  "input_edges": 5896,
+  "collisions": [],
+  "unresolved": [],
+  "status": "unchanged",
+  "removed_nodes": 0,
+  "removed_edges": 0,
+  "removed_node_ids": [],
+  "removed_edge_endpoints": [],
+  "output_nodes": 6100,
+  "output_edges": 5896
+}

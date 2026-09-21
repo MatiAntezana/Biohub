@@ -1,0 +1,248 @@
+{
+  "dataset": "6bba_ab78413d",
+  "gt_forks": 2,
+  "stages": {
+    "outside_frozen_pool": 1,
+    "unmatched_endpoint": 1
+  },
+  "endpoint_categories": {
+    "matched": 5,
+    "near_raw_but_no_near_anchor": 1
+  },
+  "events": [
+    {
+      "dataset": "6bba_ab78413d",
+      "gt_mother": 810,
+      "biological_event": "6bba_ab78413d:810",
+      "endpoints": [
+        {
+          "gt_id": 810,
+          "gt_tzyx": [
+            67.0,
+            12.0,
+            200.0,
+            240.0
+          ],
+          "matched_anchor_id": 9359,
+          "matched_distance_um": 0.5745242597140698,
+          "anchor": {
+            "nearest_id": 9359,
+            "distance_um": 0.5745242597140698,
+            "within_radius": 2,
+            "nearest_ties": [
+              9359
+            ]
+          },
+          "raw": {
+            "nearest_id": 13383,
+            "distance_um": 1.625,
+            "within_radius": 2,
+            "nearest_ties": [
+              13383
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 810,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        },
+        {
+          "gt_id": 1165,
+          "gt_tzyx": [
+            68.0,
+            11.0,
+            201.0,
+            240.0
+          ],
+          "matched_anchor_id": 9484,
+          "matched_distance_um": 1.21875,
+          "anchor": {
+            "nearest_id": 9484,
+            "distance_um": 1.21875,
+            "within_radius": 2,
+            "nearest_ties": [
+              9484
+            ]
+          },
+          "raw": {
+            "nearest_id": 13584,
+            "distance_um": 2.03125,
+            "within_radius": 2,
+            "nearest_ties": [
+              13584
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 1165,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        },
+        {
+          "gt_id": 1166,
+          "gt_tzyx": [
+            68.0,
+            8.0,
+            213.0,
+            235.0
+          ],
+          "matched_anchor_id": 9478,
+          "matched_distance_um": 6.1342404786574845,
+          "anchor": {
+            "nearest_id": 9478,
+            "distance_um": 6.1342404786574845,
+            "within_radius": 2,
+            "nearest_ties": [
+              9478
+            ]
+          },
+          "raw": {
+            "nearest_id": 13585,
+            "distance_um": 6.214430032191206,
+            "within_radius": 2,
+            "nearest_ties": [
+              13585
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 1166,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        }
+      ],
+      "stage": "outside_frozen_pool",
+      "comparisons": {},
+      "unknown_reasons": {},
+      "target": [
+        9359,
+        9478,
+        9484
+      ],
+      "event": "6bba_ab78413d:9359",
+      "candidate_limits": [
+        {
+          "daughter": 9478,
+          "distance_um": 13.151461420693899,
+          "rank_all_next_frame": 5,
+          "outside_radius": true,
+          "outside_top_k": false
+        },
+        {
+          "daughter": 9484,
+          "distance_um": 1.7235727791422095,
+          "rank_all_next_frame": 1,
+          "outside_radius": false,
+          "outside_top_k": false
+        }
+      ]
+    },
+    {
+      "dataset": "6bba_ab78413d",
+      "gt_mother": 916,
+      "biological_event": "6bba_ab78413d:916",
+      "endpoints": [
+        {
+          "gt_id": 916,
+          "gt_tzyx": [
+            77.0,
+            9.0,
+            201.0,
+            238.0
+          ],
+          "matched_anchor_id": 10577,
+          "matched_distance_um": 2.6012692214570947,
+          "anchor": {
+            "nearest_id": 10577,
+            "distance_um": 2.6012692214570947,
+            "within_radius": 2,
+            "nearest_ties": [
+              10577
+            ]
+          },
+          "raw": {
+            "nearest_id": 15335,
+            "distance_um": 1.4647552056572457,
+            "within_radius": 2,
+            "nearest_ties": [
+              15335
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 916,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        },
+        {
+          "gt_id": 1153,
+          "gt_tzyx": [
+            78.0,
+            9.0,
+            199.0,
+            244.0
+          ],
+          "matched_anchor_id": 10695,
+          "matched_distance_um": 1.6750116604071745,
+          "anchor": {
+            "nearest_id": 10695,
+            "distance_um": 1.6750116604071745,
+            "within_radius": 1,
+            "nearest_ties": [
+              10695
+            ]
+          },
+          "raw": {
+            "nearest_id": 15509,
+            "distance_um": 1.6750116604071745,
+            "within_radius": 1,
+            "nearest_ties": [
+              15509
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 1153,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        },
+        {
+          "gt_id": 1154,
+          "gt_tzyx": [
+            78.0,
+            8.0,
+            215.0,
+            235.0
+          ],
+          "matched_anchor_id": null,
+          "matched_distance_um": null,
+          "anchor": {
+            "nearest_id": 10697,
+            "distance_um": 7.44668550430324,
+            "within_radius": 0,
+            "nearest_ties": [
+              10697
+            ]
+          },
+          "raw": {
+            "nearest_id": 15511,
+            "distance_um": 6.9181882111576005,
+            "within_radius": 1,
+            "nearest_ties": [
+              15511
+            ]
+          },
+          "category": "near_raw_but_no_near_anchor",
+          "nearest_anchor_assigned_to_gt": null,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        }
+      ],
+      "stage": "unmatched_endpoint",
+      "comparisons": {},
+      "unknown_reasons": {}
+    }
+  ],
+  "matching_radius_um": 7.0,
+  "raw_scope": "saved_post_detector_candidates_before_global_ILP_and_postprocessing",
+  "exact_removal_stage_identified": false,
+  "matching_modified": false,
+  "graph_modified": false,
+  "gt_sha256": "18f8bbd113ee17633bc48107e8c6c0a7e2d5ef525e89b89bb187a1942d36d269",
+  "event_stats": {
+    "outside_frozen_pool": 1,
+    "unmatched_gt_fork": 1,
+    "covered_gt_forks": 0
+  },
+  "confirmed_comparisons": []
+}

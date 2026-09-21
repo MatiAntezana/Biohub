@@ -1,0 +1,149 @@
+{
+  "status": "training",
+  "history": [
+    {
+      "epoch": 1,
+      "steps": 317,
+      "train_balanced_sampling_bce": 0.6112564655508529,
+      "all_negative_batches": 0,
+      "gradient_norm_median": 1.132033348083496,
+      "gradient_clipped_fraction": 0.526813880126183,
+      "draws_positive": 2536,
+      "draws_negative": 2536,
+      "unique_positive_seen": 125,
+      "unique_negative_seen": 2536
+    },
+    {
+      "epoch": 2,
+      "steps": 317,
+      "train_balanced_sampling_bce": 0.45734548159766275,
+      "all_negative_batches": 0,
+      "gradient_norm_median": 5.124563694000244,
+      "gradient_clipped_fraction": 1.0,
+      "draws_positive": 2536,
+      "draws_negative": 2536,
+      "unique_positive_seen": 125,
+      "unique_negative_seen": 2536
+    },
+    {
+      "epoch": 3,
+      "steps": 317,
+      "train_balanced_sampling_bce": 0.36132721988372624,
+      "all_negative_batches": 0,
+      "gradient_norm_median": 6.854602813720703,
+      "gradient_clipped_fraction": 1.0,
+      "draws_positive": 2536,
+      "draws_negative": 2536,
+      "unique_positive_seen": 125,
+      "unique_negative_seen": 2536
+    },
+    {
+      "epoch": 4,
+      "steps": 317,
+      "train_balanced_sampling_bce": 0.26741619638464054,
+      "all_negative_batches": 0,
+      "gradient_norm_median": 8.757933616638184,
+      "gradient_clipped_fraction": 1.0,
+      "draws_positive": 2536,
+      "draws_negative": 2536,
+      "unique_positive_seen": 125,
+      "unique_negative_seen": 2536
+    },
+    {
+      "epoch": 5,
+      "steps": 317,
+      "train_balanced_sampling_bce": 0.22108175579681758,
+      "all_negative_batches": 0,
+      "gradient_norm_median": 10.410797119140625,
+      "gradient_clipped_fraction": 1.0,
+      "draws_positive": 2536,
+      "draws_negative": 2536,
+      "unique_positive_seen": 125,
+      "unique_negative_seen": 2536
+    },
+    {
+      "epoch": 6,
+      "steps": 317,
+      "train_balanced_sampling_bce": 0.17104222352266876,
+      "all_negative_batches": 0,
+      "gradient_norm_median": 9.353676795959473,
+      "gradient_clipped_fraction": 0.9968454258675079,
+      "draws_positive": 2536,
+      "draws_negative": 2536,
+      "unique_positive_seen": 125,
+      "unique_negative_seen": 2536
+    },
+    {
+      "epoch": 7,
+      "steps": 317,
+      "train_balanced_sampling_bce": 0.13871992498412963,
+      "all_negative_batches": 0,
+      "gradient_norm_median": 10.904252052307129,
+      "gradient_clipped_fraction": 0.9716088328075709,
+      "draws_positive": 2536,
+      "draws_negative": 2536,
+      "unique_positive_seen": 125,
+      "unique_negative_seen": 2536
+    },
+    {
+      "epoch": 8,
+      "steps": 317,
+      "train_balanced_sampling_bce": 0.1288553136819533,
+      "all_negative_batches": 0,
+      "gradient_norm_median": 9.628671646118164,
+      "gradient_clipped_fraction": 0.9716088328075709,
+      "draws_positive": 2536,
+      "draws_negative": 2536,
+      "unique_positive_seen": 125,
+      "unique_negative_seen": 2536
+    },
+    {
+      "epoch": 9,
+      "steps": 317,
+      "train_balanced_sampling_bce": 0.0863758087164079,
+      "all_negative_batches": 0,
+      "gradient_norm_median": 6.390981674194336,
+      "gradient_clipped_fraction": 0.8643533123028391,
+      "draws_positive": 2536,
+      "draws_negative": 2536,
+      "unique_positive_seen": 125,
+      "unique_negative_seen": 2536
+    },
+    {
+      "epoch": 10,
+      "steps": 317,
+      "train_balanced_sampling_bce": 0.07533006370444018,
+      "all_negative_batches": 0,
+      "gradient_norm_median": 5.465023517608643,
+      "gradient_clipped_fraction": 0.8170347003154574,
+      "draws_positive": 2536,
+      "draws_negative": 2536,
+      "unique_positive_seen": 125,
+      "unique_negative_seen": 2536
+    },
+    {
+      "epoch": 11,
+      "steps": 317,
+      "train_balanced_sampling_bce": 0.08331398947046165,
+      "all_negative_batches": 0,
+      "gradient_norm_median": 4.391981601715088,
+      "gradient_clipped_fraction": 0.7949526813880127,
+      "draws_positive": 2536,
+      "draws_negative": 2536,
+      "unique_positive_seen": 125,
+      "unique_negative_seen": 2536
+    },
+    {
+      "epoch": 12,
+      "steps": 317,
+      "train_balanced_sampling_bce": 0.050904014757805,
+      "all_negative_batches": 0,
+      "gradient_norm_median": 3.0064055919647217,
+      "gradient_clipped_fraction": 0.6529968454258676,
+      "draws_positive": 2536,
+      "draws_negative": 2536,
+      "unique_positive_seen": 125,
+      "unique_negative_seen": 2536
+    }
+  ]
+}

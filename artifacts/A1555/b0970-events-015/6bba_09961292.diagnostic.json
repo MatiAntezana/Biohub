@@ -1,0 +1,84 @@
+{
+  "gt_sha256": "6832b61837b890dd2ceb253a21fe251aee764b619cc6f82b47f5b5dcf015d97a",
+  "labels_sha256": "153298ce33c69af87c8afa78250a148582459c86bf53793c64fcd3ae93051e66",
+  "score_sha256": "70cdeb0afe80c78eedbea7b7640341e4b741a3df6c35693f42f37f85070efeb1",
+  "fork_ranks": [
+    {
+      "gt_mother": 626,
+      "status": "unmatched_endpoint"
+    },
+    {
+      "gt_mother": 1022,
+      "status": "covered",
+      "hypothesis": [
+        13384,
+        13630,
+        13673
+      ],
+      "already_present": true,
+      "models": {
+        "event015": {
+          "gain": 0.0,
+          "rank_worst": 1,
+          "unique_top1": true
+        },
+        "ranker012": {
+          "gain": 0.0,
+          "rank_worst": 1,
+          "unique_top1": true
+        }
+      }
+    },
+    {
+      "gt_mother": 1143,
+      "status": "covered",
+      "hypothesis": [
+        15614,
+        15891,
+        15893
+      ],
+      "already_present": false,
+      "models": {
+        "event015": {
+          "gain": -0.1597875152290814,
+          "rank_worst": 2,
+          "unique_top1": false
+        },
+        "ranker012": {
+          "gain": -1.3471187460498002,
+          "rank_worst": 2,
+          "unique_top1": false
+        }
+      }
+    },
+    {
+      "gt_mother": 1945,
+      "status": "covered",
+      "hypothesis": [
+        14537,
+        14793,
+        14835
+      ],
+      "already_present": false,
+      "models": {
+        "event015": {
+          "gain": 0.01543396279672149,
+          "rank_worst": 1,
+          "unique_top1": true
+        },
+        "ranker012": {
+          "gain": -2.195529758344171,
+          "rank_worst": 3,
+          "unique_top1": false
+        }
+      }
+    }
+  ],
+  "label_codes": {
+    "beneficial": 1,
+    "harmful": -1,
+    "mixed": 0,
+    "unknown": 2,
+    "reference_noop": 3
+  }
+}

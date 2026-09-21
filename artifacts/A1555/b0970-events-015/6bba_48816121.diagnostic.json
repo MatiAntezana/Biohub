@@ -1,0 +1,93 @@
+{
+  "gt_sha256": "50c4659469790f39c6943cbd43379a8d04242c2e8a70ac317933ac4a99d87ee7",
+  "labels_sha256": "f3eaa784de58861e1daab86c7d9424a6cabf4da6fd088eea0cf2788380ee9da2",
+  "score_sha256": "a62f6367b23acd885ffc844c3ec66ce28fa27abc4ba6da2c8ff9ab34ab1dce59",
+  "fork_ranks": [
+    {
+      "gt_mother": 21,
+      "status": "covered",
+      "hypothesis": [
+        1508,
+        1790,
+        1814
+      ],
+      "already_present": true,
+      "models": {
+        "event015": {
+          "gain": 0.0,
+          "rank_worst": 1,
+          "unique_top1": true
+        },
+        "ranker012": {
+          "gain": 0.0,
+          "rank_worst": 2,
+          "unique_top1": false
+        }
+      }
+    },
+    {
+      "gt_mother": 46,
+      "status": "covered",
+      "hypothesis": [
+        3322,
+        3607,
+        3646
+      ],
+      "already_present": false,
+      "models": {
+        "event015": {
+          "gain": 0.8450220534077995,
+          "rank_worst": 1,
+          "unique_top1": true
+        },
+        "ranker012": {
+          "gain": -1.0332995552610005,
+          "rank_worst": 2,
+          "unique_top1": false
+        }
+      }
+    },
+    {
+      "gt_mother": 76,
+      "status": "outside_frozen_pool",
+      "hypothesis": [
+        4822,
+        5099,
+        5178
+      ]
+    },
+    {
+      "gt_mother": 458,
+      "status": "covered",
+      "hypothesis": [
+        15768,
+        16004,
+        16024
+      ],
+      "already_present": false,
+      "models": {
+        "event015": {
+          "gain": -0.1866108613432732,
+          "rank_worst": 3,
+          "unique_top1": false
+        },
+        "ranker012": {
+          "gain": -0.7494282094599313,
+          "rank_worst": 2,
+          "unique_top1": false
+        }
+      }
+    },
+    {
+      "gt_mother": 499,
+      "status": "unmatched_endpoint"
+    }
+  ],
+  "label_codes": {
+    "beneficial": 1,
+    "harmful": -1,
+    "mixed": 0,
+    "unknown": 2,
+    "reference_noop": 3
+  }
+}

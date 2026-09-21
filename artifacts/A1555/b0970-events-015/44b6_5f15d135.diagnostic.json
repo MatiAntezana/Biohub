@@ -1,0 +1,36 @@
+{
+  "gt_sha256": "c010eb0638b167fb8914a6b1bb9e41660ef195c9b2cdd1776b7011c05e1652dd",
+  "labels_sha256": "cd23ebfa92a5e72e26ba439941d0884959b5f4406745b5f2faf27cc98dc3e456",
+  "score_sha256": "57eb3f16067144f9339f86422f50baf437cba1a0a0b4e9f1892edc78b09b5195",
+  "fork_ranks": [
+    {
+      "gt_mother": 104,
+      "status": "covered",
+      "hypothesis": [
+        8645,
+        8855,
+        8858
+      ],
+      "already_present": false,
+      "models": {
+        "event015": {
+          "gain": -0.12331669030633119,
+          "rank_worst": 2,
+          "unique_top1": false
+        },
+        "ranker012": {
+          "gain": -1.8532115851366822,
+          "rank_worst": 2,
+          "unique_top1": false
+        }
+      }
+    }
+  ],
+  "label_codes": {
+    "beneficial": 1,
+    "harmful": -1,
+    "mixed": 0,
+    "unknown": 2,
+    "reference_noop": 3
+  }
+}

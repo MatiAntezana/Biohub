@@ -1,0 +1,17 @@
+{
+  "dataset": "44b6_e31261b4",
+  "gt_forks": 0,
+  "stages": {},
+  "endpoint_categories": {},
+  "events": [],
+  "matching_radius_um": 7.0,
+  "raw_scope": "saved_post_detector_candidates_before_global_ILP_and_postprocessing",
+  "exact_removal_stage_identified": false,
+  "matching_modified": false,
+  "graph_modified": false,
+  "gt_sha256": "d11f6f63eb9e4fef5e73ce506372bc9bc7bc465ac97619bffbce877ee50ec98d",
+  "event_stats": {
+    "covered_gt_forks": 0
+  },
+  "confirmed_comparisons": []
+}

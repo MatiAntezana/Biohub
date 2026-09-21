@@ -1,0 +1,72 @@
+{
+  "schema": "temporal_association_025",
+  "source_run": "b0970-selector-corpus-011",
+  "scope": "public_paired_diagnostic_full_fit_detector_not_kaggle_score",
+  "variants": {
+    "variant_1": {
+      "description": "Receta 024-V1 + Crossover Untangling Cinem\u00e1tico Conservador",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "cos_thresh": 0.2,
+        "min_ratio": 0.15,
+        "min_max_dist_um": 3.0,
+        "persistence_guard": true
+      },
+      "crossover_untangling": {
+        "enabled": true,
+        "max_spatial_dist_um": 5.5,
+        "min_delta_momentum": 1.2,
+        "max_cur_cos": 0.1,
+        "min_swap_cos": 0.6,
+        "max_swaps_per_dataset": 50,
+        "use_descriptors": false
+      }
+    },
+    "variant_2": {
+      "description": "Receta 024-V1 + Crossover Untangling Moderado con Guardia Morfol\u00f3gica",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "cos_thresh": 0.2,
+        "min_ratio": 0.15,
+        "min_max_dist_um": 3.0,
+        "persistence_guard": true
+      },
+      "crossover_untangling": {
+        "enabled": true,
+        "max_spatial_dist_um": 6.0,
+        "min_delta_momentum": 1.0,
+        "max_cur_cos": 0.2,
+        "min_swap_cos": 0.5,
+        "max_swaps_per_dataset": 50,
+        "use_descriptors": true,
+        "min_desc_sim_delta": -0.1
+      }
+    }
+  },
+  "gates": {
+    "development_score_delta_min": 0.003,
+    "confirmation_score_delta_min": 0.002,
+    "minimum_group_score_delta": 0.0,
+    "minimum_edge_jaccard_delta": 0.0,
+    "minimum_division_jaccard_delta": 0.0,
+    "maximum_individual_regression": -0.015
+  }
+}

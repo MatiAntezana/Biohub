@@ -1,0 +1,44 @@
+{
+  "source_experiment": "b0970-confirm-032-rel5",
+  "code_hash": "92233aae9ca512b65082dc89eb8197c8042bd3bfab59d5fb9f4dcfe4360547ba",
+  "arm": "mitosis_add",
+  "champion_variant": "variant_1",
+  "recipe": "Hardened Champion Baseline: axial PSF de-biasing (kz=1.25), dual-seed ILP, gap-2 midpoint interpolation, and linefit smoothing",
+  "gates": {
+    "development": {
+      "passed": true,
+      "phase": "development",
+      "score_delta": 0.004006,
+      "source_run": "b0970-temporal-032-rel1"
+    },
+    "confirmation": {
+      "passed": true,
+      "reasons": [],
+      "phase": "confirmation",
+      "score_delta": 0.002776,
+      "scope": "public_paired_diagnostic_full_fit_detector_not_kaggle_score"
+    }
+  },
+  "visible_contract": {
+    "csv_rows": 235671,
+    "nodes": 119881,
+    "edges": 115790,
+    "divisions": 305,
+    "datasets": [
+      "44b6_0113de3b",
+      "44b6_0b24845f",
+      "6bba_05b6850b",
+      "6bba_05db0fb1"
+    ],
+    "csv_sha256": "4d7418274d7b228158abf5f5a9db1274de3a7db12850ece45a949feb7ad5f27c",
+    "valid": true
+  },
+  "remote_runtime_seconds": 1.9549370830063708,
+  "visibility": "visible_public_runtime_check_not_hidden_score",
+  "kaggle_score": null,
+  "run_id": "b0970-package-032-rel8",
+  "bundle_sha256": "5af23db6de4ad2e61323691527f3a154c73e73a67f817f8d2d4aaac90b78cf77",
+  "notebook_sha256": "5b4826125f5121ad8d229b0619049ead1ff75981f3de2b4d0461d834dde422fb",
+  "archive_sha256": "2da9c2184dc20849ff788b1ce155d7dd74da0ad451c12559b22e484761e8a829",
+  "kaggle_gpu_smoke_required": true
+}

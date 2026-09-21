@@ -1,0 +1,22 @@
+Starting Campaign 021 on A1555 across 8 development datasets...
+Evaluating variant_1: Pure Symmetric Axial Regularization (clamp=0.6 um, thresh=0.8 um, w_z=0.80, symmetric_only=true, fork_addition=false)...
+[09/14/26 01:55:28] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+Traceback (most recent call last):
+  File "/home/alumno1/Documents/Biohub-0970/releases/1a4e80363c724950a60c099017f3f4c8b215b2c8f7f1657a376449395c915f9c/ops/biohub.py", line 514, in <module>
+    main()
+  File "/home/alumno1/Documents/Biohub-0970/releases/1a4e80363c724950a60c099017f3f4c8b215b2c8f7f1657a376449395c915f9c/ops/biohub.py", line 504, in main
+    execute_job(args, run)
+  File "/home/alumno1/Documents/Biohub-0970/releases/1a4e80363c724950a60c099017f3f4c8b215b2c8f7f1657a376449395c915f9c/ops/biohub.py", line 400, in execute_job
+    result = temporal_association_job(args, run, source_run(args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alumno1/Documents/Biohub-0970/releases/1a4e80363c724950a60c099017f3f4c8b215b2c8f7f1657a376449395c915f9c/core/temporal_association_021.py", line 600, in temporal_association_job
+    results[vname] = run_paired_evaluation(source, corpus, names, vname, vcfg)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alumno1/Documents/Biohub-0970/releases/1a4e80363c724950a60c099017f3f4c8b215b2c8f7f1657a376449395c915f9c/core/temporal_association_021.py", line 573, in run_paired_evaluation
+    ref_div_tp = refs[name]["counts"]["division_true_positives"]
+                 ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'division_true_positives'

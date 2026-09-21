@@ -1,0 +1,62 @@
+{
+  "schema": "temporal_association_018",
+  "source_release": "182748fa31d8dc721803362ba3cf1092980ac7a1c44b04f492bc6401bf46a657",
+  "source_run": "b0970-selector-corpus-011",
+  "node": "A1555",
+  "source_artifacts": {
+    "receipt.json": "f7c9dccea0ce5b23aebfa6a05d892aee7fe57d161229a7d526e14c6ab2254e1f",
+    "corpus.json": "584d3ffa640906816577c30a41566a020bd79952b0e88e8bed0fa2aa0c422239"
+  },
+  "variants": {
+    "variant_1": {
+      "description": "Direction-Reversal Axial Regularization (thresh=0.8 um, clamp=0.6 um, w_z=0.80, reversal_only=true)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.80,
+        "weight_xy": 0.0
+      },
+      "gaps": {
+        "enabled": false
+      }
+    },
+    "variant_2": {
+      "description": "Direction-Reversal Axial Regularization (thresh=0.6 um, clamp=0.6 um, w_z=0.85, reversal_only=true)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "jitter_threshold_um": 0.6,
+        "max_correction_um": 0.6,
+        "weight_z": 0.85,
+        "weight_xy": 0.0
+      },
+      "gaps": {
+        "enabled": false
+      }
+    },
+    "variant_3": {
+      "description": "Direction-Reversal Axial Regularization (thresh=0.5 um, clamp=0.5 um, w_z=0.75, reversal_only=true)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "jitter_threshold_um": 0.5,
+        "max_correction_um": 0.5,
+        "weight_z": 0.75,
+        "weight_xy": 0.0
+      },
+      "gaps": {
+        "enabled": false
+      }
+    }
+  },
+  "gates": {
+    "development_score_delta_min": 0.003,
+    "confirmation_score_delta_min": 0.002,
+    "minimum_group_score_delta": 0.0,
+    "minimum_sample_adjusted_jaccard_delta": -0.015,
+    "minimum_edge_jaccard_delta": 0.0,
+    "minimum_division_jaccard_delta": 0.0
+  }
+}

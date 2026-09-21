@@ -1,6 +1,0 @@
-Monitoring Version 6 on Kaggle...
-[17:40:24] Status: matiasantezana/biohub-3d-anisotropic-unet has status "KernelWorkerStatus.RUNNING"
-[17:40:40] Status: matiasantezana/biohub-3d-anisotropic-unet has status "KernelWorkerStatus.RUNNING"
-[17:40:56] Status: matiasantezana/biohub-3d-anisotropic-unet has status "KernelWorkerStatus.ERROR"
-❌ Error detected in Kaggle worker. Downloading logs for auto-debug...
-Kernel log downloaded to kaggle_debug_v6/biohub-3d-anisotropic-unet.log 

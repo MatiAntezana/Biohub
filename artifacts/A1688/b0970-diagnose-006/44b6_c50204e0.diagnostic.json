@@ -1,0 +1,113 @@
+{
+  "matched_prior_nodes": 18693,
+  "anchor_nodes": 34696,
+  "candidate_edges": 155203,
+  "edges_without_neural_prior": 140880,
+  "actual_scored_pairs": 2399,
+  "structurally_addable_pairs": 597,
+  "scores_all": {
+    "count": 2399,
+    "at_frozen_threshold": 0,
+    "quantiles": {
+      "min": 0.002358359983190894,
+      "p10": 0.00690628606826067,
+      "p50": 0.0203660000115633,
+      "p90": 0.06609898209571846,
+      "p99": 0.1317654201388359,
+      "max": 0.20206019282341003
+    }
+  },
+  "scores_addable": {
+    "count": 597,
+    "at_frozen_threshold": 0,
+    "quantiles": {
+      "min": 0.002358359983190894,
+      "p10": 0.005406312271952629,
+      "p50": 0.015644237399101257,
+      "p90": 0.05437270477414127,
+      "p99": 0.11835669636726379,
+      "max": 0.1888333410024643
+    }
+  },
+  "scores_by_annotation": {
+    "unknown": {
+      "count": 2399,
+      "at_frozen_threshold": 0,
+      "quantiles": {
+        "min": 0.002358359983190894,
+        "p10": 0.00690628606826067,
+        "p50": 0.0203660000115633,
+        "p90": 0.06609898209571846,
+        "p99": 0.1317654201388359,
+        "max": 0.20206019282341003
+      }
+    },
+    "addable_unknown": {
+      "count": 597,
+      "at_frozen_threshold": 0,
+      "quantiles": {
+        "min": 0.002358359983190894,
+        "p10": 0.005406312271952629,
+        "p50": 0.015644237399101257,
+        "p90": 0.05437270477414127,
+        "p99": 0.11835669636726379,
+        "max": 0.1888333410024643
+      }
+    }
+  },
+  "exact_gt_forks": [
+    {
+      "gt_mother": 43,
+      "gt_daughters": [
+        45,
+        46
+      ],
+      "anchor_ids": [
+        7912,
+        8265,
+        8267
+      ],
+      "reason": "reference_mother_not_single",
+      "score": null
+    },
+    {
+      "gt_mother": 186,
+      "gt_daughters": [
+        189,
+        190
+      ],
+      "anchor_ids": [
+        22189,
+        22565,
+        null
+      ],
+      "reason": "unmatched_endpoint",
+      "score": null
+    }
+  ],
+  "exact_gt_fork_reasons": {
+    "reference_mother_not_single": 1,
+    "unmatched_endpoint": 1
+  },
+  "development_gt_coordinate_scores": [
+    {
+      "gt_mother": 43,
+      "score": 0.13169126212596893
+    },
+    {
+      "gt_mother": 186,
+      "score": 0.12325306981801987
+    }
+  ],
+  "frozen_output": {
+    "matched_prior_nodes": 18693,
+    "anchor_nodes": 34696,
+    "candidate_edges": 155203,
+    "edges_without_neural_prior": 140880,
+    "approved_pairs": 0,
+    "added_divisions": [],
+    "preserved_reference_nodes": 34696,
+    "preserved_reference_edges": 33212
+  },
+  "head_sha256": "3321db1f4352463543f61dd8b872b10c560cb48a75fb29dd766b178734ff73cb"
+}

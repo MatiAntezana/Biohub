@@ -1,0 +1,104 @@
+{
+  "schema": "temporal_association_042",
+  "source_release": "581c468c28d6904c298c89e425325e212d280598287390201eb215e5d06783b2",
+  "source_run": "b0970-selector-corpus-011",
+  "node": "A1555",
+  "source_artifacts": {
+    "receipt.json": "f7c9dccea0ce5b23aebfa6a05d892aee7fe57d161229a7d526e14c6ab2254e1f",
+    "corpus.json": "584d3ffa640906816577c30a41566a020bd79952b0e88e8bed0fa2aa0c422239"
+  },
+  "variants": {
+    "variant_1": {
+      "description": "Adaptive Allometric Cytokinesis Gating (AACG-Exact): group-stratified cytokinesis envelopes (44b6: d_daughters <= 7.2 um, max_birth <= 6.0 um; 6bba: d_daughters <= 13.5 um, max_birth <= 7.5 um), mother track maturation (len >= 1 or t=0), and BDPG divergence persistence gating (obtuse cos <= 0 pers >= 3; tilted cos <= 0.20 pers >= 5)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "max_asymmetry_um": 0.0,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "mode": "spatial_proximity_invariant",
+        "cos_thresh": 0.0,
+        "min_ratio": 0.18,
+        "min_max_dist_um": 3.0,
+        "spi_enabled": true,
+        "spi_max_close_um": 1.5,
+        "spi_min_far_um": 2.5,
+        "spi_min_ratio": 2.0,
+        "distance_cost_mode": "linear",
+        "heading_alignment": true,
+        "heading_guard": true,
+        "heading_guard_cos_max": 0.2,
+        "divergent_pers_min": 3,
+        "tilted_pers_min": 5,
+        "guard_requires_cos": true,
+        "aacg_enabled": true,
+        "max_daughter_separation_44b6_um": 7.2,
+        "max_birth_dist_44b6_um": 6.0,
+        "max_daughter_separation_6bba_um": 13.5,
+        "max_birth_dist_6bba_um": 7.5,
+        "min_mother_track_len": 1,
+        "photometric_branch_selection": true
+      }
+    },
+    "variant_2": {
+      "description": "Adaptive Allometric Cytokinesis Gating (AACG-Permissive): group-stratified cytokinesis envelopes (44b6: d_daughters <= 7.5 um, max_birth <= 6.2 um; 6bba: d_daughters <= 14.5 um, max_birth <= 8.0 um), mother track maturation (len >= 1 or t=0), and BDPG divergence persistence gating (obtuse cos <= 0 pers >= 3; tilted cos <= 0.22 pers >= 5)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "max_asymmetry_um": 0.0,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "mode": "spatial_proximity_invariant",
+        "cos_thresh": 0.0,
+        "min_ratio": 0.18,
+        "min_max_dist_um": 3.0,
+        "spi_enabled": true,
+        "spi_max_close_um": 1.5,
+        "spi_min_far_um": 2.5,
+        "spi_min_ratio": 2.0,
+        "distance_cost_mode": "linear",
+        "heading_alignment": true,
+        "heading_guard": true,
+        "heading_guard_cos_max": 0.22,
+        "divergent_pers_min": 3,
+        "tilted_pers_min": 5,
+        "guard_requires_cos": true,
+        "aacg_enabled": true,
+        "max_daughter_separation_44b6_um": 7.5,
+        "max_birth_dist_44b6_um": 6.2,
+        "max_daughter_separation_6bba_um": 14.5,
+        "max_birth_dist_6bba_um": 8.0,
+        "min_mother_track_len": 1,
+        "photometric_branch_selection": true
+      }
+    }
+  },
+  "gates": {
+    "development": {
+      "delta_score_min": 0.003,
+      "delta_score_44b6_min": 0.0,
+      "delta_score_6bba_min": 0.0,
+      "worst_sample_delta_min": -0.015,
+      "division_true_positives_min": 3
+    },
+    "confirmation": {
+      "delta_score_min": 0.002,
+      "delta_score_44b6_min": 0.0,
+      "delta_score_6bba_min": 0.0,
+      "worst_sample_delta_min": -0.015,
+      "division_true_positives_min": 4
+    }
+  }
+}

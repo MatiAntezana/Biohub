@@ -1,0 +1,180 @@
+{
+  "dataset": "44b6_996155de",
+  "gt_forks": 1,
+  "stages": {
+    "usable_event": 1
+  },
+  "endpoint_categories": {
+    "matched": 3
+  },
+  "events": [
+    {
+      "dataset": "44b6_996155de",
+      "gt_mother": 59,
+      "biological_event": "44b6_996155de:59",
+      "endpoints": [
+        {
+          "gt_id": 59,
+          "gt_tzyx": [
+            19.0,
+            33.0,
+            182.0,
+            140.0
+          ],
+          "matched_anchor_id": 1439,
+          "matched_distance_um": 2.0714766773970688,
+          "anchor": {
+            "nearest_id": 1439,
+            "distance_um": 2.0714766773970688,
+            "within_radius": 1,
+            "nearest_ties": [
+              1439
+            ]
+          },
+          "raw": {
+            "nearest_id": 1750,
+            "distance_um": 1.8168052317185792,
+            "within_radius": 1,
+            "nearest_ties": [
+              1750
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 59,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        },
+        {
+          "gt_id": 62,
+          "gt_tzyx": [
+            20.0,
+            33.0,
+            172.0,
+            135.0
+          ],
+          "matched_anchor_id": 1519,
+          "matched_distance_um": 1.6750116604071745,
+          "anchor": {
+            "nearest_id": 1519,
+            "distance_um": 1.6750116604071745,
+            "within_radius": 1,
+            "nearest_ties": [
+              1519
+            ]
+          },
+          "raw": {
+            "nearest_id": 1845,
+            "distance_um": 1.6750116604071745,
+            "within_radius": 1,
+            "nearest_ties": [
+              1845
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 62,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        },
+        {
+          "gt_id": 63,
+          "gt_tzyx": [
+            20.0,
+            33.0,
+            189.0,
+            149.0
+          ],
+          "matched_anchor_id": 1520,
+          "matched_distance_um": 2.368824207280903,
+          "anchor": {
+            "nearest_id": 1520,
+            "distance_um": 2.368824207280903,
+            "within_radius": 1,
+            "nearest_ties": [
+              1520
+            ]
+          },
+          "raw": {
+            "nearest_id": 1846,
+            "distance_um": 1.7235727791422095,
+            "within_radius": 1,
+            "nearest_ties": [
+              1846
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 63,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        }
+      ],
+      "stage": "usable_event",
+      "comparisons": {
+        "accepted": 2
+      },
+      "unknown_reasons": {},
+      "target": [
+        1439,
+        1519,
+        1520
+      ],
+      "event": "44b6_996155de:1439",
+      "candidate_limits": [
+        {
+          "daughter": 1519,
+          "distance_um": 2.9295104113144914,
+          "rank_all_next_frame": 1,
+          "outside_radius": false,
+          "outside_top_k": false
+        },
+        {
+          "daughter": 1520,
+          "distance_um": 4.021669817998489,
+          "rank_all_next_frame": 2,
+          "outside_radius": false,
+          "outside_top_k": false
+        }
+      ],
+      "reference_correct": true
+    }
+  ],
+  "matching_radius_um": 7.0,
+  "raw_scope": "saved_post_detector_candidates_before_global_ILP_and_postprocessing",
+  "exact_removal_stage_identified": false,
+  "matching_modified": false,
+  "graph_modified": false,
+  "gt_sha256": "7c5d9bf48cced0fdd1f847a207e738111dfbebc0a4adb441e4f087fab9f8f1da",
+  "event_stats": {
+    "accepted": 2,
+    "usable_events": 1,
+    "covered_gt_forks": 1
+  },
+  "confirmed_comparisons": [
+    {
+      "event": "44b6_996155de:1439",
+      "gt_mother": 59,
+      "preferred": [
+        1439,
+        1519,
+        1520
+      ],
+      "alternative": [
+        1439,
+        1519,
+        -1
+      ],
+      "reference_correct": true
+    },
+    {
+      "event": "44b6_996155de:1439",
+      "gt_mother": 59,
+      "preferred": [
+        1439,
+        1519,
+        1520
+      ],
+      "alternative": [
+        1439,
+        1520,
+        -1
+      ],
+      "reference_correct": true
+    }
+  ]
+}

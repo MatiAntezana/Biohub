@@ -1,0 +1,10 @@
+{
+  "44b6": {
+    "checkpoint": "/home/alumno1/Documents/Biohub-0970/runs/b0970-prepare-004/train-44b6/mitosis_head.pt",
+    "sha256": "0900030a4977baec3deedc3226f1339401e682656eaeb1aed2ece414558b8e6f"
+  },
+  "6bba": {
+    "checkpoint": "/home/alumno1/Documents/Biohub-0970/runs/b0970-prepare-004/train-6bba/mitosis_head.pt",
+    "sha256": "3321db1f4352463543f61dd8b872b10c560cb48a75fb29dd766b178734ff73cb"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "diagnostic_margin": 0.27225031719536874,
+  "trial_margin": 0.27225031719536874,
+  "eligible": true,
+  "reasons": [],
+  "summary": {
+    "confirmed_only": {
+      "beneficial": 13,
+      "harmful": 202,
+      "auroc": 1.0,
+      "tp": 13,
+      "fp": 0,
+      "fn": 0,
+      "tn": 202,
+      "recall": 1.0,
+      "fpr": 0.0
+    },
+    "unique_best_selected": {
+      "beneficial": 13,
+      "harmful": 0,
+      "mixed": 0,
+      "unknown": 2962
+    },
+    "unknown_fraction_selected": 0.9956302521008403,
+    "beneficial_mothers": 13,
+    "recovered_beneficial_mothers": 13,
+    "beneficial_mother_recall": 1.0,
+    "gt_forks": 7,
+    "covered_gt_forks": 5,
+    "unique_top1": 4,
+    "new_unique_top1": 3,
+    "already_present_covered": 1,
+    "margin": 0.27225031719536874,
+    "unknowns_are_not_negatives": true,
+    "tracking_evaluated": false,
+    "scope": "individual_hypotheses_before_overlap_resolution_not_official_metric"
+  },
+  "rule": "strictly_above_max_confirmed_harmful_and_zero_v1",
+  "source_only": true,
+  "calibration_reused": true,
+  "precision_guarantee": false,
+  "authorizes_graph_edits": false
+}

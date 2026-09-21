@@ -1,0 +1,32 @@
+{
+  "dataset": "44b6_d5e7d891",
+  "evaluated_data_group": "44b6",
+  "probe_trained_on_group": "6bba",
+  "probe_sha256": "b3e6c1144002358e21073e90b340849bf8ab7c26b761517822c5de5227571c82",
+  "shape": [
+    100,
+    64,
+    256,
+    256
+  ],
+  "scale_um": [
+    1.625,
+    0.40625,
+    0.40625
+  ],
+  "legacy_candidate_report": {
+    "matched_prior_nodes": 23962,
+    "anchor_nodes": 41681,
+    "candidate_edges": 221341,
+    "edges_without_neural_prior": 201518
+  },
+  "legacy_scored_pairs": 3739,
+  "geometric_pairs": 418803,
+  "topology_all_pairs": {
+    "requires_reassignment": 414240,
+    "additive_second_child": 4409,
+    "already_present": 153,
+    "new_two_child_fork": 1
+  },
+  "proposals_sha256": "f069941a1c7392a031a146f80cea2d762a9e7ce288d1b20e2d20a9a2e698b134"
+}

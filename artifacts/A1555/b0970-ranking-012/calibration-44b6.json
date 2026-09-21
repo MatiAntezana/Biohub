@@ -1,0 +1,387 @@
+{
+  "selected_margin": null,
+  "trials": {
+    "1.0": {
+      "evaluation": {
+        "rows": {
+          "reference": [
+            {
+              "edge_tp": 117,
+              "edge_fp": 5,
+              "edge_fn": 2,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 0,
+              "num_pred_nodes": 22756,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6519211943220754,
+              "edge_jaccard": 0.9435483870967742,
+              "adj_edge_jaccard": 1.005060306238454,
+              "dataset": "44b6_144b256d",
+              "group": "44b6",
+              "split": "development",
+              "counts": {
+                "edge_tp": 117,
+                "edge_fp": 5,
+                "edge_fn": 2,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 0,
+                "num_pred_nodes": 22756
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 41,
+              "edge_fn": 25,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 21173,
+              "node_recall": 1.0,
+              "total_node_ratio": 0.10679560899111343,
+              "edge_jaccard": 0.7924528301886793,
+              "adj_edge_jaccard": 0.7839897819290061,
+              "dataset": "44b6_267148e4",
+              "group": "44b6",
+              "split": "development",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 41,
+                "edge_fn": 25,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 21173
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 21,
+              "edge_fn": 21,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 19981,
+              "node_recall": 0.9676258992805755,
+              "total_node_ratio": -0.3231139266235306,
+              "edge_jaccard": 0.8571428571428571,
+              "adj_edge_jaccard": 0.8848383365677311,
+              "dataset": "44b6_5f15d135",
+              "group": "44b6",
+              "split": "development",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 21,
+                "edge_fn": 21,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 19981
+              }
+            },
+            {
+              "edge_tp": 194,
+              "edge_fp": 7,
+              "edge_fn": 4,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 0,
+              "num_pred_nodes": 16752,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6821855435401252,
+              "edge_jaccard": 0.9463414634146341,
+              "adj_edge_jaccard": 1.0108995099740412,
+              "dataset": "44b6_66f9292d",
+              "group": "44b6",
+              "split": "development",
+              "counts": {
+                "edge_tp": 194,
+                "edge_fp": 7,
+                "edge_fn": 4,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 0,
+                "num_pred_nodes": 16752
+              }
+            },
+            {
+              "edge_tp": 488,
+              "edge_fp": 31,
+              "edge_fn": 19,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 1,
+              "num_pred_nodes": 40315,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.39700559394537677,
+              "edge_jaccard": 0.9070631970260223,
+              "adj_edge_jaccard": 0.9430741133541531,
+              "dataset": "44b6_7a302da0",
+              "group": "44b6",
+              "split": "development",
+              "counts": {
+                "edge_tp": 488,
+                "edge_fp": 31,
+                "edge_fn": 19,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 1,
+                "num_pred_nodes": 40315
+              }
+            }
+          ],
+          "candidate": [
+            {
+              "edge_tp": 117,
+              "edge_fp": 5,
+              "edge_fn": 2,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 0,
+              "num_pred_nodes": 22756,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6519211943220754,
+              "edge_jaccard": 0.9435483870967742,
+              "adj_edge_jaccard": 1.005060306238454,
+              "dataset": "44b6_144b256d",
+              "group": "44b6",
+              "split": "development",
+              "counts": {
+                "edge_tp": 117,
+                "edge_fp": 5,
+                "edge_fn": 2,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 0,
+                "num_pred_nodes": 22756
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 41,
+              "edge_fn": 25,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 21173,
+              "node_recall": 1.0,
+              "total_node_ratio": 0.10679560899111343,
+              "edge_jaccard": 0.7924528301886793,
+              "adj_edge_jaccard": 0.7839897819290061,
+              "dataset": "44b6_267148e4",
+              "group": "44b6",
+              "split": "development",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 41,
+                "edge_fn": 25,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 21173
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 21,
+              "edge_fn": 21,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 19981,
+              "node_recall": 0.9676258992805755,
+              "total_node_ratio": -0.3231139266235306,
+              "edge_jaccard": 0.8571428571428571,
+              "adj_edge_jaccard": 0.8848383365677311,
+              "dataset": "44b6_5f15d135",
+              "group": "44b6",
+              "split": "development",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 21,
+                "edge_fn": 21,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 19981
+              }
+            },
+            {
+              "edge_tp": 194,
+              "edge_fp": 7,
+              "edge_fn": 4,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 0,
+              "num_pred_nodes": 16752,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6821855435401252,
+              "edge_jaccard": 0.9463414634146341,
+              "adj_edge_jaccard": 1.0108995099740412,
+              "dataset": "44b6_66f9292d",
+              "group": "44b6",
+              "split": "development",
+              "counts": {
+                "edge_tp": 194,
+                "edge_fp": 7,
+                "edge_fn": 4,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 0,
+                "num_pred_nodes": 16752
+              }
+            },
+            {
+              "edge_tp": 488,
+              "edge_fp": 31,
+              "edge_fn": 19,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 1,
+              "num_pred_nodes": 40315,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.39700559394537677,
+              "edge_jaccard": 0.9070631970260223,
+              "adj_edge_jaccard": 0.9430741133541531,
+              "dataset": "44b6_7a302da0",
+              "group": "44b6",
+              "split": "development",
+              "counts": {
+                "edge_tp": 488,
+                "edge_fp": 31,
+                "edge_fn": 19,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 1,
+                "num_pred_nodes": 40315
+              }
+            }
+          ]
+        },
+        "summary": {
+          "reference": {
+            "n": 5,
+            "edge_jaccard": 0.881000676132522,
+            "division_jaccard": 0.0,
+            "division_tp": 0,
+            "division_fp": 2,
+            "division_fn": 3,
+            "node_recall": 0.9935251798561151,
+            "adj_edge_jaccard": 0.9118911238046775,
+            "n_adj": 5,
+            "score": 0.9118911238046775
+          },
+          "candidate": {
+            "n": 5,
+            "edge_jaccard": 0.881000676132522,
+            "division_jaccard": 0.0,
+            "division_tp": 0,
+            "division_fp": 2,
+            "division_fn": 3,
+            "node_recall": 0.9935251798561151,
+            "adj_edge_jaccard": 0.9118911238046775,
+            "n_adj": 5,
+            "score": 0.9118911238046775
+          }
+        },
+        "by_group": {
+          "44b6": {
+            "reference": {
+              "n": 5,
+              "edge_jaccard": 0.881000676132522,
+              "division_jaccard": 0.0,
+              "division_tp": 0,
+              "division_fp": 2,
+              "division_fn": 3,
+              "node_recall": 0.9935251798561151,
+              "adj_edge_jaccard": 0.9118911238046775,
+              "n_adj": 5,
+              "score": 0.9118911238046775
+            },
+            "candidate": {
+              "n": 5,
+              "edge_jaccard": 0.881000676132522,
+              "division_jaccard": 0.0,
+              "division_tp": 0,
+              "division_fp": 2,
+              "division_fn": 3,
+              "node_recall": 0.9935251798561151,
+              "adj_edge_jaccard": 0.9118911238046775,
+              "n_adj": 5,
+              "score": 0.9118911238046775
+            }
+          }
+        },
+        "uses_gt_for_edits": false,
+        "scope": "public_paired_diagnostic_full_fit_detector_not_kaggle_score",
+        "promoted": false
+      },
+      "edits": {
+        "44b6_144b256d": {
+          "status": "abstained",
+          "margin": 1.0,
+          "proposed_mothers": 39,
+          "considered_transactions": 0,
+          "edit_cap": 45,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_267148e4": {
+          "status": "abstained",
+          "margin": 1.0,
+          "proposed_mothers": 96,
+          "considered_transactions": 0,
+          "edit_cap": 42,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_5f15d135": {
+          "status": "abstained",
+          "margin": 1.0,
+          "proposed_mothers": 75,
+          "considered_transactions": 0,
+          "edit_cap": 39,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_66f9292d": {
+          "status": "abstained",
+          "margin": 1.0,
+          "proposed_mothers": 24,
+          "considered_transactions": 0,
+          "edit_cap": 33,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_7a302da0": {
+          "status": "abstained",
+          "margin": 1.0,
+          "proposed_mothers": 180,
+          "considered_transactions": 0,
+          "edit_cap": 80,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        }
+      },
+      "budget_rejected": false
+    }
+  },
+  "reused_from011": true,
+  "independent_holdout": false
+}

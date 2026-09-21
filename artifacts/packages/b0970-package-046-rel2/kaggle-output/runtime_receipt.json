@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "run_id": "b0970-package-046-rel2",
+  "code_hash": "92233aae9ca512b65082dc89eb8197c8042bd3bfab59d5fb9f4dcfe4360547ba",
+  "bundle_sha256": "34f38ac5ca89cd9df8fe75bff8a5418385b7a85367fffd1e4b5abc7ebc1e9df7",
+  "arm": "mitosis_add",
+  "contract": {
+    "csv_rows": 235567,
+    "nodes": 119881,
+    "edges": 115686,
+    "divisions": 196,
+    "datasets": [
+      "44b6_0113de3b",
+      "44b6_0b24845f",
+      "6bba_05b6850b",
+      "6bba_05db0fb1"
+    ],
+    "csv_sha256": "ae03904bef127cf8d6ced573d535804f08b518d7f7be724bdc966a2e1d03cba2",
+    "valid": true
+  },
+  "seconds": 1478.697381817,
+  "ground_truth_accessed": false,
+  "test_datasets": [
+    "44b6_0113de3b",
+    "44b6_0b24845f",
+    "6bba_05b6850b",
+    "6bba_05db0fb1"
+  ],
+  "kaggle_score": null
+}

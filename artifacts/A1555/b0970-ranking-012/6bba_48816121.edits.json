@@ -1,0 +1,19 @@
+{
+  "status": "abstained",
+  "margin": null,
+  "proposed_mothers": 72,
+  "considered_transactions": 0,
+  "edit_cap": 50,
+  "selected": [],
+  "added_edges": 0,
+  "removed_edges": 0,
+  "nodes_unchanged": true,
+  "uses_gt_for_edits": false,
+  "proposal_audit": {
+    "considered_alternatives": 100247,
+    "positive_best_mothers": 72,
+    "tied_mothers": 0,
+    "uses_gt_for_edits": false,
+    "frozen_reference_features": true
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/experiment.json": "5680793f5e80f50b8b0dc47ca27c2a7de950f1f6d2da883965348331e2edc513",
-  "experiments/EXP-054_DeepGraph_HighRes_Anisotropic_Spatial/train.py": "d65d72e198bdef9278d4e21398449d83797cd7dcb2ebe6d6fba8d51217654f66",
-  "infra/experiment_worker.py": "a41e679a7e3516846bc9c4000753370f106fdf9dc5267f90861ad8b3f7580777",
-  "infra/experimentlib.py": "f571371ebff26150bd954d3865412caf6e1116633a68845f2b49746f009c5fd2",
-  "official_starter_kit/scripts/train_unet_transformer.py": "493b2cd48b2e263c0dcf6d50f266f4c8ab6fc7df768b7b538344c07708656ed0",
-  "src/strategies/experiment_runtime.py": "2ce5b411efc3ffda62865d9d463ed6383589ad5957cf9ddca14c0c93c42a3539"
-}

@@ -1,0 +1,13 @@
+{
+  "gt_sha256": "ba8e6e208fdafdddeb067d8fc11ac545be11ebf36924c95fa2aca0bc4ef67814",
+  "labels_sha256": "d97e6624405c36f33d6c37b2132a529ea2ace5c44492af8b98ab38c3f5ed0460",
+  "score_sha256": "74204e543f6f5438e421a01620e9e529a4ee20b6b9e561fe60202f20f98d1496",
+  "fork_ranks": [],
+  "label_codes": {
+    "beneficial": 1,
+    "harmful": -1,
+    "mixed": 0,
+    "unknown": 2,
+    "reference_noop": 3
+  }
+}

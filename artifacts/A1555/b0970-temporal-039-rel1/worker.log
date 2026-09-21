@@ -1,0 +1,107 @@
+Starting Campaign 039 (DDKS-SPI) on A1555 across 8 development datasets...
+
+--- Evaluating variant_1: Calibrated Cytokinesis-Directed Guard (CCDG-020): protection requires cos_3d <= 0.20 and persistence >= 2; prunes parallel crossovers (cos > 0.20) while safeguarding drift-tilted divisions ---
+[09/15/26 01:28:15] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [44b6_c50204e0] ref_adj_edge=0.81599, cand_adj_edge=0.81599, delta=+0.00000, z_spikes=1280, pruned=20 (spi=13)
+[09/15/26 01:28:19] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [44b6_d5e7d891] ref_adj_edge=0.85906, cand_adj_edge=0.85906, delta=+0.00000, z_spikes=1444, pruned=21 (spi=19)
+[09/15/26 01:28:23] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [44b6_ddf577ad] ref_adj_edge=0.84121, cand_adj_edge=0.85500, delta=+0.01379, z_spikes=1335, pruned=16 (spi=13)
+[09/15/26 01:28:25] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [44b6_e57ff5c6] ref_adj_edge=0.73002, cand_adj_edge=0.73002, delta=+0.00000, z_spikes=283, pruned=11 (spi=4)
+[09/15/26 01:28:27] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [6bba_07e24132] ref_adj_edge=0.82505, cand_adj_edge=0.82505, delta=+0.00000, z_spikes=888, pruned=11 (spi=8)
+[09/15/26 01:28:30] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [6bba_09961292] ref_adj_edge=0.91648, cand_adj_edge=0.91694, delta=+0.00047, z_spikes=1013, pruned=11 (spi=11)
+[09/15/26 01:28:34] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [6bba_48816121] ref_adj_edge=0.93806, cand_adj_edge=0.93905, delta=+0.00100, z_spikes=859, pruned=7 (spi=3)
+[09/15/26 01:28:38] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [6bba_5a4d9360] ref_adj_edge=0.94690, cand_adj_edge=0.94690, delta=+0.00000, z_spikes=40, pruned=0 (spi=0)
+Variant variant_1 Result: score=0.904424 (ref=0.901274, delta=+0.003150), gate_passed=True
+
+--- Evaluating variant_2: Calibrated Cytokinesis-Directed Guard (CCDG-025): protection requires cos_3d <= 0.25 and persistence >= 2; prunes acute parallel crossovers (cos > 0.25) ---
+[09/15/26 01:28:39] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [44b6_c50204e0] ref_adj_edge=0.81599, cand_adj_edge=0.81599, delta=+0.00000, z_spikes=1280, pruned=18 (spi=11)
+[09/15/26 01:28:42] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [44b6_d5e7d891] ref_adj_edge=0.85906, cand_adj_edge=0.85906, delta=+0.00000, z_spikes=1444, pruned=19 (spi=17)
+[09/15/26 01:28:47] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [44b6_ddf577ad] ref_adj_edge=0.84121, cand_adj_edge=0.85500, delta=+0.01379, z_spikes=1335, pruned=15 (spi=12)
+[09/15/26 01:28:49] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [44b6_e57ff5c6] ref_adj_edge=0.73002, cand_adj_edge=0.73002, delta=+0.00000, z_spikes=283, pruned=11 (spi=4)
+[09/15/26 01:28:51] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [6bba_07e24132] ref_adj_edge=0.82505, cand_adj_edge=0.82505, delta=+0.00000, z_spikes=888, pruned=11 (spi=8)
+[09/15/26 01:28:54] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [6bba_09961292] ref_adj_edge=0.91648, cand_adj_edge=0.91694, delta=+0.00047, z_spikes=1013, pruned=10 (spi=10)
+[09/15/26 01:28:58] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [6bba_48816121] ref_adj_edge=0.93806, cand_adj_edge=0.93905, delta=+0.00100, z_spikes=859, pruned=5 (spi=2)
+[09/15/26 01:29:02] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+  [6bba_5a4d9360] ref_adj_edge=0.94690, cand_adj_edge=0.94690, delta=+0.00000, z_spikes=40, pruned=0 (spi=0)
+Variant variant_2 Result: score=0.904424 (ref=0.901274, delta=+0.003150), gate_passed=True
+
+Campaign 039 Evaluation Summary:
+Best Variant: variant_1 (disposition: eligible_for_confirmation_and_package)
+Campaign 039 completed in 48.6s.

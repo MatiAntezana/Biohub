@@ -1,0 +1,100 @@
+{
+  "schema": "temporal_association_031",
+  "source_release": "7b0f771a5af95b8df8309eadd3de83026bfad2c8f3c53d76dd4dd70e368dcce6",
+  "source_run": "b0970-selector-corpus-011",
+  "node": "A1555",
+  "source_artifacts": {
+    "receipt.json": "f7c9dccea0ce5b23aebfa6a05d892aee7fe57d161229a7d526e14c6ab2254e1f",
+    "corpus.json": "584d3ffa640906816577c30a41566a020bd79952b0e88e8bed0fa2aa0c422239"
+  },
+  "variants": {
+    "variant_1": {
+      "description": "Strict Transient-Spur Pruning Guard (max_prune_track_length=2)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "max_asymmetry_um": 0.0,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "mode": "track_length_persistence_guarded",
+        "cos_thresh": 0.0,
+        "min_ratio": 0.18,
+        "min_max_dist_um": 3.0,
+        "persistence_guard": true,
+        "heading_alignment": true,
+        "photometric_branch_selection": true,
+        "max_prune_track_length": 2,
+        "length_asymmetry_guard": false
+      }
+    },
+    "variant_2": {
+      "description": "Asymmetry-Guarded Persistence Pruning (max_len=2 or max_len=3 with delta_L>=3)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "max_asymmetry_um": 0.0,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "mode": "track_length_persistence_guarded",
+        "cos_thresh": 0.0,
+        "min_ratio": 0.18,
+        "min_max_dist_um": 3.0,
+        "persistence_guard": true,
+        "heading_alignment": true,
+        "photometric_branch_selection": true,
+        "max_prune_track_length": 2,
+        "length_asymmetry_guard": true,
+        "max_asym_prune_length": 3,
+        "length_asymmetry_min": 3
+      }
+    },
+    "variant_3": {
+      "description": "Group-Adaptive Track-Length Guarded Pruning (44b6: max_len=2, 6bba: max_len=3 with delta_L>=3)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "max_asymmetry_um": 0.0,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "mode": "group_adaptive_persistence_guarded",
+        "cos_thresh": 0.0,
+        "min_ratio": 0.18,
+        "min_max_dist_um": 3.0,
+        "persistence_guard": true,
+        "heading_alignment": true,
+        "photometric_branch_selection": true,
+        "max_prune_track_length_44b6": 2,
+        "max_prune_track_length_6bba": 3,
+        "length_asymmetry_guard": true,
+        "max_asym_prune_length": 3,
+        "length_asymmetry_min": 3
+      }
+    }
+  },
+  "gates": {
+    "development_score_delta_min": 0.003,
+    "confirmation_score_delta_min": 0.002,
+    "minimum_group_score_delta": 0.0,
+    "minimum_sample_adjusted_jaccard_delta": -0.015,
+    "minimum_edge_jaccard_delta": 0.0,
+    "minimum_division_jaccard_delta": 0.0
+  }
+}

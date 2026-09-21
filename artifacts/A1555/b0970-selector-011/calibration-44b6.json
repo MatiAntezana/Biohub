@@ -1,0 +1,2918 @@
+{
+  "selected_margin": null,
+  "trials": {
+    "1.0": {
+      "evaluation": {
+        "rows": {
+          "reference": [
+            {
+              "edge_tp": 117,
+              "edge_fp": 5,
+              "edge_fn": 2,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 0,
+              "num_pred_nodes": 22756,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6519211943220754,
+              "edge_jaccard": 0.9435483870967742,
+              "adj_edge_jaccard": 1.005060306238454,
+              "dataset": "44b6_144b256d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 117,
+                "edge_fp": 5,
+                "edge_fn": 2,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 0,
+                "num_pred_nodes": 22756
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 41,
+              "edge_fn": 25,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 21173,
+              "node_recall": 1.0,
+              "total_node_ratio": 0.10679560899111343,
+              "edge_jaccard": 0.7924528301886793,
+              "adj_edge_jaccard": 0.7839897819290061,
+              "dataset": "44b6_267148e4",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 41,
+                "edge_fn": 25,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 21173
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 21,
+              "edge_fn": 21,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 19981,
+              "node_recall": 0.9676258992805755,
+              "total_node_ratio": -0.3231139266235306,
+              "edge_jaccard": 0.8571428571428571,
+              "adj_edge_jaccard": 0.8848383365677311,
+              "dataset": "44b6_5f15d135",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 21,
+                "edge_fn": 21,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 19981
+              }
+            },
+            {
+              "edge_tp": 194,
+              "edge_fp": 7,
+              "edge_fn": 4,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 0,
+              "num_pred_nodes": 16752,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6821855435401252,
+              "edge_jaccard": 0.9463414634146341,
+              "adj_edge_jaccard": 1.0108995099740412,
+              "dataset": "44b6_66f9292d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 194,
+                "edge_fp": 7,
+                "edge_fn": 4,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 0,
+                "num_pred_nodes": 16752
+              }
+            },
+            {
+              "edge_tp": 488,
+              "edge_fp": 31,
+              "edge_fn": 19,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 1,
+              "num_pred_nodes": 40315,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.39700559394537677,
+              "edge_jaccard": 0.9070631970260223,
+              "adj_edge_jaccard": 0.9430741133541531,
+              "dataset": "44b6_7a302da0",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 488,
+                "edge_fp": 31,
+                "edge_fn": 19,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 1,
+                "num_pred_nodes": 40315
+              }
+            }
+          ],
+          "candidate": [
+            {
+              "edge_tp": 117,
+              "edge_fp": 5,
+              "edge_fn": 2,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 0,
+              "num_pred_nodes": 22756,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6519211943220754,
+              "edge_jaccard": 0.9435483870967742,
+              "adj_edge_jaccard": 1.005060306238454,
+              "dataset": "44b6_144b256d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 117,
+                "edge_fp": 5,
+                "edge_fn": 2,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 0,
+                "num_pred_nodes": 22756
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 41,
+              "edge_fn": 25,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 21173,
+              "node_recall": 1.0,
+              "total_node_ratio": 0.10679560899111343,
+              "edge_jaccard": 0.7924528301886793,
+              "adj_edge_jaccard": 0.7839897819290061,
+              "dataset": "44b6_267148e4",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 41,
+                "edge_fn": 25,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 21173
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 21,
+              "edge_fn": 21,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 19981,
+              "node_recall": 0.9676258992805755,
+              "total_node_ratio": -0.3231139266235306,
+              "edge_jaccard": 0.8571428571428571,
+              "adj_edge_jaccard": 0.8848383365677311,
+              "dataset": "44b6_5f15d135",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 21,
+                "edge_fn": 21,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 19981
+              }
+            },
+            {
+              "edge_tp": 194,
+              "edge_fp": 7,
+              "edge_fn": 4,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 0,
+              "num_pred_nodes": 16752,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6821855435401252,
+              "edge_jaccard": 0.9463414634146341,
+              "adj_edge_jaccard": 1.0108995099740412,
+              "dataset": "44b6_66f9292d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 194,
+                "edge_fp": 7,
+                "edge_fn": 4,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 0,
+                "num_pred_nodes": 16752
+              }
+            },
+            {
+              "edge_tp": 488,
+              "edge_fp": 31,
+              "edge_fn": 19,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 1,
+              "num_pred_nodes": 40315,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.39700559394537677,
+              "edge_jaccard": 0.9070631970260223,
+              "adj_edge_jaccard": 0.9430741133541531,
+              "dataset": "44b6_7a302da0",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 488,
+                "edge_fp": 31,
+                "edge_fn": 19,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 1,
+                "num_pred_nodes": 40315
+              }
+            }
+          ]
+        },
+        "summary": {
+          "reference": {
+            "n": 5,
+            "edge_jaccard": 0.881000676132522,
+            "division_jaccard": 0.0,
+            "division_tp": 0,
+            "division_fp": 2,
+            "division_fn": 3,
+            "node_recall": 0.9935251798561151,
+            "adj_edge_jaccard": 0.9118911238046775,
+            "n_adj": 5,
+            "score": 0.9118911238046775
+          },
+          "candidate": {
+            "n": 5,
+            "edge_jaccard": 0.881000676132522,
+            "division_jaccard": 0.0,
+            "division_tp": 0,
+            "division_fp": 2,
+            "division_fn": 3,
+            "node_recall": 0.9935251798561151,
+            "adj_edge_jaccard": 0.9118911238046775,
+            "n_adj": 5,
+            "score": 0.9118911238046775
+          }
+        },
+        "by_group": {
+          "44b6": {
+            "reference": {
+              "n": 5,
+              "edge_jaccard": 0.881000676132522,
+              "division_jaccard": 0.0,
+              "division_tp": 0,
+              "division_fp": 2,
+              "division_fn": 3,
+              "node_recall": 0.9935251798561151,
+              "adj_edge_jaccard": 0.9118911238046775,
+              "n_adj": 5,
+              "score": 0.9118911238046775
+            },
+            "candidate": {
+              "n": 5,
+              "edge_jaccard": 0.881000676132522,
+              "division_jaccard": 0.0,
+              "division_tp": 0,
+              "division_fp": 2,
+              "division_fn": 3,
+              "node_recall": 0.9935251798561151,
+              "adj_edge_jaccard": 0.9118911238046775,
+              "n_adj": 5,
+              "score": 0.9118911238046775
+            }
+          }
+        },
+        "uses_gt_for_edits": false,
+        "scope": "public_paired_diagnostic_full_fit_detector_not_kaggle_score",
+        "promoted": false
+      },
+      "budget_rejected": false,
+      "edits": {
+        "44b6_144b256d": {
+          "status": "applied",
+          "margin": 1.0,
+          "proposed_mothers": 45,
+          "considered_transactions": 1,
+          "edit_cap": 45,
+          "selected": [
+            {
+              "mother": 8696,
+              "daughters": [
+                8898,
+                8907
+              ],
+              "gain": 1.4057615493239988,
+              "add": [
+                [
+                  8696,
+                  8907
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                8696
+              ],
+              "touched_children": [
+                8907
+              ]
+            }
+          ],
+          "added_edges": 1,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_267148e4": {
+          "status": "applied",
+          "margin": 1.0,
+          "proposed_mothers": 191,
+          "considered_transactions": 33,
+          "edit_cap": 42,
+          "selected": [
+            {
+              "mother": 2380,
+              "daughters": [
+                2582,
+                2594
+              ],
+              "gain": 2.4296365000082387,
+              "add": [
+                [
+                  2380,
+                  2594
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                2380
+              ],
+              "touched_children": [
+                2594
+              ]
+            },
+            {
+              "mother": 9922,
+              "daughters": [
+                10119,
+                10120
+              ],
+              "gain": 2.187549866404657,
+              "add": [
+                [
+                  9922,
+                  10119
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                9922
+              ],
+              "touched_children": [
+                10119
+              ]
+            },
+            {
+              "mother": 10477,
+              "daughters": [
+                10630,
+                10636
+              ],
+              "gain": 2.118886882064591,
+              "add": [
+                [
+                  10477,
+                  10630
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                10477
+              ],
+              "touched_children": [
+                10630
+              ]
+            },
+            {
+              "mother": 1915,
+              "daughters": [
+                2097,
+                2099
+              ],
+              "gain": 1.971295879070499,
+              "add": [
+                [
+                  1915,
+                  2099
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                1915
+              ],
+              "touched_children": [
+                2099
+              ]
+            },
+            {
+              "mother": 10793,
+              "daughters": [
+                10998,
+                11016
+              ],
+              "gain": 1.9632134647792123,
+              "add": [
+                [
+                  10793,
+                  11016
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                10793
+              ],
+              "touched_children": [
+                11016
+              ]
+            },
+            {
+              "mother": 10649,
+              "daughters": [
+                10847,
+                10851
+              ],
+              "gain": 1.928085520451768,
+              "add": [
+                [
+                  10649,
+                  10851
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                10649
+              ],
+              "touched_children": [
+                10851
+              ]
+            },
+            {
+              "mother": 15744,
+              "daughters": [
+                15932,
+                15950
+              ],
+              "gain": 1.7458915761365443,
+              "add": [
+                [
+                  15744,
+                  15932
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                15744
+              ],
+              "touched_children": [
+                15932
+              ]
+            },
+            {
+              "mother": 6209,
+              "daughters": [
+                6443,
+                6444
+              ],
+              "gain": 1.602442575001576,
+              "add": [
+                [
+                  6209,
+                  6444
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                6209
+              ],
+              "touched_children": [
+                6444
+              ]
+            },
+            {
+              "mother": 2099,
+              "daughters": [
+                2290,
+                2294
+              ],
+              "gain": 1.599675443471023,
+              "add": [
+                [
+                  2099,
+                  2294
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                2099
+              ],
+              "touched_children": [
+                2294
+              ]
+            },
+            {
+              "mother": 6391,
+              "daughters": [
+                6640,
+                6655
+              ],
+              "gain": 1.5787253246274953,
+              "add": [
+                [
+                  6391,
+                  6655
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                6391
+              ],
+              "touched_children": [
+                6655
+              ]
+            },
+            {
+              "mother": 8140,
+              "daughters": [
+                8397,
+                8409
+              ],
+              "gain": 1.5704644554234828,
+              "add": [
+                [
+                  8140,
+                  8409
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                8140
+              ],
+              "touched_children": [
+                8409
+              ]
+            },
+            {
+              "mother": 10240,
+              "daughters": [
+                10372,
+                10388
+              ],
+              "gain": 1.5686595717355656,
+              "add": [
+                [
+                  10240,
+                  10388
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                10240
+              ],
+              "touched_children": [
+                10388
+              ]
+            },
+            {
+              "mother": 10573,
+              "daughters": [
+                10757,
+                10768
+              ],
+              "gain": 1.5668051369233367,
+              "add": [
+                [
+                  10573,
+                  10768
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                10573
+              ],
+              "touched_children": [
+                10768
+              ]
+            },
+            {
+              "mother": 12352,
+              "daughters": [
+                12597,
+                12598
+              ],
+              "gain": 1.5619197623457635,
+              "add": [
+                [
+                  12352,
+                  12597
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                12352
+              ],
+              "touched_children": [
+                12597
+              ]
+            },
+            {
+              "mother": 7975,
+              "daughters": [
+                8242,
+                8243
+              ],
+              "gain": 1.5435524658897193,
+              "add": [
+                [
+                  7975,
+                  8243
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                7975
+              ],
+              "touched_children": [
+                8243
+              ]
+            },
+            {
+              "mother": 8688,
+              "daughters": [
+                8928,
+                8941
+              ],
+              "gain": 1.5308087927075258,
+              "add": [
+                [
+                  8688,
+                  8941
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                8688
+              ],
+              "touched_children": [
+                8941
+              ]
+            },
+            {
+              "mother": 10474,
+              "daughters": [
+                10606,
+                10617
+              ],
+              "gain": 1.4779540522899712,
+              "add": [
+                [
+                  10474,
+                  10606
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                10474
+              ],
+              "touched_children": [
+                10606
+              ]
+            },
+            {
+              "mother": 17316,
+              "daughters": [
+                17512,
+                17525
+              ],
+              "gain": 1.4518135180921818,
+              "add": [
+                [
+                  17316,
+                  17525
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                17316
+              ],
+              "touched_children": [
+                17525
+              ]
+            },
+            {
+              "mother": 10648,
+              "daughters": [
+                10838,
+                10849
+              ],
+              "gain": 1.413395879150766,
+              "add": [
+                [
+                  10648,
+                  10849
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                10648
+              ],
+              "touched_children": [
+                10849
+              ]
+            },
+            {
+              "mother": 10138,
+              "daughters": [
+                10273,
+                10276
+              ],
+              "gain": 1.3525469758362674,
+              "add": [
+                [
+                  10138,
+                  10273
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                10138
+              ],
+              "touched_children": [
+                10273
+              ]
+            },
+            {
+              "mother": 2069,
+              "daughters": [
+                2258,
+                2270
+              ],
+              "gain": 1.2926556527411988,
+              "add": [
+                [
+                  2069,
+                  2258
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                2069
+              ],
+              "touched_children": [
+                2258
+              ]
+            },
+            {
+              "mother": 10466,
+              "daughters": [
+                10590,
+                10594
+              ],
+              "gain": 1.2916590241559962,
+              "add": [
+                [
+                  10466,
+                  10590
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                10466
+              ],
+              "touched_children": [
+                10590
+              ]
+            },
+            {
+              "mother": 16916,
+              "daughters": [
+                17114,
+                17135
+              ],
+              "gain": 1.2587713494606219,
+              "add": [
+                [
+                  16916,
+                  17135
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                16916
+              ],
+              "touched_children": [
+                17135
+              ]
+            },
+            {
+              "mother": 138,
+              "daughters": [
+                287,
+                288
+              ],
+              "gain": 1.2585211013156905,
+              "add": [
+                [
+                  138,
+                  287
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                138
+              ],
+              "touched_children": [
+                287
+              ]
+            },
+            {
+              "mother": 492,
+              "daughters": [
+                652,
+                665
+              ],
+              "gain": 1.2522558512905688,
+              "add": [
+                [
+                  492,
+                  652
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                492
+              ],
+              "touched_children": [
+                652
+              ]
+            },
+            {
+              "mother": 6542,
+              "daughters": [
+                6798,
+                6807
+              ],
+              "gain": 1.150359121535731,
+              "add": [
+                [
+                  6542,
+                  6807
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                6542
+              ],
+              "touched_children": [
+                6807
+              ]
+            },
+            {
+              "mother": 1917,
+              "daughters": [
+                2093,
+                2102
+              ],
+              "gain": 1.118802393664691,
+              "add": [
+                [
+                  1917,
+                  2102
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                1917
+              ],
+              "touched_children": [
+                2102
+              ]
+            },
+            {
+              "mother": 7206,
+              "daughters": [
+                7452,
+                7471
+              ],
+              "gain": 1.1117069480490105,
+              "add": [
+                [
+                  7206,
+                  7452
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                7206
+              ],
+              "touched_children": [
+                7452
+              ]
+            },
+            {
+              "mother": 11580,
+              "daughters": [
+                11812,
+                11821
+              ],
+              "gain": 1.0833657660543063,
+              "add": [
+                [
+                  11580,
+                  11821
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                11580
+              ],
+              "touched_children": [
+                11821
+              ]
+            },
+            {
+              "mother": 21005,
+              "daughters": [
+                10631,
+                10645
+              ],
+              "gain": 1.0536728787504137,
+              "add": [
+                [
+                  21005,
+                  10631
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                21005
+              ],
+              "touched_children": [
+                10631
+              ]
+            },
+            {
+              "mother": 10484,
+              "daughters": [
+                10634,
+                10644
+              ],
+              "gain": 1.0533663612473125,
+              "add": [
+                [
+                  10484,
+                  10634
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                10484
+              ],
+              "touched_children": [
+                10634
+              ]
+            },
+            {
+              "mother": 14947,
+              "daughters": [
+                15166,
+                15173
+              ],
+              "gain": 1.0528661568745439,
+              "add": [
+                [
+                  14947,
+                  15166
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                14947
+              ],
+              "touched_children": [
+                15166
+              ]
+            },
+            {
+              "mother": 2729,
+              "daughters": [
+                2933,
+                2946
+              ],
+              "gain": 1.0303095377549494,
+              "add": [
+                [
+                  2729,
+                  2933
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                2729
+              ],
+              "touched_children": [
+                2933
+              ]
+            }
+          ],
+          "added_edges": 33,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_5f15d135": {
+          "status": "applied",
+          "margin": 1.0,
+          "proposed_mothers": 106,
+          "considered_transactions": 11,
+          "edit_cap": 39,
+          "selected": [
+            {
+              "mother": 17167,
+              "daughters": [
+                17307,
+                17323
+              ],
+              "gain": 3.2732224606433764,
+              "add": [
+                [
+                  17167,
+                  17307
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                17167
+              ],
+              "touched_children": [
+                17307
+              ]
+            },
+            {
+              "mother": 2449,
+              "daughters": [
+                2704,
+                2710
+              ],
+              "gain": 2.641443446052115,
+              "add": [
+                [
+                  2449,
+                  2710
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                2449
+              ],
+              "touched_children": [
+                2710
+              ]
+            },
+            {
+              "mother": 196,
+              "daughters": [
+                412,
+                413
+              ],
+              "gain": 2.250825320116518,
+              "add": [
+                [
+                  196,
+                  412
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                196
+              ],
+              "touched_children": [
+                412
+              ]
+            },
+            {
+              "mother": 2,
+              "daughters": [
+                196,
+                204
+              ],
+              "gain": 1.9755810694422573,
+              "add": [
+                [
+                  2,
+                  196
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                2
+              ],
+              "touched_children": [
+                196
+              ]
+            },
+            {
+              "mother": 863,
+              "daughters": [
+                1107,
+                1111
+              ],
+              "gain": 1.8794502070650998,
+              "add": [
+                [
+                  863,
+                  1107
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                863
+              ],
+              "touched_children": [
+                1107
+              ]
+            },
+            {
+              "mother": 190,
+              "daughters": [
+                386,
+                403
+              ],
+              "gain": 1.8038998232712795,
+              "add": [
+                [
+                  190,
+                  403
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                190
+              ],
+              "touched_children": [
+                403
+              ]
+            },
+            {
+              "mother": 27,
+              "daughters": [
+                222,
+                228
+              ],
+              "gain": 1.7656692270168213,
+              "add": [
+                [
+                  27,
+                  222
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                27
+              ],
+              "touched_children": [
+                222
+              ]
+            },
+            {
+              "mother": 178,
+              "daughters": [
+                383,
+                407
+              ],
+              "gain": 1.671020547834478,
+              "add": [
+                [
+                  178,
+                  383
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                178
+              ],
+              "touched_children": [
+                383
+              ]
+            },
+            {
+              "mother": 7866,
+              "daughters": [
+                8078,
+                8084
+              ],
+              "gain": 1.4721352287546017,
+              "add": [
+                [
+                  7866,
+                  8078
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                7866
+              ],
+              "touched_children": [
+                8078
+              ]
+            },
+            {
+              "mother": 8417,
+              "daughters": [
+                8637
+              ],
+              "gain": 1.225089178895399,
+              "add": [],
+              "remove": [
+                [
+                  8417,
+                  8627
+                ]
+              ],
+              "affected_parents": [
+                8417
+              ],
+              "touched_children": [
+                8627
+              ]
+            },
+            {
+              "mother": 165,
+              "daughters": [
+                375,
+                405
+              ],
+              "gain": 1.1732467657190933,
+              "add": [
+                [
+                  165,
+                  405
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                165
+              ],
+              "touched_children": [
+                405
+              ]
+            }
+          ],
+          "added_edges": 10,
+          "removed_edges": 1,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_66f9292d": {
+          "status": "applied",
+          "margin": 1.0,
+          "proposed_mothers": 25,
+          "considered_transactions": 1,
+          "edit_cap": 33,
+          "selected": [
+            {
+              "mother": 2803,
+              "daughters": [
+                2966,
+                3000
+              ],
+              "gain": 1.0376247621133825,
+              "add": [
+                [
+                  2803,
+                  3000
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                2803
+              ],
+              "touched_children": [
+                3000
+              ]
+            }
+          ],
+          "added_edges": 1,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_7a302da0": {
+          "status": "applied",
+          "margin": 1.0,
+          "proposed_mothers": 130,
+          "considered_transactions": 13,
+          "edit_cap": 80,
+          "selected": [
+            {
+              "mother": 4850,
+              "daughters": [
+                5256,
+                5305
+              ],
+              "gain": 2.0716336481379907,
+              "add": [
+                [
+                  4850,
+                  5305
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                4850
+              ],
+              "touched_children": [
+                5305
+              ]
+            },
+            {
+              "mother": 36278,
+              "daughters": [
+                36662,
+                36709
+              ],
+              "gain": 1.9504727297168376,
+              "add": [
+                [
+                  36278,
+                  36662
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                36278
+              ],
+              "touched_children": [
+                36662
+              ]
+            },
+            {
+              "mother": 37121,
+              "daughters": [
+                37534,
+                37562
+              ],
+              "gain": 1.80946867091582,
+              "add": [
+                [
+                  37121,
+                  37562
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                37121
+              ],
+              "touched_children": [
+                37562
+              ]
+            },
+            {
+              "mother": 13583,
+              "daughters": [
+                13988,
+                14020
+              ],
+              "gain": 1.641885235312171,
+              "add": [
+                [
+                  13583,
+                  14020
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                13583
+              ],
+              "touched_children": [
+                14020
+              ]
+            },
+            {
+              "mother": 122,
+              "daughters": [
+                443,
+                488
+              ],
+              "gain": 1.3892086999698472,
+              "add": [
+                [
+                  122,
+                  443
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                122
+              ],
+              "touched_children": [
+                443
+              ]
+            },
+            {
+              "mother": 36228,
+              "daughters": [
+                36627,
+                36638
+              ],
+              "gain": 1.3319230839178204,
+              "add": [
+                [
+                  36228,
+                  36638
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                36228
+              ],
+              "touched_children": [
+                36638
+              ]
+            },
+            {
+              "mother": 5956,
+              "daughters": [
+                6357,
+                6392
+              ],
+              "gain": 1.3112634244652814,
+              "add": [
+                [
+                  5956,
+                  6357
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                5956
+              ],
+              "touched_children": [
+                6357
+              ]
+            },
+            {
+              "mother": 32759,
+              "daughters": [
+                33114,
+                33148
+              ],
+              "gain": 1.2939417115165668,
+              "add": [
+                [
+                  32759,
+                  33148
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                32759
+              ],
+              "touched_children": [
+                33148
+              ]
+            },
+            {
+              "mother": 259,
+              "daughters": [
+                606,
+                618
+              ],
+              "gain": 1.1849624629925806,
+              "add": [
+                [
+                  259,
+                  606
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                259
+              ],
+              "touched_children": [
+                606
+              ]
+            },
+            {
+              "mother": 6435,
+              "daughters": [
+                6823,
+                6895
+              ],
+              "gain": 1.0557784381837287,
+              "add": [
+                [
+                  6435,
+                  6823
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                6435
+              ],
+              "touched_children": [
+                6823
+              ]
+            },
+            {
+              "mother": 14890,
+              "daughters": [
+                15317,
+                15325
+              ],
+              "gain": 1.0306903378192958,
+              "add": [
+                [
+                  14890,
+                  15317
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                14890
+              ],
+              "touched_children": [
+                15317
+              ]
+            },
+            {
+              "mother": 6148,
+              "daughters": [
+                6562,
+                6570
+              ],
+              "gain": 1.0085297396416744,
+              "add": [
+                [
+                  6148,
+                  6562
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                6148
+              ],
+              "touched_children": [
+                6562
+              ]
+            },
+            {
+              "mother": 34755,
+              "daughters": [
+                35136,
+                35149
+              ],
+              "gain": 1.0006788175419028,
+              "add": [
+                [
+                  34755,
+                  35149
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                34755
+              ],
+              "touched_children": [
+                35149
+              ]
+            }
+          ],
+          "added_edges": 13,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        }
+      }
+    },
+    "2.0": {
+      "evaluation": {
+        "rows": {
+          "reference": [
+            {
+              "edge_tp": 117,
+              "edge_fp": 5,
+              "edge_fn": 2,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 0,
+              "num_pred_nodes": 22756,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6519211943220754,
+              "edge_jaccard": 0.9435483870967742,
+              "adj_edge_jaccard": 1.005060306238454,
+              "dataset": "44b6_144b256d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 117,
+                "edge_fp": 5,
+                "edge_fn": 2,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 0,
+                "num_pred_nodes": 22756
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 41,
+              "edge_fn": 25,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 21173,
+              "node_recall": 1.0,
+              "total_node_ratio": 0.10679560899111343,
+              "edge_jaccard": 0.7924528301886793,
+              "adj_edge_jaccard": 0.7839897819290061,
+              "dataset": "44b6_267148e4",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 41,
+                "edge_fn": 25,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 21173
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 21,
+              "edge_fn": 21,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 19981,
+              "node_recall": 0.9676258992805755,
+              "total_node_ratio": -0.3231139266235306,
+              "edge_jaccard": 0.8571428571428571,
+              "adj_edge_jaccard": 0.8848383365677311,
+              "dataset": "44b6_5f15d135",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 21,
+                "edge_fn": 21,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 19981
+              }
+            },
+            {
+              "edge_tp": 194,
+              "edge_fp": 7,
+              "edge_fn": 4,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 0,
+              "num_pred_nodes": 16752,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6821855435401252,
+              "edge_jaccard": 0.9463414634146341,
+              "adj_edge_jaccard": 1.0108995099740412,
+              "dataset": "44b6_66f9292d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 194,
+                "edge_fp": 7,
+                "edge_fn": 4,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 0,
+                "num_pred_nodes": 16752
+              }
+            },
+            {
+              "edge_tp": 488,
+              "edge_fp": 31,
+              "edge_fn": 19,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 1,
+              "num_pred_nodes": 40315,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.39700559394537677,
+              "edge_jaccard": 0.9070631970260223,
+              "adj_edge_jaccard": 0.9430741133541531,
+              "dataset": "44b6_7a302da0",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 488,
+                "edge_fp": 31,
+                "edge_fn": 19,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 1,
+                "num_pred_nodes": 40315
+              }
+            }
+          ],
+          "candidate": [
+            {
+              "edge_tp": 117,
+              "edge_fp": 5,
+              "edge_fn": 2,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 0,
+              "num_pred_nodes": 22756,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6519211943220754,
+              "edge_jaccard": 0.9435483870967742,
+              "adj_edge_jaccard": 1.005060306238454,
+              "dataset": "44b6_144b256d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 117,
+                "edge_fp": 5,
+                "edge_fn": 2,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 0,
+                "num_pred_nodes": 22756
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 41,
+              "edge_fn": 25,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 21173,
+              "node_recall": 1.0,
+              "total_node_ratio": 0.10679560899111343,
+              "edge_jaccard": 0.7924528301886793,
+              "adj_edge_jaccard": 0.7839897819290061,
+              "dataset": "44b6_267148e4",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 41,
+                "edge_fn": 25,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 21173
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 21,
+              "edge_fn": 21,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 19981,
+              "node_recall": 0.9676258992805755,
+              "total_node_ratio": -0.3231139266235306,
+              "edge_jaccard": 0.8571428571428571,
+              "adj_edge_jaccard": 0.8848383365677311,
+              "dataset": "44b6_5f15d135",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 21,
+                "edge_fn": 21,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 19981
+              }
+            },
+            {
+              "edge_tp": 194,
+              "edge_fp": 7,
+              "edge_fn": 4,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 0,
+              "num_pred_nodes": 16752,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6821855435401252,
+              "edge_jaccard": 0.9463414634146341,
+              "adj_edge_jaccard": 1.0108995099740412,
+              "dataset": "44b6_66f9292d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 194,
+                "edge_fp": 7,
+                "edge_fn": 4,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 0,
+                "num_pred_nodes": 16752
+              }
+            },
+            {
+              "edge_tp": 488,
+              "edge_fp": 31,
+              "edge_fn": 19,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 1,
+              "num_pred_nodes": 40315,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.39700559394537677,
+              "edge_jaccard": 0.9070631970260223,
+              "adj_edge_jaccard": 0.9430741133541531,
+              "dataset": "44b6_7a302da0",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 488,
+                "edge_fp": 31,
+                "edge_fn": 19,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 1,
+                "num_pred_nodes": 40315
+              }
+            }
+          ]
+        },
+        "summary": {
+          "reference": {
+            "n": 5,
+            "edge_jaccard": 0.881000676132522,
+            "division_jaccard": 0.0,
+            "division_tp": 0,
+            "division_fp": 2,
+            "division_fn": 3,
+            "node_recall": 0.9935251798561151,
+            "adj_edge_jaccard": 0.9118911238046775,
+            "n_adj": 5,
+            "score": 0.9118911238046775
+          },
+          "candidate": {
+            "n": 5,
+            "edge_jaccard": 0.881000676132522,
+            "division_jaccard": 0.0,
+            "division_tp": 0,
+            "division_fp": 2,
+            "division_fn": 3,
+            "node_recall": 0.9935251798561151,
+            "adj_edge_jaccard": 0.9118911238046775,
+            "n_adj": 5,
+            "score": 0.9118911238046775
+          }
+        },
+        "by_group": {
+          "44b6": {
+            "reference": {
+              "n": 5,
+              "edge_jaccard": 0.881000676132522,
+              "division_jaccard": 0.0,
+              "division_tp": 0,
+              "division_fp": 2,
+              "division_fn": 3,
+              "node_recall": 0.9935251798561151,
+              "adj_edge_jaccard": 0.9118911238046775,
+              "n_adj": 5,
+              "score": 0.9118911238046775
+            },
+            "candidate": {
+              "n": 5,
+              "edge_jaccard": 0.881000676132522,
+              "division_jaccard": 0.0,
+              "division_tp": 0,
+              "division_fp": 2,
+              "division_fn": 3,
+              "node_recall": 0.9935251798561151,
+              "adj_edge_jaccard": 0.9118911238046775,
+              "n_adj": 5,
+              "score": 0.9118911238046775
+            }
+          }
+        },
+        "uses_gt_for_edits": false,
+        "scope": "public_paired_diagnostic_full_fit_detector_not_kaggle_score",
+        "promoted": false
+      },
+      "budget_rejected": false,
+      "edits": {
+        "44b6_144b256d": {
+          "status": "abstained",
+          "margin": 2.0,
+          "proposed_mothers": 45,
+          "considered_transactions": 0,
+          "edit_cap": 45,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_267148e4": {
+          "status": "applied",
+          "margin": 2.0,
+          "proposed_mothers": 191,
+          "considered_transactions": 3,
+          "edit_cap": 42,
+          "selected": [
+            {
+              "mother": 2380,
+              "daughters": [
+                2582,
+                2594
+              ],
+              "gain": 2.4296365000082387,
+              "add": [
+                [
+                  2380,
+                  2594
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                2380
+              ],
+              "touched_children": [
+                2594
+              ]
+            },
+            {
+              "mother": 9922,
+              "daughters": [
+                10119,
+                10120
+              ],
+              "gain": 2.187549866404657,
+              "add": [
+                [
+                  9922,
+                  10119
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                9922
+              ],
+              "touched_children": [
+                10119
+              ]
+            },
+            {
+              "mother": 10477,
+              "daughters": [
+                10630,
+                10636
+              ],
+              "gain": 2.118886882064591,
+              "add": [
+                [
+                  10477,
+                  10630
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                10477
+              ],
+              "touched_children": [
+                10630
+              ]
+            }
+          ],
+          "added_edges": 3,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_5f15d135": {
+          "status": "applied",
+          "margin": 2.0,
+          "proposed_mothers": 106,
+          "considered_transactions": 3,
+          "edit_cap": 39,
+          "selected": [
+            {
+              "mother": 17167,
+              "daughters": [
+                17307,
+                17323
+              ],
+              "gain": 3.2732224606433764,
+              "add": [
+                [
+                  17167,
+                  17307
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                17167
+              ],
+              "touched_children": [
+                17307
+              ]
+            },
+            {
+              "mother": 2449,
+              "daughters": [
+                2704,
+                2710
+              ],
+              "gain": 2.641443446052115,
+              "add": [
+                [
+                  2449,
+                  2710
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                2449
+              ],
+              "touched_children": [
+                2710
+              ]
+            },
+            {
+              "mother": 196,
+              "daughters": [
+                412,
+                413
+              ],
+              "gain": 2.250825320116518,
+              "add": [
+                [
+                  196,
+                  412
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                196
+              ],
+              "touched_children": [
+                412
+              ]
+            }
+          ],
+          "added_edges": 3,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_66f9292d": {
+          "status": "abstained",
+          "margin": 2.0,
+          "proposed_mothers": 25,
+          "considered_transactions": 0,
+          "edit_cap": 33,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_7a302da0": {
+          "status": "applied",
+          "margin": 2.0,
+          "proposed_mothers": 130,
+          "considered_transactions": 1,
+          "edit_cap": 80,
+          "selected": [
+            {
+              "mother": 4850,
+              "daughters": [
+                5256,
+                5305
+              ],
+              "gain": 2.0716336481379907,
+              "add": [
+                [
+                  4850,
+                  5305
+                ]
+              ],
+              "remove": [],
+              "affected_parents": [
+                4850
+              ],
+              "touched_children": [
+                5305
+              ]
+            }
+          ],
+          "added_edges": 1,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        }
+      }
+    },
+    "4.0": {
+      "evaluation": {
+        "rows": {
+          "reference": [
+            {
+              "edge_tp": 117,
+              "edge_fp": 5,
+              "edge_fn": 2,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 0,
+              "num_pred_nodes": 22756,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6519211943220754,
+              "edge_jaccard": 0.9435483870967742,
+              "adj_edge_jaccard": 1.005060306238454,
+              "dataset": "44b6_144b256d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 117,
+                "edge_fp": 5,
+                "edge_fn": 2,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 0,
+                "num_pred_nodes": 22756
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 41,
+              "edge_fn": 25,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 21173,
+              "node_recall": 1.0,
+              "total_node_ratio": 0.10679560899111343,
+              "edge_jaccard": 0.7924528301886793,
+              "adj_edge_jaccard": 0.7839897819290061,
+              "dataset": "44b6_267148e4",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 41,
+                "edge_fn": 25,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 21173
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 21,
+              "edge_fn": 21,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 19981,
+              "node_recall": 0.9676258992805755,
+              "total_node_ratio": -0.3231139266235306,
+              "edge_jaccard": 0.8571428571428571,
+              "adj_edge_jaccard": 0.8848383365677311,
+              "dataset": "44b6_5f15d135",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 21,
+                "edge_fn": 21,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 19981
+              }
+            },
+            {
+              "edge_tp": 194,
+              "edge_fp": 7,
+              "edge_fn": 4,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 0,
+              "num_pred_nodes": 16752,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6821855435401252,
+              "edge_jaccard": 0.9463414634146341,
+              "adj_edge_jaccard": 1.0108995099740412,
+              "dataset": "44b6_66f9292d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 194,
+                "edge_fp": 7,
+                "edge_fn": 4,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 0,
+                "num_pred_nodes": 16752
+              }
+            },
+            {
+              "edge_tp": 488,
+              "edge_fp": 31,
+              "edge_fn": 19,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 1,
+              "num_pred_nodes": 40315,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.39700559394537677,
+              "edge_jaccard": 0.9070631970260223,
+              "adj_edge_jaccard": 0.9430741133541531,
+              "dataset": "44b6_7a302da0",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 488,
+                "edge_fp": 31,
+                "edge_fn": 19,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 1,
+                "num_pred_nodes": 40315
+              }
+            }
+          ],
+          "candidate": [
+            {
+              "edge_tp": 117,
+              "edge_fp": 5,
+              "edge_fn": 2,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 0,
+              "num_pred_nodes": 22756,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6519211943220754,
+              "edge_jaccard": 0.9435483870967742,
+              "adj_edge_jaccard": 1.005060306238454,
+              "dataset": "44b6_144b256d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 117,
+                "edge_fp": 5,
+                "edge_fn": 2,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 0,
+                "num_pred_nodes": 22756
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 41,
+              "edge_fn": 25,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 21173,
+              "node_recall": 1.0,
+              "total_node_ratio": 0.10679560899111343,
+              "edge_jaccard": 0.7924528301886793,
+              "adj_edge_jaccard": 0.7839897819290061,
+              "dataset": "44b6_267148e4",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 41,
+                "edge_fn": 25,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 21173
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 21,
+              "edge_fn": 21,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 19981,
+              "node_recall": 0.9676258992805755,
+              "total_node_ratio": -0.3231139266235306,
+              "edge_jaccard": 0.8571428571428571,
+              "adj_edge_jaccard": 0.8848383365677311,
+              "dataset": "44b6_5f15d135",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 21,
+                "edge_fn": 21,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 19981
+              }
+            },
+            {
+              "edge_tp": 194,
+              "edge_fp": 7,
+              "edge_fn": 4,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 0,
+              "num_pred_nodes": 16752,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6821855435401252,
+              "edge_jaccard": 0.9463414634146341,
+              "adj_edge_jaccard": 1.0108995099740412,
+              "dataset": "44b6_66f9292d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 194,
+                "edge_fp": 7,
+                "edge_fn": 4,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 0,
+                "num_pred_nodes": 16752
+              }
+            },
+            {
+              "edge_tp": 488,
+              "edge_fp": 31,
+              "edge_fn": 19,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 1,
+              "num_pred_nodes": 40315,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.39700559394537677,
+              "edge_jaccard": 0.9070631970260223,
+              "adj_edge_jaccard": 0.9430741133541531,
+              "dataset": "44b6_7a302da0",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 488,
+                "edge_fp": 31,
+                "edge_fn": 19,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 1,
+                "num_pred_nodes": 40315
+              }
+            }
+          ]
+        },
+        "summary": {
+          "reference": {
+            "n": 5,
+            "edge_jaccard": 0.881000676132522,
+            "division_jaccard": 0.0,
+            "division_tp": 0,
+            "division_fp": 2,
+            "division_fn": 3,
+            "node_recall": 0.9935251798561151,
+            "adj_edge_jaccard": 0.9118911238046775,
+            "n_adj": 5,
+            "score": 0.9118911238046775
+          },
+          "candidate": {
+            "n": 5,
+            "edge_jaccard": 0.881000676132522,
+            "division_jaccard": 0.0,
+            "division_tp": 0,
+            "division_fp": 2,
+            "division_fn": 3,
+            "node_recall": 0.9935251798561151,
+            "adj_edge_jaccard": 0.9118911238046775,
+            "n_adj": 5,
+            "score": 0.9118911238046775
+          }
+        },
+        "by_group": {
+          "44b6": {
+            "reference": {
+              "n": 5,
+              "edge_jaccard": 0.881000676132522,
+              "division_jaccard": 0.0,
+              "division_tp": 0,
+              "division_fp": 2,
+              "division_fn": 3,
+              "node_recall": 0.9935251798561151,
+              "adj_edge_jaccard": 0.9118911238046775,
+              "n_adj": 5,
+              "score": 0.9118911238046775
+            },
+            "candidate": {
+              "n": 5,
+              "edge_jaccard": 0.881000676132522,
+              "division_jaccard": 0.0,
+              "division_tp": 0,
+              "division_fp": 2,
+              "division_fn": 3,
+              "node_recall": 0.9935251798561151,
+              "adj_edge_jaccard": 0.9118911238046775,
+              "n_adj": 5,
+              "score": 0.9118911238046775
+            }
+          }
+        },
+        "uses_gt_for_edits": false,
+        "scope": "public_paired_diagnostic_full_fit_detector_not_kaggle_score",
+        "promoted": false
+      },
+      "budget_rejected": false,
+      "edits": {
+        "44b6_144b256d": {
+          "status": "abstained",
+          "margin": 4.0,
+          "proposed_mothers": 45,
+          "considered_transactions": 0,
+          "edit_cap": 45,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_267148e4": {
+          "status": "abstained",
+          "margin": 4.0,
+          "proposed_mothers": 191,
+          "considered_transactions": 0,
+          "edit_cap": 42,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_5f15d135": {
+          "status": "abstained",
+          "margin": 4.0,
+          "proposed_mothers": 106,
+          "considered_transactions": 0,
+          "edit_cap": 39,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_66f9292d": {
+          "status": "abstained",
+          "margin": 4.0,
+          "proposed_mothers": 25,
+          "considered_transactions": 0,
+          "edit_cap": 33,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_7a302da0": {
+          "status": "abstained",
+          "margin": 4.0,
+          "proposed_mothers": 130,
+          "considered_transactions": 0,
+          "edit_cap": 80,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        }
+      }
+    },
+    "8.0": {
+      "evaluation": {
+        "rows": {
+          "reference": [
+            {
+              "edge_tp": 117,
+              "edge_fp": 5,
+              "edge_fn": 2,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 0,
+              "num_pred_nodes": 22756,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6519211943220754,
+              "edge_jaccard": 0.9435483870967742,
+              "adj_edge_jaccard": 1.005060306238454,
+              "dataset": "44b6_144b256d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 117,
+                "edge_fp": 5,
+                "edge_fn": 2,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 0,
+                "num_pred_nodes": 22756
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 41,
+              "edge_fn": 25,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 21173,
+              "node_recall": 1.0,
+              "total_node_ratio": 0.10679560899111343,
+              "edge_jaccard": 0.7924528301886793,
+              "adj_edge_jaccard": 0.7839897819290061,
+              "dataset": "44b6_267148e4",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 41,
+                "edge_fn": 25,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 21173
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 21,
+              "edge_fn": 21,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 19981,
+              "node_recall": 0.9676258992805755,
+              "total_node_ratio": -0.3231139266235306,
+              "edge_jaccard": 0.8571428571428571,
+              "adj_edge_jaccard": 0.8848383365677311,
+              "dataset": "44b6_5f15d135",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 21,
+                "edge_fn": 21,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 19981
+              }
+            },
+            {
+              "edge_tp": 194,
+              "edge_fp": 7,
+              "edge_fn": 4,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 0,
+              "num_pred_nodes": 16752,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6821855435401252,
+              "edge_jaccard": 0.9463414634146341,
+              "adj_edge_jaccard": 1.0108995099740412,
+              "dataset": "44b6_66f9292d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 194,
+                "edge_fp": 7,
+                "edge_fn": 4,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 0,
+                "num_pred_nodes": 16752
+              }
+            },
+            {
+              "edge_tp": 488,
+              "edge_fp": 31,
+              "edge_fn": 19,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 1,
+              "num_pred_nodes": 40315,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.39700559394537677,
+              "edge_jaccard": 0.9070631970260223,
+              "adj_edge_jaccard": 0.9430741133541531,
+              "dataset": "44b6_7a302da0",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 488,
+                "edge_fp": 31,
+                "edge_fn": 19,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 1,
+                "num_pred_nodes": 40315
+              }
+            }
+          ],
+          "candidate": [
+            {
+              "edge_tp": 117,
+              "edge_fp": 5,
+              "edge_fn": 2,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 0,
+              "num_pred_nodes": 22756,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6519211943220754,
+              "edge_jaccard": 0.9435483870967742,
+              "adj_edge_jaccard": 1.005060306238454,
+              "dataset": "44b6_144b256d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 117,
+                "edge_fp": 5,
+                "edge_fn": 2,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 0,
+                "num_pred_nodes": 22756
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 41,
+              "edge_fn": 25,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 21173,
+              "node_recall": 1.0,
+              "total_node_ratio": 0.10679560899111343,
+              "edge_jaccard": 0.7924528301886793,
+              "adj_edge_jaccard": 0.7839897819290061,
+              "dataset": "44b6_267148e4",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 41,
+                "edge_fn": 25,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 21173
+              }
+            },
+            {
+              "edge_tp": 252,
+              "edge_fp": 21,
+              "edge_fn": 21,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 1,
+              "num_pred_nodes": 19981,
+              "node_recall": 0.9676258992805755,
+              "total_node_ratio": -0.3231139266235306,
+              "edge_jaccard": 0.8571428571428571,
+              "adj_edge_jaccard": 0.8848383365677311,
+              "dataset": "44b6_5f15d135",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 252,
+                "edge_fp": 21,
+                "edge_fn": 21,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 1,
+                "num_pred_nodes": 19981
+              }
+            },
+            {
+              "edge_tp": 194,
+              "edge_fp": 7,
+              "edge_fn": 4,
+              "division_tp": 0,
+              "division_fp": 0,
+              "division_fn": 0,
+              "num_pred_nodes": 16752,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.6821855435401252,
+              "edge_jaccard": 0.9463414634146341,
+              "adj_edge_jaccard": 1.0108995099740412,
+              "dataset": "44b6_66f9292d",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 194,
+                "edge_fp": 7,
+                "edge_fn": 4,
+                "division_tp": 0,
+                "division_fp": 0,
+                "division_fn": 0,
+                "num_pred_nodes": 16752
+              }
+            },
+            {
+              "edge_tp": 488,
+              "edge_fp": 31,
+              "edge_fn": 19,
+              "division_tp": 0,
+              "division_fp": 1,
+              "division_fn": 1,
+              "num_pred_nodes": 40315,
+              "node_recall": 1.0,
+              "total_node_ratio": -0.39700559394537677,
+              "edge_jaccard": 0.9070631970260223,
+              "adj_edge_jaccard": 0.9430741133541531,
+              "dataset": "44b6_7a302da0",
+              "group": "44b6",
+              "split": "calibration",
+              "counts": {
+                "edge_tp": 488,
+                "edge_fp": 31,
+                "edge_fn": 19,
+                "division_tp": 0,
+                "division_fp": 1,
+                "division_fn": 1,
+                "num_pred_nodes": 40315
+              }
+            }
+          ]
+        },
+        "summary": {
+          "reference": {
+            "n": 5,
+            "edge_jaccard": 0.881000676132522,
+            "division_jaccard": 0.0,
+            "division_tp": 0,
+            "division_fp": 2,
+            "division_fn": 3,
+            "node_recall": 0.9935251798561151,
+            "adj_edge_jaccard": 0.9118911238046775,
+            "n_adj": 5,
+            "score": 0.9118911238046775
+          },
+          "candidate": {
+            "n": 5,
+            "edge_jaccard": 0.881000676132522,
+            "division_jaccard": 0.0,
+            "division_tp": 0,
+            "division_fp": 2,
+            "division_fn": 3,
+            "node_recall": 0.9935251798561151,
+            "adj_edge_jaccard": 0.9118911238046775,
+            "n_adj": 5,
+            "score": 0.9118911238046775
+          }
+        },
+        "by_group": {
+          "44b6": {
+            "reference": {
+              "n": 5,
+              "edge_jaccard": 0.881000676132522,
+              "division_jaccard": 0.0,
+              "division_tp": 0,
+              "division_fp": 2,
+              "division_fn": 3,
+              "node_recall": 0.9935251798561151,
+              "adj_edge_jaccard": 0.9118911238046775,
+              "n_adj": 5,
+              "score": 0.9118911238046775
+            },
+            "candidate": {
+              "n": 5,
+              "edge_jaccard": 0.881000676132522,
+              "division_jaccard": 0.0,
+              "division_tp": 0,
+              "division_fp": 2,
+              "division_fn": 3,
+              "node_recall": 0.9935251798561151,
+              "adj_edge_jaccard": 0.9118911238046775,
+              "n_adj": 5,
+              "score": 0.9118911238046775
+            }
+          }
+        },
+        "uses_gt_for_edits": false,
+        "scope": "public_paired_diagnostic_full_fit_detector_not_kaggle_score",
+        "promoted": false
+      },
+      "budget_rejected": false,
+      "edits": {
+        "44b6_144b256d": {
+          "status": "abstained",
+          "margin": 8.0,
+          "proposed_mothers": 45,
+          "considered_transactions": 0,
+          "edit_cap": 45,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_267148e4": {
+          "status": "abstained",
+          "margin": 8.0,
+          "proposed_mothers": 191,
+          "considered_transactions": 0,
+          "edit_cap": 42,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_5f15d135": {
+          "status": "abstained",
+          "margin": 8.0,
+          "proposed_mothers": 106,
+          "considered_transactions": 0,
+          "edit_cap": 39,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_66f9292d": {
+          "status": "abstained",
+          "margin": 8.0,
+          "proposed_mothers": 25,
+          "considered_transactions": 0,
+          "edit_cap": 33,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        },
+        "44b6_7a302da0": {
+          "status": "abstained",
+          "margin": 8.0,
+          "proposed_mothers": 130,
+          "considered_transactions": 0,
+          "edit_cap": 80,
+          "selected": [],
+          "added_edges": 0,
+          "removed_edges": 0,
+          "nodes_unchanged": true,
+          "uses_gt_for_edits": false
+        }
+      }
+    }
+  }
+}

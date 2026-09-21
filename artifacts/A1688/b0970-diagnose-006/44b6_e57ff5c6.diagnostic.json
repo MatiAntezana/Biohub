@@ -1,0 +1,72 @@
+{
+  "matched_prior_nodes": 5653,
+  "anchor_nodes": 15455,
+  "candidate_edges": 48182,
+  "edges_without_neural_prior": 44786,
+  "actual_scored_pairs": 416,
+  "structurally_addable_pairs": 108,
+  "scores_all": {
+    "count": 416,
+    "at_frozen_threshold": 0,
+    "quantiles": {
+      "min": 0.0017309676622971892,
+      "p10": 0.0059327667113393545,
+      "p50": 0.017772127874195576,
+      "p90": 0.06790599226951599,
+      "p99": 0.14932271987199808,
+      "max": 0.17578642070293427
+    }
+  },
+  "scores_addable": {
+    "count": 108,
+    "at_frozen_threshold": 0,
+    "quantiles": {
+      "min": 0.0017309676622971892,
+      "p10": 0.005942213255912066,
+      "p50": 0.016741471365094185,
+      "p90": 0.056896050646901127,
+      "p99": 0.15910796754062134,
+      "max": 0.17578642070293427
+    }
+  },
+  "scores_by_annotation": {
+    "unknown": {
+      "count": 416,
+      "at_frozen_threshold": 0,
+      "quantiles": {
+        "min": 0.0017309676622971892,
+        "p10": 0.0059327667113393545,
+        "p50": 0.017772127874195576,
+        "p90": 0.06790599226951599,
+        "p99": 0.14932271987199808,
+        "max": 0.17578642070293427
+      }
+    },
+    "addable_unknown": {
+      "count": 108,
+      "at_frozen_threshold": 0,
+      "quantiles": {
+        "min": 0.0017309676622971892,
+        "p10": 0.005942213255912066,
+        "p50": 0.016741471365094185,
+        "p90": 0.056896050646901127,
+        "p99": 0.15910796754062134,
+        "max": 0.17578642070293427
+      }
+    }
+  },
+  "exact_gt_forks": [],
+  "exact_gt_fork_reasons": {},
+  "development_gt_coordinate_scores": [],
+  "frozen_output": {
+    "matched_prior_nodes": 5653,
+    "anchor_nodes": 15455,
+    "candidate_edges": 48182,
+    "edges_without_neural_prior": 44786,
+    "approved_pairs": 0,
+    "added_divisions": [],
+    "preserved_reference_nodes": 15455,
+    "preserved_reference_edges": 14626
+  },
+  "head_sha256": "3321db1f4352463543f61dd8b872b10c560cb48a75fb29dd766b178734ff73cb"
+}

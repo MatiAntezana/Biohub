@@ -1,0 +1,15 @@
+Starting Campaign 030 (Confirmation Gate) on A1555 across 8 confirmation datasets...
+Traceback (most recent call last):
+  File "/home/alumno1/Documents/Biohub-0970/releases/1191f609343f2debc97c5e47a4df3ffa420c6960aa49e3978a0ea8f222086b1b/ops/biohub.py", line 572, in <module>
+    main()
+  File "/home/alumno1/Documents/Biohub-0970/releases/1191f609343f2debc97c5e47a4df3ffa420c6960aa49e3978a0ea8f222086b1b/ops/biohub.py", line 562, in main
+    execute_job(args, run)
+  File "/home/alumno1/Documents/Biohub-0970/releases/1191f609343f2debc97c5e47a4df3ffa420c6960aa49e3978a0ea8f222086b1b/ops/biohub.py", line 458, in execute_job
+    result = temporal_confirmation_job(args, run, source_run(args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alumno1/Documents/Biohub-0970/releases/1191f609343f2debc97c5e47a4df3ffa420c6960aa49e3978a0ea8f222086b1b/core/temporal_association_030.py", line 371, in temporal_confirmation_job
+    v_res = run_confirmation_evaluation(source, plan, names, variant_cfg)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alumno1/Documents/Biohub-0970/releases/1191f609343f2debc97c5e47a4df3ffa420c6960aa49e3978a0ea8f222086b1b/core/temporal_association_030.py", line 329, in run_confirmation_evaluation
+    raise FileNotFoundError(f"GT geff missing: {gt_path}")
+FileNotFoundError: GT geff missing: /home/alumno1/Documents/Biohub/data/train/44b6_2a2eff9f.geff

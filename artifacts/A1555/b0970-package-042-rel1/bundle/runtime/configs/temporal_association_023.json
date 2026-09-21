@@ -1,0 +1,75 @@
+{
+  "schema": "temporal_association_023",
+  "source_release": "3f7196df36dd33cc640155898c42e0b454e85660ede6ea36755d663a68e6d04b",
+  "source_run": "b0970-selector-corpus-011",
+  "events_run": "b0970-events-015",
+  "node": "A1555",
+  "source_artifacts": {
+    "receipt.json": "f7c9dccea0ce5b23aebfa6a05d892aee7fe57d161229a7d526e14c6ab2254e1f",
+    "corpus.json": "584d3ffa640906816577c30a41566a020bd79952b0e88e8bed0fa2aa0c422239"
+  },
+  "variants": {
+    "variant_1": {
+      "description": "Pure Symmetric Axial Regularizer + Conservative Mitosis Pruning (cos > 0.20)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "cos_thresh": 0.2,
+        "max_asymm_um": null,
+        "min_sister_um": null
+      }
+    },
+    "variant_2": {
+      "description": "Pure Symmetric Axial Regularizer + Zero-Cosine Hemispheric Pruning (cos > 0.00)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "cos_thresh": 0.0,
+        "max_asymm_um": null,
+        "min_sister_um": null
+      }
+    },
+    "variant_3": {
+      "description": "Pure Symmetric Axial Regularizer + Calibrated Cytokinesis Geometry Pruning (cos > -0.10, asymm > 8.0 um, sister < 3.0 um)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "cos_thresh": -0.1,
+        "max_asymm_um": 8.0,
+        "min_sister_um": 3.0
+      }
+    }
+  },
+  "gates": {
+    "development_score_delta_min": 0.003,
+    "confirmation_score_delta_min": 0.002,
+    "minimum_group_score_delta": 0.0,
+    "minimum_sample_adjusted_jaccard_delta": -0.015,
+    "minimum_edge_jaccard_delta": 0.0,
+    "minimum_division_jaccard_delta": 0.0
+  }
+}

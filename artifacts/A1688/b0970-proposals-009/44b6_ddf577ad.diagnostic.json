@@ -1,0 +1,73 @@
+{
+  "dataset": "44b6_ddf577ad",
+  "evaluated_data_group": "44b6",
+  "probe_trained_on_group": "6bba",
+  "probe_sha256": "b3e6c1144002358e21073e90b340849bf8ab7c26b761517822c5de5227571c82",
+  "shape": [
+    100,
+    64,
+    256,
+    256
+  ],
+  "scale_um": [
+    1.625,
+    0.40625,
+    0.40625
+  ],
+  "legacy_candidate_report": {
+    "matched_prior_nodes": 22848,
+    "anchor_nodes": 35711,
+    "candidate_edges": 168646,
+    "edges_without_neural_prior": 147378
+  },
+  "legacy_scored_pairs": 4293,
+  "geometric_pairs": 298358,
+  "topology_all_pairs": {
+    "requires_reassignment": 295474,
+    "additive_second_child": 2789,
+    "already_present": 95
+  },
+  "annotation": {
+    "total_pairs": 298358,
+    "unknown_pairs": 298191,
+    "unknown_at_frozen_threshold": 21,
+    "confirmed_only_metrics": {
+      "examples": 167,
+      "positive": 0,
+      "negative": 167,
+      "auroc": null,
+      "balanced_bce": null,
+      "unweighted_bce": 0.5393193414022497,
+      "frozen_threshold": 0.8,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 167,
+      "positive_recall": null,
+      "false_positive_rate": 0.0,
+      "precision": null,
+      "positive_scores": {
+        "count": 0,
+        "at_frozen_threshold": 0,
+        "quantiles": null
+      },
+      "negative_scores": {
+        "count": 167,
+        "at_frozen_threshold": 0,
+        "quantiles": {
+          "min": 0.22369771960063525,
+          "p10": 0.27859829030095107,
+          "p50": 0.3924756206686515,
+          "p90": 0.5470182799672227,
+          "p99": 0.7071892956244642,
+          "max": 0.7196704033052754
+        }
+      },
+      "average_precision": null,
+      "positive_prevalence": 0.0
+    }
+  },
+  "gt_sha256": "6800c6e34bb2b7b6f86a0f81810c54c416ae00944e78581d9011099c3bbd3b86",
+  "exact_gt_forks": [],
+  "coverage_reasons": {}
+}

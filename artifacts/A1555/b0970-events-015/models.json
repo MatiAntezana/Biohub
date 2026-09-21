@@ -1,0 +1,12 @@
+{
+  "44b6": {
+    "path": "event-ranker-44b6.json",
+    "sha256": "3b9ccbe5bbbeea96ffb75d55eba67a985ef6cb7434396f5580139e2751ab96d3",
+    "diagnostic_margin": 0.0
+  },
+  "6bba": {
+    "path": "event-ranker-6bba.json",
+    "sha256": "2fffe5ac5e06b7c08b6dfba2deec7735c38f3ccc9d71277f64df9a40def65135",
+    "diagnostic_margin": 0.27225031719536874
+  }
+}

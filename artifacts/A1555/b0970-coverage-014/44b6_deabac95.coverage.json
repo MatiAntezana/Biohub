@@ -1,0 +1,152 @@
+{
+  "dataset": "44b6_deabac95",
+  "gt_forks": 1,
+  "stages": {
+    "covered_without_confirmed_contrast": 1
+  },
+  "endpoint_categories": {
+    "matched": 3
+  },
+  "events": [
+    {
+      "dataset": "44b6_deabac95",
+      "gt_mother": 14,
+      "biological_event": "44b6_deabac95:14",
+      "endpoints": [
+        {
+          "gt_id": 14,
+          "gt_tzyx": [
+            28.0,
+            28.0,
+            126.0,
+            198.0
+          ],
+          "matched_anchor_id": 6025,
+          "matched_distance_um": 2.7252078475778685,
+          "anchor": {
+            "nearest_id": 6025,
+            "distance_um": 2.7252078475778685,
+            "within_radius": 2,
+            "nearest_ties": [
+              6025
+            ]
+          },
+          "raw": {
+            "nearest_id": 6809,
+            "distance_um": 2.569350598886808,
+            "within_radius": 2,
+            "nearest_ties": [
+              6809
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 14,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        },
+        {
+          "gt_id": 15,
+          "gt_tzyx": [
+            29.0,
+            31.0,
+            118.0,
+            204.0
+          ],
+          "matched_anchor_id": 6237,
+          "matched_distance_um": 2.333728575156074,
+          "anchor": {
+            "nearest_id": 6237,
+            "distance_um": 2.333728575156074,
+            "within_radius": 2,
+            "nearest_ties": [
+              6237
+            ]
+          },
+          "raw": {
+            "nearest_id": 7040,
+            "distance_um": 0.8125,
+            "within_radius": 2,
+            "nearest_ties": [
+              7040
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 15,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        },
+        {
+          "gt_id": 16,
+          "gt_tzyx": [
+            29.0,
+            27.0,
+            132.0,
+            183.0
+          ],
+          "matched_anchor_id": 6225,
+          "matched_distance_um": 1.21875,
+          "anchor": {
+            "nearest_id": 6225,
+            "distance_um": 1.21875,
+            "within_radius": 1,
+            "nearest_ties": [
+              6225
+            ]
+          },
+          "raw": {
+            "nearest_id": 7026,
+            "distance_um": 0.40625,
+            "within_radius": 1,
+            "nearest_ties": [
+              7026
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 16,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        }
+      ],
+      "stage": "covered_without_confirmed_contrast",
+      "comparisons": {
+        "unknown": 10
+      },
+      "unknown_reasons": {
+        "unmapped_child_detection": 24,
+        "unmapped_parent_detection": 19
+      },
+      "target": [
+        6025,
+        6225,
+        6237
+      ],
+      "event": "44b6_deabac95:6025",
+      "candidate_limits": [
+        {
+          "daughter": 6225,
+          "distance_um": 8.295859754268994,
+          "rank_all_next_frame": 3,
+          "outside_radius": false,
+          "outside_top_k": false
+        },
+        {
+          "daughter": 6237,
+          "distance_um": 1.8168052317185792,
+          "rank_all_next_frame": 1,
+          "outside_radius": false,
+          "outside_top_k": false
+        }
+      ],
+      "reference_correct": false
+    }
+  ],
+  "matching_radius_um": 7.0,
+  "raw_scope": "saved_post_detector_candidates_before_global_ILP_and_postprocessing",
+  "exact_removal_stage_identified": false,
+  "matching_modified": false,
+  "graph_modified": false,
+  "gt_sha256": "9b180a493cbad62981b2ae18729c5145456e91af10d573651b87811ae31381d5",
+  "event_stats": {
+    "unknown": 10,
+    "usable_events": 0,
+    "covered_gt_forks": 1
+  },
+  "confirmed_comparisons": []
+}

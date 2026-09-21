@@ -1,0 +1,84 @@
+{
+  "matched_prior_nodes": 22848,
+  "anchor_nodes": 35711,
+  "candidate_edges": 168646,
+  "edges_without_neural_prior": 147378,
+  "actual_scored_pairs": 4293,
+  "structurally_addable_pairs": 673,
+  "scores_all": {
+    "count": 4293,
+    "at_frozen_threshold": 0,
+    "quantiles": {
+      "min": 0.002096813637763262,
+      "p10": 0.0073929794132709505,
+      "p50": 0.021364904940128326,
+      "p90": 0.06697185784578324,
+      "p99": 0.1297868835926055,
+      "max": 0.20617738366127014
+    }
+  },
+  "scores_addable": {
+    "count": 673,
+    "at_frozen_threshold": 0,
+    "quantiles": {
+      "min": 0.002096813637763262,
+      "p10": 0.005019045993685723,
+      "p50": 0.014525125734508038,
+      "p90": 0.05178624913096433,
+      "p99": 0.12110632121562949,
+      "max": 0.17164073884487152
+    }
+  },
+  "scores_by_annotation": {
+    "unknown": {
+      "count": 4285,
+      "at_frozen_threshold": 0,
+      "quantiles": {
+        "min": 0.002096813637763262,
+        "p10": 0.007387553341686726,
+        "p50": 0.021364904940128326,
+        "p90": 0.06702387034893036,
+        "p99": 0.12987543106079086,
+        "max": 0.20617738366127014
+      }
+    },
+    "addable_unknown": {
+      "count": 673,
+      "at_frozen_threshold": 0,
+      "quantiles": {
+        "min": 0.002096813637763262,
+        "p10": 0.005019045993685723,
+        "p50": 0.014525125734508038,
+        "p90": 0.05178624913096433,
+        "p99": 0.12110632121562949,
+        "max": 0.17164073884487152
+      }
+    },
+    "confirmed_negative": {
+      "count": 8,
+      "at_frozen_threshold": 0,
+      "quantiles": {
+        "min": 0.008385070599615574,
+        "p10": 0.012084667384624482,
+        "p50": 0.02060115523636341,
+        "p90": 0.05110754333436489,
+        "p99": 0.06194501992315053,
+        "max": 0.06314918398857117
+      }
+    }
+  },
+  "exact_gt_forks": [],
+  "exact_gt_fork_reasons": {},
+  "development_gt_coordinate_scores": [],
+  "frozen_output": {
+    "matched_prior_nodes": 22848,
+    "anchor_nodes": 35711,
+    "candidate_edges": 168646,
+    "edges_without_neural_prior": 147378,
+    "approved_pairs": 0,
+    "added_divisions": [],
+    "preserved_reference_nodes": 35711,
+    "preserved_reference_edges": 34364
+  },
+  "head_sha256": "3321db1f4352463543f61dd8b872b10c560cb48a75fb29dd766b178734ff73cb"
+}

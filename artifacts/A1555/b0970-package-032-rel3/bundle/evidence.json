@@ -1,0 +1,39 @@
+{
+  "source_experiment": "b0970-confirm-032-rel5",
+  "code_hash": "f164ae6d5ac9a3384bf8ecaeacb67b06b2376ba6a19f2c3671ea032ed799c6ea",
+  "arm": "mitosis_add",
+  "champion_variant": "variant_2",
+  "recipe": "Cytokinesis-Directed Guard (DDKS-SPI-Cytokinesis-V2): dual-track protection for cytokinesis cos <= 0.0, pruning acute parallel crossovers",
+  "gates": {
+    "development": {
+      "passed": true,
+      "phase": "development",
+      "score_delta": 0.004005599834038365,
+      "source_run": "b0970-temporal-032-rel8"
+    },
+    "confirmation": {
+      "passed": true,
+      "reasons": [],
+      "phase": "confirmation",
+      "score_delta": 0.002776499769493568,
+      "scope": "public_paired_diagnostic_full_fit_detector_not_kaggle_score"
+    }
+  },
+  "visible_contract": {
+    "csv_rows": 235659,
+    "nodes": 119881,
+    "edges": 115778,
+    "divisions": 293,
+    "datasets": [
+      "44b6_0113de3b",
+      "44b6_0b24845f",
+      "6bba_05b6850b",
+      "6bba_05db0fb1"
+    ],
+    "csv_sha256": "0b7bce459e6822daecbd2d539658bb49744a81c84209bd8a3cd948bbfec77e8f",
+    "valid": true
+  },
+  "remote_runtime_seconds": 216.19166567004868,
+  "visibility": "visible_public_runtime_check_not_hidden_score",
+  "kaggle_score": null
+}

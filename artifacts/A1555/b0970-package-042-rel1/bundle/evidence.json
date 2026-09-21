@@ -1,0 +1,39 @@
+{
+  "source_experiment": "b0970-confirm-042-rel1",
+  "code_hash": "d13287c48d6b47f417af3db37784ce360d20f7a0f6811a2ecb5d804228322c94",
+  "arm": "mitosis_add",
+  "champion_variant": "variant_1",
+  "recipe": "Adaptive Allometric Cytokinesis Gating (AACG-Exact): group-stratified cytokinesis envelopes (44b6: d_daughters <= 7.2 um, max_birth <= 6.0 um; 6bba: d_daughters <= 13.5 um, max_birth <= 7.5 um), mother track maturation (len >= 1 or t=0), and BDPG divergence persistence gating (obtuse cos <= 0 pers >= 3; tilted cos <= 0.20 pers >= 5)",
+  "gates": {
+    "development": {
+      "passed": true,
+      "phase": "development",
+      "score_delta": 0.004005599834038365,
+      "source_run": "b0970-temporal-042-rel1"
+    },
+    "confirmation": {
+      "passed": true,
+      "reasons": [],
+      "phase": "confirmation",
+      "score_delta": 0.002956243823716731,
+      "scope": "public_paired_diagnostic_full_fit_detector_not_kaggle_score"
+    }
+  },
+  "visible_contract": {
+    "csv_rows": 235570,
+    "nodes": 119881,
+    "edges": 115689,
+    "divisions": 204,
+    "datasets": [
+      "44b6_0113de3b",
+      "44b6_0b24845f",
+      "6bba_05b6850b",
+      "6bba_05db0fb1"
+    ],
+    "csv_sha256": "b1e782364b5022e18700a069922634725a9b554abf141debb63aa107e31297ef",
+    "valid": true
+  },
+  "remote_runtime_seconds": 217.41761736903572,
+  "visibility": "visible_public_runtime_check_not_hidden_score",
+  "kaggle_score": null
+}

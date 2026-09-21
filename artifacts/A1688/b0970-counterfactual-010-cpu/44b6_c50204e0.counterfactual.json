@@ -1,0 +1,328 @@
+{
+  "dataset": "44b6_c50204e0",
+  "forks": [
+    {
+      "gt_ids": [
+        43,
+        45,
+        46
+      ],
+      "anchor_ids": [
+        7912,
+        8265,
+        8267
+      ],
+      "covered": true,
+      "legacy_scored": false,
+      "distances_um": [
+        8.295859754268994,
+        6.2541392543258905
+      ],
+      "edit_footprint": {
+        "kind": "requires_reassignment",
+        "remove_edges": [
+          [
+            7913,
+            8267
+          ],
+          [
+            7927,
+            8265
+          ]
+        ],
+        "add_edges": [
+          [
+            7912,
+            8265
+          ],
+          [
+            7912,
+            8267
+          ]
+        ]
+      },
+      "reason": "scored",
+      "logit": 0.631284260889305,
+      "score": 0.6527806073934748,
+      "rank_best": 1,
+      "rank_worst": 1,
+      "competing_pairs": 3,
+      "at_frozen_threshold": false,
+      "endpoint_residual_um": [
+        0.8125,
+        6.345827861674157,
+        2.8145825622994254
+      ],
+      "gt_daughter_distances_um": [
+        4.0010984819796676,
+        5.87308811976289
+      ],
+      "predicted_daughter_distances_um": [
+        8.295859754268994,
+        6.2541392543258905
+      ]
+    },
+    {
+      "gt_ids": [
+        186,
+        189,
+        190
+      ],
+      "anchor_ids": [
+        22189,
+        22565,
+        null
+      ],
+      "covered": false,
+      "legacy_scored": false,
+      "reason": "unmatched_endpoint"
+    }
+  ],
+  "scenarios": {
+    "covered_nonpresent": {
+      "gt_mother_ids": [
+        43
+      ],
+      "edits": {
+        "requested_forks": 1,
+        "added_edges": [
+          [
+            7912,
+            8265
+          ],
+          [
+            7912,
+            8267
+          ]
+        ],
+        "removed_edges": [
+          [
+            7913,
+            8267
+          ],
+          [
+            7927,
+            8265
+          ]
+        ],
+        "node_count": 34696,
+        "edge_count": 33212,
+        "edge_count_delta": 0
+      },
+      "metrics": {
+        "edge_tp": 293,
+        "edge_fp": 39,
+        "edge_fn": 32,
+        "division_tp": 1,
+        "division_fp": 2,
+        "division_fn": 1,
+        "num_pred_nodes": 34696,
+        "node_recall": 0.978978978978979,
+        "total_node_ratio": -0.263010323293258,
+        "edge_jaccard": 0.804945054945055,
+        "adj_edge_jaccard": 0.8261159408584958,
+        "dataset": "44b6_c50204e0",
+        "group": "44b6",
+        "split": "development",
+        "counts": {
+          "edge_tp": 293,
+          "edge_fp": 39,
+          "edge_fn": 32,
+          "division_tp": 1,
+          "division_fp": 2,
+          "division_fn": 1,
+          "num_pred_nodes": 34696
+        }
+      },
+      "identical_graph_metrics_reused": false
+    },
+    "covered_unique_top1_nonpresent": {
+      "gt_mother_ids": [
+        43
+      ],
+      "edits": {
+        "requested_forks": 1,
+        "added_edges": [
+          [
+            7912,
+            8265
+          ],
+          [
+            7912,
+            8267
+          ]
+        ],
+        "removed_edges": [
+          [
+            7913,
+            8267
+          ],
+          [
+            7927,
+            8265
+          ]
+        ],
+        "node_count": 34696,
+        "edge_count": 33212,
+        "edge_count_delta": 0
+      },
+      "metrics": {
+        "edge_tp": 293,
+        "edge_fp": 39,
+        "edge_fn": 32,
+        "division_tp": 1,
+        "division_fp": 2,
+        "division_fn": 1,
+        "num_pred_nodes": 34696,
+        "node_recall": 0.978978978978979,
+        "total_node_ratio": -0.263010323293258,
+        "edge_jaccard": 0.804945054945055,
+        "adj_edge_jaccard": 0.8261159408584958,
+        "dataset": "44b6_c50204e0",
+        "group": "44b6",
+        "split": "development",
+        "counts": {
+          "edge_tp": 293,
+          "edge_fp": 39,
+          "edge_fn": 32,
+          "division_tp": 1,
+          "division_fp": 2,
+          "division_fn": 1,
+          "num_pred_nodes": 34696
+        }
+      },
+      "identical_graph_metrics_reused": true
+    },
+    "matched_nonpresent": {
+      "gt_mother_ids": [
+        43
+      ],
+      "edits": {
+        "requested_forks": 1,
+        "added_edges": [
+          [
+            7912,
+            8265
+          ],
+          [
+            7912,
+            8267
+          ]
+        ],
+        "removed_edges": [
+          [
+            7913,
+            8267
+          ],
+          [
+            7927,
+            8265
+          ]
+        ],
+        "node_count": 34696,
+        "edge_count": 33212,
+        "edge_count_delta": 0
+      },
+      "metrics": {
+        "edge_tp": 293,
+        "edge_fp": 39,
+        "edge_fn": 32,
+        "division_tp": 1,
+        "division_fp": 2,
+        "division_fn": 1,
+        "num_pred_nodes": 34696,
+        "node_recall": 0.978978978978979,
+        "total_node_ratio": -0.263010323293258,
+        "edge_jaccard": 0.804945054945055,
+        "adj_edge_jaccard": 0.8261159408584958,
+        "dataset": "44b6_c50204e0",
+        "group": "44b6",
+        "split": "development",
+        "counts": {
+          "edge_tp": 293,
+          "edge_fp": 39,
+          "edge_fn": 32,
+          "division_tp": 1,
+          "division_fp": 2,
+          "division_fn": 1,
+          "num_pred_nodes": 34696
+        }
+      },
+      "identical_graph_metrics_reused": true
+    }
+  },
+  "singles": [
+    {
+      "gt_mother_ids": [
+        43
+      ],
+      "edits": {
+        "requested_forks": 1,
+        "added_edges": [
+          [
+            7912,
+            8265
+          ],
+          [
+            7912,
+            8267
+          ]
+        ],
+        "removed_edges": [
+          [
+            7913,
+            8267
+          ],
+          [
+            7927,
+            8265
+          ]
+        ],
+        "node_count": 34696,
+        "edge_count": 33212,
+        "edge_count_delta": 0
+      },
+      "metrics": {
+        "edge_tp": 293,
+        "edge_fp": 39,
+        "edge_fn": 32,
+        "division_tp": 1,
+        "division_fp": 2,
+        "division_fn": 1,
+        "num_pred_nodes": 34696,
+        "node_recall": 0.978978978978979,
+        "total_node_ratio": -0.263010323293258,
+        "edge_jaccard": 0.804945054945055,
+        "adj_edge_jaccard": 0.8261159408584958,
+        "dataset": "44b6_c50204e0",
+        "group": "44b6",
+        "split": "development",
+        "counts": {
+          "edge_tp": 293,
+          "edge_fp": 39,
+          "edge_fn": 32,
+          "division_tp": 1,
+          "division_fp": 2,
+          "division_fn": 1,
+          "num_pred_nodes": 34696
+        }
+      },
+      "identical_graph_metrics_reused": true,
+      "covered_in_009": true,
+      "rank_worst": 1,
+      "dataset": "44b6_c50204e0"
+    }
+  ],
+  "uses_gt_for_edits": true,
+  "confirmation_evaluated": false,
+  "tracking_evaluated": true,
+  "counterfactual_graphs_modified_in_memory": true,
+  "source_graph_modified": false,
+  "graph_exported": false,
+  "model_trained": false,
+  "threshold_selected": false,
+  "deployable_policy_evaluated": false,
+  "promoted": false,
+  "kaggle_submission_allowed": false,
+  "kaggle_score": null
+}

@@ -1,0 +1,905 @@
+[{"stream_name":"stderr","time":5.380562295,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":5.380597449,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":6.119298313,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.119346863,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.119352338,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.119361143,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.680765603,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.680807342,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.6808127630000005,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.680816962,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":438.064842104,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/annotated_doc-0.0.5-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.076733341,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/annotated_types-0.8.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.085089866,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/anyio-4.15.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.099357742,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/bidict-0.24.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.108712475,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/blosc2-4.13.0-cp311-abi3-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.140610157,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/certifi-2026.7.22-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.150017669,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/click-8.5.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.159450603,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/cloudpickle-3.1.2-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.168639051,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/cuda_bindings-13.4.1-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.200446884,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/cuda_pathfinder-1.8.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.209756259,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/cuda_toolkit-13.0.3.0-py2.py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.242278425,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/dask-2026.8.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.262945984,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/donfig-0.8.1.post1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.269137885,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/annotated_doc-0.0.5-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.26915491,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/annotated_types-0.8.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.269159978,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/anyio-4.15.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.269164398,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/bidict-0.24.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.269168783,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/blosc2-4.13.0-cp311-abi3-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.269173245,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/certifi-2026.7.22-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.269177414,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/click-8.5.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.269181087,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/cloudpickle-3.1.2-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.269184843,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/cuda_bindings-13.4.1-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.26918876,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/cuda_pathfinder-1.8.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.269196398,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/cuda_toolkit-13.0.3.0-py2.py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.269199107,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/dask-2026.8.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.26920157,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/donfig-0.8.1.post1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.27406198,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/filelock-3.32.6-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.282453697,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/fsspec-2026.7.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.316064404,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/geff-1.3.1.1.3-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.326914079,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/geff_spec-1.3.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.335454078,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/google_crc32c-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.343532586,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/greenlet-3.5.6-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.355521486,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/h11-0.16.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.364033972,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/h2-4.4.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.372328335,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/hpack-4.2.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.38146912,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/httpcore-1.0.9-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.391450239,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/httpx-0.28.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.402575997,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/hyperframe-6.1.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.411407815,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/idna-3.19-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.42100052,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/ilpy-0.6.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.430045829,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/imagecodecs-2026.8.16-cp312-abi3-manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.476291988,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/filelock-3.32.6-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.476308979,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/fsspec-2026.7.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.476314396,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/geff-1.3.1.1.3-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.476318266,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/geff_spec-1.3.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.476322242,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/google_crc32c-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.476329484,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/greenlet-3.5.6-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.476332744,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/h11-0.16.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.476335317,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/h2-4.4.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.476337663,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/hpack-4.2.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.476340054,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/httpcore-1.0.9-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.476342378,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/httpx-0.28.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.476365619,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/hyperframe-6.1.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.476370625,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/idna-3.19-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.476374399,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/ilpy-0.6.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.476378611,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/imagecodecs-2026.8.16-cp312-abi3-manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.516992492,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/imageio-2.37.4-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.538582548,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/importlib_metadata-9.0.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.548578056,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/jinja2-3.1.6-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.557231088,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/lazy_loader-0.5-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.566488264,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/llvmlite-0.49.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.719071515,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/imageio-2.37.4-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.719092297,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/importlib_metadata-9.0.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.719097633,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/jinja2-3.1.6-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.719102578,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/lazy_loader-0.5-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.71910673,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/llvmlite-0.49.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.731525131,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/locket-1.0.0-py2.py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.744537552,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/markdown_it_py-4.2.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.757536871,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.766589984,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/mdurl-0.1.2-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.775418115,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/mpmath-1.3.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.786749048,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/msgpack-1.2.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.797401495,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/ndindex-1.10.1-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.809543855,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/networkx-3.6.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.832167795,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/numba-0.67.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.855738294,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/numcodecs-0.16.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.892629696,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/numexpr-2.14.2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.902548272,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.933948569,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/locket-1.0.0-py2.py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.933969875,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/markdown_it_py-4.2.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.933975977,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.933983,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/mdurl-0.1.2-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.933987233,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/mpmath-1.3.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.933991055,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/msgpack-1.2.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.933996779,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/ndindex-1.10.1-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.934004019,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/networkx-3.6.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":438.93400657,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/numba-0.67.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.934009131,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/numcodecs-0.16.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.934011627,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/numexpr-2.14.2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.934014151,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":438.964758356,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cublas-13.1.1.3-py3-none-manylinux_2_27_x86_64.whl\n"}
+,{"stream_name":"stdout","time":439.167118244,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cublas-13.1.1.3-py3-none-manylinux_2_27_x86_64.whl\n"}
+,{"stream_name":"stdout","time":440.076234152,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_x86_64.whl\n"}
+,{"stream_name":"stdout","time":440.113491332,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl\n"}
+,{"stream_name":"stdout","time":440.278755853,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_x86_64.whl\n"}
+,{"stream_name":"stdout","time":440.278779502,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl\n"}
+,{"stream_name":"stdout","time":440.357581783,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":440.37391158,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cudnn_cu13-9.20.0.48-py3-none-manylinux_2_27_x86_64.whl\n"}
+,{"stream_name":"stdout","time":440.560122884,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":440.560144889,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cudnn_cu13-9.20.0.48-py3-none-manylinux_2_27_x86_64.whl\n"}
+,{"stream_name":"stdout","time":441.381661231,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":441.584073447,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":441.96000733,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cufile-1.15.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":441.973839727,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl\n"}
+,{"stream_name":"stdout","time":442.13920079,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl\n"}
+,{"stream_name":"stdout","time":442.16236641,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cufile-1.15.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":442.162386733,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl\n"}
+,{"stream_name":"stdout","time":442.162452817,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl\n"}
+,{"stream_name":"stdout","time":442.674454433,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":442.8768329,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":443.064255534,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cusparselt_cu13-0.8.1-py3-none-manylinux2014_x86_64.whl\n"}
+,{"stream_name":"stdout","time":443.266616444,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_cusparselt_cu13-0.8.1-py3-none-manylinux2014_x86_64.whl\n"}
+,{"stream_name":"stdout","time":443.516688764,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_nccl_cu13-2.29.7-py3-none-manylinux_2_18_x86_64.whl\n"}
+,{"stream_name":"stdout","time":443.719162362,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_nccl_cu13-2.29.7-py3-none-manylinux_2_18_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.064919281,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_nvjitlink-13.4.52-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.189346927,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.267305375,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_nvjitlink-13.4.52-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.267327168,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.356800655,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_nvtx-13.0.85-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.365876134,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/packaging-26.3-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":444.376714266,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.445260203,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/partd-1.4.2-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":444.454810323,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.489399634,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/polars-1.44.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":444.509793163,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/polars_runtime_32-1.44.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.559351008,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/nvidia_nvtx-13.0.85-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.559369286,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/packaging-26.3-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":444.559374696,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.55937858,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/partd-1.4.2-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":444.559382286,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.559386059,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/polars-1.44.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":444.559395008,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/polars_runtime_32-1.44.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.673590116,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/psygnal-0.16.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.684197347,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pyarrow-25.0.1-cp312-cp312-manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.83102459,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pydantic-2.13.5-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":444.842886969,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.858674001,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pygments-2.21.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":444.872277009,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pyscipopt-6.2.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.87580146,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/psygnal-0.16.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.875819239,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pyarrow-25.0.1-cp312-cp312-manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.875824625,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pydantic-2.13.5-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":444.87582864,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.875832447,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pygments-2.21.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":444.875852531,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pyscipopt-6.2.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.932632221,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/python_dateutil-2.9.0.post0-py2.py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":444.942393457,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.954086479,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/rich-15.0.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":444.965033868,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/rstar_python-0.2.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.978134656,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/rustworkx-0.18.1-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":444.995733506,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/scikit_image-0.26.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":445.052360631,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/scipy-1.17.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":445.134873949,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/python_dateutil-2.9.0.post0-py2.py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.134895006,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":445.13490067,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/rich-15.0.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.134905209,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/rstar_python-0.2.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\n"}
+,{"stream_name":"stdout","time":445.134909665,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/rustworkx-0.18.1-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl\n"}
+,{"stream_name":"stdout","time":445.134914045,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/scikit_image-0.26.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":445.134918167,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/scipy-1.17.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":445.170325339,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/setuptools-84.0.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.191526292,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/shellingham-1.5.4-py2.py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.200396523,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/six-1.17.0-py2.py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.216242414,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/sqlalchemy-2.0.52-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":445.259053105,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/sympy-1.14.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.303108847,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/threadpoolctl-3.6.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.317923411,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/tifffile-2026.9.9-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.334977394,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/toolz-1.1.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.357367861,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/torch-2.13.0-cp312-cp312-manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":445.372594662,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/setuptools-84.0.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.372612154,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/shellingham-1.5.4-py2.py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.372617929,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/six-1.17.0-py2.py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.372622821,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/sqlalchemy-2.0.52-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":445.372627027,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/sympy-1.14.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.37263066,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/threadpoolctl-3.6.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.372634348,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/tifffile-2026.9.9-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.372638132,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/toolz-1.1.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":445.372646726,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/torch-2.13.0-cp312-cp312-manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":446.830246311,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/tqdm-4.70.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":446.841907931,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/tracksdata-0.1.0rc9-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":446.855036343,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/triton-3.7.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":447.032922342,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/tqdm-4.70.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":447.032944341,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/tracksdata-0.1.0rc9-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":447.032956812,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/triton-3.7.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl\n"}
+,{"stream_name":"stdout","time":447.387137897,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/typer-0.27.2-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":447.398967607,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/typing_extensions-4.16.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":447.407686801,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/typing_inspection-0.4.4-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":447.416180285,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/zarr-3.1.6-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":447.426275125,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/zipp-4.1.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":447.589555709,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/typer-0.27.2-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":447.589592954,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/typing_extensions-4.16.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":447.589598876,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/typing_inspection-0.4.4-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":447.58960302,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/zarr-3.1.6-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":447.589607115,"data":"Processing /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/wheelhouse/zipp-4.1.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":447.60495265,"data":"cloudpickle is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.608477444,"data":"google-crc32c is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.610455205,"data":"h11 is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.613271049,"data":"httpcore is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.614869147,"data":"httpx is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.616508457,"data":"hyperframe is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.622731505,"data":"jinja2 is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.625666547,"data":"lazy-loader is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.627529415,"data":"locket is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.629419867,"data":"markupsafe is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.630728871,"data":"mdurl is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.632743823,"data":"mpmath is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.634805359,"data":"ndindex is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.636533456,"data":"networkx is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.645762172,"data":"partd is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.650317803,"data":"python-dateutil is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.651784874,"data":"pyyaml is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.657647626,"data":"shellingham is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.658916828,"data":"six is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.661223958,"data":"sympy is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.662960484,"data":"threadpoolctl is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.668537439,"data":"Installing collected packages: nvidia-cusparselt-cu13, cuda-toolkit, zipp, zarr, typing-inspection, typing-extensions, typer, triton, tracksdata, tqdm, torch, toolz, tifffile, sqlalchemy, setuptools, scipy, scikit-image, rustworkx, rstar-python, rich, pyscipopt, pygments, pydantic-core, pydantic, pyarrow, psygnal, polars-runtime-32, polars, pillow, pandas, packaging, nvidia-nvtx, nvidia-nvshmem-cu13, nvidia-nvjitlink, nvidia-nccl-cu13, nvidia-cusparse, nvidia-cusolver, nvidia-curand, nvidia-cufile, nvidia-cufft, nvidia-cudnn-cu13, nvidia-cuda-runtime, nvidia-cuda-nvrtc, nvidia-cuda-cupti, nvidia-cublas, numpy, numexpr, numcodecs, numba, msgpack, markdown-it-py, llvmlite, importlib-metadata, imageio, imagecodecs, ilpy, idna, hpack, h2, greenlet, geff-spec, geff, fsspec, filelock, donfig, dask, cuda-pathfinder, cuda-bindings, click, certifi, blosc2, bidict, anyio, annotated-types, annotated-doc\n"}
+,{"stream_name":"stdout","time":447.807635332,"data":"cloudpickle is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807662096,"data":"google-crc32c is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.80766577,"data":"h11 is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807677507,"data":"httpcore is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.80769465,"data":"httpx is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807699013,"data":"hyperframe is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807703302,"data":"jinja2 is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807707455,"data":"lazy-loader is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807711612,"data":"locket is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807715806,"data":"markupsafe is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807719472,"data":"mdurl is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807723256,"data":"mpmath is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.80772688,"data":"ndindex is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807730446,"data":"networkx is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807734067,"data":"partd is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807738804,"data":"python-dateutil is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807748218,"data":"pyyaml is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807750923,"data":"shellingham is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807753259,"data":"six is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807755627,"data":"sympy is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807757976,"data":"threadpoolctl is already installed with the same version as the provided wheel. Use --force-reinstall to force an installation of the wheel.\n"}
+,{"stream_name":"stdout","time":447.807760432,"data":"Installing collected packages: nvidia-cusparselt-cu13, cuda-toolkit, zipp, zarr, typing-inspection, typing-extensions, typer, triton, tracksdata, tqdm, torch, toolz, tifffile, sqlalchemy, setuptools, scipy, scikit-image, rustworkx, rstar-python, rich, pyscipopt, pygments, pydantic-core, pydantic, pyarrow, psygnal, polars-runtime-32, polars, pillow, pandas, packaging, nvidia-nvtx, nvidia-nvshmem-cu13, nvidia-nvjitlink, nvidia-nccl-cu13, nvidia-cusparse, nvidia-cusolver, nvidia-curand, nvidia-cufile, nvidia-cufft, nvidia-cudnn-cu13, nvidia-cuda-runtime, nvidia-cuda-nvrtc, nvidia-cuda-cupti, nvidia-cublas, numpy, numexpr, numcodecs, numba, msgpack, markdown-it-py, llvmlite, importlib-metadata, imageio, imagecodecs, ilpy, idna, hpack, h2, greenlet, geff-spec, geff, fsspec, filelock, donfig, dask, cuda-pathfinder, cuda-bindings, click, certifi, blosc2, bidict, anyio, annotated-types, annotated-doc\n"}
+,{"stream_name":"stdout","time":448.548534583,"data":"  Attempting uninstall: cuda-toolkit\n"}
+,{"stream_name":"stdout","time":448.741620647,"data":"    Found existing installation: cuda-toolkit 12.8.1\n"}
+,{"stream_name":"stdout","time":448.745080767,"data":"    Uninstalling cuda-toolkit-12.8.1:\n"}
+,{"stream_name":"stdout","time":448.748023702,"data":"      Successfully uninstalled cuda-toolkit-12.8.1\n"}
+,{"stream_name":"stdout","time":448.750856054,"data":"  Attempting uninstall: cuda-toolkit\n"}
+,{"stream_name":"stdout","time":448.750873923,"data":"    Found existing installation: cuda-toolkit 12.8.1\n"}
+,{"stream_name":"stdout","time":448.750878767,"data":"    Uninstalling cuda-toolkit-12.8.1:\n"}
+,{"stream_name":"stdout","time":448.750882989,"data":"      Successfully uninstalled cuda-toolkit-12.8.1\n"}
+,{"stream_name":"stdout","time":448.767898594,"data":"  Attempting uninstall: zipp\n"}
+,{"stream_name":"stdout","time":448.970016309,"data":"  Attempting uninstall: zipp\n"}
+,{"stream_name":"stdout","time":449.001871998,"data":"    Found existing installation: zipp 3.23.1\n"}
+,{"stream_name":"stdout","time":449.008989591,"data":"    Uninstalling zipp-3.23.1:\n"}
+,{"stream_name":"stdout","time":449.042261251,"data":"      Successfully uninstalled zipp-3.23.1\n"}
+,{"stream_name":"stdout","time":449.203979801,"data":"    Found existing installation: zipp 3.23.1\n"}
+,{"stream_name":"stdout","time":449.203999335,"data":"    Uninstalling zipp-3.23.1:\n"}
+,{"stream_name":"stdout","time":449.204004666,"data":"      Successfully uninstalled zipp-3.23.1\n"}
+,{"stream_name":"stdout","time":449.298155537,"data":"  Attempting uninstall: typing-inspection\n"}
+,{"stream_name":"stdout","time":449.500116372,"data":"  Attempting uninstall: typing-inspection\n"}
+,{"stream_name":"stdout","time":449.613820063,"data":"    Found existing installation: typing-inspection 0.4.2\n"}
+,{"stream_name":"stdout","time":449.617304053,"data":"    Uninstalling typing-inspection-0.4.2:\n"}
+,{"stream_name":"stdout","time":449.624250787,"data":"      Successfully uninstalled typing-inspection-0.4.2\n"}
+,{"stream_name":"stdout","time":449.648647869,"data":"  Attempting uninstall: typing-extensions\n"}
+,{"stream_name":"stdout","time":449.663126712,"data":"    Found existing installation: typing_extensions 4.15.0\n"}
+,{"stream_name":"stdout","time":449.666113568,"data":"    Uninstalling typing_extensions-4.15.0:\n"}
+,{"stream_name":"stdout","time":449.816121651,"data":"    Found existing installation: typing-inspection 0.4.2\n"}
+,{"stream_name":"stdout","time":449.816146698,"data":"    Uninstalling typing-inspection-0.4.2:\n"}
+,{"stream_name":"stdout","time":449.816152333,"data":"      Successfully uninstalled typing-inspection-0.4.2\n"}
+,{"stream_name":"stdout","time":449.81615683,"data":"  Attempting uninstall: typing-extensions\n"}
+,{"stream_name":"stdout","time":449.816160187,"data":"    Found existing installation: typing_extensions 4.15.0\n"}
+,{"stream_name":"stdout","time":449.816163622,"data":"    Uninstalling typing_extensions-4.15.0:\n"}
+,{"stream_name":"stdout","time":460.610056798,"data":"      Successfully uninstalled typing_extensions-4.15.0\n"}
+,{"stream_name":"stdout","time":460.659991004,"data":"  Attempting uninstall: typer\n"}
+,{"stream_name":"stdout","time":460.812245818,"data":"      Successfully uninstalled typing_extensions-4.15.0\n"}
+,{"stream_name":"stdout","time":460.812271111,"data":"  Attempting uninstall: typer\n"}
+,{"stream_name":"stdout","time":460.902490755,"data":"    Found existing installation: typer 0.24.2\n"}
+,{"stream_name":"stdout","time":460.907469429,"data":"    Uninstalling typer-0.24.2:\n"}
+,{"stream_name":"stdout","time":460.938998747,"data":"      Successfully uninstalled typer-0.24.2\n"}
+,{"stream_name":"stdout","time":461.044945887,"data":"  Attempting uninstall: triton\n"}
+,{"stream_name":"stdout","time":461.104927279,"data":"    Found existing installation: typer 0.24.2\n"}
+,{"stream_name":"stdout","time":461.104971714,"data":"    Uninstalling typer-0.24.2:\n"}
+,{"stream_name":"stdout","time":461.104977548,"data":"      Successfully uninstalled typer-0.24.2\n"}
+,{"stream_name":"stdout","time":461.104982008,"data":"  Attempting uninstall: triton\n"}
+,{"stream_name":"stdout","time":461.326808578,"data":"    Found existing installation: triton 3.6.0\n"}
+,{"stream_name":"stdout","time":461.34585307,"data":"    Uninstalling triton-3.6.0:\n"}
+,{"stream_name":"stdout","time":461.528826967,"data":"    Found existing installation: triton 3.6.0\n"}
+,{"stream_name":"stdout","time":461.528850148,"data":"    Uninstalling triton-3.6.0:\n"}
+,{"stream_name":"stdout","time":464.032450014,"data":"      Successfully uninstalled triton-3.6.0\n"}
+,{"stream_name":"stdout","time":464.235000278,"data":"      Successfully uninstalled triton-3.6.0\n"}
+,{"stream_name":"stdout","time":468.232546138,"data":"  Attempting uninstall: tqdm\n"}
+,{"stream_name":"stdout","time":468.436948828,"data":"  Attempting uninstall: tqdm\n"}
+,{"stream_name":"stdout","time":468.596637583,"data":"    Found existing installation: tqdm 4.67.3\n"}
+,{"stream_name":"stdout","time":468.60357916,"data":"    Uninstalling tqdm-4.67.3:\n"}
+,{"stream_name":"stdout","time":468.638387873,"data":"      Successfully uninstalled tqdm-4.67.3\n"}
+,{"stream_name":"stdout","time":468.706849924,"data":"  Attempting uninstall: torch\n"}
+,{"stream_name":"stdout","time":468.798904157,"data":"    Found existing installation: tqdm 4.67.3\n"}
+,{"stream_name":"stdout","time":468.798931007,"data":"    Uninstalling tqdm-4.67.3:\n"}
+,{"stream_name":"stdout","time":468.798937338,"data":"      Successfully uninstalled tqdm-4.67.3\n"}
+,{"stream_name":"stdout","time":468.798942486,"data":"  Attempting uninstall: torch\n"}
+,{"stream_name":"stdout","time":469.004781148,"data":"    Found existing installation: torch 2.10.0+cu128\n"}
+,{"stream_name":"stdout","time":469.207006392,"data":"    Found existing installation: torch 2.10.0+cu128\n"}
+,{"stream_name":"stdout","time":469.425795369,"data":"    Uninstalling torch-2.10.0+cu128:\n"}
+,{"stream_name":"stdout","time":469.627916337,"data":"    Uninstalling torch-2.10.0+cu128:\n"}
+,{"stream_name":"stdout","time":483.158782681,"data":"      Successfully uninstalled torch-2.10.0+cu128\n"}
+,{"stream_name":"stdout","time":483.36111086,"data":"      Successfully uninstalled torch-2.10.0+cu128\n"}
+,{"stream_name":"stdout","time":501.04622296,"data":"  Attempting uninstall: toolz\n"}
+,{"stream_name":"stdout","time":501.25457016,"data":"  Attempting uninstall: toolz\n"}
+,{"stream_name":"stdout","time":501.330917735,"data":"    Found existing installation: toolz 0.12.1\n"}
+,{"stream_name":"stdout","time":501.336357649,"data":"    Uninstalling toolz-0.12.1:\n"}
+,{"stream_name":"stdout","time":501.360042745,"data":"      Successfully uninstalled toolz-0.12.1\n"}
+,{"stream_name":"stdout","time":501.462389081,"data":"  Attempting uninstall: tifffile\n"}
+,{"stream_name":"stdout","time":501.533095433,"data":"    Found existing installation: toolz 0.12.1\n"}
+,{"stream_name":"stdout","time":501.533114619,"data":"    Uninstalling toolz-0.12.1:\n"}
+,{"stream_name":"stdout","time":501.533119368,"data":"      Successfully uninstalled toolz-0.12.1\n"}
+,{"stream_name":"stdout","time":501.533123323,"data":"  Attempting uninstall: tifffile\n"}
+,{"stream_name":"stdout","time":501.755635288,"data":"    Found existing installation: tifffile 2026.4.11\n"}
+,{"stream_name":"stdout","time":501.760928946,"data":"    Uninstalling tifffile-2026.4.11:\n"}
+,{"stream_name":"stdout","time":501.799546726,"data":"      Successfully uninstalled tifffile-2026.4.11\n"}
+,{"stream_name":"stdout","time":501.958626878,"data":"    Found existing installation: tifffile 2026.4.11\n"}
+,{"stream_name":"stdout","time":501.958678486,"data":"    Uninstalling tifffile-2026.4.11:\n"}
+,{"stream_name":"stdout","time":501.958683634,"data":"      Successfully uninstalled tifffile-2026.4.11\n"}
+,{"stream_name":"stdout","time":502.09304534,"data":"  Attempting uninstall: sqlalchemy\n"}
+,{"stream_name":"stdout","time":502.295131626,"data":"  Attempting uninstall: sqlalchemy\n"}
+,{"stream_name":"stdout","time":502.387760254,"data":"    Found existing installation: SQLAlchemy 2.0.49\n"}
+,{"stream_name":"stdout","time":502.408861549,"data":"    Uninstalling SQLAlchemy-2.0.49:\n"}
+,{"stream_name":"stdout","time":502.589936986,"data":"    Found existing installation: SQLAlchemy 2.0.49\n"}
+,{"stream_name":"stdout","time":502.589958493,"data":"    Uninstalling SQLAlchemy-2.0.49:\n"}
+,{"stream_name":"stdout","time":502.607261129,"data":"      Successfully uninstalled SQLAlchemy-2.0.49\n"}
+,{"stream_name":"stdout","time":502.809295012,"data":"      Successfully uninstalled SQLAlchemy-2.0.49\n"}
+,{"stream_name":"stdout","time":504.786215401,"data":"  Attempting uninstall: setuptools\n"}
+,{"stream_name":"stdout","time":504.80659942,"data":"    Found existing installation: setuptools 81.0.0\n"}
+,{"stream_name":"stdout","time":504.836808554,"data":"    Uninstalling setuptools-81.0.0:\n"}
+,{"stream_name":"stdout","time":504.98850426,"data":"  Attempting uninstall: setuptools\n"}
+,{"stream_name":"stdout","time":504.988527817,"data":"    Found existing installation: setuptools 81.0.0\n"}
+,{"stream_name":"stdout","time":504.988532795,"data":"    Uninstalling setuptools-81.0.0:\n"}
+,{"stream_name":"stdout","time":506.248689042,"data":"      Successfully uninstalled setuptools-81.0.0\n"}
+,{"stream_name":"stdout","time":506.450652892,"data":"      Successfully uninstalled setuptools-81.0.0\n"}
+,{"stream_name":"stdout","time":506.760621649,"data":"  Attempting uninstall: scipy\n"}
+,{"stream_name":"stdout","time":506.96288738,"data":"  Attempting uninstall: scipy\n"}
+,{"stream_name":"stdout","time":506.969474805,"data":"    Found existing installation: scipy 1.16.3\n"}
+,{"stream_name":"stdout","time":507.055115476,"data":"    Uninstalling scipy-1.16.3:\n"}
+,{"stream_name":"stdout","time":507.171542114,"data":"    Found existing installation: scipy 1.16.3\n"}
+,{"stream_name":"stdout","time":507.171568302,"data":"    Uninstalling scipy-1.16.3:\n"}
+,{"stream_name":"stdout","time":508.504700635,"data":"      Successfully uninstalled scipy-1.16.3\n"}
+,{"stream_name":"stdout","time":508.706887897,"data":"      Successfully uninstalled scipy-1.16.3\n"}
+,{"stream_name":"stdout","time":512.805680414,"data":"  Attempting uninstall: scikit-image\n"}
+,{"stream_name":"stdout","time":512.955085118,"data":"    Found existing installation: scikit-image 0.25.2\n"}
+,{"stream_name":"stdout","time":512.986350487,"data":"    Uninstalling scikit-image-0.25.2:\n"}
+,{"stream_name":"stdout","time":513.007966823,"data":"  Attempting uninstall: scikit-image\n"}
+,{"stream_name":"stdout","time":513.007982225,"data":"    Found existing installation: scikit-image 0.25.2\n"}
+,{"stream_name":"stdout","time":513.00798712,"data":"    Uninstalling scikit-image-0.25.2:\n"}
+,{"stream_name":"stdout","time":513.369206198,"data":"      Successfully uninstalled scikit-image-0.25.2\n"}
+,{"stream_name":"stdout","time":513.571461282,"data":"      Successfully uninstalled scikit-image-0.25.2\n"}
+,{"stream_name":"stdout","time":513.989348213,"data":"  Attempting uninstall: rich\n"}
+,{"stream_name":"stdout","time":514.192165831,"data":"  Attempting uninstall: rich\n"}
+,{"stream_name":"stdout","time":514.293619187,"data":"    Found existing installation: rich 13.9.4\n"}
+,{"stream_name":"stdout","time":514.301805895,"data":"    Uninstalling rich-13.9.4:\n"}
+,{"stream_name":"stdout","time":514.383355742,"data":"      Successfully uninstalled rich-13.9.4\n"}
+,{"stream_name":"stdout","time":514.496367871,"data":"    Found existing installation: rich 13.9.4\n"}
+,{"stream_name":"stdout","time":514.496401461,"data":"    Uninstalling rich-13.9.4:\n"}
+,{"stream_name":"stdout","time":514.496446087,"data":"      Successfully uninstalled rich-13.9.4\n"}
+,{"stream_name":"stdout","time":514.998226508,"data":"  Attempting uninstall: pygments\n"}
+,{"stream_name":"stdout","time":515.200932666,"data":"  Attempting uninstall: pygments\n"}
+,{"stream_name":"stdout","time":515.314750213,"data":"    Found existing installation: Pygments 2.20.0\n"}
+,{"stream_name":"stdout","time":515.338498895,"data":"    Uninstalling Pygments-2.20.0:\n"}
+,{"stream_name":"stdout","time":515.517329689,"data":"    Found existing installation: Pygments 2.20.0\n"}
+,{"stream_name":"stdout","time":515.517368749,"data":"    Uninstalling Pygments-2.20.0:\n"}
+,{"stream_name":"stdout","time":515.556519909,"data":"      Successfully uninstalled Pygments-2.20.0\n"}
+,{"stream_name":"stdout","time":515.758642173,"data":"      Successfully uninstalled Pygments-2.20.0\n"}
+,{"stream_name":"stdout","time":516.296277208,"data":"  Attempting uninstall: pydantic-core\n"}
+,{"stream_name":"stdout","time":516.498194064,"data":"  Attempting uninstall: pydantic-core\n"}
+,{"stream_name":"stdout","time":516.558700559,"data":"    Found existing installation: pydantic_core 2.41.4\n"}
+,{"stream_name":"stdout","time":516.562006558,"data":"    Uninstalling pydantic_core-2.41.4:\n"}
+,{"stream_name":"stdout","time":516.582096568,"data":"      Successfully uninstalled pydantic_core-2.41.4\n"}
+,{"stream_name":"stdout","time":516.651281356,"data":"  Attempting uninstall: pydantic\n"}
+,{"stream_name":"stdout","time":516.760880392,"data":"    Found existing installation: pydantic_core 2.41.4\n"}
+,{"stream_name":"stdout","time":516.760904401,"data":"    Uninstalling pydantic_core-2.41.4:\n"}
+,{"stream_name":"stdout","time":516.760908638,"data":"      Successfully uninstalled pydantic_core-2.41.4\n"}
+,{"stream_name":"stdout","time":516.760912336,"data":"  Attempting uninstall: pydantic\n"}
+,{"stream_name":"stdout","time":516.806144716,"data":"    Found existing installation: pydantic 2.12.3\n"}
+,{"stream_name":"stdout","time":516.81719125,"data":"    Uninstalling pydantic-2.12.3:\n"}
+,{"stream_name":"stdout","time":516.910100377,"data":"      Successfully uninstalled pydantic-2.12.3\n"}
+,{"stream_name":"stdout","time":517.00827033,"data":"    Found existing installation: pydantic 2.12.3\n"}
+,{"stream_name":"stdout","time":517.008299606,"data":"    Uninstalling pydantic-2.12.3:\n"}
+,{"stream_name":"stdout","time":517.008304523,"data":"      Successfully uninstalled pydantic-2.12.3\n"}
+,{"stream_name":"stdout","time":517.230356964,"data":"  Attempting uninstall: pyarrow\n"}
+,{"stream_name":"stdout","time":517.313058428,"data":"    Found existing installation: pyarrow 24.0.0\n"}
+,{"stream_name":"stdout","time":517.339332564,"data":"    Uninstalling pyarrow-24.0.0:\n"}
+,{"stream_name":"stdout","time":517.43242941,"data":"  Attempting uninstall: pyarrow\n"}
+,{"stream_name":"stdout","time":517.432449361,"data":"    Found existing installation: pyarrow 24.0.0\n"}
+,{"stream_name":"stdout","time":517.432453974,"data":"    Uninstalling pyarrow-24.0.0:\n"}
+,{"stream_name":"stdout","time":518.22498261,"data":"      Successfully uninstalled pyarrow-24.0.0\n"}
+,{"stream_name":"stdout","time":518.427080125,"data":"      Successfully uninstalled pyarrow-24.0.0\n"}
+,{"stream_name":"stdout","time":519.849004085,"data":"  Attempting uninstall: psygnal\n"}
+,{"stream_name":"stdout","time":520.036390773,"data":"    Found existing installation: psygnal 0.15.1\n"}
+,{"stream_name":"stdout","time":520.041709681,"data":"    Uninstalling psygnal-0.15.1:\n"}
+,{"stream_name":"stdout","time":520.051130186,"data":"  Attempting uninstall: psygnal\n"}
+,{"stream_name":"stdout","time":520.051148562,"data":"    Found existing installation: psygnal 0.15.1\n"}
+,{"stream_name":"stdout","time":520.051154933,"data":"    Uninstalling psygnal-0.15.1:\n"}
+,{"stream_name":"stdout","time":521.260638979,"data":"      Successfully uninstalled psygnal-0.15.1\n"}
+,{"stream_name":"stdout","time":521.349079748,"data":"  Attempting uninstall: polars-runtime-32\n"}
+,{"stream_name":"stdout","time":521.463188615,"data":"      Successfully uninstalled psygnal-0.15.1\n"}
+,{"stream_name":"stdout","time":521.463222507,"data":"  Attempting uninstall: polars-runtime-32\n"}
+,{"stream_name":"stdout","time":521.527518374,"data":"    Found existing installation: polars-runtime-32 1.35.2\n"}
+,{"stream_name":"stdout","time":521.530404795,"data":"    Uninstalling polars-runtime-32-1.35.2:\n"}
+,{"stream_name":"stdout","time":521.730054964,"data":"    Found existing installation: polars-runtime-32 1.35.2\n"}
+,{"stream_name":"stdout","time":521.7300799879999,"data":"    Uninstalling polars-runtime-32-1.35.2:\n"}
+,{"stream_name":"stdout","time":521.982646176,"data":"      Successfully uninstalled polars-runtime-32-1.35.2\n"}
+,{"stream_name":"stdout","time":522.185100236,"data":"      Successfully uninstalled polars-runtime-32-1.35.2\n"}
+,{"stream_name":"stdout","time":523.087422777,"data":"  Attempting uninstall: polars\n"}
+,{"stream_name":"stdout","time":523.28946797,"data":"  Attempting uninstall: polars\n"}
+,{"stream_name":"stdout","time":523.374241383,"data":"    Found existing installation: polars 1.35.2\n"}
+,{"stream_name":"stdout","time":523.391612498,"data":"    Uninstalling polars-1.35.2:\n"}
+,{"stream_name":"stdout","time":523.520533945,"data":"      Successfully uninstalled polars-1.35.2\n"}
+,{"stream_name":"stdout","time":523.576190462,"data":"    Found existing installation: polars 1.35.2\n"}
+,{"stream_name":"stdout","time":523.576234804,"data":"    Uninstalling polars-1.35.2:\n"}
+,{"stream_name":"stdout","time":523.576242279,"data":"      Successfully uninstalled polars-1.35.2\n"}
+,{"stream_name":"stdout","time":524.996560946,"data":"  Attempting uninstall: pillow\n"}
+,{"stream_name":"stdout","time":525.198780444,"data":"  Attempting uninstall: pillow\n"}
+,{"stream_name":"stdout","time":525.276479701,"data":"    Found existing installation: pillow 11.3.0\n"}
+,{"stream_name":"stdout","time":525.285897971,"data":"    Uninstalling pillow-11.3.0:\n"}
+,{"stream_name":"stdout","time":525.406698122,"data":"      Successfully uninstalled pillow-11.3.0\n"}
+,{"stream_name":"stdout","time":525.478318709,"data":"    Found existing installation: pillow 11.3.0\n"}
+,{"stream_name":"stdout","time":525.478337441,"data":"    Uninstalling pillow-11.3.0:\n"}
+,{"stream_name":"stdout","time":525.478342453,"data":"      Successfully uninstalled pillow-11.3.0\n"}
+,{"stream_name":"stdout","time":525.803320322,"data":"  Attempting uninstall: pandas\n"}
+,{"stream_name":"stdout","time":525.858759064,"data":"    Found existing installation: pandas 2.3.3\n"}
+,{"stream_name":"stdout","time":525.975528675,"data":"    Uninstalling pandas-2.3.3:\n"}
+,{"stream_name":"stdout","time":526.005372646,"data":"  Attempting uninstall: pandas\n"}
+,{"stream_name":"stdout","time":526.005390644,"data":"    Found existing installation: pandas 2.3.3\n"}
+,{"stream_name":"stdout","time":526.005395136,"data":"    Uninstalling pandas-2.3.3:\n"}
+,{"stream_name":"stdout","time":527.150161711,"data":"      Successfully uninstalled pandas-2.3.3\n"}
+,{"stream_name":"stdout","time":527.352695034,"data":"      Successfully uninstalled pandas-2.3.3\n"}
+,{"stream_name":"stdout","time":532.350282382,"data":"  Attempting uninstall: packaging\n"}
+,{"stream_name":"stdout","time":532.558985545,"data":"  Attempting uninstall: packaging\n"}
+,{"stream_name":"stdout","time":532.647168545,"data":"    Found existing installation: packaging 26.1\n"}
+,{"stream_name":"stdout","time":532.651674474,"data":"    Uninstalling packaging-26.1:\n"}
+,{"stream_name":"stdout","time":532.676683068,"data":"      Successfully uninstalled packaging-26.1\n"}
+,{"stream_name":"stdout","time":532.849564419,"data":"    Found existing installation: packaging 26.1\n"}
+,{"stream_name":"stdout","time":532.849584938,"data":"    Uninstalling packaging-26.1:\n"}
+,{"stream_name":"stdout","time":532.849589132,"data":"      Successfully uninstalled packaging-26.1\n"}
+,{"stream_name":"stdout","time":546.153195981,"data":"  Attempting uninstall: numpy\n"}
+,{"stream_name":"stdout","time":546.355260328,"data":"  Attempting uninstall: numpy\n"}
+,{"stream_name":"stdout","time":546.482589697,"data":"    Found existing installation: numpy 2.0.2\n"}
+,{"stream_name":"stdout","time":546.54011103,"data":"    Uninstalling numpy-2.0.2:\n"}
+,{"stream_name":"stdout","time":546.684938865,"data":"    Found existing installation: numpy 2.0.2\n"}
+,{"stream_name":"stdout","time":546.684972329,"data":"    Uninstalling numpy-2.0.2:\n"}
+,{"stream_name":"stdout","time":548.88081863,"data":"      Successfully uninstalled numpy-2.0.2\n"}
+,{"stream_name":"stdout","time":549.083445833,"data":"      Successfully uninstalled numpy-2.0.2\n"}
+,{"stream_name":"stdout","time":552.586371945,"data":"  Attempting uninstall: numexpr\n"}
+,{"stream_name":"stdout","time":552.788577306,"data":"  Attempting uninstall: numexpr\n"}
+,{"stream_name":"stdout","time":552.87776685,"data":"    Found existing installation: numexpr 2.14.1\n"}
+,{"stream_name":"stdout","time":552.882309859,"data":"    Uninstalling numexpr-2.14.1:\n"}
+,{"stream_name":"stdout","time":552.91173318,"data":"      Successfully uninstalled numexpr-2.14.1\n"}
+,{"stream_name":"stdout","time":553.079936033,"data":"    Found existing installation: numexpr 2.14.1\n"}
+,{"stream_name":"stdout","time":553.079959463,"data":"    Uninstalling numexpr-2.14.1:\n"}
+,{"stream_name":"stdout","time":553.07996491,"data":"      Successfully uninstalled numexpr-2.14.1\n"}
+,{"stream_name":"stdout","time":553.2593178,"data":"  Attempting uninstall: numba\n"}
+,{"stream_name":"stdout","time":553.461266095,"data":"  Attempting uninstall: numba\n"}
+,{"stream_name":"stdout","time":553.56536647,"data":"    Found existing installation: numba 0.60.0\n"}
+,{"stream_name":"stdout","time":553.64408651,"data":"    Uninstalling numba-0.60.0:\n"}
+,{"stream_name":"stdout","time":553.767673639,"data":"    Found existing installation: numba 0.60.0\n"}
+,{"stream_name":"stdout","time":553.76772637,"data":"    Uninstalling numba-0.60.0:\n"}
+,{"stream_name":"stdout","time":555.553784742,"data":"      Successfully uninstalled numba-0.60.0\n"}
+,{"stream_name":"stdout","time":555.755900266,"data":"      Successfully uninstalled numba-0.60.0\n"}
+,{"stream_name":"stdout","time":560.108909128,"data":"  Attempting uninstall: msgpack\n"}
+,{"stream_name":"stdout","time":560.311017574,"data":"  Attempting uninstall: msgpack\n"}
+,{"stream_name":"stdout","time":560.349779819,"data":"    Found existing installation: msgpack 1.1.2\n"}
+,{"stream_name":"stdout","time":560.35324568,"data":"    Uninstalling msgpack-1.1.2:\n"}
+,{"stream_name":"stdout","time":560.36538282,"data":"      Successfully uninstalled msgpack-1.1.2\n"}
+,{"stream_name":"stdout","time":560.403746378,"data":"  Attempting uninstall: markdown-it-py\n"}
+,{"stream_name":"stdout","time":560.551883479,"data":"    Found existing installation: msgpack 1.1.2\n"}
+,{"stream_name":"stdout","time":560.551905453,"data":"    Uninstalling msgpack-1.1.2:\n"}
+,{"stream_name":"stdout","time":560.55191106,"data":"      Successfully uninstalled msgpack-1.1.2\n"}
+,{"stream_name":"stdout","time":560.55191588,"data":"  Attempting uninstall: markdown-it-py\n"}
+,{"stream_name":"stdout","time":560.560843146,"data":"    Found existing installation: markdown-it-py 4.0.0\n"}
+,{"stream_name":"stdout","time":560.569357577,"data":"    Uninstalling markdown-it-py-4.0.0:\n"}
+,{"stream_name":"stdout","time":560.648955452,"data":"      Successfully uninstalled markdown-it-py-4.0.0\n"}
+,{"stream_name":"stdout","time":560.763483403,"data":"    Found existing installation: markdown-it-py 4.0.0\n"}
+,{"stream_name":"stdout","time":560.763528088,"data":"    Uninstalling markdown-it-py-4.0.0:\n"}
+,{"stream_name":"stdout","time":560.763534364,"data":"      Successfully uninstalled markdown-it-py-4.0.0\n"}
+,{"stream_name":"stdout","time":561.359547724,"data":"  Attempting uninstall: llvmlite\n"}
+,{"stream_name":"stdout","time":561.562098164,"data":"  Attempting uninstall: llvmlite\n"}
+,{"stream_name":"stdout","time":561.666670684,"data":"    Found existing installation: llvmlite 0.43.0\n"}
+,{"stream_name":"stdout","time":561.672096886,"data":"    Uninstalling llvmlite-0.43.0:\n"}
+,{"stream_name":"stdout","time":561.869183909,"data":"    Found existing installation: llvmlite 0.43.0\n"}
+,{"stream_name":"stdout","time":561.869214348,"data":"    Uninstalling llvmlite-0.43.0:\n"}
+,{"stream_name":"stdout","time":562.150098419,"data":"      Successfully uninstalled llvmlite-0.43.0\n"}
+,{"stream_name":"stdout","time":562.352586873,"data":"      Successfully uninstalled llvmlite-0.43.0\n"}
+,{"stream_name":"stdout","time":563.3761938,"data":"  Attempting uninstall: importlib-metadata\n"}
+,{"stream_name":"stdout","time":563.585802896,"data":"  Attempting uninstall: importlib-metadata\n"}
+,{"stream_name":"stdout","time":563.745860494,"data":"    Found existing installation: importlib_metadata 8.7.1\n"}
+,{"stream_name":"stdout","time":563.750039073,"data":"    Uninstalling importlib_metadata-8.7.1:\n"}
+,{"stream_name":"stdout","time":563.769919171,"data":"      Successfully uninstalled importlib_metadata-8.7.1\n"}
+,{"stream_name":"stdout","time":563.810974176,"data":"  Attempting uninstall: imageio\n"}
+,{"stream_name":"stdout","time":563.948405104,"data":"    Found existing installation: importlib_metadata 8.7.1\n"}
+,{"stream_name":"stdout","time":563.948462463,"data":"    Uninstalling importlib_metadata-8.7.1:\n"}
+,{"stream_name":"stdout","time":563.948471801,"data":"      Successfully uninstalled importlib_metadata-8.7.1\n"}
+,{"stream_name":"stdout","time":563.948476492,"data":"  Attempting uninstall: imageio\n"}
+,{"stream_name":"stdout","time":563.996180793,"data":"    Found existing installation: ImageIO 2.37.3\n"}
+,{"stream_name":"stdout","time":564.003283518,"data":"    Uninstalling ImageIO-2.37.3:\n"}
+,{"stream_name":"stdout","time":564.056146981,"data":"      Successfully uninstalled ImageIO-2.37.3\n"}
+,{"stream_name":"stdout","time":564.198770325,"data":"    Found existing installation: ImageIO 2.37.3\n"}
+,{"stream_name":"stdout","time":564.19879806,"data":"    Uninstalling ImageIO-2.37.3:\n"}
+,{"stream_name":"stdout","time":564.198801734,"data":"      Successfully uninstalled ImageIO-2.37.3\n"}
+,{"stream_name":"stdout","time":564.92738348,"data":"  Attempting uninstall: idna\n"}
+,{"stream_name":"stdout","time":565.129865545,"data":"  Attempting uninstall: idna\n"}
+,{"stream_name":"stdout","time":565.290290824,"data":"    Found existing installation: idna 3.13\n"}
+,{"stream_name":"stdout","time":565.294234942,"data":"    Uninstalling idna-3.13:\n"}
+,{"stream_name":"stdout","time":565.304948023,"data":"      Successfully uninstalled idna-3.13\n"}
+,{"stream_name":"stdout","time":565.362264989,"data":"  Attempting uninstall: hpack\n"}
+,{"stream_name":"stdout","time":565.492135444,"data":"    Found existing installation: idna 3.13\n"}
+,{"stream_name":"stdout","time":565.492159175,"data":"    Uninstalling idna-3.13:\n"}
+,{"stream_name":"stdout","time":565.492165036,"data":"      Successfully uninstalled idna-3.13\n"}
+,{"stream_name":"stdout","time":565.492169751,"data":"  Attempting uninstall: hpack\n"}
+,{"stream_name":"stdout","time":565.644155394,"data":"    Found existing installation: hpack 4.1.0\n"}
+,{"stream_name":"stdout","time":565.647860469,"data":"    Uninstalling hpack-4.1.0:\n"}
+,{"stream_name":"stdout","time":565.658771596,"data":"      Successfully uninstalled hpack-4.1.0\n"}
+,{"stream_name":"stdout","time":565.713547317,"data":"  Attempting uninstall: h2\n"}
+,{"stream_name":"stdout","time":565.846475561,"data":"    Found existing installation: hpack 4.1.0\n"}
+,{"stream_name":"stdout","time":565.846504252,"data":"    Uninstalling hpack-4.1.0:\n"}
+,{"stream_name":"stdout","time":565.846509859,"data":"      Successfully uninstalled hpack-4.1.0\n"}
+,{"stream_name":"stdout","time":565.846514521,"data":"  Attempting uninstall: h2\n"}
+,{"stream_name":"stdout","time":566.103192605,"data":"    Found existing installation: h2 4.3.0\n"}
+,{"stream_name":"stdout","time":566.106922902,"data":"    Uninstalling h2-4.3.0:\n"}
+,{"stream_name":"stdout","time":566.118272733,"data":"      Successfully uninstalled h2-4.3.0\n"}
+,{"stream_name":"stdout","time":566.168302851,"data":"  Attempting uninstall: greenlet\n"}
+,{"stream_name":"stdout","time":566.305509418,"data":"    Found existing installation: h2 4.3.0\n"}
+,{"stream_name":"stdout","time":566.305528934,"data":"    Uninstalling h2-4.3.0:\n"}
+,{"stream_name":"stdout","time":566.305535167,"data":"      Successfully uninstalled h2-4.3.0\n"}
+,{"stream_name":"stdout","time":566.305539771,"data":"  Attempting uninstall: greenlet\n"}
+,{"stream_name":"stdout","time":566.404945847,"data":"    Found existing installation: greenlet 3.4.0\n"}
+,{"stream_name":"stdout","time":566.418865975,"data":"    Uninstalling greenlet-3.4.0:\n"}
+,{"stream_name":"stdout","time":566.478305883,"data":"      Successfully uninstalled greenlet-3.4.0\n"}
+,{"stream_name":"stdout","time":566.607233521,"data":"    Found existing installation: greenlet 3.4.0\n"}
+,{"stream_name":"stdout","time":566.607260363,"data":"    Uninstalling greenlet-3.4.0:\n"}
+,{"stream_name":"stdout","time":566.607265182,"data":"      Successfully uninstalled greenlet-3.4.0\n"}
+,{"stream_name":"stdout","time":568.564650378,"data":"  Attempting uninstall: fsspec\n"}
+,{"stream_name":"stdout","time":568.767088494,"data":"  Attempting uninstall: fsspec\n"}
+,{"stream_name":"stdout","time":568.78777101,"data":"    Found existing installation: fsspec 2025.3.0\n"}
+,{"stream_name":"stdout","time":568.794715412,"data":"    Uninstalling fsspec-2025.3.0:\n"}
+,{"stream_name":"stdout","time":568.825569604,"data":"      Successfully uninstalled fsspec-2025.3.0\n"}
+,{"stream_name":"stdout","time":568.989877813,"data":"    Found existing installation: fsspec 2025.3.0\n"}
+,{"stream_name":"stdout","time":568.989901228,"data":"    Uninstalling fsspec-2025.3.0:\n"}
+,{"stream_name":"stdout","time":568.989905533,"data":"      Successfully uninstalled fsspec-2025.3.0\n"}
+,{"stream_name":"stdout","time":569.003870331,"data":"  Attempting uninstall: filelock\n"}
+,{"stream_name":"stdout","time":569.206048445,"data":"  Attempting uninstall: filelock\n"}
+,{"stream_name":"stdout","time":569.340772878,"data":"    Found existing installation: filelock 3.29.0\n"}
+,{"stream_name":"stdout","time":569.344699483,"data":"    Uninstalling filelock-3.29.0:\n"}
+,{"stream_name":"stdout","time":569.357906416,"data":"      Successfully uninstalled filelock-3.29.0\n"}
+,{"stream_name":"stdout","time":569.502254782,"data":"  Attempting uninstall: dask\n"}
+,{"stream_name":"stdout","time":569.54308457,"data":"    Found existing installation: filelock 3.29.0\n"}
+,{"stream_name":"stdout","time":569.543106847,"data":"    Uninstalling filelock-3.29.0:\n"}
+,{"stream_name":"stdout","time":569.543111105,"data":"      Successfully uninstalled filelock-3.29.0\n"}
+,{"stream_name":"stdout","time":569.543114646,"data":"  Attempting uninstall: dask\n"}
+,{"stream_name":"stdout","time":569.781592976,"data":"    Found existing installation: dask 2026.1.1\n"}
+,{"stream_name":"stdout","time":569.808439636,"data":"    Uninstalling dask-2026.1.1:\n"}
+,{"stream_name":"stdout","time":569.983958885,"data":"    Found existing installation: dask 2026.1.1\n"}
+,{"stream_name":"stdout","time":569.983981392,"data":"    Uninstalling dask-2026.1.1:\n"}
+,{"stream_name":"stdout","time":570.047196391,"data":"      Successfully uninstalled dask-2026.1.1\n"}
+,{"stream_name":"stdout","time":570.249271542,"data":"      Successfully uninstalled dask-2026.1.1\n"}
+,{"stream_name":"stdout","time":571.487564504,"data":"  Attempting uninstall: cuda-pathfinder\n"}
+,{"stream_name":"stdout","time":571.689602359,"data":"  Attempting uninstall: cuda-pathfinder\n"}
+,{"stream_name":"stdout","time":571.811422136,"data":"    Found existing installation: cuda-pathfinder 1.5.3\n"}
+,{"stream_name":"stdout","time":571.816859432,"data":"    Uninstalling cuda-pathfinder-1.5.3:\n"}
+,{"stream_name":"stdout","time":571.854884891,"data":"      Successfully uninstalled cuda-pathfinder-1.5.3\n"}
+,{"stream_name":"stdout","time":571.923998401,"data":"  Attempting uninstall: cuda-bindings\n"}
+,{"stream_name":"stdout","time":572.013458741,"data":"    Found existing installation: cuda-pathfinder 1.5.3\n"}
+,{"stream_name":"stdout","time":572.013491777,"data":"    Uninstalling cuda-pathfinder-1.5.3:\n"}
+,{"stream_name":"stdout","time":572.013511197,"data":"      Successfully uninstalled cuda-pathfinder-1.5.3\n"}
+,{"stream_name":"stdout","time":572.013518539,"data":"  Attempting uninstall: cuda-bindings\n"}
+,{"stream_name":"stdout","time":572.126153656,"data":"    Found existing installation: cuda-bindings 12.9.4\n"}
+,{"stream_name":"stdout","time":572.133248279,"data":"    Uninstalling cuda-bindings-12.9.4:\n"}
+,{"stream_name":"stdout","time":572.328172397,"data":"    Found existing installation: cuda-bindings 12.9.4\n"}
+,{"stream_name":"stdout","time":572.328193638,"data":"    Uninstalling cuda-bindings-12.9.4:\n"}
+,{"stream_name":"stdout","time":573.814577055,"data":"      Successfully uninstalled cuda-bindings-12.9.4\n"}
+,{"stream_name":"stdout","time":574.005917373,"data":"  Attempting uninstall: click\n"}
+,{"stream_name":"stdout","time":574.017031869,"data":"      Successfully uninstalled cuda-bindings-12.9.4\n"}
+,{"stream_name":"stdout","time":574.017064479,"data":"  Attempting uninstall: click\n"}
+,{"stream_name":"stdout","time":574.340669093,"data":"    Found existing installation: click 8.3.3\n"}
+,{"stream_name":"stdout","time":574.344536147,"data":"    Uninstalling click-8.3.3:\n"}
+,{"stream_name":"stdout","time":574.363118934,"data":"      Successfully uninstalled click-8.3.3\n"}
+,{"stream_name":"stdout","time":574.451513364,"data":"  Attempting uninstall: certifi\n"}
+,{"stream_name":"stdout","time":574.543168732,"data":"    Found existing installation: click 8.3.3\n"}
+,{"stream_name":"stdout","time":574.54319281,"data":"    Uninstalling click-8.3.3:\n"}
+,{"stream_name":"stdout","time":574.543197543,"data":"      Successfully uninstalled click-8.3.3\n"}
+,{"stream_name":"stdout","time":574.543201255,"data":"  Attempting uninstall: certifi\n"}
+,{"stream_name":"stdout","time":574.610771083,"data":"    Found existing installation: certifi 2026.4.22\n"}
+,{"stream_name":"stdout","time":574.613992835,"data":"    Uninstalling certifi-2026.4.22:\n"}
+,{"stream_name":"stdout","time":574.621352119,"data":"      Successfully uninstalled certifi-2026.4.22\n"}
+,{"stream_name":"stdout","time":574.644859521,"data":"  Attempting uninstall: blosc2\n"}
+,{"stream_name":"stdout","time":574.81264795,"data":"    Found existing installation: certifi 2026.4.22\n"}
+,{"stream_name":"stdout","time":574.812665594,"data":"    Uninstalling certifi-2026.4.22:\n"}
+,{"stream_name":"stdout","time":574.81267052,"data":"      Successfully uninstalled certifi-2026.4.22\n"}
+,{"stream_name":"stdout","time":574.812674319,"data":"  Attempting uninstall: blosc2\n"}
+,{"stream_name":"stdout","time":574.882900996,"data":"    Found existing installation: blosc2 4.1.2\n"}
+,{"stream_name":"stdout","time":574.888286363,"data":"    Uninstalling blosc2-4.1.2:\n"}
+,{"stream_name":"stdout","time":574.987697874,"data":"      Successfully uninstalled blosc2-4.1.2\n"}
+,{"stream_name":"stdout","time":575.084912404,"data":"    Found existing installation: blosc2 4.1.2\n"}
+,{"stream_name":"stdout","time":575.084943745,"data":"    Uninstalling blosc2-4.1.2:\n"}
+,{"stream_name":"stdout","time":575.084947968,"data":"      Successfully uninstalled blosc2-4.1.2\n"}
+,{"stream_name":"stdout","time":575.753219033,"data":"  Attempting uninstall: anyio\n"}
+,{"stream_name":"stdout","time":575.955301691,"data":"  Attempting uninstall: anyio\n"}
+,{"stream_name":"stdout","time":576.055818789,"data":"    Found existing installation: anyio 4.13.0\n"}
+,{"stream_name":"stdout","time":576.062131066,"data":"    Uninstalling anyio-4.13.0:\n"}
+,{"stream_name":"stdout","time":576.257955262,"data":"    Found existing installation: anyio 4.13.0\n"}
+,{"stream_name":"stdout","time":576.257987412,"data":"    Uninstalling anyio-4.13.0:\n"}
+,{"stream_name":"stdout","time":576.405178719,"data":"      Successfully uninstalled anyio-4.13.0\n"}
+,{"stream_name":"stdout","time":576.547510761,"data":"  Attempting uninstall: annotated-types\n"}
+,{"stream_name":"stdout","time":576.607631681,"data":"      Successfully uninstalled anyio-4.13.0\n"}
+,{"stream_name":"stdout","time":576.607657299,"data":"  Attempting uninstall: annotated-types\n"}
+,{"stream_name":"stdout","time":576.685971155,"data":"    Found existing installation: annotated-types 0.7.0\n"}
+,{"stream_name":"stdout","time":576.689215623,"data":"    Uninstalling annotated-types-0.7.0:\n"}
+,{"stream_name":"stdout","time":576.695538551,"data":"      Successfully uninstalled annotated-types-0.7.0\n"}
+,{"stream_name":"stdout","time":576.720043275,"data":"  Attempting uninstall: annotated-doc\n"}
+,{"stream_name":"stdout","time":576.888355724,"data":"    Found existing installation: annotated-types 0.7.0\n"}
+,{"stream_name":"stdout","time":576.888378385,"data":"    Uninstalling annotated-types-0.7.0:\n"}
+,{"stream_name":"stdout","time":576.888384593,"data":"      Successfully uninstalled annotated-types-0.7.0\n"}
+,{"stream_name":"stdout","time":576.888389865,"data":"  Attempting uninstall: annotated-doc\n"}
+,{"stream_name":"stdout","time":576.928682972,"data":"    Found existing installation: annotated-doc 0.0.4\n"}
+,{"stream_name":"stdout","time":576.931897864,"data":"    Uninstalling annotated-doc-0.0.4:\n"}
+,{"stream_name":"stdout","time":576.938456066,"data":"      Successfully uninstalled annotated-doc-0.0.4\n"}
+,{"stream_name":"stdout","time":577.13095839,"data":"    Found existing installation: annotated-doc 0.0.4\n"}
+,{"stream_name":"stdout","time":577.13099034,"data":"    Uninstalling annotated-doc-0.0.4:\n"}
+,{"stream_name":"stdout","time":577.130996767,"data":"      Successfully uninstalled annotated-doc-0.0.4\n"}
+,{"stream_name":"stdout","time":578.243903514,"data":"Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 bidict-0.24.1 blosc2-4.13.0 certifi-2026.7.22 click-8.5.0 cuda-bindings-13.4.1 cuda-pathfinder-1.8.1 cuda-toolkit-13.0.3.0 dask-2026.8.0 donfig-0.8.1.post1 filelock-3.32.6 fsspec-2026.7.0 geff-1.3.1.1.3 geff-spec-1.3.0 greenlet-3.5.6 h2-4.4.1 hpack-4.2.0 idna-3.19 ilpy-0.6.0 imagecodecs-2026.8.16 imageio-2.37.4 importlib-metadata-9.0.1 llvmlite-0.49.0 markdown-it-py-4.2.0 msgpack-1.2.2 numba-0.67.0 numcodecs-0.16.5 numexpr-2.14.2 numpy-2.3.5 nvidia-cublas-13.1.1.3 nvidia-cuda-cupti-13.0.85 nvidia-cuda-nvrtc-13.0.88 nvidia-cuda-runtime-13.0.96 nvidia-cudnn-cu13-9.20.0.48 nvidia-cufft-12.0.0.61 nvidia-cufile-1.15.1.6 nvidia-curand-10.4.0.35 nvidia-cusolver-12.0.4.66 nvidia-cusparse-12.6.3.3 nvidia-cusparselt-cu13-0.8.1 nvidia-nccl-cu13-2.29.7 nvidia-nvjitlink-13.4.52 nvidia-nvshmem-cu13-3.4.5 nvidia-nvtx-13.0.85 packaging-26.3 pandas-3.0.5 pillow-12.3.0 polars-1.44.1 polars-runtime-32-1.44.1 psygnal-0.16.1 pyarrow-25.0.1 pydantic-2.13.5 pydantic-core-2.46.5 pygments-2.21.0 pyscipopt-6.2.1 rich-15.0.0 rstar-python-0.2.0 rustworkx-0.18.1 scikit-image-0.26.0 scipy-1.17.1 setuptools-84.0.0 sqlalchemy-2.0.52 tifffile-2026.9.9 toolz-1.1.0 torch-2.13.0 tqdm-4.70.0 tracksdata-0.1.0rc9 triton-3.7.1 typer-0.27.2 typing-extensions-4.16.0 typing-inspection-0.4.4 zarr-3.1.6 zipp-4.1.0\n"}
+,{"stream_name":"stdout","time":578.446248519,"data":"Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 bidict-0.24.1 blosc2-4.13.0 certifi-2026.7.22 click-8.5.0 cuda-bindings-13.4.1 cuda-pathfinder-1.8.1 cuda-toolkit-13.0.3.0 dask-2026.8.0 donfig-0.8.1.post1 filelock-3.32.6 fsspec-2026.7.0 geff-1.3.1.1.3 geff-spec-1.3.0 greenlet-3.5.6 h2-4.4.1 hpack-4.2.0 idna-3.19 ilpy-0.6.0 imagecodecs-2026.8.16 imageio-2.37.4 importlib-metadata-9.0.1 llvmlite-0.49.0 markdown-it-py-4.2.0 msgpack-1.2.2 numba-0.67.0 numcodecs-0.16.5 numexpr-2.14.2 numpy-2.3.5 nvidia-cublas-13.1.1.3 nvidia-cuda-cupti-13.0.85 nvidia-cuda-nvrtc-13.0.88 nvidia-cuda-runtime-13.0.96 nvidia-cudnn-cu13-9.20.0.48 nvidia-cufft-12.0.0.61 nvidia-cufile-1.15.1.6 nvidia-curand-10.4.0.35 nvidia-cusolver-12.0.4.66 nvidia-cusparse-12.6.3.3 nvidia-cusparselt-cu13-0.8.1 nvidia-nccl-cu13-2.29.7 nvidia-nvjitlink-13.4.52 nvidia-nvshmem-cu13-3.4.5 nvidia-nvtx-13.0.85 packaging-26.3 pandas-3.0.5 pillow-12.3.0 polars-1.44.1 polars-runtime-32-1.44.1 psygnal-0.16.1 pyarrow-25.0.1 pydantic-2.13.5 pydantic-core-2.46.5 pygments-2.21.0 pyscipopt-6.2.1 rich-15.0.0 rstar-python-0.2.0 rustworkx-0.18.1 scikit-image-0.26.0 scipy-1.17.1 setuptools-84.0.0 sqlalchemy-2.0.52 tifffile-2026.9.9 toolz-1.1.0 torch-2.13.0 tqdm-4.70.0 tracksdata-0.1.0rc9 triton-3.7.1 typer-0.27.2 typing-extensions-4.16.0 typing-inspection-0.4.4 zarr-3.1.6 zipp-4.1.0\n"}
+,{"stream_name":"stderr","time":594.653195292,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":594.653226347,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":594.658546337,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":594.658568628,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":594.860606678,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":594.860639822,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":594.860644377,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":594.860648089,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":594.860651132,"data":"\n"}
+,{"stream_name":"stderr","time":594.860654139,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":594.860657934,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":594.860660862,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":594.860664155,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":1067.354213025,"data":"Trying DeepCenter add-only gate checkpoint: /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/assets/champion/deepcenter/checkpoint_last.pt\n"}
+,{"stream_name":"stdout","time":1067.354302106,"data":"Loaded DeepCenter add-only gate checkpoint: /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/assets/champion/deepcenter/checkpoint_last.pt\n"}
+,{"stream_name":"stdout","time":1067.35430865,"data":"DeepCenter checkpoint epoch: 500 best_score: -0.04500306242456039\n"}
+,{"stream_name":"stdout","time":1067.354312373,"data":"[09/19/26 18:44:20] WARNING  Solver failed with Gurobi,       _ilp_solver.py:363\n"}
+,{"stream_name":"stdout","time":1067.354315958,"data":"                             trying Scip.                                       \n"}
+,{"stream_name":"stdout","time":1067.354319589,"data":"                             Got error:                                         \n"}
+,{"stream_name":"stdout","time":1067.354323168,"data":"                             Gurobi license is not available.                   \n"}
+,{"stream_name":"stdout","time":1067.562194874,"data":"Trying DeepCenter add-only gate checkpoint: /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/assets/champion/deepcenter/checkpoint_last.pt\n"}
+,{"stream_name":"stdout","time":1067.562223139,"data":"Loaded DeepCenter add-only gate checkpoint: /kaggle/input/datasets/matiasantezana/biohub-pkg-b0970-package-046-rel2/assets/champion/deepcenter/checkpoint_last.pt\n"}
+,{"stream_name":"stdout","time":1067.562231447,"data":"DeepCenter checkpoint epoch: 500 best_score: -0.04500306242456039\n"}
+,{"stream_name":"stdout","time":1067.562233904,"data":"[09/19/26 18:44:20] WARNING  Solver failed with Gurobi,       _ilp_solver.py:363\n"}
+,{"stream_name":"stdout","time":1067.562241226,"data":"                             trying Scip.                                       \n"}
+,{"stream_name":"stdout","time":1067.562244104,"data":"                             Got error:                                         \n"}
+,{"stream_name":"stdout","time":1067.562246548,"data":"                             Gurobi license is not available.                   \n"}
+,{"stream_name":"stdout","time":1112.025140297,"data":"  [44b6_0113de3b] after edge-filter+motion-relink: 25678 nodes, 24783 edges\n"}
+,{"stream_name":"stdout","time":1112.025177664,"data":"  [44b6_0113de3b] after gap-closing (single-frame + gap2): 25741 nodes, 24898 edges\n"}
+,{"stream_name":"stdout","time":1112.025184774,"data":"  [44b6_0113de3b] after safe-division repair: 25741 nodes, 24979 edges (geometric_candidates=94, deepcenter_rejected=0, post_veto_candidates=94, added=81, cap_skipped=0, mutual_nn_rejected=14, divergence_rejected=269)\n"}
+,{"stream_name":"stdout","time":1112.025191281,"data":"  [44b6_0113de3b] after division-geometry-filter+prune-isolated: 25733 nodes, 24979 edges\n"}
+,{"stream_name":"stdout","time":1112.025195971,"data":"  [44b6_0113de3b] after short-track filtering: 25629 nodes, 24899 edges (components_removed=24)\n"}
+,{"stream_name":"stdout","time":1112.025201014,"data":"  [44b6_0113de3b] FINAL: 25629 nodes, 24899 edges\n"}
+,{"stream_name":"stdout","time":1112.025211322,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 387, \"dataset\": \"44b6_0b24845f\", \"frame\": 0, \"minimum_retention\": 0.9, \"primary_candidates\": 465, \"retention\": 0.832258064516129, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1112.026308728,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 391, \"dataset\": \"44b6_0b24845f\", \"frame\": 1, \"minimum_retention\": 0.9, \"primary_candidates\": 444, \"retention\": 0.8806306306306306, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1112.232370729,"data":"  [44b6_0113de3b] after edge-filter+motion-relink: 25678 nodes, 24783 edges\n"}
+,{"stream_name":"stdout","time":1112.232413513,"data":"  [44b6_0113de3b] after gap-closing (single-frame + gap2): 25741 nodes, 24898 edges\n"}
+,{"stream_name":"stdout","time":1112.232419891,"data":"  [44b6_0113de3b] after safe-division repair: 25741 nodes, 24979 edges (geometric_candidates=94, deepcenter_rejected=0, post_veto_candidates=94, added=81, cap_skipped=0, mutual_nn_rejected=14, divergence_rejected=269)\n"}
+,{"stream_name":"stdout","time":1112.232456113,"data":"  [44b6_0113de3b] after division-geometry-filter+prune-isolated: 25733 nodes, 24979 edges\n"}
+,{"stream_name":"stdout","time":1112.232461118,"data":"  [44b6_0113de3b] after short-track filtering: 25629 nodes, 24899 edges (components_removed=24)\n"}
+,{"stream_name":"stdout","time":1112.232464902,"data":"  [44b6_0113de3b] FINAL: 25629 nodes, 24899 edges\n"}
+,{"stream_name":"stdout","time":1112.23246829,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 387, \"dataset\": \"44b6_0b24845f\", \"frame\": 0, \"minimum_retention\": 0.9, \"primary_candidates\": 465, \"retention\": 0.832258064516129, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1112.232472928,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 391, \"dataset\": \"44b6_0b24845f\", \"frame\": 1, \"minimum_retention\": 0.9, \"primary_candidates\": 444, \"retention\": 0.8806306306306306, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1114.211738382,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 333, \"dataset\": \"44b6_0b24845f\", \"frame\": 2, \"minimum_retention\": 0.9, \"primary_candidates\": 390, \"retention\": 0.8538461538461538, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1114.414106357,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 333, \"dataset\": \"44b6_0b24845f\", \"frame\": 2, \"minimum_retention\": 0.9, \"primary_candidates\": 390, \"retention\": 0.8538461538461538, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1116.296453621,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 362, \"dataset\": \"44b6_0b24845f\", \"frame\": 3, \"minimum_retention\": 0.9, \"primary_candidates\": 421, \"retention\": 0.8598574821852731, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1116.498877271,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 362, \"dataset\": \"44b6_0b24845f\", \"frame\": 3, \"minimum_retention\": 0.9, \"primary_candidates\": 421, \"retention\": 0.8598574821852731, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1118.384931304,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 341, \"dataset\": \"44b6_0b24845f\", \"frame\": 4, \"minimum_retention\": 0.9, \"primary_candidates\": 404, \"retention\": 0.844059405940594, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1118.587118799,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 341, \"dataset\": \"44b6_0b24845f\", \"frame\": 4, \"minimum_retention\": 0.9, \"primary_candidates\": 404, \"retention\": 0.844059405940594, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1120.48710561,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 326, \"dataset\": \"44b6_0b24845f\", \"frame\": 5, \"minimum_retention\": 0.9, \"primary_candidates\": 383, \"retention\": 0.8511749347258486, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1120.689324907,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 326, \"dataset\": \"44b6_0b24845f\", \"frame\": 5, \"minimum_retention\": 0.9, \"primary_candidates\": 383, \"retention\": 0.8511749347258486, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1122.601294115,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 333, \"dataset\": \"44b6_0b24845f\", \"frame\": 6, \"minimum_retention\": 0.9, \"primary_candidates\": 403, \"retention\": 0.826302729528536, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1122.803719272,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 333, \"dataset\": \"44b6_0b24845f\", \"frame\": 6, \"minimum_retention\": 0.9, \"primary_candidates\": 403, \"retention\": 0.826302729528536, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1124.728985992,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 309, \"dataset\": \"44b6_0b24845f\", \"frame\": 7, \"minimum_retention\": 0.9, \"primary_candidates\": 390, \"retention\": 0.7923076923076923, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1124.931221303,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 309, \"dataset\": \"44b6_0b24845f\", \"frame\": 7, \"minimum_retention\": 0.9, \"primary_candidates\": 390, \"retention\": 0.7923076923076923, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1126.837710411,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 378, \"dataset\": \"44b6_0b24845f\", \"frame\": 8, \"minimum_retention\": 0.9, \"primary_candidates\": 443, \"retention\": 0.8532731376975169, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1127.039911021,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 378, \"dataset\": \"44b6_0b24845f\", \"frame\": 8, \"minimum_retention\": 0.9, \"primary_candidates\": 443, \"retention\": 0.8532731376975169, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1128.991764142,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 362, \"dataset\": \"44b6_0b24845f\", \"frame\": 9, \"minimum_retention\": 0.9, \"primary_candidates\": 429, \"retention\": 0.8438228438228438, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1129.1938386,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 362, \"dataset\": \"44b6_0b24845f\", \"frame\": 9, \"minimum_retention\": 0.9, \"primary_candidates\": 429, \"retention\": 0.8438228438228438, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1131.172222212,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 331, \"dataset\": \"44b6_0b24845f\", \"frame\": 10, \"minimum_retention\": 0.9, \"primary_candidates\": 419, \"retention\": 0.7899761336515513, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1131.374900576,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 331, \"dataset\": \"44b6_0b24845f\", \"frame\": 10, \"minimum_retention\": 0.9, \"primary_candidates\": 419, \"retention\": 0.7899761336515513, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1133.423537538,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 376, \"dataset\": \"44b6_0b24845f\", \"frame\": 11, \"minimum_retention\": 0.9, \"primary_candidates\": 441, \"retention\": 0.8526077097505669, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1133.625863885,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 376, \"dataset\": \"44b6_0b24845f\", \"frame\": 11, \"minimum_retention\": 0.9, \"primary_candidates\": 441, \"retention\": 0.8526077097505669, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1135.622151853,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 304, \"dataset\": \"44b6_0b24845f\", \"frame\": 12, \"minimum_retention\": 0.9, \"primary_candidates\": 361, \"retention\": 0.8421052631578947, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1135.824387314,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 304, \"dataset\": \"44b6_0b24845f\", \"frame\": 12, \"minimum_retention\": 0.9, \"primary_candidates\": 361, \"retention\": 0.8421052631578947, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1137.844435578,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 314, \"dataset\": \"44b6_0b24845f\", \"frame\": 13, \"minimum_retention\": 0.9, \"primary_candidates\": 382, \"retention\": 0.8219895287958116, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1138.046561786,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 314, \"dataset\": \"44b6_0b24845f\", \"frame\": 13, \"minimum_retention\": 0.9, \"primary_candidates\": 382, \"retention\": 0.8219895287958116, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1140.065798174,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 330, \"dataset\": \"44b6_0b24845f\", \"frame\": 14, \"minimum_retention\": 0.9, \"primary_candidates\": 378, \"retention\": 0.873015873015873, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1140.268381015,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 330, \"dataset\": \"44b6_0b24845f\", \"frame\": 14, \"minimum_retention\": 0.9, \"primary_candidates\": 378, \"retention\": 0.873015873015873, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1153.300243829,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 285, \"dataset\": \"44b6_0b24845f\", \"frame\": 20, \"minimum_retention\": 0.9, \"primary_candidates\": 317, \"retention\": 0.8990536277602523, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1153.508044912,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 285, \"dataset\": \"44b6_0b24845f\", \"frame\": 20, \"minimum_retention\": 0.9, \"primary_candidates\": 317, \"retention\": 0.8990536277602523, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1155.471747792,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 265, \"dataset\": \"44b6_0b24845f\", \"frame\": 21, \"minimum_retention\": 0.9, \"primary_candidates\": 325, \"retention\": 0.8153846153846154, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1155.674014546,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 265, \"dataset\": \"44b6_0b24845f\", \"frame\": 21, \"minimum_retention\": 0.9, \"primary_candidates\": 325, \"retention\": 0.8153846153846154, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1157.599159795,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 286, \"dataset\": \"44b6_0b24845f\", \"frame\": 22, \"minimum_retention\": 0.9, \"primary_candidates\": 326, \"retention\": 0.8773006134969326, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1157.801290811,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 286, \"dataset\": \"44b6_0b24845f\", \"frame\": 22, \"minimum_retention\": 0.9, \"primary_candidates\": 326, \"retention\": 0.8773006134969326, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1161.848305871,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 261, \"dataset\": \"44b6_0b24845f\", \"frame\": 24, \"minimum_retention\": 0.9, \"primary_candidates\": 306, \"retention\": 0.8529411764705882, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1162.050518626,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 261, \"dataset\": \"44b6_0b24845f\", \"frame\": 24, \"minimum_retention\": 0.9, \"primary_candidates\": 306, \"retention\": 0.8529411764705882, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1166.095914276,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 273, \"dataset\": \"44b6_0b24845f\", \"frame\": 26, \"minimum_retention\": 0.9, \"primary_candidates\": 309, \"retention\": 0.883495145631068, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1166.298022733,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 273, \"dataset\": \"44b6_0b24845f\", \"frame\": 26, \"minimum_retention\": 0.9, \"primary_candidates\": 309, \"retention\": 0.883495145631068, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1168.24431271,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 258, \"dataset\": \"44b6_0b24845f\", \"frame\": 27, \"minimum_retention\": 0.9, \"primary_candidates\": 302, \"retention\": 0.8543046357615894, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1168.446467793,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 258, \"dataset\": \"44b6_0b24845f\", \"frame\": 27, \"minimum_retention\": 0.9, \"primary_candidates\": 302, \"retention\": 0.8543046357615894, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1178.863996676,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 249, \"dataset\": \"44b6_0b24845f\", \"frame\": 32, \"minimum_retention\": 0.9, \"primary_candidates\": 293, \"retention\": 0.8498293515358362, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1179.066254102,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 249, \"dataset\": \"44b6_0b24845f\", \"frame\": 32, \"minimum_retention\": 0.9, \"primary_candidates\": 293, \"retention\": 0.8498293515358362, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1181.04330505,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 234, \"dataset\": \"44b6_0b24845f\", \"frame\": 33, \"minimum_retention\": 0.9, \"primary_candidates\": 276, \"retention\": 0.8478260869565217, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1181.246883708,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 234, \"dataset\": \"44b6_0b24845f\", \"frame\": 33, \"minimum_retention\": 0.9, \"primary_candidates\": 276, \"retention\": 0.8478260869565217, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1210.837880279,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 264, \"dataset\": \"44b6_0b24845f\", \"frame\": 47, \"minimum_retention\": 0.9, \"primary_candidates\": 307, \"retention\": 0.8599348534201955, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1211.045856045,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 264, \"dataset\": \"44b6_0b24845f\", \"frame\": 47, \"minimum_retention\": 0.9, \"primary_candidates\": 307, \"retention\": 0.8599348534201955, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1217.479777807,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 253, \"dataset\": \"44b6_0b24845f\", \"frame\": 50, \"minimum_retention\": 0.9, \"primary_candidates\": 285, \"retention\": 0.887719298245614, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1217.682251142,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 253, \"dataset\": \"44b6_0b24845f\", \"frame\": 50, \"minimum_retention\": 0.9, \"primary_candidates\": 285, \"retention\": 0.887719298245614, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1219.625929466,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 321, \"dataset\": \"44b6_0b24845f\", \"frame\": 51, \"minimum_retention\": 0.9, \"primary_candidates\": 361, \"retention\": 0.889196675900277, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1219.828696511,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 321, \"dataset\": \"44b6_0b24845f\", \"frame\": 51, \"minimum_retention\": 0.9, \"primary_candidates\": 361, \"retention\": 0.889196675900277, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1223.968270069,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 305, \"dataset\": \"44b6_0b24845f\", \"frame\": 53, \"minimum_retention\": 0.9, \"primary_candidates\": 342, \"retention\": 0.8918128654970761, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1224.170983594,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 305, \"dataset\": \"44b6_0b24845f\", \"frame\": 53, \"minimum_retention\": 0.9, \"primary_candidates\": 342, \"retention\": 0.8918128654970761, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1226.11584187,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 321, \"dataset\": \"44b6_0b24845f\", \"frame\": 54, \"minimum_retention\": 0.9, \"primary_candidates\": 362, \"retention\": 0.8867403314917127, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1226.317906979,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 321, \"dataset\": \"44b6_0b24845f\", \"frame\": 54, \"minimum_retention\": 0.9, \"primary_candidates\": 362, \"retention\": 0.8867403314917127, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1235.018958699,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 263, \"dataset\": \"44b6_0b24845f\", \"frame\": 58, \"minimum_retention\": 0.9, \"primary_candidates\": 312, \"retention\": 0.842948717948718, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1235.22112186,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 263, \"dataset\": \"44b6_0b24845f\", \"frame\": 58, \"minimum_retention\": 0.9, \"primary_candidates\": 312, \"retention\": 0.842948717948718, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1237.368159965,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 303, \"dataset\": \"44b6_0b24845f\", \"frame\": 59, \"minimum_retention\": 0.9, \"primary_candidates\": 346, \"retention\": 0.8757225433526011, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1237.570171456,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 303, \"dataset\": \"44b6_0b24845f\", \"frame\": 59, \"minimum_retention\": 0.9, \"primary_candidates\": 346, \"retention\": 0.8757225433526011, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1239.545990511,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 335, \"dataset\": \"44b6_0b24845f\", \"frame\": 60, \"minimum_retention\": 0.9, \"primary_candidates\": 393, \"retention\": 0.8524173027989822, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1239.748219437,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 335, \"dataset\": \"44b6_0b24845f\", \"frame\": 60, \"minimum_retention\": 0.9, \"primary_candidates\": 393, \"retention\": 0.8524173027989822, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1241.776399414,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 275, \"dataset\": \"44b6_0b24845f\", \"frame\": 61, \"minimum_retention\": 0.9, \"primary_candidates\": 333, \"retention\": 0.8258258258258259, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1241.985114422,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 275, \"dataset\": \"44b6_0b24845f\", \"frame\": 61, \"minimum_retention\": 0.9, \"primary_candidates\": 333, \"retention\": 0.8258258258258259, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1243.984762796,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 298, \"dataset\": \"44b6_0b24845f\", \"frame\": 62, \"minimum_retention\": 0.9, \"primary_candidates\": 345, \"retention\": 0.863768115942029, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1244.187087026,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 298, \"dataset\": \"44b6_0b24845f\", \"frame\": 62, \"minimum_retention\": 0.9, \"primary_candidates\": 345, \"retention\": 0.863768115942029, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1248.24097188,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 295, \"dataset\": \"44b6_0b24845f\", \"frame\": 64, \"minimum_retention\": 0.9, \"primary_candidates\": 344, \"retention\": 0.8575581395348837, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1248.44326769,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 295, \"dataset\": \"44b6_0b24845f\", \"frame\": 64, \"minimum_retention\": 0.9, \"primary_candidates\": 344, \"retention\": 0.8575581395348837, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1250.327013072,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 335, \"dataset\": \"44b6_0b24845f\", \"frame\": 65, \"minimum_retention\": 0.9, \"primary_candidates\": 378, \"retention\": 0.8862433862433863, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1250.529118047,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 335, \"dataset\": \"44b6_0b24845f\", \"frame\": 65, \"minimum_retention\": 0.9, \"primary_candidates\": 378, \"retention\": 0.8862433862433863, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1252.391858401,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 324, \"dataset\": \"44b6_0b24845f\", \"frame\": 66, \"minimum_retention\": 0.9, \"primary_candidates\": 375, \"retention\": 0.864, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1252.593918386,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 324, \"dataset\": \"44b6_0b24845f\", \"frame\": 66, \"minimum_retention\": 0.9, \"primary_candidates\": 375, \"retention\": 0.864, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1260.853971246,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 260, \"dataset\": \"44b6_0b24845f\", \"frame\": 70, \"minimum_retention\": 0.9, \"primary_candidates\": 305, \"retention\": 0.8524590163934426, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1261.056100838,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 260, \"dataset\": \"44b6_0b24845f\", \"frame\": 70, \"minimum_retention\": 0.9, \"primary_candidates\": 305, \"retention\": 0.8524590163934426, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1267.055200303,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 197, \"dataset\": \"44b6_0b24845f\", \"frame\": 73, \"minimum_retention\": 0.9, \"primary_candidates\": 262, \"retention\": 0.7519083969465649, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1267.257396155,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 197, \"dataset\": \"44b6_0b24845f\", \"frame\": 73, \"minimum_retention\": 0.9, \"primary_candidates\": 262, \"retention\": 0.7519083969465649, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1269.179659799,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 224, \"dataset\": \"44b6_0b24845f\", \"frame\": 74, \"minimum_retention\": 0.9, \"primary_candidates\": 291, \"retention\": 0.7697594501718213, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1269.381735777,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 224, \"dataset\": \"44b6_0b24845f\", \"frame\": 74, \"minimum_retention\": 0.9, \"primary_candidates\": 291, \"retention\": 0.7697594501718213, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1271.30498897,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 325, \"dataset\": \"44b6_0b24845f\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 374, \"retention\": 0.8689839572192514, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1271.50738338,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 325, \"dataset\": \"44b6_0b24845f\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 374, \"retention\": 0.8689839572192514, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1273.391126467,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 321, \"dataset\": \"44b6_0b24845f\", \"frame\": 76, \"minimum_retention\": 0.9, \"primary_candidates\": 379, \"retention\": 0.8469656992084432, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1273.600128832,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 321, \"dataset\": \"44b6_0b24845f\", \"frame\": 76, \"minimum_retention\": 0.9, \"primary_candidates\": 379, \"retention\": 0.8469656992084432, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1275.556967939,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 243, \"dataset\": \"44b6_0b24845f\", \"frame\": 77, \"minimum_retention\": 0.9, \"primary_candidates\": 331, \"retention\": 0.7341389728096677, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1275.759118009,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 243, \"dataset\": \"44b6_0b24845f\", \"frame\": 77, \"minimum_retention\": 0.9, \"primary_candidates\": 331, \"retention\": 0.7341389728096677, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1277.642264051,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 284, \"dataset\": \"44b6_0b24845f\", \"frame\": 78, \"minimum_retention\": 0.9, \"primary_candidates\": 392, \"retention\": 0.7244897959183674, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1277.844351804,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 284, \"dataset\": \"44b6_0b24845f\", \"frame\": 78, \"minimum_retention\": 0.9, \"primary_candidates\": 392, \"retention\": 0.7244897959183674, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1279.709764681,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 298, \"dataset\": \"44b6_0b24845f\", \"frame\": 79, \"minimum_retention\": 0.9, \"primary_candidates\": 424, \"retention\": 0.7028301886792453, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1279.911948277,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 298, \"dataset\": \"44b6_0b24845f\", \"frame\": 79, \"minimum_retention\": 0.9, \"primary_candidates\": 424, \"retention\": 0.7028301886792453, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1281.815587418,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 291, \"dataset\": \"44b6_0b24845f\", \"frame\": 80, \"minimum_retention\": 0.9, \"primary_candidates\": 388, \"retention\": 0.75, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1282.017839067,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 291, \"dataset\": \"44b6_0b24845f\", \"frame\": 80, \"minimum_retention\": 0.9, \"primary_candidates\": 388, \"retention\": 0.75, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1283.922371647,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 294, \"dataset\": \"44b6_0b24845f\", \"frame\": 81, \"minimum_retention\": 0.9, \"primary_candidates\": 382, \"retention\": 0.7696335078534031, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1284.125417135,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 294, \"dataset\": \"44b6_0b24845f\", \"frame\": 81, \"minimum_retention\": 0.9, \"primary_candidates\": 382, \"retention\": 0.7696335078534031, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1285.990060879,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 277, \"dataset\": \"44b6_0b24845f\", \"frame\": 82, \"minimum_retention\": 0.9, \"primary_candidates\": 385, \"retention\": 0.7194805194805195, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1286.192067416,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 277, \"dataset\": \"44b6_0b24845f\", \"frame\": 82, \"minimum_retention\": 0.9, \"primary_candidates\": 385, \"retention\": 0.7194805194805195, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1288.13753954,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 268, \"dataset\": \"44b6_0b24845f\", \"frame\": 83, \"minimum_retention\": 0.9, \"primary_candidates\": 379, \"retention\": 0.7071240105540897, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1288.33994637,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 268, \"dataset\": \"44b6_0b24845f\", \"frame\": 83, \"minimum_retention\": 0.9, \"primary_candidates\": 379, \"retention\": 0.7071240105540897, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1290.244999291,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 287, \"dataset\": \"44b6_0b24845f\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 361, \"retention\": 0.7950138504155124, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1290.44716528,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 287, \"dataset\": \"44b6_0b24845f\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 361, \"retention\": 0.7950138504155124, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1292.47387825,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 198, \"dataset\": \"44b6_0b24845f\", \"frame\": 85, \"minimum_retention\": 0.9, \"primary_candidates\": 294, \"retention\": 0.673469387755102, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1292.676089366,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 198, \"dataset\": \"44b6_0b24845f\", \"frame\": 85, \"minimum_retention\": 0.9, \"primary_candidates\": 294, \"retention\": 0.673469387755102, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1294.625095567,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 169, \"dataset\": \"44b6_0b24845f\", \"frame\": 86, \"minimum_retention\": 0.9, \"primary_candidates\": 282, \"retention\": 0.599290780141844, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1294.827195294,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 169, \"dataset\": \"44b6_0b24845f\", \"frame\": 86, \"minimum_retention\": 0.9, \"primary_candidates\": 282, \"retention\": 0.599290780141844, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1296.7155349,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 232, \"dataset\": \"44b6_0b24845f\", \"frame\": 87, \"minimum_retention\": 0.9, \"primary_candidates\": 323, \"retention\": 0.718266253869969, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1296.917642249,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 232, \"dataset\": \"44b6_0b24845f\", \"frame\": 87, \"minimum_retention\": 0.9, \"primary_candidates\": 323, \"retention\": 0.718266253869969, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1298.80529365,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 287, \"dataset\": \"44b6_0b24845f\", \"frame\": 88, \"minimum_retention\": 0.9, \"primary_candidates\": 363, \"retention\": 0.790633608815427, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1299.007794773,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 287, \"dataset\": \"44b6_0b24845f\", \"frame\": 88, \"minimum_retention\": 0.9, \"primary_candidates\": 363, \"retention\": 0.790633608815427, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1300.872807563,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 219, \"dataset\": \"44b6_0b24845f\", \"frame\": 89, \"minimum_retention\": 0.9, \"primary_candidates\": 322, \"retention\": 0.6801242236024845, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1301.075070929,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 219, \"dataset\": \"44b6_0b24845f\", \"frame\": 89, \"minimum_retention\": 0.9, \"primary_candidates\": 322, \"retention\": 0.6801242236024845, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1302.98296462,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 175, \"dataset\": \"44b6_0b24845f\", \"frame\": 90, \"minimum_retention\": 0.9, \"primary_candidates\": 269, \"retention\": 0.6505576208178439, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1303.18512952,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 175, \"dataset\": \"44b6_0b24845f\", \"frame\": 90, \"minimum_retention\": 0.9, \"primary_candidates\": 269, \"retention\": 0.6505576208178439, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1305.092285193,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 136, \"dataset\": \"44b6_0b24845f\", \"frame\": 91, \"minimum_retention\": 0.9, \"primary_candidates\": 237, \"retention\": 0.5738396624472574, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1305.301260714,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 136, \"dataset\": \"44b6_0b24845f\", \"frame\": 91, \"minimum_retention\": 0.9, \"primary_candidates\": 237, \"retention\": 0.5738396624472574, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1307.221247596,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 151, \"dataset\": \"44b6_0b24845f\", \"frame\": 92, \"minimum_retention\": 0.9, \"primary_candidates\": 286, \"retention\": 0.527972027972028, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1307.423265767,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 151, \"dataset\": \"44b6_0b24845f\", \"frame\": 92, \"minimum_retention\": 0.9, \"primary_candidates\": 286, \"retention\": 0.527972027972028, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1309.388645542,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 133, \"dataset\": \"44b6_0b24845f\", \"frame\": 93, \"minimum_retention\": 0.9, \"primary_candidates\": 253, \"retention\": 0.525691699604743, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1309.591424835,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 133, \"dataset\": \"44b6_0b24845f\", \"frame\": 93, \"minimum_retention\": 0.9, \"primary_candidates\": 253, \"retention\": 0.525691699604743, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1311.437307746,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 168, \"dataset\": \"44b6_0b24845f\", \"frame\": 94, \"minimum_retention\": 0.9, \"primary_candidates\": 290, \"retention\": 0.5793103448275863, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1311.640120471,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 168, \"dataset\": \"44b6_0b24845f\", \"frame\": 94, \"minimum_retention\": 0.9, \"primary_candidates\": 290, \"retention\": 0.5793103448275863, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1313.485769527,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 140, \"dataset\": \"44b6_0b24845f\", \"frame\": 95, \"minimum_retention\": 0.9, \"primary_candidates\": 309, \"retention\": 0.45307443365695793, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1313.688641618,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 140, \"dataset\": \"44b6_0b24845f\", \"frame\": 95, \"minimum_retention\": 0.9, \"primary_candidates\": 309, \"retention\": 0.45307443365695793, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1315.532653659,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 124, \"dataset\": \"44b6_0b24845f\", \"frame\": 96, \"minimum_retention\": 0.9, \"primary_candidates\": 273, \"retention\": 0.4542124542124542, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1315.735360765,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 124, \"dataset\": \"44b6_0b24845f\", \"frame\": 96, \"minimum_retention\": 0.9, \"primary_candidates\": 273, \"retention\": 0.4542124542124542, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1317.639208969,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 181, \"dataset\": \"44b6_0b24845f\", \"frame\": 97, \"minimum_retention\": 0.9, \"primary_candidates\": 328, \"retention\": 0.551829268292683, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1317.842028105,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 181, \"dataset\": \"44b6_0b24845f\", \"frame\": 97, \"minimum_retention\": 0.9, \"primary_candidates\": 328, \"retention\": 0.551829268292683, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1319.726675914,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 153, \"dataset\": \"44b6_0b24845f\", \"frame\": 98, \"minimum_retention\": 0.9, \"primary_candidates\": 295, \"retention\": 0.5186440677966102, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1319.929519424,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 153, \"dataset\": \"44b6_0b24845f\", \"frame\": 98, \"minimum_retention\": 0.9, \"primary_candidates\": 295, \"retention\": 0.5186440677966102, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1321.774626633,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 111, \"dataset\": \"44b6_0b24845f\", \"frame\": 99, \"minimum_retention\": 0.9, \"primary_candidates\": 224, \"retention\": 0.4955357142857143, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1321.976999011,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 111, \"dataset\": \"44b6_0b24845f\", \"frame\": 99, \"minimum_retention\": 0.9, \"primary_candidates\": 224, \"retention\": 0.4955357142857143, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1330.8670636,"data":"[09/19/26 18:48:43] WARNING  Solver failed with Gurobi,       _ilp_solver.py:363\n"}
+,{"stream_name":"stdout","time":1330.867110247,"data":"                             trying Scip.                                       \n"}
+,{"stream_name":"stdout","time":1330.867118146,"data":"                             Got error:                                         \n"}
+,{"stream_name":"stdout","time":1330.867135722,"data":"                             Gurobi license is not available.                   \n"}
+,{"stream_name":"stdout","time":1331.0693587,"data":"[09/19/26 18:48:43] WARNING  Solver failed with Gurobi,       _ilp_solver.py:363\n"}
+,{"stream_name":"stdout","time":1331.06939384,"data":"                             trying Scip.                                       \n"}
+,{"stream_name":"stdout","time":1331.069399233,"data":"                             Got error:                                         \n"}
+,{"stream_name":"stdout","time":1331.069403021,"data":"                             Gurobi license is not available.                   \n"}
+,{"stream_name":"stdout","time":1454.716921089,"data":"  [44b6_0b24845f] after edge-filter+motion-relink: 19972 nodes, 18059 edges\n"}
+,{"stream_name":"stdout","time":1454.716965381,"data":"  [44b6_0b24845f] after gap-closing (single-frame + gap2): 20305 nodes, 18667 edges\n"}
+,{"stream_name":"stdout","time":1454.716988118,"data":"  [44b6_0b24845f] after safe-division repair: 20305 nodes, 18735 edges (geometric_candidates=91, deepcenter_rejected=0, post_veto_candidates=91, added=68, cap_skipped=0, mutual_nn_rejected=14, divergence_rejected=332)\n"}
+,{"stream_name":"stdout","time":1454.716994755,"data":"  [44b6_0b24845f] after division-geometry-filter+prune-isolated: 20295 nodes, 18735 edges\n"}
+,{"stream_name":"stdout","time":1454.717000172,"data":"  [44b6_0b24845f] after short-track filtering: 18497 nodes, 17348 edges (components_removed=411)\n"}
+,{"stream_name":"stdout","time":1454.717005641,"data":"  [44b6_0b24845f] FINAL: 18497 nodes, 17348 edges\n"}
+,{"stream_name":"stdout","time":1454.717010642,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 66, \"dataset\": \"6bba_05b6850b\", \"frame\": 43, \"minimum_retention\": 0.9, \"primary_candidates\": 74, \"retention\": 0.8918918918918919, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1454.933501487,"data":"  [44b6_0b24845f] after edge-filter+motion-relink: 19972 nodes, 18059 edges\n"}
+,{"stream_name":"stdout","time":1454.933534623,"data":"  [44b6_0b24845f] after gap-closing (single-frame + gap2): 20305 nodes, 18667 edges\n"}
+,{"stream_name":"stdout","time":1454.933566428,"data":"  [44b6_0b24845f] after safe-division repair: 20305 nodes, 18735 edges (geometric_candidates=91, deepcenter_rejected=0, post_veto_candidates=91, added=68, cap_skipped=0, mutual_nn_rejected=14, divergence_rejected=332)\n"}
+,{"stream_name":"stdout","time":1454.933572801,"data":"  [44b6_0b24845f] after division-geometry-filter+prune-isolated: 20295 nodes, 18735 edges\n"}
+,{"stream_name":"stdout","time":1454.93357794,"data":"  [44b6_0b24845f] after short-track filtering: 18497 nodes, 17348 edges (components_removed=411)\n"}
+,{"stream_name":"stdout","time":1454.933583321,"data":"  [44b6_0b24845f] FINAL: 18497 nodes, 17348 edges\n"}
+,{"stream_name":"stdout","time":1454.933587782,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 66, \"dataset\": \"6bba_05b6850b\", \"frame\": 43, \"minimum_retention\": 0.9, \"primary_candidates\": 74, \"retention\": 0.8918918918918919, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1572.6192747,"data":"[09/19/26 18:52:45] WARNING  Solver failed with Gurobi,       _ilp_solver.py:363\n"}
+,{"stream_name":"stdout","time":1572.619324137,"data":"                             trying Scip.                                       \n"}
+,{"stream_name":"stdout","time":1572.61932997,"data":"                             Got error:                                         \n"}
+,{"stream_name":"stdout","time":1572.619333298,"data":"                             Gurobi license is not available.                   \n"}
+,{"stream_name":"stdout","time":1572.82953622,"data":"[09/19/26 18:52:45] WARNING  Solver failed with Gurobi,       _ilp_solver.py:363\n"}
+,{"stream_name":"stdout","time":1572.829581789,"data":"                             trying Scip.                                       \n"}
+,{"stream_name":"stdout","time":1572.82958734,"data":"                             Got error:                                         \n"}
+,{"stream_name":"stdout","time":1572.8295916,"data":"                             Gurobi license is not available.                   \n"}
+,{"stream_name":"stdout","time":1835.804602429,"data":"  [6bba_05b6850b] after edge-filter+motion-relink: 6171 nodes, 5917 edges\n"}
+,{"stream_name":"stdout","time":1835.804652845,"data":"  [6bba_05b6850b] after gap-closing (single-frame + gap2): 6193 nodes, 5958 edges\n"}
+,{"stream_name":"stdout","time":1835.804659872,"data":"  [6bba_05b6850b] after safe-division repair: 6193 nodes, 5967 edges (geometric_candidates=10, deepcenter_rejected=0, post_veto_candidates=10, added=9, cap_skipped=0, mutual_nn_rejected=3, divergence_rejected=37)\n"}
+,{"stream_name":"stdout","time":1835.804667234,"data":"  [6bba_05b6850b] after division-geometry-filter+prune-isolated: 6192 nodes, 5967 edges\n"}
+,{"stream_name":"stdout","time":1835.804672763,"data":"  [6bba_05b6850b] after short-track filtering: 6100 nodes, 5896 edges (components_removed=21)\n"}
+,{"stream_name":"stdout","time":1835.804678209,"data":"  [6bba_05b6850b] FINAL: 6100 nodes, 5896 edges\n"}
+,{"stream_name":"stdout","time":1835.804683989,"data":"[09/19/26 18:57:08] WARNING  Solver failed with Gurobi,       _ilp_solver.py:363\n"}
+,{"stream_name":"stdout","time":1835.804689091,"data":"                             trying Scip.                                       \n"}
+,{"stream_name":"stdout","time":1835.80469435,"data":"                             Got error:                                         \n"}
+,{"stream_name":"stdout","time":1835.804699606,"data":"                             Gurobi license is not available.                   \n"}
+,{"stream_name":"stdout","time":1836.016155256,"data":"  [6bba_05b6850b] after edge-filter+motion-relink: 6171 nodes, 5917 edges\n"}
+,{"stream_name":"stdout","time":1836.016183403,"data":"  [6bba_05b6850b] after gap-closing (single-frame + gap2): 6193 nodes, 5958 edges\n"}
+,{"stream_name":"stdout","time":1836.016189503,"data":"  [6bba_05b6850b] after safe-division repair: 6193 nodes, 5967 edges (geometric_candidates=10, deepcenter_rejected=0, post_veto_candidates=10, added=9, cap_skipped=0, mutual_nn_rejected=3, divergence_rejected=37)\n"}
+,{"stream_name":"stdout","time":1836.016196675,"data":"  [6bba_05b6850b] after division-geometry-filter+prune-isolated: 6192 nodes, 5967 edges\n"}
+,{"stream_name":"stdout","time":1836.016202094,"data":"  [6bba_05b6850b] after short-track filtering: 6100 nodes, 5896 edges (components_removed=21)\n"}
+,{"stream_name":"stdout","time":1836.016207114,"data":"  [6bba_05b6850b] FINAL: 6100 nodes, 5896 edges\n"}
+,{"stream_name":"stdout","time":1836.016212053,"data":"[09/19/26 18:57:08] WARNING  Solver failed with Gurobi,       _ilp_solver.py:363\n"}
+,{"stream_name":"stdout","time":1836.016216511,"data":"                             trying Scip.                                       \n"}
+,{"stream_name":"stdout","time":1836.016221804,"data":"                             Got error:                                         \n"}
+,{"stream_name":"stdout","time":1836.016227257,"data":"                             Gurobi license is not available.                   \n"}
+,{"stream_name":"stdout","time":2066.435243283,"data":"  [6bba_05db0fb1] after edge-filter+motion-relink: 69859 nodes, 67195 edges\n"}
+,{"stream_name":"stdout","time":2066.435281834,"data":"  [6bba_05db0fb1] after gap-closing (single-frame + gap2): 70271 nodes, 67961 edges\n"}
+,{"stream_name":"stdout","time":2066.435297463,"data":"  [6bba_05db0fb1] after safe-division repair: 70271 nodes, 68111 edges (geometric_candidates=157, deepcenter_rejected=0, post_veto_candidates=157, added=150, cap_skipped=0, mutual_nn_rejected=92, divergence_rejected=1289)\n"}
+,{"stream_name":"stdout","time":2066.43530267,"data":"  [6bba_05db0fb1] after division-geometry-filter+prune-isolated: 70253 nodes, 68111 edges\n"}
+,{"stream_name":"stdout","time":2066.435306835,"data":"  [6bba_05db0fb1] after short-track filtering: 69655 nodes, 67655 edges (components_removed=142)\n"}
+,{"stream_name":"stdout","time":2066.435310158,"data":"  [6bba_05db0fb1] FINAL: 69655 nodes, 67655 edges\n"}
+,{"stream_name":"stdout","time":2066.435313293,"data":"[BASELINE] Established valid baseline submission.csv: 12965672 bytes\n"}
+,{"stream_name":"stdout","time":2066.435316478,"data":"[FINAL] Updated submission.csv with regularized predictions: 13000026 bytes\n"}
+,{"stream_name":"stdout","time":2066.645572527,"data":"  [6bba_05db0fb1] after edge-filter+motion-relink: 69859 nodes, 67195 edges\n"}
+,{"stream_name":"stdout","time":2066.645600675,"data":"  [6bba_05db0fb1] after gap-closing (single-frame + gap2): 70271 nodes, 67961 edges\n"}
+,{"stream_name":"stdout","time":2066.645605156,"data":"  [6bba_05db0fb1] after safe-division repair: 70271 nodes, 68111 edges (geometric_candidates=157, deepcenter_rejected=0, post_veto_candidates=157, added=150, cap_skipped=0, mutual_nn_rejected=92, divergence_rejected=1289)\n"}
+,{"stream_name":"stdout","time":2066.645610762,"data":"  [6bba_05db0fb1] after division-geometry-filter+prune-isolated: 70253 nodes, 68111 edges\n"}
+,{"stream_name":"stdout","time":2066.645614907,"data":"  [6bba_05db0fb1] after short-track filtering: 69655 nodes, 67655 edges (components_removed=142)\n"}
+,{"stream_name":"stdout","time":2066.645618995,"data":"  [6bba_05db0fb1] FINAL: 69655 nodes, 67655 edges\n"}
+,{"stream_name":"stdout","time":2066.645622851,"data":"[BASELINE] Established valid baseline submission.csv: 12965672 bytes\n"}
+,{"stream_name":"stdout","time":2066.645627176,"data":"[FINAL] Updated submission.csv with regularized predictions: 13000026 bytes\n"}
+,{"stream_name":"stdout","time":2068.461587135,"data":"{\n"}
+,{"stream_name":"stdout","time":2068.461620238,"data":"  \"status\": \"completed\",\n"}
+,{"stream_name":"stdout","time":2068.461626276,"data":"  \"run_id\": \"b0970-package-046-rel2\",\n"}
+,{"stream_name":"stdout","time":2068.461631028,"data":"  \"code_hash\": \"92233aae9ca512b65082dc89eb8197c8042bd3bfab59d5fb9f4dcfe4360547ba\",\n"}
+,{"stream_name":"stdout","time":2068.461635806,"data":"  \"bundle_sha256\": \"34f38ac5ca89cd9df8fe75bff8a5418385b7a85367fffd1e4b5abc7ebc1e9df7\",\n"}
+,{"stream_name":"stdout","time":2068.461640493,"data":"  \"arm\": \"mitosis_add\",\n"}
+,{"stream_name":"stdout","time":2068.461645141,"data":"  \"contract\": {\n"}
+,{"stream_name":"stdout","time":2068.461649085,"data":"    \"csv_rows\": 235567,\n"}
+,{"stream_name":"stdout","time":2068.461653114,"data":"    \"nodes\": 119881,\n"}
+,{"stream_name":"stdout","time":2068.461658613,"data":"    \"edges\": 115686,\n"}
+,{"stream_name":"stdout","time":2068.46168812,"data":"    \"divisions\": 196,\n"}
+,{"stream_name":"stdout","time":2068.461692859,"data":"    \"datasets\": [\n"}
+,{"stream_name":"stdout","time":2068.461697107,"data":"      \"44b6_0113de3b\",\n"}
+,{"stream_name":"stdout","time":2068.461701165,"data":"      \"44b6_0b24845f\",\n"}
+,{"stream_name":"stdout","time":2068.461705348,"data":"      \"6bba_05b6850b\",\n"}
+,{"stream_name":"stdout","time":2068.46170977,"data":"      \"6bba_05db0fb1\"\n"}
+,{"stream_name":"stdout","time":2068.461714318,"data":"    ],\n"}
+,{"stream_name":"stdout","time":2068.46173496,"data":"    \"csv_sha256\": \"ae03904bef127cf8d6ced573d535804f08b518d7f7be724bdc966a2e1d03cba2\",\n"}
+,{"stream_name":"stdout","time":2068.461741585,"data":"    \"valid\": true\n"}
+,{"stream_name":"stdout","time":2068.461749594,"data":"  },\n"}
+,{"stream_name":"stdout","time":2068.46175228,"data":"  \"seconds\": 1478.697381817,\n"}
+,{"stream_name":"stdout","time":2068.461754957,"data":"  \"ground_truth_accessed\": false,\n"}
+,{"stream_name":"stdout","time":2068.461757619,"data":"  \"test_datasets\": [\n"}
+,{"stream_name":"stdout","time":2068.461760245,"data":"    \"44b6_0113de3b\",\n"}
+,{"stream_name":"stdout","time":2068.461762738,"data":"    \"44b6_0b24845f\",\n"}
+,{"stream_name":"stdout","time":2068.461765218,"data":"    \"6bba_05b6850b\",\n"}
+,{"stream_name":"stdout","time":2068.461767775,"data":"    \"6bba_05db0fb1\"\n"}
+,{"stream_name":"stdout","time":2068.46177027,"data":"  ],\n"}
+,{"stream_name":"stdout","time":2068.461772713,"data":"  \"kaggle_score\": null\n"}
+,{"stream_name":"stdout","time":2068.461775914,"data":"}\n"}
+,{"stream_name":"stdout","time":2068.461802738,"data":"[COMPLETE] submission.csv validated and ready for scoring.\n"}
+,{"stream_name":"stderr","time":2070.700006184,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2070.700037046,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2070.836764145,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2070.836789882,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2071.558351303,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2071.863350398,"data":"[NbConvertApp] Writing 58444 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2074.399888361,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2075.080535645,"data":"[NbConvertApp] Writing 340807 bytes to __results__.html\n"}
+]

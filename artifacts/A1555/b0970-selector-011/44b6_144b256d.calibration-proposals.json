@@ -1,0 +1,956 @@
+{
+  "proposals": [
+    {
+      "mother": 38,
+      "daughters": [
+        206,
+        213
+      ],
+      "gain": 0.11351569852462529,
+      "add": [
+        [
+          38,
+          206
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        38
+      ],
+      "touched_children": [
+        206
+      ]
+    },
+    {
+      "mother": 121,
+      "daughters": [
+        300,
+        306
+      ],
+      "gain": 0.4798444402486506,
+      "add": [
+        [
+          121,
+          300
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        121
+      ],
+      "touched_children": [
+        300
+      ]
+    },
+    {
+      "mother": 136,
+      "daughters": [
+        326,
+        327
+      ],
+      "gain": 0.5880892930761643,
+      "add": [
+        [
+          136,
+          327
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        136
+      ],
+      "touched_children": [
+        327
+      ]
+    },
+    {
+      "mother": 312,
+      "daughters": [
+        521,
+        526
+      ],
+      "gain": 0.052960307020929465,
+      "add": [
+        [
+          312,
+          526
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        312
+      ],
+      "touched_children": [
+        526
+      ]
+    },
+    {
+      "mother": 1071,
+      "daughters": [
+        1307,
+        1323
+      ],
+      "gain": 0.21618518213389515,
+      "add": [
+        [
+          1071,
+          1323
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        1071
+      ],
+      "touched_children": [
+        1323
+      ]
+    },
+    {
+      "mother": 1545,
+      "daughters": [
+        1770,
+        1790
+      ],
+      "gain": 0.800727691126432,
+      "add": [
+        [
+          1545,
+          1790
+        ]
+      ],
+      "remove": [
+        [
+          1549,
+          1790
+        ]
+      ],
+      "affected_parents": [
+        1545,
+        1549
+      ],
+      "touched_children": [
+        1790
+      ]
+    },
+    {
+      "mother": 1790,
+      "daughters": [
+        2010,
+        2018
+      ],
+      "gain": 0.37172345470631796,
+      "add": [
+        [
+          1790,
+          2010
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        1790
+      ],
+      "touched_children": [
+        2010
+      ]
+    },
+    {
+      "mother": 2857,
+      "daughters": [
+        3092,
+        3105
+      ],
+      "gain": 0.9532518509227152,
+      "add": [
+        [
+          2857,
+          3105
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        2857
+      ],
+      "touched_children": [
+        3105
+      ]
+    },
+    {
+      "mother": 2880,
+      "daughters": [
+        3105,
+        3118
+      ],
+      "gain": 0.7185941571342833,
+      "add": [
+        [
+          2880,
+          3105
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        2880
+      ],
+      "touched_children": [
+        3105
+      ]
+    },
+    {
+      "mother": 3031,
+      "daughters": [
+        3261,
+        3270
+      ],
+      "gain": 0.5476147474679258,
+      "add": [
+        [
+          3031,
+          3261
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        3031
+      ],
+      "touched_children": [
+        3261
+      ]
+    },
+    {
+      "mother": 3613,
+      "daughters": [
+        3854,
+        3855
+      ],
+      "gain": 0.4469850067723615,
+      "add": [
+        [
+          3613,
+          3854
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        3613
+      ],
+      "touched_children": [
+        3854
+      ]
+    },
+    {
+      "mother": 3870,
+      "daughters": [
+        4108,
+        4109
+      ],
+      "gain": 0.6325290749813568,
+      "add": [
+        [
+          3870,
+          4109
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        3870
+      ],
+      "touched_children": [
+        4109
+      ]
+    },
+    {
+      "mother": 3881,
+      "daughters": [
+        4125,
+        4139
+      ],
+      "gain": 0.6640520844889728,
+      "add": [
+        [
+          3881,
+          4139
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        3881
+      ],
+      "touched_children": [
+        4139
+      ]
+    },
+    {
+      "mother": 6506,
+      "daughters": [
+        6720,
+        6721
+      ],
+      "gain": 0.5258151601726841,
+      "add": [
+        [
+          6506,
+          6721
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        6506
+      ],
+      "touched_children": [
+        6721
+      ]
+    },
+    {
+      "mother": 6949,
+      "daughters": [
+        7146,
+        7151
+      ],
+      "gain": 0.3017020889919977,
+      "add": [
+        [
+          6949,
+          7146
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        6949
+      ],
+      "touched_children": [
+        7146
+      ]
+    },
+    {
+      "mother": 7149,
+      "daughters": [
+        7339,
+        7351
+      ],
+      "gain": 0.5539429139300596,
+      "add": [
+        [
+          7149,
+          7351
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        7149
+      ],
+      "touched_children": [
+        7351
+      ]
+    },
+    {
+      "mother": 8074,
+      "daughters": [
+        8270,
+        8278
+      ],
+      "gain": 0.45443689720584746,
+      "add": [
+        [
+          8074,
+          8270
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        8074
+      ],
+      "touched_children": [
+        8270
+      ]
+    },
+    {
+      "mother": 8300,
+      "daughters": [
+        8503,
+        8521
+      ],
+      "gain": 0.27910449280409244,
+      "add": [
+        [
+          8300,
+          8521
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        8300
+      ],
+      "touched_children": [
+        8521
+      ]
+    },
+    {
+      "mother": 8301,
+      "daughters": [
+        8504,
+        8521
+      ],
+      "gain": 0.7760339382113985,
+      "add": [
+        [
+          8301,
+          8521
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        8301
+      ],
+      "touched_children": [
+        8521
+      ]
+    },
+    {
+      "mother": 8674,
+      "daughters": [
+        8877,
+        8878
+      ],
+      "gain": 0.03873220468306382,
+      "add": [
+        [
+          8674,
+          8877
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        8674
+      ],
+      "touched_children": [
+        8877
+      ]
+    },
+    {
+      "mother": 8696,
+      "daughters": [
+        8898,
+        8907
+      ],
+      "gain": 1.4057615493239988,
+      "add": [
+        [
+          8696,
+          8907
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        8696
+      ],
+      "touched_children": [
+        8907
+      ]
+    },
+    {
+      "mother": 9609,
+      "daughters": [
+        9831,
+        9836
+      ],
+      "gain": 0.1916149175906603,
+      "add": [
+        [
+          9609,
+          9831
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        9609
+      ],
+      "touched_children": [
+        9831
+      ]
+    },
+    {
+      "mother": 9824,
+      "daughters": [
+        10068,
+        10069
+      ],
+      "gain": 0.1269009126631122,
+      "add": [
+        [
+          9824,
+          10069
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        9824
+      ],
+      "touched_children": [
+        10069
+      ]
+    },
+    {
+      "mother": 10112,
+      "daughters": [
+        10366,
+        10367
+      ],
+      "gain": 0.02107269988100524,
+      "add": [
+        [
+          10112,
+          10366
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        10112
+      ],
+      "touched_children": [
+        10366
+      ]
+    },
+    {
+      "mother": 10664,
+      "daughters": [
+        10911,
+        10912
+      ],
+      "gain": 0.04004845152184311,
+      "add": [
+        [
+          10664,
+          10911
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        10664
+      ],
+      "touched_children": [
+        10911
+      ]
+    },
+    {
+      "mother": 11725,
+      "daughters": [
+        11967,
+        11998
+      ],
+      "gain": 0.7661057442202772,
+      "add": [
+        [
+          11725,
+          11998
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        11725
+      ],
+      "touched_children": [
+        11998
+      ]
+    },
+    {
+      "mother": 11766,
+      "daughters": [
+        12005,
+        12014
+      ],
+      "gain": 0.0673593533718948,
+      "add": [
+        [
+          11766,
+          12005
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        11766
+      ],
+      "touched_children": [
+        12005
+      ]
+    },
+    {
+      "mother": 11991,
+      "daughters": [
+        12234,
+        12250
+      ],
+      "gain": 0.12761023283447126,
+      "add": [
+        [
+          11991,
+          12250
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        11991
+      ],
+      "touched_children": [
+        12250
+      ]
+    },
+    {
+      "mother": 12031,
+      "daughters": [
+        12282,
+        12291
+      ],
+      "gain": 0.39495879762182207,
+      "add": [
+        [
+          12031,
+          12282
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        12031
+      ],
+      "touched_children": [
+        12282
+      ]
+    },
+    {
+      "mother": 12817,
+      "daughters": [
+        13069,
+        13085
+      ],
+      "gain": 0.15826734219963812,
+      "add": [
+        [
+          12817,
+          13069
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        12817
+      ],
+      "touched_children": [
+        13069
+      ]
+    },
+    {
+      "mother": 12902,
+      "daughters": [
+        13157,
+        13177
+      ],
+      "gain": 0.945538153418781,
+      "add": [
+        [
+          12902,
+          13157
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        12902
+      ],
+      "touched_children": [
+        13157
+      ]
+    },
+    {
+      "mother": 13615,
+      "daughters": [
+        13860,
+        13878
+      ],
+      "gain": 0.22128052250919983,
+      "add": [
+        [
+          13615,
+          13860
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        13615
+      ],
+      "touched_children": [
+        13860
+      ]
+    },
+    {
+      "mother": 14873,
+      "daughters": [
+        15120,
+        15131
+      ],
+      "gain": 0.08050166134226489,
+      "add": [
+        [
+          14873,
+          15131
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        14873
+      ],
+      "touched_children": [
+        15131
+      ]
+    },
+    {
+      "mother": 15280,
+      "daughters": [
+        15523,
+        15530
+      ],
+      "gain": 0.8589741222671585,
+      "add": [
+        [
+          15280,
+          15523
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        15280
+      ],
+      "touched_children": [
+        15523
+      ]
+    },
+    {
+      "mother": 15388,
+      "daughters": [
+        15620,
+        15621
+      ],
+      "gain": 0.2802595934405592,
+      "add": [
+        [
+          15388,
+          15621
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        15388
+      ],
+      "touched_children": [
+        15621
+      ]
+    },
+    {
+      "mother": 15403,
+      "daughters": [
+        15638,
+        15639
+      ],
+      "gain": 0.2594551878860534,
+      "add": [
+        [
+          15403,
+          15638
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        15403
+      ],
+      "touched_children": [
+        15638
+      ]
+    },
+    {
+      "mother": 17761,
+      "daughters": [
+        17992
+      ],
+      "gain": 0.4752343661616867,
+      "add": [],
+      "remove": [
+        [
+          17761,
+          17999
+        ]
+      ],
+      "affected_parents": [
+        17761
+      ],
+      "touched_children": [
+        17999
+      ]
+    },
+    {
+      "mother": 17814,
+      "daughters": [
+        18042,
+        18043
+      ],
+      "gain": 0.08582202161810526,
+      "add": [
+        [
+          17814,
+          18042
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        17814
+      ],
+      "touched_children": [
+        18042
+      ]
+    },
+    {
+      "mother": 18095,
+      "daughters": [
+        18324,
+        18326
+      ],
+      "gain": 0.6240195669703277,
+      "add": [
+        [
+          18095,
+          18326
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        18095
+      ],
+      "touched_children": [
+        18326
+      ]
+    },
+    {
+      "mother": 19519,
+      "daughters": [
+        19702,
+        19706
+      ],
+      "gain": 0.43063812878534713,
+      "add": [
+        [
+          19519,
+          19706
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        19519
+      ],
+      "touched_children": [
+        19706
+      ]
+    },
+    {
+      "mother": 19994,
+      "daughters": [
+        20190,
+        20191
+      ],
+      "gain": 0.09593732768222352,
+      "add": [
+        [
+          19994,
+          20191
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        19994
+      ],
+      "touched_children": [
+        20191
+      ]
+    },
+    {
+      "mother": 20191,
+      "daughters": [
+        20370,
+        20382
+      ],
+      "gain": 0.6094898876217634,
+      "add": [
+        [
+          20191,
+          20370
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        20191
+      ],
+      "touched_children": [
+        20370
+      ]
+    },
+    {
+      "mother": 20374,
+      "daughters": [
+        20563,
+        20583
+      ],
+      "gain": 0.5953078335235902,
+      "add": [
+        [
+          20374,
+          20583
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        20374
+      ],
+      "touched_children": [
+        20583
+      ]
+    },
+    {
+      "mother": 20376,
+      "daughters": [
+        20565,
+        20583
+      ],
+      "gain": 0.3210860387004004,
+      "add": [
+        [
+          20376,
+          20583
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        20376
+      ],
+      "touched_children": [
+        20583
+      ]
+    },
+    {
+      "mother": 20968,
+      "daughters": [
+        21160,
+        21161
+      ],
+      "gain": 0.1950844328205843,
+      "add": [
+        [
+          20968,
+          21160
+        ]
+      ],
+      "remove": [],
+      "affected_parents": [
+        20968
+      ],
+      "touched_children": [
+        21160
+      ]
+    }
+  ],
+  "trained_on": "44b6",
+  "uses_gt_for_edits": false
+}

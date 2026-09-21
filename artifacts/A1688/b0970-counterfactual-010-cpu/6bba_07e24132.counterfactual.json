@@ -1,0 +1,373 @@
+{
+  "dataset": "6bba_07e24132",
+  "forks": [
+    {
+      "gt_ids": [
+        300,
+        301,
+        306
+      ],
+      "anchor_ids": [
+        8599,
+        8851,
+        8831
+      ],
+      "covered": true,
+      "legacy_scored": false,
+      "distances_um": [
+        10.915960934567327,
+        0.5745242597140698
+      ],
+      "edit_footprint": {
+        "kind": "requires_reassignment",
+        "remove_edges": [
+          [
+            8579,
+            8831
+          ]
+        ],
+        "add_edges": [
+          [
+            8599,
+            8831
+          ]
+        ]
+      },
+      "reason": "scored",
+      "logit": -1.123239648079533,
+      "score": 0.2454108566740978,
+      "rank_best": 6,
+      "rank_worst": 6,
+      "competing_pairs": 6,
+      "at_frozen_threshold": false,
+      "endpoint_residual_um": [
+        2.6012692214570947,
+        4.755034338729848,
+        6.600781203766718
+      ],
+      "gt_daughter_distances_um": [
+        4.908737426772795,
+        4.0010984819796676
+      ],
+      "predicted_daughter_distances_um": [
+        0.5745242597140698,
+        10.915960934567327
+      ]
+    },
+    {
+      "gt_ids": [
+        324,
+        322,
+        323
+      ],
+      "anchor_ids": [
+        15698,
+        15940,
+        15953
+      ],
+      "covered": true,
+      "legacy_scored": false,
+      "distances_um": [
+        6.397631397634597,
+        1.9902104160113323
+      ],
+      "edit_footprint": {
+        "kind": "additive_second_child",
+        "remove_edges": [],
+        "add_edges": [
+          [
+            15698,
+            15940
+          ]
+        ]
+      },
+      "reason": "scored",
+      "logit": 0.299330638795554,
+      "score": 0.574278877753859,
+      "rank_best": 1,
+      "rank_worst": 1,
+      "competing_pairs": 15,
+      "at_frozen_threshold": false,
+      "endpoint_residual_um": [
+        0.8125,
+        1.7235727791422095,
+        1.7235727791422095
+      ],
+      "gt_daughter_distances_um": [
+        6.423376497217021,
+        3.300390601883359
+      ],
+      "predicted_daughter_distances_um": [
+        6.397631397634597,
+        1.9902104160113323
+      ]
+    }
+  ],
+  "scenarios": {
+    "covered_nonpresent": {
+      "gt_mother_ids": [
+        300,
+        324
+      ],
+      "edits": {
+        "requested_forks": 2,
+        "added_edges": [
+          [
+            8599,
+            8831
+          ],
+          [
+            15698,
+            15940
+          ]
+        ],
+        "removed_edges": [
+          [
+            8579,
+            8831
+          ]
+        ],
+        "node_count": 24201,
+        "edge_count": 23256,
+        "edge_count_delta": 1
+      },
+      "metrics": {
+        "edge_tp": 307,
+        "edge_fp": 19,
+        "edge_fn": 38,
+        "division_tp": 2,
+        "division_fp": 0,
+        "division_fn": 0,
+        "num_pred_nodes": 24201,
+        "node_recall": 0.9192200557103064,
+        "total_node_ratio": 0.12641377705375845,
+        "edge_jaccard": 0.8434065934065934,
+        "adj_edge_jaccard": 0.8327447721001363,
+        "dataset": "6bba_07e24132",
+        "group": "6bba",
+        "split": "development",
+        "counts": {
+          "edge_tp": 307,
+          "edge_fp": 19,
+          "edge_fn": 38,
+          "division_tp": 2,
+          "division_fp": 0,
+          "division_fn": 0,
+          "num_pred_nodes": 24201
+        }
+      },
+      "identical_graph_metrics_reused": false
+    },
+    "covered_unique_top1_nonpresent": {
+      "gt_mother_ids": [
+        324
+      ],
+      "edits": {
+        "requested_forks": 1,
+        "added_edges": [
+          [
+            15698,
+            15940
+          ]
+        ],
+        "removed_edges": [],
+        "node_count": 24201,
+        "edge_count": 23256,
+        "edge_count_delta": 1
+      },
+      "metrics": {
+        "edge_tp": 306,
+        "edge_fp": 20,
+        "edge_fn": 39,
+        "division_tp": 1,
+        "division_fp": 0,
+        "division_fn": 1,
+        "num_pred_nodes": 24201,
+        "node_recall": 0.9192200557103064,
+        "total_node_ratio": 0.12641377705375845,
+        "edge_jaccard": 0.8383561643835616,
+        "adj_edge_jaccard": 0.8277581874579588,
+        "dataset": "6bba_07e24132",
+        "group": "6bba",
+        "split": "development",
+        "counts": {
+          "edge_tp": 306,
+          "edge_fp": 20,
+          "edge_fn": 39,
+          "division_tp": 1,
+          "division_fp": 0,
+          "division_fn": 1,
+          "num_pred_nodes": 24201
+        }
+      },
+      "identical_graph_metrics_reused": false
+    },
+    "matched_nonpresent": {
+      "gt_mother_ids": [
+        300,
+        324
+      ],
+      "edits": {
+        "requested_forks": 2,
+        "added_edges": [
+          [
+            8599,
+            8831
+          ],
+          [
+            15698,
+            15940
+          ]
+        ],
+        "removed_edges": [
+          [
+            8579,
+            8831
+          ]
+        ],
+        "node_count": 24201,
+        "edge_count": 23256,
+        "edge_count_delta": 1
+      },
+      "metrics": {
+        "edge_tp": 307,
+        "edge_fp": 19,
+        "edge_fn": 38,
+        "division_tp": 2,
+        "division_fp": 0,
+        "division_fn": 0,
+        "num_pred_nodes": 24201,
+        "node_recall": 0.9192200557103064,
+        "total_node_ratio": 0.12641377705375845,
+        "edge_jaccard": 0.8434065934065934,
+        "adj_edge_jaccard": 0.8327447721001363,
+        "dataset": "6bba_07e24132",
+        "group": "6bba",
+        "split": "development",
+        "counts": {
+          "edge_tp": 307,
+          "edge_fp": 19,
+          "edge_fn": 38,
+          "division_tp": 2,
+          "division_fp": 0,
+          "division_fn": 0,
+          "num_pred_nodes": 24201
+        }
+      },
+      "identical_graph_metrics_reused": true
+    }
+  },
+  "singles": [
+    {
+      "gt_mother_ids": [
+        300
+      ],
+      "edits": {
+        "requested_forks": 1,
+        "added_edges": [
+          [
+            8599,
+            8831
+          ]
+        ],
+        "removed_edges": [
+          [
+            8579,
+            8831
+          ]
+        ],
+        "node_count": 24201,
+        "edge_count": 23255,
+        "edge_count_delta": 0
+      },
+      "metrics": {
+        "edge_tp": 306,
+        "edge_fp": 19,
+        "edge_fn": 39,
+        "division_tp": 1,
+        "division_fp": 0,
+        "division_fn": 1,
+        "num_pred_nodes": 24201,
+        "node_recall": 0.9192200557103064,
+        "total_node_ratio": 0.12641377705375845,
+        "edge_jaccard": 0.8406593406593407,
+        "adj_edge_jaccard": 0.8300322484125137,
+        "dataset": "6bba_07e24132",
+        "group": "6bba",
+        "split": "development",
+        "counts": {
+          "edge_tp": 306,
+          "edge_fp": 19,
+          "edge_fn": 39,
+          "division_tp": 1,
+          "division_fp": 0,
+          "division_fn": 1,
+          "num_pred_nodes": 24201
+        }
+      },
+      "identical_graph_metrics_reused": false,
+      "covered_in_009": true,
+      "rank_worst": 6,
+      "dataset": "6bba_07e24132"
+    },
+    {
+      "gt_mother_ids": [
+        324
+      ],
+      "edits": {
+        "requested_forks": 1,
+        "added_edges": [
+          [
+            15698,
+            15940
+          ]
+        ],
+        "removed_edges": [],
+        "node_count": 24201,
+        "edge_count": 23256,
+        "edge_count_delta": 1
+      },
+      "metrics": {
+        "edge_tp": 306,
+        "edge_fp": 20,
+        "edge_fn": 39,
+        "division_tp": 1,
+        "division_fp": 0,
+        "division_fn": 1,
+        "num_pred_nodes": 24201,
+        "node_recall": 0.9192200557103064,
+        "total_node_ratio": 0.12641377705375845,
+        "edge_jaccard": 0.8383561643835616,
+        "adj_edge_jaccard": 0.8277581874579588,
+        "dataset": "6bba_07e24132",
+        "group": "6bba",
+        "split": "development",
+        "counts": {
+          "edge_tp": 306,
+          "edge_fp": 20,
+          "edge_fn": 39,
+          "division_tp": 1,
+          "division_fp": 0,
+          "division_fn": 1,
+          "num_pred_nodes": 24201
+        }
+      },
+      "identical_graph_metrics_reused": true,
+      "covered_in_009": true,
+      "rank_worst": 1,
+      "dataset": "6bba_07e24132"
+    }
+  ],
+  "uses_gt_for_edits": true,
+  "confirmation_evaluated": false,
+  "tracking_evaluated": true,
+  "counterfactual_graphs_modified_in_memory": true,
+  "source_graph_modified": false,
+  "graph_exported": false,
+  "model_trained": false,
+  "threshold_selected": false,
+  "deployable_policy_evaluated": false,
+  "promoted": false,
+  "kaggle_submission_allowed": false,
+  "kaggle_score": null
+}

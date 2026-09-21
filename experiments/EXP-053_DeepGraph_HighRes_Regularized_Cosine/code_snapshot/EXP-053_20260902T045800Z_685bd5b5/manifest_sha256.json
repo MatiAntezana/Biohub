@@ -1,8 +1,0 @@
-{
-  "experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/experiment.json": "3fe1d5f140c6dbbf6923d4ad4d407452d91c4276332795bd5e6f9bd2edd2ba34",
-  "experiments/EXP-053_DeepGraph_HighRes_Regularized_Cosine/train.py": "acf503526177d7c99f17b2ee41de13fd6fbc211cd3e6d52e39a01af6f52abdb0",
-  "infra/experiment_worker.py": "a41e679a7e3516846bc9c4000753370f106fdf9dc5267f90861ad8b3f7580777",
-  "infra/experimentlib.py": "f571371ebff26150bd954d3865412caf6e1116633a68845f2b49746f009c5fd2",
-  "official_starter_kit/scripts/train_unet_transformer.py": "5392a4e49e0d118c79e384f1193e749f5c2dd2d70dbe09f3399b3425b6ab6556",
-  "src/strategies/experiment_runtime.py": "2ce5b411efc3ffda62865d9d463ed6383589ad5957cf9ddca14c0c93c42a3539"
-}

@@ -1,0 +1,210 @@
+[09/10/26 14:50:27] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "44b6_341df25f", "unknown": 9, "accepted": 1, "usable_events": 1, "covered_gt_forks": 1}
+[09/10/26 14:50:28] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "44b6_668e0cc7", "covered_gt_forks": 0}
+[09/10/26 14:50:29] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "44b6_706092f0", "unmatched_gt_fork": 1, "covered_gt_forks": 0}
+[09/10/26 14:50:30] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "44b6_74d0c52e", "outside_frozen_pool": 1, "covered_gt_forks": 0}
+                    WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "44b6_996155de", "accepted": 2, "usable_events": 1, "covered_gt_forks": 1}
+[09/10/26 14:50:31] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "44b6_9be80b04", "unmatched_gt_fork": 1, "covered_gt_forks": 0}
+[09/10/26 14:50:32] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "44b6_aaf8b0ea", "unmatched_gt_fork": 1, "covered_gt_forks": 0}
+[09/10/26 14:50:33] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "44b6_c8e2a523", "unknown": 10, "usable_events": 0, "covered_gt_forks": 1}
+                    WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "44b6_d754aa59", "unknown": 3, "usable_events": 0, "covered_gt_forks": 1}
+[09/10/26 14:50:34] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "44b6_deabac95", "unknown": 10, "usable_events": 0, "covered_gt_forks": 1}
+[09/10/26 14:50:36] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "44b6_e31261b4", "covered_gt_forks": 0}
+[09/10/26 14:50:38] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "44b6_eb2880fc", "outside_frozen_pool": 1, "covered_gt_forks": 0}
+[09/10/26 14:50:39] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_12665c0e", "unknown": 3, "usable_events": 1, "unmatched_gt_fork": 1, "accepted": 1, "covered_gt_forks": 2}
+                    WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_2312ac41", "outside_frozen_pool": 1, "unknown": 2, "accepted": 1, "usable_events": 1, "covered_gt_forks": 1}
+[09/10/26 14:50:40] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_337b1b3a", "unknown": 11, "accepted": 3, "usable_events": 2, "covered_gt_forks": 2}
+[09/10/26 14:50:41] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_3a1849c2", "covered_gt_forks": 0}
+                    WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_3c5691b6", "unmatched_gt_fork": 1, "unknown": 1, "usable_events": 0, "covered_gt_forks": 1}
+[09/10/26 14:50:42] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_4ffd3da3", "unknown": 2, "usable_events": 0, "outside_frozen_pool": 1, "covered_gt_forks": 2}
+[09/10/26 14:50:44] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_57b7cc1e", "unknown": 7, "usable_events": 0, "unmatched_gt_fork": 1, "covered_gt_forks": 2}
+[09/10/26 14:50:46] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_5c039895", "unknown": 6, "accepted": 5, "usable_events": 3, "covered_gt_forks": 3}
+                    WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_6feb10f0", "covered_gt_forks": 0}
+[09/10/26 14:50:48] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_786893ac", "unmatched_gt_fork": 2, "unknown": 3, "usable_events": 0, "covered_gt_forks": 1}
+[09/10/26 14:50:50] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_78a7bd97", "unmatched_gt_fork": 1, "outside_frozen_pool": 1, "covered_gt_forks": 0}
+[09/10/26 14:50:51] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_7af54fde", "unknown": 4, "usable_events": 0, "covered_gt_forks": 2}
+[09/10/26 14:50:52] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_7d3058ae", "unmatched_gt_fork": 1, "unknown": 14, "accepted": 1, "usable_events": 1, "covered_gt_forks": 1}
+                    WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_7f87b3d8", "unknown": 7, "usable_events": 0, "unmatched_gt_fork": 1, "covered_gt_forks": 2}
+[09/10/26 14:50:53] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_969618f6", "outside_frozen_pool": 1, "unmatched_gt_fork": 1, "unknown": 3, "accepted": 4, "usable_events": 1, "covered_gt_forks": 1}
+                    WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_9a41d029", "unknown": 14, "accepted": 2, "usable_events": 2, "covered_gt_forks": 2}
+[09/10/26 14:50:54] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_ab78413d", "outside_frozen_pool": 1, "unmatched_gt_fork": 1, "covered_gt_forks": 0}
+                    WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_b204cac7", "unknown": 3, "usable_events": 1, "accepted": 1, "covered_gt_forks": 2}
+[09/10/26 14:50:55] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_c328f2fd", "outside_frozen_pool": 1, "unmatched_gt_fork": 1, "covered_gt_forks": 0}
+[09/10/26 14:50:56] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_d2b9fc0c", "unknown": 29, "accepted": 1, "usable_events": 1, "covered_gt_forks": 2}
+[09/10/26 14:50:57] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_f8ffd5e7", "accepted": 2, "usable_events": 2, "unknown": 14, "covered_gt_forks": 2}
+[09/10/26 14:50:58] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_fc5f39dc", "unmatched_gt_fork": 1, "outside_frozen_pool": 1, "covered_gt_forks": 0}
+[09/10/26 14:50:59] WARNING  Other graph (IndexedRXGraph)    _base_graph.py:1378
+                             supports custom indices, but                       
+                             this graph (RustWorkXGraph)                        
+                             does not, indexing                                 
+                             automatically.                                     
+{"phase": "event_preferences", "dataset": "6bba_fe670320", "accepted": 1, "usable_events": 1, "unmatched_gt_fork": 1, "covered_gt_forks": 1}

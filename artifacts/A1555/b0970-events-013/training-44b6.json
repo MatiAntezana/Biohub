@@ -1,0 +1,138 @@
+{
+  "summary": {
+    "beneficial": {
+      "comparisons": 3,
+      "events": 3,
+      "volumes": 3
+    },
+    "harmful": {
+      "comparisons": 515,
+      "events": 500,
+      "volumes": 9
+    },
+    "event": {
+      "comparisons": 3,
+      "events": 2,
+      "volumes": 2
+    },
+    "unique_mothers_across_strata": 501
+  },
+  "datasets": {
+    "44b6_341df25f": {
+      "unknown": 9,
+      "accepted": 1,
+      "usable_events": 1,
+      "covered_gt_forks": 1
+    },
+    "44b6_668e0cc7": {
+      "covered_gt_forks": 0
+    },
+    "44b6_706092f0": {
+      "unmatched_gt_fork": 1,
+      "covered_gt_forks": 0
+    },
+    "44b6_74d0c52e": {
+      "outside_frozen_pool": 1,
+      "covered_gt_forks": 0
+    },
+    "44b6_996155de": {
+      "accepted": 2,
+      "usable_events": 1,
+      "covered_gt_forks": 1
+    },
+    "44b6_9be80b04": {
+      "unmatched_gt_fork": 1,
+      "covered_gt_forks": 0
+    },
+    "44b6_aaf8b0ea": {
+      "unmatched_gt_fork": 1,
+      "covered_gt_forks": 0
+    },
+    "44b6_c8e2a523": {
+      "unknown": 10,
+      "usable_events": 0,
+      "covered_gt_forks": 1
+    },
+    "44b6_d754aa59": {
+      "unknown": 3,
+      "usable_events": 0,
+      "covered_gt_forks": 1
+    },
+    "44b6_deabac95": {
+      "unknown": 10,
+      "usable_events": 0,
+      "covered_gt_forks": 1
+    },
+    "44b6_e31261b4": {
+      "covered_gt_forks": 0
+    },
+    "44b6_eb2880fc": {
+      "outside_frozen_pool": 1,
+      "covered_gt_forks": 0
+    }
+  },
+  "events": [
+    {
+      "event": "44b6_341df25f:390",
+      "gt_mother": 12,
+      "preferred": [
+        390,
+        484,
+        486
+      ],
+      "alternative": [
+        390,
+        -1,
+        -1
+      ],
+      "reference_correct": false
+    },
+    {
+      "event": "44b6_996155de:1439",
+      "gt_mother": 59,
+      "preferred": [
+        1439,
+        1519,
+        1520
+      ],
+      "alternative": [
+        1439,
+        1519,
+        -1
+      ],
+      "reference_correct": true
+    },
+    {
+      "event": "44b6_996155de:1439",
+      "gt_mother": 59,
+      "preferred": [
+        1439,
+        1519,
+        1520
+      ],
+      "alternative": [
+        1439,
+        1520,
+        -1
+      ],
+      "reference_correct": true
+    }
+  ],
+  "direct_preferences_source": "b0970-ranking-012",
+  "tensor_sha256": "bdf018992181330759c0c1f8233c3b8ea6537107a71bffd4143a53b909df64c0",
+  "gt_sha256": {
+    "44b6_341df25f": "b9afae5adeeb902fb60fb0938f117b25fd0459bb8be6fad57ecb961cdd92f5e8",
+    "44b6_668e0cc7": "4c7010bb24a095f3cfea83b7d9fbcdc2e57a438e278b15baaf0759a73d72d7e1",
+    "44b6_706092f0": "1623ed9b7ea69f9a7b439d886aac5bb5e3eb1d0ee63e18009e2353e0e66995e6",
+    "44b6_74d0c52e": "62db4b10a5b0afbb9baf6031a5a7ac3ec6c718ac103f35e0470294410579e75d",
+    "44b6_996155de": "7c5d9bf48cced0fdd1f847a207e738111dfbebc0a4adb441e4f087fab9f8f1da",
+    "44b6_9be80b04": "6ae5cc2168654a47fc801394cdc63f27a7c4189c8a648375d5763a095cc1db10",
+    "44b6_aaf8b0ea": "f01f69c88b46675e6277c7d49057e9e4c4e8ca1c872fe23bec3e6b223e78b2bc",
+    "44b6_c8e2a523": "9418f71dd8e4219d36164b8d12b1bcdc513dab6b918b2ae2fde0f600dee2d572",
+    "44b6_d754aa59": "08910efb12241480f5dc88883844241805a29d82649e916c83ca79691c481a95",
+    "44b6_deabac95": "9b180a493cbad62981b2ae18729c5145456e91af10d573651b87811ae31381d5",
+    "44b6_e31261b4": "d11f6f63eb9e4fef5e73ce506372bc9bc7bc465ac97619bffbce877ee50ec98d",
+    "44b6_eb2880fc": "a938c74141671137398ac38544de87f75cfd7bc61062ba218845ab5f590a719a"
+  },
+  "repeated_comparisons_not_independent_events": true
+}

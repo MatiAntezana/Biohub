@@ -1,0 +1,23 @@
+{
+  "resource_profile": "cpu_evaluation_v1",
+  "logical_cpus": [
+    26,
+    27
+  ],
+  "nice": 10,
+  "address_space_limit_bytes_per_process": 8589934592,
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2",
+    "BLIS_NUM_THREADS": "2",
+    "VECLIB_MAXIMUM_THREADS": "2",
+    "POLARS_MAX_THREADS": "2",
+    "RAYON_NUM_THREADS": "2",
+    "OMP_MAX_ACTIVE_LEVELS": "1",
+    "MALLOC_ARENA_MAX": "2",
+    "BIOHUB_RESOURCE_PROFILE": "cpu_evaluation_v1"
+  }
+}

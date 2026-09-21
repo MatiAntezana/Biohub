@@ -1,0 +1,25 @@
+{
+  "edge_tp": 154,
+  "edge_fp": 30,
+  "edge_fn": 32,
+  "division_tp": 0,
+  "division_fp": 1,
+  "division_fn": 0,
+  "num_pred_nodes": 15455,
+  "node_recall": 0.9326424870466321,
+  "total_node_ratio": -0.2391946440878212,
+  "edge_jaccard": 0.7129629629629629,
+  "adj_edge_jaccard": 0.7300166551803353,
+  "dataset": "44b6_e57ff5c6",
+  "group": "44b6",
+  "split": "development",
+  "counts": {
+    "edge_tp": 154,
+    "edge_fp": 30,
+    "edge_fn": 32,
+    "division_tp": 0,
+    "division_fp": 1,
+    "division_fn": 0,
+    "num_pred_nodes": 15455
+  }
+}

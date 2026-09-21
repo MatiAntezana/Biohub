@@ -1,0 +1,23 @@
+{
+  "tests_passed": true,
+  "tests_run": 304,
+  "tests_expected": 304,
+  "skipped": 0,
+  "failures": 0,
+  "errors": 0,
+  "suite": "full_discovery",
+  "cpu_runtime": {
+    "before": {
+      "cuda_visible_devices": 0,
+      "cuda_initialized": false,
+      "torch_threads": 2,
+      "torch_interop_threads": 1
+    },
+    "after": {
+      "cuda_visible_devices": 0,
+      "cuda_initialized": false,
+      "torch_threads": 2,
+      "torch_interop_threads": 1
+    }
+  }
+}

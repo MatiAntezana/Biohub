@@ -1,0 +1,87 @@
+{
+  "schema": "temporal_association_021",
+  "source_release": "182748fa31d8dc721803362ba3cf1092980ac7a1c44b04f492bc6401bf46a657",
+  "source_run": "b0970-selector-corpus-011",
+  "events_run": "b0970-events-015",
+  "node": "A1555",
+  "source_artifacts": {
+    "receipt.json": "f7c9dccea0ce5b23aebfa6a05d892aee7fe57d161229a7d526e14c6ab2254e1f",
+    "corpus.json": "584d3ffa640906816577c30a41566a020bd79952b0e88e8bed0fa2aa0c422239"
+  },
+  "ranker_artifacts": {
+    "event-ranker-44b6.json": "3b9ccbe5bbbeea96ffb75d55eba67a985ef6cb7434396f5580139e2751ab96d3",
+    "event-ranker-6bba.json": "2fffe5ac5e06b7c08b6dfba2deec7735c38f3ccc9d71277f64df9a40def65135"
+  },
+  "variants": {
+    "variant_1": {
+      "description": "Pure Symmetric Axial Regularization (clamp=0.6 um, thresh=0.8 um, w_z=0.80, symmetric_only=true, fork_addition=false)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "density_adaptive": false,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_addition": {
+        "enabled": false
+      }
+    },
+    "variant_2": {
+      "description": "Pure Symmetric Regularization + Ranker-Guided Mitosis Addition (Conservative: min_gain=0.80, max=10)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "density_adaptive": false,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_addition": {
+        "enabled": true,
+        "min_gain": 0.8,
+        "max_additions": 10,
+        "max_d1_dist_um": 3.5,
+        "max_d2_dist_um": 10.0,
+        "min_sister_dist_um": 2.5,
+        "max_sister_dist_um": 12.0,
+        "min_divergence_ratio": 1.1
+      }
+    },
+    "variant_3": {
+      "description": "Pure Symmetric Regularization + Ranker-Guided Mitosis Addition (Calibrated: min_gain=0.65, max=25)",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "density_adaptive": false,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_addition": {
+        "enabled": true,
+        "min_gain": 0.65,
+        "max_additions": 25,
+        "max_d1_dist_um": 3.5,
+        "max_d2_dist_um": 12.0,
+        "min_sister_dist_um": 2.5,
+        "max_sister_dist_um": 14.0,
+        "min_divergence_ratio": 1.05
+      }
+    }
+  },
+  "gates": {
+    "development_score_delta_min": 0.003,
+    "confirmation_score_delta_min": 0.002,
+    "minimum_group_score_delta": 0.0,
+    "minimum_sample_adjusted_jaccard_delta": -0.015,
+    "minimum_edge_jaccard_delta": 0.0,
+    "minimum_division_jaccard_delta": 0.0
+  }
+}

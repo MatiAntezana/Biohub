@@ -1,0 +1,13 @@
+Starting Campaign 021 on A1555 across 8 development datasets...
+Traceback (most recent call last):
+  File "/home/alumno1/Documents/Biohub-0970/releases/6b733c0bba9d3a7a7b5ccdd0d312541e29ab480e6e6cdd00d26708dfe4f8d6df/ops/biohub.py", line 514, in <module>
+    main()
+  File "/home/alumno1/Documents/Biohub-0970/releases/6b733c0bba9d3a7a7b5ccdd0d312541e29ab480e6e6cdd00d26708dfe4f8d6df/ops/biohub.py", line 504, in main
+    execute_job(args, run)
+  File "/home/alumno1/Documents/Biohub-0970/releases/6b733c0bba9d3a7a7b5ccdd0d312541e29ab480e6e6cdd00d26708dfe4f8d6df/ops/biohub.py", line 400, in execute_job
+    result = temporal_association_job(args, run, source_run(args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alumno1/Documents/Biohub-0970/releases/6b733c0bba9d3a7a7b5ccdd0d312541e29ab480e6e6cdd00d26708dfe4f8d6df/core/temporal_association_021.py", line 600, in temporal_association_job
+    print(f"Evaluating {vname}: {vcfg[description]}...", flush=True)
+                                      ^^^^^^^^^^^
+NameError: name 'description' is not defined

@@ -1,0 +1,40 @@
+{
+  "schema": "temporal_association_030",
+  "scope": "official_confirmation_evaluation_holdout",
+  "source_release": "997d1fe4c4171852e89ced8666adc42bfbff9d6e4011da404c3c28b967c39147",
+  "source_run": "b0970-prepare-005",
+  "node": "A1555",
+  "variant": {
+    "name": "KP-CR-HGP-V1",
+    "description": "Campaign 029 Champion: Photometric-Informed Safe-Zero Cytokinesis Pruning + Heading Guard",
+    "smoothing": {
+      "enabled": true,
+      "reversal_only": true,
+      "symmetric_only": true,
+      "max_asymmetry_um": 0.0,
+      "jitter_threshold_um": 0.8,
+      "max_correction_um": 0.6,
+      "weight_z": 0.8,
+      "weight_xy": 0.0
+    },
+    "fork_pruning": {
+      "enabled": true,
+      "mode": "safe_zero_photometric",
+      "cos_thresh": 0.0,
+      "min_ratio": 0.18,
+      "min_max_dist_um": 3.0,
+      "persistence_guard": true,
+      "heading_alignment": true,
+      "photometric_branch_selection": true,
+      "photometric_asymmetry_filter": false
+    }
+  },
+  "gates": {
+    "development_score_delta_min": 0.003,
+    "confirmation_score_delta_min": 0.002,
+    "minimum_group_score_delta": 0.0,
+    "minimum_sample_adjusted_jaccard_delta": -0.015,
+    "minimum_edge_jaccard_delta": 0.0,
+    "minimum_division_jaccard_delta": 0.0
+  }
+}

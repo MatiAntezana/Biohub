@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "/home/alumno1/Documents/Biohub-0970/releases/0dc710f3cb93fad5a09c1db55ad9a2254538cc3c62542d5eb4290809b5de751d/ops/biohub.py", line 179, in <module>
+    main()
+  File "/home/alumno1/Documents/Biohub-0970/releases/0dc710f3cb93fad5a09c1db55ad9a2254538cc3c62542d5eb4290809b5de751d/ops/biohub.py", line 169, in main
+    execute_job(args, run)
+  File "/home/alumno1/Documents/Biohub-0970/releases/0dc710f3cb93fad5a09c1db55ad9a2254538cc3c62542d5eb4290809b5de751d/ops/biohub.py", line 91, in execute_job
+    result = prepare_job(args, run)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alumno1/Documents/Biohub-0970/releases/0dc710f3cb93fad5a09c1db55ad9a2254538cc3c62542d5eb4290809b5de751d/ops/workflow.py", line 194, in prepare_job
+    replay(assets, args.data_root, args.legacy_root, run / "replay")
+  File "/home/alumno1/Documents/Biohub-0970/releases/0dc710f3cb93fad5a09c1db55ad9a2254538cc3c62542d5eb4290809b5de751d/ops/workflow.py", line 73, in replay
+    runtime = Production(assets, data_root, output, load_detector=False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alumno1/Documents/Biohub-0970/releases/0dc710f3cb93fad5a09c1db55ad9a2254538cc3c62542d5eb4290809b5de751d/core/production.py", line 42, in __init__
+    self.ns = load_production_namespace(ROOT / "legacy/v19_restored.ipynb")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/alumno1/Documents/Biohub-0970/releases/0dc710f3cb93fad5a09c1db55ad9a2254538cc3c62542d5eb4290809b5de751d/core/production_adapter.py", line 40, in load_production_namespace
+    exec(compile(ast.Module(body=definitions, type_ignores=[]), f"{notebook}:graph", "exec"), namespace)
+  File "/home/alumno1/Documents/Biohub-0970/releases/0dc710f3cb93fad5a09c1db55ad9a2254538cc3c62542d5eb4290809b5de751d/legacy/v19_restored.ipynb:graph", line 1, in <module>
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/tracksdata/__init__.py", line 9, in <module>
+    import tracksdata.array as array
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/tracksdata/array/__init__.py", line 7, in <module>
+    from tracksdata.array._graph_array import GraphArrayView
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/tracksdata/array/_graph_array.py", line 10, in <module>
+    from tracksdata.graph._base_graph import BaseGraph
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/tracksdata/graph/__init__.py", line 3, in <module>
+    from tracksdata.graph._base_graph import BaseGraph, MetadataView
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/tracksdata/graph/_base_graph.py", line 8, in <module>
+    import geff
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/geff/__init__.py", line 8, in <module>
+    from geff_spec import GeffMetadata
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/geff_spec/__init__.py", line 10, in <module>
+    from ._schema import DisplayHint, GeffMetadata, GeffSchema, RelatedObject
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/geff_spec/_schema.py", line 8, in <module>
+    import zarr
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/zarr/__init__.py", line 6, in <module>
+    from zarr.api.synchronous import (
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/zarr/api/synchronous.py", line 7, in <module>
+    import zarr.api.asynchronous as async_api
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/zarr/api/asynchronous.py", line 13, in <module>
+    from zarr.core.array import (
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/zarr/core/array.py", line 28, in <module>
+    from zarr.codecs._v2 import V2Codec
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/zarr/codecs/__init__.py", line 3, in <module>
+    from zarr.codecs.blosc import BloscCname, BloscCodec, BloscShuffle
+  File "/home/alumno1/miniconda3/envs/train-88/lib/python3.11/site-packages/zarr/codecs/blosc.py", line 11, in <module>
+    from packaging.version import Version
+ModuleNotFoundError: No module named 'packaging.version'; 'packaging' is not a package

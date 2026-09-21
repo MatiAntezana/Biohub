@@ -1,0 +1,174 @@
+{
+  "matched_prior_nodes": 19662,
+  "anchor_nodes": 29462,
+  "candidate_edges": 165385,
+  "edges_without_neural_prior": 146646,
+  "actual_scored_pairs": 3868,
+  "structurally_addable_pairs": 421,
+  "scores_all": {
+    "count": 3868,
+    "at_frozen_threshold": 0,
+    "quantiles": {
+      "min": 0.010773524641990662,
+      "p10": 0.028870865516364575,
+      "p50": 0.07507124543190002,
+      "p90": 0.11648678034543991,
+      "p99": 0.15259287625551224,
+      "max": 0.1845846325159073
+    }
+  },
+  "scores_addable": {
+    "count": 421,
+    "at_frozen_threshold": 0,
+    "quantiles": {
+      "min": 0.010773524641990662,
+      "p10": 0.029627051204442978,
+      "p50": 0.07515871524810791,
+      "p90": 0.11778457462787628,
+      "p99": 0.1532086789608002,
+      "max": 0.17393720149993896
+    }
+  },
+  "scores_by_annotation": {
+    "unknown": {
+      "count": 3865,
+      "at_frozen_threshold": 0,
+      "quantiles": {
+        "min": 0.010773524641990662,
+        "p10": 0.028868771716952325,
+        "p50": 0.07507190853357315,
+        "p90": 0.11649726331233978,
+        "p99": 0.15259543597698214,
+        "max": 0.1845846325159073
+      }
+    },
+    "addable_unknown": {
+      "count": 420,
+      "at_frozen_threshold": 0,
+      "quantiles": {
+        "min": 0.010773524641990662,
+        "p10": 0.029625700414180757,
+        "p50": 0.07531382888555527,
+        "p90": 0.11781029254198075,
+        "p99": 0.15323769122362138,
+        "max": 0.17393720149993896
+      }
+    },
+    "confirmed_negative": {
+      "count": 3,
+      "at_frozen_threshold": 0,
+      "quantiles": {
+        "min": 0.05600319802761078,
+        "p10": 0.05862675458192825,
+        "p50": 0.06912098079919815,
+        "p90": 0.07706139832735062,
+        "p99": 0.07884799227118493,
+        "max": 0.07904650270938873
+      }
+    },
+    "addable_confirmed_negative": {
+      "count": 1,
+      "at_frozen_threshold": 0,
+      "quantiles": {
+        "min": 0.05600319802761078,
+        "p10": 0.05600319802761078,
+        "p50": 0.05600319802761078,
+        "p90": 0.05600319802761078,
+        "p99": 0.05600319802761078,
+        "max": 0.05600319802761078
+      }
+    }
+  },
+  "exact_gt_forks": [
+    {
+      "gt_mother": 626,
+      "gt_daughters": [
+        652,
+        1920
+      ],
+      "anchor_ids": [
+        7648,
+        8011,
+        null
+      ],
+      "reason": "unmatched_endpoint",
+      "score": null
+    },
+    {
+      "gt_mother": 1022,
+      "gt_daughters": [
+        1929,
+        1930
+      ],
+      "anchor_ids": [
+        13384,
+        13673,
+        13630
+      ],
+      "reason": "already_present",
+      "score": null
+    },
+    {
+      "gt_mother": 1143,
+      "gt_daughters": [
+        1931,
+        1932
+      ],
+      "anchor_ids": [
+        15614,
+        15893,
+        15891
+      ],
+      "reason": "second_daughter_already_assigned",
+      "score": null
+    },
+    {
+      "gt_mother": 1945,
+      "gt_daughters": [
+        1946,
+        1947
+      ],
+      "anchor_ids": [
+        14537,
+        14835,
+        14793
+      ],
+      "reason": "second_daughter_already_assigned",
+      "score": null
+    }
+  ],
+  "exact_gt_fork_reasons": {
+    "unmatched_endpoint": 1,
+    "already_present": 1,
+    "second_daughter_already_assigned": 2
+  },
+  "development_gt_coordinate_scores": [
+    {
+      "gt_mother": 626,
+      "score": 0.07811438292264938
+    },
+    {
+      "gt_mother": 1022,
+      "score": 0.07669296860694885
+    },
+    {
+      "gt_mother": 1143,
+      "score": 0.09703067690134048
+    },
+    {
+      "gt_mother": 1945,
+      "score": 0.130574569106102
+    }
+  ],
+  "frozen_output": {
+    "matched_prior_nodes": 19662,
+    "anchor_nodes": 29462,
+    "candidate_edges": 165385,
+    "edges_without_neural_prior": 146646,
+    "approved_pairs": 0,
+    "added_divisions": [],
+    "preserved_reference_nodes": 29462,
+    "preserved_reference_edges": 28647
+  },
+  "head_sha256": "0900030a4977baec3deedc3226f1339401e682656eaeb1aed2ece414558b8e6f"
+}

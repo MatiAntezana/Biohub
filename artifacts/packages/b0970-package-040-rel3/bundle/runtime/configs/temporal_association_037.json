@@ -1,0 +1,108 @@
+{
+  "schema": "temporal_association_037",
+  "source_release": "f1d1e3223a37a72cdb9f500410f841885e35399260fb6cbbcf7a6a02f789909c",
+  "source_run": "b0970-selector-corpus-011",
+  "node": "A1555",
+  "source_artifacts": {
+    "receipt.json": "f7c9dccea0ce5b23aebfa6a05d892aee7fe57d161229a7d526e14c6ab2254e1f",
+    "corpus.json": "584d3ffa640906816577c30a41566a020bd79952b0e88e8bed0fa2aa0c422239"
+  },
+  "variants": {
+    "variant_1": {
+      "description": "Cytokinesis-Symmetric Mitosis Recovery (BC-MG Pure Symmetry): cos_theta <= -0.40, sister_dist <= 16.0 um, mother_dist <= 14.0 um, history >= 2, persistence >= 2",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "max_asymmetry_um": 0.0,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "mode": "spatial_proximity_invariant",
+        "cos_thresh": 0.0,
+        "min_ratio": 0.18,
+        "min_max_dist_um": 3.0,
+        "spi_enabled": true,
+        "spi_max_close_um": 1.5,
+        "spi_min_far_um": 2.5,
+        "spi_min_ratio": 2.0,
+        "distance_cost_mode": "linear",
+        "heading_alignment": true,
+        "heading_guard_cos_max": 0.0,
+        "photometric_branch_selection": true
+      },
+      "mitosis_reassignment": {
+        "enabled": true,
+        "cos_max": -0.4,
+        "sister_distance_min_um": 2.0,
+        "sister_distance_max_um": 16.0,
+        "mother_distance_max_um": 14.0,
+        "distance_ratio_min": 0.15,
+        "competitor_max_out_deg": 1,
+        "mother_history_min_frames": 2,
+        "daughter_persistence_min_frames": 2,
+        "require_cand_edge": false
+      }
+    },
+    "variant_2": {
+      "description": "Cytokinesis-Symmetric Mitosis Recovery with Strict Divergence (BC-MG Strict Divergence): cos_theta <= -0.60, sister_dist <= 14.0 um, mother_dist <= 12.0 um, history >= 2, persistence >= 2",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "max_asymmetry_um": 0.0,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "mode": "spatial_proximity_invariant",
+        "cos_thresh": 0.0,
+        "min_ratio": 0.18,
+        "min_max_dist_um": 3.0,
+        "spi_enabled": true,
+        "spi_max_close_um": 1.5,
+        "spi_min_far_um": 2.5,
+        "spi_min_ratio": 2.0,
+        "distance_cost_mode": "linear",
+        "heading_alignment": true,
+        "heading_guard_cos_max": 0.0,
+        "photometric_branch_selection": true
+      },
+      "mitosis_reassignment": {
+        "enabled": true,
+        "cos_max": -0.6,
+        "sister_distance_min_um": 2.0,
+        "sister_distance_max_um": 14.0,
+        "mother_distance_max_um": 12.0,
+        "distance_ratio_min": 0.2,
+        "competitor_max_out_deg": 1,
+        "mother_history_min_frames": 2,
+        "daughter_persistence_min_frames": 2,
+        "require_cand_edge": false
+      }
+    }
+  },
+  "gates": {
+    "development": {
+      "delta_score_min": 0.003,
+      "delta_score_44b6_min": 0.0,
+      "delta_score_6bba_min": 0.0,
+      "worst_sample_delta_min": -0.015,
+      "division_true_positives_min": 3
+    },
+    "confirmation": {
+      "delta_score_min": 0.002,
+      "delta_score_44b6_min": 0.0,
+      "delta_score_6bba_min": 0.0,
+      "worst_sample_delta_min": -0.015,
+      "division_true_positives_min": 4
+    }
+  }
+}

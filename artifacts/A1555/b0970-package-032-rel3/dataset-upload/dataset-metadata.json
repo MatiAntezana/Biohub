@@ -1,0 +1,10 @@
+{
+  "title": "biohub-pkg-b0970-package-032-rel3",
+  "id": "matiasantezana/biohub-pkg-b0970-package-032-rel3",
+  "licenses": [
+    {
+      "name": "other"
+    }
+  ],
+  "description": "Private reproducible Biohub experiment bundle; see bundled provenance and licenses."
+}

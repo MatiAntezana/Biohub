@@ -1,47 +1,119 @@
-# Biohub — reglas operativas para agentes
+# Contrato de operación y continuidad de Biohub
 
-Antes de modificar, ejecutar o desplegar un experimento:
+## Autoridad vigente — 2026-09-13
 
-1. Leer `.agents/rules.md` y `.agents/experiment-protocol.md` completos.
-2. Leer `.state/STATE.md` y `.state/QUEUE.md`; son vistas generadas y no se editan a mano.
-3. Usar `python infra/experimentctl.py ...` para validar, encolar, ejecutar, reconciliar y cerrar corridas. `run --node auto` selecciona la GPU remota con más VRAM libre.
-4. Toda operación local debe ejecutarse con `conda activate AIEnv`; los entrypoints de infraestructura lo fuerzan automáticamente.
-5. No ejecutar entrenamiento ni evaluación GPU pesada en la Mac local.
-6. No escribir checkpoints, logs ni artefactos fuera de la carpeta propia del experimento.
-7. No considerar cerrada una corrida mientras permanezca en `DOC_PENDING`.
-8. El autolanzamiento remoto solo está autorizado cuando el manifiesto declara `execution_policy.auto_launch=true`.
-9. Kaggle es exclusivamente test/inferencia. Usar `infra/kaggle_pipeline.py`: cualquier señal de train bloquea retries y submission; un notebook sin test debe fallar por su guardia interna.
-10. En `Modo automatico`, toda corrida reconciliada como `SUCCEEDED`, `DOC_PENDING` o `CLOSED` cuyo manifiesto declare `kaggle.auto_publish_after_train=true`, `auto_push=true` y `deployment_ready=true` debe entrar automáticamente al preflight, push, monitor, submission y consulta de Public Score. No esperar la orden manual `Subir mejores versiones a kaggle`.
-11. Almacenamiento desacoplado: Todo checkpoint pesado (`.pt`, `.pth`, `.ckpt`, `.safetensors`) se respalda obligatoriamente en Hugging Face Hub (`infra/hf_sync.py`, repo `Matycaba2016/biohub-checkpoints`) y se purga del disco local al completar la reconciliación. Queda estrictamente prohibido commitear binarios pesados a Git.
-12. Sincronización Automática Integral (Hugging Face y GitHub) en Modo Automático: En cada ciclo del `Modo automatico`, el daemon sube autónomamente a Hugging Face Hub los checkpoints generados por experimentos finalizados o variantes, y ejecuta `git add`, `git commit` y `git push origin main` a GitHub (`MatiAntezana/Biohub`) de todos los manifiestos, scripts, esquemas, ledgers (`registry.jsonl`, `kaggle_scores.jsonl`) y vistas de estado actualizadas, asegurando respaldo y persistencia total entre sesiones.
+El usuario continuará SOLO con Antigravity. Desde ahora Antigravity asume diseño
+incremental, implementación, ejecución e interpretación dentro de
+`docs/AUTONOMOUS_CONTINUATION.md`. No debe esperar otra revisión de Codex para
+continuar después de un diagnóstico. Esta autorización sustituye el rol antiguo
+de “operador que no puede diseñar”; NO permite eludir gates o alterar evidencias.
 
-## Órdenes exactas del usuario
+Leer completos este contrato y AUTONOMOUS_CONTINUATION.md, luego STATUS,
+RUNBOOK y el handoff de la campaña activa. Las órdenes antiguas de “volver a
+Codex/detenerse para revisión” se satisfacen ahora con una revisión escrita de
+Antigravity y la predeclaración de la siguiente campaña. Un resultado fallido
+no se transforma en aprobatorio y un receipt diagnóstico no habilita publicación.
 
-- `Cortar train remoto`: ejecutar `python infra/agent_commands.py "Cortar train remoto"`. Señala únicamente los procesos registrados como RUNNING y trae checkpoints, recibos y logs.
-- `Subir mejores versiones a kaggle`: ejecutar `python infra/agent_commands.py "Subir mejores versiones a kaggle"`. Selecciona como máximo tres paquetes elegibles según `.agents/ranking.json`, los sube y crea jobs monitoreables.
-- `Modo automatico`: ejecutar `python infra/agent_commands.py "Modo automatico"`. El comando inicia o adjunta el daemon y queda en foreground supervisándolo. El agente no debe cerrar el turno ni responder con un mensaje final mientras continúe activo.
-- `Cortar automatico`: ejecutar `python infra/agent_commands.py "Cortar automatico"`. Detiene el daemon, muestra el resumen y formula la pregunta de continuidad. No corta entrenamientos remotos por sí solo. También pausar o eliminar mediante la herramienta de automatizaciones el heartbeat `biohub-automatic-live-monitor` indicado en `.agents/monitoring.json`.
+## Invariantes
 
-### Persistencia obligatoria de la sesión en modo automático
+1. Trabajar en /Users/matias/Proyects/Biohub. Biohub-viejo y Biohub-mejorado son
+   antecedentes de solo lectura. Preservar fuentes, pesos, receipts y releases
+   históricas. No reactivar dispatchers/watchers antiguos.
+2. MLflow está prohibido: no instalar, importar, configurar o inicializar,
+   ni crear mlruns/. Usar manifiestos/receipts JSON.
+3. Python local exclusivo /Users/matias/miniforge3/envs/AIEnv/bin/python.
+   La Mac controla, inspecciona y ejecuta tests estáticos/toy; nunca entrenamiento
+   ni inferencia real. El cómputo científico real va a las remotas autorizadas.
+4. ÚNICOS nodos autorizados: A1555/a1555/train-55 y A1557/a1557/train-57.
+   Pasar --node explícitamente. El default A1688 y otros nodos del JSON
+   histórico NO son autorización vigente. No consultar ni ejecutar otras compus.
+   Usar core.remote_executor.execute_remotely mediante los drivers verificados
+   y aliases seguros UCBV. No SSH ad-hoc, IP directa, host-key bypass, cambios
+   de proxies, sockets, claves, redes, servicios o procesos ajenos.
+5. La campaña014 sigue fijada a A1555. No cambiarla a A1557 por argumento o falsificando
+   fuentes. Habilitar A1557 después mediante una nueva release operativa, suite
+   completa en destino, inventario y traslado íntegro de fuentes cuando haga
+   falta. Distinguir nodo de origen de un receipt y nodo actual de ejecución.
+   El procedimiento obligatorio está en AUTONOMOUS_CONTINUATION.md, sección3.
+6. Se permite implementar correcciones e hipótesis nuevas dentro del protocolo,
+   con predeclaración, tests, manifest/hash y run ID nuevos. No modificar código
+   o parámetros de una corrida activa ni receipts para evitar una falla.
+   No cambiar la métrica, los gates, las reglas de seguridad ni las pruebas
+   para ocultar errores. No bajar mínimos a posteriori para forzar fitting.
+7. Guardar y comprobar procedencia real de dependencias/datos/modelos. No
+   inventar hashes, revisiones, licencias o admisibilidad. No instalar “latest”
+   en conda compartido como reparación rápida. Nuevas dependencias verificadas
+   solo en destino aislado y en una nueva release; nunca MLflow.
+8. El champion de control conserva ambos checkpoints fijados y DeepCenter.
+   Un seed ausente es fallo, no fallback. No sustituir pesos históricos:
+   cualquier modelo candidato nuevo tiene identidad/artefactos propios.
+9. No inventar células, enlaces o coordenadas para optimizar artificialmente
+   score/cardinalidad. Rescate nuevo exige evidencia real de imagen y tiempo.
+   CSV completo: estrictamente 234000 < filas < 242000, excluyendo cabecera.
+   No padding/poda para cumplir la cota; no exigirla a caches parciales.
+10. GT solo para entrenamiento/calibración/evaluación explícitos. Inferencia
+    nunca recibe GT, listas de divisiones verdaderas ni grafos oracle010.
+    Unknown no es negativo/FP. El notebook procesa todos los test de Kaggle;
+    no sustituirlos por cuatro nombres visibles o un CSV precalculado.
+11. Detector full-fit y paneles ya expuestos no son holdout integral. Mantener
+    separación fuente/prefijo evaluado, registrar exposición y fijar receta
+    antes de evaluar. Confirmación no se usa para seleccionar hiperparámetros.
+12. Jobs fallidos/rechazados: conservar, recuperar, interpretar y registrar.
+    Una corrección justificada produce otra release/run. No relanzar una
+    mutación incierta, borrar locks/receipts o sobrescribir artefactos.
+13. Una tarea Biohub por nodo bajo el lock común. GPU ajena ocupada: esperar,
+    nunca detenerla. Tareas CPU aprobadas mantienen cpu_evaluation_v1, CUDA
+    oculta y límites de CPU/RAM/disco. GPU mantiene gpu_exclusive_v1 y sus
+    guardias. No reclasificar tareas CUDA como CPU para evitar admisión.
+    Paralelismo entre A1555/A1557 solo tras validar ambos entornos, con tareas
+    independientes e IDs distintos. Una publicación/cuota centralizada.
+14. Publicar solo candidatas con tests completos, paridad de referencia V19,
+    gates pareados de desarrollo/confirmación, modelo final compatible, contrato
+    visible/tiempo, bundle íntegro y smoke real Kaggle. Inferencia compartida
+    entre remota/notebook. El builder antiguo NO integra por sí solo ranking014.
+    Implementar/probar esa integración antes de empaquetar una nueva familia.
+15. Publicación solo mediante ops/kaggle.py, kernel privado nuevo por run.
+    Máximo interno una submission por día UTC y por artefacto único, aunque
+    Kaggle conceda más. No modificar el kernel histórico. Escritura incierta:
+    reconciliar el resultado real antes de otra acción; no borrar *_attempted.
+16. Alcanzar0.970 solo se declara con score finito >=0.970 de la referencia
+    exacta COMPLETE en Kaggle. No usar un score local, recall de nodos, AUROC
+    o la submission más reciente de otro proceso como prueba.
+17. No contratar servicios, gastar dinero/créditos, ampliar a otras máquinas,
+    acceder a datos privados nuevos o modificar invariantes sin el usuario.
+    Consultarlo solo por una decisión/permiso realmente faltante o bloqueo
+    irresoluble; no derivar cada resultado rutinario de nuevo a Codex.
 
-- Después de invocar `Modo automatico`, mantener abierta la llamada de supervisión y leer su salida incremental. Si la herramienta devuelve un identificador de sesión/proceso, seguirla con polls de hasta 60 segundos; no abandonarla después del mensaje inicial.
-- Comunicar en `commentary` cada transición real y los cambios de epoch/métricas. Si no cambia nada, enviar un heartbeat breve como máximo cada 300 segundos (5 minutos) indicando qué sigue corriendo, nodo y último progreso conocido para optimizar el consumo de tokens y contexto.
-- Nunca volcar logs completos al chat. Traducir los eventos JSON compactos `AUTOMATIC_UPDATE` y `AUTOMATIC_HEARTBEAT` a resúmenes claros.
-- Solo terminar el turno de supervisión cuando el usuario escriba `Cortar automatico`, cuando una política quede pausada requiriendo una decisión humana o cuando exista un bloqueo irrecuperable que deba informarse.
-- Si el daemon muere accidentalmente pero su estado seguía `RUNNING`, el supervisor debe reiniciarlo y avisar. Un estado explícito `STOPPED` no se reinicia.
-- En cada ciclo consultar todas las GPUs de nodos `ONLINE` con `training_ready=true`, no solo las corridas presentes en la cola. Informar qué `EXP-XXX` está usando cada nodo/GPU, su PID y VRAM cuando exista un proceso CUDA.
-- Un proceso GPU descubierto por comando pero no registrado se notifica como externo/no administrado. Monitorearlo es read-only y no autoriza detenerlo, adoptarlo ni modificar sus artefactos.
+## Campaña inmediata014 y transición
 
-`experiments/registry.jsonl` es la fuente canónica append-only. Los documentos narrativos de
-`Librería-Registros/` explican decisiones científicas, pero no sustituyen el ledger.
+014 conserva su código/receta/hash y gates; no entrenar ni publicar desde014.
+Seguir docs/COVERAGE_SUPERVISION_014.md y ANTIGRAVITY_HANDOFF.md:
+verificación local → audit_coverage_inputs → tests014 → prepare-coverage014 →
+audit-coverage014 → fetch completo → revisión escrita por Antigravity.
 
-Los resultados locales y Kaggle son rankings distintos: consultar `experiments/RESULTS.md` para experimentación local y `experiments/KAGGLE_LEADERBOARD.md` para el ranking exclusivo por Public Score oficial.
+Se reutilizan35 muestras FIT011, preferencias012 y evidencia013 con hashes.
+Única expansión014:44b6_12dfb391,44b6_a21120c2,44b6_e28840c6, previamente
+expuestas y autorizadas solo como supervisión, nunca holdout. Prepare-coverage
+usa GPU exclusiva y24 GiB libres; no abre GT. Audit-coverage usa CPU limitada;
+GT solo de35 FIT +3 adicionales. Nunca GT de calibración/desarrollo/confirmación/
+visible en014. No modificar matching, radio/K, detector o colisiones de014.
 
-## Orden y variantes autónomas
+Verificar hashes de todos los NPZ011 no equivale a evaluar los paneles reservados.
+No contar comparaciones repetidas como nuevas divisiones. Proximidad a una
+detección no demuestra identidad celular ni causa exacta de pérdida.
 
-- Al iniciar `Modo automatico`, la secuencia bloqueante es `EXP-031 → EXP-030B` (EXP-030B es la versión full-fit vigente de EXP-030). No generar variantes nuevas hasta que ambos entrenamientos remotos hayan terminado.
-- Después se aplica `.agents/autonomous-exploration.json`: 60% de las propuestas mejoran los mejores linajes por Public Score de Kaggle, 25% exploran cambios cercanos y 15% reservan caminos nuevos.
-- Solo se permiten recetas de `.agents/variant-recipes.json`. Cada variante debe registrar padre, score del padre, carril, receta, seed y hash de configuración en `experiments/variant_proposals.jsonl`.
-- La planificación nunca ejecuta entrenamiento directamente: materializa una carpeta aislada, la encola y el scheduler común decide el lanzamiento remoto según VRAM y presupuesto de concurrencia.
-- Al terminar una variante, `variant_kaggle.py` recupera el checkpoint ya sincronizado, exporta pesos-only, crea/versiona un dataset de pesos propio, habilita el notebook test-only y deja que el pipeline haga push, monitor, submission y score.
-- La publicación post-train no es exclusiva de variantes: EXP-030B, EXP-031 y cualquier experimento futuro elegible siguen la política `.agents/kaggle-automation.json`. `Subir mejores versiones a kaggle` permanece como orden manual extraordinaria, no como requisito del flujo automático.
+Tras014, no esperar a Codex: aplicar el árbol de AUTONOMOUS_CONTINUATION.md.
+Predeclarar la siguiente hipótesis con NEXT_EXPERIMENT_TEMPLATE.md, implementar
+lo necesario en una nueva release y repetir pruebas. Una futura campaña de
+tracking tiene que superar sus propios gates:014 no autoriza saltarlos.
+
+Status/fetch son las vías de seguimiento; no Python genérico/SSH improvisado.
+Fetch completo, sin excluir NPZ/cache. --resume solo para descarga parcial con
+receipt terminal coincidente, preservando existentes. Ante corrupción, reportar
+y conservar; no borrar para forzar reemplazo. Deferred_resources/run_created=false
+no consume ID. Un receipt existente sí lo consume.
+
+Actualizar docs/STATUS.md y fichas por campaña con hash/nodo/run, resultados,
+decisión, exposición y próximo comando. Al reanudar, leer ese estado y retomar
+sin repetir corridas. Para contradicciones con textos históricos, prevalecen
+las instrucciones vigentes del usuario y este contrato.

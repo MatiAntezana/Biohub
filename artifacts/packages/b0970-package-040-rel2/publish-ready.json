@@ -1,0 +1,44 @@
+{
+  "source_experiment": "b0970-confirm-040-rel1",
+  "code_hash": "92233aae9ca512b65082dc89eb8197c8042bd3bfab59d5fb9f4dcfe4360547ba",
+  "arm": "mitosis_add",
+  "champion_variant": "variant_1",
+  "recipe": "Bounded Divergence Persistence Gating (BDPG): 3-regime cytokinesis gating (obtuse cos<=0, drag-skewed cos<=0.20 birth<=6.0um, acute crossover pruning)",
+  "gates": {
+    "development": {
+      "passed": true,
+      "phase": "development",
+      "score_delta": 0.004006,
+      "source_run": "b0970-temporal-040-rel1"
+    },
+    "confirmation": {
+      "passed": true,
+      "reasons": [],
+      "phase": "confirmation",
+      "score_delta": 0.002956,
+      "scope": "public_paired_diagnostic_full_fit_detector_not_kaggle_score"
+    }
+  },
+  "visible_contract": {
+    "csv_rows": 235622,
+    "nodes": 119881,
+    "edges": 115741,
+    "divisions": 256,
+    "datasets": [
+      "44b6_0113de3b",
+      "44b6_0b24845f",
+      "6bba_05b6850b",
+      "6bba_05db0fb1"
+    ],
+    "csv_sha256": "2015f77cf8062b067e5a8f6adebba33762d087cdaa8add8599401b2a5b624e79",
+    "valid": true
+  },
+  "remote_runtime_seconds": 1.9652573749772273,
+  "visibility": "visible_public_runtime_check_not_hidden_score",
+  "kaggle_score": null,
+  "run_id": "b0970-package-040-rel2",
+  "bundle_sha256": "d248d9d2ad58744ba4fbc626fe9834f640823918d20248adc8997aa7775b3049",
+  "notebook_sha256": "03c67358f1a6062266a9221cdd4cf4edd9d416db85ee6c29776d24595cff3f43",
+  "archive_sha256": "ed4df18fe446c4a2e562fde6e8447703657b1a365220c991a7ea6aa9f93d1cdd",
+  "kaggle_gpu_smoke_required": true
+}

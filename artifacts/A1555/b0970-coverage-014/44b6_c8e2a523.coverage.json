@@ -1,0 +1,152 @@
+{
+  "dataset": "44b6_c8e2a523",
+  "gt_forks": 1,
+  "stages": {
+    "covered_without_confirmed_contrast": 1
+  },
+  "endpoint_categories": {
+    "matched": 3
+  },
+  "events": [
+    {
+      "dataset": "44b6_c8e2a523",
+      "gt_mother": 155,
+      "biological_event": "44b6_c8e2a523:155",
+      "endpoints": [
+        {
+          "gt_id": 155,
+          "gt_tzyx": [
+            72.0,
+            51.0,
+            128.0,
+            229.0
+          ],
+          "matched_anchor_id": 20497,
+          "matched_distance_um": 1.86167137607581,
+          "anchor": {
+            "nearest_id": 20497,
+            "distance_um": 1.86167137607581,
+            "within_radius": 1,
+            "nearest_ties": [
+              20497
+            ]
+          },
+          "raw": {
+            "nearest_id": 21801,
+            "distance_um": 1.6750116604071745,
+            "within_radius": 1,
+            "nearest_ties": [
+              21801
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 155,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        },
+        {
+          "gt_id": 156,
+          "gt_tzyx": [
+            73.0,
+            53.0,
+            122.0,
+            238.0
+          ],
+          "matched_anchor_id": 20805,
+          "matched_distance_um": 6.512682938889317,
+          "anchor": {
+            "nearest_id": 20810,
+            "distance_um": 3.494694639736067,
+            "within_radius": 2,
+            "nearest_ties": [
+              20810
+            ]
+          },
+          "raw": {
+            "nearest_id": 22135,
+            "distance_um": 3.447145558284419,
+            "within_radius": 2,
+            "nearest_ties": [
+              22135
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 157,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        },
+        {
+          "gt_id": 157,
+          "gt_tzyx": [
+            73.0,
+            52.0,
+            131.0,
+            233.0
+          ],
+          "matched_anchor_id": 20810,
+          "matched_distance_um": 2.569350598886808,
+          "anchor": {
+            "nearest_id": 20810,
+            "distance_um": 2.569350598886808,
+            "within_radius": 1,
+            "nearest_ties": [
+              20810
+            ]
+          },
+          "raw": {
+            "nearest_id": 22135,
+            "distance_um": 2.0714766773970688,
+            "within_radius": 1,
+            "nearest_ties": [
+              22135
+            ]
+          },
+          "category": "matched",
+          "nearest_anchor_assigned_to_gt": 157,
+          "interpretation": "proximity_evidence_not_identity_or_causal_stage_attribution"
+        }
+      ],
+      "stage": "covered_without_confirmed_contrast",
+      "comparisons": {
+        "unknown": 10
+      },
+      "unknown_reasons": {
+        "unmapped_parent_detection": 19,
+        "unmapped_child_detection": 24
+      },
+      "target": [
+        20497,
+        20805,
+        20810
+      ],
+      "event": "44b6_c8e2a523:20497",
+      "candidate_limits": [
+        {
+          "daughter": 20805,
+          "distance_um": 10.663578858080433,
+          "rank_all_next_frame": 5,
+          "outside_radius": false,
+          "outside_top_k": false
+        },
+        {
+          "daughter": 20810,
+          "distance_um": 1.8168052317185792,
+          "rank_all_next_frame": 1,
+          "outside_radius": false,
+          "outside_top_k": false
+        }
+      ],
+      "reference_correct": false
+    }
+  ],
+  "matching_radius_um": 7.0,
+  "raw_scope": "saved_post_detector_candidates_before_global_ILP_and_postprocessing",
+  "exact_removal_stage_identified": false,
+  "matching_modified": false,
+  "graph_modified": false,
+  "gt_sha256": "9418f71dd8e4219d36164b8d12b1bcdc513dab6b918b2ae2fde0f600dee2d572",
+  "event_stats": {
+    "unknown": 10,
+    "usable_events": 0,
+    "covered_gt_forks": 1
+  },
+  "confirmed_comparisons": []
+}

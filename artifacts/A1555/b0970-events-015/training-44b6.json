@@ -1,0 +1,23 @@
+{
+  "summary": {
+    "beneficial": {
+      "comparisons": 5,
+      "events": 5,
+      "volumes": 4
+    },
+    "harmful": {
+      "comparisons": 728,
+      "events": 713,
+      "volumes": 12
+    },
+    "event": {
+      "comparisons": 5,
+      "events": 3,
+      "volumes": 3
+    },
+    "unique_mothers_across_strata": 717
+  },
+  "tensor_sha256": "740bf74aafd5fd423f1091e7f11e0222175cac35257215b699df6ffedd8fcde9",
+  "source_coverage": "b0970-coverage-014",
+  "deduplicated": true
+}

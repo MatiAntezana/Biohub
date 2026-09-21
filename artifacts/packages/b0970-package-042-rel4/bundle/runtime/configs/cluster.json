@@ -1,0 +1,13 @@
+{
+  "default_node": "A1688",
+  "remote_root": "/home/alumno1/Documents/Biohub-0970",
+  "data_root": "/home/alumno1/Documents/Biohub/data/train",
+  "legacy_assets": "/home/alumno1/Documents/Biohub-mejorado/experiments/SCORE-0970",
+  "nodes": {
+    "A1688": {"alias": "a1688", "environment": "train-88", "authorization": "explicit_user_override_for_this_Biohub_task"},
+    "A1557": {"alias": "a1557", "environment": "train-57"},
+    "A1552": {"alias": "a1552", "environment": "train-52"},
+    "A1555": {"alias": "a1555", "environment": "train-55"},
+    "A1560": {"alias": "a1560", "environment": "train-60"}
+  }
+}

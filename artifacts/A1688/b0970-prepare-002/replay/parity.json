@@ -1,0 +1,6 @@
+{
+  "expected_sha256": "46b4008a8021f6882eaf4661ac814d70762f7d5190cbf86747e2630d33d5af37",
+  "actual_sha256": "016c718817bcfcca3da13d5b491a75f6e9f663e32261afbcb3c757c7bcee0cf4",
+  "passed": false,
+  "scope": "postprocess_byte_parity_on_archived_raw_graphs"
+}

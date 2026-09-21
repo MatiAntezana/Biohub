@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "objective_public_score": 0.970,
+  "historical_best_public_score": 0.933,
+  "arms": ["control", "mitosis_add", "hoct", "hoct_mitosis", "hoct_rescue", "full"],
+  "phase_one_arms": ["control", "mitosis_add"],
+  "group_prefixes": ["44b6", "6bba"],
+  "split_seed": "biohub-0970-20260907-frozen-v1",
+  "samples_per_group_per_panel": 4,
+  "development": ["44b6_d5e7d891", "44b6_c50204e0", "44b6_e57ff5c6", "44b6_ddf577ad", "6bba_48816121", "6bba_09961292", "6bba_5a4d9360", "6bba_07e24132"],
+  "previously_exposed": ["44b6_0113de3b", "44b6_0b24845f", "6bba_05b6850b", "6bba_05db0fb1", "44b6_12dfb391", "44b6_e28840c6", "44b6_a21120c2", "44b6_5740d24b", "44b6_c771cb04", "6bba_cdcfe533", "6bba_debd7bfa", "6bba_f20478e9", "6bba_283bf9f1"],
+  "visible": ["44b6_0113de3b", "44b6_0b24845f", "6bba_05b6850b", "6bba_05db0fb1"],
+  "promotion": {
+    "development_score_delta_min": 0.003,
+    "confirmation_score_delta_min": 0.002,
+    "minimum_group_score_delta": 0.0,
+    "minimum_sample_adjusted_jaccard_delta": -0.015,
+    "minimum_edge_jaccard_delta": 0.0,
+    "minimum_division_jaccard_delta": 0.0,
+    "visible_rows_exclusive": [234000, 242000],
+    "max_runtime_seconds": 7200,
+    "max_submissions_per_utc_day": 1
+  }
+}

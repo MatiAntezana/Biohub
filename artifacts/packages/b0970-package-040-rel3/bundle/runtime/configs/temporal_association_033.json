@@ -1,0 +1,147 @@
+{
+  "schema": "temporal_association_033",
+  "source_release": "ae8b7a790355c4a64ae2ccd48b32b129526cac965c1ed09147024b40556b5d1e",
+  "source_run": "b0970-selector-corpus-011",
+  "node": "A1555",
+  "source_artifacts": {
+    "receipt.json": "f7c9dccea0ce5b23aebfa6a05d892aee7fe57d161229a7d526e14c6ab2254e1f",
+    "corpus.json": "584d3ffa640906816577c30a41566a020bd79952b0e88e8bed0fa2aa0c422239"
+  },
+  "variants": {
+    "variant_1": {
+      "description": "Conservative DC-CMR: cos <= -0.40, sister <= 14.0 um, p_cand >= 0.50",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "max_asymmetry_um": 0.0,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "mode": "spatial_proximity_invariant",
+        "cos_thresh": 0.0,
+        "min_ratio": 0.18,
+        "min_max_dist_um": 3.0,
+        "spi_enabled": true,
+        "spi_max_close_um": 1.5,
+        "spi_min_far_um": 2.5,
+        "spi_min_ratio": 2.0,
+        "distance_cost_mode": "linear",
+        "heading_alignment": true,
+        "heading_guard_cos_max": 0.0,
+        "photometric_branch_selection": true
+      },
+      "mitosis_reassignment": {
+        "enabled": true,
+        "method": "dc_cmr",
+        "global_drift_compensation": true,
+        "drift_mode": "global_median",
+        "cos_max": -0.40,
+        "sister_distance_min_um": 3.0,
+        "sister_distance_max_um": 14.0,
+        "distance_ratio_min": 0.15,
+        "p_candidate_min": 0.50,
+        "competitor_max_out_deg": 1,
+        "allow_reassign_from_fp_division": true,
+        "gap_interpolation_enabled": false
+      }
+    },
+    "variant_2": {
+      "description": "Balanced Champion DC-CMR: cos <= -0.30, sister <= 16.0 um, p_cand >= 0.45",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "max_asymmetry_um": 0.0,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "mode": "spatial_proximity_invariant",
+        "cos_thresh": 0.0,
+        "min_ratio": 0.18,
+        "min_max_dist_um": 3.0,
+        "spi_enabled": true,
+        "spi_max_close_um": 1.5,
+        "spi_min_far_um": 2.5,
+        "spi_min_ratio": 2.0,
+        "distance_cost_mode": "linear",
+        "heading_alignment": true,
+        "heading_guard_cos_max": 0.0,
+        "photometric_branch_selection": true
+      },
+      "mitosis_reassignment": {
+        "enabled": true,
+        "method": "dc_cmr",
+        "global_drift_compensation": true,
+        "drift_mode": "global_median",
+        "cos_max": -0.30,
+        "sister_distance_min_um": 3.0,
+        "sister_distance_max_um": 16.0,
+        "distance_ratio_min": 0.15,
+        "p_candidate_min": 0.45,
+        "competitor_max_out_deg": 1,
+        "allow_reassign_from_fp_division": true,
+        "gap_interpolation_enabled": false
+      }
+    },
+    "variant_3": {
+      "description": "Sensitive DC-CMR: cos <= -0.25, sister <= 16.0 um, p_cand >= 0.40",
+      "smoothing": {
+        "enabled": true,
+        "reversal_only": true,
+        "symmetric_only": true,
+        "max_asymmetry_um": 0.0,
+        "jitter_threshold_um": 0.8,
+        "max_correction_um": 0.6,
+        "weight_z": 0.8,
+        "weight_xy": 0.0
+      },
+      "fork_pruning": {
+        "enabled": true,
+        "mode": "spatial_proximity_invariant",
+        "cos_thresh": 0.0,
+        "min_ratio": 0.18,
+        "min_max_dist_um": 3.0,
+        "spi_enabled": true,
+        "spi_max_close_um": 1.5,
+        "spi_min_far_um": 2.5,
+        "spi_min_ratio": 2.0,
+        "distance_cost_mode": "linear",
+        "heading_alignment": true,
+        "heading_guard_cos_max": 0.0,
+        "photometric_branch_selection": true
+      },
+      "mitosis_reassignment": {
+        "enabled": true,
+        "method": "dc_cmr",
+        "global_drift_compensation": true,
+        "drift_mode": "global_median",
+        "cos_max": -0.25,
+        "sister_distance_min_um": 3.0,
+        "sister_distance_max_um": 16.0,
+        "distance_ratio_min": 0.15,
+        "p_candidate_min": 0.40,
+        "competitor_max_out_deg": 1,
+        "allow_reassign_from_fp_division": true,
+        "gap_interpolation_enabled": false
+      }
+    }
+  },
+  "gates": {
+    "development_score_delta_min": 0.003,
+    "confirmation_score_delta_min": 0.002,
+    "minimum_group_score_delta": 0.0,
+    "minimum_sample_adjusted_jaccard_delta": -0.015,
+    "minimum_edge_jaccard_delta": 0.0,
+    "minimum_division_jaccard_delta": 0.0,
+    "max_allowed_true_division_loss": 0
+  }
+}

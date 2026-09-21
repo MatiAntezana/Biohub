@@ -1,0 +1,58 @@
+{
+  "gt_sha256": "273d346cf1549161e94604efda9c303ea6b29be7470def7f390d4e8359c650cd",
+  "labels_sha256": "857aad84681eecf47202f6bf03a4284d32a427bf3c4f6b7e401d9d8c034bf2e3",
+  "score_sha256": "f1eb529aa8181d7fbd592f904c6dda1368b5b9c2071470acbf1d1ac0c171697f",
+  "fork_ranks": [
+    {
+      "gt_mother": 86,
+      "status": "covered",
+      "hypothesis": [
+        3597,
+        3897,
+        3934
+      ],
+      "already_present": false,
+      "models": {
+        "event015": {
+          "gain": -0.19742150763141683,
+          "rank_worst": 5,
+          "unique_top1": false
+        },
+        "ranker012": {
+          "gain": -1.9342063219978356,
+          "rank_worst": 5,
+          "unique_top1": false
+        }
+      }
+    },
+    {
+      "gt_mother": 456,
+      "status": "covered",
+      "hypothesis": [
+        17103,
+        17535,
+        17556
+      ],
+      "already_present": false,
+      "models": {
+        "event015": {
+          "gain": -0.35783821193240334,
+          "rank_worst": 4,
+          "unique_top1": false
+        },
+        "ranker012": {
+          "gain": -1.661137255565229,
+          "rank_worst": 2,
+          "unique_top1": false
+        }
+      }
+    }
+  ],
+  "label_codes": {
+    "beneficial": 1,
+    "harmful": -1,
+    "mixed": 0,
+    "unknown": 2,
+    "reference_noop": 3
+  }
+}
