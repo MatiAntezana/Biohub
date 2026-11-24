@@ -1,25 +1,21 @@
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+.pytest_cache/
 .DS_Store
-.state/
-scratch/
-
-# Ignore heavy binaries and archives
-*.whl
-*.zip
-*.tar*
-*.npy
-*.npz
-*.geff
-*.csv
-
-# Ignore MLflow and secrets
-mlruns*/
-mlartifacts/
 .env
 kaggle.json
 
-# Model weights: ignore all except the 3 canonical champion models
+# Heavy data and archives
+*.zarr/
+*.geff
+*.npy
+*.npz
+*.zip
+*.tar*
+*.csv
+
+# Model weights (keep canonical champion checkpoints tracked)
 *.pt
 *.pth
 *.bin
@@ -27,10 +23,3 @@ kaggle.json
 !assets/champion/**
 !assets/champion/**/*.pt
 !assets/champion/**/*.pth
-
-# Artifacts: allow all experimental json receipts and evidence, ignore binary payloads
-artifacts/**/raw/
-artifacts/**/cache-*/
-artifacts/**/visible/
-artifacts/**/kaggle-output/*.csv
-
